@@ -270,10 +270,23 @@
     </div>
   </a>
 
-  <nav>
+  <button class="menu-toggle" id="menuToggle"
+          aria-label="Buka navigasi" aria-expanded="false">☰</button>
+
+  <nav id="mainNav" aria-label="Navigasi utama">
     <a href="index.html">Beranda</a>
-    <a href="materi.html">Materi Pembelajaran</a>
-    <a href="materi.html#jenjang">Jenjang Kelas</a>
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">Materi Pembelajaran <span>⌄</span></button>
+      <div class="dropdown">
+        <a href="kelas-x.html" class="active">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
   </nav>
 </header>
 
