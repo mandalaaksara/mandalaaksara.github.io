@@ -7,24 +7,6 @@
   <meta name="description" content="Materi pembelajaran Bahasa Indonesia Kelas X Fase E di Mandala Aksara.">
   <title>Bahasa Indonesia Kelas X | Mandala Aksara</title>
   <link rel="stylesheet" href="style.css">
-header nav {
-      display: flex !important;
-      flex-direction: row !important;
-      align-items: center;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      gap: 18px;
-      width: auto;
-      margin: 0;
-      padding: 0;
-    }
-
-    header nav a {
-      display: inline-block !important;
-      margin: 0 !important;
-      padding: 6px 0;
-      white-space: nowrap;
-    }
   <style>
     :root {
       --navy: #142B4A;
@@ -245,6 +227,40 @@ header nav {
       .hero { padding: 45px 20px; }
       .section { padding: 22px 18px; }
     }
+    
+    header {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      flex-wrap: wrap !important;
+      gap: 12px !important;
+    }
+
+    header > .brand {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      width: auto !important;
+    }
+
+    header > nav {
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;
+      justify-content: flex-end !important;
+      flex-wrap: wrap !important;
+      width: auto !important;
+      gap: 18px !important;
+    }
+
+    header > nav a {
+      display: inline-block !important;
+      width: auto !important;
+      margin: 0 !important;
+      white-space: nowrap !important;
+    }
+
   </style>
 </head>
 
