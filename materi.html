@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pusat Materi Pembelajaran Bahasa Indonesia Mandala Aksara untuk Kelas X, XI, dan XII.">
+  <title>Materi Pembelajaran | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --orange: #F28C28;
+      --gold: #C69A45;
+      --soft: #F3F5F8;
+      --dark: #343A40;
+    }
+
+    body {
+      margin: 0;
+      color: var(--dark);
+      background: #fff;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    .ma-header {
+      background: white;
+      padding: 20px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .ma-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: var(--navy);
+    }
+
+    .ma-brand img {
+      width: 62px;
+      height: 62px;
+      object-fit: contain;
+    }
+
+    .ma-brand strong {
+      font-family: Georgia, serif;
+      font-size: 23px;
+      letter-spacing: 2px;
+    }
+
+    .ma-brand small {
+      display: block;
+      color: #69717c;
+      font-style: italic;
+      font-size: 12px;
+    }
+
+    .ma-nav a {
+      color: var(--navy);
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 600;
+    }
+
+    .ma-nav a:hover { color: var(--orange); }
+
+    .ma-hero {
+      background: var(--navy);
+      color: white;
+      padding: 65px 8%;
+      text-align: center;
+    }
+
+    .ma-hero .eyebrow {
+      color: #efc17c;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .ma-hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 5vw, 48px);
+      margin: 12px 0;
+    }
+
+    .ma-hero h1 span { color: var(--orange); }
+
+    .ma-hero p {
+      max-width: 720px;
+      margin: 15px auto 0;
+      color: #e3e9f1;
+    }
+
+    .ma-container {
+      max-width: 1120px;
+      margin: auto;
+      padding: 55px 22px;
+    }
+
+    .ma-heading {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .ma-heading h2 {
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .ma-heading .line {
+      width: 75px;
+      height: 4px;
+      background: var(--orange);
+      margin: 15px auto;
+    }
+
+    .ma-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .ma-card {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      background: white;
+      border: 1px solid #e6e9ee;
+      border-radius: 13px;
+      padding: 27px;
+      box-shadow: 0 5px 20px rgba(20,43,74,.07);
+    }
+
+    /* Watermark hitam-putih yang sangat samar */
+    .ma-watermark::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background-image: url("logo-mandala-aksara.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 190px;
+      filter: grayscale(100%);
+      opacity: 0.045;
+      pointer-events: none;
+    }
+
+    .ma-card .number {
+      color: var(--orange);
+      font-family: Georgia, serif;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .ma-card h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin: 8px 0;
+    }
+
+    .ma-card p { color: #626b76; }
+
+    .ma-button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 19px;
+      background: var(--navy);
+      color: white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .ma-button:hover { background: var(--orange); }
+
+    .ma-elements {
+      background: var(--soft);
+      padding: 55px 22px;
+    }
+
+    .ma-element-grid {
+      max-width: 1120px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .ma-element {
+      background: white;
+      padding: 23px 18px;
+      border-radius: 10px;
+      border-top: 4px solid var(--gold);
+      text-align: center;
+    }
+
+    .ma-element h3 {
+      color: var(--navy);
+      font-size: 17px;
+    }
+
+    .ma-note {
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      max-width: 1000px;
+      margin: 55px auto;
+      padding: 35px;
+      background: #fff;
+      border-left: 5px solid var(--orange);
+      box-shadow: 0 5px 22px rgba(20,43,74,.08);
+      border-radius: 8px;
+    }
+
+    .ma-note h2 { color: var(--navy); }
+
+    .ma-footer {
+      background: var(--navy);
+      color: #e5eaf1;
+      text-align: center;
+      padding: 35px 20px;
+      border-top: 5px solid var(--orange);
+    }
+
+    .ma-footer strong {
+      color: white;
+      font-family: Georgia, serif;
+      letter-spacing: 2px;
+    }
+
+    @media(max-width: 760px) {
+      .ma-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .ma-nav a {
+        display: inline-block;
+        margin: 5px 12px 5px 0;
+      }
+      .ma-grid { grid-template-columns: 1fr; }
+      .ma-element-grid { grid-template-columns: repeat(2, 1fr); }
+      .ma-hero { padding: 48px 22px; }
+    }
+
+    @media(max-width: 380px) {
+      .ma-element-grid { grid-template-columns: 1fr; }
+      .ma-brand strong { font-size: 19px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="ma-header">
+  <a href="index.html" class="ma-brand">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span>
+      <strong>MANDALA AKSARA</strong>
+      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+    </span>
+  </a>
+
+  <nav class="ma-nav">
+    <a href="index.html">Beranda</a>
+    <a href="materi.html">Materi</a>
+    <a href="#jenjang">Jenjang Kelas</a>
+  </nav>
+</header>
+
+<section class="ma-hero">
+  <div class="eyebrow">RUANG LITERASI • RUANG BERTUMBUH</div>
+  <h1>Materi <span>Pembelajaran</span></h1>
+  <p>
+    Jelajahi pengetahuan Bahasa Indonesia melalui kegiatan
+    memahami, mengaplikasi, dan merefleksi.
+    Belajar bahasa, mengapresiasi sastra, dan membangun literasi.
+  </p>
+</section>
+
+<main>
+  <section class="ma-container" id="jenjang">
+    <div class="ma-heading">
+      <h2>Jelajahi Materi Berdasarkan Jenjang</h2>
+      <div class="line"></div>
+      <p>Pilih jenjang pembelajaran untuk mulai menjelajahi materi.</p>
+    </div>
+
+    <div class="ma-grid">
+      <article class="ma-card ma-watermark">
+        <div class="number">X</div>
+        <h3>Kelas X</h3>
+        <p>
+          Membangun fondasi keterampilan berbahasa,
+          memahami berbagai jenis teks, dan mengembangkan
+          kebiasaan literasi.
+        </p>
+        <a class="ma-button" href="#kelas-x">Jelajahi Kelas X →</a>
+      </article>
+
+      <article class="ma-card ma-watermark">
+        <div class="number">XI</div>
+        <h3>Kelas XI</h3>
+        <p>
+          Mengembangkan kemampuan analisis, argumentasi,
+          apresiasi sastra, dan komunikasi kritis.
+        </p>
+        <a class="ma-button" href="#kelas-xi">Jelajahi Kelas XI →</a>
+      </article>
+
+      <article class="ma-card ma-watermark">
+        <div class="number">XII</div>
+        <h3>Kelas XII</h3>
+        <p>
+          Menguatkan literasi kritis, penalaran,
+          kreativitas, dan komunikasi akademis.
+        </p>
+        <a class="ma-button" href="#kelas-xii">Jelajahi Kelas XII →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="ma-elements">
+    <div class="ma-heading">
+      <h2>Empat Elemen Pembelajaran Bahasa</h2>
+      <div class="line"></div>
+      <p>Bahasa dipelajari melalui keterampilan yang saling terhubung.</p>
+    </div>
+
+    <div class="ma-element-grid">
+      <div class="ma-element">
+        <h3>Menyimak</h3>
+        <p>Memahami dan mengevaluasi informasi lisan secara kritis.</p>
+      </div>
+      <div class="ma-element">
+        <h3>Membaca dan Memirsa</h3>
+        <p>Menafsirkan teks, gambar, dan berbagai sumber informasi.</p>
+      </div>
+      <div class="ma-element">
+        <h3>Berbicara dan Mempresentasikan</h3>
+        <p>Menyampaikan gagasan secara logis, santun, dan efektif.</p>
+      </div>
+      <div class="ma-element">
+        <h3>Menulis</h3>
+        <p>Menghasilkan gagasan dan berbagai bentuk teks secara kreatif.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ma-container">
+    <div class="ma-note ma-watermark">
+      <h2>Pembelajaran Mendalam</h2>
+      <p>
+        Materi Mandala Aksara dirancang untuk menghadirkan
+        pengalaman belajar yang berkesadaran, bermakna,
+        dan menggembirakan.
+      </p>
+      <p>
+        Setiap kegiatan mengajak pembelajar melalui tiga
+        pengalaman utama: memahami, mengaplikasi,
+        dan merefleksi.
+      </p>
+    </div>
+
+    <div class="ma-heading">
+      <h2>Ruang Belajar Berdasarkan Fase</h2>
+      <div class="line"></div>
+      <p>
+        Materi disusun dengan memperhatikan Capaian Pembelajaran
+        Bahasa Indonesia pada setiap fase.
+      </p>
+    </div>
+
+    <div class="ma-grid">
+      <article class="ma-card ma-watermark" id="kelas-x">
+        <h3>Fase E — Kelas X</h3>
+        <p>Penguatan fondasi literasi dan keterampilan berbahasa.</p>
+      </article>
+      <article class="ma-card ma-watermark" id="kelas-xi">
+        <h3>Fase F — Kelas XI</h3>
+        <p>Pengembangan analisis, penalaran, dan apresiasi.</p>
+      </article>
+      <article class="ma-card ma-watermark" id="kelas-xii">
+        <h3>Fase F — Kelas XII</h3>
+        <p>Penguatan kompetensi literasi dan komunikasi akademis.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="ma-footer">
+  <strong>MANDALA AKSARA</strong>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+  <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+</footer>
+
+</body>
+</html>
