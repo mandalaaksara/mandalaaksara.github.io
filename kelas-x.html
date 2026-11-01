@@ -229,32 +229,6 @@
       .section { padding: 22px 18px; }
     }
 
-    /* Navigasi khusus halaman Kelas X */
-    header {
-      display: flex !important;
-      flex-direction: row !important;
-      flex-wrap: nowrap !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-      gap: 8px !important;
-    }
-
-    header nav {
-      display: flex !important;
-      flex-direction: row !important;
-      flex-wrap: wrap !important;
-      align-items: center !important;
-      justify-content: center !important;
-      width: auto !important;
-      gap: 12px !important;
-    }
-
-    header nav a {
-      display: inline-block !important;
-      width: auto !important;
-      padding: 8px !important;
-      white-space: nowrap !important;
-    }
 
   </style>
 </head>
@@ -507,5 +481,28 @@
   <p>Ruang Literasi dan Pembelajaran Bahasa Indonesia</p>
 </footer>
 
+  <script>
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
+
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute(
+      'aria-expanded',
+      nav.classList.contains('open')
+    );
+  });
+}
+
+document.querySelectorAll('.nav-trigger').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 1050px)').matches) {
+      btn.parentElement.classList.toggle('expanded');
+    }
+  });
+});
+  </script>
+  
 </body>
 </html>
