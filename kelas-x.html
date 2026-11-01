@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materi pembelajaran Bahasa Indonesia Kelas X Fase E di Mandala Aksara.">
+  <title>Bahasa Indonesia Kelas X | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --orange: #F28C28;
+      --gold: #C69A45;
+      --white: #FFFFFF;
+      --soft: #F3F5F8;
+      --dark: #343A40;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--dark);
+      background: var(--soft);
+      line-height: 1.7;
+    }
+
+    a { text-decoration: none; }
+
+    header {
+      background: var(--white);
+      padding: 14px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--navy);
+    }
+
+    .brand img {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+    }
+
+    .brand h2 {
+      margin: 0;
+      font-size: 19px;
+      letter-spacing: 1px;
+    }
+
+    .brand small {
+      display: block;
+      font-size: 11px;
+      color: #666;
+      letter-spacing: 0;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover { color: var(--orange); }
+
+    .hero {
+      background: linear-gradient(120deg, #142B4A, #25496F);
+      color: white;
+      padding: 65px 8%;
+      text-align: center;
+      border-bottom: 5px solid var(--orange);
+    }
+
+    .hero .label {
+      color: #F5C77D;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      margin: 12px 0;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      color: #E5EAF0;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      background: white;
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(20,43,74,.06);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ma-watermark::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("logo-mandala-aksara.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 230px;
+      filter: grayscale(100%);
+      opacity: .045;
+      pointer-events: none;
+    }
+
+    .section > * {
+      position: relative;
+    }
+
+    .section h2 {
+      color: var(--navy);
+      margin-top: 0;
+      border-left: 4px solid var(--orange);
+      padding-left: 13px;
+    }
+
+    .section h3 { color: var(--navy); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #E5E9EF;
+      border-radius: 12px;
+      padding: 22px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.04);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      background: var(--navy);
+      color: white;
+      border-radius: 50%;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #FFF1E2;
+      color: #9A5310;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 3px;
+    }
+
+    .callout {
+      background: #EEF3F8;
+      border-left: 4px solid var(--gold);
+      padding: 18px;
+      border-radius: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--orange);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 7px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .button:hover { background: #D87516; }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 28px 15px;
+      border-top: 5px solid var(--orange);
+      font-size: 13px;
+    }
+
+    footer p { margin: 5px; }
+
+    @media (max-width: 650px) {
+      header { justify-content: center; }
+      nav { justify-content: center; }
+      .hero { padding: 45px 20px; }
+      .section { padding: 22px 18px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a class="brand" href="index.html">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <div>
+      <h2>MANDALA AKSARA</h2>
+      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+    </div>
+  </a>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="materi.html">Materi Pembelajaran</a>
+    <a href="materi.html#jenjang">Jenjang Kelas</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="label">FASE E · KELAS X</div>
+  <h1>Bahasa Indonesia Kelas X</h1>
+  <p>
+    Mengembangkan kemampuan berbahasa, bernalar kritis,
+    memahami informasi, serta mengungkapkan gagasan secara
+    lisan dan tulisan.
+  </p>
+</section>
+
+<main>
+
+  <section class="section ma-watermark">
+    <h2>Selamat Datang di Ruang Belajar Kelas X</h2>
+    <p>
+      Selamat datang di ruang pembelajaran Bahasa Indonesia
+      Kelas X Fase E. Di sini, peserta didik diajak menjelajahi
+      berbagai teks, memahami informasi, mengembangkan gagasan,
+      serta menggunakan bahasa Indonesia secara santun,
+      kritis, dan bertanggung jawab.
+    </p>
+    <div class="callout">
+      <strong>Arah Pembelajaran</strong>
+      <p>
+        Pembelajaran diarahkan pada penguatan literasi,
+        kemampuan berpikir kritis, kreativitas, komunikasi,
+        dan kolaborasi melalui kegiatan berbahasa yang
+        dekat dengan kehidupan sehari-hari.
+      </p>
+    </div>
+  </section>
+
+  <section class="section ma-watermark">
+    <h2>Tujuan Pembelajaran</h2>
+    <p>Setelah mengikuti pembelajaran, peserta didik diharapkan mampu:</p>
+    <ul>
+      <li>Memahami dan mengevaluasi informasi dari berbagai teks.</li>
+      <li>Mengidentifikasi gagasan, struktur, dan kaidah kebahasaan.</li>
+      <li>Menyampaikan pendapat dan gagasan secara logis dan santun.</li>
+      <li>Menyusun berbagai jenis teks sesuai tujuan dan konteks.</li>
+      <li>Mengembangkan sikap kritis, kreatif, mandiri, dan kolaboratif.</li>
+    </ul>
+  </section>
+
+  <section class="section ma-watermark">
+    <h2>Empat Elemen Pembelajaran Bahasa Indonesia</h2>
+    <div class="grid">
+
+      <div class="card">
+        <div class="number">1</div>
+        <h3>Menyimak</h3>
+        <p>
+          Memahami, mengolah, dan mengevaluasi informasi
+          yang disampaikan secara lisan dalam berbagai konteks.
+        </p>
+        <span class="tag">Mendengarkan</span>
+        <span class="tag">Memahami</span>
+      </div>
+
+      <div class="card">
+        <div class="number">2</div>
+        <h3>Membaca dan Memirsa</h3>
+        <p>
+          Memahami, menganalisis, dan mengevaluasi informasi
+          dari teks tertulis maupun teks visual.
+        </p>
+        <span class="tag">Literasi</span>
+        <span class="tag">Analisis Teks</span>
+      </div>
+
+      <div class="card">
+        <div class="number">3</div>
+        <h3>Berbicara dan Mempresentasikan</h3>
+        <p>
+          Menyampaikan gagasan, tanggapan, dan hasil pemikiran
+          secara runtut, kritis, dan santun.
+        </p>
+        <span class="tag">Komunikasi</span>
+        <span class="tag">Presentasi</span>
+      </div>
+
+      <div class="card">
+        <div class="number">4</div>
+        <h3>Menulis</h3>
+        <p>
+          Mengembangkan gagasan dan menghasilkan berbagai
+          jenis teks dengan struktur dan bahasa yang sesuai.
+        </p>
+        <span class="tag">Kreativitas</span>
+        <span class="tag">Produksi Teks</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section ma-watermark">
+    <h2>Ruang Materi Kelas X</h2>
+    <p>
+      Materi pembelajaran disusun secara bertahap untuk
+      membantu peserta didik memahami karakteristik teks,
+      mengembangkan keterampilan berbahasa, dan menerapkannya
+      dalam kehidupan.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Teks Laporan Hasil Observasi</h3>
+        <p>Mengenali objek, fakta, struktur, dan kebahasaan teks hasil pengamatan.</p>
+        <span class="tag">Membaca</span>
+        <span class="tag">Menulis</span>
+      </div>
+
+      <div class="card">
+        <h3>Teks Anekdot</h3>
+        <p>Memahami humor, kritik sosial, struktur, dan pesan dalam teks anekdot.</p>
+        <span class="tag">Membaca</span>
+        <span class="tag">Menganalisis</span>
+      </div>
+
+      <div class="card">
+        <h3>Teks Hikayat</h3>
+        <p>Mengapresiasi karya sastra lama, nilai kehidupan, dan karakter tokoh.</p>
+        <span class="tag">Sastra</span>
+        <span class="tag">Apresiasi</span>
+      </div>
+
+      <div class="card">
+        <h3>Teks Negosiasi</h3>
+        <p>Memahami proses tawar-menawar dan menyusun komunikasi yang efektif.</p>
+        <span class="tag">Berbicara</span>
+        <span class="tag">Menulis</span>
+      </div>
+
+      <div class="card">
+        <h3>Teks Biografi</h3>
+        <p>Mengidentifikasi perjalanan hidup, keteladanan, dan nilai inspiratif tokoh.</p>
+        <span class="tag">Membaca</span>
+        <span class="tag">Merefleksi</span>
+      </div>
+
+      <div class="card">
+        <h3>Puisi</h3>
+        <p>Mengapresiasi unsur pembangun puisi dan mengekspresikan gagasan kreatif.</p>
+        <span class="tag">Sastra</span>
+        <span class="tag">Kreativitas</span>
+      </div>
+
+    </div>
+    <p>
+      <small>
+        Catatan: daftar materi merupakan rancangan awal.
+        Urutan dan cakupannya akan diselaraskan dengan
+        tujuan pembelajaran dan kebutuhan peserta didik.
+      </small>
+    </p>
+  </section>
+
+  <section class="section ma-watermark">
+    <h2>Pembelajaran Mendalam</h2>
+    <p>
+      Kegiatan belajar dikembangkan melalui tiga pengalaman
+      belajar yang saling berkaitan:
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Memahami</h3>
+        <p>Membangun pengetahuan dan menemukan makna dari materi yang dipelajari.</p>
+      </div>
+
+      <div class="card">
+        <h3>Mengaplikasi</h3>
+        <p>Menerapkan pengetahuan dan keterampilan dalam konteks nyata.</p>
+      </div>
+
+      <div class="card">
+        <h3>Merefleksi</h3>
+        <p>Mengevaluasi proses belajar dan merencanakan perbaikan diri.</p>
+      </div>
+    </div>
+
+    <p>
+      Seluruh pengalaman tersebut diupayakan berlangsung
+      secara berkesadaran, bermakna, dan menggembirakan.
+    </p>
+  </section>
+
+  <section class="section ma-watermark">
+    <h2>Latihan dan Refleksi</h2>
+    <p>
+      Setiap materi nantinya dilengkapi kegiatan latihan,
+      diskusi, proyek, dan refleksi untuk membantu peserta
+      didik mengukur perkembangan belajarnya.
+    </p>
+    <div class="callout">
+      <strong>Pertanyaan Reflektif</strong>
+      <p>
+        Apa pengetahuan atau keterampilan berbahasa yang
+        telah saya kuasai? Bagaimana saya dapat menerapkannya
+        dalam kehidupan sehari-hari?
+      </p>
+    </div>
+  </section>
+
+  <p style="text-align:center;">
+    <a class="button" href="materi.html">← Kembali ke Materi Pembelajaran</a>
+  </p>
+
+</main>
+
+<footer>
+  <p><strong>MANDALA AKSARA</strong></p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+  <p>Ruang Literasi dan Pembelajaran Bahasa Indonesia</p>
+</footer>
+
+</body>
+</html>
