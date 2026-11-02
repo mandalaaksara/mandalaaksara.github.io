@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karya Sastra | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .literature-hero {
+      background: linear-gradient(120deg, #0D203A, #142B4A);
+      color: white;
+      padding: 65px 7%;
+      text-align: center;
+      border-bottom: 5px solid #F28C28;
+    }
+
+    .literature-hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 5vw, 46px);
+      margin: 0 0 15px;
+    }
+
+    .literature-hero p {
+      max-width: 720px;
+      margin: auto;
+      line-height: 1.8;
+      color: #F3F5F8;
+    }
+
+    .literature-content {
+      max-width: 1150px;
+      margin: auto;
+      padding: 55px 22px 70px;
+    }
+
+    .literature-heading {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .literature-heading h2 {
+      color: #142B4A;
+      font-family: Georgia, serif;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .literature-heading p {
+      color: #59677A;
+      line-height: 1.7;
+    }
+
+    .literature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .literature-card {
+      display: block;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(20, 43, 74, .10);
+      border: 1px solid #e8edf2;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .literature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(20, 43, 74, .16);
+    }
+
+    .literature-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .literature-card-body {
+      padding: 22px;
+      border-top: 4px solid #F28C28;
+    }
+
+    .literature-card h3 {
+      color: #142B4A;
+      font-family: Georgia, serif;
+      font-size: 22px;
+      margin: 0 0 10px;
+    }
+
+    .literature-card p {
+      color: #59677A;
+      line-height: 1.7;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .literature-card span {
+      display: inline-block;
+      margin-top: 16px;
+      color: #D87516;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .literature-note {
+      background: #F3F5F8;
+      border-left: 5px solid #C69A45;
+      padding: 25px;
+      margin-top: 42px;
+      color: #142B4A;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 650px) {
+      .literature-hero {
+        padding: 48px 22px;
+      }
+
+      .literature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .literature-content {
+        padding: 38px 18px 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <div>
+      <strong>MANDALA AKSARA</strong>
+      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+    </div>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle"
+          aria-label="Buka navigasi" aria-expanded="false">☰</button>
+
+  <nav id="mainNav" aria-label="Navigasi utama">
+    <a href="index.html">Beranda</a>
+
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran <span>⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html" class="active">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="literature-hero">
+    <h1>Ruang Karya Sastra</h1>
+    <p>
+      Menyelami keindahan bahasa, merayakan imajinasi,
+      dan memahami kehidupan melalui karya sastra.
+      Temukan beragam karya yang menghidupkan kata
+      dan memperkaya makna.
+    </p>
+  </section>
+
+  <section class="literature-content">
+
+    <div class="literature-heading">
+      <h2>Jelajahi Karya Sastra</h2>
+      <p>
+        Setiap karya memiliki cerita, rasa, dan cara tersendiri
+        dalam memandang kehidupan.
+      </p>
+    </div>
+
+    <div class="literature-grid">
+
+      <a href="puisi.html" class="literature-card">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900"
+             alt="Buku dan tulisan puisi">
+        <div class="literature-card-body">
+          <h3>Puisi</h3>
+          <p>
+            Ruang ekspresi perasaan, gagasan, dan pengalaman
+            melalui pilihan kata yang indah dan penuh makna.
+          </p>
+          <span>Jelajahi karya →</span>
+        </div>
+      </a>
+
+      <a href="cerpen.html" class="literature-card">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900"
+             alt="Buku cerita pendek">
+        <div class="literature-card-body">
+          <h3>Cerita Pendek</h3>
+          <p>
+            Kumpulan cerita dengan beragam tema, tokoh,
+            konflik, dan pengalaman kehidupan.
+          </p>
+          <span>Jelajahi karya →</span>
+        </div>
+      </a>
+
+      <a href="novel.html" class="literature-card">
+        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=900"
+             alt="Koleksi buku novel">
+        <div class="literature-card-body">
+          <h3>Novel dan Novelet</h3>
+          <p>
+            Menjelajahi kisah yang lebih luas melalui
+            perkembangan tokoh, alur, latar, dan konflik.
+          </p>
+          <span>Jelajahi karya →</span>
+        </div>
+      </a>
+
+      <a href="drama.html" class="literature-card">
+        <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?w=900"
+             alt="Panggung pertunjukan drama">
+        <div class="literature-card-body">
+          <h3>Drama</h3>
+          <p>
+            Karya sastra berbentuk dialog yang menghadirkan
+            konflik dan kehidupan melalui seni pertunjukan.
+          </p>
+          <span>Jelajahi karya →</span>
+        </div>
+      </a>
+
+      <a href="karya-sastra-lainnya.html" class="literature-card">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900"
+             alt="Naskah dan karya tulis">
+        <div class="literature-card-body">
+          <h3>Karya Sastra Lainnya</h3>
+          <p>
+            Ruang untuk bentuk karya sastra lain,
+            termasuk cerita rakyat, fabel, dan bentuk sastra tradisional.
+          </p>
+          <span>Jelajahi karya →</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="literature-note">
+      <strong>Apresiasi Sastra</strong><br>
+      Sastra bukan hanya rangkaian kata, melainkan cermin
+      kehidupan, ruang imajinasi, dan sarana memahami manusia
+      serta dunia di sekitarnya.
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+
+<script>
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
+
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute(
+      'aria-expanded',
+      nav.classList.contains('open')
+    );
+  });
+}
+
+document.querySelectorAll('.nav-trigger').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 1050px)').matches) {
+      btn.parentElement.classList.toggle('expanded');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
