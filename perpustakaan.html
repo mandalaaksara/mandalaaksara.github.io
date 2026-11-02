@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perpustakaan Digital | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .library-hero {
+      background: linear-gradient(120deg, #0D203A, #142B4A);
+      color: white;
+      padding: 75px 7%;
+      text-align: center;
+      border-bottom: 5px solid #F28C28;
+    }
+
+    .library-hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(30px, 5vw, 46px);
+      margin: 0 0 16px;
+    }
+
+    .library-hero p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+      color: #F3F5F8;
+    }
+
+    .library-content {
+      max-width: 1150px;
+      margin: auto;
+      padding: 55px 22px 70px;
+    }
+
+    .library-heading {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .library-heading h2 {
+      color: #142B4A;
+      font-family: Georgia, serif;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .library-heading p {
+      color: #59677A;
+      line-height: 1.7;
+    }
+
+    .library-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .library-card {
+      display: block;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(20, 43, 74, 0.10);
+      border: 1px solid #e8edf2;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .library-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(20, 43, 74, 0.16);
+    }
+
+    .library-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .library-card-body {
+      padding: 22px;
+      border-top: 4px solid #F28C28;
+    }
+
+    .library-card h3 {
+      color: #142B4A;
+      font-family: Georgia, serif;
+      font-size: 22px;
+      margin: 0 0 10px;
+    }
+
+    .library-card p {
+      color: #59677A;
+      line-height: 1.7;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .library-card span {
+      display: inline-block;
+      margin-top: 16px;
+      color: #D87516;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .library-quote {
+      background: #F3F5F8;
+      border-left: 5px solid #C69A45;
+      padding: 25px;
+      margin-top: 45px;
+      text-align: center;
+      color: #142B4A;
+      font-family: Georgia, serif;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 650px) {
+      .library-hero {
+        padding: 50px 22px;
+      }
+
+      .library-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .library-card img {
+        height: 180px;
+      }
+
+      .library-content {
+        padding: 38px 18px 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <div>
+      <strong>MANDALA AKSARA</strong>
+      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+    </div>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle"
+          aria-label="Buka navigasi" aria-expanded="false">☰</button>
+
+  <nav id="mainNav" aria-label="Navigasi utama">
+    <a href="index.html">Beranda</a>
+
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran <span>⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html" class="active">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="library-hero">
+    <h1>Menemukan Kata, Merawat Pengetahuan</h1>
+    <p>
+      Selamat datang di Perpustakaan Digital Mandala Aksara.
+      Ruang untuk menjelajahi karya sastra, memperkaya wawasan
+      kebahasaan, membaca berbagai pengetahuan, dan mengembangkan
+      tradisi berpikir ilmiah.
+    </p>
+  </section>
+
+  <section class="library-content">
+
+    <div class="library-heading">
+      <h2>Jelajahi Koleksi</h2>
+      <p>
+        Temukan bahan bacaan dan referensi melalui empat ruang
+        koleksi literasi Mandala Aksara.
+      </p>
+    </div>
+
+    <div class="library-grid">
+
+      <a href="karya-sastra.html" class="library-card">
+        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=900"
+             alt="Buku dan karya sastra">
+        <div class="library-card-body">
+          <h3>Karya Sastra</h3>
+          <p>
+            Ruang apresiasi karya sastra yang mencakup puisi,
+            cerpen, novel, novelet, drama, dan berbagai karya literer.
+          </p>
+          <span>Jelajahi koleksi →</span>
+        </div>
+      </a>
+
+      <a href="referensi-kebahasaan.html" class="library-card">
+        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900"
+             alt="Buku referensi kebahasaan">
+        <div class="library-card-body">
+          <h3>Referensi Kebahasaan</h3>
+          <p>
+            Kumpulan referensi ejaan, tata bahasa, kosakata,
+            istilah, dan pedoman penggunaan bahasa Indonesia.
+          </p>
+          <span>Jelajahi koleksi →</span>
+        </div>
+      </a>
+
+      <a href="bahan-bacaan.html" class="library-card">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=900"
+             alt="Rak buku dan bahan bacaan">
+        <div class="library-card-body">
+          <h3>Bahan Bacaan</h3>
+          <p>
+            Beragam bacaan informatif, pengetahuan umum,
+            esai populer, refleksi, dan tulisan inspiratif.
+          </p>
+          <span>Jelajahi koleksi →</span>
+        </div>
+      </a>
+
+      <a href="karya-ilmiah.html" class="library-card">
+        <img src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=900"
+             alt="Dokumen dan karya ilmiah">
+        <div class="library-card-body">
+          <h3>Karya Ilmiah</h3>
+          <p>
+            Ruang publikasi esai akademik, artikel ilmiah,
+            makalah, laporan penelitian, dan karya tulis ilmiah.
+          </p>
+          <span>Jelajahi koleksi →</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="library-quote">
+      “Membaca adalah perjalanan memasuki dunia pengetahuan;
+      menulis adalah cara mengabadikan pemikiran.”
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+
+<script>
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
+
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute(
+      'aria-expanded',
+      nav.classList.contains('open')
+    );
+  });
+}
+
+document.querySelectorAll('.nav-trigger').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 1050px)').matches) {
+      btn.parentElement.classList.toggle('expanded');
+    }
+  });
+});
+</script>
+
+</body>
+  </html>
