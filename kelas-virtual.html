@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelas Virtual | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .virtual-hero {
+      background: linear-gradient(135deg, #0D203A, #1D4268);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .virtual-hero h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      margin-bottom: 12px;
+    }
+
+    .virtual-hero p {
+      max-width: 720px;
+      margin: auto;
+      line-height: 1.8;
+      color: #E8EDF4;
+    }
+
+    .virtual-content {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 22px;
+    }
+
+    .virtual-section {
+      margin-bottom: 55px;
+    }
+
+    .virtual-section h2 {
+      color: #142B4A;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .section-intro {
+      color: #657184;
+      text-align: center;
+      line-height: 1.8;
+      max-width: 720px;
+      margin: 0 auto 28px;
+    }
+
+    .virtual-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .virtual-card {
+      border: 1px solid #E1E6ED;
+      border-radius: 16px;
+      padding: 25px;
+      background: white;
+      box-shadow: 0 5px 18px rgba(20,43,74,.06);
+    }
+
+    .virtual-icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .virtual-card h3 {
+      color: #142B4A;
+      margin-bottom: 10px;
+    }
+
+    .virtual-card p {
+      color: #657184;
+      line-height: 1.7;
+      font-size: .95rem;
+    }
+
+    .virtual-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 11px 18px;
+      border-radius: 8px;
+      background: #F28C28;
+      color: #142B4A;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .virtual-button:hover {
+      background: #E57B16;
+    }
+
+    .virtual-button.secondary {
+      background: #142B4A;
+      color: white;
+    }
+
+    .virtual-button[hidden] {
+      display: none;
+    }
+
+    .virtual-empty {
+      text-align: center;
+      padding: 28px 20px;
+      background: #F3F5F8;
+      border-radius: 14px;
+      color: #657184;
+      line-height: 1.8;
+    }
+
+    .playlist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .playlist-card {
+      border: 1px solid #E1E6ED;
+      border-radius: 14px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .playlist-card iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 0;
+      display: block;
+    }
+
+    .playlist-info {
+      padding: 17px;
+    }
+
+    .playlist-info h3 {
+      color: #142B4A;
+      margin-bottom: 7px;
+    }
+
+    .playlist-info p {
+      color: #657184;
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+
+    .virtual-quote {
+      max-width: 850px;
+      margin: 55px auto;
+      padding: 25px 28px;
+      border-left: 5px solid #F28C28;
+      border-radius: 0 14px 14px 0;
+      background: #FFF9F1;
+      color: #34445A;
+      font-family: Georgia, serif;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    .virtual-quote strong {
+      display: block;
+      margin-top: 12px;
+      color: #142B4A;
+      font-family: Arial, sans-serif;
+      font-style: normal;
+    }
+
+    @media (max-width: 600px) {
+      .virtual-content {
+        padding: 0 16px;
+      }
+
+      .virtual-card {
+        padding: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span>MANDALA AKSARA</span>
+  </a>
+
+  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+
+  <nav id="mainNav">
+    <a href="index.html">Beranda</a>
+
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran <span>⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html" class="active">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+  <section class="virtual-hero">
+    <h1>Kelas Virtual</h1>
+    <p>
+      Ruang pembelajaran digital untuk bertemu, berdiskusi,
+      menyimak materi, dan menjelajahi pengetahuan tanpa
+      batas ruang dan waktu.
+    </p>
+  </section>
+
+  <div class="virtual-content">
+
+    <section class="virtual-section">
+      <h2>Ruang Pertemuan Langsung</h2>
+      <p class="section-intro">
+        Terhubung melalui Google Meet untuk mengikuti
+        pembelajaran, diskusi, presentasi, dan konsultasi.
+      </p>
+
+      <div class="virtual-grid">
+        <article class="virtual-card">
+          <div class="virtual-icon">🎥</div>
+          <h3>Ruang Meet Bersama</h3>
+          <p>
+            Ruang pertemuan yang dapat digunakan kembali
+            untuk kegiatan pembelajaran sesuai pengaturan
+            penyelenggara.
+          </p>
+          <a id="permanentMeet"
+             class="virtual-button"
+             target="_blank"
+             rel="noopener"
+             hidden>Gabung Pertemuan</a>
+          <p id="permanentMeetStatus">Tautan ruang Meet belum diatur.</p>
+        </article>
+
+        <article class="virtual-card">
+          <div class="virtual-icon">📅</div>
+          <h3>Pertemuan Terjadwal</h3>
+          <p>
+            Akses pertemuan berdasarkan jadwal dan kegiatan
+            pembelajaran yang telah ditentukan.
+          </p>
+          <a id="scheduledMeet"
+             class="virtual-button secondary"
+             target="_blank"
+             rel="noopener"
+             hidden>Lihat Pertemuan</a>
+          <p id="scheduledMeetStatus">Informasi jadwal belum tersedia.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="virtual-section">
+      <h2>Video Pembelajaran</h2>
+      <p class="section-intro">
+        Jelajahi video dan playlist pembelajaran dari berbagai
+        kanal YouTube untuk memperkaya pengalaman belajar.
+      </p>
+
+      <div id="playlistContainer" class="playlist-grid"></div>
+
+      <div id="playlistEmpty" class="virtual-empty">
+        <h3>Koleksi Video Sedang Disiapkan</h3>
+        <p>
+          Playlist pembelajaran akan ditampilkan di sini,
+          termasuk video pilihan dari kanal YouTube lainnya.
+        </p>
+      </div>
+    </section>
+
+    <blockquote class="virtual-quote">
+      “Jarak bukan penghalang bagi pengetahuan; selama
+      pikiran terbuka dan semangat belajar menyala,
+      ruang belajar dapat hadir di mana saja.”
+      <strong>— Mandala Aksara</strong>
+    </blockquote>
+
+  </div>
+</main>
+
+<footer>
+  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+
+<script>
+/* ==================================
+   PENGATURAN KELAS VIRTUAL
+   Isi alamat yang sebenarnya di sini.
+   ================================== */
+
+// Satu link Google Meet yang digunakan berulang kali.
+const permanentMeetUrl = "";
+
+// Link halaman jadwal atau daftar pertemuan.
+// Bisa berupa Google Calendar atau halaman informasi.
+const scheduledMeetUrl = "";
+
+// Daftar playlist YouTube.
+// Gunakan ID playlist, bukan seluruh alamat URL.
+// Contoh ID: PLxxxxxxxxxxxxxxxx
+const playlists = [
+  /*
+  {
+    title: "Materi Bahasa Indonesia",
+    description: "Playlist pembelajaran Bahasa Indonesia.",
+    id: "MASUKKAN_ID_PLAYLIST"
+  },
+  {
+    title: "Video Pembelajaran Pilihan",
+    description: "Kumpulan video dari kanal YouTube lainnya.",
+    id: "MASUKKAN_ID_PLAYLIST"
+  }
+  */
+];
+
+// Menampilkan tautan Meet jika sudah diisi.
+if (permanentMeetUrl.trim() !== "") {
+  const link = document.getElementById("permanentMeet");
+  link.href = permanentMeetUrl;
+  link.hidden = false;
+  document.getElementById("permanentMeetStatus").hidden = true;
+}
+
+if (scheduledMeetUrl.trim() !== "") {
+  const link = document.getElementById("scheduledMeet");
+  link.href = scheduledMeetUrl;
+  link.hidden = false;
+  document.getElementById("scheduledMeetStatus").hidden = true;
+}
+
+// Menampilkan playlist YouTube.
+const playlistContainer = document.getElementById("playlistContainer");
+const playlistEmpty = document.getElementById("playlistEmpty");
+
+const activePlaylists = playlists.filter(item =>
+  item.id && item.id !== "MASUKKAN_ID_PLAYLIST"
+);
+
+if (activePlaylists.length > 0) {
+  playlistEmpty.hidden = true;
+
+  activePlaylists.forEach(item => {
+    const card = document.createElement("article");
+    card.className = "playlist-card";
+
+    const frame = document.createElement("iframe");
+    frame.src = "https://www.youtube-nocookie.com/embed/videoseries?list="
+      + encodeURIComponent(item.id);
+    frame.title = item.title;
+    frame.loading = "lazy";
+    frame.allow =
+      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    frame.allowFullscreen = true;
+
+    const info = document.createElement("div");
+    info.className = "playlist-info";
+
+    const title = document.createElement("h3");
+    title.textContent = item.title;
+
+    const description = document.createElement("p");
+    description.textContent = item.description;
+
+    info.append(title, description);
+    card.append(frame, info);
+    playlistContainer.append(card);
+  });
+}
+
+// Menu navigasi ponsel.
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("mainNav");
+
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+    toggle.setAttribute(
+      "aria-expanded",
+      nav.classList.contains("open")
+    );
+  });
+}
+
+document.querySelectorAll(".nav-trigger").forEach(btn => {
+  btn.addEventListener("click", () => {
+    if (window.matchMedia("(max-width: 1050px)").matches) {
+      btn.parentElement.classList.toggle("expanded");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
