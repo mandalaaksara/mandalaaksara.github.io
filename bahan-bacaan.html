@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahan Bacaan | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .reading-hero {
+      background: linear-gradient(135deg, #0D203A, #1D4268);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .reading-hero h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      margin-bottom: 12px;
+    }
+
+    .reading-hero p {
+      max-width: 680px;
+      margin: auto;
+      line-height: 1.8;
+      color: #E8EDF4;
+    }
+
+    .reading-content {
+      max-width: 1050px;
+      margin: 55px auto;
+      padding: 0 22px;
+    }
+
+    .reading-content h2 {
+      color: #142B4A;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .reading-intro {
+      text-align: center;
+      color: #626D7B;
+      line-height: 1.8;
+      max-width: 720px;
+      margin: 0 auto 35px;
+    }
+
+    .reading-empty {
+      background: #F3F5F8;
+      border-radius: 14px;
+      padding: 38px 22px;
+      text-align: center;
+      color: #526174;
+      line-height: 1.8;
+    }
+
+    .reading-quote {
+      max-width: 850px;
+      margin: 55px auto;
+      padding: 25px 22px;
+      text-align: center;
+      border-left: 4px solid #F28C28;
+      background: #F8F9FB;
+      color: #34445A;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    .reading-quote strong {
+      display: block;
+      margin-top: 12px;
+      color: #142B4A;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span>MANDALA AKSARA</span>
+  </a>
+
+  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+
+  <nav id="mainNav">
+    <a href="index.html">Beranda</a>
+
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran <span>⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html" class="active">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+  <section class="reading-hero">
+    <h1>Bahan Bacaan</h1>
+    <p>
+      Memperluas wawasan, memperkaya pengetahuan,
+      dan menumbuhkan kecintaan terhadap kegiatan membaca.
+    </p>
+  </section>
+
+  <section class="reading-content">
+    <h2>Ruang Baca Mandala Aksara</h2>
+    <p class="reading-intro">
+      Ruang ini menghimpun beragam bahan bacaan yang dapat
+      digunakan untuk menambah wawasan, mengembangkan
+      pemikiran kritis, serta memperluas cakrawala pengetahuan.
+    </p>
+
+    <div class="reading-empty">
+      <h3>Koleksi Bahan Bacaan Sedang Disiapkan</h3>
+      <p>
+        Berbagai artikel, esai, biografi, dan bacaan pengayaan
+        akan dihadirkan di ruang ini.
+      </p>
+    </div>
+  </section>
+
+  <blockquote class="reading-quote">
+    “Membaca adalah perjalanan tanpa batas; setiap halaman
+    membuka jalan menuju pemahaman yang lebih luas.”
+    <strong>— Mandala Aksara</strong>
+  </blockquote>
+</main>
+
+<footer>
+  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+
+<script>
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
+
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute(
+      'aria-expanded',
+      nav.classList.contains('open')
+    );
+  });
+}
+
+document.querySelectorAll('.nav-trigger').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 1050px)').matches) {
+      btn.parentElement.classList.toggle('expanded');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
