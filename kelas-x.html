@@ -222,12 +222,69 @@
 
     footer p { margin: 5px; }
 
-    @media (max-width: 650px) {
-      header { justify-content: center; }
-      nav { justify-content: center; }
-      .hero { padding: 45px 20px; }
-      .section { padding: 22px 18px; }
-    }
+    @media (max-width: 1050px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 15px;
+  }
+
+  header .brand {
+    min-width: 0;
+  }
+
+  header .menu-toggle {
+    display: block;
+    margin-left: auto;
+    background: var(--navy);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 13px;
+    font-size: 19px;
+    cursor: pointer;
+  }
+
+  header nav#mainNav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  header nav#mainNav.open {
+    display: flex;
+  }
+
+  header nav#mainNav > a,
+  header nav#mainNav .nav-trigger {
+    width: 100%;
+    text-align: left;
+  }
+
+  header nav#mainNav .dropdown {
+    position: static;
+    box-shadow: none;
+    padding-left: 20px;
+  }
+
+  header nav#mainNav .nav-dropdown:hover .dropdown {
+    display: none;
+  }
+
+  header nav#mainNav .nav-dropdown.expanded .dropdown {
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero { padding: 45px 20px; }
+  .section { padding: 22px 18px; }
+}
 
 
   </style>
