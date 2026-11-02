@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karya Ilmiah | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .scientific-hero {
+      background: linear-gradient(135deg, #0D203A, #1D4268);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .scientific-hero h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      margin-bottom: 12px;
+    }
+
+    .scientific-hero p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.8;
+      color: #E8EDF4;
+    }
+
+    .scientific-content {
+      max-width: 1050px;
+      margin: 55px auto;
+      padding: 0 22px;
+    }
+
+    .scientific-content h2 {
+      color: #142B4A;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .scientific-intro {
+      text-align: center;
+      color: #626D7B;
+      line-height: 1.8;
+      max-width: 720px;
+      margin: 0 auto 35px;
+    }
+
+    .scientific-empty {
+      background: #F3F5F8;
+      border: 1px solid #E1E5EB;
+      border-radius: 16px;
+      padding: 40px 22px;
+      text-align: center;
+      color: #526174;
+      line-height: 1.8;
+    }
+
+    .scientific-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    .scientific-empty h3 {
+      color: #142B4A;
+      font-size: 1.4rem;
+      margin: 8px 0 12px;
+    }
+
+    .scientific-quote {
+      max-width: 850px;
+      margin: 55px auto;
+      padding: 25px 28px;
+      text-align: left;
+      border-left: 5px solid #F28C28;
+      border-radius: 0 14px 14px 0;
+      background: #FFF9F1;
+      color: #34445A;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    .scientific-quote strong {
+      display: block;
+      margin-top: 12px;
+      color: #142B4A;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span>MANDALA AKSARA</span>
+  </a>
+
+  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+
+  <nav id="mainNav">
+    <a href="index.html">Beranda</a>
+
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran <span>⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html" class="active">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+  <section class="scientific-hero">
+    <h1>Karya Ilmiah</h1>
+    <p>
+      Mengembangkan tradisi berpikir kritis, menyusun gagasan
+      secara sistematis, dan membangun pengetahuan
+      melalui penalaran serta penelitian.
+    </p>
+  </section>
+
+  <section class="scientific-content">
+    <h2>Ruang Karya Ilmiah</h2>
+    <p class="scientific-intro">
+      Ruang ini menghimpun berbagai karya tulis yang lahir
+      dari proses pengamatan, penelaahan, penelitian,
+      dan pengembangan gagasan secara ilmiah.
+    </p>
+
+    <div class="scientific-empty">
+      <div class="scientific-icon">📚</div>
+      <h3>Koleksi Karya Ilmiah Sedang Disiapkan</h3>
+      <p>
+        Makalah, artikel ilmiah, laporan penelitian,
+        dan hasil kajian akan dihadirkan sebagai
+        sumber belajar dan pengembangan wawasan.
+      </p>
+    </div>
+  </section>
+
+  <blockquote class="scientific-quote">
+    “Pengetahuan tumbuh ketika rasa ingin tahu
+    bertemu dengan ketekunan berpikir dan keberanian
+    mencari kebenaran.”
+    <strong>— Mandala Aksara</strong>
+  </blockquote>
+</main>
+
+<footer>
+  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+
+<script>
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
+
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute(
+      'aria-expanded',
+      nav.classList.contains('open')
+    );
+  });
+}
+
+document.querySelectorAll('.nav-trigger').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 1050px)').matches) {
+      btn.parentElement.classList.toggle('expanded');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
