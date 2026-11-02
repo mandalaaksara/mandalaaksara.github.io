@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drama | Mandala Aksara</title>
+  <meta name="description" content="Ruang apresiasi drama dan naskah drama di Mandala Aksara. Mengenal dialog, tokoh, konflik, dan kehidupan melalui karya sastra.">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .drama-hero {
+      background: linear-gradient(135deg, #0D203A, #23466B);
+      color: white;
+      padding: 75px 20px;
+      text-align: center;
+    }
+
+    .drama-hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 5vw, 48px);
+      margin: 0 0 15px;
+    }
+
+    .drama-hero p {
+      color: #F28C28;
+      font-size: 17px;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    .drama-content {
+      max-width: 1000px;
+      margin: 55px auto;
+      padding: 0 22px;
+      text-align: center;
+    }
+
+    .drama-content h2 {
+      color: #142B4A;
+      font-family: Georgia, serif;
+      font-size: 29px;
+      margin-bottom: 18px;
+    }
+
+    .drama-intro {
+      max-width: 720px;
+      margin: 0 auto 35px;
+      color: #596579;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .drama-empty {
+      background: #F3F5F8;
+      border: 1px solid #E1E6ED;
+      border-radius: 14px;
+      padding: 38px 22px;
+      margin: 30px 0 55px;
+    }
+
+    .drama-empty .stage-icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .drama-empty h3 {
+      color: #142B4A;
+      margin: 0 0 10px;
+      font-family: Georgia, serif;
+    }
+
+    .drama-empty p {
+      color: #687386;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .drama-quote {
+      max-width: 780px;
+      margin: 0 auto 65px;
+      padding: 28px 24px;
+      border-left: 4px solid #F28C28;
+      background: #FFF9F2;
+      text-align: left;
+      border-radius: 0 12px 12px 0;
+    }
+
+    .drama-quote p {
+      color: #34445A;
+      font-family: Georgia, serif;
+      font-size: 19px;
+      font-style: italic;
+      line-height: 1.8;
+      margin: 0 0 12px;
+    }
+
+    .drama-quote span {
+      color: #142B4A;
+      font-weight: bold;
+    }
+
+    @media (max-width: 650px) {
+      .drama-hero {
+        padding: 58px 18px;
+      }
+
+      .drama-content {
+        margin-top: 40px;
+      }
+
+      .drama-content h2 {
+        font-size: 25px;
+      }
+
+      .drama-quote p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span>MANDALA AKSARA</span>
+  </a>
+
+  <button id="menuToggle" class="menu-toggle"
+    type="button" aria-label="Buka menu" aria-expanded="false">
+    ☰
+  </button>
+
+  <nav id="mainNav">
+    <a href="index.html">Beranda</a>
+
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran <span>⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html" class="active">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+  <section class="drama-hero">
+    <h1>Drama</h1>
+    <p>Menghidupkan Dialog, Menafsirkan Kehidupan</p>
+  </section>
+
+  <section class="drama-content">
+    <h2>Ruang Apresiasi Drama</h2>
+
+    <p class="drama-intro">
+      Drama menghadirkan kehidupan melalui dialog, gerak, tokoh,
+      dan konflik yang dimainkan di atas panggung. Melalui karya
+      drama, pembaca dan penonton diajak memahami karakter manusia,
+      menyelami persoalan kehidupan, serta menafsirkan pesan di balik
+      setiap adegan.
+    </p>
+
+    <div class="drama-empty">
+      <div class="stage-icon">🎭</div>
+      <h3>Koleksi Drama Sedang Disiapkan</h3>
+      <p>
+        Ruang ini akan menghadirkan naskah dan karya drama untuk
+        dibaca, dipelajari, diapresiasi, dan dipentaskan.
+      </p>
+    </div>
+
+    <div class="drama-quote">
+      <p>
+        “Di atas panggung kehidupan, setiap peran menyimpan cerita,
+        setiap dialog menyuarakan rasa, dan setiap adegan mengajarkan makna.”
+      </p>
+      <span>— Mandala Aksara</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+
+<script>
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
+
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute(
+      'aria-expanded',
+      nav.classList.contains('open')
+    );
+  });
+}
+
+document.querySelectorAll('.nav-trigger').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 1050px)').matches) {
+      btn.parentElement.classList.toggle('expanded');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
