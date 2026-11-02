@@ -4,179 +4,206 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ruang Kelas Virtual Mandala Aksara untuk pembelajaran melalui Google Meet dan video YouTube.">
   <title>Kelas Virtual | Mandala Aksara</title>
   <link rel="stylesheet" href="style.css">
 
   <style>
+    :root {
+      --navy: #142B4A;
+      --navy-dark: #0D203A;
+      --orange: #F28C28;
+      --gold: #C69A45;
+      --soft: #F3F5F8;
+      --text: #263445;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     .virtual-hero {
-      background: linear-gradient(135deg, #0D203A, #1D4268);
+      background: linear-gradient(135deg, var(--navy-dark), var(--navy));
       color: white;
       text-align: center;
       padding: 65px 20px;
     }
 
     .virtual-hero h1 {
-      font-size: clamp(2rem, 5vw, 2.8rem);
-      margin-bottom: 12px;
+      margin: 0 0 15px;
+      font-size: clamp(30px, 5vw, 44px);
     }
 
     .virtual-hero p {
-      max-width: 720px;
+      max-width: 700px;
       margin: auto;
       line-height: 1.8;
-      color: #E8EDF4;
+      color: #e7edf5;
     }
 
-    .virtual-content {
+    .virtual-container {
       max-width: 1100px;
-      margin: 50px auto;
-      padding: 0 22px;
+      margin: auto;
+      padding: 45px 20px;
     }
 
-    .virtual-section {
-      margin-bottom: 55px;
+    .section-heading {
+      margin-bottom: 25px;
     }
 
-    .virtual-section h2 {
-      color: #142B4A;
-      margin-bottom: 10px;
-      text-align: center;
+    .section-heading h2 {
+      color: var(--navy);
+      font-size: 27px;
+      margin-bottom: 8px;
     }
 
-    .section-intro {
-      color: #657184;
-      text-align: center;
-      line-height: 1.8;
-      max-width: 720px;
-      margin: 0 auto 28px;
+    .section-heading p {
+      color: #667487;
+      line-height: 1.7;
+      margin: 0;
     }
 
-    .virtual-grid {
+    .meet-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
     }
 
-    .virtual-card {
-      border: 1px solid #E1E6ED;
-      border-radius: 16px;
-      padding: 25px;
+    .meet-card, .video-card {
       background: white;
-      box-shadow: 0 5px 18px rgba(20,43,74,.06);
+      border: 1px solid #e4e9ef;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(20,43,74,.07);
     }
 
-    .virtual-icon {
-      font-size: 38px;
+    .meet-card {
+      padding: 25px;
+    }
+
+    .card-icon {
+      font-size: 32px;
       margin-bottom: 12px;
     }
 
-    .virtual-card h3 {
-      color: #142B4A;
-      margin-bottom: 10px;
+    .meet-card h3, .video-info h3 {
+      color: var(--navy);
+      margin: 0 0 10px;
+      font-size: 20px;
     }
 
-    .virtual-card p {
-      color: #657184;
+    .meet-card p, .video-info p {
+      color: #667487;
       line-height: 1.7;
-      font-size: .95rem;
     }
 
-    .virtual-button {
+    .action-link {
       display: inline-block;
-      margin-top: 15px;
-      padding: 11px 18px;
-      border-radius: 8px;
-      background: #F28C28;
-      color: #142B4A;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .virtual-button:hover {
-      background: #E57B16;
-    }
-
-    .virtual-button.secondary {
-      background: #142B4A;
+      margin-top: 12px;
+      padding: 12px 20px;
+      border-radius: 7px;
+      background: var(--orange);
       color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    .virtual-button[hidden] {
-      display: none;
+    .action-link:hover {
+      background: #d97515;
     }
 
-    .virtual-empty {
-      text-align: center;
-      padding: 28px 20px;
-      background: #F3F5F8;
-      border-radius: 14px;
-      color: #657184;
-      line-height: 1.8;
-    }
-
-    .playlist-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .playlist-card {
-      border: 1px solid #E1E6ED;
-      border-radius: 14px;
-      overflow: hidden;
-      background: white;
-    }
-
-    .playlist-card iframe {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      border: 0;
-      display: block;
-    }
-
-    .playlist-info {
-      padding: 17px;
-    }
-
-    .playlist-info h3 {
-      color: #142B4A;
-      margin-bottom: 7px;
-    }
-
-    .playlist-info p {
-      color: #657184;
-      font-size: .9rem;
+    .notice {
+      color: #7b5b22;
+      background: #fff7e9;
+      border-left: 4px solid var(--gold);
+      padding: 12px 15px;
+      border-radius: 5px;
       line-height: 1.6;
     }
 
-    .virtual-quote {
-      max-width: 850px;
-      margin: 55px auto;
-      padding: 25px 28px;
-      border-left: 5px solid #F28C28;
-      border-radius: 0 14px 14px 0;
-      background: #FFF9F1;
-      color: #34445A;
-      font-family: Georgia, serif;
-      font-style: italic;
-      line-height: 1.8;
+    .video-section {
+      background: var(--soft);
+      padding: 10px 0 45px;
     }
 
-    .virtual-quote strong {
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+    }
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #101820;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-info {
+      padding: 20px;
+    }
+
+    .video-info .action-link {
+      margin-top: 5px;
+    }
+
+    .empty-state {
+      padding: 30px;
+      text-align: center;
+      background: white;
+      border: 1px dashed #b9c5d2;
+      border-radius: 12px;
+      color: #667487;
+      line-height: 1.7;
+    }
+
+    .quote-section {
+      max-width: 850px;
+      margin: 20px auto 45px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .quote-section blockquote {
+      margin: 0;
+      color: var(--navy);
+      font-size: 18px;
+      line-height: 1.8;
+      font-style: italic;
+    }
+
+    .quote-section cite {
       display: block;
       margin-top: 12px;
-      color: #142B4A;
-      font-family: Arial, sans-serif;
+      color: var(--gold);
       font-style: normal;
+      font-weight: bold;
     }
 
-    @media (max-width: 600px) {
-      .virtual-content {
-        padding: 0 16px;
+    @media (max-width: 700px) {
+      .meet-grid, .video-grid {
+        grid-template-columns: 1fr;
       }
 
-      .virtual-card {
-        padding: 21px;
+      .virtual-hero {
+        padding: 48px 18px;
+      }
+
+      .virtual-container {
+        padding: 32px 16px;
       }
     }
   </style>
@@ -190,7 +217,8 @@
     <span>MANDALA AKSARA</span>
   </a>
 
-  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <button id="menuToggle" type="button"
+    aria-label="Buka menu" aria-expanded="false">☰</button>
 
   <nav id="mainNav">
     <a href="index.html">Beranda</a>
@@ -214,6 +242,7 @@
 </header>
 
 <main>
+
   <section class="virtual-hero">
     <h1>Kelas Virtual</h1>
     <p>
@@ -223,185 +252,289 @@
     </p>
   </section>
 
-  <div class="virtual-content">
-
-    <section class="virtual-section">
+  <section class="virtual-container">
+    <div class="section-heading">
       <h2>Ruang Pertemuan Langsung</h2>
-      <p class="section-intro">
+      <p>
         Terhubung melalui Google Meet untuk mengikuti
         pembelajaran, diskusi, presentasi, dan konsultasi.
       </p>
+    </div>
 
-      <div class="virtual-grid">
-        <article class="virtual-card">
-          <div class="virtual-icon">🎥</div>
-          <h3>Ruang Meet Bersama</h3>
-          <p>
-            Ruang pertemuan yang dapat digunakan kembali
-            untuk kegiatan pembelajaran sesuai pengaturan
-            penyelenggara.
-          </p>
-          <a id="permanentMeet"
-             class="virtual-button"
-             target="_blank"
-             rel="noopener"
-             hidden>Gabung Pertemuan</a>
-          <p id="permanentMeetStatus">Tautan ruang Meet belum diatur.</p>
-        </article>
+    <div class="meet-grid">
 
-        <article class="virtual-card">
-          <div class="virtual-icon">📅</div>
-          <h3>Pertemuan Terjadwal</h3>
-          <p>
-            Akses pertemuan berdasarkan jadwal dan kegiatan
-            pembelajaran yang telah ditentukan.
-          </p>
-          <a id="scheduledMeet"
-             class="virtual-button secondary"
-             target="_blank"
-             rel="noopener"
-             hidden>Lihat Pertemuan</a>
-          <p id="scheduledMeetStatus">Informasi jadwal belum tersedia.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="virtual-section">
-      <h2>Video Pembelajaran</h2>
-      <p class="section-intro">
-        Jelajahi video dan playlist pembelajaran dari berbagai
-        kanal YouTube untuk memperkaya pengalaman belajar.
-      </p>
-
-      <div id="playlistContainer" class="playlist-grid"></div>
-
-      <div id="playlistEmpty" class="virtual-empty">
-        <h3>Koleksi Video Sedang Disiapkan</h3>
+      <article class="meet-card">
+        <div class="card-icon">🎥</div>
+        <h3>Ruang Meet Bersama</h3>
         <p>
-          Playlist pembelajaran akan ditampilkan di sini,
-          termasuk video pilihan dari kanal YouTube lainnya.
+          Ruang pertemuan yang dapat digunakan kembali
+          untuk kegiatan pembelajaran.
+        </p>
+        <a id="permanentMeetButton" class="action-link"
+          href="#" target="_blank" rel="noopener" hidden>
+          Gabung Pertemuan
+        </a>
+        <p id="permanentMeetNotice" class="notice">
+          Tautan ruang Meet belum diatur.
+        </p>
+      </article>
+
+      <article class="meet-card">
+        <div class="card-icon">📅</div>
+        <h3>Pertemuan Terjadwal</h3>
+        <p>
+          Akses pertemuan berdasarkan jadwal dan kegiatan
+          pembelajaran yang telah ditentukan.
+        </p>
+        <div id="meetingList"></div>
+        <p id="meetingEmpty" class="notice">
+          Informasi jadwal belum tersedia.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="video-section">
+    <div class="virtual-container">
+      <div class="section-heading">
+        <h2>Video Pembelajaran</h2>
+        <p>
+          Jelajahi video dan playlist pembelajaran dari
+          berbagai kanal YouTube untuk memperkaya
+          pengalaman belajar.
         </p>
       </div>
-    </section>
 
-    <blockquote class="virtual-quote">
+      <div id="videoContainer" class="video-grid"></div>
+
+      <div id="videoEmpty" class="empty-state" hidden>
+        Koleksi video sedang disiapkan.
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <blockquote>
       “Jarak bukan penghalang bagi pengetahuan; selama
       pikiran terbuka dan semangat belajar menyala,
       ruang belajar dapat hadir di mana saja.”
-      <strong>— Mandala Aksara</strong>
     </blockquote>
+    <cite>— Mandala Aksara</cite>
+  </section>
 
-  </div>
 </main>
 
-<footer>
+<footer class="site-footer">
   <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
   <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
 </footer>
 
 <script>
-/* ==================================
-   PENGATURAN KELAS VIRTUAL
-   Isi alamat yang sebenarnya di sini.
-   ================================== */
+  // =====================================
+  // PENGATURAN GOOGLE MEET
+  // =====================================
 
-// Satu link Google Meet yang digunakan berulang kali.
-const permanentMeetUrl = "";
+  const permanentMeetUrl = "";
 
-// Link halaman jadwal atau daftar pertemuan.
-// Bisa berupa Google Calendar atau halaman informasi.
-const scheduledMeetUrl = "";
-
-// Daftar playlist YouTube.
-// Gunakan ID playlist, bukan seluruh alamat URL.
-// Contoh ID: PLxxxxxxxxxxxxxxxx
-const playlists = [
-  /*
-  {
-    type: "video",
-    title: "Contoh Video Pembelajaran",
-    description: "Video contoh untuk menguji pemutar YouTube Mandala Aksara.",
-    id: "WabdFKoxcco"
-  }
-  */
-];
-
-// Menampilkan tautan Meet jika sudah diisi.
-if (permanentMeetUrl.trim() !== "") {
-  const link = document.getElementById("permanentMeet");
-  link.href = permanentMeetUrl;
-  link.hidden = false;
-  document.getElementById("permanentMeetStatus").hidden = true;
-}
-
-if (scheduledMeetUrl.trim() !== "") {
-  const link = document.getElementById("scheduledMeet");
-  link.href = scheduledMeetUrl;
-  link.hidden = false;
-  document.getElementById("scheduledMeetStatus").hidden = true;
-}
-
-// Menampilkan playlist YouTube.
-const playlistContainer = document.getElementById("playlistContainer");
-const playlistEmpty = document.getElementById("playlistEmpty");
-
-const activePlaylists = playlists.filter(item =>
-  item.id && item.id !== "MASUKKAN_ID_PLAYLIST"
-);
-
-if (activePlaylists.length > 0) {
-  playlistEmpty.hidden = true;
-
-  activePlaylists.forEach(item => {
-    const card = document.createElement("article");
-    card.className = "playlist-card";
-
-    const frame = document.createElement("iframe");
-    frame.src = item.type === "video"
-  ? "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(item.id)
-  : "https://www.youtube-nocookie.com/embed/videoseries?list=" + encodeURIComponent(item.id);
-    frame.title = item.title;
-    frame.loading = "lazy";
-    frame.allow =
-      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-    frame.allowFullscreen = true;
-
-    const info = document.createElement("div");
-    info.className = "playlist-info";
-
-    const title = document.createElement("h3");
-    title.textContent = item.title;
-
-    const description = document.createElement("p");
-    description.textContent = item.description;
-
-    info.append(title, description);
-    card.append(frame, info);
-    playlistContainer.append(card);
-  });
-}
-
-// Menu navigasi ponsel.
-const toggle = document.getElementById("menuToggle");
-const nav = document.getElementById("mainNav");
-
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
-    toggle.setAttribute(
-      "aria-expanded",
-      nav.classList.contains("open")
-    );
-  });
-}
-
-document.querySelectorAll(".nav-trigger").forEach(btn => {
-  btn.addEventListener("click", () => {
-    if (window.matchMedia("(max-width: 1050px)").matches) {
-      btn.parentElement.classList.toggle("expanded");
+  const scheduledMeetings = [
+    /*
+    {
+      title: "Pembelajaran Bahasa Indonesia",
+      date: "Senin, 10 November 2026",
+      description: "Pertemuan pembelajaran kelas.",
+      url: "https://meet.google.com/xxx-xxxx-xxx"
     }
+    */
+  ];
+
+  // =====================================
+  // PENGATURAN VIDEO DAN PLAYLIST YOUTUBE
+  // =====================================
+
+  const youtubeItems = [
+    {
+      type: "video",
+      title: "Contoh Video Pembelajaran",
+      description: "Video contoh untuk menguji pemutar YouTube Mandala Aksara.",
+      id: "WabdFKoxcco"
+    }
+
+    /*
+    Tambahkan video lain dengan format:
+
+    ,{
+      type: "video",
+      title: "Judul Video",
+      description: "Keterangan video.",
+      id: "ID_VIDEO_YOUTUBE"
+    }
+
+    Tambahkan playlist dengan format:
+
+    ,{
+      type: "playlist",
+      title: "Playlist Bahasa Indonesia",
+      description: "Kumpulan video pembelajaran.",
+      id: "ID_PLAYLIST_YOUTUBE"
+    }
+    */
+  ];
+
+  // =====================================
+  // MENAMPILKAN GOOGLE MEET
+  // =====================================
+
+  const permanentButton =
+    document.getElementById("permanentMeetButton");
+
+  const permanentNotice =
+    document.getElementById("permanentMeetNotice");
+
+  if (permanentMeetUrl.trim() !== "") {
+    permanentButton.href = permanentMeetUrl;
+    permanentButton.hidden = false;
+    permanentNotice.hidden = true;
+  }
+
+  const meetingList = document.getElementById("meetingList");
+  const meetingEmpty = document.getElementById("meetingEmpty");
+
+  const activeMeetings = scheduledMeetings.filter(
+    meeting => meeting.url && meeting.url.trim() !== ""
+  );
+
+  if (activeMeetings.length > 0) {
+    meetingEmpty.hidden = true;
+
+    activeMeetings.forEach(meeting => {
+      const item = document.createElement("div");
+
+      const title = document.createElement("h4");
+      title.textContent = meeting.title;
+
+      const date = document.createElement("p");
+      date.textContent = meeting.date;
+
+      const description = document.createElement("p");
+      description.textContent = meeting.description;
+
+      const link = document.createElement("a");
+      link.href = meeting.url;
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.className = "action-link";
+      link.textContent = "Lihat Pertemuan";
+
+      item.append(title, date, description, link);
+      meetingList.appendChild(item);
+    });
+  }
+
+  // =====================================
+  // MENAMPILKAN VIDEO DAN PLAYLIST
+  // =====================================
+
+  const videoContainer =
+    document.getElementById("videoContainer");
+
+  const videoEmpty =
+    document.getElementById("videoEmpty");
+
+  const activeVideos = youtubeItems.filter(item =>
+    (item.type === "video" || item.type === "playlist") &&
+    item.id &&
+    item.id.trim() !== ""
+  );
+
+  if (activeVideos.length > 0) {
+    videoEmpty.hidden = true;
+
+    activeVideos.forEach(item => {
+      const card = document.createElement("article");
+      card.className = "video-card";
+
+      const frameBox = document.createElement("div");
+      frameBox.className = "video-frame";
+
+      const frame = document.createElement("iframe");
+
+      if (item.type === "playlist") {
+        frame.src =
+          "https://www.youtube.com/embed/videoseries?list=" +
+          encodeURIComponent(item.id);
+      } else {
+        frame.src =
+          "https://www.youtube.com/embed/" +
+          encodeURIComponent(item.id);
+      }
+
+      frame.title = item.title;
+      frame.loading = "lazy";
+      frame.allow =
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      frame.allowFullscreen = true;
+
+      frameBox.appendChild(frame);
+
+      const info = document.createElement("div");
+      info.className = "video-info";
+
+      const title = document.createElement("h3");
+      title.textContent = item.title;
+
+      const description = document.createElement("p");
+      description.textContent = item.description || "";
+
+      const youtubeLink = document.createElement("a");
+      youtubeLink.className = "action-link";
+      youtubeLink.target = "_blank";
+      youtubeLink.rel = "noopener";
+      youtubeLink.textContent = "Tonton di YouTube";
+
+      if (item.type === "playlist") {
+        youtubeLink.href =
+          "https://www.youtube.com/playlist?list=" +
+          encodeURIComponent(item.id);
+      } else {
+        youtubeLink.href =
+          "https://www.youtube.com/watch?v=" +
+          encodeURIComponent(item.id);
+      }
+
+      info.append(title, description, youtubeLink);
+      card.append(frameBox, info);
+      videoContainer.appendChild(card);
+    });
+  } else {
+    videoEmpty.hidden = false;
+  }
+
+  // =====================================
+  // NAVIGASI MENU
+  // =====================================
+
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+
+      toggle.setAttribute(
+        "aria-expanded",
+        nav.classList.contains("open")
+      );
+    });
+  }
+
+  document.querySelectorAll(".nav-trigger").forEach(button => {
+    button.addEventListener("click", () => {
+      if (window.matchMedia("(max-width: 1050px)").matches) {
+        button.parentElement.classList.toggle("expanded");
+      }
+    });
   });
-});
 </script>
 
 </body>
