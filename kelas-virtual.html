@@ -357,8 +357,9 @@ if (activePlaylists.length > 0) {
     card.className = "playlist-card";
 
     const frame = document.createElement("iframe");
-    frame.src = "https://www.youtube-nocookie.com/embed/videoseries?list="
-      + encodeURIComponent(item.id);
+    frame.src = item.type === "video"
+  ? "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(item.id)
+  : "https://www.youtube-nocookie.com/embed/videoseries?list=" + encodeURIComponent(item.id);
     frame.title = item.title;
     frame.loading = "lazy";
     frame.allow =
