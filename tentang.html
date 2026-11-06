@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mengenal Mandala Aksara, ruang literasi dan pembelajaran Bahasa Indonesia yang dikelola secara mandiri.">
+  <title>Tentang | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --navy-dark: #0D203A;
+      --orange: #F28C28;
+      --gold: #C69A45;
+      --soft: #F3F5F8;
+      --text: #263445;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .about-hero {
+      padding: 68px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+    }
+
+    .about-hero h1 {
+      margin: 0 0 15px;
+      font-size: clamp(30px, 5vw, 44px);
+    }
+
+    .about-hero p {
+      max-width: 740px;
+      margin: auto;
+      color: #e7edf5;
+      line-height: 1.8;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 48px 20px;
+    }
+
+    .about-section {
+      margin-bottom: 38px;
+    }
+
+    .about-section h2 {
+      color: var(--navy);
+      font-size: 25px;
+      margin: 0 0 15px;
+    }
+
+    .about-section h2::after {
+      content: "";
+      display: block;
+      width: 55px;
+      height: 3px;
+      margin-top: 10px;
+      background: var(--orange);
+    }
+
+    .about-section p {
+      color: #526174;
+      line-height: 1.9;
+      margin: 0 0 12px;
+    }
+
+    .identity-panel {
+      padding: 28px;
+      border-radius: 14px;
+      background: var(--soft);
+      border-left: 5px solid var(--orange);
+    }
+
+    .identity-panel h2 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .identity-panel p {
+      line-height: 1.9;
+      color: #526174;
+    }
+
+    .slogan {
+      margin-top: 18px;
+      padding: 25px;
+      border-radius: 12px;
+      background: var(--navy);
+      color: white;
+      text-align: center;
+    }
+
+    .slogan p {
+      margin: 0;
+      color: white;
+      font-size: clamp(18px, 3vw, 23px);
+      font-weight: bold;
+      line-height: 1.7;
+    }
+
+    .about-quote {
+      max-width: 850px;
+      margin: 10px auto 50px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .about-quote blockquote {
+      margin: 0;
+      color: var(--navy);
+      font-size: 18px;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    .about-quote cite {
+      display: block;
+      margin-top: 12px;
+      color: var(--gold);
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      .about-hero { padding: 48px 18px; }
+      .about-container { padding: 32px 16px; }
+      .identity-panel { padding: 21px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span>MANDALA AKSARA</span>
+  </a>
+
+  <button id="menuToggle" type="button"
+    aria-label="Buka menu" aria-expanded="false">☰</button>
+
+  <nav id="mainNav">
+    <a href="index.html">Beranda</a>
+
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran <span>⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html" class="active">Tentang</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="about-hero">
+    <h1>Tentang Mandala Aksara</h1>
+    <p>
+      Mengenal sebuah ruang yang tumbuh dari kecintaan
+      terhadap bahasa, sastra, literasi, dan pembelajaran.
+    </p>
+  </section>
+
+  <div class="about-container">
+
+    <section class="about-section">
+      <h2>Mengenal Mandala Aksara</h2>
+      <p>
+        Mandala Aksara merupakan ruang literasi dan
+        pembelajaran Bahasa Indonesia yang dikembangkan
+        secara mandiri. Ruang ini hadir sebagai tempat
+        untuk menjelajahi bahasa, mengenal kekayaan sastra,
+        memperluas wawasan, serta mengembangkan kemampuan
+        berpikir dan berekspresi.
+      </p>
+      <p>
+        Melalui berbagai bahan pembelajaran dan bacaan,
+        Mandala Aksara berupaya menghadirkan pengalaman
+        belajar yang terbuka, bermakna, dan dekat dengan
+        kehidupan sehari-hari.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h2>Ruang Belajar dan Literasi</h2>
+      <p>
+        Bahasa bukan sekadar alat komunikasi. Di dalamnya
+        terdapat gagasan, pengetahuan, kebudayaan, dan
+        cara manusia memahami kehidupan.
+      </p>
+      <p>
+        Karena itu, Mandala Aksara menyediakan ruang untuk
+        mempelajari kebahasaan, mengapresiasi karya sastra,
+        membaca berbagai referensi, serta mengembangkan
+        kreativitas melalui tulisan.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h2>Ruang yang Terus Bertumbuh</h2>
+      <p>
+        Mandala Aksara dikembangkan secara bertahap.
+        Materi, koleksi bacaan, karya, dan dokumentasi
+        akan terus diperbarui sesuai kebutuhan dan
+        perkembangan dunia literasi.
+      </p>
+      <p>
+        Setiap gagasan dan kontribusi yang membangun
+        diharapkan dapat memperkaya ruang belajar ini
+        sehingga manfaatnya semakin luas.
+      </p>
+    </section>
+
+    <section class="identity-panel">
+      <h2>Identitas Mandala Aksara</h2>
+      <p>
+        <strong>Nama:</strong> Mandala Aksara
+      </p>
+      <p>
+        <strong>Ruang lingkup:</strong> Literasi,
+        Bahasa Indonesia, kebahasaan, dan kesusastraan.
+      </p>
+      <p>
+        <strong>Pengelolaan:</strong> Dikelola secara mandiri.
+      </p>
+      <div class="slogan">
+        <p>
+          Menjelajah Kata, Mendalami Makna,
+          Membentangkan Cakrawala.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="about-quote">
+    <blockquote>
+      “Bahasa membuka jalan bagi pikiran, sastra
+      memperluas pandangan, dan literasi menuntun
+      manusia memahami dunia dengan lebih bijaksana.”
+    </blockquote>
+    <cite>— Mandala Aksara</cite>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggle.setAttribute(
+        'aria-expanded',
+        nav.classList.contains('open')
+      );
+    });
+  }
+
+  document.querySelectorAll('.nav-trigger').forEach(button => {
+    button.addEventListener('click', () => {
+      if (window.matchMedia('(max-width: 1050px)').matches) {
+        button.parentElement.classList.toggle('expanded');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
