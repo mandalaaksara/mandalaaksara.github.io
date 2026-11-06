@@ -2,337 +2,471 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Materi lengkap Teks Laporan Hasil Observasi Bahasa Indonesia Fase E Kelas X di Mandala Aksara.">
-  <title>Teks Laporan Hasil Observasi | Mandala Aksara</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teks Laporan Hasil Observasi | Mandala Aksara</title>
+<link rel="stylesheet" href="style.css">
 
-  <style>
-    :root {
-      --navy: #142B4A;
-      --navy-dark: #0D203A;
-      --orange: #F28C28;
-      --gold: #C69A45;
-      --soft: #F3F5F8;
-      --text: #263445;
-    }
+<style>
+:root {
+  --navy: #142B4A;
+  --navy-dark: #0D203A;
+  --orange: #F28C28;
+  --gold: #C69A45;
+  --text: #34445B;
+  --muted: #68778B;
+  --soft: #F3F5F8;
+  --border: #DCE3EC;
+}
 
-    * { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-    html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #F7F8FA;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75;
+}
 
-    body {
-      margin: 0;
-      color: var(--text);
-      background: #fff;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+a {
+  color: inherit;
+}
 
-    .lesson-hero {
-      padding: 65px 20px;
-      color: white;
-      text-align: center;
-      background: linear-gradient(135deg, var(--navy-dark), var(--navy));
-    }
+.site-header {
+  background: var(--navy-dark);
+  color: white;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 12px rgba(0,0,0,.15);
+}
 
-    .lesson-hero .eyebrow {
-      color: #ffc078;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-size: 13px;
-    }
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  min-width: 0;
+}
 
-    .lesson-hero h1 {
-      max-width: 850px;
-      margin: 15px auto;
-      font-size: clamp(30px, 5vw, 44px);
-      line-height: 1.2;
-    }
+.brand img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
 
-    .lesson-hero p {
-      max-width: 720px;
-      margin: auto;
-      color: #e7edf5;
-      line-height: 1.8;
-    }
+.brand-name {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: white;
+}
 
-    .lesson-meta {
-      margin-top: 22px;
-      color: #f8d6b1;
-      font-size: 14px;
-    }
+.brand-subtitle {
+  display: block;
+  font-size: 10px;
+  color: #D9E1EC;
+  letter-spacing: .5px;
+}
 
-    .lesson-layout {
-      max-width: 1180px;
-      margin: auto;
-      padding: 38px 20px 55px;
-      display: grid;
-      grid-template-columns: 245px minmax(0, 1fr);
-      gap: 35px;
-      align-items: start;
-    }
+#menuToggle {
+  display: none;
+  border: 1px solid rgba(255,255,255,.35);
+  background: transparent;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 7px;
+  font-size: 22px;
+  cursor: pointer;
+}
 
-    .lesson-sidebar {
-      position: sticky;
-      top: 20px;
-      padding: 22px;
-      background: var(--soft);
-      border-radius: 12px;
-    }
+#mainNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-    .lesson-sidebar h3 {
-      margin: 0 0 15px;
-      color: var(--navy);
-      font-size: 17px;
-    }
+#mainNav > a,
+.nav-trigger {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
 
-    .lesson-sidebar a {
-      display: block;
-      padding: 9px 10px;
-      color: #40516a;
-      text-decoration: none;
-      border-radius: 6px;
-      font-size: 14px;
-      line-height: 1.5;
-    }
+.nav-trigger {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 8px 0;
+}
 
-    .lesson-sidebar a:hover {
-      color: var(--navy);
-      background: #e4eaf1;
-    }
+.nav-dropdown {
+  position: relative;
+}
 
-    .lesson-content {
-      min-width: 0;
-    }
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 155px;
+  background: white;
+  box-shadow: 0 8px 22px rgba(0,0,0,.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-    .lesson-section {
-      margin-bottom: 42px;
-      scroll-margin-top: 25px;
-    }
+.nav-dropdown:hover .dropdown,
+.nav-dropdown.expanded .dropdown {
+  display: block;
+}
 
-    .lesson-section h2 {
-      color: var(--navy);
-      font-size: 27px;
-      margin: 0 0 18px;
-      padding-bottom: 11px;
-      border-bottom: 2px solid #e7ebf0;
-    }
+.dropdown a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 13px;
+}
 
-    .lesson-section h3 {
-      color: var(--navy);
-      font-size: 20px;
-      margin: 25px 0 10px;
-    }
+.dropdown a:hover {
+  background: var(--soft);
+  color: var(--orange);
+}
 
-    .lesson-section p,
-    .lesson-section li {
-      color: #526174;
-      line-height: 1.85;
-    }
+.hero {
+  background: linear-gradient(120deg, var(--navy-dark), var(--navy));
+  color: white;
+  padding: 55px 7%;
+  text-align: center;
+}
 
-    .lesson-section ul,
-    .lesson-section ol {
-      padding-left: 23px;
-    }
+.hero .eyebrow {
+  color: #F6B65F;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
 
-    .definition-box {
-      padding: 23px;
-      border-left: 5px solid var(--orange);
-      border-radius: 8px;
-      background: #fff7ed;
-      line-height: 1.85;
-      color: #46566a;
-    }
+.hero h1 {
+  font-size: clamp(27px, 4vw, 42px);
+  line-height: 1.2;
+  margin: 12px 0;
+}
 
-    .info-box {
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 9px;
-      background: var(--soft);
-      line-height: 1.8;
-      color: #526174;
-    }
+.hero p {
+  max-width: 720px;
+  margin: 0 auto;
+  color: #E0E7F0;
+}
 
-    .structure-grid,
-    .feature-grid,
-    .language-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
+.page-layout {
+  max-width: 1350px;
+  margin: 35px auto 60px;
+  padding: 0 22px;
+  display: grid;
+  grid-template-columns: 255px minmax(0, 1fr);
+  gap: 30px;
+  align-items: start;
+}
 
-    .content-card {
-      padding: 20px;
-      border: 1px solid #e2e8ef;
-      border-radius: 10px;
-      background: white;
-    }
+.sidebar {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 20px 15px;
+  position: sticky;
+  top: 95px;
+  max-height: calc(100vh - 115px);
+  overflow-y: auto;
+}
 
-    .content-card h3 {
-      margin: 0 0 9px;
-      font-size: 18px;
-    }
+.sidebar h2 {
+  color: var(--navy);
+  font-size: 18px;
+  margin: 0 0 15px;
+}
 
-    .content-card p {
-      margin: 0;
-      font-size: 15px;
-    }
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #485970;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 11px;
+  margin: 3px 0;
+  border-radius: 7px;
+  line-height: 1.4;
+}
 
-    .number {
-      display: inline-flex;
-      width: 31px;
-      height: 31px;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 12px;
-      border-radius: 50%;
-      background: var(--orange);
-      color: white;
-      font-weight: bold;
-    }
+.sidebar a:hover,
+.sidebar a.active {
+  background: #FFF1E2;
+  color: #B85D0B;
+  border-left: 3px solid var(--orange);
+}
 
-    .example-text {
-      padding: 23px;
-      margin: 18px 0;
-      border: 1px solid #e1e7ed;
-      border-radius: 10px;
-      background: #fbfcfe;
-    }
+.content {
+  min-width: 0;
+}
 
-    .example-text h4 {
-      color: var(--navy);
-      margin: 0 0 12px;
-    }
+.content section {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 27px;
+  margin-bottom: 22px;
+  scroll-margin-top: 105px;
+}
 
-    .example-text p {
-      margin: 0 0 13px;
-    }
+.content h2 {
+  color: var(--navy);
+  font-size: 25px;
+  line-height: 1.35;
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #E3E8EF;
+}
 
-    .example-text p:last-child {
-      margin-bottom: 0;
-    }
+.content h3 {
+  color: var(--navy);
+  font-size: 18px;
+  margin: 23px 0 10px;
+}
 
-    .highlight {
-      color: var(--navy);
-      font-weight: bold;
-    }
+.content p {
+  margin: 10px 0 15px;
+}
 
-    .warning-box {
-      padding: 18px;
-      margin: 20px 0;
-      border-left: 5px solid #d59a34;
-      background: #fff8e9;
-      border-radius: 7px;
-      color: #70582e;
-      line-height: 1.8;
-    }
+.content li {
+  margin-bottom: 7px;
+}
 
-    .practice-box {
-      padding: 23px;
-      margin: 20px 0;
-      background: var(--navy);
-      color: white;
-      border-radius: 12px;
-    }
+.note {
+  background: #FFF5E9;
+  border-left: 4px solid var(--orange);
+  border-radius: 7px;
+  padding: 15px 18px;
+  margin: 18px 0;
+}
 
-    .practice-box h3 {
-      color: white;
-      margin-top: 0;
-    }
+.info-card {
+  background: #F8FAFC;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 20px;
+  margin: 15px 0;
+}
 
-    .practice-box p,
-    .practice-box li {
-      color: #e7edf5;
-    }
+.info-card strong {
+  color: var(--navy);
+}
 
-    .virtual-link {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 12px 19px;
-      background: var(--orange);
-      color: white;
-      text-decoration: none;
-      border-radius: 7px;
-      font-weight: bold;
-    }
+.two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
 
-    .virtual-link:hover {
-      background: #d97515;
-    }
+.feature {
+  background: var(--soft);
+  border-radius: 9px;
+  padding: 17px;
+  border-top: 3px solid var(--orange);
+}
 
-    .reflection {
-      padding: 23px;
-      background: #fff7ed;
-      border-radius: 10px;
-      line-height: 1.8;
-    }
+.feature h3 {
+  margin-top: 0;
+}
 
-    .lesson-quote {
-      max-width: 850px;
-      margin: 10px auto 50px;
-      padding: 0 20px;
-      text-align: center;
-    }
+.step {
+  display: flex;
+  gap: 15px;
+  margin: 17px 0;
+  align-items: flex-start;
+}
 
-    .lesson-quote blockquote {
-      margin: 0;
-      color: var(--navy);
-      font-size: 18px;
-      font-style: italic;
-      line-height: 1.8;
-    }
+.step-number {
+  flex: 0 0 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: var(--navy);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+}
 
-    .lesson-quote cite {
-      display: block;
-      margin-top: 12px;
-      color: var(--gold);
-      font-style: normal;
-      font-weight: bold;
-    }
+.example {
+  background: #F9FAFC;
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 9px;
+  margin: 16px 0;
+}
 
-    @media (max-width: 850px) {
-      .lesson-layout {
-        grid-template-columns: 1fr;
-      }
+.example h3 {
+  margin-top: 0;
+}
 
-      .lesson-sidebar {
-        position: static;
-      }
+.example ol {
+  padding-left: 25px;
+}
 
-      .lesson-sidebar nav {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 3px;
-      }
-    }
+.reflection {
+  background: var(--navy);
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-top: 25px;
+}
 
-    @media (max-width: 550px) {
-      .structure-grid,
-      .feature-grid,
-      .language-grid {
-        grid-template-columns: 1fr;
-      }
+.reflection h3 {
+  color: #F6B65F;
+  margin-top: 0;
+}
 
-      .lesson-sidebar nav {
-        grid-template-columns: 1fr;
-      }
+.video-link {
+  display: inline-block;
+  background: var(--orange);
+  color: #172B45;
+  text-decoration: none;
+  padding: 11px 18px;
+  border-radius: 7px;
+  font-weight: bold;
+  margin-top: 10px;
+}
 
-      .lesson-hero {
-        padding: 48px 18px;
-      }
+.video-link:hover {
+  background: #FFB45F;
+}
 
-      .lesson-layout {
-        padding: 25px 16px 40px;
-      }
+.final-quote {
+  text-align: center;
+  padding: 38px 20px;
+  color: var(--navy);
+  font-family: Georgia, serif;
+  font-size: 19px;
+  font-style: italic;
+}
 
-      .lesson-section h2 {
-        font-size: 23px;
-      }
-    }
-  </style>
+.final-quote span {
+  display: block;
+  margin-top: 12px;
+  color: var(--gold);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.site-footer {
+  background: var(--navy-dark);
+  color: #DCE4EF;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 13px;
+}
+
+.site-footer strong {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    flex-wrap: wrap;
+  }
+
+  #menuToggle {
+    display: block;
+  }
+
+  #mainNav {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 4px;
+    padding: 10px 0;
+  }
+
+  #mainNav.open {
+    display: flex;
+  }
+
+  #mainNav > a,
+  .nav-trigger {
+    display: block;
+    padding: 10px 5px;
+    text-align: left;
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
+    background: rgba(255,255,255,.08);
+    margin-left: 12px;
+  }
+
+  .dropdown a {
+    color: white;
+  }
+
+  .page-layout {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+
+  .sidebar {
+    position: static;
+    max-height: none;
+  }
+
+  .sidebar-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding: 38px 20px;
+  }
+
+  .page-layout {
+    padding: 0 12px;
+  }
+
+  .content section {
+    padding: 19px;
+  }
+
+  .content h2 {
+    font-size: 21px;
+  }
+
+  .two-columns,
+  .sidebar-list {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-name {
+    font-size: 16px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -340,19 +474,19 @@
 <header class="site-header">
   <a href="index.html" class="brand">
     <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-    <span>MANDALA AKSARA</span>
+    <span>
+      <span class="brand-name">MANDALA AKSARA</span>
+      <span class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+    </span>
   </a>
 
-  <button id="menuToggle" type="button"
-    aria-label="Buka menu" aria-expanded="false">☰</button>
+  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
 
   <nav id="mainNav">
     <a href="index.html">Beranda</a>
 
     <div class="nav-dropdown">
-      <button type="button" class="nav-trigger">
-        Materi Pembelajaran <span>⌄</span>
-      </button>
+      <button type="button" class="nav-trigger">Materi Pembelajaran ⌄</button>
       <div class="dropdown">
         <a href="kelas-x.html">Kelas X</a>
         <a href="kelas-xi.html">Kelas XI</a>
@@ -367,552 +501,429 @@
   </nav>
 </header>
 
-<main>
+<section class="hero">
+  <div class="eyebrow">Bahasa Indonesia · Fase E · Kelas X</div>
+  <h1>Teks Laporan Hasil Observasi</h1>
+  <p>
+    Mengenali objek melalui pengamatan yang cermat,
+    menyusun fakta secara sistematis, dan menyampaikan
+    informasi dengan bahasa yang jelas serta objektif.
+  </p>
+</section>
 
-  <section class="lesson-hero">
-    <div class="eyebrow">Materi Pembelajaran Bahasa Indonesia</div>
-    <h1>Teks Laporan Hasil Observasi</h1>
-    <p>
-      Memahami objek melalui pengamatan, mengolah fakta
-      menjadi informasi, dan menyajikannya secara objektif
-      serta sistematis.
-    </p>
-    <div class="lesson-meta">
-      Fase E · Kelas X · Bahasa Indonesia
+<div class="page-layout">
+
+<aside class="sidebar">
+  <h2>Daftar Materi</h2>
+  <div class="sidebar-list">
+    <a href="#tujuan">Tujuan Pembelajaran</a>
+    <a href="#pendahuluan">Pendahuluan</a>
+    <a href="#pengertian">Pengertian LHO</a>
+    <a href="#ciri">Ciri-Ciri LHO</a>
+    <a href="#sistematika">Sistematika LHO</a>
+    <a href="#langkah">Cara Membuat LHO</a>
+    <a href="#kebahasaan">Kaidah Kebahasaan</a>
+    <a href="#observasi">Contoh Observasi</a>
+    <a href="#contoh-laporan">Contoh Laporan Ciplukan</a>
+    <a href="#kesalahan">Hal yang Perlu Diperhatikan</a>
+    <a href="#aktivitas">Aktivitas Pembelajaran</a>
+    <a href="#refleksi">Refleksi</a>
+  </div>
+</aside>
+
+<main class="content">
+
+<section id="tujuan">
+  <h2>1. Tujuan Pembelajaran</h2>
+  <p>Setelah mempelajari materi ini, peserta didik diharapkan mampu:</p>
+  <ol>
+    <li>Menjelaskan pengertian teks laporan hasil observasi.</li>
+    <li>Mengidentifikasi ciri-ciri dan sistematika teks laporan hasil observasi.</li>
+    <li>Melakukan pengamatan terhadap objek secara cermat.</li>
+    <li>Membedakan informasi faktual dan pendapat pribadi.</li>
+    <li>Menyusun teks laporan hasil observasi berdasarkan hasil pengamatan.</li>
+    <li>Menyampaikan laporan secara logis, jelas, dan bertanggung jawab.</li>
+  </ol>
+</section>
+
+<section id="pendahuluan">
+  <h2>2. Pendahuluan</h2>
+  <h3>Observasi</h3>
+  <p>
+    Menurut materi sumber, observasi adalah peninjauan secara cermat.
+    Observasi dilakukan untuk memperoleh informasi melalui pengamatan
+    terhadap suatu objek atau peristiwa.
+  </p>
+  <div class="note">
+    <strong>Perhatikan:</strong> Observasi tidak sekadar melihat.
+    Pengamat perlu mencermati, mencatat, dan mengumpulkan informasi
+    yang relevan dengan objek yang diamati.
+  </div>
+</section>
+
+<section id="pengertian">
+  <h2>3. Pengertian Teks Laporan Hasil Observasi</h2>
+  <p>
+    Teks Laporan Hasil Observasi (LHO) adalah tulisan yang berisi
+    penjelasan umum atau laporan yang sesuai dengan hasil pengamatan
+    di lapangan.
+  </p>
+  <p>
+    Teks ini menyampaikan informasi tentang objek berdasarkan fakta
+    yang ditemukan melalui kegiatan pengamatan. Objek yang diamati
+    dapat berupa tumbuhan, hewan, lingkungan, benda, maupun fenomena.
+  </p>
+</section>
+
+<section id="ciri">
+  <h2>4. Ciri-Ciri Teks LHO</h2>
+  <div class="two-columns">
+    <div class="feature">
+      <h3>Objektif</h3>
+      <p>Tidak memihak dan tidak mengandung opini pribadi.</p>
     </div>
-  </section>
+    <div class="feature">
+      <h3>Fakta</h3>
+      <p>Berdasarkan data dan fakta yang diperoleh dari pengamatan langsung.</p>
+    </div>
+    <div class="feature">
+      <h3>Jelas</h3>
+      <p>Menggunakan bahasa yang mudah dipahami dan disusun secara logis.</p>
+    </div>
+    <div class="feature">
+      <h3>Spesifik</h3>
+      <p>Memberikan informasi yang detail dan rinci.</p>
+    </div>
+  </div>
+</section>
 
-  <div class="lesson-layout">
+<section id="sistematika">
+  <h2>5. Sistematika Teks LHO</h2>
+  <p>Materi sumber membagi teks laporan hasil observasi menjadi empat bagian.</p>
 
-    <aside class="lesson-sidebar">
-      <h3>Daftar Materi</h3>
-      <nav>
-        <a href="#tujuan">Tujuan Pembelajaran</a>
-        <a href="#pendahuluan">Pendahuluan</a>
-        <a href="#pengertian">Pengertian LHO</a>
-        <a href="#ciri">Ciri-Ciri LHO</a>
-        <a href="#struktur">Sistematika LHO</a>
-        <a href="#cara">Cara Membuat LHO</a>
-        <a href="#observasi">Contoh Observasi</a>
-        <a href="#contoh">Contoh Laporan Ciplukan</a>
-        <a href="#kebahasaan">Kaidah Kebahasaan</a>
-        <a href="#langkah">Langkah Penyusunan</a>
-        <a href="#kesalahan">Kesalahan Umum</a>
-        <a href="#latihan">Latihan Pembelajaran</a>
-        <a href="#refleksi">Refleksi</a>
-      </nav>
-    </aside>
-
-    <article class="lesson-content">
-
-      <section class="lesson-section" id="tujuan">
-        <h2>Tujuan Pembelajaran</h2>
-        <p>
-          Setelah mempelajari materi ini, peserta didik
-          diharapkan mampu:
-        </p>
-        <ul>
-          <li>Menjelaskan pengertian dan karakteristik teks laporan hasil observasi.</li>
-          <li>Mengidentifikasi sistematika atau struktur teks LHO.</li>
-          <li>Membedakan fakta hasil pengamatan dan opini pribadi.</li>
-          <li>Melakukan pengamatan terhadap objek secara cermat.</li>
-          <li>Mengolah catatan hasil observasi menjadi laporan yang sistematis.</li>
-          <li>Menyajikan teks LHO dengan bahasa yang jelas, objektif, dan spesifik.</li>
-        </ul>
-      </section>
-
-      <section class="lesson-section" id="pendahuluan">
-        <h2>1. Pendahuluan</h2>
-
-        <h3>Observasi</h3>
-        <p>
-          Menurut KBBI, observasi adalah peninjauan secara
-          cermat. Observasi merupakan kegiatan mengamati
-          suatu objek atau peristiwa untuk memperoleh
-          informasi berdasarkan fakta.
-        </p>
-
-        <h3>Teks Laporan Hasil Observasi</h3>
-        <div class="definition-box">
-          Teks Laporan Hasil Observasi adalah tulisan yang
-          berisi penjelasan umum atau laporan yang sesuai
-          dengan hasil pengamatan di lapangan.
-        </div>
-      </section>
-
-      <section class="lesson-section" id="pengertian">
-        <h2>2. Mengenal Teks Laporan Hasil Observasi</h2>
-        <p>
-          Teks laporan hasil observasi menyajikan informasi
-          mengenai suatu objek berdasarkan pengamatan.
-          Objek tersebut dapat berupa makhluk hidup,
-          benda, tempat, lingkungan, maupun fenomena.
-        </p>
-        <p>
-          Informasi disusun agar pembaca memperoleh gambaran
-          yang jelas mengenai objek yang diamati. Oleh
-          karena itu, penulis perlu mengumpulkan data,
-          mencatat fakta, dan menyusun hasil pengamatan
-          secara teratur.
-        </p>
-
-        <div class="info-box">
-          <strong>Ingat!</strong> Teks LHO bukan sekadar
-          cerita tentang pengalaman melihat suatu objek.
-          Isinya harus berangkat dari hasil pengamatan
-          dan disampaikan secara objektif.
-        </div>
-      </section>
-
-      <section class="lesson-section" id="ciri">
-        <h2>3. Ciri-Ciri Teks LHO</h2>
-
-        <div class="feature-grid">
-          <div class="content-card">
-            <span class="number">1</span>
-            <h3>Objektif</h3>
-            <p>
-              Tidak memihak dan tidak mengandung opini
-              pribadi yang tidak didukung fakta.
-            </p>
-          </div>
-
-          <div class="content-card">
-            <span class="number">2</span>
-            <h3>Faktual</h3>
-            <p>
-              Berdasarkan data dan fakta yang diperoleh
-              dari pengamatan.
-            </p>
-          </div>
-
-          <div class="content-card">
-            <span class="number">3</span>
-            <h3>Jelas</h3>
-            <p>
-              Menggunakan bahasa yang mudah dipahami
-              dan disusun secara logis.
-            </p>
-          </div>
-
-          <div class="content-card">
-            <span class="number">4</span>
-            <h3>Spesifik</h3>
-            <p>
-              Memberikan informasi yang detail dan rinci
-              mengenai objek.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="lesson-section" id="struktur">
-        <h2>4. Sistematika Teks LHO</h2>
-        <p>
-          Dalam materi ini, teks laporan hasil observasi
-          disusun melalui empat bagian utama.
-        </p>
-
-        <div class="structure-grid">
-          <div class="content-card">
-            <span class="number">1</span>
-            <h3>Judul</h3>
-            <p>
-              Berisi judul teks laporan hasil observasi
-              yang ingin disusun.
-            </p>
-          </div>
-
-          <div class="content-card">
-            <span class="number">2</span>
-            <h3>Pembuka</h3>
-            <p>
-              Bagian pembuka yang memberikan gambaran
-              umum tentang objek atau hal yang akan
-              dilaporkan.
-            </p>
-          </div>
-
-          <div class="content-card">
-            <span class="number">3</span>
-            <h3>Deskripsi Bagian/Isi</h3>
-            <p>
-              Penjelasan detail mengenai objek atau
-              bagian-bagiannya berdasarkan hasil
-              pengamatan.
-            </p>
-          </div>
-
-          <div class="content-card">
-            <span class="number">4</span>
-            <h3>Deskripsi Manfaat/Penutup</h3>
-            <p>
-              Penjelasan mengenai manfaat atau kegunaan
-              dari objek atau hal yang diamati.
-            </p>
-          </div>
-        </div>
-
-        <div class="info-box">
-          Sistematika di atas mengikuti materi pembelajaran
-          yang menjadi dasar halaman ini. Setiap bagian
-          memiliki fungsi untuk membantu pembaca memahami
-          objek secara bertahap.
-        </div>
-      </section>
-
-      <section class="lesson-section" id="cara">
-        <h2>5. Cara Membuat Teks LHO</h2>
-
-        <div class="content-card">
-          <h3>1. Melakukan Proses Observasi</h3>
-          <p>
-            Tuliskan apa yang kamu lihat, dengar, rasakan,
-            cium, dan/atau ukur. Catat informasi yang
-            diperoleh secara cermat.
-          </p>
-        </div>
-
-        <div class="content-card">
-          <h3>2. Membuat Pembukaan</h3>
-          <p>
-            Buatlah definisi atau gambaran umum dari
-            judul yang sudah ditentukan atau dari
-            objek observasi.
-          </p>
-        </div>
-
-        <div class="content-card">
-          <h3>3. Membuat Isi/Deskripsi Bagian</h3>
-          <p>
-            Hasil proses observasi atau pengamatan yang
-            telah dilakukan diubah menjadi sebuah
-            paragraf atau uraian yang sistematis.
-          </p>
-        </div>
-
-        <div class="content-card">
-          <h3>4. Membuat Penutup</h3>
-          <p>
-            Tuliskan manfaat atau kegunaan dari objek
-            yang sudah ditentukan. Bagian ini juga
-            dapat mengemukakan kesimpulan.
-          </p>
-        </div>
-      </section>
-
-      <section class="lesson-section" id="observasi">
-        <h2>6. Contoh Observasi Langsung: Ciplukan</h2>
-
-        <p>
-          Contoh berikut mempertahankan catatan hasil
-          pengamatan tanaman ciplukan dalam materi sumber.
-        </p>
-
-        <div class="example-text">
-          <h4>Hasil Pengamatan Tanaman Ciplukan</h4>
-          <ol>
-            <li>Akar ciplukan berupa akar tunggang.</li>
-            <li>Akar cabang berkembang menjadi akar serabut.</li>
-            <li>Daun tunggal bertangkai.</li>
-            <li>Daun berbentuk bulat oval atau bulat memanjang dengan ujung meruncing.</li>
-            <li>Batang tanaman mencapai sekitar satu meter.</li>
-            <li>Batang berbentuk bulat beralur.</li>
-            <li>Batang berwarna kecokelatan.</li>
-            <li>Buah ciplukan berbentuk seperti telur.</li>
-            <li>Buah terbungkus dalam kelopak yang menggelembung.</li>
-          </ol>
-        </div>
-
-        <div class="info-box">
-          Catatan pengamatan dapat dimulai dalam bentuk
-          daftar. Setelah data terkumpul, catatan tersebut
-          dikembangkan menjadi paragraf yang saling
-          berhubungan.
-        </div>
-      </section>
-
-      <section class="lesson-section" id="contoh">
-        <h2>7. Contoh Teks Laporan Hasil Observasi</h2>
-
-        <div class="example-text">
-          <h4>Judul: Ciplukan</h4>
-
-          <h3>Pembukaan</h3>
-          <p>
-            Ciplukan atau dalam bahasa Latin <em>Physalis
-            angulata</em> adalah tanaman semak rendah yang
-            memiliki berbagai kegunaan. Tanaman ini biasanya
-            dianggap sebagai tumbuhan liar karena banyak
-            tumbuh di kebun, tegalan, tepi jalan, semak,
-            atau hutan. Buah ini juga dikenal dengan
-            sebutan morel berry di Inggris, ciplukan di
-            Jawa, cecendet di Sunda, keceplokan di Bali,
-            dan leletokan di Minahasa.
-          </p>
-
-          <h3>Deskripsi Bagian/Isi</h3>
-          <p>
-            Tanaman ciplukan memiliki struktur tumbuhan
-            yang terdiri atas akar, batang, daun, dan buah.
-            Akar ciplukan berupa akar tunggang yang kemudian
-            memiliki akar cabang. Daun ciplukan merupakan
-            daun tunggal bertangkai dan berbentuk bulat oval
-            atau bulat memanjang dengan ujung meruncing.
-            Batang tanaman ini dapat mencapai sekitar satu
-            meter, berbentuk bulat beralur, dan berwarna
-            kecokelatan. Buah ciplukan berbentuk seperti
-            telur dan terbungkus dalam kelopak yang
-            menggelembung.
-          </p>
-
-          <h3>Deskripsi Manfaat/Penutup</h3>
-          <p>
-            Dalam contoh materi sumber, ciplukan disebut
-            memiliki sejumlah manfaat yang dipercaya
-            berkaitan dengan kesehatan. Bagian tanaman
-            yang disebut meliputi akar, batang, daun,
-            dan buah.
-          </p>
-        </div>
-
-        <div class="warning-box">
-          <strong>Catatan ketelitian informasi:</strong>
-          Materi sumber juga memuat klaim bahwa bagian
-          ciplukan dapat digunakan untuk mengobati tekanan
-          darah tinggi, kolesterol, rematik, diabetes,
-          penyakit paru-paru, sakit tenggorokan, stroke,
-          tumor, dan kanker. Klaim tersebut merupakan
-          isi contoh dalam bahan pembelajaran, bukan
-          bukti medis atau anjuran pengobatan. Dalam
-          menyusun LHO, informasi mengenai manfaat harus
-          didukung sumber yang dapat diverifikasi.
-        </div>
-
-        <h3>Analisis Struktur Contoh</h3>
-        <ul>
-          <li><strong>Pembukaan:</strong> memperkenalkan tanaman ciplukan dan gambaran umumnya.</li>
-          <li><strong>Deskripsi bagian:</strong> menjelaskan akar, daun, batang, dan buah.</li>
-          <li><strong>Penutup:</strong> menyampaikan informasi mengenai manfaat atau kegunaan objek.</li>
-        </ul>
-      </section>
-
-      <section class="lesson-section" id="kebahasaan">
-        <h2>8. Kaidah Kebahasaan Teks LHO</h2>
-
-        <p>
-          Selain memperhatikan struktur, penyusunan teks
-          LHO juga perlu memperhatikan pilihan bahasa.
-          Berikut beberapa unsur kebahasaan yang dapat
-          digunakan.
-        </p>
-
-        <div class="language-grid">
-          <div class="content-card">
-            <h3>Istilah Khusus</h3>
-            <p>
-              Kata yang memiliki makna khusus dalam
-              bidang tertentu. Contoh: akar tunggang,
-              batang, daun tunggal.
-            </p>
-          </div>
-
-          <div class="content-card">
-            <h3>Nomina atau Kata Benda</h3>
-            <p>
-              Digunakan untuk menyebut objek yang
-              diamati. Contoh: tanaman, daun, buah,
-              akar, dan batang.
-            </p>
-          </div>
-
-          <div class="content-card">
-            <h3>Verba atau Kata Kerja</h3>
-            <p>
-              Menyatakan keadaan atau aktivitas.
-              Contoh: tumbuh, berkembang, memiliki,
-              dan terdiri.
-            </p>
-          </div>
-
-          <div class="content-card">
-            <h3>Kalimat Definisi dan Deskripsi</h3>
-            <p>
-              Kalimat definisi menjelaskan pengertian
-              objek, sedangkan kalimat deskripsi
-              menjelaskan ciri atau bagiannya.
-            </p>
-          </div>
-        </div>
-
-        <div class="example-text">
-          <h4>Contoh Kalimat</h4>
-          <p>
-            <span class="highlight">Kalimat definisi:</span>
-            Ciplukan merupakan tanaman semak rendah.
-          </p>
-          <p>
-            <span class="highlight">Kalimat deskripsi:</span>
-            Daun ciplukan berbentuk bulat oval dengan
-            ujung meruncing.
-          </p>
-        </div>
-      </section>
-
-      <section class="lesson-section" id="langkah">
-        <h2>9. Langkah-Langkah Menyusun LHO</h2>
-
-        <ol>
-          <li><strong>Menentukan objek:</strong> pilih objek yang dapat diamati secara langsung.</li>
-          <li><strong>Menentukan tujuan:</strong> tentukan informasi apa yang ingin diperoleh.</li>
-          <li><strong>Melakukan pengamatan:</strong> amati objek secara cermat.</li>
-          <li><strong>Mencatat data:</strong> tuliskan fakta, ciri, bagian, dan keadaan objek.</li>
-          <li><strong>Mengelompokkan informasi:</strong> susun catatan berdasarkan aspek yang diamati.</li>
-          <li><strong>Menyusun laporan:</strong> kembangkan catatan menjadi teks yang sistematis.</li>
-          <li><strong>Menyunting:</strong> periksa isi, ketepatan fakta, struktur, dan penggunaan bahasa.</li>
-        </ol>
-
-        <div class="info-box">
-          <strong>Contoh objek observasi:</strong>
-          tumbuhan di lingkungan sekitar, hewan, fasilitas
-          umum, perpustakaan, lingkungan sekolah, atau
-          kondisi kebersihan suatu tempat.
-        </div>
-      </section>
-
-      <section class="lesson-section" id="kesalahan">
-        <h2>10. Kesalahan Umum dalam Menulis LHO</h2>
-
-        <ul>
-          <li>Mencampurkan fakta dengan pendapat pribadi.</li>
-          <li>Menuliskan informasi yang tidak diperoleh dari pengamatan atau sumber yang jelas.</li>
-          <li>Menggunakan uraian yang terlalu umum dan tidak rinci.</li>
-          <li>Menyusun paragraf tanpa urutan yang logis.</li>
-          <li>Mengabaikan ketepatan istilah dan ejaan.</li>
-          <li>Menyampaikan klaim manfaat tanpa bukti pendukung.</li>
-        </ul>
-
-        <div class="example-text">
-          <h4>Bandingkan Dua Kalimat Berikut</h4>
-          <p>
-            <strong>Kurang objektif:</strong>
-            Tanaman itu sangat indah dan paling bagus
-            dibandingkan tanaman lainnya.
-          </p>
-          <p>
-            <strong>Lebih objektif:</strong>
-            Tanaman tersebut memiliki daun berwarna hijau,
-            berbentuk oval, dan berujung meruncing.
-          </p>
-        </div>
-      </section>
-
-      <section class="lesson-section" id="latihan">
-        <h2>11. Latihan Pembelajaran</h2>
-
-        <div class="practice-box">
-          <h3>Aktivitas 1 — Mengamati Objek</h3>
-          <p>
-            Pilih satu objek yang ada di lingkungan
-            sekitarmu. Amati objek tersebut secara langsung.
-          </p>
-          <ol>
-            <li>Catat nama objek yang diamati.</li>
-            <li>Catat ciri-ciri atau bagian objek.</li>
-            <li>Catat informasi yang dapat dibuktikan.</li>
-            <li>Kelompokkan hasil pengamatan.</li>
-          </ol>
-        </div>
-
-        <div class="practice-box">
-          <h3>Aktivitas 2 — Menyusun Laporan</h3>
-          <p>
-            Kembangkan hasil pengamatan menjadi teks
-            laporan dengan sistematika berikut:
-          </p>
-          <ol>
-            <li>Judul.</li>
-            <li>Pembukaan atau gambaran umum.</li>
-            <li>Deskripsi bagian atau isi.</li>
-            <li>Deskripsi manfaat atau penutup.</li>
-          </ol>
-        </div>
-
-        <div class="practice-box">
-          <h3>Aktivitas 3 — Menyunting Laporan</h3>
-          <p>
-            Periksa kembali laporan yang telah dibuat.
-            Pastikan informasi disampaikan secara objektif,
-            faktual, jelas, spesifik, dan sistematis.
-          </p>
-        </div>
-
-        <div class="info-box">
-          <strong>Ingin menyimak video pembelajaran?</strong>
-          Video Teks LHO tersedia di halaman Kelas Virtual
-          Mandala Aksara.
-          <br>
-          <a class="virtual-link" href="kelas-virtual.html">
-            Buka Kelas Virtual
-          </a>
-        </div>
-      </section>
-
-      <section class="lesson-section" id="refleksi">
-        <h2>12. Refleksi Pembelajaran</h2>
-
-        <div class="reflection">
-          Setelah mempelajari teks laporan hasil observasi,
-          renungkan pertanyaan berikut:
-          <ul>
-            <li>Apa hal baru yang kamu pahami tentang kegiatan observasi?</li>
-            <li>Mengapa laporan hasil observasi harus disusun secara objektif?</li>
-            <li>Bagian mana yang paling menantang ketika mengubah catatan pengamatan menjadi paragraf?</li>
-            <li>Bagaimana hasil observasi dapat membantu kita memahami lingkungan sekitar?</li>
-          </ul>
-        </div>
-      </section>
-
-    </article>
+  <div class="info-card">
+    <h3>1. Judul</h3>
+    <p>Berisi judul teks laporan hasil observasi yang ingin kamu susun.</p>
   </div>
 
-  <section class="lesson-quote">
-    <blockquote>
-      “Ketelitian membuat kita mampu melihat lebih dekat,
-      sementara pengetahuan membantu kita memahami
-      apa yang sesungguhnya terlihat.”
-    </blockquote>
-    <cite>— Mandala Aksara</cite>
-  </section>
+  <div class="info-card">
+    <h3>2. Pembuka</h3>
+    <p>Bagian pembuka yang memberikan gambaran umum tentang objek atau hal yang akan dilaporkan.</p>
+  </div>
+
+  <div class="info-card">
+    <h3>3. Deskripsi Bagian/Isi</h3>
+    <p>Penjelasan detail mengenai objek atau bagian-bagiannya berdasarkan hasil pengamatan.</p>
+  </div>
+
+  <div class="info-card">
+    <h3>4. Deskripsi Manfaat/Penutup</h3>
+    <p>Penjelasan mengenai manfaat atau kegunaan dari objek atau hal yang diamati.</p>
+  </div>
+</section>
+
+<section id="langkah">
+  <h2>6. Cara Membuat Teks LHO</h2>
+
+  <div class="step">
+    <div class="step-number">1</div>
+    <div>
+      <h3>Melakukan Proses Observasi</h3>
+      <p>
+        Tuliskan saja apa yang kamu lihat, dengar, rasakan, cium,
+        dan atau ukur.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">2</div>
+    <div>
+      <h3>Membuat Pembukaan</h3>
+      <p>
+        Buatlah definisi dari judul yang sudah ditentukan
+        atau dari judul observasi.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">3</div>
+    <div>
+      <h3>Membuat Isi/Deskripsi Bagian</h3>
+      <p>
+        Hasil proses observasi atau pengamatan yang telah dilakukan
+        diubah menjadi sebuah paragraf.
+      </p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-number">4</div>
+    <div>
+      <h3>Membuat Penutup</h3>
+      <p>
+        Tuliskan manfaat atau kegunaan dari objek yang sudah ditentukan.
+        Bagian ini juga dapat mengemukakan kesimpulan.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="kebahasaan">
+  <h2>7. Kaidah Kebahasaan Teks LHO</h2>
+  <p>
+    Selain memperhatikan struktur, penulis perlu menggunakan bahasa
+    yang sesuai dengan tujuan laporan. Beberapa unsur kebahasaan
+    yang dapat diperhatikan adalah:
+  </p>
+
+  <div class="info-card">
+    <h3>a. Kata Benda</h3>
+    <p>
+      Digunakan untuk menyebutkan objek yang diamati, misalnya
+      tanaman, akar, batang, daun, dan buah.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h3>b. Istilah Khusus</h3>
+    <p>
+      Digunakan untuk menyampaikan informasi secara tepat,
+      terutama istilah yang berkaitan dengan bidang atau objek tertentu.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h3>c. Kalimat Deskripsi</h3>
+    <p>
+      Digunakan untuk menggambarkan ciri, bentuk, keadaan,
+      atau bagian-bagian objek yang diamati.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h3>d. Kata Kerja Relasional dan Material</h3>
+    <p>
+      Kata kerja relasional membantu menjelaskan identitas atau
+      penggolongan objek, sedangkan kata kerja material menunjukkan
+      tindakan atau proses.
+    </p>
+  </div>
+
+  <div class="note">
+    <strong>Catatan tambahan:</strong> Unsur kebahasaan ini merupakan
+    pengayaan materi agar peserta didik dapat menyusun laporan
+    dengan lebih terarah.
+  </div>
+</section>
+
+<section id="observasi">
+  <h2>8. Contoh Observasi Langsung: Ciplukan</h2>
+  <p>
+    Contoh berikut mempertahankan catatan hasil pengamatan tanaman
+    ciplukan dalam materi sumber.
+  </p>
+
+  <div class="example">
+    <h3>Hasil Pengamatan Tanaman Ciplukan</h3>
+    <ol>
+      <li>Akar ciplukan berupa akar tunggang.</li>
+      <li>Akar cabang berkembang menjadi akar serabut.</li>
+      <li>Daun tunggal bertangkai.</li>
+      <li>Daun berbentuk bulat oval atau bulat memanjang dengan ujung meruncing.</li>
+      <li>Batang tanaman mencapai sekitar satu meter.</li>
+      <li>Batang berbentuk bulat beralur.</li>
+      <li>Batang berwarna kecokelatan.</li>
+      <li>Buah ciplukan berbentuk seperti telur.</li>
+      <li>Buah terbungkus dalam kelopak yang menggelembung.</li>
+    </ol>
+  </div>
+
+  <p>
+    Catatan hasil pengamatan tersebut dapat dikembangkan menjadi
+    paragraf deskripsi bagian dalam sebuah teks laporan.
+  </p>
+</section>
+
+<section id="contoh-laporan">
+  <h2>9. Contoh Laporan Hasil Observasi: Ciplukan</h2>
+
+  <h3>A. Pendahuluan/Pembukaan</h3>
+  <p>
+    Bagian pembuka memberikan gambaran umum tentang objek
+    atau judul yang akan dilaporkan.
+  </p>
+  <div class="example">
+    <h3>Ciplukan</h3>
+    <p>
+      Ciplukan atau dalam bahasa Latin <i>Physalis angulata</i>
+      adalah tanaman semak rendah yang memiliki banyak manfaat
+      untuk kesehatan. Tanaman ini biasanya dianggap sebagai
+      tumbuhan liar karena banyak tumbuh di kebun, tegalan,
+      tepi jalan, semak, atau hutan. Buah ini juga dikenal
+      dengan sebutan morel berry di Inggris, ciplukan di Jawa,
+      cecendet di Sunda, keceplokan di Bali, dan leletokan
+      di Minahasa.
+    </p>
+  </div>
+
+  <h3>B. Deskripsi Bagian/Isi</h3>
+  <p>
+    Hasil proses observasi atau pengamatan yang telah dilakukan
+    diubah menjadi sebuah paragraf.
+  </p>
+  <div class="example">
+    <p>
+      Tanaman ciplukan memiliki struktur pohon yang lengkap,
+      terdiri atas akar, batang, daun, dan buah. Akar ciplukan
+      berupa akar tunggang yang kemudian akan tumbuh akar cabang
+      menjadi akar serabut. Daun ciplukan merupakan daun tunggal
+      bertangkai dan berbentuk bulat oval atau bulat memanjang
+      dengan ujung meruncing. Batang tanaman ini bisa mencapai
+      satu meter dengan bentuk bulat beralur dan berwarna
+      kecokelatan. Buah ciplukan berbentuk seperti telur
+      yang terbungkus dalam kelopak menggelembung.
+    </p>
+  </div>
+
+  <h3>C. Deskripsi Manfaat/Penutup</h3>
+  <p>
+    Bagian ini menjelaskan manfaat atau kegunaan objek yang
+    diamati, atau dapat mengemukakan kesimpulan.
+  </p>
+  <div class="example">
+    <p>
+      Dalam materi sumber, ciplukan dipercaya dapat menyembuhkan
+      berbagai penyakit. Seluruh bagian ciplukan disebut dapat
+      mengobati darah tinggi, kolesterol, dan rematik. Akar
+      tanaman ini disebut berkhasiat untuk mengobati penyakit
+      diabetes mellitus. Buahnya disebut berkhasiat mengobati
+      penyakit paru-paru, sakit tenggorokan, dan stroke.
+      Sedangkan daun ciplukan disebut dapat mengobati tumor
+      dan kanker.
+    </p>
+  </div>
+
+  <div class="note">
+    <strong>Catatan literasi:</strong> Klaim khasiat pengobatan di atas
+    dipertahankan sebagai bagian dari materi sumber, bukan sebagai
+    rekomendasi medis. Kebenaran dan keamanan klaim kesehatan harus
+    diperiksa melalui sumber ilmiah dan tenaga kesehatan yang kompeten.
+  </div>
+</section>
+
+<section id="kesalahan">
+  <h2>10. Hal yang Perlu Diperhatikan</h2>
+  <ul>
+    <li>Jangan mencampurkan opini pribadi ke dalam laporan faktual.</li>
+    <li>Pastikan informasi sesuai dengan objek yang benar-benar diamati.</li>
+    <li>Gunakan kata-kata yang jelas dan tidak bermakna ganda.</li>
+    <li>Susun informasi secara runtut dari gambaran umum menuju rincian.</li>
+    <li>Periksa kembali ejaan, tanda baca, dan ketepatan istilah.</li>
+    <li>Jangan menuliskan klaim yang belum dapat dipastikan sebagai fakta.</li>
+  </ul>
+</section>
+
+<section id="aktivitas">
+  <h2>11. Aktivitas Pembelajaran</h2>
+
+  <h3>Aktivitas 1 — Mengamati</h3>
+  <p>
+    Pilih satu objek di lingkungan sekitar. Amati bentuk,
+    warna, ukuran, bagian-bagian, dan karakteristiknya.
+  </p>
+
+  <h3>Aktivitas 2 — Mencatat Fakta</h3>
+  <p>
+    Catat sekurang-kurangnya lima fakta hasil pengamatan.
+    Pisahkan fakta dari dugaan atau pendapat pribadi.
+  </p>
+
+  <h3>Aktivitas 3 — Menyusun Laporan</h3>
+  <p>
+    Kembangkan catatan pengamatan menjadi teks laporan hasil
+    observasi dengan memperhatikan judul, pembuka, deskripsi
+    bagian, dan deskripsi manfaat atau penutup.
+  </p>
+
+  <h3>Aktivitas 4 — Merevisi dan Merefleksi</h3>
+  <p>
+    Baca kembali laporan yang telah dibuat. Periksa ketepatan
+    fakta, kelengkapan informasi, susunan paragraf, dan
+    penggunaan bahasa.
+  </p>
+</section>
+
+<section id="refleksi">
+  <h2>12. Refleksi Pembelajaran</h2>
+  <p>Renungkan beberapa pertanyaan berikut setelah mempelajari materi:</p>
+  <ol>
+    <li>Mengapa sebuah laporan hasil observasi harus bersifat objektif?</li>
+    <li>Apa perbedaan antara fakta hasil pengamatan dan opini pribadi?</li>
+    <li>Bagian manakah yang paling menantang ketika menyusun teks LHO?</li>
+    <li>Bagaimana cara memastikan informasi dalam laporan dapat dipercaya?</li>
+    <li>Apa manfaat keterampilan observasi dalam kehidupan sehari-hari?</li>
+  </ol>
+
+  <div class="reflection">
+    <h3>Belajar Lebih Lanjut</h3>
+    <p>
+      Untuk memperdalam pemahaman melalui tayangan video,
+      silakan kunjungi ruang pembelajaran virtual Mandala Aksara.
+    </p>
+    <a class="video-link" href="kelas-virtual.html">
+      Kunjungi Kelas Virtual →
+    </a>
+  </div>
+</section>
+
+<div class="final-quote">
+  “Ketelitian membuat kita mampu melihat lebih dekat,
+  sementara pengetahuan membantu kita memahami
+  apa yang sesungguhnya terlihat.”
+  <span>— Mandala Aksara</span>
+</div>
 
 </main>
+</div>
 
 <footer class="site-footer">
-  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
-  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+  <strong>MANDALA AKSARA</strong><br>
+  Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.<br>
+  © 2026 Mandala Aksara · Dikelola Mandiri
 </footer>
 
 <script>
-  const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('mainNav');
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      toggle.setAttribute(
-        'aria-expanded',
-        nav.classList.contains('open')
-      );
-    });
-  }
-
-  document.querySelectorAll('.nav-trigger').forEach(button => {
-    button.addEventListener('click', () => {
-      if (window.matchMedia('(max-width: 1050px)').matches) {
-        button.parentElement.classList.toggle('expanded');
-      }
-    });
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute(
+      'aria-expanded',
+      nav.classList.contains('open')
+    );
   });
+}
+
+document.querySelectorAll('.nav-trigger').forEach(button => {
+  button.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 900px)').matches) {
+      button.parentElement.classList.toggle('expanded');
+    }
+  });
+});
+
+const sectionLinks = document.querySelectorAll('.sidebar a');
+
+sectionLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    sectionLinks.forEach(item => item.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
 </script>
 
 </body>
