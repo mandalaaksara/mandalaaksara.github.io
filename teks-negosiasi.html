@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teks Negosiasi | Mandala Aksara</title>
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--navy:#142B4A;--navy-dark:#0D203A;--orange:#F28C28;--gold:#C69A45;--text:#34445B;--muted:#68778B;--soft:#F3F5F8;--border:#DCE3EC}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:#F7F8FA;color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.75}
+a{color:inherit}
+.site-header{background:var(--navy-dark);color:white;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:1000;box-shadow:0 3px 12px rgba(0,0,0,.15)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.brand img{width:46px;height:46px;object-fit:contain}
+.brand-name{font-size:19px;font-weight:800;letter-spacing:1px;color:white}
+.brand-subtitle{display:block;font-size:10px;color:#D9E1EC;letter-spacing:.5px}
+#menuToggle{display:none;border:1px solid rgba(255,255,255,.35);background:transparent;color:white;padding:8px 12px;border-radius:7px;font-size:22px;cursor:pointer}
+#mainNav{display:flex;align-items:center;gap:20px}
+#mainNav>a,.nav-trigger{color:white;text-decoration:none;font-size:13px;font-weight:600}
+.nav-trigger{border:none;background:transparent;cursor:pointer;padding:8px 0}
+.nav-dropdown{position:relative}
+.dropdown{display:none;position:absolute;top:100%;left:0;min-width:155px;background:white;box-shadow:0 8px 22px rgba(0,0,0,.15);border-radius:8px;overflow:hidden}
+.nav-dropdown:hover .dropdown,.nav-dropdown.expanded .dropdown{display:block}
+.dropdown a{display:block;padding:10px 15px;color:var(--navy);text-decoration:none;font-size:13px}
+.dropdown a:hover{background:var(--soft);color:var(--orange)}
+.hero{background:linear-gradient(120deg,var(--navy-dark),var(--navy));color:white;padding:55px 7%;text-align:center}
+.hero .eyebrow{color:#F6B65F;text-transform:uppercase;font-size:12px;letter-spacing:2px;font-weight:bold}
+.hero h1{font-size:clamp(27px,4vw,42px);line-height:1.2;margin:12px 0}
+.hero p{max-width:720px;margin:0 auto;color:#E0E7F0}
+.page-layout{max-width:1350px;margin:35px auto 60px;padding:0 22px;display:grid;grid-template-columns:255px minmax(0,1fr);gap:30px;align-items:start}
+.sidebar{background:white;border:1px solid var(--border);border-radius:13px;padding:20px 15px;position:sticky;top:95px;max-height:calc(100vh - 115px);overflow-y:auto}
+.sidebar h2{color:var(--navy);font-size:18px;margin:0 0 15px}
+.sidebar a{display:block;text-decoration:none;color:#485970;font-size:13px;font-weight:600;padding:9px 11px;margin:3px 0;border-radius:7px;line-height:1.4}
+.sidebar a:hover,.sidebar a.active{background:#FFF1E2;color:#B85D0B;border-left:3px solid var(--orange)}
+.content{min-width:0}
+.content section{background:white;border:1px solid var(--border);border-radius:12px;padding:27px;margin-bottom:22px;scroll-margin-top:105px}
+.content h2{color:var(--navy);font-size:25px;line-height:1.35;margin:0 0 18px;padding-bottom:12px;border-bottom:2px solid #E3E8EF}
+.content h3{color:var(--navy);font-size:18px;margin:23px 0 10px}
+.content p{margin:10px 0 15px}
+.content li{margin-bottom:7px}
+.note{background:#FFF5E9;border-left:4px solid var(--orange);border-radius:7px;padding:15px 18px;margin:18px 0}
+.info-card{background:#F8FAFC;border:1px solid var(--border);border-radius:9px;padding:20px;margin:15px 0}
+.info-card strong{color:var(--navy)}
+.two-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.feature{background:var(--soft);border-radius:9px;padding:17px;border-top:3px solid var(--orange)}
+.feature h3{margin-top:0}
+.step{display:flex;gap:15px;margin:17px 0;align-items:flex-start}
+.step-number{flex:0 0 34px;height:34px;display:grid;place-items:center;background:var(--navy);color:white;border-radius:50%;font-weight:bold}
+.example{background:#F9FAFC;border:1px solid var(--border);padding:20px;border-radius:9px;margin:16px 0}
+.example h3{margin-top:0}
+.example ol{padding-left:25px}
+.dialogue{border-left:3px solid var(--orange);padding:9px 15px;margin:12px 0;background:#fff}
+.dialogue strong{color:var(--navy)}
+.enrichment{border:1px dashed #D5A04B;background:#FFFAF1;border-radius:9px;padding:17px;margin:16px 0}
+.enrichment-label{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:bold;color:#9B5A12;margin-bottom:5px}
+.reflection{background:var(--navy);color:white;padding:25px;border-radius:12px;margin-top:25px}
+.reflection h3{color:#F6B65F;margin-top:0}
+.final-quote{text-align:center;padding:38px 20px;color:var(--navy);font-family:Georgia,serif;font-size:19px;font-style:italic}
+.final-quote span{display:block;margin-top:12px;color:var(--gold);font-family:Arial,sans-serif;font-size:14px;font-weight:bold;font-style:normal}
+.site-footer{background:var(--navy-dark);color:#DCE4EF;text-align:center;padding:25px 15px;font-size:13px}
+.site-footer strong{color:white}
+@media(max-width:900px){.site-header{flex-wrap:wrap}#menuToggle{display:block}#mainNav{display:none;flex-direction:column;align-items:stretch;width:100%;gap:4px;padding:10px 0}#mainNav.open{display:flex}#mainNav>a,.nav-trigger{display:block;padding:10px 5px;text-align:left}.dropdown{position:static;box-shadow:none;background:rgba(255,255,255,.08);margin-left:12px}.dropdown a{color:white}.page-layout{grid-template-columns:1fr;margin-top:20px}.sidebar{position:static;max-height:none}.sidebar-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px}}
+@media(max-width:560px){.hero{padding:38px 20px}.page-layout{padding:0 12px}.content section{padding:19px}.content h2{font-size:21px}.two-columns,.sidebar-list{grid-template-columns:1fr}.brand-name{font-size:16px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span><span class="brand-name">MANDALA AKSARA</span><span class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</span></span>
+  </a>
+  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <nav id="mainNav">
+    <a href="index.html">Beranda</a>
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">Materi Pembelajaran ⌄</button>
+      <div class="dropdown"><a href="kelas-x.html">Kelas X</a><a href="kelas-xi.html">Kelas XI</a><a href="kelas-xii.html">Kelas XII</a></div>
+    </div>
+    <a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a><a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+<section class="hero">
+  <div class="eyebrow">Bahasa Indonesia · Fase E · Kelas X</div>
+  <h1>Teks Negosiasi</h1>
+  <p>Memahami proses tawar-menawar, menyampaikan kepentingan secara santun, dan membangun kesepakatan yang dapat diterima bersama.</p>
+</section>
+<div class="page-layout">
+<aside class="sidebar">
+  <h2>Daftar Materi</h2>
+  <div class="sidebar-list">
+    <a href="#tujuan">Tujuan Pembelajaran</a>
+    <a href="#pengertian">Definisi Teks Negosiasi</a>
+    <a href="#tujuan-negosiasi">Tujuan Negosiasi</a>
+    <a href="#ciri">Ciri-Ciri dan Fungsi</a>
+    <a href="#struktur">Struktur Teks Negosiasi</a>
+    <a href="#contoh">Contoh Teks Negosiasi</a>
+    <a href="#kebahasaan">Kaidah Kebahasaan</a>
+    <a href="#jenis">Jenis-Jenis Negosiasi</a>
+    <a href="#sikap">Sikap dalam Negosiasi</a>
+    <a href="#kesalahan">Kesalahan Umum</a>
+    <a href="#strategi">Strategi Negosiasi</a>
+    <a href="#aktivitas">Aktivitas Pembelajaran</a>
+    <a href="#refleksi">Refleksi dan Evaluasi</a>
+    <a href="#kesimpulan">Kesimpulan</a>
+  </div>
+</aside>
+<main class="content">
+<section id="tujuan">
+<h2>1. Tujuan Pembelajaran</h2>
+<p>Setelah mempelajari materi ini, peserta didik diharapkan mampu:</p>
+<ol>
+<li>Menjelaskan definisi dan tujuan teks negosiasi.</li>
+<li>Mengidentifikasi ciri-ciri, fungsi, dan struktur teks negosiasi.</li>
+<li>Menganalisis isi dialog negosiasi berdasarkan tahapan orientasi, pengajuan, penawaran, persetujuan, dan penutup.</li>
+<li>Mengidentifikasi kaidah kebahasaan yang digunakan dalam teks negosiasi.</li>
+<li>Menjelaskan jenis negosiasi serta sikap yang perlu dimiliki oleh pihak-pihak yang bernegosiasi.</li>
+<li>Menyusun dan mempraktikkan negosiasi secara logis, santun, dan bertanggung jawab.</li>
+</ol>
+</section>
+
+<section id="pengertian">
+<h2>2. Definisi Teks Negosiasi</h2>
+<p>Teks negosiasi adalah teks yang berisi interaksi antara dua pihak atau lebih yang bertujuan untuk mencapai kesepakatan bersama, setiap pihak memiliki kepentingan yang berbeda. Kesepakatan dicapai melalui tawar-menawar yang logis dan santun.</p>
+<div class="note"><strong>Inti negosiasi:</strong> para pihak berusaha menemukan titik temu atas perbedaan kepentingan melalui komunikasi dan pertimbangan yang dapat diterima bersama.</div>
+<div class="enrichment"><span class="enrichment-label">Pengayaan</span><h3>Negosiasi dalam kehidupan sehari-hari</h3><p>Negosiasi dapat terjadi ketika pembeli dan penjual membicarakan harga, anggota keluarga menentukan pembagian tugas, peserta didik mengusulkan kegiatan kelas, atau warga mencari jalan keluar atas persoalan lingkungan.</p></div>
+</section>
+
+<section id="tujuan-negosiasi">
+<h2>3. Tujuan Teks Negosiasi</h2>
+<p>Materi sumber memuat empat tujuan teks negosiasi:</p>
+<ol>
+<li>Mencapai kesepakatan yang saling menguntungkan.</li>
+<li>Menyelesaikan perbedaan pendapat.</li>
+<li>Menjaga hubungan baik antar pihak.</li>
+<li>Menghindari konflik atau pertentangan.</li>
+</ol>
+<div class="enrichment"><span class="enrichment-label">Pengayaan</span><h3>Hasil negosiasi yang baik</h3><p>Hasil negosiasi tidak selalu berarti semua pihak memperoleh seluruh keinginannya. Kesepakatan yang baik mempertimbangkan kebutuhan utama setiap pihak, realistis untuk dilaksanakan, dan disetujui tanpa paksaan.</p></div>
+</section>
+
+<section id="ciri">
+<h2>4. Ciri-Ciri Teks Negosiasi</h2>
+<p>Materi sumber mencantumkan ciri-ciri berikut:</p>
+<div class="info-card"><ol><li>Mencapai kesepakatan yang saling menguntungkan.</li><li>Menyelesaikan perbedaan pendapat.</li><li>Menjaga hubungan baik antar pihak.</li><li>Menghindari konflik atau pertentangan.</li></ol></div>
+<h3>Fungsi negosiasi</h3>
+<p>Pada bagian lanjutan materi sumber, fungsi negosiasi dijelaskan sebagai berikut:</p>
+<div class="two-columns">
+<div class="feature"><h3>1. Sarana komunikasi</h3><p>Menjadi sarana bagi pihak-pihak yang berkepentingan untuk menyampaikan maksud dan kebutuhan.</p></div>
+<div class="feature"><h3>2. Alat penyelesaian masalah</h3><p>Membantu mencari jalan keluar atas perbedaan atau persoalan.</p></div>
+<div class="feature"><h3>3. Media mencapai kompromi</h3><p>Memberi ruang bagi para pihak untuk menyesuaikan tuntutan dan harapan.</p></div>
+<div class="feature"><h3>4. Menjalin kerja sama</h3><p>Membantu membangun hubungan dan kesepahaman yang baik.</p></div>
+</div>
+</section>
+
+<section id="struktur">
+<h2>5. Struktur Teks Negosiasi</h2>
+<p>Materi sumber membagi struktur teks negosiasi menjadi lima bagian:</p>
+<div class="step"><div class="step-number">1</div><div><h3>Orientasi</h3><p>Pembuka percakapan, pengenalan pihak yang bernegosiasi, dan penyampaian maksud awal.</p></div></div>
+<div class="step"><div class="step-number">2</div><div><h3>Pengajuan</h3><p>Salah satu pihak menyampaikan permintaan atau penawaran serta menjelaskan tujuan dan kebutuhan.</p></div></div>
+<div class="step"><div class="step-number">3</div><div><h3>Penawaran</h3><p>Proses tawar-menawar ketika masing-masing pihak mengemukakan argumen.</p></div></div>
+<div class="step"><div class="step-number">4</div><div><h3>Persetujuan</h3><p>Kesepakatan dicapai dan kedua pihak menerima hasil negosiasi.</p></div></div>
+<div class="step"><div class="step-number">5</div><div><h3>Penutup</h3><p>Pernyataan kesepakatan akhir serta ucapan terima kasih atau salam.</p></div></div>
+</section>
+
+<section id="contoh">
+<h2>6. Contoh Teks Negosiasi: Pak Andi dan Pak Rudi</h2>
+<p>Contoh berikut mempertahankan dialog dalam materi sumber. Pak Andi dan Pak Rudi bertemu di balai warga untuk membicarakan masalah kebisingan yang sempat menimbulkan perselisihan di lingkungan tempat tinggal mereka.</p>
+<div class="example">
+<h3>1. Orientasi</h3>
+<p>Pak Andi dan Pak Rudi bertemu di balai warga untuk membicarakan masalah kebisingan yang sempat menimbulkan perselisihan di lingkungan tempat tinggal mereka.</p>
+<div class="dialogue"><strong>Pak Andi:</strong><p>“Selamat sore, Pak Rudi. Terima kasih sudah bersedia bertemu. Saya berharap kita bisa membicarakan masalah ini dengan baik.”</p></div>
+</div>
+<div class="example">
+<h3>2. Pengajuan</h3>
+<div class="dialogue"><strong>Pak Andi:</strong><p>“Saya ingin menyampaikan keberatan terkait suara musik yang sering terdengar hingga larut malam dari rumah Bapak.”</p></div>
+</div>
+<div class="example">
+<h3>3. Penawaran</h3>
+<div class="dialogue"><strong>Pak Rudi:</strong><p>“Saya minta maaf atas ketidaknyamanan tersebut. Musik itu berasal dari latihan anak saya. Namun, apakah ada waktu tertentu yang masih bisa ditoleransi?”</p></div>
+<div class="dialogue"><strong>Pak Andi:</strong><p>“Jika memungkinkan, latihan dilakukan hingga pukul sembilan malam saja. Setelah itu volumenya bisa dikecilkan.”</p></div>
+<div class="dialogue"><strong>Pak Rudi:</strong><p>“Baik, saya bisa menyampaikan kepada anak saya untuk berhenti latihan pukul sembilan. Sebagai gantinya, apakah pada akhir pekan boleh sedikit lebih lama?”</p></div>
+<div class="dialogue"><strong>Pak Andi:</strong><p>“Selama tidak terlalu larut dan volumenya tetap rendah, saya rasa itu masih bisa diterima.”</p></div>
+</div>
+<div class="example">
+<h3>4. Persetujuan</h3>
+<div class="dialogue"><strong>Pak Rudi:</strong><p>“Baik, jadi kami sepakat latihan musik dilakukan hingga pukul sembilan malam pada hari biasa dan maksimal pukul sepuluh malam saat akhir pekan.”</p></div>
+<div class="dialogue"><strong>Pak Andi:</strong><p>“Saya setuju. Terima kasih atas pengertiannya.”</p></div>
+</div>
+<div class="example">
+<h3>5. Penutup</h3>
+<p>Kedua pihak berjabat tangan sebagai tanda kesepakatan dan berkomitmen menjaga ketenangan serta keharmonisan lingkungan.</p>
+</div>
+<h3>Analisis contoh</h3>
+<ul>
+<li><strong>Orientasi:</strong> kedua pihak membuka percakapan dan menyatakan kesediaan membicarakan persoalan.</li>
+<li><strong>Pengajuan:</strong> Pak Andi menyampaikan keberatan atas suara musik yang terdengar hingga larut malam.</li>
+<li><strong>Penawaran:</strong> kedua pihak mengajukan batas waktu latihan dan kelonggaran pada akhir pekan.</li>
+<li><strong>Persetujuan:</strong> keduanya menerima kesepakatan waktu latihan.</li>
+<li><strong>Penutup:</strong> kedua pihak berjabat tangan dan berkomitmen menjaga keharmonisan.</li>
+</ul>
+</section>
+
+<section id="kebahasaan">
+<h2>7. Kaidah Kebahasaan</h2>
+<p>Materi sumber memuat lima kaidah kebahasaan teks negosiasi:</p>
+<div class="info-card"><h3>1. Kalimat persuasif</h3><p>Kalimat yang digunakan untuk membujuk atau mengajak pihak lain. Contoh penanda: <em>sebaiknya, diharapkan, alangkah baiknya</em>.</p></div>
+<div class="info-card"><h3>2. Kalimat deklaratif dan interogatif</h3><p>Kalimat deklaratif menyampaikan pernyataan atau informasi, sedangkan kalimat interogatif digunakan untuk mengajukan pertanyaan.</p></div>
+<div class="info-card"><h3>3. Kata kerja mental</h3><p>Kata kerja yang berkaitan dengan pikiran, perasaan, atau sikap batin. Contoh dalam materi: <em>mengharapkan, mempertimbangkan, menyetujui</em>.</p></div>
+<div class="info-card"><h3>4. Bahasa santun</h3><p>Bahasa yang menghargai lawan bicara dan menjaga suasana komunikasi tetap baik.</p></div>
+<div class="info-card"><h3>5. Kata hubung sebab-akibat</h3><p>Kata hubung yang menunjukkan hubungan sebab dan akibat. Contoh: <em>karena, sehingga</em>.</p></div>
+<div class="enrichment"><span class="enrichment-label">Pengayaan</span><h3>Contoh penerapan dalam dialog</h3><p>“Bagaimana jika latihan dihentikan pukul sembilan malam <strong>agar</strong> warga dapat beristirahat?” Kalimat tersebut berupa usulan persuasif yang disampaikan dengan santun dan memuat alasan.</p></div>
+</section>
+
+<section id="jenis">
+<h2>8. Jenis-Jenis Negosiasi</h2>
+<p>Materi sumber mengelompokkan negosiasi menjadi empat jenis:</p>
+<div class="two-columns">
+<div class="feature"><h3>1. Negosiasi jual beli</h3><p>Negosiasi antara penjual dan pembeli, misalnya mengenai harga, jumlah, atau kualitas barang.</p></div>
+<div class="feature"><h3>2. Negosiasi kerja</h3><p>Negosiasi yang berkaitan dengan pekerjaan, misalnya pembagian tugas atau kesepakatan kerja.</p></div>
+<div class="feature"><h3>3. Negosiasi pendidikan</h3><p>Negosiasi dalam lingkungan pendidikan, misalnya kesepakatan kegiatan kelas.</p></div>
+<div class="feature"><h3>4. Negosiasi sosial</h3><p>Negosiasi untuk menyelesaikan persoalan atau kebutuhan bersama di lingkungan masyarakat.</p></div>
+</div>
+</section>
+
+<section id="sikap">
+<h2>9. Sikap yang Harus Dimiliki dalam Negosiasi</h2>
+<p>Materi sumber menegaskan lima sikap berikut:</p>
+<ol><li>Jujur.</li><li>Sopan.</li><li>Menghargai pendapat.</li><li>Fleksibel.</li><li>Bertanggung jawab.</li></ol>
+<div class="note"><strong>Pengingat:</strong> Keberhasilan negosiasi bukan hanya ditentukan oleh tercapainya kesepakatan, tetapi juga oleh cara para pihak memperlakukan satu sama lain selama proses berlangsung.</div>
+</section>
+
+<section id="kesalahan">
+<h2>10. Kesalahan Umum dalam Negosiasi</h2>
+<p>Materi sumber mengidentifikasi empat kesalahan yang perlu dihindari:</p>
+<ol><li>Memaksakan kehendak.</li><li>Menggunakan bahasa kasar.</li><li>Tidak mau berkompromi.</li><li>Tidak mendengarkan pihak lain.</li></ol>
+<div class="enrichment"><span class="enrichment-label">Pengayaan</span><h3>Akibat kesalahan dalam negosiasi</h3><p>Kesalahan tersebut dapat membuat komunikasi terhenti, memperbesar perbedaan pendapat, merusak hubungan, dan menghambat tercapainya kesepakatan. Karena itu, setiap pihak perlu mengendalikan emosi dan memberi kesempatan kepada pihak lain untuk berbicara.</p></div>
+</section>
+
+<section id="strategi">
+<h2>11. Pengayaan: Strategi Negosiasi yang Efektif</h2>
+<p>Bagian ini merupakan tambahan untuk membantu peserta didik menerapkan konsep negosiasi dalam situasi nyata.</p>
+<div class="step"><div class="step-number">1</div><div><h3>Persiapkan kebutuhan</h3><p>Tentukan hal yang ingin dicapai, alasan yang mendukung, dan batas kompromi yang masih dapat diterima.</p></div></div>
+<div class="step"><div class="step-number">2</div><div><h3>Dengarkan pihak lain</h3><p>Pahami kebutuhan dan alasan lawan bicara sebelum memberikan tanggapan.</p></div></div>
+<div class="step"><div class="step-number">3</div><div><h3>Sampaikan alasan secara logis</h3><p>Gunakan fakta atau pertimbangan yang relevan, bukan ancaman atau tekanan.</p></div></div>
+<div class="step"><div class="step-number">4</div><div><h3>Ajukan alternatif</h3><p>Jika usulan awal belum diterima, tawarkan pilihan lain yang tetap mempertimbangkan kepentingan kedua pihak.</p></div></div>
+<div class="step"><div class="step-number">5</div><div><h3>Tegaskan kesepakatan</h3><p>Pastikan isi kesepakatan dipahami bersama, termasuk batas waktu dan tanggung jawab setiap pihak.</p></div></div>
+</section>
+
+<section id="aktivitas">
+<h2>12. Aktivitas Pembelajaran</h2>
+<div class="info-card">
+<h3>Aktivitas 1 — Mengidentifikasi struktur</h3>
+<p>Bacalah contoh dialog Pak Andi dan Pak Rudi. Tandai bagian orientasi, pengajuan, penawaran, persetujuan, dan penutup. Tuliskan bukti kalimat yang menjadi alasan pengelompokanmu.</p>
+</div>
+<div class="info-card">
+<h3>Aktivitas 2 — Menganalisis kaidah kebahasaan</h3>
+<p>Temukan sekurang-kurangnya satu contoh kalimat persuasif, kalimat deklaratif, kalimat interogatif, kata kerja mental, bahasa santun, dan kata hubung sebab-akibat dari dialog atau contoh lain yang disediakan guru.</p>
+</div>
+<div class="info-card">
+<h3>Aktivitas 3 — Simulasi negosiasi</h3>
+<p>Bentuk kelompok berpasangan. Pilih satu situasi: negosiasi jual beli, pembagian tugas kelompok, usulan kegiatan kelas, atau persoalan kebisingan lingkungan. Susun dialog dengan lima struktur negosiasi, lalu praktikkan di depan kelas.</p>
+</div>
+<div class="info-card">
+<h3>Aktivitas 4 — Menulis teks negosiasi</h3>
+<p>Tulislah teks negosiasi berdasarkan situasi yang dekat dengan kehidupanmu. Pastikan terdapat perbedaan kepentingan, proses penawaran, alasan yang logis, dan kesepakatan yang jelas.</p>
+</div>
+</section>
+
+<section id="refleksi">
+<h2>13. Refleksi dan Evaluasi</h2>
+<div class="reflection">
+<h3>Refleksi Diri</h3>
+<p>Renungkan pertanyaan berikut setelah mempelajari materi:</p>
+<ol>
+<li>Apakah saya sudah memahami perbedaan antara pengajuan dan penawaran?</li>
+<li>Bagaimana cara saya menyampaikan ketidaksetujuan tanpa merendahkan orang lain?</li>
+<li>Mengapa mendengarkan pendapat pihak lain penting dalam negosiasi?</li>
+<li>Apakah kesepakatan yang saya buat sudah mempertimbangkan kepentingan bersama?</li>
+</ol>
+</div>
+<h3>Uji Pemahaman</h3>
+<ol>
+<li>Jelaskan definisi teks negosiasi berdasarkan materi.</li>
+<li>Sebutkan empat tujuan teks negosiasi.</li>
+<li>Jelaskan lima struktur teks negosiasi secara berurutan.</li>
+<li>Apa perbedaan bagian pengajuan dan penawaran?</li>
+<li>Sebutkan lima kaidah kebahasaan teks negosiasi beserta contohnya.</li>
+<li>Mengapa sikap fleksibel dan tanggung jawab diperlukan dalam negosiasi?</li>
+<li>Identifikasilah empat kesalahan umum dalam negosiasi.</li>
+<li>Buatlah satu contoh kesepakatan yang saling menguntungkan dalam kehidupan sekolah.</li>
+</ol>
+</section>
+
+<section id="kesimpulan">
+<h2>14. Kesimpulan</h2>
+<p>Negosiasi adalah bagian dari kehidupan sehari-hari. Keberhasilan negosiasi ditentukan oleh komunikasi dan sikap. Kesepakatan terbaik adalah yang menguntungkan semua pihak.</p>
+<div class="note"><strong>Pesan utama:</strong> Negosiasi bukan tentang siapa yang menang atau kalah, melainkan tentang bagaimana perbedaan kepentingan dikelola melalui komunikasi yang logis, santun, dan bertanggung jawab.</div>
+</section>
+</main>
+</div>
+<div class="final-quote">“Kesepakatan yang baik lahir bukan dari suara yang paling keras, melainkan dari kesediaan untuk saling mendengar dan memahami.”<span>— Mandala Aksara</span></div>
+<footer class="site-footer">
+<p>© 2026 <strong>Mandala Aksara</strong> · Dikelola Mandiri</p>
+<p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+<script>
+const menuToggle=document.getElementById('menuToggle');
+const mainNav=document.getElementById('mainNav');
+menuToggle.addEventListener('click',()=>{const open=mainNav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));});
+document.querySelectorAll('.nav-trigger').forEach(button=>button.addEventListener('click',()=>button.parentElement.classList.toggle('expanded')));
+const sections=[...document.querySelectorAll('.content section')];
+const links=[...document.querySelectorAll('.sidebar a')];
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+entry.target.id));}});},{rootMargin:'-25% 0px -65% 0px'});
+sections.forEach(section=>observer.observe(section));
+</script>
+</body>
+</html>
