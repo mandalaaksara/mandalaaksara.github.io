@@ -1,249 +1,56 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ruang Puisi | Mandala Aksara</title>
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    .poetry-hero {
-      background: linear-gradient(120deg, #0D203A, #142B4A);
-      color: white;
-      padding: 75px 7%;
-      text-align: center;
-      border-bottom: 5px solid #F28C28;
-    }
-
-    .poetry-hero .eyebrow {
-      color: #F2C078;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-
-    .poetry-hero h1 {
-      font-family: Georgia, serif;
-      font-size: clamp(34px, 5vw, 48px);
-      font-weight: normal;
-      margin: 0 0 18px;
-      line-height: 1.25;
-    }
-
-    .poetry-hero p {
-      max-width: 680px;
-      margin: auto;
-      color: #F3F5F8;
-      line-height: 1.9;
-      font-size: 15px;
-    }
-
-    .poetry-content {
-      max-width: 1050px;
-      margin: auto;
-      padding: 60px 22px 75px;
-    }
-
-    .poetry-intro {
-      text-align: center;
-      max-width: 750px;
-      margin: 0 auto 38px;
-    }
-
-    .poetry-intro h2 {
-      font-family: Georgia, serif;
-      color: #142B4A;
-      font-size: 30px;
-      margin-bottom: 12px;
-    }
-
-    .poetry-intro p {
-      color: #59677A;
-      line-height: 1.8;
-    }
-
-    .poetry-empty {
-      background: #FFFFFF;
-      border: 1px solid #E8EDF2;
-      border-top: 4px solid #C69A45;
-      border-radius: 12px;
-      padding: 48px 25px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(20, 43, 74, .08);
-    }
-
-    .poetry-symbol {
-      font-family: Georgia, serif;
-      font-size: 48px;
-      color: #C69A45;
-      margin-bottom: 12px;
-    }
-
-    .poetry-empty h3 {
-      font-family: Georgia, serif;
-      color: #142B4A;
-      font-size: 25px;
-      font-weight: normal;
-      margin: 0 0 12px;
-    }
-
-    .poetry-empty p {
-      color: #59677A;
-      max-width: 560px;
-      margin: auto;
-      line-height: 1.8;
-      font-size: 14px;
-    }
-
-    .poetry-quote {
-      margin-top: 45px;
-      padding: 30px 20px;
-      text-align: center;
-      color: #142B4A;
-      background: #F3F5F8;
-      border-radius: 10px;
-      font-family: Georgia, serif;
-      font-style: italic;
-      font-size: 19px;
-      line-height: 1.8;
-    }
-
-    .poetry-quote small {
-      display: block;
-      margin-top: 12px;
-      color: #D87516;
-      font-family: Arial, sans-serif;
-      font-style: normal;
-      font-size: 12px;
-    }
-
-    @media (max-width: 650px) {
-      .poetry-hero {
-        padding: 52px 22px;
-      }
-
-      .poetry-content {
-        padding: 40px 18px 55px;
-      }
-
-      .poetry-empty {
-        padding: 38px 20px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mengapresiasi unsur pembangun puisi dan mengekspresikan gagasan melalui bahasa yang puitis.">
+<title>Puisi | Mandala Aksara</title>
+<link rel="stylesheet" href="style.css">
+<style>
+:root{--navy:#142B4A;--orange:#F28C28;--gold:#C69A45;--white:#fff;--soft:#F3F5F8;--dark:#343A40}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;color:var(--dark);background:var(--soft);line-height:1.7}
+a{text-decoration:none}
+header{background:var(--white);padding:14px 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.brand{display:flex;align-items:center;gap:12px;color:var(--navy)}
+.brand img{width:58px;height:58px;object-fit:contain}
+.brand h2{margin:0;font-size:19px;letter-spacing:1px}
+.brand small{display:block;font-size:11px;color:#666}
+nav{display:flex;flex-wrap:wrap;gap:18px}
+nav a{color:var(--navy);font-size:14px;font-weight:bold}
+nav a:hover{color:var(--orange)}
+.menu-toggle{display:none}
+.hero{background:linear-gradient(120deg,#142B4A,#25496F);color:white;padding:58px 8%;text-align:center;border-bottom:5px solid var(--orange)}
+.hero .label{color:#F5C77D;font-weight:bold;letter-spacing:2px;font-size:13px}
+.hero h1{font-size:clamp(28px,5vw,42px);margin:12px 0}
+.hero p{max-width:720px;margin:auto;color:#E5EAF0}
+main{max-width:980px;margin:35px auto;padding:0 20px}
+.section{background:white;border-radius:14px;padding:28px;margin-bottom:24px;box-shadow:0 4px 16px rgba(20,43,74,.06);position:relative;overflow:hidden}
+.section h2{color:var(--navy);margin-top:0;border-left:4px solid var(--orange);padding-left:13px}
+.callout{background:#EEF3F8;border-left:4px solid var(--gold);padding:18px;border-radius:8px}
+.button{display:inline-block;background:var(--orange);color:white;padding:10px 20px;border-radius:7px;font-weight:bold;margin:8px 6px 0 0}
+.quote{text-align:center;color:var(--navy);font-style:italic;padding:20px}
+footer{background:var(--navy);color:white;text-align:center;padding:28px 15px;border-top:5px solid var(--orange);font-size:13px}
+footer p{margin:5px}
+@media(max-width:1050px){header{padding:10px 15px}nav{width:100%;gap:12px}}
+@media(max-width:650px){.hero{padding:42px 20px}.section{padding:22px 18px}nav{flex-direction:column}}
+</style>
 </head>
-
 <body>
-
-<header class="site-header">
-  <a class="brand" href="index.html">
-    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-    <div>
-      <strong>MANDALA AKSARA</strong>
-      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
-    </div>
-  </a>
-
-  <button class="menu-toggle" id="menuToggle"
-          aria-label="Buka navigasi" aria-expanded="false">☰</button>
-
-  <nav id="mainNav" aria-label="Navigasi utama">
-    <a href="index.html">Beranda</a>
-
-    <div class="nav-dropdown">
-      <button type="button" class="nav-trigger">
-        Materi Pembelajaran <span>⌄</span>
-      </button>
-      <div class="dropdown">
-        <a href="kelas-x.html">Kelas X</a>
-        <a href="kelas-xi.html">Kelas XI</a>
-        <a href="kelas-xii.html">Kelas XII</a>
-      </div>
-    </div>
-
-    <a href="galeri.html">Galeri</a>
-    <a href="perpustakaan.html" class="active">Perpustakaan Digital</a>
-    <a href="kelas-virtual.html">Kelas Virtual</a>
-    <a href="tentang.html">Tentang</a>
-  </nav>
+<header>
+<a class="brand" href="index.html"><img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara"><div><h2>MANDALA AKSARA</h2><small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small></div></a>
+<nav aria-label="Navigasi utama">
+<a href="index.html">Beranda</a><a href="kelas-x.html">Kelas X</a><a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a><a href="tentang.html">Tentang</a>
+</nav>
 </header>
-
+<section class="hero"><div class="label">FASE E · KELAS X</div><h1>Puisi</h1><p>Mengapresiasi unsur pembangun puisi dan mengekspresikan gagasan melalui bahasa yang puitis.</p></section>
 <main>
-
-  <section class="poetry-hero">
-    <div class="eyebrow">Mandala Aksara · Karya Sastra</div>
-    <h1>Ruang Puisi</h1>
-    <p>
-      Di antara kata dan jeda, tersimpan perasaan,
-      pemikiran, serta pengalaman manusia.
-      Selamat memasuki ruang tempat bahasa menemukan
-      keindahan dan maknanya.
-    </p>
-  </section>
-
-  <section class="poetry-content">
-
-    <div class="poetry-intro">
-      <h2>Menikmati Keindahan Kata</h2>
-      <p>
-        Puisi menghadirkan dunia melalui bahasa yang padat,
-        imajinatif, dan penuh makna. Setiap larik menyimpan
-        kemungkinan tafsir dan setiap bait membuka ruang
-        bagi pembaca untuk merasakan serta merenungkan.
-      </p>
-    </div>
-
-    <div class="poetry-empty">
-      <div class="poetry-symbol">❧</div>
-      <h3>Koleksi Puisi Sedang Disiapkan</h3>
-      <p>
-        Ruang ini akan menjadi tempat berkumpulnya karya-karya
-        puisi pilihan. Nantikan beragam ungkapan, imajinasi,
-        dan pemikiran yang akan hadir melalui untaian kata.
-      </p>
-    </div>
-
-    <div class="poetry-quote">
-      “Kata-kata mungkin sederhana,
-      tetapi makna dapat membawa kita
-      menjelajahi semesta.”
-      <small>— Mandala Aksara</small>
-    </div>
-
-  </section>
-
+<section class="section"><h2>Pengantar Materi</h2><p>Puisi merupakan karya sastra yang mengungkapkan pikiran dan perasaan melalui pilihan kata, irama, bunyi, serta pengimajian.</p>
+<div class="callout"><strong>Status Materi</strong><p>Materi lengkap sedang disiapkan. Halaman ini telah disediakan sebagai bagian dari peta pembelajaran Kelas X dan akan dilengkapi pada tahap berikutnya.</p></div>
+</section>
+<section class="section"><h2>Ruang Pengembangan</h2><p>Materi akan dilengkapi dengan tujuan pembelajaran, konsep utama, struktur atau unsur pembangun, kaidah kebahasaan, contoh, aktivitas pembelajaran, latihan, dan refleksi sesuai karakteristik materi.</p></section>
+<p style="text-align:center"><a class="button" href="kelas-x.html">← Kembali ke Ruang Materi Kelas X</a></p>
+<div class="quote">“Kata-kata yang dipilih dengan hati dapat membuka cakrawala makna.”<br><strong>— Mandala Aksara</strong></div>
 </main>
-
-<footer>
-  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
-  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
-</footer>
-
-<script>
-const toggle = document.getElementById('menuToggle');
-const nav = document.getElementById('mainNav');
-
-if (toggle && nav) {
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    toggle.setAttribute(
-      'aria-expanded',
-      nav.classList.contains('open')
-    );
-  });
-}
-
-document.querySelectorAll('.nav-trigger').forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (window.matchMedia('(max-width: 1050px)').matches) {
-      btn.parentElement.classList.toggle('expanded');
-    }
-  });
-});
-</script>
-
-</body>
-</html>
+<footer><p><strong>MANDALA AKSARA</strong></p><p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p><p>Ruang Literasi dan Pembelajaran Bahasa Indonesia · Dikelola Mandiri</p></footer>
+</body></html>
