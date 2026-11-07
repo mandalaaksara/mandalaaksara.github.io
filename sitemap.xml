@@ -1,6 +1,5 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://mandalaaksara.github.io/</loc>
   </url>
@@ -34,8 +33,4 @@
   <url>
     <loc>https://mandalaaksara.github.io/perpustakaan.html</loc>
   </url>
-  <url>
-    <loc>https://mandalaaksara.github.io/tentang.html</loc>
-  </url>
-
 </urlset>
