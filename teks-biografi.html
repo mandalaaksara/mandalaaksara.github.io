@@ -1,65 +1,930 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7HFZ0YC7P9');
-</script>
-  
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mengenali perjalanan hidup, perjuangan, dan keteladanan tokoh melalui teks biografi.">
-<title>Teks Biografi | Mandala Aksara</title>
-<link rel="stylesheet" href="style.css">
-<style>
-:root{--navy:#142B4A;--orange:#F28C28;--gold:#C69A45;--white:#fff;--soft:#F3F5F8;--dark:#343A40}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:var(--dark);background:var(--soft);line-height:1.7}
-a{text-decoration:none}
-header{background:var(--white);padding:14px 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
-.brand{display:flex;align-items:center;gap:12px;color:var(--navy)}
-.brand img{width:58px;height:58px;object-fit:contain}
-.brand h2{margin:0;font-size:19px;letter-spacing:1px}
-.brand small{display:block;font-size:11px;color:#666}
-nav{display:flex;flex-wrap:wrap;gap:18px}
-nav a{color:var(--navy);font-size:14px;font-weight:bold}
-nav a:hover{color:var(--orange)}
-.menu-toggle{display:none}
-.hero{background:linear-gradient(120deg,#142B4A,#25496F);color:white;padding:58px 8%;text-align:center;border-bottom:5px solid var(--orange)}
-.hero .label{color:#F5C77D;font-weight:bold;letter-spacing:2px;font-size:13px}
-.hero h1{font-size:clamp(28px,5vw,42px);margin:12px 0}
-.hero p{max-width:720px;margin:auto;color:#E5EAF0}
-main{max-width:980px;margin:35px auto;padding:0 20px}
-.section{background:white;border-radius:14px;padding:28px;margin-bottom:24px;box-shadow:0 4px 16px rgba(20,43,74,.06);position:relative;overflow:hidden}
-.section h2{color:var(--navy);margin-top:0;border-left:4px solid var(--orange);padding-left:13px}
-.callout{background:#EEF3F8;border-left:4px solid var(--gold);padding:18px;border-radius:8px}
-.button{display:inline-block;background:var(--orange);color:white;padding:10px 20px;border-radius:7px;font-weight:bold;margin:8px 6px 0 0}
-.quote{text-align:center;color:var(--navy);font-style:italic;padding:20px}
-footer{background:var(--navy);color:white;text-align:center;padding:28px 15px;border-top:5px solid var(--orange);font-size:13px}
-footer p{margin:5px}
-@media(max-width:1050px){header{padding:10px 15px}nav{width:100%;gap:12px}}
-@media(max-width:650px){.hero{padding:42px 20px}.section{padding:22px 18px}nav{flex-direction:column}}
-</style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materi Bahasa Indonesia Kelas X tentang teks biografi, karakteristik, struktur, ide pokok, ide penjelas, dan keteladanan tokoh.">
+  <title>Teks Biografi | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --navy-light: #25496F;
+      --orange: #F28C28;
+      --gold: #C69A45;
+      --white: #fff;
+      --soft: #F3F5F8;
+      --dark: #343A40;
+      --muted: #687586;
+      --line: #E3E8EF;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--dark);
+      background: var(--soft);
+      line-height: 1.8;
+    }
+
+    a { text-decoration: none; }
+
+    header {
+      background: var(--white);
+      padding: 14px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.06);
+      position: relative;
+      z-index: 10;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--navy);
+    }
+
+    .brand img {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+    }
+
+    .brand h2 {
+      margin: 0;
+      font-size: 19px;
+      letter-spacing: 1px;
+    }
+
+    .brand small {
+      display: block;
+      font-size: 11px;
+      color: #666;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover { color: var(--orange); }
+
+    .hero {
+      background: linear-gradient(120deg, var(--navy), var(--navy-light));
+      color: white;
+      padding: 58px 8%;
+      text-align: center;
+      border-bottom: 5px solid var(--orange);
+    }
+
+    .hero .label {
+      color: #F5C77D;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      margin: 12px 0;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: auto;
+      color: #E5EAF0;
+    }
+
+    .hero .meta {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #D7E1EC;
+    }
+
+    .layout {
+      max-width: 1250px;
+      margin: 35px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 25px;
+      align-items: start;
+    }
+
+    .sidebar {
+      background: white;
+      border-radius: 14px;
+      padding: 22px 18px;
+      box-shadow: 0 4px 16px rgba(20,43,74,.06);
+      position: sticky;
+      top: 18px;
+      max-height: calc(100vh - 36px);
+      overflow-y: auto;
+    }
+
+    .sidebar h3 {
+      color: var(--navy);
+      font-size: 15px;
+      margin: 0 0 14px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--orange);
+    }
+
+    .sidebar a {
+      display: block;
+      color: #465467;
+      padding: 8px 10px;
+      margin: 3px 0;
+      border-radius: 6px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .sidebar a:hover {
+      background: #EEF3F8;
+      color: var(--navy);
+      border-left: 3px solid var(--orange);
+    }
+
+    main { min-width: 0; }
+
+    .section {
+      background: white;
+      border-radius: 14px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(20,43,74,.06);
+      position: relative;
+      overflow: hidden;
+      scroll-margin-top: 20px;
+    }
+
+    .section h2 {
+      color: var(--navy);
+      margin-top: 0;
+      border-left: 4px solid var(--orange);
+      padding-left: 13px;
+      font-size: 22px;
+    }
+
+    .section h3 {
+      color: var(--navy);
+      margin-top: 25px;
+      font-size: 18px;
+    }
+
+    .section h4 {
+      color: var(--navy-light);
+      margin-bottom: 6px;
+    }
+
+    .section p { margin: 12px 0; }
+
+    .section ul, .section ol { padding-left: 24px; }
+
+    .section li { margin-bottom: 7px; }
+
+    .callout {
+      background: #EEF3F8;
+      border-left: 4px solid var(--gold);
+      padding: 18px 20px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+
+    .callout.orange {
+      background: #FFF5E9;
+      border-left-color: var(--orange);
+    }
+
+    .callout strong { color: var(--navy); }
+
+    .definition {
+      background: #F8FAFC;
+      border: 1px solid var(--line);
+      padding: 18px;
+      border-radius: 9px;
+      margin: 14px 0;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 18px 0;
+    }
+
+    .info-card {
+      background: #F8FAFC;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 18px;
+    }
+
+    .info-card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 29px;
+      height: 29px;
+      background: var(--navy);
+      color: white;
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: bold;
+      margin-right: 7px;
+    }
+
+    .example {
+      background: #FFFAF3;
+      border: 1px solid #F2DFC3;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 18px 0;
+    }
+
+    .example-title {
+      color: #9B641F;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 18px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 520px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--navy);
+      color: white;
+    }
+
+    tr:nth-child(even) td { background: #F8FAFC; }
+
+    .button {
+      display: inline-block;
+      background: var(--orange);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 7px;
+      font-weight: bold;
+      margin: 8px 6px 0 0;
+    }
+
+    .button:hover { background: #D97516; }
+
+    .quote {
+      text-align: center;
+      color: var(--navy);
+      font-style: italic;
+      padding: 25px 15px;
+      margin: 10px 0;
+    }
+
+    .quote strong {
+      display: block;
+      margin-top: 8px;
+      font-style: normal;
+    }
+
+    .checklist li { margin-bottom: 10px; }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 28px 15px;
+      border-top: 5px solid var(--orange);
+      font-size: 13px;
+    }
+
+    footer p { margin: 5px; }
+
+    @media(max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar {
+        position: static;
+        max-height: none;
+      }
+      .sidebar nav { display: block; }
+      .sidebar a { display: inline-block; margin: 3px; }
+    }
+
+    @media(max-width: 650px) {
+      header { padding: 10px 15px; }
+      nav { width: 100%; gap: 12px; }
+      nav a { font-size: 12px; }
+      .hero { padding: 42px 20px; }
+      .section { padding: 23px 18px; }
+      .two-column { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
+
 <body>
+
 <header>
-<a class="brand" href="index.html"><img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara"><div><h2>MANDALA AKSARA</h2><small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small></div></a>
-<nav aria-label="Navigasi utama">
-<a href="index.html">Beranda</a><a href="kelas-x.html">Kelas X</a><a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a><a href="tentang.html">Tentang</a>
-</nav>
+  <a class="brand" href="index.html">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <div>
+      <h2>MANDALA AKSARA</h2>
+      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+    </div>
+  </a>
+
+  <nav aria-label="Navigasi utama">
+    <a href="index.html">Beranda</a>
+    <a href="kelas-x.html">Kelas X</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
 </header>
-<section class="hero"><div class="label">FASE E · KELAS X</div><h1>Teks Biografi</h1><p>Mengenali perjalanan hidup, perjuangan, dan keteladanan tokoh melalui teks biografi.</p></section>
-<main>
-<section class="section"><h2>Pengantar Materi</h2><p>Teks biografi menyajikan kisah kehidupan seseorang yang dapat membantu pembaca mengenali pengalaman, perjuangan, dan nilai keteladanan.</p>
-<div class="callout"><strong>Status Materi</strong><p>Materi lengkap sedang disiapkan. Halaman ini telah disediakan sebagai bagian dari peta pembelajaran Kelas X dan akan dilengkapi pada tahap berikutnya.</p></div>
+
+<section class="hero">
+  <div class="label">FASE E · KELAS X</div>
+  <h1>Teks Biografi</h1>
+  <p>Menggali informasi kehidupan tokoh, memahami perjalanan perjuangannya, serta menemukan nilai-nilai keteladanan melalui teks biografi.</p>
+  <div class="meta">Bahasa Indonesia · Materi Pembelajaran</div>
 </section>
-<section class="section"><h2>Ruang Pengembangan</h2><p>Materi akan dilengkapi dengan tujuan pembelajaran, konsep utama, struktur atau unsur pembangun, kaidah kebahasaan, contoh, aktivitas pembelajaran, latihan, dan refleksi sesuai karakteristik materi.</p></section>
-<p style="text-align:center"><a class="button" href="kelas-x.html">← Kembali ke Ruang Materi Kelas X</a></p>
-<div class="quote">“Kisah hidup seseorang dapat menjadi jendela untuk memahami arti perjuangan.”<br><strong>— Mandala Aksara</strong></div>
-</main>
-<footer><p><strong>MANDALA AKSARA</strong></p><p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p><p>Ruang Literasi dan Pembelajaran Bahasa Indonesia · Dikelola Mandiri</p></footer>
-</body></html>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <h3>DAFTAR MATERI</h3>
+    <a href="#pengantar">Pengantar Materi</a>
+    <a href="#pengertian">Pengertian Biografi</a>
+    <a href="#tujuan">Tujuan dan Manfaat</a>
+    <a href="#karakteristik">Karakteristik Biografi</a>
+    <a href="#informasi">Informasi dan Fakta</a>
+    <a href="#idepokok">Ide Pokok dan Ide Penjelas</a>
+    <a href="#struktur">Struktur Teks Biografi</a>
+    <a href="#perbedaan">Biografi dan Autobiografi</a>
+    <a href="#unsur">Unsur Penting Biografi</a>
+    <a href="#kebahasaan">Kaidah Kebahasaan</a>
+    <a href="#contoh">Contoh Teks Biografi</a>
+    <a href="#analisis">Analisis Teks</a>
+    <a href="#menulis">Menulis Biografi</a>
+    <a href="#aktivitas">Aktivitas Pembelajaran</a>
+    <a href="#latihan">Latihan Pemahaman</a>
+    <a href="#refleksi">Refleksi</a>
+    <a href="#penutup">Penutup</a>
+  </aside>
+
+  <main>
+
+    <section class="section" id="pengantar">
+      <h2>Pengantar Materi</h2>
+      <p>Setiap manusia memiliki perjalanan hidup yang berbeda. Ada orang-orang yang dikenal karena perjuangannya, pemikirannya, karya-karyanya, maupun kontribusinya bagi masyarakat. Perjalanan hidup mereka dapat menjadi sumber pengetahuan dan inspirasi bagi orang lain.</p>
+      <p>Melalui teks biografi, kita dapat mengenal lebih dekat kehidupan seorang tokoh. Kita tidak hanya mengetahui siapa tokoh tersebut, tetapi juga memahami latar belakang, pengalaman, tantangan, keberhasilan, serta nilai-nilai yang dapat dipelajari dari kehidupannya.</p>
+
+      <div class="callout">
+        <strong>Pertanyaan Pemantik</strong>
+        <p>Mengapa perjalanan hidup seseorang layak diceritakan kepada orang lain? Apakah keberhasilan seorang tokoh hanya ditentukan oleh bakat, atau juga oleh perjuangan dan ketekunannya?</p>
+      </div>
+    </section>
+
+    <section class="section" id="pengertian">
+      <h2>1. Pengertian Teks Biografi</h2>
+      <div class="definition">
+        <p><strong>Teks biografi adalah teks cerita yang nyata (nonfiksi) yang menceritakan kehidupan seseorang berdasarkan fakta dan peristiwa yang benar-benar terjadi serta ditulis oleh orang lain.</strong></p>
+      </div>
+      <p>Biografi menggambarkan perjalanan hidup seseorang sejak masa awal kehidupannya hingga berbagai peristiwa penting yang membentuk dirinya. Informasi dalam biografi disusun berdasarkan fakta, bukan semata-mata hasil khayalan penulis.</p>
+      <p>Tokoh yang ditulis dalam biografi biasanya merupakan seseorang yang memiliki pengalaman, prestasi, pemikiran, karya, atau kontribusi yang dianggap penting untuk diketahui pembaca.</p>
+
+      <div class="callout">
+        <strong>Hal yang perlu diingat</strong>
+        <p>Biografi bukan sekadar kumpulan tanggal dan peristiwa. Di dalamnya terdapat perjalanan manusia, pengalaman, perjuangan, keputusan, dan nilai kehidupan yang dapat dipetik oleh pembaca.</p>
+      </div>
+    </section>
+
+    <section class="section" id="tujuan">
+      <h2>2. Tujuan dan Manfaat Teks Biografi</h2>
+      <h3>A. Tujuan Teks Biografi</h3>
+      <ol>
+        <li>Memberikan informasi faktual dan runtut mengenai kehidupan seorang tokoh.</li>
+        <li>Memperkenalkan pengalaman, perjuangan, karya, dan pencapaian tokoh kepada pembaca.</li>
+        <li>Menyampaikan nilai-nilai kehidupan dan keteladanan yang dapat dipelajari.</li>
+        <li>Mengabadikan perjalanan hidup dan kontribusi seseorang agar dapat diketahui generasi berikutnya.</li>
+      </ol>
+
+      <h3>B. Manfaat Mempelajari Teks Biografi</h3>
+      <ul>
+        <li>Menambah wawasan dan pengetahuan tentang tokoh-tokoh inspiratif.</li>
+        <li>Menumbuhkan motivasi untuk berusaha dan tidak mudah menyerah.</li>
+        <li>Melatih kemampuan membaca kritis dan menemukan informasi penting.</li>
+        <li>Mengenali nilai moral, sosial, budaya, dan pendidikan dari pengalaman tokoh.</li>
+        <li>Menjadi sumber inspirasi dalam menentukan sikap dan tujuan hidup.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="karakteristik">
+      <h2>3. Karakteristik Teks Biografi</h2>
+      <p>Teks biografi memiliki beberapa karakteristik yang membedakannya dari teks cerita lainnya.</p>
+
+      <div class="two-column">
+        <div class="info-card">
+          <h3><span class="number">1</span>Fakta</h3>
+          <p>Berisi informasi yang benar-benar terjadi dan dapat dipertanggungjawabkan kebenarannya.</p>
+        </div>
+        <div class="info-card">
+          <h3><span class="number">2</span>Alur Runtut</h3>
+          <p>Peristiwa kehidupan tokoh disampaikan secara berurutan, umumnya berdasarkan kronologi waktu.</p>
+        </div>
+        <div class="info-card">
+          <h3><span class="number">3</span>Tokoh Pilihan</h3>
+          <p>Menceritakan seseorang yang memiliki pengalaman, karya, prestasi, pemikiran, atau kontribusi tertentu.</p>
+        </div>
+        <div class="info-card">
+          <h3><span class="number">4</span>Sumber Terpercaya</h3>
+          <p>Informasi disusun berdasarkan sumber yang dapat dipercaya, seperti dokumen, arsip, wawancara, dan catatan sejarah.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="informasi">
+      <h2>4. Menggali Informasi dan Fakta dalam Biografi</h2>
+      <p>Ketika membaca teks biografi, pembaca perlu menemukan informasi penting mengenai tokoh. Informasi tersebut dapat berupa identitas, latar belakang keluarga, pendidikan, perjalanan karier, karya, prestasi, tantangan, dan kontribusinya.</p>
+
+      <h3>A. Informasi Penting yang Perlu Ditemukan</h3>
+      <ul>
+        <li>Identitas tokoh: nama, tempat dan tanggal lahir.</li>
+        <li>Latar belakang keluarga dan lingkungan kehidupan.</li>
+        <li>Riwayat pendidikan dan pengalaman awal.</li>
+        <li>Perjalanan karier atau perjuangan.</li>
+        <li>Peristiwa penting yang memengaruhi kehidupan tokoh.</li>
+        <li>Karya, prestasi, dan kontribusi tokoh.</li>
+        <li>Nilai keteladanan yang dapat dipelajari.</li>
+      </ul>
+
+      <h3>B. Memeriksa Kebenaran Informasi</h3>
+      <p>Informasi dalam biografi harus didukung sumber yang dapat dipercaya. Pembaca perlu membedakan fakta, pendapat penulis, dan informasi yang belum dapat dipastikan.</p>
+      <ul>
+        <li>Memeriksa kesesuaian informasi dengan dokumen atau catatan resmi.</li>
+        <li>Membandingkan informasi dari beberapa sumber yang kredibel.</li>
+        <li>Memastikan identitas, waktu, tempat, dan peristiwa tidak tertukar.</li>
+        <li>Menghindari informasi yang hanya bersumber dari kabar yang tidak jelas.</li>
+      </ul>
+
+      <div class="callout orange">
+        <strong>Ingat!</strong>
+        <p>Tidak semua informasi yang beredar tentang seorang tokoh dapat langsung dianggap sebagai fakta. Sikap kritis diperlukan agar kita tidak menyebarkan informasi yang keliru.</p>
+      </div>
+    </section>
+
+    <section class="section" id="idepokok">
+      <h2>5. Ide Pokok dan Ide Penjelas</h2>
+      <p>Untuk memahami isi teks biografi, pembaca perlu mengetahui ide pokok dan ide penjelas dalam setiap paragraf.</p>
+
+      <h3>A. Ide Pokok</h3>
+      <div class="definition">
+        <p><strong>Ide pokok adalah inti persoalan yang menjadi topik utama dalam sebuah paragraf.</strong></p>
+      </div>
+      <p>Ide pokok menjadi dasar pembahasan dalam paragraf. Kalimat-kalimat lainnya biasanya berfungsi menjelaskan atau mendukung ide pokok tersebut.</p>
+
+      <h3>B. Letak Ide Pokok</h3>
+      <div class="two-column">
+        <div class="info-card">
+          <h3>1. Paragraf Deduktif</h3>
+          <p>Ide pokok terletak di awal paragraf. Paragraf diawali pernyataan umum, kemudian diikuti penjelasan atau rincian khusus.</p>
+          <div class="example">
+            <div class="example-title">Contoh</div>
+            <p>R.A. Kartini dikenal sebagai tokoh yang memperjuangkan pendidikan perempuan. Melalui pemikiran dan surat-suratnya, ia menyampaikan gagasan tentang pentingnya kesempatan belajar bagi perempuan. Pemikirannya kemudian menginspirasi banyak orang.</p>
+            <p><strong>Ide pokok:</strong> R.A. Kartini dikenal sebagai tokoh yang memperjuangkan pendidikan perempuan.</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>2. Paragraf Induktif</h3>
+          <p>Ide pokok terletak di akhir paragraf. Paragraf diawali rincian atau penjelasan khusus, kemudian diakhiri simpulan umum.</p>
+          <div class="example">
+            <div class="example-title">Contoh</div>
+            <p>Ia terus belajar meskipun menghadapi berbagai keterbatasan. Ia juga berusaha menyampaikan gagasannya melalui tulisan dan surat. Pemikirannya memberikan pengaruh terhadap perjuangan pendidikan perempuan. Dengan demikian, Kartini menjadi salah satu tokoh penting dalam sejarah pendidikan perempuan Indonesia.</p>
+            <p><strong>Ide pokok:</strong> Kartini menjadi salah satu tokoh penting dalam sejarah pendidikan perempuan Indonesia.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>C. Ide Penjelas</h3>
+      <div class="definition">
+        <p><strong>Ide penjelas adalah informasi tambahan yang berfungsi menjelaskan ide pokok.</strong></p>
+      </div>
+      <p>Ide penjelas dapat berupa alasan, rincian peristiwa, contoh, bukti, keterangan waktu, atau informasi lain yang memperjelas gagasan utama.</p>
+
+      <div class="example">
+        <div class="example-title">Contoh Mengidentifikasi Ide Pokok dan Ide Penjelas</div>
+        <p><strong>Paragraf:</strong></p>
+        <p>Ki Hadjar Dewantara memiliki peran penting dalam perkembangan pendidikan di Indonesia. Ia mendirikan Perguruan Taman Siswa pada tahun 1922. Melalui lembaga tersebut, ia memperjuangkan pendidikan yang memberi kesempatan kepada masyarakat untuk memperoleh ilmu pengetahuan.</p>
+        <p><strong>Ide pokok:</strong> Ki Hadjar Dewantara memiliki peran penting dalam perkembangan pendidikan di Indonesia.</p>
+        <p><strong>Ide penjelas:</strong></p>
+        <ol>
+          <li>Ia mendirikan Perguruan Taman Siswa pada tahun 1922.</li>
+          <li>Ia memperjuangkan pendidikan bagi masyarakat.</li>
+        </ol>
+      </div>
+
+      <div class="callout">
+        <strong>Strategi menemukan ide pokok</strong>
+        <ol>
+          <li>Baca paragraf secara utuh.</li>
+          <li>Temukan persoalan yang paling banyak dibicarakan.</li>
+          <li>Perhatikan kalimat awal dan akhir paragraf.</li>
+          <li>Bedakan gagasan utama dengan rincian pendukung.</li>
+          <li>Rumuskan inti paragraf menggunakan kalimat sendiri tanpa mengubah makna.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="struktur">
+      <h2>6. Struktur Teks Biografi</h2>
+      <p>Teks biografi umumnya memiliki tiga bagian utama, yaitu orientasi, peristiwa penting, dan reorientasi.</p>
+
+      <div class="info-card">
+        <h3><span class="number">1</span>Orientasi</h3>
+        <p>Orientasi merupakan bagian pembuka yang berisi pengenalan tokoh. Bagian ini memberikan gambaran awal mengenai identitas dan latar belakang tokoh sebelum pembaca mengikuti perjalanan hidupnya.</p>
+        <p>Informasi yang dapat disampaikan antara lain:</p>
+        <ul>
+          <li>Nama tokoh.</li>
+          <li>Tempat dan tanggal lahir.</li>
+          <li>Latar belakang keluarga.</li>
+          <li>Gambaran masa kecil atau lingkungan kehidupan.</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3><span class="number">2</span>Peristiwa Penting (Peristiwa Inti)</h3>
+        <p>Peristiwa penting merupakan bagian inti yang menceritakan perjalanan kehidupan tokoh. Bagian ini memuat berbagai kejadian yang berpengaruh terhadap perkembangan kehidupan tokoh.</p>
+        <p>Informasi yang dapat dimuat antara lain:</p>
+        <ul>
+          <li>Riwayat pendidikan.</li>
+          <li>Awal perjalanan karier atau perjuangan.</li>
+          <li>Karya dan pencapaian.</li>
+          <li>Kesulitan atau tantangan yang dihadapi.</li>
+          <li>Usaha tokoh dalam mengatasi berbagai persoalan.</li>
+          <li>Peristiwa yang membawa perubahan dalam kehidupannya.</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3><span class="number">3</span>Reorientasi</h3>
+        <p>Reorientasi merupakan bagian penutup yang berisi pandangan penulis atau simpulan mengenai tokoh. Bagian ini dapat menggambarkan jasa, pemikiran, pengaruh, dan sifat-sifat teladan tokoh.</p>
+        <p>Reorientasi bersifat opsional. Artinya, bagian ini boleh dicantumkan atau tidak, bergantung pada cara penulis menyusun teks biografi.</p>
+      </div>
+
+      <div class="callout orange">
+        <strong>Catatan penting</strong>
+        <p>Urutan umum struktur biografi adalah orientasi, peristiwa penting, kemudian reorientasi. Peristiwa penting menjadi bagian yang biasanya paling banyak memuat informasi.</p>
+      </div>
+    </section>
+
+    <section class="section" id="perbedaan">
+      <h2>7. Perbedaan Biografi, Autobiografi, dan Novel Sejarah</h2>
+      <p>Ketiga jenis tulisan tersebut dapat sama-sama menceritakan kehidupan atau peristiwa masa lalu. Namun, terdapat perbedaan mendasar di antara ketiganya.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Jenis Teks</th>
+              <th>Pengertian</th>
+              <th>Penulis dan Sifat Cerita</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Biografi</strong></td>
+              <td>Kisah nyata kehidupan seseorang.</td>
+              <td>Ditulis oleh orang lain dan berdasarkan fakta.</td>
+            </tr>
+            <tr>
+              <td><strong>Autobiografi</strong></td>
+              <td>Kisah kehidupan seseorang yang ditulis berdasarkan pengalaman hidupnya sendiri.</td>
+              <td>Ditulis oleh tokoh itu sendiri dan berdasarkan pengalaman nyata.</td>
+            </tr>
+            <tr>
+              <td><strong>Novel Sejarah</strong></td>
+              <td>Karya sastra berbentuk novel yang menggunakan latar atau peristiwa sejarah.</td>
+              <td>Bersifat fiksi; dapat memadukan latar sejarah dengan tokoh atau peristiwa rekaan.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout">
+        <strong>Kesimpulan perbedaan</strong>
+        <p>Perbedaan utama biografi dan autobiografi terletak pada penulisnya. Biografi ditulis orang lain, sedangkan autobiografi ditulis oleh tokoh yang menceritakan kehidupannya sendiri. Novel sejarah merupakan karya sastra fiksi yang berlatar sejarah.</p>
+      </div>
+    </section>
+
+    <section class="section" id="unsur">
+      <h2>8. Unsur Penting dalam Teks Biografi</h2>
+      <p>Untuk memahami perjalanan hidup seorang tokoh secara utuh, pembaca dapat memperhatikan unsur-unsur berikut.</p>
+
+      <ol>
+        <li><strong>Identitas tokoh:</strong> nama, tempat dan tanggal lahir, serta latar belakang keluarga.</li>
+        <li><strong>Latar kehidupan:</strong> lingkungan keluarga, masyarakat, dan keadaan zaman yang memengaruhi tokoh.</li>
+        <li><strong>Pendidikan:</strong> pengalaman belajar dan proses pembentukan pengetahuan tokoh.</li>
+        <li><strong>Perjuangan:</strong> usaha yang dilakukan tokoh dalam menghadapi tantangan.</li>
+        <li><strong>Karya dan prestasi:</strong> hasil pemikiran, pekerjaan, atau pencapaian tokoh.</li>
+        <li><strong>Kontribusi:</strong> sumbangan atau pengaruh tokoh bagi masyarakat dan lingkungannya.</li>
+        <li><strong>Keteladanan:</strong> sikap dan nilai kehidupan yang dapat dijadikan pelajaran.</li>
+      </ol>
+    </section>
+
+    <section class="section" id="kebahasaan">
+      <h2>9. Kaidah Kebahasaan Teks Biografi</h2>
+      <p>Bahasa dalam teks biografi digunakan untuk menyampaikan informasi dan rangkaian peristiwa kehidupan tokoh secara jelas. Beberapa unsur kebahasaan yang dapat ditemukan antara lain:</p>
+
+      <h3>A. Kata Ganti Orang Ketiga</h3>
+      <p>Digunakan untuk merujuk kepada tokoh yang diceritakan.</p>
+      <p><strong>Contoh:</strong> ia, dia, beliau, atau nama tokoh.</p>
+
+      <h3>B. Kata Kerja Tindakan</h3>
+      <p>Menunjukkan tindakan atau aktivitas yang dilakukan tokoh.</p>
+      <p><strong>Contoh:</strong> belajar, mendirikan, menulis, memimpin, memperjuangkan, dan mengembangkan.</p>
+
+      <h3>C. Kata Kerja Mental</h3>
+      <p>Menggambarkan proses berpikir, merasakan, atau sikap batin tokoh.</p>
+      <p><strong>Contoh:</strong> berpikir, menyadari, meyakini, menginginkan, dan memahami.</p>
+
+      <h3>D. Kata Hubung Temporal</h3>
+      <p>Digunakan untuk menunjukkan hubungan waktu atau urutan peristiwa.</p>
+      <p><strong>Contoh:</strong> kemudian, setelah itu, sebelumnya, sejak, ketika, dan akhirnya.</p>
+
+      <h3>E. Keterangan Waktu dan Tempat</h3>
+      <p>Memberikan informasi mengenai kapan dan di mana peristiwa berlangsung.</p>
+      <p><strong>Contoh:</strong> pada tahun 1922, di Yogyakarta, ketika masih muda, dan pada masa perjuangan.</p>
+
+      <h3>F. Kata Sifat</h3>
+      <p>Menggambarkan karakter atau sifat tokoh.</p>
+      <p><strong>Contoh:</strong> tekun, berani, sederhana, gigih, cerdas, dan peduli.</p>
+
+      <h3>G. Kalimat yang Menunjukkan Fakta</h3>
+      <p>Digunakan untuk menyampaikan informasi yang dapat dibuktikan kebenarannya.</p>
+      <p><strong>Contoh:</strong> Ki Hadjar Dewantara mendirikan Perguruan Taman Siswa pada tahun 1922.</p>
+    </section>
+
+    <section class="section" id="contoh">
+      <h2>10. Contoh Teks Biografi</h2>
+      <div class="example">
+        <h3 style="margin-top:0">Ki Hadjar Dewantara: Pelopor Pendidikan bagi Bangsa</h3>
+
+        <p><strong>Orientasi</strong></p>
+        <p>Ki Hadjar Dewantara lahir di Yogyakarta pada 2 Mei 1889 dengan nama Raden Mas Soewardi Soerjaningrat. Ia dikenal sebagai tokoh pergerakan nasional yang memiliki perhatian besar terhadap pendidikan. Pemikirannya berkembang dalam lingkungan masyarakat kolonial ketika kesempatan memperoleh pendidikan belum dapat dinikmati secara merata oleh seluruh rakyat.</p>
+
+        <p><strong>Peristiwa Penting</strong></p>
+        <p>Sejak muda, Ki Hadjar Dewantara aktif menyampaikan gagasan melalui tulisan. Ia menggunakan pemikiran dan tulisannya untuk mengkritik ketidakadilan yang terjadi pada masa penjajahan. Salah satu tulisannya yang terkenal adalah “Als Ik Eens Nederlander Was” atau “Seandainya Aku Seorang Belanda”, yang terbit pada tahun 1913.</p>
+
+        <p>Perjuangannya tidak berhenti pada kegiatan menulis. Pada tahun 1922, ia mendirikan Perguruan Taman Siswa di Yogyakarta. Lembaga pendidikan ini menjadi salah satu bentuk perjuangannya untuk memberikan kesempatan belajar kepada masyarakat pribumi. Ia meyakini bahwa pendidikan memiliki peran penting dalam membangun kemerdekaan dan martabat bangsa.</p>
+
+        <p>Dalam pemikirannya tentang pendidikan, Ki Hadjar Dewantara memperkenalkan semboyan yang sangat dikenal, yaitu “Ing Ngarsa Sung Tuladha, Ing Madya Mangun Karsa, Tut Wuri Handayani”. Semboyan tersebut menggambarkan pentingnya keteladanan, membangun semangat, dan memberikan dorongan kepada peserta didik.</p>
+
+        <p><strong>Reorientasi</strong></p>
+        <p>Ki Hadjar Dewantara dikenang sebagai tokoh penting dalam sejarah pendidikan Indonesia. Perjuangannya mengajarkan bahwa pendidikan bukan hanya tentang memperoleh pengetahuan, melainkan juga membangun karakter, kemandirian, dan kesadaran sebagai bagian dari bangsa. Tanggal kelahirannya, 2 Mei, diperingati sebagai Hari Pendidikan Nasional.</p>
+      </div>
+
+      <div class="callout">
+        <strong>Catatan pembelajaran</strong>
+        <p>Contoh di atas merupakan teks ilustratif untuk latihan mengenali struktur biografi. Apabila digunakan sebagai bahan penulisan faktual atau publikasi, rincian sejarah sebaiknya diperiksa kembali melalui sumber tepercaya.</p>
+      </div>
+    </section>
+
+    <section class="section" id="analisis">
+      <h2>11. Analisis Struktur dan Isi Teks Biografi</h2>
+      <p>Berdasarkan contoh biografi Ki Hadjar Dewantara, kita dapat mengidentifikasi bagian-bagian teks sebagai berikut.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Struktur</th>
+              <th>Isi Teks</th>
+              <th>Informasi yang Diperoleh</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Orientasi</td>
+              <td>Pengenalan nama, tempat dan tanggal lahir, serta latar kehidupan tokoh.</td>
+              <td>Identitas dan gambaran awal kehidupan tokoh.</td>
+            </tr>
+            <tr>
+              <td>Peristiwa penting</td>
+              <td>Perjuangan melalui tulisan, pendirian Taman Siswa, dan pemikiran pendidikan.</td>
+              <td>Pengalaman, perjuangan, gagasan, dan kontribusi tokoh.</td>
+            </tr>
+            <tr>
+              <td>Reorientasi</td>
+              <td>Penilaian mengenai peran dan keteladanan tokoh.</td>
+              <td>Pengaruh dan nilai kehidupan yang dapat dipelajari.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Menemukan Ide Pokok dalam Contoh Biografi</h3>
+      <div class="example">
+        <p><strong>Paragraf:</strong></p>
+        <p>Pada tahun 1922, Ki Hadjar Dewantara mendirikan Perguruan Taman Siswa di Yogyakarta. Lembaga pendidikan ini menjadi salah satu bentuk perjuangannya untuk memberikan kesempatan belajar kepada masyarakat pribumi. Ia meyakini bahwa pendidikan memiliki peran penting dalam membangun kemerdekaan dan martabat bangsa.</p>
+        <p><strong>Ide pokok:</strong> Ki Hadjar Dewantara mendirikan Perguruan Taman Siswa sebagai bentuk perjuangan di bidang pendidikan.</p>
+        <p><strong>Ide penjelas:</strong></p>
+        <ul>
+          <li>Perguruan Taman Siswa didirikan pada tahun 1922 di Yogyakarta.</li>
+          <li>Lembaga tersebut memperjuangkan kesempatan belajar bagi masyarakat pribumi.</li>
+          <li>Pendidikan dipandang penting untuk membangun kemerdekaan dan martabat bangsa.</li>
+        </ul>
+      </div>
+
+      <h3>Menemukan Nilai Keteladanan</h3>
+      <ul>
+        <li><strong>Peduli:</strong> memperjuangkan kesempatan pendidikan bagi masyarakat.</li>
+        <li><strong>Berani:</strong> menyampaikan gagasan dan kritik terhadap ketidakadilan.</li>
+        <li><strong>Tekun:</strong> terus berjuang melalui pemikiran dan tindakan.</li>
+        <li><strong>Bertanggung jawab:</strong> berkontribusi dalam perkembangan pendidikan bangsa.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="menulis">
+      <h2>12. Langkah-Langkah Menulis Teks Biografi</h2>
+      <p>Menulis biografi memerlukan pengumpulan informasi, pemilihan peristiwa penting, dan penyusunan cerita secara runtut. Berikut langkah-langkah yang dapat dilakukan.</p>
+
+      <ol>
+        <li><strong>Menentukan tokoh.</strong> Pilih tokoh yang memiliki perjalanan hidup, karya, perjuangan, atau kontribusi yang menarik untuk ditulis.</li>
+        <li><strong>Mengumpulkan informasi.</strong> Cari informasi melalui buku, artikel tepercaya, dokumen, arsip, atau wawancara.</li>
+        <li><strong>Memeriksa fakta.</strong> Pastikan informasi mengenai identitas, waktu, tempat, dan peristiwa sesuai dengan sumber yang dapat dipertanggungjawabkan.</li>
+        <li><strong>Mencatat peristiwa penting.</strong> Pilih kejadian yang berpengaruh terhadap perjalanan kehidupan tokoh.</li>
+        <li><strong>Menyusun kerangka.</strong> Kelompokkan informasi ke dalam orientasi, peristiwa penting, dan reorientasi.</li>
+        <li><strong>Mengembangkan paragraf.</strong> Gunakan bahasa yang jelas, runtut, dan sesuai kaidah kebahasaan.</li>
+        <li><strong>Menyunting tulisan.</strong> Periksa kembali ketepatan fakta, ejaan, tanda baca, pilihan kata, dan keterpaduan paragraf.</li>
+      </ol>
+
+      <div class="callout orange">
+        <strong>Prinsip utama menulis biografi</strong>
+        <p>Biografi yang baik tidak hanya menarik untuk dibaca, tetapi juga menyajikan informasi yang benar, runtut, dan dapat dipertanggungjawabkan.</p>
+      </div>
+    </section>
+
+    <section class="section" id="aktivitas">
+      <h2>13. Aktivitas Pembelajaran</h2>
+
+      <h3>Aktivitas 1: Mengenal Tokoh Inspiratif</h3>
+      <p>Pilih seorang tokoh yang menurutmu memiliki perjalanan hidup menarik. Tokoh dapat berasal dari bidang pendidikan, sastra, olahraga, seni, ilmu pengetahuan, sosial, atau bidang lainnya.</p>
+      <p>Catat informasi berikut:</p>
+      <ol>
+        <li>Nama dan identitas tokoh.</li>
+        <li>Latar belakang kehidupan.</li>
+        <li>Peristiwa penting dalam perjalanan hidupnya.</li>
+        <li>Karya, prestasi, atau kontribusinya.</li>
+        <li>Nilai keteladanan yang dapat dipelajari.</li>
+      </ol>
+
+      <h3>Aktivitas 2: Membaca dan Mengidentifikasi</h3>
+      <p>Bacalah sebuah teks biografi, kemudian identifikasi:</p>
+      <ul>
+        <li>Struktur teks biografi.</li>
+        <li>Informasi faktual tentang tokoh.</li>
+        <li>Ide pokok setiap paragraf.</li>
+        <li>Ide penjelas yang mendukung ide pokok.</li>
+        <li>Karakter dan nilai keteladanan tokoh.</li>
+      </ul>
+
+      <h3>Aktivitas 3: Menulis Biografi Sederhana</h3>
+      <p>Susunlah teks biografi berdasarkan informasi yang telah dikumpulkan. Gunakan struktur orientasi, peristiwa penting, dan reorientasi. Pastikan setiap informasi didukung sumber yang dapat dipercaya.</p>
+
+      <h3>Aktivitas 4: Presentasi dan Apresiasi</h3>
+      <p>Presentasikan hasil tulisan atau temuanmu di depan kelas. Peserta didik lain dapat memberikan tanggapan mengenai kelengkapan informasi, keruntutan peristiwa, ketepatan fakta, dan nilai keteladanan yang disampaikan.</p>
+    </section>
+
+    <section class="section" id="latihan">
+      <h2>14. Latihan Pemahaman</h2>
+      <p>Jawablah pertanyaan berikut berdasarkan materi yang telah dipelajari.</p>
+
+      <ol>
+        <li>Jelaskan pengertian teks biografi dengan bahasamu sendiri.</li>
+        <li>Sebutkan dan jelaskan empat karakteristik teks biografi.</li>
+        <li>Apa tujuan penulisan teks biografi?</li>
+        <li>Jelaskan perbedaan ide pokok dan ide penjelas.</li>
+        <li>Apa perbedaan paragraf deduktif dan paragraf induktif?</li>
+        <li>Sebutkan tiga struktur teks biografi beserta fungsinya.</li>
+        <li>Mengapa reorientasi dalam teks biografi bersifat opsional?</li>
+        <li>Jelaskan perbedaan biografi dan autobiografi.</li>
+        <li>Mengapa informasi dalam teks biografi harus didukung sumber terpercaya?</li>
+        <li>Nilai keteladanan apa yang dapat diperoleh dari perjalanan hidup seorang tokoh?</li>
+      </ol>
+
+      <h3>Latihan Analisis Paragraf</h3>
+      <div class="example">
+        <p><strong>Bacalah paragraf berikut!</strong></p>
+        <p>Sejak muda, B.J. Habibie menunjukkan ketertarikan yang besar terhadap ilmu pengetahuan dan teknologi. Ia menempuh pendidikan teknik di Jerman dan kemudian dikenal sebagai ahli dalam bidang penerbangan. Pengalaman dan keahliannya turut berperan dalam perkembangan teknologi pesawat terbang Indonesia.</p>
+        <p><strong>Pertanyaan:</strong></p>
+        <ol>
+          <li>Tentukan ide pokok paragraf tersebut.</li>
+          <li>Tuliskan dua ide penjelas yang mendukungnya.</li>
+          <li>Apakah paragraf tersebut termasuk deduktif atau induktif? Jelaskan alasanmu.</li>
+          <li>Temukan kata kerja tindakan dalam paragraf tersebut.</li>
+          <li>Nilai atau sikap apa yang dapat kamu pelajari dari informasi tersebut?</li>
+        </ol>
+        <p><em>Catatan: Paragraf ini merupakan bahan latihan identifikasi, bukan pengganti pemeriksaan sumber sejarah.</em></p>
+      </div>
+
+      <div class="callout">
+        <strong>Petunjuk pengerjaan</strong>
+        <p>Jawablah dengan kalimat yang jelas dan disertai alasan. Untuk pertanyaan analisis, tunjukkan bagian teks yang menjadi dasar jawabanmu.</p>
+      </div>
+    </section>
+
+    <section class="section" id="refleksi">
+      <h2>15. Refleksi Pembelajaran</h2>
+      <p>Setelah mempelajari teks biografi, renungkan beberapa pertanyaan berikut.</p>
+      <ol>
+        <li>Pengetahuan baru apa yang saya peroleh setelah mempelajari teks biografi?</li>
+        <li>Bagian materi mana yang paling mudah saya pahami?</li>
+        <li>Bagian mana yang masih perlu saya pelajari lebih lanjut?</li>
+        <li>Bagaimana cara saya membedakan informasi faktual dan pendapat dalam sebuah biografi?</li>
+        <li>Nilai keteladanan apa yang ingin saya terapkan dalam kehidupan sehari-hari?</li>
+      </ol>
+
+      <div class="callout orange">
+        <strong>Pesan pembelajaran</strong>
+        <p>Setiap perjalanan hidup memiliki pelajaran. Membaca biografi bukan berarti harus meniru seluruh kehidupan seseorang, melainkan belajar mengambil nilai-nilai baik dari pengalaman dan perjuangannya.</p>
+      </div>
+    </section>
+
+    <section class="section" id="penutup">
+      <h2>16. Kesimpulan</h2>
+      <p>Teks biografi merupakan teks nonfiksi yang menceritakan kehidupan seseorang berdasarkan fakta dan peristiwa nyata serta ditulis oleh orang lain. Biografi bertujuan memberikan informasi mengenai perjalanan hidup tokoh sekaligus menyampaikan nilai-nilai keteladanan yang dapat dipelajari pembaca.</p>
+
+      <p>Karakteristik teks biografi meliputi fakta, alur yang runtut, tokoh pilihan, dan penggunaan sumber terpercaya. Struktur utamanya terdiri atas orientasi, peristiwa penting, dan reorientasi. Dalam memahami isi teks, pembaca juga perlu mampu menemukan ide pokok dan ide penjelas, termasuk membedakan paragraf deduktif dan induktif.</p>
+
+      <p>Dengan mempelajari teks biografi, kita tidak hanya mengenal kehidupan tokoh, tetapi juga belajar memahami arti perjuangan, ketekunan, tanggung jawab, dan kontribusi bagi kehidupan bersama.</p>
+    </section>
+
+    <p style="text-align:center">
+      <a class="button" href="kelas-x.html">← Kembali ke Ruang Materi Kelas X</a>
+      <a class="button" href="kelas-virtual.html">Kunjungi Kelas Virtual →</a>
+    </p>
+
+    <div class="quote">
+      “Kehidupan yang bermakna bukan hanya tentang apa yang telah dicapai, tetapi juga tentang nilai yang diwariskan.”
+      <strong>— Mandala Aksara</strong>
+    </div>
+
+  </main>
+</div>
+
+<footer>
+  <p><strong>MANDALA AKSARA</strong></p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+  <p>Ruang Literasi dan Pembelajaran Bahasa Indonesia · Dikelola Mandiri</p>
+</footer>
+
+</body>
+</html>
