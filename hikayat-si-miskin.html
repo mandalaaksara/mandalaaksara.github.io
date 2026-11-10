@@ -13,7 +13,9 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bacaan Hikayat Si Miskin, adaptasi cerita dari khazanah sastra Melayu klasik di Perpustakaan Digital Mandala Aksara.">
+
+  <meta name="description" content="Baca Hikayat Si Miskin, transliterasi naskah kuno Melayu klasik, melalui Perpustakaan Digital Mandala Aksara.">
+
   <title>Hikayat Si Miskin | Mandala Aksara</title>
   <link rel="stylesheet" href="style.css">
 
@@ -41,6 +43,8 @@
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.75;
     }
+
+    a { color: inherit; }
 
     .site-header {
       background: var(--navy-dark);
@@ -71,7 +75,6 @@
     }
 
     .brand-name {
-      display: block;
       font-size: 19px;
       font-weight: 800;
       letter-spacing: 1px;
@@ -117,9 +120,7 @@
       padding: 8px 0;
     }
 
-    .nav-dropdown {
-      position: relative;
-    }
+    .nav-dropdown { position: relative; }
 
     .dropdown {
       display: none;
@@ -156,7 +157,6 @@
       color: white;
       padding: 55px 7%;
       text-align: center;
-      border-bottom: 5px solid var(--orange);
     }
 
     .hero .eyebrow {
@@ -168,8 +168,7 @@
     }
 
     .hero h1 {
-      font-family: Georgia, serif;
-      font-size: clamp(29px, 4vw, 43px);
+      font-size: clamp(27px, 4vw, 42px);
       line-height: 1.2;
       margin: 12px 0;
     }
@@ -180,30 +179,13 @@
       color: #E0E7F0;
     }
 
-    .breadcrumb {
-      max-width: 1250px;
-      margin: 22px auto 0;
-      padding: 0 22px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .breadcrumb a {
-      color: #C66B17;
-      text-decoration: none;
-    }
-
-    .breadcrumb a:hover {
-      text-decoration: underline;
-    }
-
     .page-layout {
-      max-width: 1250px;
-      margin: 30px auto 60px;
+      max-width: 1350px;
+      margin: 35px auto 60px;
       padding: 0 22px;
       display: grid;
-      grid-template-columns: 235px minmax(0, 1fr);
-      gap: 28px;
+      grid-template-columns: 255px minmax(0, 1fr);
+      gap: 30px;
       align-items: start;
     }
 
@@ -231,7 +213,6 @@
       padding: 9px 11px;
       margin: 3px 0;
       border-radius: 7px;
-      line-height: 1.4;
     }
 
     .sidebar a:hover {
@@ -240,9 +221,7 @@
       border-left: 3px solid var(--orange);
     }
 
-    .content {
-      min-width: 0;
-    }
+    .content { min-width: 0; }
 
     .content section {
       background: white;
@@ -255,7 +234,6 @@
 
     .content h2 {
       color: var(--navy);
-      font-family: Georgia, serif;
       font-size: 25px;
       line-height: 1.35;
       margin: 0 0 18px;
@@ -265,14 +243,11 @@
 
     .content h3 {
       color: var(--navy);
-      font-family: Georgia, serif;
-      font-size: 20px;
-      margin: 0 0 15px;
+      font-size: 18px;
+      margin: 20px 0 10px;
     }
 
-    .content p {
-      margin: 10px 0 15px;
-    }
+    .content p { margin: 10px 0 15px; }
 
     .info-card {
       background: #F8FAFC;
@@ -282,63 +257,37 @@
       margin: 15px 0;
     }
 
-    .info-card p:last-child {
-      margin-bottom: 0;
-    }
-
     .note {
       background: #FFF5E9;
       border-left: 4px solid var(--orange);
       border-radius: 7px;
       padding: 15px 18px;
       margin: 18px 0;
-      color: #59452F;
     }
 
-    .story-part {
-      background: #FCFCFD;
+    .reader-frame {
+      width: 100%;
+      height: 850px;
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 24px;
-      margin: 22px 0;
+      background: #F3F5F8;
+      display: block;
     }
 
-    .story-part h3 {
-      color: #B85D0B;
-      margin: 0 0 18px;
-    }
-
-    .story-part p {
-      text-align: justify;
-      text-indent: 28px;
-      margin: 0 0 15px;
-    }
-
-    .story-part p:last-child {
-      margin-bottom: 0;
-    }
-
-    .story-label {
+    .source-link {
       display: inline-block;
-      background: #FFF1E2;
-      color: #A95008;
-      font-size: 11px;
+      background: var(--navy);
+      color: white;
+      padding: 10px 17px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-size: 13px;
       font-weight: bold;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      padding: 5px 10px;
-      border-radius: 20px;
-      margin-bottom: 12px;
+      margin-top: 8px;
     }
 
-    .source-note {
-      background: #F8FAFC;
-      border: 1px solid var(--border);
-      border-radius: 9px;
-      padding: 20px;
-      margin-top: 18px;
-      font-size: 14px;
-      color: #536176;
+    .source-link:hover {
+      background: var(--orange);
     }
 
     .final-quote {
@@ -368,18 +317,12 @@
       font-size: 13px;
     }
 
-    .site-footer strong {
-      color: white;
-    }
+    .site-footer strong { color: white; }
 
     @media (max-width: 900px) {
-      .site-header {
-        flex-wrap: wrap;
-      }
+      .site-header { flex-wrap: wrap; }
 
-      #menuToggle {
-        display: block;
-      }
+      #menuToggle { display: block; }
 
       #mainNav {
         display: none;
@@ -390,9 +333,7 @@
         padding: 10px 0;
       }
 
-      #mainNav.open {
-        display: flex;
-      }
+      #mainNav.open { display: flex; }
 
       #mainNav > a,
       .nav-trigger {
@@ -408,18 +349,14 @@
         margin-left: 12px;
       }
 
-      .dropdown a {
-        color: white;
-      }
+      .dropdown a { color: white; }
 
       .page-layout {
         grid-template-columns: 1fr;
         margin-top: 20px;
       }
 
-      .sidebar {
-        position: static;
-      }
+      .sidebar { position: static; }
 
       .sidebar-list {
         display: grid;
@@ -429,38 +366,19 @@
     }
 
     @media (max-width: 560px) {
-      .hero {
-        padding: 38px 20px;
-      }
+      .hero { padding: 38px 20px; }
 
-      .page-layout {
-        padding: 0 12px;
-      }
+      .page-layout { padding: 0 12px; }
 
-      .content section {
-        padding: 19px;
-      }
+      .content section { padding: 19px; }
 
-      .content h2 {
-        font-size: 21px;
-      }
+      .content h2 { font-size: 21px; }
 
-      .sidebar-list {
-        grid-template-columns: 1fr;
-      }
+      .sidebar-list { grid-template-columns: 1fr; }
 
-      .brand-name {
-        font-size: 16px;
-      }
+      .brand-name { font-size: 16px; }
 
-      .story-part {
-        padding: 17px;
-      }
-
-      .story-part p {
-        text-align: left;
-        text-indent: 20px;
-      }
+      .reader-frame { height: 650px; }
     }
   </style>
 </head>
@@ -476,17 +394,13 @@
     </span>
   </a>
 
-  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">
-    ☰
-  </button>
+  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
 
-  <nav id="mainNav" aria-label="Navigasi utama">
+  <nav id="mainNav">
     <a href="index.html">Beranda</a>
 
     <div class="nav-dropdown">
-      <button type="button" class="nav-trigger">
-        Materi Pembelajaran ⌄
-      </button>
+      <button type="button" class="nav-trigger">Materi Pembelajaran ⌄</button>
       <div class="dropdown">
         <a href="kelas-x.html">Kelas X</a>
         <a href="kelas-xi.html">Kelas XI</a>
@@ -501,46 +415,28 @@
   </nav>
 </header>
 
-<main>
-
 <section class="hero">
-  <div class="eyebrow">
-    Perpustakaan Digital · Karya Sastra · Karya Sastra Lainnya
-  </div>
-
+  <div class="eyebrow">Perpustakaan Digital · Karya Sastra · Hikayat</div>
   <h1>Hikayat Si Miskin</h1>
-
   <p>
-    Sebuah kisah tentang kesengsaraan, harapan, kekuasaan,
-    ujian kehidupan, dan perjalanan seorang anak dalam
-    menemukan kembali jati diri serta keluarganya.
+    Menelusuri kisah klasik Melayu tentang perjalanan hidup,
+    kesengsaraan, harapan, dan perubahan nasib manusia.
   </p>
 </section>
-
-<div class="breadcrumb">
-  <a href="perpustakaan.html">Perpustakaan Digital</a>
-  &nbsp;›&nbsp;
-  <a href="karya-sastra.html">Karya Sastra</a>
-  &nbsp;›&nbsp;
-  <a href="karya-sastra-lainnya.html">Karya Sastra Lainnya</a>
-  &nbsp;›&nbsp;
-  Hikayat Si Miskin
-</div>
 
 <div class="page-layout">
 
 <aside class="sidebar">
   <h2>Daftar Bacaan</h2>
-
   <div class="sidebar-list">
     <a href="#identitas">Identitas Bacaan</a>
-    <a href="#pengantar">Pengantar Bacaan</a>
+    <a href="#pengantar">Pengantar</a>
     <a href="#bacaan">Teks Hikayat</a>
-    <a href="#sumber">Sumber Bacaan</a>
+    <a href="#sumber">Sumber dan Edisi</a>
   </div>
 </aside>
 
-<div class="content">
+<main class="content">
 
 <section id="identitas">
   <h2>Identitas Bacaan</h2>
@@ -549,15 +445,10 @@
     <p><strong>Judul:</strong> Hikayat Si Miskin</p>
     <p><strong>Jenis karya:</strong> Prosa lama</p>
     <p><strong>Genre:</strong> Hikayat</p>
-    <p><strong>Asal tradisi:</strong> Sastra Melayu klasik</p>
-    <p><strong>Tokoh utama:</strong> Si Miskin dan Marakarma</p>
-    <p><strong>Bentuk teks:</strong> Adaptasi cerita</p>
-  </div>
-
-  <div class="note">
-    Bacaan ini disajikan sebagai adaptasi naratif dari alur
-    cerita Hikayat Si Miskin. Susunan kalimat dan penyajiannya
-    bukan salinan utuh dari satu edisi naskah klasik tertentu.
+    <p><strong>Tradisi sastra:</strong> Melayu klasik</p>
+    <p><strong>Bentuk teks:</strong> Transliterasi naskah kuno</p>
+    <p><strong>Editor:</strong> Dr. Ellya Roza, M.Hum.</p>
+    <p><strong>Tahun edisi:</strong> 2014</p>
   </div>
 </section>
 
@@ -565,379 +456,105 @@
   <h2>Pengantar Bacaan</h2>
 
   <p>
-    Hikayat Si Miskin merupakan salah satu cerita yang dikenal
-    dalam khazanah sastra Melayu lama. Cerita ini mengisahkan
-    kehidupan sepasang suami istri yang mengalami kemalangan,
-    kemudian memperoleh kehidupan yang lebih baik, tetapi
-    kembali menghadapi berbagai cobaan.
+    Hikayat Si Miskin merupakan salah satu karya dalam
+    khazanah sastra Melayu klasik. Cerita ini mengisahkan
+    perjalanan kehidupan seorang tokoh yang mengalami
+    kesengsaraan, menghadapi berbagai cobaan, dan menjalani
+    perubahan nasib yang luar biasa.
   </p>
 
   <p>
-    Tokoh Si Miskin tidak hanya digambarkan sebagai seseorang
-    yang hidup dalam kekurangan. Di balik kemiskinannya,
-    tersimpan asal-usul yang tidak biasa. Perjalanan hidup
-    keluarganya memperlihatkan bagaimana kekuasaan, keserakahan,
-    iri hati, kepercayaan, dan keteguhan hati dapat memengaruhi
-    nasib seseorang.
+    Edisi yang digunakan pada halaman ini merupakan
+    transliterasi naskah kuno yang disunting oleh Ellya Roza.
+    Transliterasi memungkinkan teks dari naskah lama dibaca
+    menggunakan huruf Latin dengan tetap mempertahankan
+    pilihan kata dan bentuk bahasa yang terdapat dalam
+    sumber transliterasinya.
   </p>
 
   <p>
-    Dalam cerita ini, pembaca akan menjumpai berbagai peristiwa
-    ajaib, tokoh kerajaan, ramalan, pengembaraan, serta
-    pertolongan yang datang secara tidak terduga.
+    Bacaan ini disajikan sebagai bagian dari koleksi sastra
+    Mandala Aksara. Pembaca dipersilakan menikmati cerita
+    secara utuh dan memperhatikan kekayaan bahasa Melayu
+    klasik yang digunakan di dalamnya.
   </p>
 </section>
 
 <section id="bacaan">
   <h2>Teks Bacaan: Hikayat Si Miskin</h2>
 
-  <div class="story-part">
-    <span class="story-label">Bagian I · Awal Kisah</span>
-    <h3>Kesengsaraan di Negeri Antah Berantah</h3>
-
-    <p>
-      Pada zaman dahulu, di sebuah negeri bernama Antah Berantah,
-      hiduplah sepasang suami istri yang dikenal dengan sebutan
-      Si Miskin. Mereka sebenarnya berasal dari kalangan penghuni
-      kayangan. Akan tetapi, karena suatu sumpah dari Batara Indera,
-      keduanya harus menjalani kehidupan di dunia dalam keadaan
-      serba kekurangan.
-    </p>
-
-    <p>
-      Si Miskin dan istrinya hidup berpindah-pindah. Mereka tidak
-      memiliki rumah yang layak, pakaian yang bagus, ataupun
-      makanan yang cukup. Setiap hari mereka berusaha mencari
-      sisa makanan dan meminta belas kasihan penduduk.
-    </p>
-
-    <p>
-      Namun, kehidupan mereka tidak mudah. Banyak penduduk
-      memandang rendah keadaan keduanya. Ketika mereka datang
-      ke kampung atau pasar, sebagian orang justru mengusir,
-      menghina, bahkan melempari mereka dengan kayu dan batu.
-      Tubuh mereka sering terluka akibat perlakuan tersebut.
-    </p>
-
-    <p>
-      Pada malam hari, mereka berlindung di hutan. Ketika pagi
-      tiba, mereka kembali mencari makanan ke tempat-tempat
-      yang mungkin dapat memberi sedikit pertolongan.
-      Demikianlah kehidupan yang harus mereka jalani dari
-      hari ke hari.
-    </p>
-  </div>
-
-  <div class="story-part">
-    <span class="story-label">Bagian II · Keinginan Sang Istri</span>
-    <h3>Buah Mempelam dari Taman Raja</h3>
-
-    <p>
-      Setelah beberapa waktu, istri Si Miskin mengandung.
-      Ketika usia kandungannya memasuki bulan ketiga, ia
-      menginginkan buah mempelam yang tumbuh di taman milik raja.
-      Keinginan itu disampaikannya kepada sang suami.
-    </p>
-
-    <p>
-      Si Miskin merasa kebingungan. Ia sadar bahwa dirinya
-      tidak memiliki harta untuk membeli buah tersebut.
-      Ia juga takut datang ke istana karena pengalaman buruk
-      yang pernah dialaminya ketika berhadapan dengan orang-orang
-      di negeri itu.
-    </p>
-
-    <p>
-      Meskipun demikian, ia tidak ingin mengecewakan istrinya.
-      Mula-mula ia berusaha mencari makanan di pasar. Beberapa
-      orang memberikan makanan dan buah-buahan kepadanya.
-      Akan tetapi, sang istri tetap menginginkan buah mempelam
-      yang berasal dari taman raja.
-    </p>
-
-    <p>
-      Dengan hati yang berat, Si Miskin akhirnya memberanikan
-      diri menghadap Maharaja Indera Dewa. Ia menyampaikan
-      permohonan dengan penuh kerendahan hati. Di luar dugaan,
-      raja berkenan memberikan buah mempelam yang diminta.
-      Bahkan, Si Miskin memperoleh pemberian lainnya.
-    </p>
-
-    <p>
-      Ia pulang dengan perasaan gembira. Istrinya menyambut
-      buah tersebut dengan sukacita. Peristiwa itu menjadi
-      salah satu pengalaman yang memberi harapan baru bagi
-      kehidupan mereka.
-    </p>
-  </div>
-
-  <div class="story-part">
-    <span class="story-label">Bagian III · Perubahan Nasib</span>
-    <h3>Kelahiran Marakarma dan Berdirinya Puspa Sari</h3>
-
-    <p>
-      Setelah tiba waktunya, istri Si Miskin melahirkan seorang
-      anak laki-laki. Anak itu diberi nama Marakarma. Nama
-      tersebut menggambarkan kehidupannya yang lahir di tengah
-      kesengsaraan.
-    </p>
-
-    <p>
-      Si Miskin dan istrinya sangat menyayangi anak itu.
-      Mereka berharap kehadiran Marakarma membawa perubahan
-      bagi kehidupan keluarga. Anak tersebut dirawat dengan
-      penuh kasih sayang meskipun mereka belum memiliki
-      kehidupan yang berkecukupan.
-    </p>
-
-    <p>
-      Pada suatu hari, ketika Si Miskin sedang menggali tanah
-      untuk memperbaiki tempat tinggalnya, ia menemukan sebuah
-      tajau yang berisi emas. Penemuan itu membuat kehidupannya
-      berubah. Dengan pertolongan dan kehendak Tuhan, tempat
-      tinggal mereka berkembang menjadi sebuah kerajaan
-      yang besar dan makmur.
-    </p>
-
-    <p>
-      Si Miskin kemudian dikenal sebagai Maharaja Indera
-      Angkasa, sedangkan istrinya memperoleh gelar Tuan Puteri
-      Ratna Dewi. Kerajaan mereka dinamakan Puspa Sari.
-      Kerajaan itu berkembang menjadi negeri yang terkenal
-      karena kemakmuran dan pemerintahan yang baik.
-    </p>
-
-    <p>
-      Kebahagiaan keluarga tersebut semakin bertambah ketika
-      Ratna Dewi melahirkan seorang anak perempuan bernama
-      Nila Kesuma. Marakarma dan Nila Kesuma tumbuh dalam
-      lingkungan kerajaan yang penuh kecukupan.
-    </p>
-  </div>
-
-  <div class="story-part">
-    <span class="story-label">Bagian IV · Konflik</span>
-    <h3>Ramalan Palsu dan Terusirnya Kedua Anak</h3>
-
-    <p>
-      Kemakmuran Puspa Sari menimbulkan rasa iri pada Maharaja
-      Indera Dewa, penguasa Negeri Antah Berantah. Ia tidak
-      senang melihat keberhasilan Maharaja Indera Angkasa.
-      Karena dikuasai rasa dengki, ia menyusun rencana untuk
-      merusak kebahagiaan keluarga tersebut.
-    </p>
-
-    <p>
-      Ketika Maharaja Indera Angkasa ingin mengetahui masa
-      depan kedua anaknya, ia meminta bantuan para ahli nujum.
-      Kesempatan itu dimanfaatkan oleh Maharaja Indera Dewa
-      untuk memengaruhi mereka agar menyampaikan ramalan
-      yang tidak benar.
-    </p>
-
-    <p>
-      Para ahli nujum kemudian mengatakan bahwa Marakarma
-      dan Nila Kesuma akan mendatangkan malapetaka bagi
-      kedua orang tuanya. Ramalan itu membuat Maharaja
-      Indera Angkasa gelisah dan kehilangan pertimbangan.
-    </p>
-
-    <p>
-      Meskipun Ratna Dewi berusaha membela kedua anaknya,
-      Maharaja Indera Angkasa akhirnya memerintahkan agar
-      Marakarma dan Nila Kesuma meninggalkan kerajaan.
-      Kedua anak itu harus pergi tanpa membawa kemewahan
-      yang selama ini mereka nikmati.
-    </p>
-
-    <p>
-      Tidak lama setelah kepergian mereka, bencana menimpa
-      Puspa Sari. Kerajaan itu terbakar dan kehilangan
-      kemakmurannya. Maharaja Indera Angkasa dan Ratna Dewi
-      kembali hidup dalam kesengsaraan seperti dahulu.
-    </p>
-  </div>
-
-  <div class="story-part">
-    <span class="story-label">Bagian V · Pengembaraan</span>
-    <h3>Perpisahan Marakarma dan Nila Kesuma</h3>
-
-    <p>
-      Marakarma dan Nila Kesuma mengembara tanpa tujuan
-      yang pasti. Mereka menempuh perjalanan melewati hutan
-      dan tempat-tempat yang belum pernah mereka kenal.
-      Dalam keadaan lapar, Marakarma berusaha mencari
-      makanan untuk dirinya dan adiknya.
-    </p>
-
-    <p>
-      Pada suatu ketika, Marakarma memperoleh seekor burung.
-      Ia bermaksud memasaknya agar dapat dimakan bersama
-      Nila Kesuma. Untuk mendapatkan api, ia mendatangi
-      sebuah pondok milik seorang petani.
-    </p>
-
-    <p>
-      Namun, kedatangannya justru menimbulkan kesalahpahaman.
-      Marakarma dituduh hendak melakukan pencurian. Tanpa
-      diberi kesempatan menjelaskan keadaan sebenarnya,
-      ia mengalami perlakuan kasar dan akhirnya dibuang
-      ke laut.
-    </p>
-
-    <p>
-      Sementara itu, Nila Kesuma terpisah dari kakaknya.
-      Dalam pengembaraannya, ia ditemukan oleh seorang
-      putra raja dari negeri lain. Nila Kesuma kemudian
-      memperoleh perlindungan dan dikenal dengan nama
-      Mayang Mengurai.
-    </p>
-
-    <p>
-      Marakarma mengalami perjalanan yang lebih berat.
-      Ia terombang-ambing di lautan hingga akhirnya
-      mengalami berbagai peristiwa ajaib. Dalam salah
-      satu peristiwa itu, ia ditelan oleh seekor ikan
-      besar yang dikenal sebagai ikan nun.
-    </p>
-  </div>
-
-  <div class="story-part">
-    <span class="story-label">Bagian VI · Pertolongan</span>
-    <h3>Pertemuan dengan Cahaya Chairani</h3>
-
-    <p>
-      Dalam perjalanan yang penuh keajaiban itu, Marakarma
-      bertemu dengan Cahaya Chairani. Pertemuan tersebut
-      menjadi awal perubahan dalam pengembaraannya.
-      Cahaya Chairani menolong Marakarma ketika ia berada
-      dalam keadaan yang sangat sulit.
-    </p>
-
-    <p>
-      Keduanya kemudian berusaha menyelamatkan diri dari
-      bahaya yang mengancam. Akan tetapi, perjalanan mereka
-      kembali menghadapi cobaan. Seorang nakhoda kapal
-      memiliki niat buruk dan berusaha memisahkan keduanya.
-    </p>
-
-    <p>
-      Marakarma kembali terlempar ke laut. Dalam peristiwa
-      ajaib berikutnya, ikan nun yang menelannya akhirnya
-      terdampar di suatu tempat. Dengan pertolongan seorang
-      perempuan tua yang dikenal sebagai Nenek Kebayan,
-      Marakarma dapat keluar dari perut ikan tersebut.
-    </p>
-
-    <p>
-      Marakarma kemudian tinggal bersama Nenek Kebayan
-      dan menjalani kehidupan sederhana. Ia membantu
-      pekerjaan sehari-hari, termasuk kegiatan menjual
-      bunga. Meskipun telah melewati banyak penderitaan,
-      ia tidak kehilangan harapan untuk menemukan kembali
-      keluarganya.
-    </p>
-  </div>
-
-  <div class="story-part">
-    <span class="story-label">Bagian VII · Penyelesaian</span>
-    <h3>Terungkapnya Hubungan Keluarga</h3>
-
-    <p>
-      Dalam kehidupan barunya, Marakarma akhirnya memperoleh
-      petunjuk mengenai keberadaan Nila Kesuma. Melalui
-      cerita Nenek Kebayan, ia mengetahui bahwa seorang
-      putri yang dikenal sebagai Mayang Mengurai memiliki
-      hubungan keluarga dengannya.
-    </p>
-
-    <p>
-      Marakarma berusaha menemui putri tersebut. Setelah
-      berbagai peristiwa terungkap, ia mengetahui bahwa
-      Mayang Mengurai adalah adik kandungnya sendiri,
-      Nila Kesuma. Pertemuan itu mengakhiri perpisahan
-      panjang antara kedua bersaudara tersebut.
-    </p>
-
-    <p>
-      Marakarma kemudian berusaha menemukan kembali
-      kedua orang tuanya. Ia mengetahui bahwa Maharaja
-      Indera Angkasa dan Ratna Dewi telah kehilangan
-      kerajaan serta hidup dalam keadaan yang sangat
-      memprihatinkan.
-    </p>
-
-    <p>
-      Dengan kemampuan dan pertolongan yang diperolehnya,
-      Marakarma berusaha memulihkan keadaan keluarganya.
-      Ia juga menghadapi berbagai pihak yang pernah
-      berbuat jahat terhadap dirinya dan keluarganya.
-    </p>
-
-    <p>
-      Pada akhirnya, perjalanan panjang Marakarma
-      mempertemukannya kembali dengan keluarga dan
-      membawanya menuju kehidupan yang lebih baik.
-      Kesengsaraan yang pernah dialaminya tidak menjadi
-      akhir dari seluruh perjalanan hidupnya.
-    </p>
-  </div>
-
   <div class="note">
-    <strong>Catatan akhir cerita:</strong>
-    Adaptasi ini menyajikan alur utama secara ringkas dan
-    berurutan. Beberapa edisi Hikayat Si Miskin memiliki
-    rincian peristiwa, nama tokoh, dan penyelesaian cerita
-    yang lebih panjang atau berbeda.
+    Bacaan berikut ditampilkan melalui dokumen transliterasi
+    yang diterbitkan oleh Museum Negeri Sang Nila Utama.
+    Silakan membaca teks secara berurutan melalui tampilan
+    dokumen di bawah ini.
   </div>
+
+  <iframe
+    class="reader-frame"
+    src="https://repository.uin-suska.ac.id/26135/1/Hikayat%20si%20Miskin.pdf#page=51"
+    title="Bacaan Hikayat Si Miskin - Transliterasi Naskah Kuno"
+    loading="lazy">
+  </iframe>
+
+  <p>
+    Jika dokumen tidak tampil pada perangkat yang digunakan,
+    pembaca dapat membuka dokumen sumber melalui tautan
+    yang dicantumkan pada bagian keterangan edisi.
+  </p>
 </section>
 
 <section id="sumber">
-  <h2>Sumber dan Keterangan Bacaan</h2>
+  <h2>Sumber dan Keterangan Edisi</h2>
 
-  <p>
-    Hikayat Si Miskin dikenal dalam khazanah sastra Melayu
-    klasik dan memiliki sejumlah versi penyajian. Teks yang
-    ditampilkan di halaman ini merupakan adaptasi naratif
-    yang disusun untuk memberikan pengalaman membaca cerita
-    secara lebih mudah dipahami.
-  </p>
+  <div class="info-card">
+    <h3>Identitas Sumber</h3>
 
-  <div class="source-note">
-    <strong>Keterangan teks:</strong>
-    <ul>
-      <li>Judul cerita: Hikayat Si Miskin.</li>
-      <li>Tradisi sastra: Melayu klasik.</li>
-      <li>Bentuk penyajian: Adaptasi naratif.</li>
-      <li>Catatan: Bukan salinan diplomatik atau reproduksi utuh dari satu edisi naskah tertentu.</li>
-    </ul>
-
-    Nama tokoh, susunan peristiwa, pilihan kata, dan akhir cerita
-    dapat berbeda antara satu versi atau edisi dengan versi lainnya.
-    Untuk keperluan penelitian atau kutipan akademik, pembaca perlu
-    merujuk langsung pada edisi naskah atau buku yang digunakan.
+    <p><strong>Judul:</strong> Hikayat Si Miskin</p>
+    <p><strong>Keterangan:</strong> Transliterasi Naskah Kuno</p>
+    <p><strong>Editor:</strong> Dr. Ellya Roza, M.Hum.</p>
+    <p><strong>Penerbit:</strong> Dinas Kebudayaan dan Pariwisata Provinsi Riau</p>
+    <p><strong>Institusi:</strong> Museum Negeri Sang Nila Utama</p>
+    <p><strong>Tempat terbit:</strong> Pekanbaru</p>
+    <p><strong>Tahun terbit:</strong> 2014</p>
   </div>
 
+  <p>
+    Transliterasi ini bersumber dari naskah salinan koleksi
+    Museum Negeri Sang Nila Utama, Provinsi Riau. Menurut
+    keterangan dalam buku, naskah asli yang menjadi sumber
+    salinan tersebut tidak diketahui keberadaannya.
+  </p>
+
+  <p>
+    Dokumen edisi 2014 dapat ditelusuri melalui repositori
+    Universitas Islam Negeri Sultan Syarif Kasim Riau.
+  </p>
+
+  <a
+    class="source-link"
+    href="https://repository.uin-suska.ac.id/26135/1/Hikayat%20si%20Miskin.pdf"
+    target="_blank"
+    rel="noopener noreferrer">
+    Buka Dokumen Sumber
+  </a>
+
   <div class="note">
-    <strong>Keterangan hak cipta:</strong>
-    Adaptasi pada halaman ini disajikan sebagai bahan bacaan
-    literasi. Edisi modern, terjemahan, penyuntingan, ilustrasi,
-    dan catatan dari penerbit atau penulis tertentu dapat
-    memiliki perlindungan hak cipta tersendiri.
+    Keterangan: Tampilan bacaan pada halaman ini menggunakan
+    dokumen sumber yang disediakan melalui repositori.
+    Teks transliterasi tidak disunting ulang atau dimodernisasi
+    oleh Mandala Aksara.
   </div>
 </section>
 
 <div class="final-quote">
-  “Perjalanan hidup tidak selalu berjalan lurus;
-  dari kisah masa lalu, kita belajar memahami
-  keteguhan hati dalam menghadapi ujian.”
+  “Karya sastra masa lalu menyimpan jejak bahasa,
+  pikiran, dan kebudayaan yang patut terus dibaca.”
   <span>— Mandala Aksara</span>
 </div>
 
-</div>
-</div>
-
 </main>
+</div>
 
 <footer class="site-footer">
   <strong>MANDALA AKSARA</strong><br>
