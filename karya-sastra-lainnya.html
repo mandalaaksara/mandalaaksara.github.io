@@ -3,18 +3,20 @@
 <html lang="id">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7HFZ0YC7P9');
-</script>
-  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Karya Sastra Lainnya | Mandala Aksara</title>
-  <meta name="description" content="Ruang apresiasi berbagai bentuk karya sastra dan tradisi literasi di Mandala Aksara.">
+  <meta name="description" content="Jelajahi hikayat, legenda, fabel, cerita rakyat, dan berbagai karya sastra tradisional di Perpustakaan Digital Mandala Aksara.">
+
   <link rel="stylesheet" href="style.css">
 
   <style>
@@ -23,6 +25,7 @@
       color: white;
       padding: 75px 20px;
       text-align: center;
+      border-bottom: 5px solid #F28C28;
     }
 
     .lainnya-hero h1 {
@@ -39,59 +42,115 @@
     }
 
     .lainnya-content {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 55px auto;
-      padding: 0 22px;
-      text-align: center;
+      padding: 0 22px 30px;
     }
 
-    .lainnya-content h2 {
+    .lainnya-heading {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .lainnya-heading h2 {
       color: #142B4A;
       font-family: Georgia, serif;
       font-size: 29px;
-      margin-bottom: 18px;
+      margin-bottom: 15px;
     }
 
     .lainnya-intro {
-      max-width: 720px;
-      margin: 0 auto 35px;
+      max-width: 760px;
+      margin: auto;
       color: #596579;
       line-height: 1.8;
       font-size: 16px;
     }
 
-    .lainnya-empty {
-      background: #F3F5F8;
+    .koleksi-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .koleksi-card {
+      display: block;
+      background: white;
       border: 1px solid #E1E6ED;
       border-radius: 14px;
-      padding: 38px 22px;
-      margin: 30px 0 55px;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(20, 43, 74, .09);
+      transition: transform .2s, box-shadow .2s;
     }
 
-    .lainnya-empty .literasi-icon {
-      font-size: 38px;
-      margin-bottom: 12px;
+    .koleksi-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(20, 43, 74, .16);
     }
 
-    .lainnya-empty h3 {
+    .koleksi-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .koleksi-card-body {
+      padding: 24px;
+      border-top: 4px solid #F28C28;
+    }
+
+    .koleksi-label {
+      display: inline-block;
+      color: #D87516;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .koleksi-card h3 {
       color: #142B4A;
-      margin: 0 0 10px;
       font-family: Georgia, serif;
+      font-size: 23px;
+      margin: 0 0 12px;
     }
 
-    .lainnya-empty p {
-      color: #687386;
-      line-height: 1.7;
+    .koleksi-card p {
+      color: #596579;
+      line-height: 1.8;
+      font-size: 14px;
       margin: 0;
+    }
+
+    .koleksi-card span.baca {
+      display: inline-block;
+      margin-top: 18px;
+      color: #D87516;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .koleksi-note {
+      background: #F3F5F8;
+      border-left: 5px solid #C69A45;
+      padding: 25px;
+      margin-top: 45px;
+      color: #34445A;
+      line-height: 1.8;
+      border-radius: 0 10px 10px 0;
     }
 
     .lainnya-quote {
       max-width: 780px;
-      margin: 0 auto 65px;
+      margin: 45px auto 30px;
       padding: 28px 24px;
       border-left: 4px solid #F28C28;
       background: #FFF9F2;
-      text-align: left;
+      text-align: center;
       border-radius: 0 12px 12px 0;
     }
 
@@ -109,6 +168,19 @@
       font-weight: bold;
     }
 
+    .breadcrumb {
+      max-width: 1100px;
+      margin: 25px auto 0;
+      padding: 0 22px;
+      color: #687386;
+      font-size: 13px;
+    }
+
+    .breadcrumb a {
+      color: #D87516;
+      text-decoration: none;
+    }
+
     @media (max-width: 650px) {
       .lainnya-hero {
         padding: 58px 18px;
@@ -118,8 +190,16 @@
         margin-top: 40px;
       }
 
-      .lainnya-content h2 {
+      .lainnya-heading h2 {
         font-size: 25px;
+      }
+
+      .koleksi-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .koleksi-card img {
+        height: 190px;
       }
 
       .lainnya-quote p {
@@ -134,7 +214,10 @@
 <header class="site-header">
   <a href="index.html" class="brand">
     <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-    <span>MANDALA AKSARA</span>
+    <div>
+      <strong>MANDALA AKSARA</strong>
+      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+    </div>
   </a>
 
   <button id="menuToggle" class="menu-toggle"
@@ -142,7 +225,7 @@
     ☰
   </button>
 
-  <nav id="mainNav">
+  <nav id="mainNav" aria-label="Navigasi utama">
     <a href="index.html">Beranda</a>
 
     <div class="nav-dropdown">
@@ -164,29 +247,75 @@
 </header>
 
 <main>
+
   <section class="lainnya-hero">
     <h1>Karya Sastra Lainnya</h1>
     <p>Merawat Tradisi, Merayakan Keragaman Sastra</p>
   </section>
 
+  <div class="breadcrumb">
+    <a href="perpustakaan.html">Perpustakaan Digital</a>
+    &nbsp;›&nbsp;
+    <a href="karya-sastra.html">Karya Sastra</a>
+    &nbsp;›&nbsp;
+    Karya Sastra Lainnya
+  </div>
+
   <section class="lainnya-content">
-    <h2>Ruang Ragam Karya Sastra</h2>
 
-    <p class="lainnya-intro">
-      Sastra hadir dalam beragam bentuk dan tradisi.
-      Pantun, gurindam, syair, hikayat, legenda, cerita rakyat,
-      dan berbagai karya lainnya merupakan bagian dari kekayaan
-      ekspresi, imajinasi, serta warisan budaya yang patut dikenali
-      dan diapresiasi.
-    </p>
+    <div class="lainnya-heading">
+      <h2>Ruang Ragam Karya Sastra</h2>
 
-    <div class="lainnya-empty">
-      <div class="literasi-icon">📚</div>
-      <h3>Koleksi Karya Sastra Sedang Disiapkan</h3>
-      <p>
-        Ruang ini akan menghadirkan beragam karya sastra
-        sebagai bahan bacaan, pembelajaran, dan apresiasi literasi.
+      <p class="lainnya-intro">
+        Sastra hadir dalam beragam bentuk dan tradisi.
+        Pantun, gurindam, syair, hikayat, legenda, cerita rakyat,
+        dan berbagai karya lainnya merupakan bagian dari kekayaan
+        ekspresi, imajinasi, serta warisan budaya yang patut dikenali
+        dan diapresiasi.
+
+        Melalui ruang ini, pengunjung dapat membaca, mengenali,
+        dan memahami berbagai karya sastra yang tumbuh dalam
+        kehidupan masyarakat.
       </p>
+    </div>
+
+    <div class="koleksi-grid">
+
+      <a href="hikayat-si-miskin.html" class="koleksi-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=900"
+          alt="Ilustrasi buku dan naskah sastra klasik">
+
+        <div class="koleksi-card-body">
+
+          <span class="koleksi-label">Hikayat · Sastra Melayu Klasik</span>
+
+          <h3>Hikayat Si Miskin</h3>
+
+          <p>
+            Kisah klasik tentang kehidupan sepasang suami istri
+            yang mengalami penderitaan dan berbagai ujian kehidupan.
+            Bacaan ini mengajak pembaca mengenali karakteristik
+            hikayat, unsur intrinsik, nilai kehidupan, serta
+            penggunaan kosakata arkais dalam karya sastra lama.
+          </p>
+
+          <span class="baca">Baca Hikayat →</span>
+
+        </div>
+      </a>
+
+    </div>
+
+    <div class="koleksi-note">
+      <strong>Tentang Koleksi Sastra</strong><br>
+      Koleksi di ruang ini akan dikembangkan secara bertahap.
+      Selain hikayat, nantinya akan tersedia berbagai cerita rakyat,
+      legenda, fabel, dan bentuk sastra tradisional lainnya.
+      Setiap bacaan diharapkan menjadi ruang untuk mengenal
+      kekayaan sastra sekaligus memahami nilai-nilai kehidupan
+      yang terkandung di dalamnya.
     </div>
 
     <div class="lainnya-quote">
@@ -196,7 +325,9 @@
       </p>
       <span>— Mandala Aksara</span>
     </div>
+
   </section>
+
 </main>
 
 <footer>
