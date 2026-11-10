@@ -13,7 +13,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bacaan Hikayat Si Miskin, adaptasi cerita Melayu klasik, beserta aktivitas analisis kebahasaan dan unsur intrinsik untuk pembelajaran Bahasa Indonesia kelas X.">
+  <meta name="description" content="Bacaan Hikayat Si Miskin, adaptasi cerita dari khazanah sastra Melayu klasik di Perpustakaan Digital Mandala Aksara.">
   <title>Hikayat Si Miskin | Mandala Aksara</title>
   <link rel="stylesheet" href="style.css">
 
@@ -41,8 +41,6 @@
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.75;
     }
-
-    a { color: inherit; }
 
     .site-header {
       background: var(--navy-dark);
@@ -73,6 +71,7 @@
     }
 
     .brand-name {
+      display: block;
       font-size: 19px;
       font-weight: 800;
       letter-spacing: 1px;
@@ -118,7 +117,9 @@
       padding: 8px 0;
     }
 
-    .nav-dropdown { position: relative; }
+    .nav-dropdown {
+      position: relative;
+    }
 
     .dropdown {
       display: none;
@@ -155,6 +156,7 @@
       color: white;
       padding: 55px 7%;
       text-align: center;
+      border-bottom: 5px solid var(--orange);
     }
 
     .hero .eyebrow {
@@ -166,7 +168,8 @@
     }
 
     .hero h1 {
-      font-size: clamp(27px, 4vw, 42px);
+      font-family: Georgia, serif;
+      font-size: clamp(29px, 4vw, 43px);
       line-height: 1.2;
       margin: 12px 0;
     }
@@ -177,13 +180,30 @@
       color: #E0E7F0;
     }
 
+    .breadcrumb {
+      max-width: 1250px;
+      margin: 22px auto 0;
+      padding: 0 22px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .breadcrumb a {
+      color: #C66B17;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
     .page-layout {
-      max-width: 1350px;
-      margin: 35px auto 60px;
+      max-width: 1250px;
+      margin: 30px auto 60px;
       padding: 0 22px;
       display: grid;
-      grid-template-columns: 255px minmax(0, 1fr);
-      gap: 30px;
+      grid-template-columns: 235px minmax(0, 1fr);
+      gap: 28px;
       align-items: start;
     }
 
@@ -194,8 +214,6 @@
       padding: 20px 15px;
       position: sticky;
       top: 95px;
-      max-height: calc(100vh - 115px);
-      overflow-y: auto;
     }
 
     .sidebar h2 {
@@ -216,14 +234,15 @@
       line-height: 1.4;
     }
 
-    .sidebar a:hover,
-    .sidebar a.active {
+    .sidebar a:hover {
       background: #FFF1E2;
       color: #B85D0B;
       border-left: 3px solid var(--orange);
     }
 
-    .content { min-width: 0; }
+    .content {
+      min-width: 0;
+    }
 
     .content section {
       background: white;
@@ -236,6 +255,7 @@
 
     .content h2 {
       color: var(--navy);
+      font-family: Georgia, serif;
       font-size: 25px;
       line-height: 1.35;
       margin: 0 0 18px;
@@ -245,19 +265,13 @@
 
     .content h3 {
       color: var(--navy);
-      font-size: 18px;
-      margin: 23px 0 10px;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      margin: 0 0 15px;
     }
 
-    .content p { margin: 10px 0 15px; }
-    .content li { margin-bottom: 8px; }
-
-    .note {
-      background: #FFF5E9;
-      border-left: 4px solid var(--orange);
-      border-radius: 7px;
-      padding: 15px 18px;
-      margin: 18px 0;
+    .content p {
+      margin: 10px 0 15px;
     }
 
     .info-card {
@@ -268,26 +282,41 @@
       margin: 15px 0;
     }
 
+    .info-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .note {
+      background: #FFF5E9;
+      border-left: 4px solid var(--orange);
+      border-radius: 7px;
+      padding: 15px 18px;
+      margin: 18px 0;
+      color: #59452F;
+    }
+
     .story-part {
       background: #FCFCFD;
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 22px;
-      margin: 20px 0;
+      padding: 24px;
+      margin: 22px 0;
     }
 
     .story-part h3 {
-      margin-top: 0;
       color: #B85D0B;
+      margin: 0 0 18px;
     }
 
     .story-part p {
       text-align: justify;
       text-indent: 28px;
-      margin: 0 0 14px;
+      margin: 0 0 15px;
     }
 
-    .story-part p:last-child { margin-bottom: 0; }
+    .story-part p:last-child {
+      margin-bottom: 0;
+    }
 
     .story-label {
       display: inline-block;
@@ -299,52 +328,17 @@
       text-transform: uppercase;
       padding: 5px 10px;
       border-radius: 20px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
-    .activity-box {
+    .source-note {
       background: #F8FAFC;
       border: 1px solid var(--border);
       border-radius: 9px;
-      padding: 18px;
-      margin: 16px 0;
-    }
-
-    .activity-box h3 { margin-top: 0; }
-
-    .analysis-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 18px 0;
-      font-size: 13px;
-    }
-
-    .analysis-table th,
-    .analysis-table td {
-      border: 1px solid var(--border);
-      padding: 11px;
-      text-align: left;
-      vertical-align: top;
-    }
-
-    .analysis-table th {
-      background: var(--navy);
-      color: white;
-    }
-
-    .analysis-table td { height: 48px; }
-
-    .reflection {
-      background: var(--navy);
-      color: white;
-      padding: 25px;
-      border-radius: 12px;
-      margin-top: 25px;
-    }
-
-    .reflection h3 {
-      color: #F6B65F;
-      margin-top: 0;
+      padding: 20px;
+      margin-top: 18px;
+      font-size: 14px;
+      color: #536176;
     }
 
     .final-quote {
@@ -374,12 +368,18 @@
       font-size: 13px;
     }
 
-    .site-footer strong { color: white; }
+    .site-footer strong {
+      color: white;
+    }
 
     @media (max-width: 900px) {
-      .site-header { flex-wrap: wrap; }
+      .site-header {
+        flex-wrap: wrap;
+      }
 
-      #menuToggle { display: block; }
+      #menuToggle {
+        display: block;
+      }
 
       #mainNav {
         display: none;
@@ -390,7 +390,9 @@
         padding: 10px 0;
       }
 
-      #mainNav.open { display: flex; }
+      #mainNav.open {
+        display: flex;
+      }
 
       #mainNav > a,
       .nav-trigger {
@@ -406,7 +408,9 @@
         margin-left: 12px;
       }
 
-      .dropdown a { color: white; }
+      .dropdown a {
+        color: white;
+      }
 
       .page-layout {
         grid-template-columns: 1fr;
@@ -415,7 +419,6 @@
 
       .sidebar {
         position: static;
-        max-height: none;
       }
 
       .sidebar-list {
@@ -426,24 +429,38 @@
     }
 
     @media (max-width: 560px) {
-      .hero { padding: 38px 20px; }
+      .hero {
+        padding: 38px 20px;
+      }
 
-      .page-layout { padding: 0 12px; }
+      .page-layout {
+        padding: 0 12px;
+      }
 
-      .content section { padding: 19px; }
+      .content section {
+        padding: 19px;
+      }
 
-      .content h2 { font-size: 21px; }
+      .content h2 {
+        font-size: 21px;
+      }
 
-      .sidebar-list { grid-template-columns: 1fr; }
+      .sidebar-list {
+        grid-template-columns: 1fr;
+      }
 
-      .brand-name { font-size: 16px; }
+      .brand-name {
+        font-size: 16px;
+      }
 
-      .story-part { padding: 16px; }
+      .story-part {
+        padding: 17px;
+      }
 
-      .analysis-table { font-size: 11px; }
-
-      .analysis-table th,
-      .analysis-table td { padding: 7px; }
+      .story-part p {
+        text-align: left;
+        text-indent: 20px;
+      }
     }
   </style>
 </head>
@@ -459,13 +476,17 @@
     </span>
   </a>
 
-  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+    ☰
+  </button>
 
-  <nav id="mainNav">
+  <nav id="mainNav" aria-label="Navigasi utama">
     <a href="index.html">Beranda</a>
 
     <div class="nav-dropdown">
-      <button type="button" class="nav-trigger">Materi Pembelajaran ⌄</button>
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran ⌄
+      </button>
       <div class="dropdown">
         <a href="kelas-x.html">Kelas X</a>
         <a href="kelas-xi.html">Kelas XI</a>
@@ -480,9 +501,15 @@
   </nav>
 </header>
 
+<main>
+
 <section class="hero">
-  <div class="eyebrow">Perpustakaan Digital · Karya Sastra · Hikayat</div>
+  <div class="eyebrow">
+    Perpustakaan Digital · Karya Sastra · Karya Sastra Lainnya
+  </div>
+
   <h1>Hikayat Si Miskin</h1>
+
   <p>
     Sebuah kisah tentang kesengsaraan, harapan, kekuasaan,
     ujian kehidupan, dan perjalanan seorang anak dalam
@@ -490,27 +517,33 @@
   </p>
 </section>
 
+<div class="breadcrumb">
+  <a href="perpustakaan.html">Perpustakaan Digital</a>
+  &nbsp;›&nbsp;
+  <a href="karya-sastra.html">Karya Sastra</a>
+  &nbsp;›&nbsp;
+  <a href="karya-sastra-lainnya.html">Karya Sastra Lainnya</a>
+  &nbsp;›&nbsp;
+  Hikayat Si Miskin
+</div>
+
 <div class="page-layout">
 
 <aside class="sidebar">
   <h2>Daftar Bacaan</h2>
+
   <div class="sidebar-list">
     <a href="#identitas">Identitas Bacaan</a>
-    <a href="#pengantar">Pengantar</a>
+    <a href="#pengantar">Pengantar Bacaan</a>
     <a href="#bacaan">Teks Hikayat</a>
-    <a href="#analisis-bahasa">Analisis Kebahasaan</a>
-    <a href="#unsur-intrinsik">Unsur Intrinsik</a>
-    <a href="#nilai-kehidupan">Nilai Kehidupan</a>
-    <a href="#aktivitas">Aktivitas Pembelajaran</a>
-    <a href="#refleksi">Refleksi</a>
     <a href="#sumber">Sumber Bacaan</a>
   </div>
 </aside>
 
-<main class="content">
+<div class="content">
 
 <section id="identitas">
-  <h2>1. Identitas Bacaan</h2>
+  <h2>Identitas Bacaan</h2>
 
   <div class="info-card">
     <p><strong>Judul:</strong> Hikayat Si Miskin</p>
@@ -518,19 +551,18 @@
     <p><strong>Genre:</strong> Hikayat</p>
     <p><strong>Asal tradisi:</strong> Sastra Melayu klasik</p>
     <p><strong>Tokoh utama:</strong> Si Miskin dan Marakarma</p>
-    <p><strong>Peruntukan:</strong> Pembelajaran Bahasa Indonesia Fase E / Kelas X</p>
-    <p><strong>Bentuk teks:</strong> Adaptasi cerita untuk pembelajaran</p>
+    <p><strong>Bentuk teks:</strong> Adaptasi cerita</p>
   </div>
 
   <div class="note">
-    Bacaan ini merupakan adaptasi naratif untuk membantu pembaca
-    memahami jalan cerita. Susunan kalimat dan penyajiannya
+    Bacaan ini disajikan sebagai adaptasi naratif dari alur
+    cerita Hikayat Si Miskin. Susunan kalimat dan penyajiannya
     bukan salinan utuh dari satu edisi naskah klasik tertentu.
   </div>
 </section>
 
 <section id="pengantar">
-  <h2>2. Pengantar Bacaan</h2>
+  <h2>Pengantar Bacaan</h2>
 
   <p>
     Hikayat Si Miskin merupakan salah satu cerita yang dikenal
@@ -550,30 +582,14 @@
   </p>
 
   <p>
-    Dalam cerita ini, pembaca juga akan menjumpai berbagai
-    peristiwa ajaib, tokoh kerajaan, ramalan, pengembaraan,
-    serta pertolongan yang datang secara tidak terduga.
-    Unsur-unsur tersebut merupakan bagian dari ciri khas
-    hikayat sebagai prosa lama.
+    Dalam cerita ini, pembaca akan menjumpai berbagai peristiwa
+    ajaib, tokoh kerajaan, ramalan, pengembaraan, serta
+    pertolongan yang datang secara tidak terduga.
   </p>
-
-  <div class="note">
-    <strong>Pertanyaan sebelum membaca:</strong>
-    Apakah seseorang yang sedang berada dalam kesengsaraan
-    selalu akan mengalami kehidupan yang sama sepanjang hidupnya?
-    Bacalah kisah berikut untuk menemukan jawabannya.
-  </div>
 </section>
 
 <section id="bacaan">
-  <h2>3. Teks Bacaan: Hikayat Si Miskin</h2>
-
-  <div class="note">
-    <strong>Petunjuk membaca:</strong>
-    Bacalah cerita secara berurutan. Perhatikan perubahan nasib
-    tokoh, hubungan antartokoh, konflik yang muncul, serta
-    peristiwa-peristiwa ajaib yang menjadi bagian dari cerita.
-  </div>
+  <h2>Teks Bacaan: Hikayat Si Miskin</h2>
 
   <div class="story-part">
     <span class="story-label">Bagian I · Awal Kisah</span>
@@ -876,308 +892,38 @@
   </div>
 </section>
 
-<section id="analisis-bahasa">
-  <h2>4. Aktivitas Analisis Kebahasaan</h2>
-
-  <p>
-    Salah satu ciri yang dapat ditemukan dalam hikayat adalah
-    penggunaan kata-kata arkais, yaitu kata-kata lama yang
-    kini jarang digunakan dalam percakapan sehari-hari.
-    Kata-kata tersebut dapat ditemukan dalam naskah hikayat
-    dan membantu memperlihatkan suasana bahasa pada masa lalu.
-  </p>
-
-  <div class="note">
-    <strong>Tugas pembaca:</strong>
-    Temukan sendiri kata-kata arkais dalam teks Hikayat Si Miskin
-    atau dalam naskah klasik yang menjadi bahan pembanding.
-    Jangan langsung mencari daftar jawaban. Perhatikan konteks
-    kalimat agar kamu dapat memperkirakan maknanya.
-  </div>
-
-  <div class="activity-box">
-    <h3>Langkah Analisis</h3>
-    <ol>
-      <li>Bacalah kembali teks dengan cermat.</li>
-      <li>Temukan kata yang terasa asing, lama, atau jarang digunakan sekarang.</li>
-      <li>Catat kalimat tempat kata tersebut ditemukan.</li>
-      <li>Perkirakan maknanya berdasarkan konteks cerita.</li>
-      <li>Periksa dugaan makna menggunakan kamus atau sumber kebahasaan tepercaya.</li>
-      <li>Tuliskan padanan kata yang lebih dikenal dalam bahasa Indonesia sekarang.</li>
-    </ol>
-  </div>
-
-  <h3>Tabel Hasil Temuan Kata Arkais</h3>
-
-  <table class="analysis-table">
-    <thead>
-      <tr>
-        <th>No.</th>
-        <th>Kata yang Ditemukan</th>
-        <th>Kutipan Kalimat</th>
-        <th>Perkiraan Makna / Padanan</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>1</td><td></td><td></td><td></td></tr>
-      <tr><td>2</td><td></td><td></td><td></td></tr>
-      <tr><td>3</td><td></td><td></td><td></td></tr>
-      <tr><td>4</td><td></td><td></td><td></td></tr>
-      <tr><td>5</td><td></td><td></td><td></td></tr>
-    </tbody>
-  </table>
-
-  <h3>Pertanyaan Pendalaman</h3>
-  <ol>
-    <li>Mengapa hikayat banyak menggunakan kata-kata yang jarang ditemukan dalam bahasa sehari-hari?</li>
-    <li>Apakah perubahan bahasa menyebabkan semua kata arkais benar-benar hilang dari penggunaan?</li>
-    <li>Bagaimana pengaruh kata-kata arkais terhadap suasana dan keaslian cerita?</li>
-    <li>Apakah mengganti seluruh kata arkais dengan kata modern akan mengubah nuansa cerita? Jelaskan.</li>
-  </ol>
-</section>
-
-<section id="unsur-intrinsik">
-  <h2>5. Analisis Unsur Intrinsik</h2>
-
-  <p>
-    Unsur intrinsik adalah unsur-unsur yang membangun cerita
-    dari dalam. Unsur tersebut saling berhubungan sehingga
-    membentuk sebuah karya sastra yang utuh.
-  </p>
-
-  <div class="info-card">
-    <h3>A. Tema</h3>
-    <p>
-      Tema merupakan gagasan utama atau persoalan pokok
-      yang mendasari keseluruhan cerita.
-    </p>
-    <p><strong>Tugas:</strong> Tentukan tema utama Hikayat Si Miskin. Sertakan alasan berdasarkan peristiwa dalam cerita.</p>
-  </div>
-
-  <div class="info-card">
-    <h3>B. Tokoh dan Penokohan</h3>
-    <p>
-      Tokoh adalah pelaku dalam cerita, sedangkan penokohan
-      merupakan cara pengarang menggambarkan watak atau
-      karakter tokoh.
-    </p>
-    <p><strong>Tugas:</strong> Identifikasilah tokoh-tokoh yang muncul. Jelaskan sifat mereka berdasarkan tindakan, ucapan, atau keputusan yang dilakukan.</p>
-  </div>
-
-  <div class="info-card">
-    <h3>C. Alur atau Plot</h3>
-    <p>
-      Alur adalah rangkaian peristiwa yang membentuk jalan cerita.
-      Perhatikan hubungan antara peristiwa awal, munculnya konflik,
-      perkembangan konflik, dan penyelesaian.
-    </p>
-    <p><strong>Tugas:</strong> Susun kembali peristiwa penting dalam cerita secara kronologis.</p>
-  </div>
-
-  <div class="info-card">
-    <h3>D. Latar</h3>
-    <p>
-      Latar meliputi tempat, waktu, dan suasana yang
-      melingkupi peristiwa dalam cerita.
-    </p>
-    <p><strong>Tugas:</strong> Temukan latar tempat, waktu, dan suasana. Tuliskan bukti peristiwa yang mendukung jawabanmu.</p>
-  </div>
-
-  <div class="info-card">
-    <h3>E. Sudut Pandang</h3>
-    <p>
-      Sudut pandang merupakan posisi pencerita dalam
-      menyampaikan rangkaian peristiwa.
-    </p>
-    <p><strong>Tugas:</strong> Tentukan sudut pandang yang digunakan dan jelaskan ciri yang kamu temukan dalam cerita.</p>
-  </div>
-
-  <div class="info-card">
-    <h3>F. Konflik</h3>
-    <p>
-      Konflik adalah pertentangan atau persoalan yang
-      dialami tokoh dan menggerakkan jalannya cerita.
-    </p>
-    <p><strong>Tugas:</strong> Temukan konflik utama yang dialami Marakarma dan jelaskan bagaimana konflik tersebut berkembang.</p>
-  </div>
-
-  <div class="info-card">
-    <h3>G. Amanat</h3>
-    <p>
-      Amanat merupakan pesan atau pelajaran yang dapat
-      dipetik pembaca dari keseluruhan cerita.
-    </p>
-    <p><strong>Tugas:</strong> Rumuskan amanat cerita dengan bahasamu sendiri. Hubungkan dengan peristiwa yang mendukungnya.</p>
-  </div>
-</section>
-
-<section id="nilai-kehidupan">
-  <h2>6. Menggali Nilai Kehidupan dalam Hikayat</h2>
-
-  <p>
-    Karya sastra tidak hanya menyajikan rangkaian peristiwa,
-    tetapi juga dapat menggambarkan nilai-nilai yang hidup
-    dalam masyarakat. Nilai tersebut perlu ditemukan melalui
-    tindakan tokoh dan peristiwa dalam cerita.
-  </p>
-
-  <div class="info-card">
-    <h3>Nilai Moral</h3>
-    <p>
-      Berkaitan dengan baik dan buruknya perilaku manusia,
-      seperti kejujuran, kesabaran, tanggung jawab, dan
-      kepedulian terhadap sesama.
-    </p>
-  </div>
-
-  <div class="info-card">
-    <h3>Nilai Sosial</h3>
-    <p>
-      Berkaitan dengan hubungan antarmanusia, kepedulian,
-      tolong-menolong, keadilan, dan perlakuan terhadap
-      orang lain.
-    </p>
-  </div>
-
-  <div class="info-card">
-    <h3>Nilai Agama atau Religius</h3>
-    <p>
-      Berkaitan dengan keyakinan, doa, rasa syukur,
-      kepercayaan kepada Tuhan, serta kesadaran bahwa
-      manusia memiliki keterbatasan.
-    </p>
-  </div>
-
-  <div class="info-card">
-    <h3>Nilai Budaya</h3>
-    <p>
-      Berkaitan dengan adat, kebiasaan, tata kehidupan,
-      gelar, tradisi kerajaan, dan cara masyarakat
-      memandang dunia.
-    </p>
-  </div>
-
-  <div class="note">
-    <strong>Petunjuk:</strong>
-    Jangan hanya menyebutkan jenis nilai. Temukan peristiwa
-    atau tindakan tokoh sebagai bukti, kemudian jelaskan
-    alasan mengapa peristiwa tersebut mencerminkan nilai
-    tertentu.
-  </div>
-</section>
-
-<section id="aktivitas">
-  <h2>7. Aktivitas Pembelajaran</h2>
-
-  <h3>Aktivitas 1 — Membaca dan Memahami</h3>
-  <p>
-    Bacalah keseluruhan cerita. Catat peristiwa yang menurutmu
-    paling penting dan menarik. Jelaskan alasanmu memilih
-    peristiwa tersebut.
-  </p>
-
-  <h3>Aktivitas 2 — Menelusuri Perubahan Nasib Tokoh</h3>
-  <p>
-    Gambarkan perjalanan hidup Si Miskin dan Marakarma.
-    Mulailah dari keadaan awal, perubahan yang terjadi,
-    konflik yang dihadapi, hingga penyelesaian cerita.
-  </p>
-
-  <h3>Aktivitas 3 — Menemukan Kata Arkais</h3>
-  <p>
-    Gunakan tabel analisis kebahasaan untuk mencatat kata-kata
-    arkais yang ditemukan dalam naskah. Jelaskan maknanya
-    berdasarkan konteks dan sumber kamus.
-  </p>
-
-  <h3>Aktivitas 4 — Menganalisis Unsur Intrinsik</h3>
-  <p>
-    Kerjakan analisis tema, tokoh, penokohan, alur, latar,
-    sudut pandang, konflik, dan amanat. Sertakan bukti
-    peristiwa dari cerita.
-  </p>
-
-  <h3>Aktivitas 5 — Menyampaikan Hasil Analisis</h3>
-  <p>
-    Diskusikan hasil analisis bersama teman. Pilih salah satu
-    bentuk penyajian: presentasi, peta konsep, poster sastra,
-    atau ulasan singkat.
-  </p>
-
-  <h3>Aktivitas 6 — Menghubungkan Cerita dengan Kehidupan</h3>
-  <p>
-    Pilih satu persoalan dalam hikayat yang masih relevan
-    dengan kehidupan sekarang. Jelaskan bagaimana persoalan
-    tersebut dapat disikapi secara bijaksana.
-  </p>
-</section>
-
-<section id="refleksi">
-  <h2>8. Refleksi Pembelajaran</h2>
-
-  <p>
-    Setelah membaca dan menganalisis Hikayat Si Miskin,
-    renungkan pertanyaan berikut.
-  </p>
-
-  <ol>
-    <li>Bagian cerita manakah yang paling berkesan bagimu? Mengapa?</li>
-    <li>Keputusan tokoh manakah yang menurutmu paling menentukan jalan cerita?</li>
-    <li>Apa yang dapat dipelajari dari sikap Maharaja Indera Angkasa ketika menghadapi ramalan para ahli nujum?</li>
-    <li>Bagaimana cerita ini menggambarkan perlakuan masyarakat terhadap orang yang hidup dalam kemiskinan?</li>
-    <li>Apa pelajaran yang dapat diterapkan dalam kehidupan sehari-hari?</li>
-    <li>Bagaimana pengalaman menemukan kata arkais membantumu memahami perkembangan bahasa Indonesia?</li>
-  </ol>
-
-  <div class="reflection">
-    <h3>Renungan Literasi</h3>
-    <p>
-      Sebuah cerita lama dapat menyimpan persoalan yang tetap
-      dekat dengan kehidupan manusia masa kini. Membacanya
-      bukan hanya mengenali tokoh dan peristiwa, melainkan
-      juga belajar memahami manusia, masyarakat, dan nilai
-      kehidupan.
-    </p>
-  </div>
-</section>
-
 <section id="sumber">
-  <h2>9. Sumber dan Keterangan Bacaan</h2>
+  <h2>Sumber dan Keterangan Bacaan</h2>
 
   <p>
-    Cerita Hikayat Si Miskin memiliki sejumlah versi dan
-    penyajian dalam berbagai buku maupun bahan pembelajaran.
-    Adaptasi pada halaman ini disusun untuk kepentingan
-    pembelajaran dengan merujuk pada alur umum cerita
-    dalam sumber-sumber berikut.
+    Hikayat Si Miskin dikenal dalam khazanah sastra Melayu
+    klasik dan memiliki sejumlah versi penyajian. Teks yang
+    ditampilkan di halaman ini merupakan adaptasi naratif
+    yang disusun untuk memberikan pengalaman membaca cerita
+    secara lebih mudah dipahami.
   </p>
 
-  <div class="info-card">
-    <h3>Rujukan pembelajaran</h3>
-    <ol>
-      <li>
-        Buku Bahasa Indonesia untuk SMA/MA/SMK/MAK Kelas X
-        (Edisi Revisi), bagian pembelajaran Hikayat Si Miskin.
-      </li>
-      <li>
-        Direktorat SMA, Kemendikbud, bahan ajar
-        <em>Nilai-Nilai dan Isi Hikayat</em>.
-      </li>
-      <li>
-        Naskah dan kajian cerita Hikayat Si Miskin atau
-        Marakarma dalam tradisi sastra Melayu.
-      </li>
-    </ol>
+  <div class="source-note">
+    <strong>Keterangan teks:</strong>
+    <ul>
+      <li>Judul cerita: Hikayat Si Miskin.</li>
+      <li>Tradisi sastra: Melayu klasik.</li>
+      <li>Bentuk penyajian: Adaptasi naratif.</li>
+      <li>Catatan: Bukan salinan diplomatik atau reproduksi utuh dari satu edisi naskah tertentu.</li>
+    </ul>
+
+    Nama tokoh, susunan peristiwa, pilihan kata, dan akhir cerita
+    dapat berbeda antara satu versi atau edisi dengan versi lainnya.
+    Untuk keperluan penelitian atau kutipan akademik, pembaca perlu
+    merujuk langsung pada edisi naskah atau buku yang digunakan.
   </div>
 
   <div class="note">
     <strong>Keterangan hak cipta:</strong>
-    Teks pada halaman ini merupakan adaptasi untuk pembelajaran,
-    bukan reproduksi utuh dari edisi buku atau naskah tertentu.
-    Ejaan, pilihan kata, terjemahan, ilustrasi, dan penyuntingan
-    pada edisi lain dapat memiliki perlindungan hak cipta
-    tersendiri. Rujukan digunakan untuk kepentingan identifikasi
-    alur dan pembelajaran sastra.
+    Adaptasi pada halaman ini disajikan sebagai bahan bacaan
+    literasi. Edisi modern, terjemahan, penyuntingan, ilustrasi,
+    dan catatan dari penerbit atau penulis tertentu dapat
+    memiliki perlindungan hak cipta tersendiri.
   </div>
 </section>
 
@@ -1188,8 +934,10 @@
   <span>— Mandala Aksara</span>
 </div>
 
-</main>
 </div>
+</div>
+
+</main>
 
 <footer class="site-footer">
   <strong>MANDALA AKSARA</strong><br>
@@ -1216,15 +964,6 @@ document.querySelectorAll('.nav-trigger').forEach(button => {
     if (window.matchMedia('(max-width: 900px)').matches) {
       button.parentElement.classList.toggle('expanded');
     }
-  });
-});
-
-const sectionLinks = document.querySelectorAll('.sidebar a');
-
-sectionLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    sectionLinks.forEach(item => item.classList.remove('active'));
-    link.classList.add('active');
   });
 });
 </script>
