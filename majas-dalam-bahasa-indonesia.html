@@ -13,395 +13,294 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pelajari 37 jenis majas dalam Bahasa Indonesia melalui penjelasan, ciri-ciri, contoh, dan latihan yang mudah dipahami.">
   <title>Majas dalam Bahasa Indonesia | Mandala Aksara</title>
+  <meta name="description" content="Pelajari 37 jenis majas dalam bahasa Indonesia: majas perbandingan, pertentangan, sindiran, dan penegasan. Dilengkapi pengertian, ciri-ciri, contoh, dan penjelasan.">
+  <meta name="keywords" content="majas, gaya bahasa, majas bahasa Indonesia, majas perbandingan, majas pertentangan, majas sindiran, majas penegasan">
   <link rel="stylesheet" href="style.css">
 
   <style>
-    :root {
-      --navy: #142B4A;
-      --navy-dark: #0D203A;
-      --orange: #F28C28;
-      --gold: #C69A45;
-      --text: #34445B;
-      --muted: #68778B;
-      --soft: #F3F5F8;
-      --border: #DCE3EC;
-    }
-
-    * {
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      background: #F7F8FA;
-      color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.75;
-    }
-
-    a { color: inherit; }
-
-    .site-header {
-      background: var(--navy-dark);
+    .majas-hero {
+      background: linear-gradient(135deg, #0D203A, #23466B);
       color: white;
-      padding: 15px 5%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 3px 12px rgba(0,0,0,.15);
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      min-width: 0;
-    }
-
-    .brand img {
-      width: 46px;
-      height: 46px;
-      object-fit: contain;
-    }
-
-    .brand-name {
-      font-size: 19px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      color: white;
-    }
-
-    .brand-subtitle {
-      display: block;
-      font-size: 10px;
-      color: #D9E1EC;
-      letter-spacing: .5px;
-    }
-
-    #menuToggle {
-      display: none;
-      border: 1px solid rgba(255,255,255,.35);
-      background: transparent;
-      color: white;
-      padding: 8px 12px;
-      border-radius: 7px;
-      font-size: 22px;
-      cursor: pointer;
-    }
-
-    #mainNav {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    #mainNav > a,
-    .nav-trigger {
-      color: white;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 600;
-    }
-
-    .nav-trigger {
-      border: none;
-      background: transparent;
-      cursor: pointer;
-      padding: 8px 0;
-      font-family: inherit;
-    }
-
-    .nav-dropdown { position: relative; }
-
-    .dropdown {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      min-width: 155px;
-      background: white;
-      box-shadow: 0 8px 22px rgba(0,0,0,.15);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .nav-dropdown:hover .dropdown,
-    .nav-dropdown.expanded .dropdown {
-      display: block;
-    }
-
-    .dropdown a {
-      display: block;
-      padding: 10px 15px;
-      color: var(--navy);
-      text-decoration: none;
-      font-size: 13px;
-    }
-
-    .dropdown a:hover {
-      background: var(--soft);
-      color: var(--orange);
-    }
-
-    .hero {
-      background:
-        radial-gradient(circle at 85% 20%, rgba(242,140,40,.18), transparent 30%),
-        linear-gradient(120deg, var(--navy-dark), var(--navy));
-      color: white;
-      padding: 68px 7%;
       text-align: center;
+      padding: 75px 22px;
+      border-bottom: 5px solid #F28C28;
     }
 
-    .hero .eyebrow {
-      color: #F6B65F;
-      text-transform: uppercase;
-      font-size: 12px;
-      letter-spacing: 2px;
+    .majas-hero .eyebrow {
+      color: #F28C28;
+      font-size: 13px;
       font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
     }
 
-    .hero h1 {
-      font-size: clamp(29px, 4.5vw, 46px);
+    .majas-hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 5vw, 49px);
       line-height: 1.2;
-      margin: 13px 0;
+      margin: 0 0 18px;
     }
 
-    .hero p {
+    .majas-hero p {
       max-width: 760px;
-      margin: 0 auto;
-      color: #E0E7F0;
+      margin: auto;
+      color: #F3F5F8;
+      line-height: 1.9;
       font-size: 16px;
     }
 
-    .hero-line {
-      width: 75px;
-      height: 4px;
-      background: var(--orange);
-      border-radius: 5px;
-      margin: 25px auto 0;
+    .majas-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 55px 22px 70px;
     }
 
-    .container {
-      max-width: 1120px;
-      margin: 40px auto 60px;
-      padding: 0 22px;
+    .majas-section {
+      margin-bottom: 48px;
     }
 
-    .intro-card,
-    .category-section,
-    .learning-note {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 13px;
-      padding: 28px;
-      margin-bottom: 24px;
+    .majas-section-title {
+      color: #142B4A;
+      font-family: Georgia, serif;
+      font-size: clamp(24px, 4vw, 30px);
+      text-align: center;
+      margin: 0 0 15px;
     }
 
-    .section-title {
-      color: var(--navy);
-      font-size: 25px;
-      line-height: 1.35;
+    .majas-section-intro {
+      max-width: 790px;
+      margin: 0 auto 28px;
+      color: #596579;
+      line-height: 1.9;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .majas-reading {
+      background: #FFFFFF;
+      border: 1px solid #E3E8EF;
+      border-radius: 14px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(20, 43, 74, 0.06);
+    }
+
+    .majas-reading p {
+      color: #46566B;
+      font-size: 15px;
+      line-height: 1.95;
       margin: 0 0 16px;
-      padding-bottom: 12px;
-      border-bottom: 2px solid #E3E8EF;
+      text-align: justify;
     }
 
-    .intro-card p {
-      margin: 10px 0 15px;
+    .majas-reading p:last-child {
+      margin-bottom: 0;
     }
 
-    .highlight {
-      background: #FFF5E9;
-      border-left: 4px solid var(--orange);
-      border-radius: 7px;
-      padding: 16px 19px;
-      margin-top: 20px;
+    .majas-reading strong {
+      color: #142B4A;
     }
 
-    .highlight strong { color: var(--navy); }
+    .majas-highlight {
+      margin-top: 22px;
+      padding: 21px 24px;
+      background: #FFF8EF;
+      border-left: 4px solid #F28C28;
+      border-radius: 0 10px 10px 0;
+      color: #46566B;
+      line-height: 1.85;
+      font-size: 15px;
+    }
 
-    .category-grid {
+    .majas-highlight strong {
+      color: #142B4A;
+    }
+
+    .majas-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-      margin-top: 22px;
+      gap: 23px;
+      margin-top: 32px;
     }
 
-    .category-card {
-      background: #FFFFFF;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      position: relative;
+    .majas-card {
+      display: flex;
+      flex-direction: column;
+      background: white;
+      border: 1px solid #E2E7EE;
+      border-radius: 14px;
       overflow: hidden;
-      transition: transform .2s ease, box-shadow .2s ease;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(20, 43, 74, 0.07);
+      transition: transform .2s, box-shadow .2s;
     }
 
-    .category-card::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 5px;
-      background: var(--orange);
+    .majas-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 11px 27px rgba(20, 43, 74, 0.15);
     }
 
-    .category-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 25px rgba(20,43,74,.10);
+    .majas-card-head {
+      background: linear-gradient(135deg, #0D203A, #23466B);
+      color: white;
+      padding: 25px 26px 22px;
+      border-bottom: 4px solid #F28C28;
     }
 
-    .category-number {
-      display: inline-block;
-      color: #B85D0B;
-      background: #FFF1E2;
-      padding: 4px 11px;
-      border-radius: 20px;
+    .majas-card-number {
+      color: #F6B66F;
       font-size: 12px;
       font-weight: bold;
-      margin-bottom: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
     }
 
-    .category-card h3 {
-      color: var(--navy);
-      font-size: 21px;
-      margin: 0 0 9px;
+    .majas-card-head h3 {
+      color: white;
+      font-family: Georgia, serif;
+      font-size: 23px;
+      margin: 0;
+      line-height: 1.4;
     }
 
-    .category-card p {
-      color: var(--muted);
+    .majas-card-body {
+      padding: 23px 26px 25px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .majas-card-body p {
+      color: #596579;
       font-size: 14px;
+      line-height: 1.85;
       margin: 0 0 17px;
+      flex: 1;
     }
 
-    .category-count {
-      color: var(--navy);
-      font-size: 13px;
+    .majas-card-count {
+      display: inline-block;
+      align-self: flex-start;
+      background: #F3F5F8;
+      color: #142B4A;
+      border-radius: 30px;
+      padding: 7px 13px;
+      font-size: 12px;
       font-weight: bold;
       margin-bottom: 17px;
     }
 
-    .category-link {
-      display: inline-block;
-      background: var(--navy);
-      color: white;
-      text-decoration: none;
-      padding: 10px 17px;
-      border-radius: 7px;
-      font-size: 13px;
-      font-weight: bold;
-      transition: background .2s ease;
-    }
-
-    .category-link:hover {
-      background: var(--orange);
-      color: var(--navy-dark);
-    }
-
-    .learning-note {
-      background: #F8FAFC;
-    }
-
-    .learning-note h2 {
-      color: var(--navy);
-      margin-top: 0;
-    }
-
-    .learning-note ul {
-      padding-left: 22px;
-    }
-
-    .learning-note li { margin-bottom: 8px; }
-
-    .final-quote {
-      text-align: center;
-      padding: 42px 20px;
-      color: var(--navy);
-      font-family: Georgia, serif;
-      font-size: 19px;
-      font-style: italic;
-      max-width: 850px;
-      margin: 0 auto;
-    }
-
-    .final-quote span {
-      display: block;
-      margin-top: 12px;
-      color: var(--gold);
-      font-family: Arial, sans-serif;
+    .majas-card-link {
+      color: #D87516;
       font-size: 14px;
       font-weight: bold;
-      font-style: normal;
     }
 
-    .site-footer {
-      background: var(--navy-dark);
-      color: #DCE4EF;
+    .majas-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .majas-list-item {
+      background: #F5F7FA;
+      border: 1px solid #E7EBF0;
+      border-radius: 9px;
+      padding: 14px 16px;
+      color: #46566B;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .majas-list-item strong {
+      display: block;
+      color: #142B4A;
+      margin-bottom: 3px;
+    }
+
+    .majas-note {
+      background: #F3F5F8;
+      border: 1px solid #E1E6ED;
+      border-radius: 12px;
+      padding: 25px;
+      color: #596579;
+      font-size: 14px;
+      line-height: 1.9;
+      margin-top: 25px;
+    }
+
+    .majas-note h3 {
+      color: #142B4A;
+      font-family: Georgia, serif;
+      margin: 0 0 10px;
+      font-size: 19px;
+    }
+
+    .majas-note p {
+      margin: 0 0 12px;
+    }
+
+    .majas-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .majas-quote {
+      background: #FFF8EF;
+      border-left: 5px solid #F28C28;
+      border-radius: 0 12px 12px 0;
+      padding: 27px 25px;
+      margin-top: 50px;
       text-align: center;
-      padding: 25px 15px;
-      font-size: 13px;
     }
 
-    .site-footer strong { color: white; }
-
-    @media (max-width: 900px) {
-      .site-header { flex-wrap: wrap; }
-
-      #menuToggle { display: block; }
-
-      #mainNav {
-        display: none;
-        flex-direction: column;
-        align-items: stretch;
-        width: 100%;
-        gap: 4px;
-        padding: 10px 0;
-      }
-
-      #mainNav.open { display: flex; }
-
-      #mainNav > a,
-      .nav-trigger {
-        display: block;
-        padding: 10px 5px;
-        text-align: left;
-      }
-
-      .dropdown {
-        position: static;
-        box-shadow: none;
-        background: rgba(255,255,255,.08);
-        margin-left: 12px;
-      }
-
-      .dropdown a { color: white; }
+    .majas-quote p {
+      color: #34445A;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 19px;
+      line-height: 1.9;
+      margin: 0 0 12px;
     }
 
-    @media (max-width: 600px) {
-      .hero { padding: 45px 20px; }
+    .majas-quote span {
+      color: #142B4A;
+      font-weight: bold;
+      font-size: 14px;
+    }
 
-      .container { padding: 0 13px; }
-
-      .intro-card,
-      .category-section,
-      .learning-note {
-        padding: 20px;
+    @media (max-width: 700px) {
+      .majas-hero {
+        padding: 55px 20px;
       }
 
-      .category-grid { grid-template-columns: 1fr; }
+      .majas-container {
+        padding: 38px 17px 50px;
+      }
 
-      .section-title { font-size: 22px; }
+      .majas-reading {
+        padding: 22px 19px;
+      }
 
-      .brand-name { font-size: 16px; }
+      .majas-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .majas-list {
+        grid-template-columns: 1fr;
+      }
+
+      .majas-card-head,
+      .majas-card-body {
+        padding-left: 21px;
+        padding-right: 21px;
+      }
+
+      .majas-quote p {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
@@ -411,19 +310,24 @@
 <header class="site-header">
   <a href="index.html" class="brand">
     <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-    <span>
-      <span class="brand-name">MANDALA AKSARA</span>
-      <span class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
-    </span>
+    <div>
+      <strong>MANDALA AKSARA</strong>
+      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+    </div>
   </a>
 
-  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <button class="menu-toggle" id="menuToggle"
+    type="button" aria-label="Buka navigasi" aria-expanded="false">
+    ☰
+  </button>
 
-  <nav id="mainNav">
+  <nav id="mainNav" aria-label="Navigasi utama">
     <a href="index.html">Beranda</a>
 
     <div class="nav-dropdown">
-      <button type="button" class="nav-trigger">Materi Pembelajaran ⌄</button>
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran <span>⌄</span>
+      </button>
       <div class="dropdown">
         <a href="kelas-x.html">Kelas X</a>
         <a href="kelas-xi.html">Kelas XI</a>
@@ -432,196 +336,355 @@
     </div>
 
     <a href="galeri.html">Galeri</a>
-    <a href="perpustakaan.html">Perpustakaan Digital</a>
+    <a href="perpustakaan.html" class="active">Perpustakaan Digital</a>
     <a href="kelas-virtual.html">Kelas Virtual</a>
     <a href="tentang.html">Tentang</a>
   </nav>
 </header>
 
-<section class="hero">
-  <div class="eyebrow">Perpustakaan Digital · Materi Kebahasaan</div>
-  <h1>Majas dalam Bahasa Indonesia</h1>
-  <p>
-    Memahami keindahan bahasa melalui pilihan kata dan ungkapan.
-    Kenali berbagai jenis majas, pahami ciri-cirinya, dan temukan
-    bagaimana bahasa dapat menyampaikan makna secara lebih hidup,
-    kuat, serta berkesan.
-  </p>
-  <div class="hero-line"></div>
-</section>
+<main>
 
-<main class="container">
-
-  <section class="intro-card">
-    <h2 class="section-title">Mengenal Majas</h2>
-
+  <section class="majas-hero">
+    <div class="eyebrow">Perpustakaan Digital · Referensi Kebahasaan</div>
+    <h1>Majas dalam Bahasa Indonesia</h1>
     <p>
-      Dalam kehidupan sehari-hari, kita tidak selalu menggunakan bahasa
-      hanya untuk menyampaikan informasi secara langsung. Terkadang,
-      kita memilih ungkapan tertentu agar pesan terasa lebih indah,
-      lebih kuat, lebih halus, atau bahkan lebih menyindir.
+      Mengenal kekayaan gaya bahasa untuk memahami makna,
+      menghidupkan ungkapan, memperkuat gagasan, dan
+      menyampaikan pikiran secara lebih berkesan.
     </p>
+  </section>
 
-    <p>
-      Pilihan ungkapan tersebut dapat menghadirkan kesan dan makna
-      yang berbeda dari penggunaan kata-kata secara biasa. Dalam
-      bahasa Indonesia, cara mengungkapkan sesuatu dengan gaya bahasa
-      tertentu dikenal dengan istilah <strong>majas</strong>.
-    </p>
+  <div class="majas-container">
 
-    <p>
-      Majas merupakan salah satu unsur penting dalam keterampilan
-      berbahasa dan bersastra. Majas dapat ditemukan dalam puisi,
-      cerpen, novel, lagu, pidato, iklan, percakapan, serta berbagai
-      bentuk komunikasi lainnya.
-    </p>
+    <section class="majas-section">
+      <h2 class="majas-section-title">Memahami Majas</h2>
 
-    <div class="highlight">
-      <strong>Mengapa perlu mempelajari majas?</strong>
-      <p>
-        Dengan memahami majas, kita tidak hanya mampu mengenali
-        keindahan bahasa, tetapi juga dapat menangkap makna tersirat,
-        memahami maksud penulis, dan menggunakan ungkapan secara
-        lebih kreatif ketika berbicara maupun menulis.
+      <div class="majas-reading">
+        <p>
+          Dalam kehidupan sehari-hari, kita tidak selalu
+          menyampaikan sesuatu dengan kata-kata yang bermakna
+          langsung. Terkadang, kita menggunakan ungkapan yang
+          membandingkan satu hal dengan hal lain, melebih-lebihkan
+          keadaan, menyindir seseorang, atau mengulang kata
+          tertentu untuk memperkuat pesan. Cara mengungkapkan
+          sesuatu seperti ini membuat bahasa terasa lebih hidup,
+          menarik, dan memiliki daya ungkap yang lebih kuat.
+        </p>
+
+        <p>
+          Cara penggunaan bahasa tersebut dikenal dengan istilah
+          <strong>majas</strong>. Majas adalah cara mengungkapkan
+          pikiran, perasaan, atau gagasan melalui penggunaan
+          bahasa yang memiliki ciri atau efek tertentu sehingga
+          pesan yang disampaikan menjadi lebih kuat, indah,
+          menarik, atau memiliki makna khusus. Dalam banyak
+          majas, makna ungkapan tidak selalu sama dengan makna
+          kata-kata secara harfiah.
+        </p>
+
+        <p>
+          Majas juga sering disebut <strong>gaya bahasa</strong>.
+          Keduanya berkaitan erat karena sama-sama menunjuk pada
+          cara khas seseorang menggunakan bahasa untuk
+          menyampaikan maksud. Majas dapat ditemukan dalam karya
+          sastra seperti puisi, cerpen, novel, dan drama, tetapi
+          juga digunakan dalam percakapan sehari-hari, pidato,
+          iklan, berita, maupun tulisan populer.
+        </p>
+
+        <p>
+          Sebagai contoh, kalimat <em>“Angin malam berbisik
+          menyapa pepohonan”</em> tidak berarti angin benar-benar
+          memiliki mulut dan dapat berbicara. Kalimat tersebut
+          menggunakan bahasa kias untuk menggambarkan suasana
+          malam secara lebih hidup. Begitu pula ungkapan
+          <em>“Aku sudah menunggumu seribu tahun”</em> yang
+          tidak dimaksudkan sebagai hitungan waktu sebenarnya,
+          melainkan untuk menegaskan betapa lamanya seseorang
+          merasa menunggu.
+        </p>
+
+        <p>
+          Dengan demikian, memahami majas tidak cukup hanya
+          dengan menghafalkan nama dan definisinya. Pembaca
+          perlu memperhatikan konteks kalimat, maksud penutur,
+          hubungan antarkata, serta efek yang ditimbulkan oleh
+          ungkapan tersebut. Satu ungkapan dapat terasa berbeda
+          maknanya apabila digunakan dalam situasi yang berbeda.
+        </p>
+
+        <div class="majas-highlight">
+          <strong>Hal penting untuk diingat:</strong>
+          Majas bukan sekadar hiasan dalam bahasa. Majas juga
+          membantu penulis dan penutur menyampaikan pesan,
+          membangun suasana, memperjelas gambaran, serta
+          memengaruhi perasaan dan pemikiran pembaca atau pendengar.
+        </div>
+      </div>
+    </section>
+
+    <section class="majas-section">
+      <h2 class="majas-section-title">Fungsi dan Manfaat Majas</h2>
+
+      <p class="majas-section-intro">
+        Penggunaan majas memiliki berbagai tujuan. Pemilihan
+        majas yang tepat dapat membuat pesan lebih mudah
+        dibayangkan, lebih kuat, dan lebih berkesan.
       </p>
-    </div>
-  </section>
 
-  <section class="category-section">
-    <h2 class="section-title">Jelajahi Kelompok Majas</h2>
+      <div class="majas-list">
+        <div class="majas-list-item">
+          <strong>1. Memperindah bahasa</strong>
+          Membuat ungkapan lebih menarik, hidup, dan memiliki
+          nilai estetis, terutama dalam karya sastra.
+        </div>
 
-    <p>
-      Secara umum, materi ini mengelompokkan 37 jenis majas ke dalam
-      empat kelompok pembahasan. Pilih kelompok berikut untuk
-      mempelajari pengertian, ciri-ciri, contoh, dan penjelasannya
-      secara lebih mendalam.
-    </p>
+        <div class="majas-list-item">
+          <strong>2. Memperjelas gambaran</strong>
+          Membantu pembaca membayangkan suatu keadaan melalui
+          perbandingan, penggambaran, atau ungkapan tertentu.
+        </div>
 
-    <div class="category-grid">
+        <div class="majas-list-item">
+          <strong>3. Memperkuat makna</strong>
+          Memberikan penekanan agar pesan atau gagasan terasa
+          lebih kuat dan mudah diingat.
+        </div>
 
-      <article class="category-card">
-        <span class="category-number">Kelompok 01</span>
-        <h3>Majas Perbandingan</h3>
-        <p>
-          Mengenali majas yang menggunakan perbandingan, persamaan,
-          penggantian, atau penggambaran suatu hal dengan hal lain
-          untuk menghadirkan makna tertentu.
-        </p>
-        <div class="category-count">14 jenis majas</div>
-        <a class="category-link" href="majas-perbandingan.html">
-          Pelajari Kelompok Ini →
-        </a>
-      </article>
+        <div class="majas-list-item">
+          <strong>4. Membangun suasana</strong>
+          Menghadirkan suasana sedih, gembira, tegang, haru,
+          lucu, atau suasana lainnya.
+        </div>
 
-      <article class="category-card">
-        <span class="category-number">Kelompok 02</span>
-        <h3>Majas Pertentangan</h3>
-        <p>
-          Memahami penggunaan ungkapan yang menghadirkan pertentangan,
-          perbedaan, atau keadaan yang tampak berlawanan untuk
-          memperkuat pesan.
-        </p>
-        <div class="category-count">7 jenis majas</div>
-        <a class="category-link" href="majas-pertentangan.html">
-          Pelajari Kelompok Ini →
-        </a>
-      </article>
+        <div class="majas-list-item">
+          <strong>5. Menyampaikan sindiran</strong>
+          Mengungkapkan kritik atau ketidaksetujuan melalui
+          ungkapan yang memiliki maksud tertentu.
+        </div>
 
-      <article class="category-card">
-        <span class="category-number">Kelompok 03</span>
-        <h3>Majas Sindiran</h3>
-        <p>
-          Mempelajari berbagai cara menyampaikan kritik, teguran,
-          atau sindiran melalui ungkapan yang halus hingga
-          ungkapan yang tajam.
-        </p>
-        <div class="category-count">6 jenis majas</div>
-        <a class="category-link" href="majas-sindiran.html">
-          Pelajari Kelompok Ini →
-        </a>
-      </article>
+        <div class="majas-list-item">
+          <strong>6. Mempengaruhi pembaca</strong>
+          Membuat pembaca lebih tertarik, tersentuh, berpikir,
+          atau memberikan perhatian terhadap suatu pesan.
+        </div>
+      </div>
+    </section>
 
-      <article class="category-card">
-        <span class="category-number">Kelompok 04</span>
-        <h3>Majas Penegasan</h3>
-        <p>
-          Mengenali penggunaan pengulangan, perincian, urutan,
-          dan bentuk ungkapan lain untuk menekankan gagasan
-          agar lebih kuat dan mudah diingat.
-        </p>
-        <div class="category-count">10 jenis majas</div>
-        <a class="category-link" href="majas-penegasan.html">
-          Pelajari Kelompok Ini →
-        </a>
-      </article>
+    <section class="majas-section">
+      <h2 class="majas-section-title">Empat Kelompok Majas</h2>
 
-    </div>
-  </section>
-
-  <section class="learning-note">
-    <h2>Bagaimana Cara Mempelajari Materi Ini?</h2>
-    <p>
-      Agar pemahaman tentang majas semakin kuat, pelajari setiap
-      kelompok secara bertahap. Jangan hanya menghafalkan nama
-      dan pengertiannya, tetapi pahami pula cara kerja majas
-      dalam sebuah kalimat.
-    </p>
-
-    <ul>
-      <li>Baca pengertian setiap jenis majas dengan cermat.</li>
-      <li>Kenali ciri-ciri yang membedakannya dari majas lain.</li>
-      <li>Perhatikan contoh kalimat dan penjelasan maknanya.</li>
-      <li>Bandingkan majas yang memiliki kemiripan agar tidak tertukar.</li>
-      <li>Cobalah membuat contoh kalimat sendiri.</li>
-      <li>Gunakan pemahaman tersebut ketika membaca dan menulis karya.</li>
-    </ul>
-
-    <div class="highlight">
-      <strong>Catatan penting:</strong>
-      <p>
-        Beberapa majas memiliki ciri yang berdekatan atau dapat
-        dikelompokkan secara berbeda dalam berbagai buku referensi.
-        Karena itu, pembahasan setiap jenis akan disertai penjelasan
-        dan catatan agar konsepnya tidak mudah tertukar.
+      <p class="majas-section-intro">
+        Dalam materi ini, 37 jenis majas disusun ke dalam
+        empat kelompok utama berdasarkan kecenderungan cara
+        pengungkapan dan efek makna yang ditimbulkannya.
+        Pilih kelompok untuk mempelajari pembahasan secara lengkap.
       </p>
-    </div>
-  </section>
 
-  <div class="final-quote">
-    “Bahasa bukan sekadar rangkaian kata, melainkan ruang tempat
-    makna, rasa, dan imajinasi menemukan keindahannya.”
-    <span>— Mandala Aksara</span>
+      <div class="majas-grid">
+
+        <a href="majas-perbandingan.html" class="majas-card">
+          <div class="majas-card-head">
+            <div class="majas-card-number">Kelompok 01</div>
+            <h3>Majas Perbandingan</h3>
+          </div>
+          <div class="majas-card-body">
+            <p>
+              Kelompok majas yang menggunakan perbandingan,
+              penggantian, penggambaran, atau pengaitan suatu
+              hal dengan hal lain untuk menghasilkan makna
+              yang lebih kuat dan menarik.
+            </p>
+            <span class="majas-card-count">14 jenis majas</span>
+            <span class="majas-card-link">Pelajari majas perbandingan →</span>
+          </div>
+        </a>
+
+        <a href="majas-pertentangan.html" class="majas-card">
+          <div class="majas-card-head">
+            <div class="majas-card-number">Kelompok 02</div>
+            <h3>Majas Pertentangan</h3>
+          </div>
+          <div class="majas-card-body">
+            <p>
+              Kelompok majas yang menggunakan pertentangan,
+              perbedaan, atau ketidaksesuaian makna untuk
+              menegaskan suatu keadaan, menghadirkan kejutan,
+              atau memperkuat pesan.
+            </p>
+            <span class="majas-card-count">7 jenis majas</span>
+            <span class="majas-card-link">Pelajari majas pertentangan →</span>
+          </div>
+        </a>
+
+        <a href="majas-sindiran.html" class="majas-card">
+          <div class="majas-card-head">
+            <div class="majas-card-number">Kelompok 03</div>
+            <h3>Majas Sindiran</h3>
+          </div>
+          <div class="majas-card-body">
+            <p>
+              Kelompok majas yang digunakan untuk menyampaikan
+              kritik, teguran, ketidaksetujuan, atau celaan
+              melalui ungkapan yang tingkat ketajamannya
+              dapat berbeda-beda.
+            </p>
+            <span class="majas-card-count">6 jenis majas</span>
+            <span class="majas-card-link">Pelajari majas sindiran →</span>
+          </div>
+        </a>
+
+        <a href="majas-penegasan.html" class="majas-card">
+          <div class="majas-card-head">
+            <div class="majas-card-number">Kelompok 04</div>
+            <h3>Majas Penegasan</h3>
+          </div>
+          <div class="majas-card-body">
+            <p>
+              Kelompok majas yang digunakan untuk menekankan,
+              memperjelas, mengulang, atau meningkatkan kekuatan
+              suatu gagasan agar pesan lebih terasa dan mudah
+              diingat.
+            </p>
+            <span class="majas-card-count">10 jenis majas</span>
+            <span class="majas-card-link">Pelajari majas penegasan →</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="majas-section">
+      <h2 class="majas-section-title">Peta Materi Majas</h2>
+
+      <p class="majas-section-intro">
+        Berikut gambaran jumlah jenis majas dalam setiap
+        kelompok yang akan dipelajari.
+      </p>
+
+      <div class="majas-reading">
+        <div class="majas-list">
+          <div class="majas-list-item">
+            <strong>Majas Perbandingan</strong>
+            14 jenis
+          </div>
+          <div class="majas-list-item">
+            <strong>Majas Pertentangan</strong>
+            7 jenis
+          </div>
+          <div class="majas-list-item">
+            <strong>Majas Sindiran</strong>
+            6 jenis
+          </div>
+          <div class="majas-list-item">
+            <strong>Majas Penegasan</strong>
+            10 jenis
+          </div>
+        </div>
+
+        <div class="majas-highlight">
+          <strong>Jumlah keseluruhan: 37 jenis majas.</strong>
+          Pembagian ini merupakan susunan pembelajaran yang
+          digunakan dalam materi Mandala Aksara. Dalam berbagai
+          buku atau sumber kebahasaan, pengelompokan dan jumlah
+          majas dapat berbeda karena perbedaan dasar klasifikasi,
+          istilah, dan cakupan pembahasannya.
+        </div>
+      </div>
+    </section>
+
+    <section class="majas-section">
+      <h2 class="majas-section-title">Cara Mempelajari Materi</h2>
+
+      <div class="majas-reading">
+        <p>
+          Agar pemahaman lebih terarah, mulailah dengan memilih
+          salah satu kelompok majas. Bacalah pengertian setiap
+          jenis secara saksama, perhatikan ciri-cirinya, lalu
+          bandingkan contoh yang diberikan dengan penjelasannya.
+        </p>
+
+        <p>
+          Jangan hanya menghafalkan nama majas. Cobalah
+          menemukan alasan mengapa suatu kalimat termasuk
+          majas tertentu. Perhatikan kata yang digunakan,
+          makna yang dimaksud, serta hubungan antara makna
+          sebenarnya dan makna yang ingin disampaikan.
+        </p>
+
+        <p>
+          Setelah memahami contoh, cobalah membuat kalimat
+          sendiri dan mengidentifikasi majas dalam puisi,
+          cerpen, novel, pidato, atau percakapan sehari-hari.
+          Dengan latihan tersebut, pemahaman majas akan
+          berkembang dari sekadar pengetahuan istilah menjadi
+          keterampilan berbahasa.
+        </p>
+      </div>
+
+      <div class="majas-note">
+        <h3>Catatan Ketepatan Istilah</h3>
+        <p>
+          Dalam pembahasan majas, beberapa istilah memiliki
+          hubungan yang sangat dekat sehingga perlu dipahami
+          secara cermat. Salah satu contohnya adalah sinekdoke,
+          yang memiliki bentuk <em>pars pro toto</em> dan
+          <em>totum pro parte</em>.
+        </p>
+        <p>
+          <em>Pars pro toto</em> berarti sebagian digunakan
+          untuk mewakili keseluruhan, sedangkan
+          <em>totum pro parte</em> berarti keseluruhan digunakan
+          untuk mewakili sebagian. Penulisan istilah yang tepat
+          adalah <strong>totum pro parte</strong>, bukan
+          <em>totem pro parte</em>.
+        </p>
+        <p>
+          Hubungan istilah tersebut akan dibahas lebih lanjut
+          pada halaman Majas Perbandingan agar pembaca memahami
+          konsepnya beserta contoh dan penggunaannya.
+        </p>
+      </div>
+    </section>
+
+    <div class="majas-quote">
+      <p>
+        “Keindahan bahasa tidak hanya terletak pada kata-kata
+        yang digunakan, tetapi juga pada kedalaman makna yang
+        mampu dihidupkannya.”
+      </p>
+      <span>— Mandala Aksara</span>
+    </div>
+
   </div>
-
 </main>
 
-<footer class="site-footer">
-  <strong>MANDALA AKSARA</strong><br>
-  Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.<br>
-  © 2026 Mandala Aksara · Dikelola Mandiri
+<footer>
+  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
 </footer>
 
 <script>
-  const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('mainNav');
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
 
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      toggle.setAttribute(
-        'aria-expanded',
-        nav.classList.contains('open')
-      );
-    });
-  }
-
-  document.querySelectorAll('.nav-trigger').forEach(button => {
-    button.addEventListener('click', () => {
-      if (window.matchMedia('(max-width: 900px)').matches) {
-        button.parentElement.classList.toggle('expanded');
-      }
-    });
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute(
+      'aria-expanded',
+      nav.classList.contains('open')
+    );
   });
+}
+
+document.querySelectorAll('.nav-trigger').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 1050px)').matches) {
+      btn.parentElement.classList.toggle('expanded');
+    }
+  });
+});
 </script>
 
 </body>
