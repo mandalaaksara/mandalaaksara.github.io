@@ -1,0 +1,1233 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bacaan Hikayat Si Miskin, adaptasi cerita Melayu klasik, beserta aktivitas analisis kebahasaan dan unsur intrinsik untuk pembelajaran Bahasa Indonesia kelas X.">
+  <title>Hikayat Si Miskin | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --navy-dark: #0D203A;
+      --orange: #F28C28;
+      --gold: #C69A45;
+      --text: #34445B;
+      --muted: #68778B;
+      --soft: #F3F5F8;
+      --border: #DCE3EC;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #F7F8FA;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+    }
+
+    a { color: inherit; }
+
+    .site-header {
+      background: var(--navy-dark);
+      color: white;
+      padding: 15px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 12px rgba(0,0,0,.15);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: white;
+    }
+
+    .brand-subtitle {
+      display: block;
+      font-size: 10px;
+      color: #D9E1EC;
+      letter-spacing: .5px;
+    }
+
+    #menuToggle {
+      display: none;
+      border: 1px solid rgba(255,255,255,.35);
+      background: transparent;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 7px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    #mainNav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #mainNav > a,
+    .nav-trigger {
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .nav-trigger {
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      padding: 8px 0;
+    }
+
+    .nav-dropdown { position: relative; }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 155px;
+      background: white;
+      box-shadow: 0 8px 22px rgba(0,0,0,.15);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .nav-dropdown:hover .dropdown,
+    .nav-dropdown.expanded .dropdown {
+      display: block;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 15px;
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    .dropdown a:hover {
+      background: var(--soft);
+      color: var(--orange);
+    }
+
+    .hero {
+      background: linear-gradient(120deg, var(--navy-dark), var(--navy));
+      color: white;
+      padding: 55px 7%;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      color: #F6B65F;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      font-size: clamp(27px, 4vw, 42px);
+      line-height: 1.2;
+      margin: 12px 0;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #E0E7F0;
+    }
+
+    .page-layout {
+      max-width: 1350px;
+      margin: 35px auto 60px;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: 255px minmax(0, 1fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .sidebar {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 20px 15px;
+      position: sticky;
+      top: 95px;
+      max-height: calc(100vh - 115px);
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: var(--navy);
+      font-size: 18px;
+      margin: 0 0 15px;
+    }
+
+    .sidebar a {
+      display: block;
+      text-decoration: none;
+      color: #485970;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 9px 11px;
+      margin: 3px 0;
+      border-radius: 7px;
+      line-height: 1.4;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      background: #FFF1E2;
+      color: #B85D0B;
+      border-left: 3px solid var(--orange);
+    }
+
+    .content { min-width: 0; }
+
+    .content section {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 27px;
+      margin-bottom: 22px;
+      scroll-margin-top: 105px;
+    }
+
+    .content h2 {
+      color: var(--navy);
+      font-size: 25px;
+      line-height: 1.35;
+      margin: 0 0 18px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #E3E8EF;
+    }
+
+    .content h3 {
+      color: var(--navy);
+      font-size: 18px;
+      margin: 23px 0 10px;
+    }
+
+    .content p { margin: 10px 0 15px; }
+    .content li { margin-bottom: 8px; }
+
+    .note {
+      background: #FFF5E9;
+      border-left: 4px solid var(--orange);
+      border-radius: 7px;
+      padding: 15px 18px;
+      margin: 18px 0;
+    }
+
+    .info-card {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 20px;
+      margin: 15px 0;
+    }
+
+    .story-part {
+      background: #FCFCFD;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px;
+      margin: 20px 0;
+    }
+
+    .story-part h3 {
+      margin-top: 0;
+      color: #B85D0B;
+    }
+
+    .story-part p {
+      text-align: justify;
+      text-indent: 28px;
+      margin: 0 0 14px;
+    }
+
+    .story-part p:last-child { margin-bottom: 0; }
+
+    .story-label {
+      display: inline-block;
+      background: #FFF1E2;
+      color: #A95008;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .activity-box {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 18px;
+      margin: 16px 0;
+    }
+
+    .activity-box h3 { margin-top: 0; }
+
+    .analysis-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 13px;
+    }
+
+    .analysis-table th,
+    .analysis-table td {
+      border: 1px solid var(--border);
+      padding: 11px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .analysis-table th {
+      background: var(--navy);
+      color: white;
+    }
+
+    .analysis-table td { height: 48px; }
+
+    .reflection {
+      background: var(--navy);
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 25px;
+    }
+
+    .reflection h3 {
+      color: #F6B65F;
+      margin-top: 0;
+    }
+
+    .final-quote {
+      text-align: center;
+      padding: 38px 20px;
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: 19px;
+      font-style: italic;
+    }
+
+    .final-quote span {
+      display: block;
+      margin-top: 12px;
+      color: var(--gold);
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    .site-footer {
+      background: var(--navy-dark);
+      color: #DCE4EF;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 13px;
+    }
+
+    .site-footer strong { color: white; }
+
+    @media (max-width: 900px) {
+      .site-header { flex-wrap: wrap; }
+
+      #menuToggle { display: block; }
+
+      #mainNav {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 4px;
+        padding: 10px 0;
+      }
+
+      #mainNav.open { display: flex; }
+
+      #mainNav > a,
+      .nav-trigger {
+        display: block;
+        padding: 10px 5px;
+        text-align: left;
+      }
+
+      .dropdown {
+        position: static;
+        box-shadow: none;
+        background: rgba(255,255,255,.08);
+        margin-left: 12px;
+      }
+
+      .dropdown a { color: white; }
+
+      .page-layout {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+      }
+
+      .sidebar {
+        position: static;
+        max-height: none;
+      }
+
+      .sidebar-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero { padding: 38px 20px; }
+
+      .page-layout { padding: 0 12px; }
+
+      .content section { padding: 19px; }
+
+      .content h2 { font-size: 21px; }
+
+      .sidebar-list { grid-template-columns: 1fr; }
+
+      .brand-name { font-size: 16px; }
+
+      .story-part { padding: 16px; }
+
+      .analysis-table { font-size: 11px; }
+
+      .analysis-table th,
+      .analysis-table td { padding: 7px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span>
+      <span class="brand-name">MANDALA AKSARA</span>
+      <span class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+    </span>
+  </a>
+
+  <button id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+
+  <nav id="mainNav">
+    <a href="index.html">Beranda</a>
+
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">Materi Pembelajaran ⌄</button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">Perpustakaan Digital · Karya Sastra · Hikayat</div>
+  <h1>Hikayat Si Miskin</h1>
+  <p>
+    Sebuah kisah tentang kesengsaraan, harapan, kekuasaan,
+    ujian kehidupan, dan perjalanan seorang anak dalam
+    menemukan kembali jati diri serta keluarganya.
+  </p>
+</section>
+
+<div class="page-layout">
+
+<aside class="sidebar">
+  <h2>Daftar Bacaan</h2>
+  <div class="sidebar-list">
+    <a href="#identitas">Identitas Bacaan</a>
+    <a href="#pengantar">Pengantar</a>
+    <a href="#bacaan">Teks Hikayat</a>
+    <a href="#analisis-bahasa">Analisis Kebahasaan</a>
+    <a href="#unsur-intrinsik">Unsur Intrinsik</a>
+    <a href="#nilai-kehidupan">Nilai Kehidupan</a>
+    <a href="#aktivitas">Aktivitas Pembelajaran</a>
+    <a href="#refleksi">Refleksi</a>
+    <a href="#sumber">Sumber Bacaan</a>
+  </div>
+</aside>
+
+<main class="content">
+
+<section id="identitas">
+  <h2>1. Identitas Bacaan</h2>
+
+  <div class="info-card">
+    <p><strong>Judul:</strong> Hikayat Si Miskin</p>
+    <p><strong>Jenis karya:</strong> Prosa lama</p>
+    <p><strong>Genre:</strong> Hikayat</p>
+    <p><strong>Asal tradisi:</strong> Sastra Melayu klasik</p>
+    <p><strong>Tokoh utama:</strong> Si Miskin dan Marakarma</p>
+    <p><strong>Peruntukan:</strong> Pembelajaran Bahasa Indonesia Fase E / Kelas X</p>
+    <p><strong>Bentuk teks:</strong> Adaptasi cerita untuk pembelajaran</p>
+  </div>
+
+  <div class="note">
+    Bacaan ini merupakan adaptasi naratif untuk membantu pembaca
+    memahami jalan cerita. Susunan kalimat dan penyajiannya
+    bukan salinan utuh dari satu edisi naskah klasik tertentu.
+  </div>
+</section>
+
+<section id="pengantar">
+  <h2>2. Pengantar Bacaan</h2>
+
+  <p>
+    Hikayat Si Miskin merupakan salah satu cerita yang dikenal
+    dalam khazanah sastra Melayu lama. Cerita ini mengisahkan
+    kehidupan sepasang suami istri yang mengalami kemalangan,
+    kemudian memperoleh kehidupan yang lebih baik, tetapi
+    kembali menghadapi berbagai cobaan.
+  </p>
+
+  <p>
+    Tokoh Si Miskin tidak hanya digambarkan sebagai seseorang
+    yang hidup dalam kekurangan. Di balik kemiskinannya,
+    tersimpan asal-usul yang tidak biasa. Perjalanan hidup
+    keluarganya memperlihatkan bagaimana kekuasaan, keserakahan,
+    iri hati, kepercayaan, dan keteguhan hati dapat memengaruhi
+    nasib seseorang.
+  </p>
+
+  <p>
+    Dalam cerita ini, pembaca juga akan menjumpai berbagai
+    peristiwa ajaib, tokoh kerajaan, ramalan, pengembaraan,
+    serta pertolongan yang datang secara tidak terduga.
+    Unsur-unsur tersebut merupakan bagian dari ciri khas
+    hikayat sebagai prosa lama.
+  </p>
+
+  <div class="note">
+    <strong>Pertanyaan sebelum membaca:</strong>
+    Apakah seseorang yang sedang berada dalam kesengsaraan
+    selalu akan mengalami kehidupan yang sama sepanjang hidupnya?
+    Bacalah kisah berikut untuk menemukan jawabannya.
+  </div>
+</section>
+
+<section id="bacaan">
+  <h2>3. Teks Bacaan: Hikayat Si Miskin</h2>
+
+  <div class="note">
+    <strong>Petunjuk membaca:</strong>
+    Bacalah cerita secara berurutan. Perhatikan perubahan nasib
+    tokoh, hubungan antartokoh, konflik yang muncul, serta
+    peristiwa-peristiwa ajaib yang menjadi bagian dari cerita.
+  </div>
+
+  <div class="story-part">
+    <span class="story-label">Bagian I · Awal Kisah</span>
+    <h3>Kesengsaraan di Negeri Antah Berantah</h3>
+
+    <p>
+      Pada zaman dahulu, di sebuah negeri bernama Antah Berantah,
+      hiduplah sepasang suami istri yang dikenal dengan sebutan
+      Si Miskin. Mereka sebenarnya berasal dari kalangan penghuni
+      kayangan. Akan tetapi, karena suatu sumpah dari Batara Indera,
+      keduanya harus menjalani kehidupan di dunia dalam keadaan
+      serba kekurangan.
+    </p>
+
+    <p>
+      Si Miskin dan istrinya hidup berpindah-pindah. Mereka tidak
+      memiliki rumah yang layak, pakaian yang bagus, ataupun
+      makanan yang cukup. Setiap hari mereka berusaha mencari
+      sisa makanan dan meminta belas kasihan penduduk.
+    </p>
+
+    <p>
+      Namun, kehidupan mereka tidak mudah. Banyak penduduk
+      memandang rendah keadaan keduanya. Ketika mereka datang
+      ke kampung atau pasar, sebagian orang justru mengusir,
+      menghina, bahkan melempari mereka dengan kayu dan batu.
+      Tubuh mereka sering terluka akibat perlakuan tersebut.
+    </p>
+
+    <p>
+      Pada malam hari, mereka berlindung di hutan. Ketika pagi
+      tiba, mereka kembali mencari makanan ke tempat-tempat
+      yang mungkin dapat memberi sedikit pertolongan.
+      Demikianlah kehidupan yang harus mereka jalani dari
+      hari ke hari.
+    </p>
+  </div>
+
+  <div class="story-part">
+    <span class="story-label">Bagian II · Keinginan Sang Istri</span>
+    <h3>Buah Mempelam dari Taman Raja</h3>
+
+    <p>
+      Setelah beberapa waktu, istri Si Miskin mengandung.
+      Ketika usia kandungannya memasuki bulan ketiga, ia
+      menginginkan buah mempelam yang tumbuh di taman milik raja.
+      Keinginan itu disampaikannya kepada sang suami.
+    </p>
+
+    <p>
+      Si Miskin merasa kebingungan. Ia sadar bahwa dirinya
+      tidak memiliki harta untuk membeli buah tersebut.
+      Ia juga takut datang ke istana karena pengalaman buruk
+      yang pernah dialaminya ketika berhadapan dengan orang-orang
+      di negeri itu.
+    </p>
+
+    <p>
+      Meskipun demikian, ia tidak ingin mengecewakan istrinya.
+      Mula-mula ia berusaha mencari makanan di pasar. Beberapa
+      orang memberikan makanan dan buah-buahan kepadanya.
+      Akan tetapi, sang istri tetap menginginkan buah mempelam
+      yang berasal dari taman raja.
+    </p>
+
+    <p>
+      Dengan hati yang berat, Si Miskin akhirnya memberanikan
+      diri menghadap Maharaja Indera Dewa. Ia menyampaikan
+      permohonan dengan penuh kerendahan hati. Di luar dugaan,
+      raja berkenan memberikan buah mempelam yang diminta.
+      Bahkan, Si Miskin memperoleh pemberian lainnya.
+    </p>
+
+    <p>
+      Ia pulang dengan perasaan gembira. Istrinya menyambut
+      buah tersebut dengan sukacita. Peristiwa itu menjadi
+      salah satu pengalaman yang memberi harapan baru bagi
+      kehidupan mereka.
+    </p>
+  </div>
+
+  <div class="story-part">
+    <span class="story-label">Bagian III · Perubahan Nasib</span>
+    <h3>Kelahiran Marakarma dan Berdirinya Puspa Sari</h3>
+
+    <p>
+      Setelah tiba waktunya, istri Si Miskin melahirkan seorang
+      anak laki-laki. Anak itu diberi nama Marakarma. Nama
+      tersebut menggambarkan kehidupannya yang lahir di tengah
+      kesengsaraan.
+    </p>
+
+    <p>
+      Si Miskin dan istrinya sangat menyayangi anak itu.
+      Mereka berharap kehadiran Marakarma membawa perubahan
+      bagi kehidupan keluarga. Anak tersebut dirawat dengan
+      penuh kasih sayang meskipun mereka belum memiliki
+      kehidupan yang berkecukupan.
+    </p>
+
+    <p>
+      Pada suatu hari, ketika Si Miskin sedang menggali tanah
+      untuk memperbaiki tempat tinggalnya, ia menemukan sebuah
+      tajau yang berisi emas. Penemuan itu membuat kehidupannya
+      berubah. Dengan pertolongan dan kehendak Tuhan, tempat
+      tinggal mereka berkembang menjadi sebuah kerajaan
+      yang besar dan makmur.
+    </p>
+
+    <p>
+      Si Miskin kemudian dikenal sebagai Maharaja Indera
+      Angkasa, sedangkan istrinya memperoleh gelar Tuan Puteri
+      Ratna Dewi. Kerajaan mereka dinamakan Puspa Sari.
+      Kerajaan itu berkembang menjadi negeri yang terkenal
+      karena kemakmuran dan pemerintahan yang baik.
+    </p>
+
+    <p>
+      Kebahagiaan keluarga tersebut semakin bertambah ketika
+      Ratna Dewi melahirkan seorang anak perempuan bernama
+      Nila Kesuma. Marakarma dan Nila Kesuma tumbuh dalam
+      lingkungan kerajaan yang penuh kecukupan.
+    </p>
+  </div>
+
+  <div class="story-part">
+    <span class="story-label">Bagian IV · Konflik</span>
+    <h3>Ramalan Palsu dan Terusirnya Kedua Anak</h3>
+
+    <p>
+      Kemakmuran Puspa Sari menimbulkan rasa iri pada Maharaja
+      Indera Dewa, penguasa Negeri Antah Berantah. Ia tidak
+      senang melihat keberhasilan Maharaja Indera Angkasa.
+      Karena dikuasai rasa dengki, ia menyusun rencana untuk
+      merusak kebahagiaan keluarga tersebut.
+    </p>
+
+    <p>
+      Ketika Maharaja Indera Angkasa ingin mengetahui masa
+      depan kedua anaknya, ia meminta bantuan para ahli nujum.
+      Kesempatan itu dimanfaatkan oleh Maharaja Indera Dewa
+      untuk memengaruhi mereka agar menyampaikan ramalan
+      yang tidak benar.
+    </p>
+
+    <p>
+      Para ahli nujum kemudian mengatakan bahwa Marakarma
+      dan Nila Kesuma akan mendatangkan malapetaka bagi
+      kedua orang tuanya. Ramalan itu membuat Maharaja
+      Indera Angkasa gelisah dan kehilangan pertimbangan.
+    </p>
+
+    <p>
+      Meskipun Ratna Dewi berusaha membela kedua anaknya,
+      Maharaja Indera Angkasa akhirnya memerintahkan agar
+      Marakarma dan Nila Kesuma meninggalkan kerajaan.
+      Kedua anak itu harus pergi tanpa membawa kemewahan
+      yang selama ini mereka nikmati.
+    </p>
+
+    <p>
+      Tidak lama setelah kepergian mereka, bencana menimpa
+      Puspa Sari. Kerajaan itu terbakar dan kehilangan
+      kemakmurannya. Maharaja Indera Angkasa dan Ratna Dewi
+      kembali hidup dalam kesengsaraan seperti dahulu.
+    </p>
+  </div>
+
+  <div class="story-part">
+    <span class="story-label">Bagian V · Pengembaraan</span>
+    <h3>Perpisahan Marakarma dan Nila Kesuma</h3>
+
+    <p>
+      Marakarma dan Nila Kesuma mengembara tanpa tujuan
+      yang pasti. Mereka menempuh perjalanan melewati hutan
+      dan tempat-tempat yang belum pernah mereka kenal.
+      Dalam keadaan lapar, Marakarma berusaha mencari
+      makanan untuk dirinya dan adiknya.
+    </p>
+
+    <p>
+      Pada suatu ketika, Marakarma memperoleh seekor burung.
+      Ia bermaksud memasaknya agar dapat dimakan bersama
+      Nila Kesuma. Untuk mendapatkan api, ia mendatangi
+      sebuah pondok milik seorang petani.
+    </p>
+
+    <p>
+      Namun, kedatangannya justru menimbulkan kesalahpahaman.
+      Marakarma dituduh hendak melakukan pencurian. Tanpa
+      diberi kesempatan menjelaskan keadaan sebenarnya,
+      ia mengalami perlakuan kasar dan akhirnya dibuang
+      ke laut.
+    </p>
+
+    <p>
+      Sementara itu, Nila Kesuma terpisah dari kakaknya.
+      Dalam pengembaraannya, ia ditemukan oleh seorang
+      putra raja dari negeri lain. Nila Kesuma kemudian
+      memperoleh perlindungan dan dikenal dengan nama
+      Mayang Mengurai.
+    </p>
+
+    <p>
+      Marakarma mengalami perjalanan yang lebih berat.
+      Ia terombang-ambing di lautan hingga akhirnya
+      mengalami berbagai peristiwa ajaib. Dalam salah
+      satu peristiwa itu, ia ditelan oleh seekor ikan
+      besar yang dikenal sebagai ikan nun.
+    </p>
+  </div>
+
+  <div class="story-part">
+    <span class="story-label">Bagian VI · Pertolongan</span>
+    <h3>Pertemuan dengan Cahaya Chairani</h3>
+
+    <p>
+      Dalam perjalanan yang penuh keajaiban itu, Marakarma
+      bertemu dengan Cahaya Chairani. Pertemuan tersebut
+      menjadi awal perubahan dalam pengembaraannya.
+      Cahaya Chairani menolong Marakarma ketika ia berada
+      dalam keadaan yang sangat sulit.
+    </p>
+
+    <p>
+      Keduanya kemudian berusaha menyelamatkan diri dari
+      bahaya yang mengancam. Akan tetapi, perjalanan mereka
+      kembali menghadapi cobaan. Seorang nakhoda kapal
+      memiliki niat buruk dan berusaha memisahkan keduanya.
+    </p>
+
+    <p>
+      Marakarma kembali terlempar ke laut. Dalam peristiwa
+      ajaib berikutnya, ikan nun yang menelannya akhirnya
+      terdampar di suatu tempat. Dengan pertolongan seorang
+      perempuan tua yang dikenal sebagai Nenek Kebayan,
+      Marakarma dapat keluar dari perut ikan tersebut.
+    </p>
+
+    <p>
+      Marakarma kemudian tinggal bersama Nenek Kebayan
+      dan menjalani kehidupan sederhana. Ia membantu
+      pekerjaan sehari-hari, termasuk kegiatan menjual
+      bunga. Meskipun telah melewati banyak penderitaan,
+      ia tidak kehilangan harapan untuk menemukan kembali
+      keluarganya.
+    </p>
+  </div>
+
+  <div class="story-part">
+    <span class="story-label">Bagian VII · Penyelesaian</span>
+    <h3>Terungkapnya Hubungan Keluarga</h3>
+
+    <p>
+      Dalam kehidupan barunya, Marakarma akhirnya memperoleh
+      petunjuk mengenai keberadaan Nila Kesuma. Melalui
+      cerita Nenek Kebayan, ia mengetahui bahwa seorang
+      putri yang dikenal sebagai Mayang Mengurai memiliki
+      hubungan keluarga dengannya.
+    </p>
+
+    <p>
+      Marakarma berusaha menemui putri tersebut. Setelah
+      berbagai peristiwa terungkap, ia mengetahui bahwa
+      Mayang Mengurai adalah adik kandungnya sendiri,
+      Nila Kesuma. Pertemuan itu mengakhiri perpisahan
+      panjang antara kedua bersaudara tersebut.
+    </p>
+
+    <p>
+      Marakarma kemudian berusaha menemukan kembali
+      kedua orang tuanya. Ia mengetahui bahwa Maharaja
+      Indera Angkasa dan Ratna Dewi telah kehilangan
+      kerajaan serta hidup dalam keadaan yang sangat
+      memprihatinkan.
+    </p>
+
+    <p>
+      Dengan kemampuan dan pertolongan yang diperolehnya,
+      Marakarma berusaha memulihkan keadaan keluarganya.
+      Ia juga menghadapi berbagai pihak yang pernah
+      berbuat jahat terhadap dirinya dan keluarganya.
+    </p>
+
+    <p>
+      Pada akhirnya, perjalanan panjang Marakarma
+      mempertemukannya kembali dengan keluarga dan
+      membawanya menuju kehidupan yang lebih baik.
+      Kesengsaraan yang pernah dialaminya tidak menjadi
+      akhir dari seluruh perjalanan hidupnya.
+    </p>
+  </div>
+
+  <div class="note">
+    <strong>Catatan akhir cerita:</strong>
+    Adaptasi ini menyajikan alur utama secara ringkas dan
+    berurutan. Beberapa edisi Hikayat Si Miskin memiliki
+    rincian peristiwa, nama tokoh, dan penyelesaian cerita
+    yang lebih panjang atau berbeda.
+  </div>
+</section>
+
+<section id="analisis-bahasa">
+  <h2>4. Aktivitas Analisis Kebahasaan</h2>
+
+  <p>
+    Salah satu ciri yang dapat ditemukan dalam hikayat adalah
+    penggunaan kata-kata arkais, yaitu kata-kata lama yang
+    kini jarang digunakan dalam percakapan sehari-hari.
+    Kata-kata tersebut dapat ditemukan dalam naskah hikayat
+    dan membantu memperlihatkan suasana bahasa pada masa lalu.
+  </p>
+
+  <div class="note">
+    <strong>Tugas pembaca:</strong>
+    Temukan sendiri kata-kata arkais dalam teks Hikayat Si Miskin
+    atau dalam naskah klasik yang menjadi bahan pembanding.
+    Jangan langsung mencari daftar jawaban. Perhatikan konteks
+    kalimat agar kamu dapat memperkirakan maknanya.
+  </div>
+
+  <div class="activity-box">
+    <h3>Langkah Analisis</h3>
+    <ol>
+      <li>Bacalah kembali teks dengan cermat.</li>
+      <li>Temukan kata yang terasa asing, lama, atau jarang digunakan sekarang.</li>
+      <li>Catat kalimat tempat kata tersebut ditemukan.</li>
+      <li>Perkirakan maknanya berdasarkan konteks cerita.</li>
+      <li>Periksa dugaan makna menggunakan kamus atau sumber kebahasaan tepercaya.</li>
+      <li>Tuliskan padanan kata yang lebih dikenal dalam bahasa Indonesia sekarang.</li>
+    </ol>
+  </div>
+
+  <h3>Tabel Hasil Temuan Kata Arkais</h3>
+
+  <table class="analysis-table">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Kata yang Ditemukan</th>
+        <th>Kutipan Kalimat</th>
+        <th>Perkiraan Makna / Padanan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td></td><td></td><td></td></tr>
+      <tr><td>2</td><td></td><td></td><td></td></tr>
+      <tr><td>3</td><td></td><td></td><td></td></tr>
+      <tr><td>4</td><td></td><td></td><td></td></tr>
+      <tr><td>5</td><td></td><td></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Pertanyaan Pendalaman</h3>
+  <ol>
+    <li>Mengapa hikayat banyak menggunakan kata-kata yang jarang ditemukan dalam bahasa sehari-hari?</li>
+    <li>Apakah perubahan bahasa menyebabkan semua kata arkais benar-benar hilang dari penggunaan?</li>
+    <li>Bagaimana pengaruh kata-kata arkais terhadap suasana dan keaslian cerita?</li>
+    <li>Apakah mengganti seluruh kata arkais dengan kata modern akan mengubah nuansa cerita? Jelaskan.</li>
+  </ol>
+</section>
+
+<section id="unsur-intrinsik">
+  <h2>5. Analisis Unsur Intrinsik</h2>
+
+  <p>
+    Unsur intrinsik adalah unsur-unsur yang membangun cerita
+    dari dalam. Unsur tersebut saling berhubungan sehingga
+    membentuk sebuah karya sastra yang utuh.
+  </p>
+
+  <div class="info-card">
+    <h3>A. Tema</h3>
+    <p>
+      Tema merupakan gagasan utama atau persoalan pokok
+      yang mendasari keseluruhan cerita.
+    </p>
+    <p><strong>Tugas:</strong> Tentukan tema utama Hikayat Si Miskin. Sertakan alasan berdasarkan peristiwa dalam cerita.</p>
+  </div>
+
+  <div class="info-card">
+    <h3>B. Tokoh dan Penokohan</h3>
+    <p>
+      Tokoh adalah pelaku dalam cerita, sedangkan penokohan
+      merupakan cara pengarang menggambarkan watak atau
+      karakter tokoh.
+    </p>
+    <p><strong>Tugas:</strong> Identifikasilah tokoh-tokoh yang muncul. Jelaskan sifat mereka berdasarkan tindakan, ucapan, atau keputusan yang dilakukan.</p>
+  </div>
+
+  <div class="info-card">
+    <h3>C. Alur atau Plot</h3>
+    <p>
+      Alur adalah rangkaian peristiwa yang membentuk jalan cerita.
+      Perhatikan hubungan antara peristiwa awal, munculnya konflik,
+      perkembangan konflik, dan penyelesaian.
+    </p>
+    <p><strong>Tugas:</strong> Susun kembali peristiwa penting dalam cerita secara kronologis.</p>
+  </div>
+
+  <div class="info-card">
+    <h3>D. Latar</h3>
+    <p>
+      Latar meliputi tempat, waktu, dan suasana yang
+      melingkupi peristiwa dalam cerita.
+    </p>
+    <p><strong>Tugas:</strong> Temukan latar tempat, waktu, dan suasana. Tuliskan bukti peristiwa yang mendukung jawabanmu.</p>
+  </div>
+
+  <div class="info-card">
+    <h3>E. Sudut Pandang</h3>
+    <p>
+      Sudut pandang merupakan posisi pencerita dalam
+      menyampaikan rangkaian peristiwa.
+    </p>
+    <p><strong>Tugas:</strong> Tentukan sudut pandang yang digunakan dan jelaskan ciri yang kamu temukan dalam cerita.</p>
+  </div>
+
+  <div class="info-card">
+    <h3>F. Konflik</h3>
+    <p>
+      Konflik adalah pertentangan atau persoalan yang
+      dialami tokoh dan menggerakkan jalannya cerita.
+    </p>
+    <p><strong>Tugas:</strong> Temukan konflik utama yang dialami Marakarma dan jelaskan bagaimana konflik tersebut berkembang.</p>
+  </div>
+
+  <div class="info-card">
+    <h3>G. Amanat</h3>
+    <p>
+      Amanat merupakan pesan atau pelajaran yang dapat
+      dipetik pembaca dari keseluruhan cerita.
+    </p>
+    <p><strong>Tugas:</strong> Rumuskan amanat cerita dengan bahasamu sendiri. Hubungkan dengan peristiwa yang mendukungnya.</p>
+  </div>
+</section>
+
+<section id="nilai-kehidupan">
+  <h2>6. Menggali Nilai Kehidupan dalam Hikayat</h2>
+
+  <p>
+    Karya sastra tidak hanya menyajikan rangkaian peristiwa,
+    tetapi juga dapat menggambarkan nilai-nilai yang hidup
+    dalam masyarakat. Nilai tersebut perlu ditemukan melalui
+    tindakan tokoh dan peristiwa dalam cerita.
+  </p>
+
+  <div class="info-card">
+    <h3>Nilai Moral</h3>
+    <p>
+      Berkaitan dengan baik dan buruknya perilaku manusia,
+      seperti kejujuran, kesabaran, tanggung jawab, dan
+      kepedulian terhadap sesama.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h3>Nilai Sosial</h3>
+    <p>
+      Berkaitan dengan hubungan antarmanusia, kepedulian,
+      tolong-menolong, keadilan, dan perlakuan terhadap
+      orang lain.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h3>Nilai Agama atau Religius</h3>
+    <p>
+      Berkaitan dengan keyakinan, doa, rasa syukur,
+      kepercayaan kepada Tuhan, serta kesadaran bahwa
+      manusia memiliki keterbatasan.
+    </p>
+  </div>
+
+  <div class="info-card">
+    <h3>Nilai Budaya</h3>
+    <p>
+      Berkaitan dengan adat, kebiasaan, tata kehidupan,
+      gelar, tradisi kerajaan, dan cara masyarakat
+      memandang dunia.
+    </p>
+  </div>
+
+  <div class="note">
+    <strong>Petunjuk:</strong>
+    Jangan hanya menyebutkan jenis nilai. Temukan peristiwa
+    atau tindakan tokoh sebagai bukti, kemudian jelaskan
+    alasan mengapa peristiwa tersebut mencerminkan nilai
+    tertentu.
+  </div>
+</section>
+
+<section id="aktivitas">
+  <h2>7. Aktivitas Pembelajaran</h2>
+
+  <h3>Aktivitas 1 — Membaca dan Memahami</h3>
+  <p>
+    Bacalah keseluruhan cerita. Catat peristiwa yang menurutmu
+    paling penting dan menarik. Jelaskan alasanmu memilih
+    peristiwa tersebut.
+  </p>
+
+  <h3>Aktivitas 2 — Menelusuri Perubahan Nasib Tokoh</h3>
+  <p>
+    Gambarkan perjalanan hidup Si Miskin dan Marakarma.
+    Mulailah dari keadaan awal, perubahan yang terjadi,
+    konflik yang dihadapi, hingga penyelesaian cerita.
+  </p>
+
+  <h3>Aktivitas 3 — Menemukan Kata Arkais</h3>
+  <p>
+    Gunakan tabel analisis kebahasaan untuk mencatat kata-kata
+    arkais yang ditemukan dalam naskah. Jelaskan maknanya
+    berdasarkan konteks dan sumber kamus.
+  </p>
+
+  <h3>Aktivitas 4 — Menganalisis Unsur Intrinsik</h3>
+  <p>
+    Kerjakan analisis tema, tokoh, penokohan, alur, latar,
+    sudut pandang, konflik, dan amanat. Sertakan bukti
+    peristiwa dari cerita.
+  </p>
+
+  <h3>Aktivitas 5 — Menyampaikan Hasil Analisis</h3>
+  <p>
+    Diskusikan hasil analisis bersama teman. Pilih salah satu
+    bentuk penyajian: presentasi, peta konsep, poster sastra,
+    atau ulasan singkat.
+  </p>
+
+  <h3>Aktivitas 6 — Menghubungkan Cerita dengan Kehidupan</h3>
+  <p>
+    Pilih satu persoalan dalam hikayat yang masih relevan
+    dengan kehidupan sekarang. Jelaskan bagaimana persoalan
+    tersebut dapat disikapi secara bijaksana.
+  </p>
+</section>
+
+<section id="refleksi">
+  <h2>8. Refleksi Pembelajaran</h2>
+
+  <p>
+    Setelah membaca dan menganalisis Hikayat Si Miskin,
+    renungkan pertanyaan berikut.
+  </p>
+
+  <ol>
+    <li>Bagian cerita manakah yang paling berkesan bagimu? Mengapa?</li>
+    <li>Keputusan tokoh manakah yang menurutmu paling menentukan jalan cerita?</li>
+    <li>Apa yang dapat dipelajari dari sikap Maharaja Indera Angkasa ketika menghadapi ramalan para ahli nujum?</li>
+    <li>Bagaimana cerita ini menggambarkan perlakuan masyarakat terhadap orang yang hidup dalam kemiskinan?</li>
+    <li>Apa pelajaran yang dapat diterapkan dalam kehidupan sehari-hari?</li>
+    <li>Bagaimana pengalaman menemukan kata arkais membantumu memahami perkembangan bahasa Indonesia?</li>
+  </ol>
+
+  <div class="reflection">
+    <h3>Renungan Literasi</h3>
+    <p>
+      Sebuah cerita lama dapat menyimpan persoalan yang tetap
+      dekat dengan kehidupan manusia masa kini. Membacanya
+      bukan hanya mengenali tokoh dan peristiwa, melainkan
+      juga belajar memahami manusia, masyarakat, dan nilai
+      kehidupan.
+    </p>
+  </div>
+</section>
+
+<section id="sumber">
+  <h2>9. Sumber dan Keterangan Bacaan</h2>
+
+  <p>
+    Cerita Hikayat Si Miskin memiliki sejumlah versi dan
+    penyajian dalam berbagai buku maupun bahan pembelajaran.
+    Adaptasi pada halaman ini disusun untuk kepentingan
+    pembelajaran dengan merujuk pada alur umum cerita
+    dalam sumber-sumber berikut.
+  </p>
+
+  <div class="info-card">
+    <h3>Rujukan pembelajaran</h3>
+    <ol>
+      <li>
+        Buku Bahasa Indonesia untuk SMA/MA/SMK/MAK Kelas X
+        (Edisi Revisi), bagian pembelajaran Hikayat Si Miskin.
+      </li>
+      <li>
+        Direktorat SMA, Kemendikbud, bahan ajar
+        <em>Nilai-Nilai dan Isi Hikayat</em>.
+      </li>
+      <li>
+        Naskah dan kajian cerita Hikayat Si Miskin atau
+        Marakarma dalam tradisi sastra Melayu.
+      </li>
+    </ol>
+  </div>
+
+  <div class="note">
+    <strong>Keterangan hak cipta:</strong>
+    Teks pada halaman ini merupakan adaptasi untuk pembelajaran,
+    bukan reproduksi utuh dari edisi buku atau naskah tertentu.
+    Ejaan, pilihan kata, terjemahan, ilustrasi, dan penyuntingan
+    pada edisi lain dapat memiliki perlindungan hak cipta
+    tersendiri. Rujukan digunakan untuk kepentingan identifikasi
+    alur dan pembelajaran sastra.
+  </div>
+</section>
+
+<div class="final-quote">
+  “Perjalanan hidup tidak selalu berjalan lurus;
+  dari kisah masa lalu, kita belajar memahami
+  keteguhan hati dalam menghadapi ujian.”
+  <span>— Mandala Aksara</span>
+</div>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <strong>MANDALA AKSARA</strong><br>
+  Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.<br>
+  © 2026 Mandala Aksara · Dikelola Mandiri
+</footer>
+
+<script>
+const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
+
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    toggle.setAttribute(
+      'aria-expanded',
+      nav.classList.contains('open')
+    );
+  });
+}
+
+document.querySelectorAll('.nav-trigger').forEach(button => {
+  button.addEventListener('click', () => {
+    if (window.matchMedia('(max-width: 900px)').matches) {
+      button.parentElement.classList.toggle('expanded');
+    }
+  });
+});
+
+const sectionLinks = document.querySelectorAll('.sidebar a');
+
+sectionLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    sectionLinks.forEach(item => item.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
