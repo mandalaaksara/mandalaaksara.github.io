@@ -3,18 +3,18 @@
 <html lang="id">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7HFZ0YC7P9');
-</script>
-  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Referensi Kebahasaan | Mandala Aksara</title>
-  <meta name="description" content="Ruang referensi kebahasaan Mandala Aksara untuk mempelajari ejaan, tata bahasa, kosakata, dan penggunaan bahasa Indonesia.">
+  <meta name="description" content="Ruang referensi kebahasaan Mandala Aksara untuk mempelajari majas, ejaan, tata bahasa, kosakata, dan penggunaan bahasa Indonesia.">
   <link rel="stylesheet" href="style.css">
 
   <style>
@@ -23,6 +23,7 @@
       color: white;
       padding: 75px 20px;
       text-align: center;
+      border-bottom: 5px solid #F28C28;
     }
 
     .bahasa-hero h1 {
@@ -39,7 +40,7 @@
     }
 
     .bahasa-content {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: 55px auto;
       padding: 0 22px;
       text-align: center;
@@ -54,35 +55,87 @@
 
     .bahasa-intro {
       max-width: 740px;
-      margin: 0 auto 35px;
+      margin: 0 auto 38px;
       color: #596579;
       line-height: 1.8;
       font-size: 16px;
     }
 
-    .bahasa-empty {
-      background: #F3F5F8;
-      border: 1px solid #E1E6ED;
-      border-radius: 14px;
-      padding: 38px 22px;
-      margin: 30px 0 55px;
+    .bahasa-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      text-align: left;
+      margin: 35px 0 25px;
     }
 
-    .bahasa-empty .book-icon {
-      font-size: 38px;
+    .bahasa-card {
+      display: block;
+      background: #FFFFFF;
+      border: 1px solid #E1E6ED;
+      border-radius: 14px;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 5px 20px rgba(20, 43, 74, 0.08);
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .bahasa-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 26px rgba(20, 43, 74, 0.15);
+    }
+
+    .bahasa-card-top {
+      background: linear-gradient(135deg, #0D203A, #23466B);
+      color: white;
+      padding: 25px 26px;
+      border-bottom: 4px solid #F28C28;
+    }
+
+    .bahasa-card-icon {
+      font-size: 34px;
       margin-bottom: 12px;
     }
 
-    .bahasa-empty h3 {
-      color: #142B4A;
-      margin: 0 0 10px;
+    .bahasa-card-top h3 {
       font-family: Georgia, serif;
+      font-size: 23px;
+      margin: 0;
+      color: white;
     }
 
-    .bahasa-empty p {
-      color: #687386;
-      line-height: 1.7;
+    .bahasa-card-body {
+      padding: 23px 26px 25px;
+    }
+
+    .bahasa-card-body p {
+      color: #596579;
+      line-height: 1.8;
+      font-size: 15px;
       margin: 0;
+    }
+
+    .bahasa-card-body span {
+      display: inline-block;
+      margin-top: 17px;
+      color: #D87516;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .bahasa-note {
+      background: #F3F5F8;
+      border: 1px solid #E1E6ED;
+      border-radius: 12px;
+      padding: 22px;
+      margin: 30px 0 55px;
+      color: #596579;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .bahasa-note strong {
+      color: #142B4A;
     }
 
     .bahasa-quote {
@@ -120,6 +173,16 @@
 
       .bahasa-content h2 {
         font-size: 25px;
+      }
+
+      .bahasa-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bahasa-card-top,
+      .bahasa-card-body {
+        padding-left: 21px;
+        padding-right: 21px;
       }
 
       .bahasa-quote p {
@@ -180,14 +243,42 @@
       dan sesuai konteks.
     </p>
 
-    <div class="bahasa-empty">
-      <div class="book-icon">📚</div>
-      <h3>Koleksi Referensi Kebahasaan Sedang Disiapkan</h3>
-      <p>
-        Berbagai bahan rujukan mengenai ejaan, tata bahasa,
-        kosakata, kamus, dan pedoman kebahasaan akan
-        dihadirkan di ruang ini.
-      </p>
+    <h2>Koleksi Materi Kebahasaan</h2>
+
+    <p class="bahasa-intro">
+      Jelajahi berbagai materi untuk memahami kekayaan,
+      struktur, kaidah, dan keindahan bahasa Indonesia.
+      Setiap koleksi disusun sebagai ruang belajar yang
+      dapat dikembangkan secara berkelanjutan.
+    </p>
+
+    <div class="bahasa-grid">
+
+      <a href="majas-dalam-bahasa-indonesia.html" class="bahasa-card">
+        <div class="bahasa-card-top">
+          <div class="bahasa-card-icon">✒️</div>
+          <h3>Majas dalam Bahasa Indonesia</h3>
+        </div>
+        <div class="bahasa-card-body">
+          <p>
+            Pelajari berbagai gaya bahasa yang digunakan untuk
+            memperindah, mempertegas, membandingkan, maupun
+            menyampaikan sindiran. Materi ini membahas 37 jenis
+            majas yang dikelompokkan ke dalam empat kategori,
+            disertai pengertian, ciri-ciri, contoh, dan penjelasan.
+          </p>
+          <span>Pelajari materi majas →</span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="bahasa-note">
+      <strong>Catatan pengembangan koleksi</strong><br>
+      Ruang referensi ini akan terus dikembangkan dengan
+      berbagai bahan rujukan mengenai ejaan, tata bahasa,
+      kosakata, kamus, istilah, dan pedoman kebahasaan.
+      Koleksi baru akan ditambahkan secara bertahap.
     </div>
 
     <div class="bahasa-quote">
