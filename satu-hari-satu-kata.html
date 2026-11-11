@@ -1,0 +1,855 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Satu Hari Satu Kata Mandala Aksara: mengenal kosakata Indonesia, kata arkais, kata indah, dan kekayaan bahasa.">
+  <meta name="theme-color" content="#142B4A">
+  <title>Satu Hari Satu Kata | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --navy-dark: #0D203A;
+      --orange: #F28C28;
+      --gold: #C69A45;
+      --soft: #F3F5F8;
+      --text: #263445;
+      --muted: #68778A;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .word-hero {
+      background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+      color: white;
+      text-align: center;
+      padding: 58px 20px 65px;
+    }
+
+    .word-hero .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: #ffd49d;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .word-hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(30px, 5vw, 44px);
+    }
+
+    .word-hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #e7edf5;
+      line-height: 1.8;
+    }
+
+    .word-container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 42px 20px 55px;
+    }
+
+    .breadcrumb {
+      margin-bottom: 25px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .breadcrumb a {
+      color: var(--navy);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--orange);
+    }
+
+    .section-heading {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 25px;
+    }
+
+    .section-intro {
+      margin: 0 0 25px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .featured-word {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 48px;
+      padding: 34px;
+      border: 1px solid #e4e9ef;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #f8fafc, #fff5e9);
+      box-shadow: 0 8px 28px rgba(20,43,74,.08);
+    }
+
+    .featured-label {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 30px;
+      background: var(--navy);
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .featured-date {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .featured-word h2 {
+      margin: 12px 0 4px;
+      color: var(--navy);
+      font-size: clamp(36px, 7vw, 58px);
+      letter-spacing: 1px;
+    }
+
+    .pronunciation {
+      color: var(--muted);
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .word-category {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 6px 11px;
+      border-radius: 20px;
+      background: #fff0dc;
+      color: #965714;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .featured-meaning {
+      max-width: 750px;
+      margin-top: 20px;
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .featured-example {
+      margin-top: 18px;
+      padding: 16px 19px;
+      border-left: 4px solid var(--orange);
+      border-radius: 5px;
+      background: rgba(255,255,255,.8);
+      color: #455366;
+      line-height: 1.8;
+      font-style: italic;
+    }
+
+    .featured-note {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .archive-section {
+      margin-top: 15px;
+    }
+
+    .archive-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 22px 0;
+    }
+
+    .archive-tools input,
+    .archive-tools select {
+      min-height: 46px;
+      padding: 10px 14px;
+      border: 1px solid #d9e0e8;
+      border-radius: 8px;
+      background: white;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .archive-tools input {
+      flex: 1 1 230px;
+    }
+
+    .archive-tools select {
+      flex: 0 1 220px;
+    }
+
+    .archive-tools input:focus,
+    .archive-tools select:focus {
+      outline: 2px solid var(--orange);
+      outline-offset: 2px;
+    }
+
+    .word-count {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .word-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 17px;
+    }
+
+    .word-card {
+      padding: 21px;
+      border: 1px solid #e3e8ef;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 15px rgba(20,43,74,.045);
+    }
+
+    .word-card h3 {
+      margin: 0 0 5px;
+      color: var(--navy);
+      font-size: 22px;
+    }
+
+    .word-card .small-pronunciation {
+      color: var(--muted);
+      font-size: 12px;
+      font-style: italic;
+    }
+
+    .word-card .small-category {
+      display: inline-block;
+      margin: 10px 0;
+      padding: 5px 9px;
+      border-radius: 20px;
+      background: #f1f4f8;
+      color: #526176;
+      font-size: 11px;
+    }
+
+    .word-card p {
+      margin: 5px 0 0;
+      color: #526176;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .word-card .example {
+      margin-top: 11px;
+      padding-top: 10px;
+      border-top: 1px solid #edf0f4;
+      color: #68778A;
+      font-size: 13px;
+      font-style: italic;
+    }
+
+    .empty-result {
+      display: none;
+      padding: 25px;
+      border-radius: 10px;
+      background: var(--soft);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .challenge {
+      margin-top: 45px;
+      padding: 27px;
+      border-radius: 14px;
+      background: var(--navy);
+      color: white;
+    }
+
+    .challenge h2 {
+      margin: 0 0 10px;
+      font-size: 23px;
+    }
+
+    .challenge p {
+      color: #e5ebf3;
+      line-height: 1.8;
+    }
+
+    .challenge textarea {
+      width: 100%;
+      min-height: 100px;
+      margin-top: 10px;
+      padding: 13px;
+      border: 1px solid #d9e0e8;
+      border-radius: 8px;
+      font: inherit;
+      resize: vertical;
+    }
+
+    .challenge small {
+      display: block;
+      margin-top: 10px;
+      color: #cbd6e4;
+      line-height: 1.6;
+    }
+
+    .word-back {
+      margin-top: 32px;
+      text-align: center;
+    }
+
+    .word-back a {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 7px;
+      background: var(--orange);
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .word-back a:hover {
+      background: #d97716;
+    }
+
+    .word-quote {
+      max-width: 800px;
+      margin: 0 auto 48px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .word-quote blockquote {
+      margin: 0;
+      color: var(--navy);
+      font-size: 18px;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    .word-quote cite {
+      display: block;
+      margin-top: 12px;
+      color: var(--gold);
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      .word-container {
+        padding: 30px 16px 42px;
+      }
+
+      .featured-word {
+        padding: 24px 20px;
+      }
+
+      .word-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .archive-tools select {
+        flex: 1 1 100%;
+      }
+
+      .challenge {
+        padding: 22px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span>MANDALA AKSARA</span>
+  </a>
+
+  <button id="menuToggle" type="button"
+    aria-label="Buka menu" aria-expanded="false">☰</button>
+
+  <nav id="mainNav">
+    <a href="index.html">Beranda</a>
+
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran <span>⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+
+    <a href="galeri.html" class="active">Galeri</a>
+    <a href="perpustakaan.html">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="word-hero">
+    <span class="eyebrow">Ruang Literasi Mandala Aksara</span>
+    <h1>Satu Hari Satu Kata</h1>
+    <p>
+      Satu kata mungkin sederhana, tetapi di dalamnya
+      tersimpan makna, sejarah, dan kekayaan bahasa.
+      Mari mengenal kosakata Indonesia, satu hari satu kata.
+    </p>
+  </section>
+
+  <section class="word-container">
+
+    <div class="breadcrumb">
+      <a href="galeri.html">Galeri</a> /
+      <a href="galeri.html">Aktivitas Literasi</a> /
+      Satu Hari Satu Kata
+    </div>
+
+    <h2 class="section-heading">Temukan Kata Hari Ini</h2>
+    <p class="section-intro">
+      Setiap tanggal menampilkan satu kata pilihan.
+      Bacalah maknanya, perhatikan contoh penggunaannya,
+      dan temukan cara baru untuk memperkaya bahasa.
+    </p>
+
+    <section class="featured-word" aria-live="polite">
+      <span class="featured-label">KATA HARI INI</span>
+      <div class="featured-date" id="todayDate"></div>
+      <h2 id="todayWord">Memuat kata...</h2>
+      <div class="pronunciation" id="todayPronunciation"></div>
+      <span class="word-category" id="todayCategory"></span>
+      <div class="featured-meaning" id="todayMeaning"></div>
+      <div class="featured-example" id="todayExample"></div>
+      <div class="featured-note">
+        Kata pilihan Mandala Aksara. Kata hari ini berganti
+        otomatis berdasarkan tanggal kalender.
+      </div>
+    </section>
+
+    <section class="archive-section">
+      <h2 class="section-heading">Arsip 30 Kata Pilihan</h2>
+      <p class="section-intro">
+        Jelajahi kumpulan kata pilihan. Gunakan pencarian
+        atau kategori untuk menemukan kata yang ingin kamu kenali.
+      </p>
+
+      <div class="archive-tools">
+        <input
+          type="search"
+          id="wordSearch"
+          placeholder="Cari kata atau maknanya..."
+          aria-label="Cari kata atau maknanya">
+
+        <select id="categoryFilter" aria-label="Pilih kategori kata">
+          <option value="semua">Semua kategori</option>
+          <option value="Kata Arkais">Kata Arkais</option>
+          <option value="Kata Indah">Kata Indah</option>
+          <option value="Kata Baku dan Unik">Kata Baku dan Unik</option>
+        </select>
+      </div>
+
+      <p class="word-count" id="wordCount"></p>
+      <div class="word-grid" id="wordGrid"></div>
+      <div class="empty-result" id="emptyResult">
+        Kata yang kamu cari belum ditemukan.
+        Coba gunakan kata kunci lain.
+      </div>
+    </section>
+
+    <section class="challenge">
+      <h2>Tantangan Literasi</h2>
+      <p>
+        Pilih satu kata yang paling menarik perhatianmu.
+        Buatlah sebuah kalimat menggunakan kata tersebut.
+        Cobalah menggunakan kata itu dalam konteks yang tepat.
+      </p>
+      <textarea
+        placeholder="Tuliskan kalimat buatanmu di sini..."
+        aria-label="Tuliskan kalimat menggunakan kata pilihan"></textarea>
+      <small>
+        Catatan: Tulisan pada kotak ini hanya untuk latihan.
+        Jika halaman dimuat ulang, tulisan tidak disimpan.
+      </small>
+    </section>
+
+    <div class="word-back">
+      <a href="galeri.html">← Kembali ke Galeri</a>
+    </div>
+
+  </section>
+
+  <section class="word-quote">
+    <blockquote>
+      “Mengenal satu kata berarti membuka satu jendela
+      menuju pemahaman yang lebih luas tentang bahasa
+      dan kehidupan.”
+    </blockquote>
+    <cite>— Mandala Aksara</cite>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+
+<script>
+  const words = [
+    {
+      word: "Hatta",
+      pronunciation: "hat-ta",
+      category: "Kata Arkais",
+      meaning: "Kata penghubung dalam bahasa Melayu klasik yang bermakna lalu, kemudian, atau maka.",
+      example: "Hatta, berangkatlah sang pangeran menuju negeri seberang."
+    },
+    {
+      word: "Titah",
+      pronunciation: "ti-tah",
+      category: "Kata Arkais",
+      meaning: "Perintah atau perkataan raja.",
+      example: "Seluruh hulubalang segera melaksanakan titah baginda."
+    },
+    {
+      word: "Hulubalang",
+      pronunciation: "hu-lu-ba-lang",
+      category: "Kata Arkais",
+      meaning: "Kepala prajurit atau orang yang menjadi pemimpin pasukan dalam lingkungan kerajaan.",
+      example: "Hulubalang kerajaan berdiri menjaga pintu istana."
+    },
+    {
+      word: "Mahligai",
+      pronunciation: "mah-li-gai",
+      category: "Kata Arkais",
+      meaning: "Tempat kediaman raja atau keluarga kerajaan; istana.",
+      example: "Cahaya lampu menerangi mahligai di tengah malam."
+    },
+    {
+      word: "Dayang",
+      pronunciation: "da-yang",
+      category: "Kata Arkais",
+      meaning: "Gadis pelayan di istana.",
+      example: "Para dayang membantu permaisuri bersiap menghadiri perjamuan."
+    },
+    {
+      word: "Permaisuri",
+      pronunciation: "per-mai-su-ri",
+      category: "Kata Arkais",
+      meaning: "Istri raja.",
+      example: "Permaisuri menyambut tamu kerajaan dengan ramah."
+    },
+    {
+      word: "Biduanda",
+      pronunciation: "bi-du-an-da",
+      category: "Kata Arkais",
+      meaning: "Pegawai atau pelayan istana dalam lingkungan kerajaan Melayu.",
+      example: "Seorang biduanda datang menyampaikan kabar kepada baginda."
+    },
+    {
+      word: "Syahbandar",
+      pronunciation: "syah-ban-dar",
+      category: "Kata Arkais",
+      meaning: "Pejabat yang mengatur urusan pelabuhan dan pelayaran.",
+      example: "Syahbandar memeriksa kapal yang baru tiba."
+    },
+    {
+      word: "Bahtera",
+      pronunciation: "bah-te-ra",
+      category: "Kata Arkais",
+      meaning: "Kapal atau perahu besar.",
+      example: "Bahtera itu berlayar membelah lautan luas."
+    },
+    {
+      word: "Kelana",
+      pronunciation: "ke-la-na",
+      category: "Kata Arkais",
+      meaning: "Orang yang mengembara atau berkelana.",
+      example: "Sang kelana menempuh perjalanan panjang melintasi hutan."
+    },
+    {
+      word: "Sembah",
+      pronunciation: "sem-bah",
+      category: "Kata Arkais",
+      meaning: "Pernyataan hormat atau sikap menghormati, terutama kepada raja atau orang yang dimuliakan.",
+      example: "Dengan penuh hormat, utusan itu menyampaikan sembah kepada baginda."
+    },
+    {
+      word: "Bertitah",
+      pronunciation: "ber-ti-tah",
+      category: "Kata Arkais",
+      meaning: "Mengucapkan titah atau memberikan perintah sebagai raja.",
+      example: "Baginda bertitah agar rakyat hidup rukun dan saling membantu."
+    },
+    {
+      word: "Renjana",
+      pronunciation: "ren-ja-na",
+      category: "Kata Indah",
+      meaning: "Rasa hati yang kuat, seperti rindu atau cinta kasih.",
+      example: "Renjana terhadap tanah kelahiran membuatnya ingin segera pulang."
+    },
+    {
+      word: "Nestapa",
+      pronunciation: "nes-ta-pa",
+      category: "Kata Indah",
+      meaning: "Kesedihan atau kesusahan yang mendalam.",
+      example: "Puisi itu menggambarkan nestapa seseorang yang kehilangan harapan."
+    },
+    {
+      word: "Temaram",
+      pronunciation: "te-ma-ram",
+      category: "Kata Indah",
+      meaning: "Agak gelap atau remang-remang karena kurang cahaya.",
+      example: "Senja menghadirkan cahaya temaram di ufuk barat."
+    },
+    {
+      word: "Niskala",
+      pronunciation: "nis-ka-la",
+      category: "Kata Indah",
+      meaning: "Tidak berwujud atau tidak dapat dilihat secara nyata.",
+      example: "Kasih sayang merupakan sesuatu yang tidak selalu tampak, tetapi dapat dirasakan."
+    },
+    {
+      word: "Saujana",
+      pronunciation: "sau-ja-na",
+      category: "Kata Indah",
+      meaning: "Sejauh mata memandang.",
+      example: "Dari puncak bukit, hamparan sawah terbentang saujana."
+    },
+    {
+      word: "Lazuardi",
+      pronunciation: "la-zu-ar-di",
+      category: "Kata Indah",
+      meaning: "Batu permata berwarna biru; juga digunakan untuk menggambarkan warna biru langit.",
+      example: "Langit lazuardi membentang cerah setelah hujan reda."
+    },
+    {
+      word: "Senandika",
+      pronunciation: "se-nan-di-ka",
+      category: "Kata Indah",
+      meaning: "Wacana seorang tokoh dalam karya sastra yang diucapkan kepada diri sendiri.",
+      example: "Dalam senandika itu, tokoh utama mengungkapkan kegelisahan hatinya."
+    },
+    {
+      word: "Madah",
+      pronunciation: "ma-dah",
+      category: "Kata Indah",
+      meaning: "Kata-kata pujian atau sanjungan; dapat pula berarti syair.",
+      example: "Penyair itu menyusun madah untuk menggambarkan keindahan alam."
+    },
+    {
+      word: "Buana",
+      pronunciation: "bu-a-na",
+      category: "Kata Indah",
+      meaning: "Dunia atau jagat.",
+      example: "Karya sastra mengajak pembaca menjelajahi buana imajinasi."
+    },
+    {
+      word: "Pualam",
+      pronunciation: "pu-a-lam",
+      category: "Kata Indah",
+      meaning: "Batu marmer yang biasa digunakan sebagai bahan bangunan atau hiasan.",
+      example: "Lantai bangunan itu berkilau seperti pualam."
+    },
+    {
+      word: "Saksama",
+      pronunciation: "sak-sa-ma",
+      category: "Kata Baku dan Unik",
+      meaning: "Teliti, cermat, dan penuh perhatian.",
+      example: "Bacalah petunjuk tugas itu dengan saksama."
+    },
+    {
+      word: "Kendati",
+      pronunciation: "ken-da-ti",
+      category: "Kata Baku dan Unik",
+      meaning: "Meskipun atau biarpun.",
+      example: "Kendati hujan turun, mereka tetap berangkat ke sekolah."
+    },
+    {
+      word: "Derana",
+      pronunciation: "de-ra-na",
+      category: "Kata Baku dan Unik",
+      meaning: "Tabah dan tahan menderita.",
+      example: "Ia tetap derana menghadapi berbagai kesulitan."
+    },
+    {
+      word: "Adikara",
+      pronunciation: "a-di-ka-ra",
+      category: "Kata Baku dan Unik",
+      meaning: "Berkuasa atau mempunyai kekuasaan.",
+      example: "Kekuasaan tidak seharusnya membuat seseorang bertindak adikara."
+    },
+    {
+      word: "Bestari",
+      pronunciation: "bes-ta-ri",
+      category: "Kata Baku dan Unik",
+      meaning: "Berpengetahuan luas dan berpendidikan.",
+      example: "Generasi bestari tidak hanya cerdas, tetapi juga bijaksana."
+    },
+    {
+      word: "Jelita",
+      pronunciation: "je-li-ta",
+      category: "Kata Baku dan Unik",
+      meaning: "Indah atau cantik sekali.",
+      example: "Lukisan itu menggambarkan pemandangan yang jelita."
+    },
+    {
+      word: "Purnama",
+      pronunciation: "pur-na-ma",
+      category: "Kata Baku dan Unik",
+      meaning: "Bulan yang tampak bundar penuh.",
+      example: "Cahaya purnama menerangi halaman rumah."
+    },
+    {
+      word: "Cakrawala",
+      pronunciation: "cak-ra-wa-la",
+      category: "Kata Baku dan Unik",
+      meaning: "Lengkung langit atau batas pandangan mata; juga bermakna jangkauan pandangan atau pemikiran.",
+      example: "Membaca buku dapat memperluas cakrawala pengetahuan."
+    }
+  ];
+
+  const today = new Date();
+  const dayIndex = (today.getDate() - 1) % words.length;
+  const todayItem = words[dayIndex];
+
+  const dateText = today.toLocaleDateString('id-ID', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  });
+
+  document.getElementById('todayDate').textContent = dateText;
+  document.getElementById('todayWord').textContent = todayItem.word;
+  document.getElementById('todayPronunciation').textContent =
+    todayItem.pronunciation;
+  document.getElementById('todayCategory').textContent =
+    todayItem.category;
+  document.getElementById('todayMeaning').textContent =
+    todayItem.meaning;
+  document.getElementById('todayExample').textContent =
+    'Contoh: “' + todayItem.example + '”';
+
+  const wordGrid = document.getElementById('wordGrid');
+  const searchInput = document.getElementById('wordSearch');
+  const categoryFilter = document.getElementById('categoryFilter');
+  const wordCount = document.getElementById('wordCount');
+  const emptyResult = document.getElementById('emptyResult');
+
+  function renderWords() {
+    const query = searchInput.value.toLowerCase().trim();
+    const category = categoryFilter.value;
+
+    const filteredWords = words.filter(item => {
+      const matchesQuery =
+        item.word.toLowerCase().includes(query) ||
+        item.meaning.toLowerCase().includes(query) ||
+        item.example.toLowerCase().includes(query);
+
+      const matchesCategory =
+        category === 'semua' || item.category === category;
+
+      return matchesQuery && matchesCategory;
+    });
+
+    wordGrid.innerHTML = '';
+
+    filteredWords.forEach(item => {
+      const card = document.createElement('article');
+      card.className = 'word-card';
+
+      const title = document.createElement('h3');
+      title.textContent = item.word;
+
+      const pronunciation = document.createElement('div');
+      pronunciation.className = 'small-pronunciation';
+      pronunciation.textContent = item.pronunciation;
+
+      const categoryLabel = document.createElement('span');
+      categoryLabel.className = 'small-category';
+      categoryLabel.textContent = item.category;
+
+      const meaning = document.createElement('p');
+      meaning.textContent = item.meaning;
+
+      const example = document.createElement('p');
+      example.className = 'example';
+      example.textContent = 'Contoh: “' + item.example + '”';
+
+      card.append(
+        title,
+        pronunciation,
+        categoryLabel,
+        meaning,
+        example
+      );
+
+      wordGrid.appendChild(card);
+    });
+
+    wordCount.textContent =
+      'Menampilkan ' + filteredWords.length +
+      ' dari ' + words.length + ' kata.';
+
+    emptyResult.style.display =
+      filteredWords.length === 0 ? 'block' : 'none';
+  }
+
+  searchInput.addEventListener('input', renderWords);
+  categoryFilter.addEventListener('change', renderWords);
+
+  renderWords();
+
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggle.setAttribute(
+        'aria-expanded',
+        nav.classList.contains('open')
+      );
+    });
+  }
+
+  document.querySelectorAll('.nav-trigger').forEach(button => {
+    button.addEventListener('click', () => {
+      if (window.matchMedia('(max-width: 1050px)').matches) {
+        button.parentElement.classList.toggle('expanded');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
