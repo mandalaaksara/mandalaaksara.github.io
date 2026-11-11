@@ -3,14 +3,14 @@
 <html lang="id">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7HFZ0YC7P9');
-</script>
-  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Galeri Mandala Aksara, ruang dokumentasi aktivitas literasi, pembelajaran, dan kreativitas.">
@@ -76,16 +76,25 @@
     }
 
     .gallery-card {
+      display: block;
       overflow: hidden;
       background: white;
       border: 1px solid #e4e9ef;
       border-radius: 14px;
       box-shadow: 0 5px 20px rgba(20,43,74,.07);
-      transition: transform .2s ease;
+      transition: transform .2s ease, box-shadow .2s ease;
+      color: inherit;
+      text-decoration: none;
     }
 
     .gallery-card:hover {
       transform: translateY(-4px);
+      box-shadow: 0 9px 25px rgba(20,43,74,.12);
+    }
+
+    .gallery-card:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 4px;
     }
 
     .gallery-image {
@@ -112,6 +121,14 @@
       margin: 0;
       color: #667487;
       line-height: 1.7;
+    }
+
+    .gallery-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: #D97716;
+      font-weight: bold;
+      font-size: 14px;
     }
 
     .gallery-note {
@@ -216,7 +233,8 @@
 
     <div class="gallery-grid">
 
-      <article class="gallery-card">
+      <!-- AKTIVITAS LITERASI -->
+      <a class="gallery-card" href="satu-hari-satu-kata.html">
         <div class="gallery-image">📚</div>
         <div class="gallery-content">
           <h2>Aktivitas Literasi</h2>
@@ -224,9 +242,13 @@
             Dokumentasi kegiatan membaca, menulis,
             berdiskusi, dan membangun budaya literasi.
           </p>
+          <span class="gallery-link">
+            Jelajahi Satu Hari Satu Kata →
+          </span>
         </div>
-      </article>
+      </a>
 
+      <!-- PROSES PEMBELAJARAN -->
       <article class="gallery-card">
         <div class="gallery-image">✍️</div>
         <div class="gallery-content">
@@ -238,6 +260,7 @@
         </div>
       </article>
 
+      <!-- KARYA DAN KREATIVITAS -->
       <article class="gallery-card">
         <div class="gallery-image">🎨</div>
         <div class="gallery-content">
@@ -249,6 +272,7 @@
         </div>
       </article>
 
+      <!-- DOKUMENTASI KEGIATAN -->
       <article class="gallery-card">
         <div class="gallery-image">🌿</div>
         <div class="gallery-content">
