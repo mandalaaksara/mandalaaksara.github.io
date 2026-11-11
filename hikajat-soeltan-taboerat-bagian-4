@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bagian IV — Hikajat Soeltan Taboerat | Mandala Aksara</title>
+  <meta name="description" content="Saduran bagian keempat Hikajat Soeltan Taboerat karya Muhammad Bakir.">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #f2f4f7;
+      color: #172f4e;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.85;
+    }
+
+    .container {
+      width: min(1200px, 92%);
+      margin: auto;
+    }
+
+    .hero {
+      margin: 0 auto 28px;
+      padding: 30px 34px 36px;
+      background: #152d4b;
+      color: #fff;
+      border-radius: 0 0 16px 16px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: #ffad4d;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.2;
+    }
+
+    .hero .subtitle {
+      margin: 10px 0;
+      font-size: 19px;
+    }
+
+    .hero .edition {
+      margin: 12px 0 0;
+      color: #e5eaf1;
+      font-size: 15px;
+    }
+
+    .content {
+      margin: 28px auto;
+      padding: 38px 48px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 28px rgba(20, 42, 68, 0.05);
+    }
+
+    .content h2 {
+      margin: 0 0 24px;
+      color: #152d4b;
+      font-size: 27px;
+    }
+
+    .content h3 {
+      margin: 34px 0 12px;
+      color: #152d4b;
+      font-size: 23px;
+    }
+
+    .content p {
+      margin: 0 0 18px;
+      font-size: 18px;
+      line-height: 1.95;
+      text-align: justify;
+    }
+
+    .content p.opening::first-letter {
+      float: left;
+      padding: 5px 7px 0 0;
+      color: #f28b22;
+      font-size: 48px;
+      line-height: 0.9;
+    }
+
+    .source-note {
+      margin-top: 30px;
+      padding: 18px 20px;
+      background: #fff7ed;
+      border-left: 4px solid #f28b22;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    .source-note p {
+      margin: 0 0 8px;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .source-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .source-note a {
+      color: #174d7a;
+      overflow-wrap: anywhere;
+    }
+
+    .navigation {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+      margin-top: 28px;
+    }
+
+    .navigation a {
+      display: inline-block;
+      padding: 11px 18px;
+      background: #152d4b;
+      color: #fff;
+      border-radius: 7px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .navigation a:hover {
+      background: #f28b22;
+      color: #152d4b;
+    }
+
+    .quote {
+      margin: 28px auto;
+      padding: 24px;
+      color: #526174;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .quote strong {
+      display: block;
+      margin-top: 8px;
+      color: #152d4b;
+      font-style: normal;
+    }
+
+    footer {
+      padding: 24px 15px;
+      background: #152d4b;
+      color: #e5eaf1;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        padding: 26px 22px 30px;
+      }
+
+      .content {
+        padding: 27px 22px;
+      }
+
+      .content p {
+        font-size: 17px;
+      }
+
+      .navigation {
+        flex-direction: column;
+      }
+
+      .navigation a {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero container">
+    <p class="eyebrow">Karya Sastra Melayu-Betawi</p>
+    <h1>Hikajat Soeltan Taboerat</h1>
+    <p class="subtitle">Bagian IV — Nasihat Sultan kepada Putra Mahkota</p>
+    <p class="edition">Saduran bahasa Indonesia berdasarkan naskah Muhammad Bakir (1901)</p>
+  </header>
+
+  <main class="container">
+    <article class="content">
+
+      <h2>XIV. Pertanyaan Sultan kepada Sahbanda dan Sebandi</h2>
+
+      <p class="opening">
+        Setelah mendengar laporan tentang berbagai kebiasaan putranya, Sultan Taburat merasa prihatin. Baginda memandang bahwa beberapa kegiatan yang dilakukan sang pangeran dapat melalaikannya dari pekerjaan yang lebih bermanfaat. Oleh karena itu, Sultan ingin mengetahui siapa yang mengajarkan kebiasaan tersebut.
+      </p>
+
+      <p>
+        Pada suatu hari, Sultan memanggil Sahbanda dan Sebandi untuk menghadap. Kedua pemuda itu datang dan memberikan penghormatan kepada baginda.
+      </p>
+
+      <p>
+        Sultan kemudian bertanya apakah mereka yang telah mengajarkan berbagai permainan kepada Indra Buganda Aspandar Sah, terutama permainan yang dianggap kurang baik oleh baginda.
+      </p>
+
+      <p>
+        Mendengar pertanyaan tersebut, Sahbanda dan Sebandi merasa takut. Mereka segera menjelaskan bahwa tidak pernah mengajarkan permainan itu kepada sang pangeran. Menurut mereka, sang pangeran mengetahui dan mempelajarinya atas kehendaknya sendiri.
+      </p>
+
+      <p>
+        Keduanya juga menjelaskan bahwa sang pangeran terkadang bergaul dan bermain dengan anak-anak pedagang, tukang sampan, tukang perahu, serta orang-orang pasar. Mereka mengaku tidak berani melarang sang pangeran karena khawatir akan membuatnya marah.
+      </p>
+
+      <p>
+        Sahbanda dan Sebandi menegaskan bahwa mereka tidak bermaksud mengadukan atau menjelek-jelekkan sahabatnya. Mereka hanya menyampaikan apa yang mereka ketahui ketika ditanya oleh Sultan.
+      </p>
+
+      <p>
+        Setelah mendengar penjelasan itu, Sultan tersenyum dan mempersilakan keduanya kembali. Baginda mengatakan bahwa apabila kelak putranya menanyakan persoalan tersebut, mereka tidak perlu mengungkapkan percakapan yang baru saja terjadi.
+      </p>
+
+      <h3>XV. Sultan Memanggil Putranya</h3>
+
+      <p class="opening">
+        Tidak lama kemudian, Sultan Taburat memanggil Indra Buganda Aspandar Sah untuk datang menghadap. Sang pangeran segera memasuki istana dan menyampaikan penghormatan kepada ayahandanya.
+      </p>
+
+      <p>
+        Sultan menyambut putranya dengan penuh kasih sayang. Baginda menyebutnya sebagai buah hati dan belahan jiwa. Namun, di balik kasih sayang tersebut, terdapat nasihat penting yang ingin disampaikan.
+      </p>
+
+      <p>
+        Sultan mengingatkan bahwa putranya kini telah dewasa. Ia juga telah dijodohkan dengan putri dari Negeri Mahran Langga Sari. Karena itu, sang pangeran harus mulai menjaga perilaku dan kehormatannya sebagai seorang putra mahkota.
+      </p>
+
+      <p>
+        Baginda secara khusus meminta agar putranya tidak lagi gemar menyabung ayam. Menurut Sultan, kebiasaan tersebut dapat merusak nama baik seseorang. Jika terdengar oleh raja-raja lain, perilaku itu dapat mencemarkan nama sang pangeran sekaligus kehormatan keluarganya.
+      </p>
+
+      <p>
+        Sultan juga menjelaskan bahwa menyabung ayam merupakan perbuatan yang mendatangkan dosa. Dalam kehidupan dunia, kebiasaan itu dapat menghilangkan penghormatan orang lain, menghabiskan harta, dan tidak memberikan manfaat yang sebanding, sekalipun seseorang memperoleh kemenangan.
+      </p>
+
+      <h3>XVI. Nasihat tentang Burung Perkutut dan Ikan Mas</h3>
+
+      <p class="opening">
+        Sang pangeran mendengarkan nasihat ayahandanya dengan penuh perhatian. Ia kemudian bertanya tentang kegemaran memelihara burung perkutut. Menurutnya, seseorang yang menyukai burung tentu merasa senang mendengar kicauannya. Ia ingin mengetahui apakah kesenangan semacam itu juga dianggap tidak baik.
+      </p>
+
+      <p>
+        Sultan menjelaskan bahwa suara burung yang merdu memang dapat menyenangkan hati. Akan tetapi, kesenangan tersebut dapat membuat seseorang terlena dan melupakan pekerjaan yang sedang dilakukan.
+      </p>
+
+      <p>
+        Baginda memberikan gambaran bahwa seorang pemimpin harus mampu berkonsentrasi ketika membaca kitab, menerima orang yang menghadap, atau memutuskan suatu perkara. Jika pada saat itu terdengar suara burung yang sangat disukainya, pikirannya dapat beralih kepada burung tersebut. Akibatnya, tugas yang sedang dikerjakan menjadi terbengkalai.
+      </p>
+
+      <p>
+        Sultan juga mengingatkan bahwa burung merupakan makhluk hidup yang memiliki kebutuhan dan keinginan. Burung yang terus dikurung tidak dapat bergerak bebas sebagaimana mestinya. Karena itu, manusia harus mempertimbangkan pula keadaan makhluk yang dipeliharanya.
+      </p>
+
+      <p>
+        Setelah itu, sang pangeran bertanya tentang kegemarannya memelihara ikan mas. Ia ingin mengetahui apa salahnya menikmati keindahan ikan yang berenang di dalam air jernih.
+      </p>
+
+      <p>
+        Sultan menjelaskan bahwa kesenangan memandangi ikan dapat membuat seseorang melupakan perintah dan pekerjaan lain. Seseorang bisa terlalu asyik memperhatikan ikan sehingga lupa terhadap tugas, keluarga, maupun kewajiban yang seharusnya dilaksanakan.
+      </p>
+
+      <p>
+        Baginda memberikan contoh bahwa apabila seorang pemimpin memiliki urusan penting yang harus dikerjakan pada hari berikutnya, ia tidak boleh sampai melupakannya hanya karena terlalu asyik memperhatikan ikan di dalam jambangan. Kesenangan pribadi tidak seharusnya mengalahkan tanggung jawab.
+      </p>
+
+      <h3>XVII. Tanggung Jawab Seorang Putra Mahkota</h3>
+
+      <p class="opening">
+        Sultan Taburat kemudian menegaskan bahwa seorang putra raja harus mampu mengendalikan diri. Kesenangan tidak dilarang selama tidak membuat seseorang melupakan kewajiban dan tanggung jawabnya.
+      </p>
+
+      <p>
+        Baginda mengingatkan bahwa seorang pemimpin dapat memiliki banyak urusan penting. Ia harus membaca kitab, mempelajari ilmu, mendengarkan persoalan rakyat, serta mempertimbangkan keputusan dengan pikiran yang jernih.
+      </p>
+
+      <p>
+        Jika terlalu larut dalam kesenangan, seseorang dapat kehilangan perhatian terhadap tugas yang lebih utama. Hal itu bukan hanya merugikan dirinya sendiri, tetapi juga dapat membawa akibat bagi orang-orang yang berada di bawah tanggung jawabnya.
+      </p>
+
+      <p>
+        Sang pangeran mendengarkan seluruh penjelasan tersebut. Ia menundukkan kepala dan memikirkan perkataan ayahandanya. Ia menyadari bahwa ilmu dan kedudukan yang dimilikinya harus disertai kemampuan menjaga perilaku.
+      </p>
+
+      <p>
+        Nasihat Sultan Taburat menjadi pengingat bahwa seorang calon pemimpin tidak cukup hanya memiliki pengetahuan, keberanian, dan keterampilan. Ia juga harus mampu menempatkan kesenangan pribadi pada batas yang wajar serta mendahulukan kewajiban.
+      </p>
+
+      <div class="source-note">
+        <p><strong>Sumber naskah:</strong> Muhammad Bakir, <em>Hikajat Soeltan Taboerat</em>, Batavia, 1901, halaman naskah 15–23.</p>
+
+        <p><strong>Catatan penyajian:</strong> Teks ini merupakan saduran ke dalam bahasa Indonesia, bukan salinan kata demi kata. Ejaan dan susunan kalimat disesuaikan agar lebih mudah dibaca. Nama tokoh, percakapan pokok, dan rangkaian nasihat mengikuti sumber naskah.</p>
+
+        <p><strong>Sumber transkripsi digital:</strong> <a href="https://id.wikisource.org/wiki/Indeks:Hikajat_Soeltan_Taboerat.pdf" target="_blank" rel="noopener noreferrer">Wikisumber — Indeks Hikajat Soeltan Taboerat</a>.</p>
+
+        <p><strong>Keterangan lisensi:</strong> Naskah asli tahun 1901 berstatus domain publik di Indonesia. Transkripsi digital Wikisumber tersedia dengan lisensi Creative Commons Atribusi-BerbagiSerupa (CC BY-SA).</p>
+      </div>
+
+      <nav class="navigation" aria-label="Navigasi bacaan">
+        <a href="hikajat-soeltan-taboerat-bagian-3.html">← Bagian III</a>
+        <a href="hikajat-soeltan-taboerat.html">Daftar Bagian Bacaan</a>
+      </nav>
+
+    </article>
+
+    <div class="quote">
+      “Kedewasaan bukan diukur dari banyaknya kesenangan, melainkan dari kemampuan menjaga tanggung jawab.”
+      <strong>— Mandala Aksara</strong>
+    </div>
+  </main>
+
+  <footer>
+    © Mandala Aksara — Ruang Literasi dan Pembelajaran Bahasa Indonesia
+    <br>
+    Dikelola Mandiri
+  </footer>
+
+</body>
+</html>
