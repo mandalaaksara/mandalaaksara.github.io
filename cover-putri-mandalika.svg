@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1000" role="img" aria-labelledby="title desc">
+<title id="title">Ilustrasi Putri Mandalika</title>
+<desc id="desc">Ilustrasi orisinal bergaya editorial: seorang putri berdiri di tepi pantai Lombok saat matahari terbit, dengan bukit dan ombak.</desc>
+<defs>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#10243a"/><stop offset=".55" stop-color="#d67d42"/><stop offset="1" stop-color="#f3c27b"/></linearGradient>
+  <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#23546a"/><stop offset="1" stop-color="#0d263b"/></linearGradient>
+  <linearGradient id="cloth" x2="1" y2="1"><stop stop-color="#f6c66e"/><stop offset="1" stop-color="#bd592d"/></linearGradient>
+</defs>
+<rect width="720" height="1000" fill="#10243a"/>
+<rect x="30" y="30" width="660" height="940" rx="8" fill="url(#sky)"/>
+<circle cx="520" cy="310" r="94" fill="#ffdca0" opacity=".9"/>
+<path d="M30 520 Q150 430 260 490 T500 470 T690 500 V970 H30Z" fill="#284b54"/>
+<path d="M30 585 Q170 530 280 585 T500 560 T690 590 V970 H30Z" fill="url(#sea)"/>
+<path d="M30 650 Q170 615 300 655 T690 640" fill="none" stroke="#f7d39a" stroke-width="7" opacity=".8"/>
+<path d="M30 730 Q170 690 300 730 T690 710" fill="none" stroke="#8bb4b7" stroke-width="5" opacity=".8"/>
+<path d="M30 820 Q170 780 300 820 T690 800" fill="none" stroke="#8bb4b7" stroke-width="4" opacity=".55"/>
+<!-- rocky headland -->
+<path d="M30 585 L120 520 195 548 260 500 330 555 400 570 440 630 360 660 260 650 160 670 30 650Z" fill="#263b43"/>
+<!-- figure -->
+<path d="M350 515 Q320 555 325 650 L300 820 Q350 855 405 820 L390 650 Q405 570 380 515Z" fill="url(#cloth)"/>
+<path d="M352 520 Q325 575 270 610 Q300 635 345 610" fill="#d58a48"/>
+<path d="M375 525 Q430 560 465 600 Q438 630 392 610" fill="#f1bd66"/>
+<ellipse cx="365" cy="455" rx="48" ry="59" fill="#8e543c"/>
+<path d="M318 458 Q315 390 366 382 Q418 392 414 470 Q390 430 367 430 Q344 432 318 458Z" fill="#172b37"/>
+<path d="M316 458 Q305 535 350 552 Q315 520 325 475Z" fill="#172b37"/>
+<path d="M408 450 Q438 520 384 558 Q418 510 400 475Z" fill="#172b37"/>
+<path d="M337 818 L330 880 355 880 365 830 380 880 406 880 393 815Z" fill="#172b37"/>
+<path d="M330 884 Q310 898 290 904 L360 904 L357 884Z" fill="#e4b16c"/>
+<path d="M382 884 L380 904 448 904 Q425 895 405 884Z" fill="#e4b16c"/>
+<!-- wind scarf -->
+<path d="M405 500 Q500 450 555 485 Q510 520 470 535 Q540 520 600 560 Q525 570 455 548Z" fill="#e58a32" opacity=".95"/>
+<text x="70" y="115" fill="#fff4dc" font-family="Georgia,serif" font-size="26" letter-spacing="6">CERITA RAKYAT NUSANTARA</text>
+<text x="70" y="190" fill="#fffdf8" font-family="Georgia,serif" font-size="62" font-weight="bold">PUTRI</text>
+<text x="70" y="255" fill="#fffdf8" font-family="Georgia,serif" font-size="62" font-weight="bold">MANDALIKA</text>
+<path d="M70 285 H310" stroke="#f4bd68" stroke-width="5"/>
+<text x="70" y="930" fill="#fff4dc" font-family="Arial,sans-serif" font-size="22" letter-spacing="3">MANDALA AKSARA</text>
+</svg>
