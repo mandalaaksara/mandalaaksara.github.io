@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#102944"/><stop offset="1" stop-color="#e7a66b"/></linearGradient>
+ <linearGradient id="water" x2="0" y2="1"><stop stop-color="#4f91a6"/><stop offset="1" stop-color="#173c5b"/></linearGradient>
+ <linearGradient id="hill" x2="0" y2="1"><stop stop-color="#507d72"/><stop offset="1" stop-color="#183e43"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<circle cx="1250" cy="190" r="82" fill="#f5c58a" opacity=".85"/>
+<path d="M0 500 L180 320 350 455 540 260 760 480 960 300 1160 470 1370 290 1600 475 V900 H0Z" fill="#345c61"/>
+<path d="M0 560 L210 400 390 535 600 355 820 560 1040 380 1260 550 1450 390 1600 500 V900 H0Z" fill="url(#hill)"/>
+<path d="M0 590 Q250 540 470 590 T900 590 T1350 580 T1600 600 V900 H0Z" fill="url(#water)"/>
+<path d="M0 650 Q300 610 600 655 T1200 650 T1600 655" fill="none" stroke="#b8d5d2" stroke-width="5" opacity=".35"/>
+<path d="M0 730 Q260 700 520 735 T1040 730 T1600 735" fill="none" stroke="#b8d5d2" stroke-width="4" opacity=".28"/>
+<path d="M570 585 Q700 515 835 560 Q900 580 1000 570 L1080 615 Q900 660 720 630Z" fill="#315d4e"/>
+<path d="M690 555 Q760 520 835 545 L890 565 770 580Z" fill="#6f9271" opacity=".8"/>
+<text x="100" y="120" fill="#f6a34d" font-family="Arial,sans-serif" font-size="28" letter-spacing="9">CERITA NUSANTARA</text>
+<text x="100" y="220" fill="#fff8ed" font-family="Georgia,serif" font-size="94">Danau Toba</text>
+<text x="106" y="280" fill="#f8e7d4" font-family="Arial,sans-serif" font-size="30" letter-spacing="3">SUMATRA UTARA</text>
+<path d="M100 320 H430" stroke="#f28c28" stroke-width="7"/>
+<text x="100" y="820" fill="#fff8ed" font-family="Arial,sans-serif" font-size="25" letter-spacing="4">MANDALA AKSARA</text>
+</svg>
