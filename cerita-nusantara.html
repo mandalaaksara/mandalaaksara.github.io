@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,43 +13,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cerita Nusantara | Mandala Aksara</title>
-  <meta name="description" content="Bacaan cerita rakyat Nusantara yang diadaptasi dalam bahasa Indonesia masa kini di Perpustakaan Digital Mandala Aksara.">
+  <meta name="description" content="Kumpulan cerita rakyat Nusantara yang dituturkan kembali dengan bahasa Indonesia masa kini.">
   <link rel="stylesheet" href="style.css">
   <style>
-    .nusantara-hero{background:linear-gradient(135deg,#0D203A,#23466B);color:#fff;padding:68px 20px;text-align:center;border-bottom:5px solid #F28C28}
+    .nusantara-hero{background:linear-gradient(135deg,#0d203a,#23466b);color:#fff;padding:65px 20px;text-align:center;border-bottom:5px solid #f28c28}
     .nusantara-hero h1{font:clamp(32px,5vw,46px) Georgia,serif;margin:0 0 12px}
-    .nusantara-hero p{color:#F28C28;letter-spacing:1px;margin:0}
-    .nusantara-wrap{max-width:1100px;margin:42px auto;padding:0 22px 35px}
-    .crumb{font-size:13px;color:#687386;margin-bottom:25px}.crumb a{color:#D87516;text-decoration:none}
-    .intro{text-align:center;max-width:780px;margin:0 auto 34px;color:#596579;line-height:1.85}
+    .nusantara-hero p{color:#f28c28;letter-spacing:1px;margin:0}
+    .wrap{max-width:1100px;margin:42px auto;padding:0 22px 45px}
+    .crumb{font-size:13px;color:#687386;margin-bottom:25px}
+    .crumb a{color:#d87516;text-decoration:none}
+    .intro{text-align:center;max-width:800px;margin:0 auto 38px;color:#596579;line-height:1.9}
     .story-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
-    .story-card{background:#fff;border:1px solid #E1E6ED;border-radius:14px;overflow:hidden;text-decoration:none;box-shadow:0 5px 20px rgba(20,43,74,.09);display:block}
-    .story-card img{width:100%;height:235px;object-fit:cover;display:block}
-    .story-body{padding:23px;border-top:4px solid #F28C28}
-    .story-label{color:#D87516;font:700 12px Arial,sans-serif;letter-spacing:1px;text-transform:uppercase}
-    .story-body h2{font:25px Georgia,serif;color:#142B4A;margin:10px 0}
+    .story-card{background:white;border:1px solid #e1e6ed;border-radius:15px;overflow:hidden;text-decoration:none;box-shadow:0 7px 24px #142b4a14;display:block;transition:.25s}
+    .story-card:hover{transform:translateY(-5px);box-shadow:0 12px 28px #142b4a24}
+    .art{height:230px;position:relative;overflow:hidden}
+    .art svg{width:100%;height:100%;display:block}
+    .story-body{padding:22px;border-top:4px solid #f28c28}
+    .story-label{color:#d87516;font:bold 12px Arial;letter-spacing:1px;text-transform:uppercase}
+    .story-body h2{font:25px Georgia,serif;color:#142b4a;margin:10px 0}
     .story-body p{color:#596579;line-height:1.8;font-size:14px;margin:0}
-    .read{display:inline-block;color:#D87516;font-weight:bold;margin-top:17px}
-    .coming{background:#F3F5F8;border:1px dashed #C9D2DE;border-radius:12px;padding:22px;color:#687386}
-    .note{margin-top:35px;background:#FFF9F2;border-left:5px solid #F28C28;padding:22px;color:#34445A;line-height:1.8}
-    .quote{max-width:780px;margin:42px auto 20px;padding:25px;background:#F3F5F8;border-left:4px solid #F28C28;text-align:center;border-radius:0 10px 10px 0;color:#34445A;font:italic 18px/1.8 Georgia,serif}
-    .quote strong{display:block;font:700 14px Arial,sans-serif;color:#142B4A;margin-top:10px}
-    .back{display:inline-block;margin-top:30px;color:#D87516;text-decoration:none;font-weight:bold}
-    @media(max-width:650px){.story-grid{grid-template-columns:1fr}.nusantara-hero{padding:54px 18px}.story-card img{height:200px}}
+    .read{display:inline-block;color:#d87516;font-weight:bold;margin-top:17px}
+    .note{margin-top:38px;background:#fff9f2;border-left:5px solid #f28c28;padding:22px;color:#34445a;line-height:1.8}
+    .quote{max-width:780px;margin:42px auto 20px;padding:25px;background:#f3f5f8;border-left:4px solid #f28c28;text-align:center;color:#34445a;font:italic 18px/1.8 Georgia,serif}
+    .quote strong{display:block;font:bold 14px Arial;color:#142b4a;margin-top:10px}
+    .back{display:inline-block;margin-top:30px;color:#d87516;text-decoration:none;font-weight:bold}
+    @media(max-width:650px){.story-grid{grid-template-columns:1fr}.nusantara-hero{padding:50px 18px}}
   </style>
 </head>
 <body>
+
 <header class="site-header">
   <a href="index.html" class="brand">
     <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
     <div><strong>MANDALA AKSARA</strong><small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small></div>
   </a>
-  <button id="menuToggle" class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button>
-  <nav id="mainNav" aria-label="Navigasi utama">
+  <button id="menuToggle" class="menu-toggle" type="button" aria-label="Buka menu">☰</button>
+  <nav id="mainNav">
     <a href="index.html">Beranda</a>
     <div class="nav-dropdown">
       <button type="button" class="nav-trigger">Materi Pembelajaran <span>⌄</span></button>
-      <div class="dropdown"><a href="kelas-x.html">Kelas X</a><a href="kelas-xi.html">Kelas XI</a><a href="kelas-xii.html">Kelas XII</a></div>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
     </div>
     <a href="galeri.html">Galeri</a>
     <a href="perpustakaan.html" class="active">Perpustakaan Digital</a>
@@ -56,84 +64,152 @@
     <a href="tentang.html">Tentang</a>
   </nav>
 </header>
+
 <main>
-  <section class="nusantara-hero">
-    <h1>Cerita Nusantara</h1>
-    <p>Kisah dari Berbagai Penjuru Indonesia</p>
-  </section>
-  <section class="nusantara-wrap">
-    <div class="crumb">
-      <a href="perpustakaan.html">Perpustakaan Digital</a> ›
-      <a href="karya-sastra.html">Karya Sastra</a> ›
-      <a href="karya-sastra-lainnya.html">Karya Sastra Lainnya</a> › Cerita Nusantara
-    </div>
-    <p class="intro">
-      Nusantara menyimpan beragam cerita yang diwariskan dari generasi ke generasi.
-      Kisah-kisah di ruang ini dituturkan kembali oleh Mandala Aksara dengan bahasa
-      Indonesia masa kini agar lebih dekat dengan pembaca, tanpa melupakan asal
-      daerah, nilai budaya, dan ragam versi cerita yang hidup di masyarakat.
-    </p>
-    <div class="story-grid">
-      <a class="story-card" href="putri-mandalika.html">
-        <img src="cover-putri-mandalika.svg" alt="Sampul cerita Putri Mandalika">
-        <div class="story-body">
-          <span class="story-label">Lombok · Nusa Tenggara Barat</span>
-          <h2>Putri Mandalika</h2>
-          <p>Kisah seorang putri yang menghadapi perebutan dan pertentangan, lalu mengambil keputusan demi menjaga kedamaian. Cerita ini juga berkaitan dengan tradisi Bau Nyale di Lombok.</p>
-          <span class="read">Baca cerita lengkap →</span>
-        </div>
-      </a>
-      <a class="story-card" href="danau-toba.html">
-        <img src="cover-danau-toba.svg" alt="Ilustrasi Danau Toba dan Pulau Samosir">
-        <div class="story-body">
-          <span class="story-label">Sumatra Utara</span>
-          <h2>Danau Toba</h2>
-          <p>Kisah tentang sebuah janji, kemarahan yang tak terkendali, dan legenda asal-usul Danau Toba serta Pulau Samosir.</p>
-          <span class="read">Baca cerita lengkap →</span>
-        </div>
-      </a>
-      <div class="coming">
+<section class="nusantara-hero">
+  <h1>Cerita Nusantara</h1>
+  <p>Kisah dari Berbagai Penjuru Indonesia</p>
+</section>
+
+<section class="wrap">
+  <div class="crumb">
+    <a href="perpustakaan.html">Perpustakaan Digital</a> ›
+    <a href="karya-sastra.html">Karya Sastra</a> ›
+    <a href="karya-sastra-lainnya.html">Karya Sastra Lainnya</a> › Cerita Nusantara
+  </div>
+
+  <p class="intro">
+    Nusantara menyimpan beragam cerita yang diwariskan dari generasi ke generasi.
+    Kisah-kisah di ruang ini dituturkan kembali oleh Mandala Aksara dengan bahasa
+    Indonesia masa kini agar lebih dekat dengan pembaca, tanpa melupakan asal
+    daerah, nilai budaya, dan ragam versi cerita yang hidup di masyarakat.
+  </p>
+
+  <div class="story-grid">
+
+    <!-- PUTRI MANDALIKA -->
+    <a class="story-card" href="putri-mandalika.html">
+      <div class="art">
+        <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="p1" x2="0" y2="1"><stop stop-color="#17395c"/><stop offset="1" stop-color="#e6a36b"/></linearGradient></defs>
+          <rect width="700" height="300" fill="url(#p1)"/>
+          <circle cx="540" cy="75" r="40" fill="#ffe0a0"/>
+          <path d="M0 210 L120 110 220 205 350 100 470 210 600 120 700 200 V300 H0Z" fill="#345d54"/>
+          <path d="M0 245 Q180 210 350 245 T700 240 V300 H0Z" fill="#285e71"/>
+          <path d="M270 120 Q350 45 430 120 L410 220 H290Z" fill="#f3d8b5"/>
+          <circle cx="350" cy="95" r="35" fill="#d69b78"/>
+          <path d="M310 90 Q350 20 390 90 L375 70 350 45 325 70Z" fill="#f3bd45"/>
+          <text x="25" y="270" fill="white" font-family="Georgia" font-size="34">PUTRI MANDALIKA</text>
+        </svg>
+      </div>
+      <div class="story-body">
+        <span class="story-label">Lombok · Nusa Tenggara Barat</span>
+        <h2>Putri Mandalika</h2>
+        <p>Kisah seorang putri yang menghadapi perebutan dan pertentangan, lalu mengambil keputusan demi menjaga kedamaian.</p>
+        <span class="read">Baca cerita lengkap →</span>
+      </div>
+    </a>
+
+    <!-- DANAU TOBA -->
+    <a class="story-card" href="danau-toba.html">
+      <div class="art">
+        <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="d1" x2="0" y2="1"><stop stop-color="#19395b"/><stop offset="1" stop-color="#e5b17b"/></linearGradient></defs>
+          <rect width="700" height="300" fill="url(#d1)"/>
+          <circle cx="560" cy="65" r="38" fill="#ffe0a0"/>
+          <path d="M0 210 L100 100 220 200 350 65 490 205 600 110 700 205 V300 H0Z" fill="#365f55"/>
+          <path d="M0 225 Q180 205 350 225 T700 220 V300 H0Z" fill="#2e7184"/>
+          <path d="M260 220 Q350 170 445 215 L480 240 Q350 270 230 240Z" fill="#4a7056"/>
+          <text x="25" y="270" fill="white" font-family="Georgia" font-size="38">DANAU TOBA</text>
+        </svg>
+      </div>
+      <div class="story-body">
+        <span class="story-label">Sumatra Utara</span>
+        <h2>Danau Toba</h2>
+        <p>Kisah tentang sebuah janji, kemarahan yang tak terkendali, dan legenda asal-usul Danau Toba serta Pulau Samosir.</p>
+        <span class="read">Baca cerita lengkap →</span>
+      </div>
+    </a>
+
+    <!-- MALIN KUNDANG -->
+    <a class="story-card" href="malin-kundang.html">
+      <div class="art">
+        <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="m1" x2="0" y2="1"><stop stop-color="#17395d"/><stop offset=".7" stop-color="#f2a65a"/><stop offset="1" stop-color="#f8d49b"/></linearGradient></defs>
+          <rect width="700" height="300" fill="url(#m1)"/>
+          <circle cx="540" cy="65" r="38" fill="#ffe0a4"/>
+          <path d="M0 180 L100 100 190 185 300 95 420 190 540 105 700 190 V300 H0Z" fill="#294d49"/>
+          <path d="M0 205 Q180 185 350 210 T700 205 V300 H0Z" fill="#1e5972"/>
+          <path d="M390 170 L580 170 620 205 360 205Z" fill="#432c25"/>
+          <path d="M475 170 L475 95 550 170Z" fill="#fff0d2"/>
+          <text x="25" y="270" fill="white" font-family="Georgia" font-size="38">MALIN KUNDANG</text>
+        </svg>
+      </div>
+      <div class="story-body">
         <span class="story-label">Sumatra Barat</span>
         <h2>Malin Kundang</h2>
         <p>Kisah tentang perjalanan seorang anak, hubungan keluarga, dan konsekuensi dari sikap durhaka.</p>
-        <strong>Segera hadir</strong>
+        <span class="read">Baca cerita lengkap →</span>
       </div>
-      <div class="coming">
+    </a>
+
+    <!-- TANGKUBAN PERAHU -->
+    <a class="story-card" href="tangkuban-perahu.html">
+      <div class="art">
+        <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="t1" x2="0" y2="1"><stop stop-color="#193c59"/><stop offset="1" stop-color="#c6b99a"/></linearGradient></defs>
+          <rect width="700" height="300" fill="url(#t1)"/>
+          <circle cx="550" cy="55" r="34" fill="#f5d7a2"/>
+          <path d="M0 250 L120 110 210 190 350 35 500 205 590 115 700 230 V300 H0Z" fill="#365e56"/>
+          <path d="M300 90 L350 35 405 100 375 85 350 110 325 85Z" fill="#e5e9df"/>
+          <path d="M200 230 Q350 280 520 230 L490 255 Q350 300 230 255Z" fill="#875333"/>
+          <text x="25" y="270" fill="white" font-family="Georgia" font-size="31">TANGKUBAN PERAHU</text>
+        </svg>
+      </div>
+      <div class="story-body">
         <span class="story-label">Jawa Barat</span>
         <h2>Legenda Tangkuban Perahu</h2>
         <p>Kisah yang lekat dengan lanskap alam dan tradisi lisan masyarakat Sunda.</p>
-        <strong>Segera hadir</strong>
+        <span class="read">Baca cerita lengkap →</span>
       </div>
-    </div>
-    <div class="note">
-      <strong>Catatan tentang adaptasi:</strong> Cerita rakyat memiliki beragam versi di berbagai daerah.
-      Naskah yang dibaca di Mandala Aksara merupakan penuturan kembali dengan bahasa sendiri,
-      bukan salinan dari buku atau adaptasi modern milik pihak lain. Keterangan sumber budaya
-      dicantumkan pada setiap halaman cerita.
-    </div>
-    <a class="back" href="karya-sastra-lainnya.html">← Kembali ke Karya Sastra Lainnya</a>
-    <div class="quote">
-      “Cerita yang diwariskan menjaga ingatan sebuah bangsa dan menghubungkan generasi melalui makna.”
-      <strong>— Mandala Aksara</strong>
-    </div>
-  </section>
+    </a>
+
+  </div>
+
+  <div class="note">
+    <strong>Catatan tentang adaptasi:</strong>
+    Cerita rakyat memiliki beragam versi di berbagai daerah. Naskah yang dibaca
+    di Mandala Aksara merupakan penuturan kembali dengan bahasa sendiri,
+    bukan salinan dari buku atau adaptasi modern milik pihak lain.
+    Setiap halaman cerita mencantumkan keterangan mengenai naskahnya.
+  </div>
+
+  <a class="back" href="karya-sastra-lainnya.html">← Kembali ke Karya Sastra Lainnya</a>
+
+  <div class="quote">
+    “Cerita yang diwariskan menjaga ingatan sebuah bangsa dan menghubungkan generasi melalui makna.”
+    <strong>— Mandala Aksara</strong>
+  </div>
+</section>
 </main>
+
 <footer>
   <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
   <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
 </footer>
+
 <script>
-const toggle = document.getElementById('menuToggle');
-const nav = document.getElementById('mainNav');
-if (toggle && nav) {
-  toggle.addEventListener('click', () => {
+const toggle=document.getElementById('menuToggle');
+const nav=document.getElementById('mainNav');
+if(toggle&&nav){
+  toggle.addEventListener('click',()=>{
     nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+    toggle.setAttribute('aria-expanded',nav.classList.contains('open'));
   });
 }
-document.querySelectorAll('.nav-trigger').forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (window.matchMedia('(max-width: 1050px)').matches) {
+document.querySelectorAll('.nav-trigger').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    if(window.matchMedia('(max-width:1050px)').matches){
       btn.parentElement.classList.toggle('expanded');
     }
   });
