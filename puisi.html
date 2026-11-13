@@ -2,64 +2,754 @@
 <html lang="id">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7HFZ0YC7P9');
-</script>
-  
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mengapresiasi unsur pembangun puisi dan mengekspresikan gagasan melalui bahasa yang puitis.">
-<title>Puisi | Mandala Aksara</title>
-<link rel="stylesheet" href="style.css">
-<style>
-:root{--navy:#142B4A;--orange:#F28C28;--gold:#C69A45;--white:#fff;--soft:#F3F5F8;--dark:#343A40}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:var(--dark);background:var(--soft);line-height:1.7}
-a{text-decoration:none}
-header{background:var(--white);padding:14px 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;box-shadow:0 2px 10px rgba(0,0,0,.06)}
-.brand{display:flex;align-items:center;gap:12px;color:var(--navy)}
-.brand img{width:58px;height:58px;object-fit:contain}
-.brand h2{margin:0;font-size:19px;letter-spacing:1px}
-.brand small{display:block;font-size:11px;color:#666}
-nav{display:flex;flex-wrap:wrap;gap:18px}
-nav a{color:var(--navy);font-size:14px;font-weight:bold}
-nav a:hover{color:var(--orange)}
-.menu-toggle{display:none}
-.hero{background:linear-gradient(120deg,#142B4A,#25496F);color:white;padding:58px 8%;text-align:center;border-bottom:5px solid var(--orange)}
-.hero .label{color:#F5C77D;font-weight:bold;letter-spacing:2px;font-size:13px}
-.hero h1{font-size:clamp(28px,5vw,42px);margin:12px 0}
-.hero p{max-width:720px;margin:auto;color:#E5EAF0}
-main{max-width:980px;margin:35px auto;padding:0 20px}
-.section{background:white;border-radius:14px;padding:28px;margin-bottom:24px;box-shadow:0 4px 16px rgba(20,43,74,.06);position:relative;overflow:hidden}
-.section h2{color:var(--navy);margin-top:0;border-left:4px solid var(--orange);padding-left:13px}
-.callout{background:#EEF3F8;border-left:4px solid var(--gold);padding:18px;border-radius:8px}
-.button{display:inline-block;background:var(--orange);color:white;padding:10px 20px;border-radius:7px;font-weight:bold;margin:8px 6px 0 0}
-.quote{text-align:center;color:var(--navy);font-style:italic;padding:20px}
-footer{background:var(--navy);color:white;text-align:center;padding:28px 15px;border-top:5px solid var(--orange);font-size:13px}
-footer p{margin:5px}
-@media(max-width:1050px){header{padding:10px 15px}nav{width:100%;gap:12px}}
-@media(max-width:650px){.hero{padding:42px 20px}.section{padding:22px 18px}nav{flex-direction:column}}
-</style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="Materi pembelajaran Bahasa Indonesia Kelas X tentang berkarya dan berekspresi melalui puisi."/>
+  <title>Berkarya dan Berekspresi Melalui Puisi | Mandala Aksara</title>
+  <link href="style.css" rel="stylesheet"/>
+
+  <style>
+    :root{--navy:#142B4A;--navy-dark:#0D203A;--orange:#F28C28;--gold:#C69A45;--text:#34445B;--muted:#68778B;--soft:#F3F5F8;--border:#DCE3EC}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;background:#F7F8FA;color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.75}
+    a{color:inherit}
+    .site-header{background:var(--navy-dark);color:white;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:1000;box-shadow:0 3px 12px rgba(0,0,0,.15)}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+    .brand img{width:46px;height:46px;object-fit:contain}
+    .brand-name{font-size:19px;font-weight:800;letter-spacing:1px;color:white}
+    .brand-subtitle{display:block;font-size:10px;color:#D9E1EC;letter-spacing:.5px}
+    #menuToggle{display:none;border:1px solid rgba(255,255,255,.35);background:transparent;color:white;padding:8px 12px;border-radius:7px;font-size:22px;cursor:pointer}
+    #mainNav{display:flex;align-items:center;gap:20px}
+    #mainNav>a,.nav-trigger{color:white;text-decoration:none;font-size:13px;font-weight:600}
+    .nav-trigger{border:none;background:transparent;cursor:pointer;padding:8px 0}
+    .nav-dropdown{position:relative}
+    .dropdown{display:none;position:absolute;top:100%;left:0;min-width:155px;background:white;box-shadow:0 8px 22px rgba(0,0,0,.15);border-radius:8px;overflow:hidden}
+    .nav-dropdown:hover .dropdown,.nav-dropdown.expanded .dropdown{display:block}
+    .dropdown a{display:block;padding:10px 15px;color:var(--navy);text-decoration:none;font-size:13px}
+    .dropdown a:hover{background:var(--soft);color:var(--orange)}
+    .hero{background:linear-gradient(120deg,var(--navy-dark),var(--navy));color:white;padding:55px 7%;text-align:center}
+    .hero .eyebrow{color:#F6B65F;text-transform:uppercase;font-size:12px;letter-spacing:2px;font-weight:bold}
+    .hero h1{font-size:clamp(27px,4vw,42px);line-height:1.2;margin:12px 0}
+    .hero p{max-width:720px;margin:0 auto;color:#E0E7F0}
+    .page-layout{max-width:1350px;margin:35px auto 60px;padding:0 22px;display:grid;grid-template-columns:255px minmax(0,1fr);gap:30px;align-items:start}
+    .sidebar{background:white;border:1px solid var(--border);border-radius:13px;padding:20px 15px;position:sticky;top:95px;max-height:calc(100vh - 115px);overflow-y:auto}
+    .sidebar h2{color:var(--navy);font-size:18px;margin:0 0 15px}
+    .sidebar a{display:block;text-decoration:none;color:#485970;font-size:13px;font-weight:600;padding:9px 11px;margin:3px 0;border-radius:7px;line-height:1.4}
+    .sidebar a:hover,.sidebar a.active{background:#FFF1E2;color:#B85D0B;border-left:3px solid var(--orange)}
+    .content{min-width:0}
+    .content section{background:white;border:1px solid var(--border);border-radius:12px;padding:27px;margin-bottom:22px;scroll-margin-top:105px}
+    .content h2{color:var(--navy);font-size:25px;line-height:1.35;margin:0 0 18px;padding-bottom:12px;border-bottom:2px solid #E3E8EF}
+    .content h3{color:var(--navy);font-size:18px;margin:23px 0 10px}
+    .content p{margin:10px 0 15px}
+    .content li{margin-bottom:7px}
+    .note{background:#FFF5E9;border-left:4px solid var(--orange);border-radius:7px;padding:15px 18px;margin:18px 0}
+    .info-card{background:#F8FAFC;border:1px solid var(--border);border-radius:9px;padding:20px;margin:15px 0}
+    .info-card strong{color:var(--navy)}
+    .two-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+    .feature{background:var(--soft);border-radius:9px;padding:17px;border-top:3px solid var(--orange)}
+    .feature h3{margin-top:0}
+    .step{display:flex;gap:15px;margin:17px 0;align-items:flex-start}
+    .step-number{flex:0 0 34px;height:34px;display:grid;place-items:center;background:var(--navy);color:white;border-radius:50%;font-weight:bold}
+    .example{background:#F9FAFC;border:1px solid var(--border);padding:20px;border-radius:9px;margin:16px 0}
+    .example h3{margin-top:0}
+    .example ol{padding-left:25px}
+    .enrichment{border:1px dashed #D5A04B;background:#FFFAF1;border-radius:9px;padding:17px;margin:16px 0}
+    .enrichment-label{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:bold;color:#9B5A12;margin-bottom:5px}
+    .reflection{background:var(--navy);color:white;padding:25px;border-radius:12px;margin-top:25px}
+    .reflection h3{color:#F6B65F;margin-top:0}
+    .final-quote{text-align:center;padding:38px 20px;color:var(--navy);font-family:Georgia,serif;font-size:19px;font-style:italic}
+    .final-quote span{display:block;margin-top:12px;color:var(--gold);font-family:Arial,sans-serif;font-size:14px;font-weight:bold;font-style:normal}
+    .site-footer{background:var(--navy-dark);color:#DCE4EF;text-align:center;padding:25px 15px;font-size:13px}
+    .site-footer strong{color:white}
+    .poem-mark{display:inline-block;background:#FFF1E2;color:#9B5A12;padding:3px 9px;border-radius:5px;font-size:12px;font-weight:bold;margin:3px}
+    .pause-list{display:flex;flex-wrap:wrap;gap:12px;margin:15px 0}
+    .pause-item{background:#F3F5F8;border:1px solid var(--border);border-radius:8px;padding:12px 17px;flex:1;min-width:130px}
+    .pause-item strong{display:block;color:var(--navy);font-size:20px}
+    @media(max-width:900px){
+      .site-header{flex-wrap:wrap}
+      #menuToggle{display:block}
+      #mainNav{display:none;flex-direction:column;align-items:stretch;width:100%;gap:4px;padding:10px 0}
+      #mainNav.open{display:flex}
+      #mainNav>a,.nav-trigger{display:block;padding:10px 5px;text-align:left}
+      .dropdown{position:static;box-shadow:none;background:rgba(255,255,255,.08);margin-left:12px}
+      .dropdown a{color:white}
+      .page-layout{grid-template-columns:1fr;margin-top:20px}
+      .sidebar{position:static;max-height:none}
+      .sidebar-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px}
+    }
+    @media(max-width:560px){
+      .hero{padding:38px 20px}
+      .page-layout{padding:0 12px}
+      .content section{padding:19px}
+      .content h2{font-size:21px}
+      .two-columns,.sidebar-list{grid-template-columns:1fr}
+      .brand-name{font-size:16px}
+    }
+  </style>
 </head>
+
 <body>
-<header>
-<a class="brand" href="index.html"><img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara"><div><h2>MANDALA AKSARA</h2><small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small></div></a>
-<nav aria-label="Navigasi utama">
-<a href="index.html">Beranda</a><a href="kelas-x.html">Kelas X</a><a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a><a href="tentang.html">Tentang</a>
-</nav>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img alt="Logo Mandala Aksara" src="logo-mandala-aksara.png"/>
+    <span>
+      <span class="brand-name">MANDALA AKSARA</span>
+      <span class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+    </span>
+  </a>
+
+  <button aria-expanded="false" aria-label="Buka menu" id="menuToggle">☰</button>
+
+  <nav id="mainNav">
+    <a href="index.html">Beranda</a>
+    <div class="nav-dropdown">
+      <button class="nav-trigger" type="button">Materi Pembelajaran ⌄</button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html">Perpustakaan Digital</a>
+    <a href="https://mandalaaksara.github.io/kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
 </header>
-<section class="hero"><div class="label">FASE E · KELAS X</div><h1>Puisi</h1><p>Mengapresiasi unsur pembangun puisi dan mengekspresikan gagasan melalui bahasa yang puitis.</p></section>
-<main>
-<section class="section"><h2>Pengantar Materi</h2><p>Puisi merupakan karya sastra yang mengungkapkan pikiran dan perasaan melalui pilihan kata, irama, bunyi, serta pengimajian.</p>
-<div class="callout"><strong>Status Materi</strong><p>Materi lengkap sedang disiapkan. Halaman ini telah disediakan sebagai bagian dari peta pembelajaran Kelas X dan akan dilengkapi pada tahap berikutnya.</p></div>
+
+<section class="hero">
+  <div class="eyebrow">Bahasa Indonesia · Fase E · Kelas X</div>
+  <h1>Berkarya dan Berekspresi Melalui Puisi</h1>
+  <p>Mengenal keindahan puisi, memahami pilihan kata dan unsur pembangunnya, serta belajar mengekspresikan makna puisi melalui pembacaan, musikalisasi, dan penulisan resensi.</p>
 </section>
-<section class="section"><h2>Ruang Pengembangan</h2><p>Materi akan dilengkapi dengan tujuan pembelajaran, konsep utama, struktur atau unsur pembangun, kaidah kebahasaan, contoh, aktivitas pembelajaran, latihan, dan refleksi sesuai karakteristik materi.</p></section>
-<p style="text-align:center"><a class="button" href="kelas-x.html">← Kembali ke Ruang Materi Kelas X</a></p>
-<div class="quote">“Kata-kata yang dipilih dengan hati dapat membuka cakrawala makna.”<br><strong>— Mandala Aksara</strong></div>
-</main>
-<footer><p><strong>MANDALA AKSARA</strong></p><p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p><p>Ruang Literasi dan Pembelajaran Bahasa Indonesia · Dikelola Mandiri</p></footer>
-</body></html>
+
+<div class="page-layout">
+
+  <aside class="sidebar">
+    <h2>Daftar Materi</h2>
+    <div class="sidebar-list">
+      <a href="#tujuan">Tujuan Pembelajaran</a>
+      <a href="#pengertian">Apa Itu Puisi?</a>
+      <a href="#diksi">Diksi dan Unsur-Unsurnya</a>
+      <a href="#tema">Tema dan Suasana</a>
+      <a href="#unsur">Diksi, Rima, dan Tipografi</a>
+      <a href="#membaca">Membacakan Puisi</a>
+      <a href="#musikalisasi">Musikalisasi Puisi</a>
+      <a href="#resensi">Resensi Antologi Puisi</a>
+      <a href="#aktivitas">Aktivitas Pembelajaran</a>
+      <a href="#refleksi">Refleksi dan Evaluasi</a>
+      <a href="#kesimpulan">Kesimpulan</a>
+      <a href="#kelas-virtual">Penjelajahan ke Kelas Virtual</a>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <section id="tujuan">
+      <h2>1. Tujuan Pembelajaran</h2>
+      <p>Setelah mempelajari materi ini, peserta didik diharapkan mampu:</p>
+      <ol>
+        <li>Memahami pengertian dan karakteristik puisi.</li>
+        <li>Menganalisis pilihan kata atau diksi serta unsur-unsur pembangun puisi.</li>
+        <li>Mengidentifikasi tema dan suasana dalam puisi.</li>
+        <li>Menilai penggunaan diksi, rima, dan tipografi dalam puisi.</li>
+        <li>Membacakan puisi dengan ekspresi, lafal, tekanan, jeda, tempo, dan intonasi yang tepat.</li>
+        <li>Memahami proses musikalisasi puisi.</li>
+        <li>Menyusun resensi antologi puisi berdasarkan unsur-unsur yang tepat.</li>
+      </ol>
+      <div class="note">
+        <strong>Arah pembelajaran:</strong> Puisi bukan hanya untuk dibaca, tetapi juga untuk dipahami, dirasakan, dinilai, dan diekspresikan. Melalui materi ini, kamu akan belajar menemukan makna di balik kata-kata yang digunakan penyair.
+      </div>
+    </section>
+
+    <section id="pengertian">
+      <h2>2. Apa Itu Puisi?</h2>
+      <p>Puisi adalah karya sastra untuk mengungkapkan pikiran, gagasan, dan perasaan dalam kata-kata yang indah, padat, dan cenderung menggunakan bahasa kiasan.</p>
+      <p>Dalam puisi, penyair memilih kata-kata secara cermat. Kata yang digunakan tidak selalu memiliki makna langsung. Ada kata yang menyimpan perasaan, gambaran, atau pesan tertentu sehingga pembaca perlu memaknainya lebih dalam.</p>
+
+      <h3>Perbedaan Puisi dan Teks Naratif</h3>
+      <p>Puisi memiliki ciri yang berbeda dari teks naratif, seperti cerpen atau cerita lainnya. Perbedaan tersebut dapat dilihat dari beberapa aspek berikut.</p>
+
+      <div class="info-card">
+        <div class="two-columns">
+          <div class="feature">
+            <h3>Puisi</h3>
+            <ul>
+              <li>Strukturnya memperhatikan diksi, rima, dan tata letak.</li>
+              <li>Disusun dalam larik dan bait.</li>
+              <li>Bahasanya cenderung kiasan dan menggunakan majas.</li>
+              <li>Maknanya dapat bersifat implisit dan simbolis.</li>
+            </ul>
+          </div>
+          <div class="feature">
+            <h3>Teks Naratif</h3>
+            <ul>
+              <li>Strukturnya memperhatikan alur, latar, dan tokoh.</li>
+              <li>Disusun dalam paragraf dan dialog.</li>
+              <li>Bahasanya cenderung langsung dan naratif.</li>
+              <li>Maknanya umumnya disampaikan secara lebih jelas.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="enrichment">
+        <span class="enrichment-label">Pengayaan</span>
+        <h3>Mengapa puisi menggunakan bahasa yang padat?</h3>
+        <p>Puisi dapat menyampaikan perasaan atau gagasan yang luas melalui sedikit kata. Karena itu, setiap kata dipilih dengan pertimbangan tertentu. Satu kata bahkan dapat menghadirkan gambaran, suasana, dan makna yang berlapis.</p>
+      </div>
+    </section>
+
+    <section id="diksi">
+      <h2>3. Diksi dan Unsur-Unsurnya</h2>
+      <p>Diksi adalah pilihan kata yang digunakan penyair untuk menyampaikan gagasan dan perasaan. Pemilihan kata yang tepat dapat menimbulkan efek tertentu serta memperkuat makna puisi.</p>
+      <p>Dalam puisi, diksi berkaitan dengan beberapa unsur berikut.</p>
+
+      <div class="info-card">
+        <h3>1. Majas</h3>
+        <p>Majas adalah penggunaan bahasa kiasan untuk memberikan kesan atau makna tertentu. Majas membuat ungkapan dalam puisi menjadi lebih hidup dan menarik.</p>
+        <ul>
+          <li><strong>Personifikasi:</strong> memberikan sifat manusia kepada benda atau sesuatu yang bukan manusia. Contoh: <em>Angin berbisik di telingaku.</em></li>
+          <li><strong>Simile:</strong> membandingkan dua hal menggunakan kata pembanding, seperti <em>bagai, seperti,</em> atau <em>laksana</em>. Contoh: <em>Wajahnya bersinar seperti bulan.</em></li>
+          <li><strong>Metafora:</strong> membandingkan dua hal secara langsung tanpa kata pembanding. Contoh: <em>Ia adalah bintang keluarga.</em></li>
+        </ul>
+        <p><strong>Contoh puisi untuk diamati:</strong> <span class="poem-mark">Padamu Jua</span></p>
+        <p>Perhatikan bagaimana penggunaan bahasa kiasan dalam puisi tersebut membantu membangun ungkapan dan makna.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>2. Pengimajian</h3>
+        <p>Pengimajian atau citraan adalah penggunaan kata-kata yang dapat membangkitkan bayangan atau pengalaman indrawi dalam pikiran pembaca. Melalui pengimajian, pembaca seolah-olah dapat melihat, mendengar, mencium, merasakan, atau mengalami sesuatu yang digambarkan dalam puisi.</p>
+
+        <div class="two-columns">
+          <div class="feature">
+            <h3>Citraan penglihatan</h3>
+            <p>Menggambarkan sesuatu yang dapat dilihat oleh mata.</p>
+            <p><em>Contoh: Langit merah menyala di ufuk barat.</em></p>
+          </div>
+          <div class="feature">
+            <h3>Citraan pendengaran</h3>
+            <p>Menggambarkan bunyi atau suara yang dapat didengar.</p>
+            <p><em>Contoh: Gemercik air mengalun di antara batu.</em></p>
+          </div>
+          <div class="feature">
+            <h3>Citraan penciuman</h3>
+            <p>Menggambarkan sesuatu yang dapat dicium melalui hidung.</p>
+            <p><em>Contoh: Harum melati memenuhi halaman.</em></p>
+          </div>
+          <div class="feature">
+            <h3>Citraan perabaan</h3>
+            <p>Menggambarkan sesuatu yang dapat dirasakan oleh kulit.</p>
+            <p><em>Contoh: Angin dingin menyentuh pipiku.</em></p>
+          </div>
+          <div class="feature">
+            <h3>Citraan pengecapan</h3>
+            <p>Menggambarkan rasa yang dapat dikecap oleh lidah.</p>
+            <p><em>Contoh: Manis madu tertinggal di lidah.</em></p>
+          </div>
+          <div class="feature">
+            <h3>Citraan gerak</h3>
+            <p>Menggambarkan gerakan atau aktivitas.</p>
+            <p><em>Contoh: Daun-daun menari ditiup angin.</em></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>3. Kata Konkret</h3>
+        <p>Kata konkret adalah kata yang merujuk pada sesuatu yang dapat ditangkap oleh indra sehingga pembaca lebih mudah membayangkan hal yang dimaksud.</p>
+        <p><strong>Contoh:</strong> hujan, jalan, pohon, batu, laut, dan rumah.</p>
+        <p>Kata-kata tersebut membantu pembaca membentuk gambaran yang lebih jelas ketika membaca puisi.</p>
+        <p><strong>Contoh puisi untuk diamati:</strong> <span class="poem-mark">Hujan Bulan Juni</span></p>
+      </div>
+
+      <div class="info-card">
+        <h3>4. Kata Konotatif</h3>
+        <p>Kata konotatif adalah kata yang memiliki makna tambahan atau makna yang bergeser dari arti sebenarnya karena hubungan atau asosiasi tertentu.</p>
+        <p><strong>Contoh:</strong> kata <em>nyala</em> tidak hanya berarti cahaya api, tetapi dapat digunakan untuk menggambarkan semangat atau harapan.</p>
+        <p><strong>Contoh puisi untuk diamati:</strong> <span class="poem-mark">Candra</span></p>
+      </div>
+
+      <div class="note">
+        <strong>Ingat!</strong> Diksi membantu penyair menyampaikan makna. Majas memperindah ungkapan, pengimajian membangun bayangan indrawi, kata konkret memperjelas gambaran, dan kata konotatif menghadirkan makna tambahan.
+      </div>
+    </section>
+
+    <section id="tema">
+      <h2>4. Tema dan Suasana Puisi</h2>
+
+      <div class="info-card">
+        <h3>A. Tema</h3>
+        <p>Tema adalah gagasan pokok atau ide utama yang ingin disampaikan penyair melalui puisi.</p>
+        <p>Tema dalam puisi sering kali tidak dituliskan secara langsung. Pembaca perlu menemukannya dengan memperhatikan kata-kata penting, gambaran, dan keseluruhan isi puisi.</p>
+        <p>Beberapa contoh tema puisi antara lain:</p>
+        <ul>
+          <li>Ketuhanan.</li>
+          <li>Patriotisme atau cinta tanah air.</li>
+          <li>Kritik sosial.</li>
+          <li>Percintaan.</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>B. Suasana</h3>
+        <p>Suasana adalah perasaan atau keadaan emosional yang muncul dalam diri pembaca setelah membaca sebuah puisi.</p>
+        <p>Suasana dapat dipengaruhi oleh tema, pilihan kata, gambaran, dan cara penyair menyampaikan perasaannya.</p>
+        <p>Contoh suasana dalam puisi:</p>
+        <div class="two-columns">
+          <div class="feature"><h3>Gembira</h3><p>Menghadirkan perasaan senang dan bahagia.</p></div>
+          <div class="feature"><h3>Sedih</h3><p>Membangkitkan perasaan duka atau kehilangan.</p></div>
+          <div class="feature"><h3>Haru</h3><p>Menghadirkan perasaan tersentuh.</p></div>
+          <div class="feature"><h3>Sepi</h3><p>Menggambarkan kesendirian atau kesunyian.</p></div>
+          <div class="feature"><h3>Pasrah</h3><p>Menunjukkan sikap menerima keadaan.</p></div>
+          <div class="feature"><h3>Khidmat</h3><p>Menghadirkan suasana tenang, hormat, dan penuh penghayatan.</p></div>
+        </div>
+      </div>
+
+      <div class="example">
+        <h3>Contoh Analisis: "Tuhan, Kita Begitu Dekat"</h3>
+        <p>Puisi karya Abdul Hadi W. M. dapat digunakan untuk mengamati hubungan antara tema dan suasana.</p>
+        <ul>
+          <li><strong>Tema:</strong> ketuhanan.</li>
+          <li><strong>Suasana:</strong> khidmat dan tenang.</li>
+        </ul>
+        <p>Ketika menganalisis puisi, jangan hanya menyebutkan tema atau suasananya. Jelaskan juga kata atau gambaran dalam puisi yang menjadi alasan jawabanmu.</p>
+      </div>
+
+      <div class="enrichment">
+        <span class="enrichment-label">Latihan Pengamatan</span>
+        <h3>"Gadis Peminta-Minta"</h3>
+        <p>Bacalah puisi karya Toto S. Bachtiar tersebut. Cobalah menemukan tema yang disampaikan penyair dan suasana yang muncul ketika kamu membacanya. Sertakan alasan berdasarkan isi puisi.</p>
+      </div>
+    </section>
+
+    <section id="unsur">
+      <h2>5. Menilai Diksi, Rima, dan Tipografi</h2>
+      <p>Dalam sebuah puisi, diksi, rima, dan tipografi dapat memberikan keindahan sekaligus memengaruhi cara pembaca memahami puisi. Namun, penggunaan unsur-unsur tersebut juga dapat menimbulkan kelebihan dan kekurangan.</p>
+      <p>Karena itu, kita perlu menilainya secara seimbang.</p>
+
+      <div class="info-card">
+        <h3>A. Diksi atau Pilihan Kata</h3>
+        <div class="two-columns">
+          <div class="feature">
+            <h3>Kelebihan</h3>
+            <p>Pilihan kata yang tepat dapat memperkaya ungkapan dan memberikan kedalaman makna pada puisi.</p>
+          </div>
+          <div class="feature">
+            <h3>Kekurangan</h3>
+            <p>Jika terlalu terikat pada aturan pemilihan kata, kebebasan penyair dalam berekspresi dapat menjadi terbatas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>B. Rima</h3>
+        <div class="two-columns">
+          <div class="feature">
+            <h3>Kelebihan</h3>
+            <p>Rima dapat menciptakan keselarasan bunyi, membangun irama, dan membuat puisi lebih mudah diingat.</p>
+          </div>
+          <div class="feature">
+            <h3>Kekurangan</h3>
+            <p>Jika terlalu mengejar kesamaan bunyi, penyair dapat memilih kata yang kurang tepat sehingga makna puisi dikorbankan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>C. Tipografi</h3>
+        <p>Tipografi adalah bentuk atau tata letak tulisan puisi pada halaman, termasuk susunan larik dan bait.</p>
+        <div class="two-columns">
+          <div class="feature">
+            <h3>Kelebihan</h3>
+            <p>Tipografi dapat memberikan dimensi visual dan menciptakan pengalaman membaca yang unik.</p>
+          </div>
+          <div class="feature">
+            <h3>Kekurangan</h3>
+            <p>Tipografi yang terlalu eksperimental dapat mengalihkan perhatian pembaca dari makna puisi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="note">
+        <strong>Hal yang perlu diperhatikan:</strong> Unsur puisi tidak cukup dinilai hanya dari indah atau tidaknya. Kita juga perlu melihat apakah diksi, rima, dan tipografi tersebut mendukung makna serta pesan yang ingin disampaikan penyair.
+      </div>
+
+      <div class="enrichment">
+        <span class="enrichment-label">Bahan Diskusi</span>
+        <h3>Mengamati Dua Puisi</h3>
+        <p>Gunakan puisi <span class="poem-mark">Tapi</span> karya Sutardji Calzoum Bachri dan <span class="poem-mark">Dua Wanita</span> karya Toeti Heraty sebagai bahan pengamatan.</p>
+        <p>Diskusikan kelebihan dan kekurangan penggunaan diksi, rima, serta tipografi pada puisi tersebut. Berikan penilaian dengan alasan yang jelas.</p>
+      </div>
+    </section>
+
+    <section id="membaca">
+      <h2>6. Membacakan Puisi</h2>
+      <p>Membacakan puisi bukan sekadar melafalkan kata-kata. Pembaca perlu memahami isi puisi dan menyampaikan perasaan yang terkandung di dalamnya agar pendengar dapat menangkap makna serta suasananya.</p>
+
+      <h3>Enam Aspek dalam Membacakan Puisi</h3>
+
+      <div class="info-card">
+        <h3>1. Ekspresi Wajah</h3>
+        <p>Ekspresi wajah menunjukkan perasaan yang sesuai dengan isi puisi. Misalnya, wajah dapat menunjukkan kesedihan, kegembiraan, atau ketenangan.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>2. Gerak Tubuh</h3>
+        <p>Gerak tubuh atau gestur digunakan untuk mendukung penyampaian makna. Gerakan sebaiknya wajar dan tidak berlebihan.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>3. Lafal</h3>
+        <p>Lafal adalah kejelasan pengucapan kata. Setiap kata harus diucapkan dengan jelas agar pendengar dapat memahami isi puisi.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>4. Tekanan</h3>
+        <p>Tekanan adalah penekanan pada kata atau bagian tertentu untuk memperkuat maksud dan perasaan yang ingin disampaikan.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>5. Jeda dan Tempo</h3>
+        <p>Jeda adalah penghentian sementara ketika membaca, sedangkan tempo berkaitan dengan cepat atau lambatnya pembacaan. Keduanya membantu membangun irama dan suasana puisi.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>6. Intonasi</h3>
+        <p>Intonasi adalah naik turunnya nada suara ketika membaca puisi. Intonasi yang tepat membantu menyampaikan emosi dan makna puisi.</p>
+      </div>
+
+      <h3>Tiga Gaya Membacakan Puisi</h3>
+      <div class="two-columns">
+        <div class="feature">
+          <h3>1. Tekstual</h3>
+          <p>Pembaca membacakan puisi dengan membawa teks. Sesekali pembaca melihat teks, tetapi tetap berusaha menjaga ekspresi dan komunikasi dengan pendengar.</p>
+        </div>
+        <div class="feature">
+          <h3>2. Deklamasi</h3>
+          <p>Pembaca membawakan puisi tanpa membawa teks karena telah menghafalnya. Pembacaan mengutamakan penghayatan, ekspresi, dan penyampaian yang kuat.</p>
+        </div>
+        <div class="feature">
+          <h3>3. Teatrikal</h3>
+          <p>Pembacaan puisi dilakukan dengan pendekatan pertunjukan. Pembaca dapat menggunakan gerak, kostum, musik, dan panggung untuk memperkuat suasana puisi.</p>
+        </div>
+      </div>
+
+      <h3>Memberi Tanda Jeda dalam Puisi</h3>
+      <p>Sebelum membacakan puisi, kamu dapat memberi tanda pada bagian-bagian tertentu untuk membantu mengatur jeda dan pembacaan.</p>
+
+      <div class="pause-list">
+        <div class="pause-item">
+          <strong>/</strong>
+          Jeda pendek.
+        </div>
+        <div class="pause-item">
+          <strong>//</strong>
+          Jeda lebih panjang.
+        </div>
+        <div class="pause-item">
+          <strong>///</strong>
+          Tanda akhir bait.
+        </div>
+      </div>
+
+      <div class="enrichment">
+        <span class="enrichment-label">Latihan Praktik</span>
+        <h3>Membaca dan Menghayati Puisi</h3>
+        <ol>
+          <li>Bacalah puisi <span class="poem-mark">Sajak Seonggok Jagung</span> karya W. S. Rendra.</li>
+          <li>Tandai bagian yang perlu diberi jeda dan tekanan.</li>
+          <li>Latih pembacaan dengan memperhatikan ekspresi, gerak tubuh, lafal, tekanan, jeda, tempo, dan intonasi.</li>
+          <li>Bacakan puisi <span class="poem-mark">Membaca Tanda-Tanda</span> karya Taufiq Ismail.</li>
+          <li>Mintalah teman memberikan penilaian dan masukan terhadap penampilanmu.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="musikalisasi">
+      <h2>7. Musikalisasi Puisi</h2>
+      <p>Musikalisasi puisi adalah kegiatan memadukan teks puisi dengan musik. Dalam kegiatan ini, musik digunakan untuk mendukung suasana, perasaan, dan makna yang terkandung dalam puisi.</p>
+      <p>Musikalisasi puisi bukan sekadar memberikan musik sebagai latar. Musik dan pembacaan puisi perlu disesuaikan agar keduanya saling mendukung.</p>
+
+      <h3>Langkah-Langkah Musikalisasi Puisi</h3>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div>
+          <h3>Pilih puisi yang sederhana</h3>
+          <p>Pilih puisi yang dapat dipahami dan memiliki suasana yang mudah dikembangkan melalui musik.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div>
+          <h3>Pahami makna puisi</h3>
+          <p>Bacalah puisi dengan saksama. Kenali tema, suasana, dan perasaan yang ingin disampaikan penyair.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div>
+          <h3>Pilih alat musik</h3>
+          <p>Tentukan alat musik yang sesuai dengan suasana puisi. Beberapa alat musik yang dapat digunakan antara lain gitar, biola, dan piano.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div>
+          <h3>Tentukan nada dan irama</h3>
+          <p>Sesuaikan nada serta irama musik dengan isi dan suasana puisi agar perpaduannya terasa selaras.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">5</div>
+        <div>
+          <h3>Berlatih sebelum tampil</h3>
+          <p>Lakukan latihan bersama untuk menyelaraskan pembacaan puisi dengan musik. Pastikan musik tidak menutupi suara pembaca.</p>
+        </div>
+      </div>
+
+      <div class="note">
+        <strong>Tips:</strong> Musik yang sederhana dapat menjadi pilihan yang baik. Hal terpenting adalah musik tersebut mendukung suasana dan makna puisi, bukan mengalihkan perhatian pendengar dari isi puisi.
+      </div>
+    </section>
+
+    <section id="resensi">
+      <h2>8. Menulis Resensi Antologi Puisi</h2>
+      <p>Resensi antologi puisi adalah tulisan yang berisi ulasan atau penilaian terhadap sebuah buku kumpulan puisi. Melalui resensi, pembaca dapat mengetahui gambaran isi buku, kelebihan, kekurangan, serta hal-hal menarik yang terdapat di dalamnya.</p>
+
+      <h3>Unsur-Unsur Resensi Antologi Puisi</h3>
+
+      <div class="info-card">
+        <h3>1. Judul Resensi</h3>
+        <p>Judul yang menggambarkan isi atau sudut pandang ulasan terhadap buku yang dibahas.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>2. Identitas Buku</h3>
+        <p>Informasi mengenai buku yang diresensi, seperti judul buku, nama penulis, penerbit, tahun terbit, dan informasi lain yang tersedia.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>3. Orientasi</h3>
+        <p>Bagian pengantar yang memperkenalkan buku dan memberikan gambaran awal mengenai antologi puisi yang diulas.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>4. Sinopsis</h3>
+        <p>Ringkasan isi buku atau gambaran umum puisi-puisi yang terdapat di dalam antologi.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>5. Analisis</h3>
+        <p>Pembahasan mengenai unsur-unsur puisi, seperti tema, diksi, gaya bahasa, suasana, dan hal lain yang menonjol dalam buku.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>6. Evaluasi</h3>
+        <p>Penilaian terhadap kelebihan dan kekurangan buku. Bagian ini dapat berisi kritik serta saran yang disampaikan secara objektif.</p>
+      </div>
+
+      <h3>Langkah-Langkah Menulis Resensi</h3>
+
+      <div class="step">
+        <div class="step-number">1</div>
+        <div>
+          <h3>Pilih antologi puisi</h3>
+          <p>Tentukan buku kumpulan puisi yang akan diulas.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">2</div>
+        <div>
+          <h3>Baca dan analisis buku</h3>
+          <p>Baca puisi-puisi dalam antologi, lalu perhatikan bentuk, tema, dan makna yang disampaikan.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">3</div>
+        <div>
+          <h3>Catat kelebihan dan kekurangan</h3>
+          <p>Catat hal-hal yang menjadi kekuatan buku serta bagian yang menurutmu masih memiliki kekurangan. Sertakan kritik dan saran yang sesuai.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div>
+          <h3>Susun resensi</h3>
+          <p>Tuliskan hasil pengamatan dengan memperhatikan unsur-unsur resensi, mulai dari judul hingga evaluasi.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">5</div>
+        <div>
+          <h3>Periksa dan revisi</h3>
+          <p>Baca kembali tulisanmu. Perbaiki bagian yang kurang jelas, kesalahan penulisan, dan susunan gagasan agar resensi mudah dipahami.</p>
+        </div>
+      </div>
+
+      <div class="note">
+        <strong>Hal penting:</strong> Resensi yang baik tidak hanya menceritakan isi buku. Resensi juga memberikan penilaian yang disertai alasan sehingga pembaca memperoleh gambaran yang lebih lengkap tentang buku tersebut.
+      </div>
+    </section>
+
+    <section id="aktivitas">
+      <h2>9. Aktivitas Pembelajaran</h2>
+
+      <div class="info-card">
+        <h3>Aktivitas 1 — Mengidentifikasi Diksi</h3>
+        <p>Pilih sebuah puisi, kemudian temukan contoh majas, pengimajian, kata konkret, dan kata konotatif yang digunakan penyair. Jelaskan pengaruh pilihan kata tersebut terhadap makna puisi.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Aktivitas 2 — Menemukan Tema dan Suasana</h3>
+        <p>Bacalah puisi secara saksama. Tentukan tema dan suasana yang muncul. Tuliskan kata atau bagian puisi yang menjadi dasar jawabanmu.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Aktivitas 3 — Menilai Unsur Puisi</h3>
+        <p>Diskusikan kelebihan dan kekurangan diksi, rima, serta tipografi dalam sebuah puisi. Nilailah apakah unsur-unsur tersebut mendukung makna dan pesan puisi.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Aktivitas 4 — Praktik Membacakan Puisi</h3>
+        <p>Pilih sebuah puisi, beri tanda jeda dan tekanan, kemudian bacakan di depan kelas. Perhatikan ekspresi wajah, gerak tubuh, lafal, tekanan, jeda, tempo, dan intonasi.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Aktivitas 5 — Membuat Musikalisasi Puisi</h3>
+        <p>Bentuk kelompok. Pilih puisi, pahami maknanya, tentukan alat musik dan irama yang sesuai, lalu berlatihlah untuk menampilkan musikalisasi puisi di depan kelas.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Aktivitas 6 — Menulis Resensi Antologi Puisi</h3>
+        <p>Pilih sebuah antologi puisi. Baca dan analisis isinya, catat kelebihan serta kekurangannya, kemudian susun resensi dengan memperhatikan unsur-unsur yang telah dipelajari.</p>
+      </div>
+    </section>
+
+    <section id="refleksi">
+      <h2>10. Refleksi dan Evaluasi</h2>
+
+      <div class="reflection">
+        <h3>Refleksi Diri</h3>
+        <p>Setelah mempelajari materi ini, renungkan beberapa pertanyaan berikut:</p>
+        <ol>
+          <li>Apakah saya sudah memahami pengertian dan karakteristik puisi?</li>
+          <li>Dapatkah saya membedakan majas, pengimajian, kata konkret, dan kata konotatif?</li>
+          <li>Bagaimana cara saya menemukan tema dan suasana dalam puisi?</li>
+          <li>Apakah saya sudah mampu membacakan puisi dengan penghayatan yang tepat?</li>
+          <li>Bagian mana dari musikalisasi puisi yang paling menarik bagi saya?</li>
+          <li>Apakah saya sudah memahami unsur-unsur yang harus ada dalam resensi antologi puisi?</li>
+        </ol>
+      </div>
+
+      <h3>Uji Pemahaman</h3>
+      <p>Jawablah pertanyaan berikut untuk mengukur pemahamanmu terhadap materi.</p>
+      <ol>
+        <li>Jelaskan pengertian puisi dengan bahasamu sendiri.</li>
+        <li>Apa perbedaan puisi dan teks naratif jika dilihat dari bentuk serta bahasanya?</li>
+        <li>Apa yang dimaksud dengan diksi? Mengapa pemilihan kata penting dalam puisi?</li>
+        <li>Sebutkan empat unsur yang berkaitan dengan diksi dalam materi ini.</li>
+        <li>Jelaskan perbedaan kata konkret dan kata konotatif. Berikan masing-masing satu contoh.</li>
+        <li>Apa perbedaan tema dan suasana dalam puisi?</li>
+        <li>Sebutkan tiga unsur puisi yang dapat dinilai kelebihan dan kekurangannya.</li>
+        <li>Sebutkan enam aspek yang perlu diperhatikan ketika membacakan puisi.</li>
+        <li>Apa perbedaan gaya pembacaan tekstual, deklamasi, dan teatrikal?</li>
+        <li>Jelaskan langkah-langkah melakukan musikalisasi puisi.</li>
+        <li>Sebutkan enam unsur resensi antologi puisi.</li>
+        <li>Mengapa penilaian dalam resensi perlu disertai alasan yang jelas?</li>
+      </ol>
+
+      <div class="enrichment">
+        <span class="enrichment-label">Tugas Pengembangan</span>
+        <h3>Berkarya Melalui Puisi</h3>
+        <p>Pilih satu puisi yang kamu sukai. Analisis unsur-unsurnya, tentukan tema dan suasananya, kemudian bacakan dengan penghayatan yang tepat. Jika memungkinkan, kembangkan pembacaan tersebut menjadi musikalisasi puisi bersama teman-temanmu.</p>
+      </div>
+    </section>
+
+    <section id="kesimpulan">
+      <h2>11. Kesimpulan</h2>
+      <p>Puisi merupakan karya sastra yang mengungkapkan pikiran, gagasan, dan perasaan melalui pilihan kata yang indah, padat, serta dapat mengandung makna kiasan. Untuk memahami puisi, pembaca perlu memperhatikan diksi, majas, pengimajian, kata konkret, kata konotatif, tema, dan suasana.</p>
+      <p>Selain memahami isi puisi, kita juga dapat menilai penggunaan diksi, rima, dan tipografi. Puisi dapat diekspresikan melalui pembacaan dengan memperhatikan ekspresi wajah, gerak tubuh, lafal, tekanan, jeda, tempo, dan intonasi.</p>
+      <p>Puisi juga dapat dikembangkan menjadi musikalisasi dan dikaji melalui penulisan resensi antologi puisi.</p>
+
+      <div class="note">
+        <strong>Pesan utama:</strong> Puisi mengajarkan kita untuk memahami makna di balik kata-kata, merasakan keindahan bahasa, dan mengekspresikan gagasan serta perasaan melalui karya sastra.
+      </div>
+    </section>
+
+    <section id="kelas-virtual">
+      <h2>Belajar Lebih Lanjut: Kelas Virtual</h2>
+      <div class="reflection">
+        <h3>Jelajahi Kelas Virtual Mandala Aksara</h3>
+        <p>Untuk memperdalam pemahaman tentang puisi, silakan kunjungi ruang pembelajaran virtual Mandala Aksara. Di sana peserta didik dapat menyimak video pembelajaran dan materi audiovisual lainnya.</p>
+        <a class="video-link" href="https://mandalaaksara.github.io/kelas-virtual.html">Kunjungi Kelas Virtual →</a>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="final-quote">
+  “Puisi adalah cara sederhana untuk mengungkapkan perasaan, tetapi mampu menyimpan makna yang begitu dalam.”
+  <span>— Mandala Aksara</span>
+</div>
+
+<footer class="site-footer">
+  <p>© 2026 <strong>Mandala Aksara</strong> · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+
+  menuToggle.addEventListener('click', () => {
+    const open = mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
+
+  document.querySelectorAll('.nav-trigger').forEach(button => {
+    button.addEventListener('click', () => {
+      button.parentElement.classList.toggle('expanded');
+    });
+  });
+
+  const sections = [...document.querySelectorAll('.content section')];
+  const links = [...document.querySelectorAll('.sidebar a')];
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(link => {
+          link.classList.toggle(
+            'active',
+            link.getAttribute('href') === '#' + entry.target.id
+          );
+        });
+      }
+    });
+  }, {rootMargin: '-25% 0px -65% 0px'});
+
+  sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
