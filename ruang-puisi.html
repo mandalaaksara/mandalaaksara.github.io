@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ruang Puisi | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --navy-dark: #0D203A;
+      --orange: #F28C28;
+      --gold: #C69A45;
+      --cream: #F7F5F0;
+      --text: #29384B;
+      --muted: #758092;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+    }
+
+    /* HERO */
+    .poetry-hero {
+      background:
+        linear-gradient(120deg, rgba(13,32,58,.96), rgba(20,43,74,.91)),
+        url("https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1600")
+        center/cover;
+      color: white;
+      text-align: center;
+      padding: 85px 22px 90px;
+      border-bottom: 5px solid var(--orange);
+    }
+
+    .hero-label {
+      color: #E9C98C;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+
+    .poetry-hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(38px, 6vw, 58px);
+      margin: 0 0 18px;
+      font-weight: normal;
+    }
+
+    .poetry-hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #E5EAF0;
+      line-height: 1.9;
+      font-size: 16px;
+    }
+
+    /* CONTENT */
+    .poetry-content {
+      max-width: 1150px;
+      margin: auto;
+      padding: 65px 22px 85px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .section-heading .eyebrow {
+      color: #B17C32;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: clamp(27px, 4vw, 36px);
+      margin: 12px 0;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      line-height: 1.8;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* POEM CARDS */
+    .poetry-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .poetry-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 280px;
+      padding: 32px;
+      background: #fff;
+      border: 1px solid #E9E3D8;
+      border-radius: 15px;
+      box-shadow: 0 7px 24px rgba(20,43,74,.07);
+      transition: .3s ease;
+      overflow: hidden;
+    }
+
+    .poetry-card::before {
+      content: "“";
+      position: absolute;
+      top: 5px;
+      right: 23px;
+      font-family: Georgia, serif;
+      font-size: 115px;
+      line-height: 1;
+      color: rgba(198,154,69,.14);
+      pointer-events: none;
+    }
+
+    .poetry-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 14px 32px rgba(20,43,74,.13);
+      border-color: var(--gold);
+    }
+
+    .poetry-number {
+      color: #B17C32;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      font-weight: bold;
+    }
+
+    .poetry-card h3 {
+      position: relative;
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: 32px;
+      font-weight: normal;
+      margin: 0 0 12px;
+    }
+
+    .poetry-card .author {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .poetry-card .preview {
+      color: #687486;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 15px;
+      line-height: 1.9;
+      margin: 0;
+    }
+
+    .read-link {
+      display: inline-block;
+      margin-top: 25px;
+      color: #B87523;
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: .4px;
+    }
+
+    .poetry-card button {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+      border: 0;
+      background: transparent;
+    }
+
+    .poetry-card:focus-within {
+      outline: 3px solid var(--orange);
+      outline-offset: 3px;
+    }
+
+    /* READER */
+    .reader-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(7, 19, 34, .82);
+      padding: 25px 15px;
+      overflow-y: auto;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .reader-overlay.active {
+      display: flex;
+    }
+
+    .reader {
+      position: relative;
+      background: #FFFEFA;
+      width: 100%;
+      max-width: 760px;
+      margin: auto;
+      padding: 55px 65px 60px;
+      border-radius: 12px;
+      box-shadow: 0 20px 70px rgba(0,0,0,.25);
+      animation: appear .3s ease;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .close-reader {
+      position: absolute;
+      top: 18px;
+      right: 22px;
+      border: 0;
+      background: transparent;
+      color: var(--navy);
+      font-size: 28px;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+
+    .reader-label {
+      text-align: center;
+      color: #B17C32;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .reader h2 {
+      font-family: Georgia, serif;
+      color: var(--navy);
+      font-size: clamp(32px, 5vw, 43px);
+      font-weight: normal;
+      text-align: center;
+      margin: 0 0 12px;
+    }
+
+    .reader-author {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .reader-divider {
+      width: 55px;
+      height: 2px;
+      background: var(--gold);
+      margin: 30px auto 35px;
+    }
+
+    .poem-text {
+      font-family: Georgia, serif;
+      color: #344052;
+      font-size: 17px;
+      line-height: 2;
+      text-align: center;
+      white-space: pre-line;
+    }
+
+    .reader-footer {
+      border-top: 1px solid #E9E3D8;
+      margin-top: 40px;
+      padding-top: 22px;
+      text-align: center;
+      color: #A17B43;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    /* NOTE */
+    .poetry-note {
+      text-align: center;
+      max-width: 700px;
+      margin: 55px auto 0;
+      padding: 27px;
+      border-top: 1px solid #DED5C6;
+      color: #788294;
+      font-family: Georgia, serif;
+      font-style: italic;
+      line-height: 1.9;
+    }
+
+    footer {
+      background: var(--navy-dark);
+      color: #E6EAF0;
+      text-align: center;
+      padding: 28px 20px;
+      line-height: 1.8;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      .poetry-hero {
+        padding: 65px 20px;
+      }
+
+      .poetry-content {
+        padding: 45px 17px 60px;
+      }
+
+      .poetry-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .poetry-card {
+        min-height: 245px;
+        padding: 27px;
+      }
+
+      .reader {
+        padding: 55px 23px 38px;
+      }
+
+      .poem-text {
+        font-size: 16px;
+        line-height: 1.9;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <div>
+      <strong>MANDALA AKSARA</strong>
+      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+    </div>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle"
+          aria-label="Buka navigasi" aria-expanded="false">☰</button>
+
+  <nav id="mainNav" aria-label="Navigasi utama">
+    <a href="index.html">Beranda</a>
+
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger">
+        Materi Pembelajaran <span>⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html" class="active">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="poetry-hero">
+    <div class="hero-label">Perpustakaan Digital · Karya Sastra</div>
+    <h1>Ruang Puisi</h1>
+    <p>
+      Ada rasa yang tak selalu mampu diucapkan,
+      ada kisah yang hanya dapat disampaikan melalui kata.
+      Selamat datang di ruang tempat imajinasi, perasaan,
+      dan kehidupan menjelma menjadi puisi.
+    </p>
+  </section>
+
+  <section class="poetry-content">
+
+    <div class="section-heading">
+      <div class="eyebrow">Koleksi Sastra</div>
+      <h2>Menelusuri Jejak Kata</h2>
+      <p>
+        Setiap puisi menyimpan dunia tersendiri.
+        Pilih sebuah judul, masuklah ke dalamnya,
+        dan temukan makna di antara baris-barisnya.
+      </p>
+    </div>
+
+    <div class="poetry-grid">
+
+      <!-- PUISI 1 -->
+      <article class="poetry-card">
+        <div>
+          <div class="poetry-number">Koleksi 01</div>
+          <h3>Kahwa</h3>
+          <div class="author">Oleh Mandala Aksara</div>
+          <p class="preview">
+            Hitam tumpat dirimu<br>
+            Sangkala yg bisa menikmati<br>
+            Asap raksi begitu menggoda...
+          </p>
+        </div>
+        <span class="read-link">Baca puisi →</span>
+        <button type="button" onclick="openPoem('kahwa')"
+                aria-label="Baca puisi Kahwa"></button>
+      </article>
+
+      <!-- PUISI 2 -->
+      <article class="poetry-card">
+        <div>
+          <div class="poetry-number">Koleksi 02</div>
+          <h3>2</h3>
+          <div class="author">Oleh Mandala Aksara</div>
+          <p class="preview">
+            Bayati...<br>
+            Kelak tatkala sira bulug<br>
+            Kelak dikau merenta...
+          </p>
+        </div>
+        <span class="read-link">Baca puisi →</span>
+        <button type="button" onclick="openPoem('dua')"
+                aria-label="Baca puisi 2"></button>
+      </article>
+
+    </div>
+
+    <div class="poetry-note">
+      “Kata-kata mungkin sederhana, tetapi makna yang dikandungnya
+      dapat menjangkau kedalaman rasa manusia.”
+      <br><br>
+      — Mandala Aksara
+    </div>
+
+  </section>
+
+</main>
+
+<!-- PEMBACA PUISI -->
+<div class="reader-overlay" id="readerOverlay"
+     role="dialog" aria-modal="true" aria-labelledby="readerTitle"
+     onclick="closeOnBackdrop(event)">
+
+  <article class="reader">
+    <button class="close-reader" onclick="closePoem()"
+            aria-label="Tutup puisi">&times;</button>
+
+    <div class="reader-label">Ruang Puisi · Mandala Aksara</div>
+    <h2 id="readerTitle"></h2>
+    <div class="reader-author">Mandala Aksara</div>
+
+    <div class="reader-divider"></div>
+
+    <div class="poem-text" id="poemText"></div>
+
+    <div class="reader-footer">
+      Mandala Aksara · Menjelajah Kata, Mendalami Makna
+    </div>
+  </article>
+</div>
+
+<footer>
+  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+</footer>
+
+<script>
+  // NAVIGASI
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggle.setAttribute(
+        'aria-expanded',
+        nav.classList.contains('open')
+      );
+    });
+  }
+
+  document.querySelectorAll('.nav-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (window.matchMedia('(max-width: 1050px)').matches) {
+        btn.parentElement.classList.toggle('expanded');
+      }
+    });
+  });
+
+  // DATA PUISI
+  const poems = {
+    kahwa: {
+      title: 'Kahwa',
+      text: `Hitam tumpat dirimu
+Sangkala yg bisa menikmati
+asap raksi begitu menggoda
+Halusnya dirimu begitu sempurna
+
+Asam manis pahit berlenggang
+Pantulan inspirasi singgah
+Kau pacak bersanding dengan cerutu
+Eloknya negeri fana ketika kau, dia dan aku bertaut.`
+    },
+
+    dua: {
+      title: '2',
+      text: `Bayati...
+Kelak tatkala sira bulug
+Kelak dikau merenta
+Ampunilah segala khilaf
+Dikau direnggut belahan jiwa
+
+Dahulu...
+Bulir air mata luruh
+Selembut rinai yang mengalir
+Tatkala memandang dikau beradu lena
+Malam pun menunduk, ikut berjaga
+
+Impian permai dalam lelapmu
+Senantiasa bersemayam dalam doa sujudku
+Cita-cita yang kau toreh
+Niscaya kuikhtiarkan sepanjang hayat
+
+Ananda...
+Ampun jika murkaku melukai sukmamu
+Ampun jika raga ini menggentarkan
+Kerasku adalah kasih yang salah berbusana
+Semua itu lantaran hamba menyayangi kalian`
+    }
+  };
+
+  // BUKA PUISI
+  function openPoem(id) {
+    const poem = poems[id];
+    if (!poem) return;
+
+    document.getElementById('readerTitle').textContent = poem.title;
+    document.getElementById('poemText').textContent = poem.text;
+
+    const overlay = document.getElementById('readerOverlay');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    document.querySelector('.close-reader').focus();
+  }
+
+  // TUTUP PUISI
+  function closePoem() {
+    document.getElementById('readerOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function closeOnBackdrop(event) {
+    if (event.target.id === 'readerOverlay') {
+      closePoem();
+    }
+  }
+
+  // TUTUP DENGAN TOMBOL ESC
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      closePoem();
+    }
+  });
+</script>
+
+</body>
+</html>
