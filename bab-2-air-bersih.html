@@ -209,6 +209,28 @@
       border-left: 3px solid transparent;
     }
 
+    .sidebar {
+      min-width: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .sidebar .sidebar-links {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      width: 100%;
+      gap: 3px;
+    }
+
+.sidebar .sidebar-links a {
+  display: block !important;
+  width: 100%;
+  white-space: normal !important;
+  overflow-wrap: break-word;
+  flex: none !important;
+  box-sizing: border-box;
+}
     .sidebar a:hover {
       background: #fff5e9;
       color: var(--navy);
