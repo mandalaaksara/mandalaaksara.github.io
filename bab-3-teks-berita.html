@@ -1,0 +1,1368 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materi Bahasa Indonesia Kelas XI Fase F tentang teks berita, unsur 5W+1H, struktur berita, ciri kebahasaan, fakta, opini, hoaks, dan praktik menulis berita.">
+  <meta name="author" content="Mandala Aksara">
+  <title>BAB 3: Teks Berita – Mandala Aksara</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --navy: #142b4a;
+      --navy2: #0d203a;
+      --orange: #f28c28;
+      --gold: #c69a45;
+      --paper: #fff;
+      --soft: #f3f5f8;
+      --ink: #26364b;
+      --muted: #657386;
+      --line: #e3e8ef;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f9;
+      color: var(--ink);
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .topbar {
+      background: var(--navy2);
+      color: white;
+      padding: 14px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      font-family: Georgia, serif;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 1.3;
+    }
+
+    .brand-subtitle {
+      font-size: 11px;
+      color: #d4dce7;
+      letter-spacing: .3px;
+    }
+
+    .topnav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .topnav a {
+      color: #f2f5f9;
+      text-decoration: none;
+      font-size: 13px;
+      transition: .2s;
+    }
+
+    .topnav a:hover {
+      color: var(--orange);
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #0d203a, #1c4268);
+      color: white;
+      padding: 48px 5% 55px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "MA";
+      position: absolute;
+      right: 5%;
+      bottom: -70px;
+      font-family: Georgia, serif;
+      font-size: 220px;
+      font-weight: bold;
+      color: rgba(255,255,255,.035);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #ffc078;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2;
+      margin: 0 0 14px;
+      max-width: 850px;
+    }
+
+    .hero p {
+      color: #dce5ef;
+      max-width: 750px;
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .hero-meta span {
+      border: 1px solid rgba(255,255,255,.22);
+      background: rgba(255,255,255,.08);
+      border-radius: 30px;
+      padding: 6px 13px;
+      font-size: 12px;
+    }
+
+    .breadcrumb {
+      max-width: 1200px;
+      margin: 18px auto 0;
+      padding: 0 5%;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .breadcrumb a {
+      text-decoration: none;
+      color: var(--navy);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 24px auto 60px;
+      padding: 0 5%;
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .sidebar {
+      min-width: 0;
+      width: 100%;
+      overflow: hidden;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px 16px;
+      position: sticky;
+      top: 18px;
+      box-shadow: 0 5px 18px rgba(20,43,74,.05);
+    }
+
+    .sidebar h3 {
+      font-family: Georgia, serif;
+      color: var(--navy);
+      font-size: 18px;
+      margin: 0 0 5px;
+    }
+
+    .sidebar-desc {
+      font-size: 11px;
+      color: var(--muted);
+      margin: 0 0 15px;
+    }
+
+    .sidebar-links {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      width: 100%;
+      gap: 3px;
+    }
+
+    .sidebar a {
+      display: block !important;
+      width: 100%;
+      text-decoration: none;
+      color: #45566b;
+      padding: 8px 10px;
+      border-radius: 7px;
+      font-size: 13px;
+      line-height: 1.5;
+      border-left: 3px solid transparent;
+      white-space: normal !important;
+      overflow-wrap: break-word;
+      flex: none !important;
+      transition: .2s;
+    }
+
+    .sidebar a:hover {
+      background: #f1f5fa;
+      color: var(--navy);
+      border-left-color: var(--orange);
+    }
+
+    .sidebar .sidebar-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #9aa5b3;
+      letter-spacing: 1.2px;
+      font-weight: bold;
+      margin: 15px 0 5px;
+    }
+
+    .content {
+      min-width: 0;
+    }
+
+    .intro-card {
+      background: linear-gradient(135deg, #fff, #fffaf2);
+      border: 1px solid #f0e5d2;
+      border-left: 5px solid var(--orange);
+      border-radius: 12px;
+      padding: 22px 25px;
+      margin-bottom: 20px;
+    }
+
+    .intro-card strong {
+      color: var(--navy);
+    }
+
+    .section {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 18px rgba(20,43,74,.035);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section::after {
+      content: "MANDALA AKSARA";
+      position: absolute;
+      right: 12px;
+      bottom: 4px;
+      font-family: Georgia, serif;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: rgba(20,43,74,.025);
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    .section > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .section h2 {
+      font-family: Georgia, serif;
+      font-size: 24px;
+      color: var(--navy);
+      line-height: 1.35;
+      margin: 0 0 17px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #f0a34f;
+    }
+
+    .section h3 {
+      color: var(--navy);
+      font-size: 18px;
+      margin: 24px 0 9px;
+    }
+
+    .section h4 {
+      color: #354e6b;
+      font-size: 15px;
+      margin: 18px 0 7px;
+    }
+
+    .section p {
+      margin: 10px 0;
+      text-align: justify;
+    }
+
+    .section ul,
+    .section ol {
+      padding-left: 23px;
+      margin: 10px 0;
+    }
+
+    .section li {
+      margin: 6px 0;
+    }
+
+    .section strong {
+      color: #1e3b5e;
+    }
+
+    .definition {
+      background: #f2f6fb;
+      border-left: 4px solid var(--navy);
+      border-radius: 8px;
+      padding: 15px 18px;
+      margin: 16px 0;
+    }
+
+    .example {
+      background: #fff9ef;
+      border: 1px solid #f2dfbf;
+      border-radius: 10px;
+      padding: 17px 19px;
+      margin: 15px 0;
+    }
+
+    .example-title {
+      color: #9a5b14;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      margin-bottom: 8px;
+    }
+
+    .note {
+      background: #f1f5fa;
+      border-radius: 9px;
+      padding: 14px 17px;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    .warning {
+      background: #fff4ed;
+      border-left: 4px solid #e47b38;
+      border-radius: 8px;
+      padding: 14px 17px;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 15px 0;
+      border-radius: 9px;
+      border: 1px solid var(--line);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 500px;
+      font-size: 14px;
+    }
+
+    th {
+      background: var(--navy);
+      color: white;
+      text-align: left;
+      padding: 12px;
+    }
+
+    td {
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #f7f9fc;
+    }
+
+    .pyramid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      margin: 22px auto;
+      max-width: 560px;
+    }
+
+    .pyramid-item {
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    .pyramid-item strong {
+      color: white;
+      display: block;
+      font-family: Georgia, serif;
+      font-size: 17px;
+    }
+
+    .pyramid-item span {
+      display: block;
+      font-size: 12px;
+      opacity: .9;
+    }
+
+    .pyramid-item.one {
+      width: 55%;
+      background: #17385c;
+    }
+
+    .pyramid-item.two {
+      width: 76%;
+      background: #24527b;
+    }
+
+    .pyramid-item.three {
+      width: 100%;
+      background: #d88935;
+    }
+
+    .pyramid-arrow {
+      color: var(--orange);
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .news-sample {
+      border: 1px solid #e6eaf0;
+      border-radius: 10px;
+      padding: 22px;
+      background: #fff;
+      margin: 15px 0;
+    }
+
+    .news-sample h3 {
+      font-family: Georgia, serif;
+      font-size: 21px;
+      line-height: 1.4;
+      margin: 0 0 12px;
+      color: var(--navy);
+    }
+
+    .news-sample p {
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .news-location {
+      color: #a46b25;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: .5px;
+    }
+
+    .activity {
+      background: linear-gradient(135deg, #f1f5fa, #fff9ef);
+      border: 1px solid #e6eaf0;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px 0;
+    }
+
+    .activity h3 {
+      margin-top: 0;
+    }
+
+    .reflection {
+      background: #f7f5ef;
+      border: 1px solid #eee5d4;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .reflection li {
+      margin-bottom: 12px;
+    }
+
+    .closing {
+      text-align: center;
+      padding: 30px 20px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      margin-bottom: 20px;
+    }
+
+    .closing blockquote {
+      margin: 0 auto 10px;
+      max-width: 650px;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.6;
+      color: var(--navy);
+    }
+
+    .closing span {
+      color: #a46b25;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .page-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .page-nav a {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--navy);
+      color: white;
+      padding: 11px 17px;
+      border-radius: 8px;
+      font-size: 13px;
+      transition: .2s;
+    }
+
+    .page-nav a:hover {
+      background: var(--orange);
+      color: #172b43;
+    }
+
+    footer {
+      background: var(--navy2);
+      color: #dce4ed;
+      text-align: center;
+      padding: 28px 5%;
+      font-size: 12px;
+    }
+
+    footer strong {
+      color: white;
+      font-family: Georgia, serif;
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 850px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .sidebar-links {
+        display: flex !important;
+        flex-direction: column !important;
+      }
+
+      .sidebar a {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .topbar {
+        padding: 12px 5%;
+      }
+
+      .topnav {
+        gap: 12px;
+      }
+
+      .topnav a {
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 36px 5% 42px;
+      }
+
+      .container {
+        margin-top: 16px;
+        padding: 0 4%;
+      }
+
+      .section {
+        padding: 21px 18px;
+      }
+
+      .section h2 {
+        font-size: 21px;
+      }
+
+      .intro-card {
+        padding: 18px;
+      }
+
+      .pyramid-item.one {
+        width: 68%;
+      }
+
+      .pyramid-item.two {
+        width: 85%;
+      }
+
+      .closing blockquote {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+      <div>
+        <div class="brand-name">MANDALA AKSARA</div>
+        <div class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</div>
+      </div>
+    </div>
+
+    <nav class="topnav">
+      <a href="index.html">Beranda</a>
+      <a href="perpustakaan-digital.html">Perpustakaan Digital</a>
+      <a href="kelas-xi.html">Kelas XI</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Pembelajaran Bahasa Indonesia · Fase F</span>
+      <h1>BAB 3: Teks Berita</h1>
+      <p>Fakta Teraktual: Memahami Peristiwa, Memeriksa Kebenaran Informasi, dan Menyampaikan Berita secara Bertanggung Jawab.</p>
+      <div class="hero-meta">
+        <span>Kelas XI</span>
+        <span>Fase F</span>
+        <span>Materi Pembelajaran</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="breadcrumb">
+    <a href="index.html">Beranda</a> &nbsp;›&nbsp;
+    <a href="kelas-xi.html">Kelas XI</a> &nbsp;›&nbsp;
+    BAB 3: Teks Berita
+  </div>
+
+  <main class="container">
+
+    <aside class="sidebar">
+      <h3>Jelajahi Materi</h3>
+      <p class="sidebar-desc">BAB 3 · Teks Berita</p>
+
+      <div class="sidebar-links">
+        <a href="#pengantar">1. Pengantar Materi</a>
+        <a href="#pengertian">2. Pengertian Teks Berita</a>
+        <a href="#unsur">3. Unsur 5W + 1H</a>
+        <a href="#struktur">4. Struktur Teks Berita</a>
+        <a href="#kebahasaan">5. Ciri Kebahasaan</a>
+        <a href="#menilai">6. Cerdas Menilai Berita</a>
+        <a href="#menulis">7. Langkah Menulis Berita</a>
+        <a href="#contoh">8. Contoh dan Analisis</a>
+        <a href="#aktivitas">9. Aktivitas Reporter</a>
+        <a href="#latihan">10. Latihan Pemahaman</a>
+        <a href="#refleksi">11. Refleksi</a>
+        <a href="#rangkuman">12. Rangkuman</a>
+      </div>
+
+      <div class="sidebar-label">Navigasi Kelas</div>
+      <div class="sidebar-links">
+        <a href="kelas-xi.html">← Kembali ke Materi Kelas XI</a>
+        <a href="bab-1-energi-bersih.html">BAB 1 · Teks Argumentasi</a>
+        <a href="bab-2-air-bersih.html">BAB 2 · Teks Persuasi</a>
+        <a href="kelas-virtual.html">Kelas Virtual →</a>
+      </div>
+    </aside>
+
+    <div class="content">
+
+      <div class="intro-card" id="pengantar">
+        <strong>Pengantar Pembelajaran</strong>
+        <p>Setiap hari kita menerima berbagai informasi melalui televisi, radio, situs berita, dan media sosial. Ada informasi tentang pendidikan, lingkungan, kesehatan, olahraga, hingga peristiwa yang terjadi di sekitar kita. Namun, apakah semua informasi tersebut benar? Bagaimana kita mengetahui bahwa sebuah berita dapat dipercaya?</p>
+        <p>Melalui materi ini, kalian akan belajar memahami teks berita, menemukan unsur-unsurnya, menilai kebenaran informasi, serta menyusun berita berdasarkan fakta. Keterampilan ini penting agar kita tidak mudah percaya atau ikut menyebarkan informasi yang belum jelas kebenarannya.</p>
+      </div>
+
+      <section class="section" id="pengertian">
+        <h2>1. Apa Itu Teks Berita?</h2>
+
+        <div class="definition">
+          <strong>Pengertian Teks Berita</strong>
+          <p>Teks berita adalah teks yang berisi laporan mengenai suatu peristiwa atau kejadian yang benar-benar terjadi, disampaikan berdasarkan fakta, dan memiliki nilai penting atau menarik bagi masyarakat.</p>
+        </div>
+
+        <p>Berita bukanlah cerita khayalan atau pendapat pribadi penulis. Informasi yang disampaikan harus dapat dipertanggungjawabkan kebenarannya. Penulis berita perlu memastikan bahwa peristiwa yang dilaporkan benar-benar terjadi dan sumber informasinya jelas.</p>
+
+        <p>Berita dapat disampaikan melalui berbagai media, seperti:</p>
+        <ul>
+          <li><strong>Media cetak:</strong> koran, majalah, dan buletin.</li>
+          <li><strong>Media elektronik:</strong> televisi dan radio.</li>
+          <li><strong>Media digital:</strong> portal berita, situs web, dan aplikasi berita.</li>
+          <li><strong>Media sosial:</strong> akun resmi lembaga berita atau jurnalis.</li>
+        </ul>
+
+        <h3>Contoh Berita dan Bukan Berita</h3>
+        <div class="example">
+          <div class="example-title">Contoh informasi berita</div>
+          <p><strong>Pemerintah Kabupaten Cirebon Menggelar Kegiatan Penanaman Seribu Pohon pada Senin Pagi.</strong></p>
+          <p>Informasi tersebut menunjukkan suatu peristiwa yang dapat diperiksa kebenarannya melalui sumber dan dokumentasi kegiatan.</p>
+        </div>
+
+        <div class="example">
+          <div class="example-title">Contoh pernyataan opini</div>
+          <p><strong>Pemerintah Kabupaten Cirebon Adalah Pemerintah Paling Hebat di Indonesia.</strong></p>
+          <p>Pernyataan tersebut berisi penilaian atau pendapat yang belum tentu didukung oleh bukti yang dapat diukur.</p>
+        </div>
+
+        <h3>Tujuan Teks Berita</h3>
+        <ol>
+          <li><strong>Memberikan informasi:</strong> menyampaikan peristiwa yang terjadi kepada masyarakat.</li>
+          <li><strong>Menambah pengetahuan:</strong> membantu pembaca memahami keadaan dan perkembangan di sekitarnya.</li>
+          <li><strong>Meningkatkan kesadaran:</strong> membuat masyarakat mengetahui persoalan yang sedang terjadi.</li>
+          <li><strong>Menjadi bahan pertimbangan:</strong> memberikan informasi yang dapat digunakan masyarakat untuk memahami suatu persoalan dan mengambil keputusan.</li>
+        </ol>
+
+        <h3>Ciri-Ciri Teks Berita</h3>
+        <ul>
+          <li><strong>Faktual:</strong> berdasarkan kejadian nyata, bukan karangan.</li>
+          <li><strong>Aktual:</strong> berkaitan dengan peristiwa yang baru terjadi atau masih relevan untuk diberitakan.</li>
+          <li><strong>Objektif:</strong> disampaikan secara berimbang dan tidak memihak.</li>
+          <li><strong>Jelas:</strong> menggunakan bahasa yang mudah dipahami.</li>
+          <li><strong>Lengkap:</strong> memuat informasi penting mengenai peristiwa.</li>
+          <li><strong>Dapat dipercaya:</strong> sumber informasi dan kebenarannya dapat diperiksa.</li>
+        </ul>
+
+        <div class="note">
+          <strong>Ingat!</strong> Aktual tidak selalu berarti peristiwa yang baru terjadi beberapa menit lalu. Peristiwa yang sudah terjadi beberapa hari sebelumnya tetap dapat diberitakan apabila masih memiliki nilai penting bagi masyarakat.
+        </div>
+      </section>
+
+      <section class="section" id="unsur">
+        <h2>2. Unsur-Unsur Berita: 5W + 1H</h2>
+
+        <p>Berita yang baik harus memberikan informasi yang cukup agar pembaca memahami peristiwa secara utuh. Salah satu cara untuk memeriksa kelengkapan berita adalah menggunakan rumus <strong>5W + 1H</strong>.</p>
+
+        <p>Rumus ini terdiri atas enam unsur pertanyaan yang membantu penulis menggali informasi secara sistematis.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Unsur</th>
+                <th>Pertanyaan</th>
+                <th>Penjelasan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>What</strong></td><td>Apa yang terjadi?</td><td>Peristiwa atau kejadian yang diberitakan.</td></tr>
+              <tr><td><strong>Who</strong></td><td>Siapa yang terlibat?</td><td>Orang, kelompok, atau lembaga yang berkaitan dengan peristiwa.</td></tr>
+              <tr><td><strong>When</strong></td><td>Kapan terjadi?</td><td>Waktu berlangsungnya peristiwa.</td></tr>
+              <tr><td><strong>Where</strong></td><td>Di mana terjadi?</td><td>Tempat atau lokasi peristiwa.</td></tr>
+              <tr><td><strong>Why</strong></td><td>Mengapa terjadi?</td><td>Penyebab atau latar belakang peristiwa.</td></tr>
+              <tr><td><strong>How</strong></td><td>Bagaimana prosesnya?</td><td>Urutan kejadian atau cara peristiwa berlangsung.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Contoh Penerapan 5W + 1H</h3>
+
+        <div class="example">
+          <div class="example-title">Contoh berita</div>
+          <strong>Siswa SMA Gelar Aksi Bersih Lingkungan</strong>
+          <p>Sejumlah siswa SMA mengadakan kegiatan bersih lingkungan di sekitar sekolah pada Jumat pagi. Kegiatan tersebut diikuti oleh 80 siswa dan beberapa orang guru. Aksi ini dilakukan untuk meningkatkan kepedulian terhadap kebersihan lingkungan serta mengurangi sampah plastik. Para peserta membersihkan halaman sekolah, memilah sampah, dan mengumpulkan sampah plastik untuk didaur ulang. Kegiatan berlangsung selama dua jam dan diakhiri dengan penanaman tanaman di sekitar halaman sekolah.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Unsur</th><th>Jawaban</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>What</td><td>Kegiatan bersih lingkungan.</td></tr>
+              <tr><td>Who</td><td>80 siswa dan beberapa guru.</td></tr>
+              <tr><td>When</td><td>Jumat pagi.</td></tr>
+              <tr><td>Where</td><td>Di sekitar sekolah.</td></tr>
+              <tr><td>Why</td><td>Meningkatkan kepedulian terhadap kebersihan dan mengurangi sampah plastik.</td></tr>
+              <tr><td>How</td><td>Membersihkan halaman, memilah sampah, mengumpulkan plastik, dan menanam tanaman.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Dari contoh tersebut, kita dapat memahami bahwa 5W + 1H membantu penulis menyusun berita secara lengkap dan membantu pembaca menemukan informasi penting dengan cepat.</p>
+
+        <div class="note">
+          <strong>Catatan penting:</strong> Tidak semua berita harus menjawab keenam unsur secara sama panjang. Ada berita yang lebih menekankan unsur apa dan siapa, sedangkan berita lain perlu menjelaskan unsur mengapa dan bagaimana secara lebih mendalam. Namun, unsur-unsur yang relevan tetap perlu diperiksa agar berita tidak menimbulkan kesalahpahaman.
+        </div>
+      </section>
+
+      <section class="section" id="struktur">
+        <h2>3. Struktur Teks Berita: Piramida Terbalik</h2>
+
+        <p>Teks berita umumnya disusun menggunakan pola <strong>piramida terbalik</strong>. Artinya, informasi yang paling penting diletakkan pada bagian awal, kemudian diikuti informasi pendukung dan rincian tambahan.</p>
+
+        <p>Pola ini digunakan karena pembaca sering kali hanya memiliki waktu singkat untuk membaca berita. Dengan demikian, pembaca tetap memperoleh inti peristiwa meskipun tidak membaca seluruh teks.</p>
+
+        <div class="pyramid">
+          <div class="pyramid-item one">
+            <strong>KEPALA BERITA</strong>
+            <span>Judul yang menggambarkan peristiwa</span>
+          </div>
+          <div class="pyramid-arrow">↓</div>
+          <div class="pyramid-item two">
+            <strong>TERAS BERITA</strong>
+            <span>Inti peristiwa dan informasi paling penting</span>
+          </div>
+          <div class="pyramid-arrow">↓</div>
+          <div class="pyramid-item three">
+            <strong>TUBUH BERITA</strong>
+            <span>Rincian, data, kutipan narasumber, dan informasi tambahan</span>
+          </div>
+        </div>
+
+        <h3>A. Kepala Berita (Judul)</h3>
+        <p>Kepala berita merupakan bagian yang berisi judul. Judul berfungsi menggambarkan inti peristiwa sekaligus menarik perhatian pembaca.</p>
+
+        <p>Judul yang baik harus:</p>
+        <ul>
+          <li>Sesuai dengan isi berita.</li>
+          <li>Singkat, jelas, dan tidak bertele-tele.</li>
+          <li>Menggunakan kata-kata yang tepat.</li>
+          <li>Tidak menyesatkan atau melebih-lebihkan peristiwa.</li>
+        </ul>
+
+        <div class="example">
+          <p><strong>Judul baik:</strong> Hujan Deras Sebabkan Sejumlah Ruas Jalan Tergenang.</p>
+          <p><strong>Judul kurang baik:</strong> Kota Kacau Balau! Bencana Mengerikan Melanda Semua Wilayah!</p>
+          <p>Judul kedua menggunakan ungkapan berlebihan yang belum tentu sesuai dengan fakta.</p>
+        </div>
+
+        <h3>B. Teras Berita (Lead)</h3>
+        <p>Teras berita merupakan bagian awal berita, biasanya berupa paragraf pertama. Bagian ini memuat inti peristiwa dan informasi paling penting.</p>
+
+        <p>Teras berita sebaiknya membantu pembaca memahami pokok kejadian tanpa harus membaca seluruh berita.</p>
+
+        <div class="example">
+          <div class="example-title">Contoh teras berita</div>
+          <p>Hujan deras yang mengguyur wilayah Kecamatan Rancah pada Senin sore menyebabkan genangan air di beberapa ruas jalan. Kondisi tersebut mengakibatkan arus lalu lintas melambat.</p>
+        </div>
+
+        <p>Paragraf tersebut sudah memberikan gambaran tentang apa yang terjadi, kapan, di mana, dan akibat yang ditimbulkan.</p>
+
+        <h3>C. Tubuh Berita (Body)</h3>
+        <p>Tubuh berita berisi penjelasan lebih terperinci mengenai peristiwa.</p>
+
+        <p>Bagian ini dapat memuat:</p>
+        <ul>
+          <li>Kronologi atau urutan kejadian.</li>
+          <li>Penyebab atau latar belakang peristiwa.</li>
+          <li>Data dan fakta pendukung.</li>
+          <li>Keterangan dari saksi atau narasumber.</li>
+          <li>Dampak yang ditimbulkan.</li>
+          <li>Tanggapan dari pihak terkait.</li>
+        </ul>
+
+        <div class="example">
+          <div class="example-title">Contoh tubuh berita</div>
+          <p>Menurut keterangan petugas setempat, genangan terjadi setelah hujan turun selama beberapa jam. Air menggenangi bagian jalan yang memiliki saluran drainase kurang lancar. Petugas kemudian melakukan pemeriksaan terhadap saluran air untuk mengetahui penyebab genangan.</p>
+        </div>
+
+        <p>Dengan demikian, pembaca tidak hanya mengetahui bahwa genangan terjadi, tetapi juga memperoleh penjelasan mengenai kondisi dan penanganannya.</p>
+      </section>
+
+      <section class="section" id="kebahasaan">
+        <h2>4. Ciri Kebahasaan Teks Berita</h2>
+
+        <p>Teks berita menggunakan bahasa yang jelas, lugas, dan tidak berlebihan. Pilihan kata harus membantu pembaca memahami peristiwa secara tepat.</p>
+
+        <h3>A. Kalimat Langsung</h3>
+        <p>Kalimat langsung merupakan kalimat yang mengutip perkataan seseorang secara langsung sesuai dengan ucapan aslinya.</p>
+
+        <p>Ciri-cirinya:</p>
+        <ul>
+          <li>Menggunakan tanda petik ("...").</li>
+          <li>Isi kutipan dipertahankan sesuai pernyataan narasumber.</li>
+          <li>Biasanya disertai keterangan siapa yang berbicara.</li>
+        </ul>
+
+        <div class="example">
+          <p>Kepala desa mengatakan, <strong>"Kami akan mengajak masyarakat untuk menjaga kebersihan lingkungan."</strong></p>
+        </div>
+
+        <h3>B. Kalimat Tidak Langsung</h3>
+        <p>Kalimat tidak langsung menyampaikan kembali isi perkataan seseorang dengan susunan kalimat penulis berita.</p>
+
+        <div class="example">
+          <p>Kepala desa mengatakan bahwa masyarakat akan diajak untuk menjaga kebersihan lingkungan.</p>
+        </div>
+
+        <p>Perhatikan perbedaannya:</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Kalimat Langsung</th><th>Kalimat Tidak Langsung</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>"Kami akan segera bertindak," ujar petugas.</td>
+                <td>Petugas mengatakan bahwa mereka akan segera bertindak.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Keduanya dapat digunakan dalam berita. Namun, penulis harus menjaga agar makna pernyataan narasumber tidak berubah.</p>
+
+        <h3>C. Kata Kerja Ujaran</h3>
+        <p>Kata kerja ujaran adalah kata kerja yang digunakan untuk menunjukkan kegiatan berbicara atau menyampaikan informasi.</p>
+
+        <p>Contohnya:</p>
+        <ul>
+          <li>Menyatakan.</li>
+          <li>Menjelaskan.</li>
+          <li>Mengungkapkan.</li>
+          <li>Menuturkan.</li>
+          <li>Mengatakan.</li>
+          <li>Menambahkan.</li>
+          <li>Menegaskan.</li>
+          <li>Melaporkan.</li>
+          <li>Mengimbau.</li>
+        </ul>
+
+        <div class="example">
+          <p>Kepala sekolah <strong>menjelaskan</strong> bahwa kegiatan akan dilaksanakan selama tiga hari.</p>
+          <p>Petugas <strong>mengimbau</strong> masyarakat agar tidak membuang sampah ke sungai.</p>
+          <p>Warga <strong>mengungkapkan</strong> kekhawatirannya terhadap kondisi jalan.</p>
+        </div>
+
+        <p>Penggunaan kata kerja ujaran membantu pembaca mengetahui siapa yang memberikan informasi.</p>
+
+        <h3>D. Keterangan Waktu dan Tempat</h3>
+        <p>Keterangan waktu dan tempat berfungsi menjelaskan kapan dan di mana peristiwa berlangsung.</p>
+
+        <p><strong>Contoh keterangan waktu:</strong></p>
+        <ul>
+          <li>Pada Senin pagi.</li>
+          <li>Kemarin sore.</li>
+          <li>Pukul 08.30 WIB.</li>
+          <li>Sejak awal bulan November.</li>
+        </ul>
+
+        <p><strong>Contoh keterangan tempat:</strong></p>
+        <ul>
+          <li>Di halaman sekolah.</li>
+          <li>Di Kecamatan Rancah.</li>
+          <li>Di kawasan pasar tradisional.</li>
+          <li>Di ruang pertemuan desa.</li>
+        </ul>
+
+        <p>Penulisan waktu dan tempat harus jelas agar pembaca tidak keliru memahami peristiwa.</p>
+
+        <h3>E. Bahasa Baku, Lugas, dan Denotatif</h3>
+        <p>Berita sebaiknya menggunakan bahasa Indonesia baku dan mudah dipahami.</p>
+
+        <ul>
+          <li><strong>Baku:</strong> mengikuti kaidah bahasa Indonesia.</li>
+          <li><strong>Lugas:</strong> menyampaikan informasi secara langsung dan tidak berbelit-belit.</li>
+          <li><strong>Denotatif:</strong> menggunakan kata sesuai makna sebenarnya, bukan makna kiasan.</li>
+        </ul>
+
+        <div class="example">
+          <p><strong>Lugas:</strong> Petugas membersihkan saluran air yang tersumbat.</p>
+          <p><strong>Tidak lugas:</strong> Petugas berjibaku melawan monster sampah yang menguasai saluran air.</p>
+          <p>Ungkapan kedua mungkin cocok untuk tulisan kreatif, tetapi kurang tepat untuk berita yang mengutamakan ketepatan informasi.</p>
+        </div>
+      </section>
+
+      <section class="section" id="menilai">
+        <h2>5. Cerdas Menilai Berita: Fakta, Opini, dan Hoaks</h2>
+
+        <p>Di era digital, informasi dapat menyebar dengan sangat cepat. Namun, tidak semua informasi yang beredar benar. Karena itu, pembaca perlu memiliki kemampuan untuk memeriksa dan menilai berita secara kritis.</p>
+
+        <h3>A. Perbedaan Fakta dan Opini</h3>
+        <p><strong>Fakta</strong> adalah informasi yang benar-benar terjadi dan dapat dibuktikan melalui data, dokumen, pengamatan, atau sumber yang dapat dipercaya.</p>
+        <p><strong>Opini</strong> adalah pendapat, penilaian, atau pandangan seseorang terhadap suatu hal.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Fakta</th><th>Opini</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Dapat dibuktikan kebenarannya.</td><td>Berisi penilaian atau pendapat.</td></tr>
+              <tr><td>Berdasarkan kejadian atau data.</td><td>Dapat dipengaruhi sudut pandang pribadi.</td></tr>
+              <tr><td>Kebenarannya dapat diperiksa.</td><td>Belum tentu dapat dibuktikan sebagai kebenaran objektif.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="example">
+          <p><strong>Fakta:</strong> Kegiatan penanaman pohon diikuti oleh 75 siswa.</p>
+          <p><strong>Opini:</strong> Kegiatan penanaman pohon tersebut merupakan kegiatan paling menarik sepanjang tahun.</p>
+          <p>Pernyataan pertama dapat diperiksa melalui daftar peserta. Pernyataan kedua merupakan penilaian seseorang.</p>
+        </div>
+
+        <div class="note">
+          Opini tidak selalu salah. Opini dapat menjadi bagian dari berita apabila disampaikan sebagai pendapat narasumber dan disebutkan dengan jelas siapa yang menyampaikannya.
+        </div>
+
+        <h3>B. Mengenali Berita Hoaks</h3>
+        <p>Hoaks adalah informasi palsu atau menyesatkan yang disajikan seolah-olah benar.</p>
+
+        <p>Hoaks dapat dibuat untuk berbagai tujuan, misalnya:</p>
+        <ul>
+          <li>Menimbulkan kepanikan.</li>
+          <li>Mengadu domba masyarakat.</li>
+          <li>Mencemarkan nama baik seseorang.</li>
+          <li>Mempengaruhi pendapat masyarakat.</li>
+          <li>Mendapatkan keuntungan atau perhatian.</li>
+        </ul>
+
+        <div class="warning">
+          <strong>Contoh judul yang patut dicurigai:</strong>
+          <p>HEBOH! Seluruh Sekolah Akan Diliburkan Selama Satu Bulan Mulai Besok!</p>
+          <p>Judul tersebut tidak boleh langsung dipercaya. Pembaca harus memeriksa apakah informasi tersebut benar-benar diumumkan oleh lembaga yang berwenang.</p>
+        </div>
+
+        <h3>C. Cara Memeriksa Kebenaran Berita</h3>
+        <p>Sebelum mempercayai atau membagikan berita, lakukan beberapa langkah berikut.</p>
+
+        <ol>
+          <li><strong>Periksa sumber berita.</strong> Apakah berasal dari media yang jelas identitas dan tanggung jawab redaksinya?</li>
+          <li><strong>Periksa tanggal penerbitan.</strong> Jangan sampai berita lama disebarkan seolah-olah merupakan kejadian terbaru.</li>
+          <li><strong>Periksa penulis dan narasumber.</strong> Apakah identitasnya jelas dan keterangannya dapat dipertanggungjawabkan?</li>
+          <li><strong>Bandingkan dengan sumber lain.</strong> Cari pemberitaan dari media atau lembaga tepercaya lainnya.</li>
+          <li><strong>Periksa bukti pendukung.</strong> Apakah terdapat dokumen, foto, video, data, atau keterangan yang mendukung?</li>
+          <li><strong>Waspadai judul provokatif.</strong> Judul yang menggunakan kata-kata berlebihan belum tentu menggambarkan isi berita.</li>
+          <li><strong>Jangan langsung membagikan.</strong> Jika belum yakin, lebih baik berhenti dan memeriksa kebenarannya.</li>
+        </ol>
+
+        <h3>D. Memahami Clickbait</h3>
+        <p>Clickbait adalah judul atau tampilan informasi yang sengaja dibuat sangat menarik, mengejutkan, atau memancing rasa penasaran agar orang mengeklik suatu tautan.</p>
+
+        <div class="example">
+          <p><strong>Judul biasa:</strong> Hujan Deras Mengakibatkan Banjir di Sejumlah Wilayah.</p>
+          <p><strong>Judul clickbait:</strong> MENGEJUTKAN! Kejadian Ini Bikin Semua Orang Tidak Percaya!</p>
+        </div>
+
+        <p>Clickbait tidak selalu berarti berita tersebut palsu. Namun, pembaca perlu memeriksa apakah judulnya sesuai dengan isi berita.</p>
+
+        <h3>E. Memahami Prinsip Keberimbangan Berita</h3>
+        <p>Berita yang baik tidak hanya mengandalkan satu sudut pandang, terutama ketika memberitakan persoalan yang melibatkan beberapa pihak.</p>
+
+        <p>Misalnya, jika terdapat keluhan warga mengenai kerusakan jalan, wartawan sebaiknya tidak hanya mengutip warga, tetapi juga berusaha memperoleh tanggapan dari pihak yang bertanggung jawab terhadap jalan tersebut.</p>
+
+        <p>Keberimbangan bukan berarti semua pihak harus selalu memiliki pendapat yang sama. Artinya, pihak-pihak yang relevan diberi kesempatan menyampaikan keterangan sehingga pembaca memperoleh gambaran yang lebih utuh.</p>
+      </section>
+
+      <section class="section" id="menulis">
+        <h2>6. Langkah-Langkah Menulis Teks Berita</h2>
+
+        <p>Menulis berita tidak boleh dilakukan dengan mengarang peristiwa. Penulis harus mengumpulkan informasi terlebih dahulu, kemudian menyusunnya secara sistematis.</p>
+
+        <h3>Langkah 1: Menentukan Peristiwa</h3>
+        <p>Pilih peristiwa yang benar-benar terjadi dan memiliki nilai berita.</p>
+
+        <p>Contoh peristiwa di lingkungan sekolah:</p>
+        <ul>
+          <li>Kegiatan upacara bendera.</li>
+          <li>Perlombaan antarkelas.</li>
+          <li>Kegiatan penghijauan.</li>
+          <li>Pelaksanaan program literasi.</li>
+          <li>Kegiatan bakti sosial.</li>
+          <li>Prestasi yang diraih peserta didik.</li>
+        </ul>
+
+        <p>Tidak semua kejadian harus diberitakan. Pilih peristiwa yang memiliki nilai informasi, seperti kebaruan, kedekatan dengan pembaca, dampak, kepentingan, atau sisi kemanusiaan.</p>
+
+        <h3>Langkah 2: Mengumpulkan Fakta dan Data</h3>
+        <p>Setelah menentukan peristiwa, kumpulkan informasi melalui:</p>
+        <ul>
+          <li>Pengamatan langsung.</li>
+          <li>Wawancara dengan narasumber.</li>
+          <li>Dokumen atau catatan resmi.</li>
+          <li>Foto dan rekaman yang relevan.</li>
+          <li>Data pendukung dari sumber tepercaya.</li>
+        </ul>
+        <p>Pastikan informasi yang dikumpulkan benar dan tidak dibuat-buat.</p>
+
+        <h3>Langkah 3: Menggunakan Pertanyaan 5W + 1H</h3>
+        <p>Susun pertanyaan untuk memperoleh informasi lengkap. Misalnya, ketika meliput kegiatan penghijauan di sekolah:</p>
+        <ul>
+          <li>Apa kegiatan yang dilaksanakan?</li>
+          <li>Siapa yang mengikuti kegiatan?</li>
+          <li>Kapan kegiatan dilaksanakan?</li>
+          <li>Di mana kegiatan berlangsung?</li>
+          <li>Mengapa kegiatan tersebut dilaksanakan?</li>
+          <li>Bagaimana proses pelaksanaannya?</li>
+        </ul>
+
+        <h3>Langkah 4: Menulis Teras Berita</h3>
+        <p>Tuliskan inti peristiwa dalam paragraf pembuka. Utamakan informasi yang paling penting. Hindari pembukaan yang terlalu panjang atau berisi kalimat yang tidak berkaitan dengan peristiwa.</p>
+
+        <h3>Langkah 5: Mengembangkan Tubuh Berita</h3>
+        <p>Tambahkan informasi pendukung, seperti urutan kejadian, keterangan narasumber, data dan fakta, latar belakang, serta dampak peristiwa.</p>
+        <p>Susun informasi secara logis agar pembaca dapat mengikuti alur berita.</p>
+
+        <h3>Langkah 6: Memilih Judul</h3>
+        <p>Buat judul yang singkat, jelas, dan sesuai dengan isi berita. Jangan menggunakan judul yang menjanjikan sesuatu yang tidak terdapat dalam berita.</p>
+
+        <h3>Langkah 7: Memeriksa Kembali Berita</h3>
+        <p>Sebelum diterbitkan, periksa kembali:</p>
+        <ul>
+          <li>Ketepatan fakta dan data.</li>
+          <li>Kelengkapan unsur 5W + 1H.</li>
+          <li>Kesesuaian judul dengan isi.</li>
+          <li>Kebenaran kutipan narasumber.</li>
+          <li>Ketepatan waktu dan tempat.</li>
+          <li>Penggunaan ejaan dan tanda baca.</li>
+          <li>Kejelasan sumber informasi.</li>
+        </ul>
+
+        <div class="note">
+          <strong>Prinsip utama jurnalistik:</strong> Jangan menambahkan informasi yang belum diketahui kebenarannya hanya agar berita terlihat lebih menarik.
+        </div>
+      </section>
+
+      <section class="section" id="contoh">
+        <h2>7. Contoh Teks Berita dan Analisisnya</h2>
+
+        <p>Perhatikan contoh berita berikut. Amati bagaimana judul, teras berita, dan tubuh berita disusun untuk menyampaikan informasi.</p>
+
+        <div class="news-sample">
+          <div class="news-location">RANCAH — CONTOH TEKS LATIHAN</div>
+          <h3>Siswa Gelar Gerakan Peduli Lingkungan di Sekolah</h3>
+
+          <p>Sejumlah siswa melaksanakan gerakan peduli lingkungan di halaman sekolah pada Jumat pagi. Kegiatan tersebut bertujuan meningkatkan kesadaran peserta didik terhadap pentingnya menjaga kebersihan dan kelestarian lingkungan.</p>
+
+          <p>Kegiatan diikuti oleh siswa dari beberapa kelas dengan didampingi guru. Para peserta melakukan pemilahan sampah, membersihkan lingkungan sekolah, serta menanam tanaman di beberapa titik halaman.</p>
+
+          <p>Salah seorang peserta menyampaikan bahwa kegiatan tersebut memberikan pengalaman langsung tentang pentingnya menjaga lingkungan. Menurutnya, kebersihan sekolah bukan hanya menjadi tanggung jawab petugas kebersihan, melainkan seluruh warga sekolah.</p>
+
+          <p>Melalui kegiatan tersebut, sekolah berharap kebiasaan menjaga kebersihan dapat diterapkan dalam kehidupan sehari-hari, baik di lingkungan sekolah maupun di rumah.</p>
+        </div>
+
+        <div class="warning">
+          <strong>Catatan:</strong> Contoh ini merupakan teks latihan yang bersifat ilustratif, bukan laporan tentang kegiatan nyata tertentu.
+        </div>
+
+        <h3>Analisis Struktur Berita</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Bagian</th><th>Isi</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Judul</td><td>Siswa Gelar Gerakan Peduli Lingkungan di Sekolah.</td></tr>
+              <tr><td>Teras berita</td><td>Paragraf pertama.</td></tr>
+              <tr><td>Tubuh berita</td><td>Paragraf kedua sampai keempat.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Analisis Unsur 5W + 1H</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Unsur</th><th>Jawaban</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>What</td><td>Gerakan peduli lingkungan.</td></tr>
+              <tr><td>Who</td><td>Siswa dan guru.</td></tr>
+              <tr><td>When</td><td>Jumat pagi.</td></tr>
+              <tr><td>Where</td><td>Halaman sekolah.</td></tr>
+              <tr><td>Why</td><td>Meningkatkan kesadaran menjaga lingkungan.</td></tr>
+              <tr><td>How</td><td>Memilah sampah, membersihkan lingkungan, dan menanam tanaman.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Dari contoh tersebut, kita dapat melihat bahwa berita yang baik menyampaikan peristiwa secara jelas, menyertakan informasi pendukung, dan tidak memasukkan penilaian pribadi penulis seolah-olah merupakan fakta.</p>
+      </section>
+
+      <section class="section" id="aktivitas">
+        <h2>8. Aktivitas Pembelajaran: Menjadi Reporter Sekolah</h2>
+
+        <div class="activity">
+          <h3><span style="color:#d88935;">Tantangan Jurnalistik</span></h3>
+          <p>Sekarang, bayangkan kalian menjadi seorang reporter yang bertugas meliput kegiatan di lingkungan sekolah.</p>
+          <p>Lakukan kegiatan berikut secara individu atau berkelompok.</p>
+
+          <ol>
+            <li>Pilih satu peristiwa nyata di lingkungan sekolah.</li>
+            <li>Amati peristiwa tersebut secara langsung.</li>
+            <li>Lakukan wawancara dengan minimal satu narasumber.</li>
+            <li>Catat informasi menggunakan pertanyaan 5W + 1H.</li>
+            <li>Pisahkan informasi yang berupa fakta dan pendapat narasumber.</li>
+            <li>Susun berita dengan pola piramida terbalik.</li>
+            <li>Berikan judul yang sesuai.</li>
+            <li>Periksa kembali kebenaran informasi dan penggunaan bahasa.</li>
+          </ol>
+
+          <h3>Hasil yang Diharapkan</h3>
+          <p>Satu teks berita yang informatif, faktual, objektif, dan mudah dipahami.</p>
+        </div>
+
+        <h3>Panduan Wawancara Sederhana</h3>
+        <p>Berikut beberapa pertanyaan yang dapat digunakan saat mewawancarai narasumber:</p>
+        <ol>
+          <li>Apa yang menjadi tujuan kegiatan ini?</li>
+          <li>Siapa saja yang terlibat dalam kegiatan?</li>
+          <li>Kapan dan di mana kegiatan dilaksanakan?</li>
+          <li>Bagaimana proses pelaksanaan kegiatan?</li>
+          <li>Apa manfaat atau dampak yang diharapkan?</li>
+          <li>Apakah ada kendala selama kegiatan berlangsung?</li>
+        </ol>
+
+        <div class="note">
+          <strong>Etika reporter:</strong> Perkenalkan diri sebelum wawancara, sampaikan tujuan dengan sopan, dengarkan jawaban narasumber, jangan memotong pembicaraan, dan jangan mengubah makna pernyataan yang disampaikan.
+        </div>
+      </section>
+
+      <section class="section" id="latihan">
+        <h2>9. Latihan Pemahaman</h2>
+
+        <p>Jawablah pertanyaan berikut untuk mengukur pemahaman kalian terhadap materi teks berita.</p>
+
+        <ol>
+          <li>Jelaskan pengertian teks berita dengan bahasamu sendiri.</li>
+          <li>Mengapa berita harus disusun berdasarkan fakta?</li>
+          <li>Apa fungsi unsur 5W + 1H dalam penulisan berita?</li>
+          <li>Jelaskan perbedaan kepala berita, teras berita, dan tubuh berita.</li>
+          <li>Mengapa informasi paling penting diletakkan di bagian awal berita?</li>
+          <li>Apa perbedaan kalimat langsung dan kalimat tidak langsung?</li>
+          <li>Jelaskan perbedaan fakta dan opini disertai contoh.</li>
+          <li>Apa yang dimaksud dengan hoaks dan clickbait?</li>
+          <li>Sebutkan tiga cara untuk memeriksa kebenaran suatu berita.</li>
+          <li>Mengapa seorang reporter perlu meminta keterangan dari narasumber yang relevan?</li>
+        </ol>
+
+        <div class="note">
+          Kerjakan latihan dengan menggunakan pemahaman sendiri. Jika perlu, bacalah kembali bagian materi yang berkaitan dengan pertanyaan.
+        </div>
+      </section>
+
+      <section class="section" id="refleksi">
+        <h2>10. Refleksi Pembelajaran</h2>
+
+        <p>Setelah mempelajari materi ini, renungkan beberapa pertanyaan berikut. Jawablah secara jujur berdasarkan pengalaman dan pemahaman kalian.</p>
+
+        <div class="reflection">
+          <ol>
+            <li>Apakah selama ini saya sudah terbiasa memeriksa kebenaran informasi sebelum membagikannya?</li>
+            <li>Apakah saya mampu membedakan fakta dan opini dalam sebuah berita?</li>
+            <li>Bagian mana dari proses menulis berita yang masih sulit saya lakukan?</li>
+            <li>Bagaimana saya dapat menerapkan keterampilan jurnalistik dalam kehidupan sehari-hari?</li>
+          </ol>
+        </div>
+
+        <div class="definition">
+          <strong>Pesan Pembelajaran</strong>
+          <p>Menjadi pembaca yang cerdas dimulai dari kebiasaan memeriksa informasi. Menjadi penulis berita yang baik dimulai dari keberanian menyampaikan fakta secara jujur dan bertanggung jawab.</p>
+        </div>
+      </section>
+
+      <section class="section" id="rangkuman">
+        <h2>11. Rangkuman Materi</h2>
+
+        <p>Untuk mengingat kembali hal-hal penting yang telah dipelajari, perhatikan rangkuman berikut.</p>
+
+        <ol>
+          <li>Teks berita adalah laporan mengenai peristiwa nyata yang disampaikan secara faktual dan objektif.</li>
+          <li>Unsur 5W + 1H digunakan untuk memeriksa kelengkapan informasi.</li>
+          <li>Struktur berita menggunakan pola piramida terbalik: judul, teras berita, dan tubuh berita.</li>
+          <li>Ciri kebahasaan berita meliputi kalimat langsung dan tidak langsung, kata kerja ujaran, keterangan waktu dan tempat, serta bahasa baku dan lugas.</li>
+          <li>Fakta dapat dibuktikan, sedangkan opini merupakan pendapat atau penilaian.</li>
+          <li>Hoaks adalah informasi palsu atau menyesatkan. Clickbait merupakan judul atau tampilan yang dirancang untuk memancing perhatian.</li>
+          <li>Menulis berita harus melalui proses pemilihan peristiwa, pengumpulan fakta, wawancara, penulisan, dan pemeriksaan ulang.</li>
+        </ol>
+
+        <div class="note">
+          <strong>Kesimpulan:</strong> Berita yang baik bukan berita yang paling heboh, melainkan berita yang menyampaikan informasi secara benar, jelas, lengkap, dan bertanggung jawab.
+        </div>
+      </section>
+
+      <div class="closing">
+        <blockquote>
+          "Kebenaran sebuah berita tidak diukur dari seberapa cepat ia menyebar, melainkan dari seberapa kuat fakta mendukungnya."
+        </blockquote>
+        <span>— MANDALA AKSARA</span>
+      </div>
+
+      <div class="page-nav">
+        <a href="bab-2-air-bersih.html">← BAB 2 · Teks Persuasi</a>
+        <a href="kelas-xi.html">Kembali ke Kelas XI →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <strong>MANDALA AKSARA</strong>
+    <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+    <p>Ruang Literasi dan Pembelajaran Bahasa Indonesia</p>
+    <p>Dikelola Mandiri</p>
+  </footer>
+
+</body>
+</html>
