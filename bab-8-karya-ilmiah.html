@@ -1,0 +1,1831 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAB 8: Karya Ilmiah | Mandala Aksara</title>
+  <meta name="description" content="Materi Bahasa Indonesia Kelas XI tentang karya ilmiah, berpikir ilmiah, struktur, etika penulisan, kutipan, daftar pustaka, dan presentasi ilmiah.">
+  <meta name="author" content="Mandala Aksara">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <style>
+    :root {
+      --navy: #142b4a;
+      --navy2: #0d203a;
+      --orange: #f28c28;
+      --gold: #c69a45;
+      --paper: #ffffff;
+      --soft: #f3f5f8;
+      --ink: #26364b;
+      --muted: #657386;
+      --line: #e2e7ed;
+      --green: #eaf5ee;
+      --cream: #fff8ed;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f9;
+      color: var(--ink);
+      line-height: 1.8;
+    }
+
+    a { color: inherit; }
+
+    .topbar {
+      background: var(--navy2);
+      color: white;
+      padding: 12px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      font-family: Georgia, serif;
+      font-size: 19px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 1.3;
+    }
+
+    .brand-sub {
+      font-size: 11px;
+      color: #d9e1eb;
+      letter-spacing: .3px;
+    }
+
+    .topnav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .topnav a {
+      text-decoration: none;
+      color: #edf2f8;
+      font-size: 13px;
+      transition: .2s;
+    }
+
+    .topnav a:hover { color: var(--orange); }
+
+    .hero {
+      background: linear-gradient(125deg, #10243d, #1d4168);
+      color: white;
+      padding: 55px 6% 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "ILMU";
+      position: absolute;
+      right: 4%;
+      bottom: -48px;
+      font-family: Georgia, serif;
+      font-size: 150px;
+      font-weight: bold;
+      color: rgba(255,255,255,.045);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1150px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      color: #ffb45f;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2;
+      margin: 12px 0;
+      max-width: 850px;
+    }
+
+    .hero p {
+      color: #dce6f0;
+      max-width: 760px;
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 7px 14px;
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 30px;
+      color: #fff0dc;
+      font-size: 12px;
+    }
+
+    .page-layout {
+      max-width: 1200px;
+      margin: 35px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 25px;
+      align-items: start;
+    }
+
+    .sidebar {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px;
+      position: sticky;
+      top: 18px;
+      box-shadow: 0 5px 18px rgba(20,43,74,.05);
+    }
+
+    .sidebar h3 {
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: 17px;
+      margin: 0 0 12px;
+    }
+
+    .sidebar-label {
+      font-size: 10px;
+      color: var(--muted);
+      font-weight: bold;
+      letter-spacing: 1.2px;
+      margin: 18px 0 7px;
+      text-transform: uppercase;
+    }
+
+    .sidebar-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .sidebar-links a {
+      display: block;
+      width: 100%;
+      padding: 8px 10px;
+      text-decoration: none;
+      border-radius: 7px;
+      font-size: 13px;
+      color: #44536a;
+      line-height: 1.5;
+      transition: .2s;
+    }
+
+    .sidebar-links a:hover {
+      background: #f1f4f8;
+      color: var(--navy);
+    }
+
+    .sidebar-links a.active {
+      background: #fff0df;
+      color: #a9570b;
+      font-weight: bold;
+      border-left: 3px solid var(--orange);
+    }
+
+    .content {
+      min-width: 0;
+    }
+
+    .content-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      padding: clamp(20px, 4vw, 38px);
+      margin-bottom: 22px;
+      box-shadow: 0 5px 18px rgba(20,43,74,.04);
+    }
+
+    .section-number {
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      color: var(--navy);
+      font-size: 27px;
+      line-height: 1.35;
+      margin: 5px 0 18px;
+    }
+
+    h3 {
+      color: var(--navy);
+      font-size: 19px;
+      margin: 25px 0 9px;
+    }
+
+    h4 {
+      color: var(--navy);
+      font-size: 16px;
+      margin: 18px 0 7px;
+    }
+
+    p { margin: 10px 0 14px; }
+
+    ul, ol { padding-left: 23px; }
+
+    li { margin-bottom: 7px; }
+
+    .lead {
+      font-size: 17px;
+      color: #40536b;
+    }
+
+    .highlight {
+      background: #fff6e9;
+      border-left: 4px solid var(--orange);
+      padding: 16px 19px;
+      border-radius: 7px;
+      margin: 20px 0;
+    }
+
+    .info {
+      background: #edf4fb;
+      border-left: 4px solid #4779ad;
+      padding: 16px 19px;
+      border-radius: 7px;
+      margin: 20px 0;
+    }
+
+    .success {
+      background: var(--green);
+      border-left: 4px solid #4b9664;
+      padding: 16px 19px;
+      border-radius: 7px;
+      margin: 20px 0;
+    }
+
+    .example {
+      border: 1px solid #e4e8ed;
+      border-radius: 10px;
+      padding: 17px 19px;
+      margin: 18px 0;
+      background: #fbfcfd;
+    }
+
+    .example-title {
+      color: #a85d17;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .8px;
+      margin-bottom: 8px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 18px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 500px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 11px 13px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--navy);
+      color: white;
+    }
+
+    tr:nth-child(even) td { background: #f8fafc; }
+
+    .step-list {
+      counter-reset: step;
+      list-style: none;
+      padding: 0;
+    }
+
+    .step-list li {
+      counter-increment: step;
+      position: relative;
+      padding: 12px 14px 12px 48px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      margin-bottom: 10px;
+      background: #fff;
+    }
+
+    .step-list li::before {
+      content: counter(step);
+      position: absolute;
+      left: 13px;
+      top: 12px;
+      background: var(--orange);
+      color: white;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 25px;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px;
+      margin: 18px 0;
+    }
+
+    .mini-card {
+      padding: 15px;
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      background: #fbfcfe;
+    }
+
+    .mini-card strong {
+      color: var(--navy);
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .quote-example {
+      font-family: Georgia, serif;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #344c68;
+      border-left: 3px solid var(--gold);
+      padding: 12px 18px;
+      background: #fffaf2;
+      margin: 15px 0;
+    }
+
+    .checklist li { margin-bottom: 9px; }
+
+    .reflection {
+      background: linear-gradient(135deg, #fff8ed, #fff);
+      border: 1px solid #f0dfc6;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .closing {
+      text-align: center;
+      padding: 32px 20px;
+      color: var(--navy);
+    }
+
+    .closing blockquote {
+      font-family: Georgia, serif;
+      font-size: 21px;
+      font-style: italic;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto 10px;
+    }
+
+    .closing span {
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .back-link {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--navy);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 7px;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    .back-link:hover { background: var(--orange); }
+
+    footer {
+      background: var(--navy2);
+      color: #d9e2ec;
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 12px;
+    }
+
+    footer strong {
+      color: white;
+      font-family: Georgia, serif;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    footer p { margin: 5px 0; }
+
+    @media (max-width: 850px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .sidebar-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .topbar {
+        padding: 12px 4%;
+        align-items: flex-start;
+      }
+
+      .topnav { gap: 12px; }
+
+      .topnav a { font-size: 12px; }
+
+      .hero { padding: 40px 6%; }
+
+      .hero::after { font-size: 90px; }
+
+      .page-layout { padding: 0 12px; }
+
+      .sidebar-links { grid-template-columns: 1fr; }
+
+      .mini-grid { grid-template-columns: 1fr; }
+
+      h2 { font-size: 23px; }
+
+      .content-card { padding: 21px 18px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <div>
+      <div class="brand-name">MANDALA AKSARA</div>
+      <div class="brand-sub">Ruang Literasi dan Pembelajaran Bahasa Indonesia</div>
+    </div>
+  </div>
+
+  <nav class="topnav">
+    <a href="index.html">Beranda</a>
+    <a href="perpustakaan-digital.html">Perpustakaan</a>
+    <a href="kelas-xi.html">Kelas XI</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Bahasa Indonesia · Kelas XI</div>
+    <h1>BAB 8: Karya Ilmiah</h1>
+    <p>
+      Berpikir dan Berkarya Ilmiah. Belajar menyusun gagasan berdasarkan
+      fakta, mengolah informasi secara kritis, serta menyampaikan hasil
+      pemikiran dengan jujur, logis, dan dapat dipertanggungjawabkan.
+    </p>
+    <div class="hero-tag">Materi Pembelajaran · Fase F</div>
+  </div>
+</section>
+
+<div class="page-layout">
+
+  <aside class="sidebar">
+    <h3>Materi Kelas XI</h3>
+
+    <div class="sidebar-label">Daftar Bab</div>
+    <div class="sidebar-links">
+      <a href="bab-1-energi-bersih.html">BAB 1 · Teks Argumentasi</a>
+      <a href="bab-2-air-bersih.html">BAB 2 · Teks Persuasi</a>
+      <a href="bab-3-teks-berita.html">BAB 3 · Teks Berita</a>
+      <a href="bab-4-cerita-pendek.html">BAB 4 · Cerita Pendek</a>
+      <a href="bab-5-teks-resensi.html">BAB 5 · Teks Resensi</a>
+      <a href="bab-6-puisi.html">BAB 6 · Puisi</a>
+      <a href="bab-7-drama.html">BAB 7 · Drama</a>
+      <a href="bab-8-karya-ilmiah.html" class="active">BAB 8 · Karya Ilmiah</a>
+    </div>
+
+    <div class="sidebar-label">Navigasi Materi</div>
+    <div class="sidebar-links">
+      <a href="#pengantar">1. Pengertian</a>
+      <a href="#ciri">2. Ciri-Ciri</a>
+      <a href="#jenis">3. Jenis Karya Ilmiah</a>
+      <a href="#struktur">4. Struktur</a>
+      <a href="#proses">5. Proses Penulisan</a>
+      <a href="#etika">6. Etika Penulisan</a>
+      <a href="#kutipan">7. Kutipan dan Pustaka</a>
+      <a href="#menilai">8. Menilai Karya Ilmiah</a>
+      <a href="#presentasi">9. Presentasi</a>
+      <a href="#latihan">10. Latihan</a>
+      <a href="#proyek">11. Proyek</a>
+      <a href="#refleksi">12. Refleksi</a>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <!-- PENGANTAR -->
+    <section class="content-card" id="pengantar">
+      <div class="section-number">Bagian 01 · Memahami Konsep</div>
+      <h2>Apa Itu Karya Ilmiah?</h2>
+
+      <p class="lead">
+        Karya ilmiah adalah tulisan yang membahas suatu masalah atau
+        topik berdasarkan fakta, data, pengamatan, penelitian, dan
+        cara berpikir yang logis serta sistematis.
+      </p>
+
+      <p>
+        Sederhananya, karya ilmiah merupakan tulisan yang berusaha
+        menjelaskan atau menjawab suatu persoalan dengan menggunakan
+        bukti yang dapat diperiksa, bukan sekadar pendapat pribadi.
+        Penulis harus menunjukkan dari mana informasi diperoleh dan
+        bagaimana kesimpulan dibuat.
+      </p>
+
+      <p>
+        Dalam kehidupan sehari-hari, kita sering menemukan berbagai
+        pernyataan. Misalnya, seseorang mengatakan bahwa membaca buku
+        dapat meningkatkan kemampuan berbahasa. Pernyataan tersebut
+        mungkin benar, tetapi dalam tulisan ilmiah kita tidak cukup
+        hanya mengatakan bahwa hal itu benar. Kita perlu mencari
+        informasi, melakukan pengamatan, membaca penelitian, atau
+        mengumpulkan data yang mendukungnya.
+      </p>
+
+      <div class="highlight">
+        <strong>Ingat:</strong> Karya ilmiah tidak dibangun dari
+        kalimat yang terdengar meyakinkan, tetapi dari penjelasan
+        yang memiliki dasar dan bukti.
+      </div>
+
+      <h3>Contoh Perbedaan Pendapat Biasa dan Pernyataan Ilmiah</h3>
+
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Pendapat biasa</th>
+            <th>Pernyataan yang didukung bukti</th>
+          </tr>
+          <tr>
+            <td>Menurut saya, siswa sekarang malas membaca.</td>
+            <td>
+              Berdasarkan survei terhadap 60 siswa di kelas XI,
+              sebagian besar responden mengaku membaca buku di luar
+              kegiatan pembelajaran kurang dari satu jam per minggu.
+            </td>
+          </tr>
+          <tr>
+            <td>Minum air putih pasti membuat semua siswa lebih pintar.</td>
+            <td>
+              Kecukupan cairan merupakan salah satu faktor yang
+              mendukung fungsi tubuh. Pengaruhnya terhadap kemampuan
+              belajar perlu dikaji dengan data yang sesuai.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <p>
+        Perhatikan bahwa contoh kedua tidak membuat kesimpulan yang
+        berlebihan. Pernyataan ilmiah harus sesuai dengan apa yang
+        benar-benar dapat dibuktikan.
+      </p>
+
+      <h3>Mengapa Kita Perlu Mempelajari Karya Ilmiah?</h3>
+      <ul>
+        <li>Melatih kemampuan berpikir kritis dan tidak mudah percaya pada informasi.</li>
+        <li>Membiasakan diri mencari fakta sebelum membuat kesimpulan.</li>
+        <li>Mengembangkan kemampuan membaca, mengolah informasi, dan menulis.</li>
+        <li>Melatih kejujuran dalam menggunakan data dan pendapat orang lain.</li>
+        <li>Membantu menyampaikan gagasan agar dapat dipahami dan diperiksa oleh orang lain.</li>
+      </ul>
+    </section>
+
+    <!-- CIRI -->
+    <section class="content-card" id="ciri">
+      <div class="section-number">Bagian 02 · Mengenali Karakteristik</div>
+      <h2>Ciri-Ciri Karya Ilmiah</h2>
+
+      <p>
+        Tidak semua tulisan yang panjang dan menggunakan istilah
+        sulit dapat disebut karya ilmiah. Sebuah tulisan disebut
+        ilmiah karena memiliki cara penyusunan dan dasar pemikiran
+        tertentu. Berikut ciri-ciri utamanya.
+      </p>
+
+      <h3>1. Objektif</h3>
+      <p>
+        Objektif berarti pembahasan didasarkan pada fakta dan bukti,
+        bukan pada perasaan, kepentingan pribadi, atau prasangka
+        penulis. Penulis tidak boleh mengubah data hanya agar sesuai
+        dengan pendapatnya.
+      </p>
+      <div class="example">
+        <div class="example-title">Contoh</div>
+        Kurang objektif: "Kantin sekolah kita sangat buruk dan
+        tidak layak dikunjungi."
+        <br><br>
+        Lebih objektif: "Berdasarkan pengamatan, terdapat beberapa
+        tempat sampah yang tidak tertutup dan sisa makanan yang
+        belum dibersihkan di area kantin."
+      </div>
+
+      <h3>2. Sistematis</h3>
+      <p>
+        Sistematis berarti tulisan disusun secara teratur dan
+        mengikuti urutan yang jelas. Pembaca dapat memahami
+        pembahasan dari awal hingga akhir tanpa merasa bingung.
+        Misalnya, tulisan dimulai dari pengenalan masalah,
+        dilanjutkan dengan cara penelitian, hasil, pembahasan,
+        dan kesimpulan.
+      </p>
+
+      <h3>3. Logis</h3>
+      <p>
+        Logis berarti penjelasan masuk akal dan memiliki hubungan
+        yang jelas antara satu gagasan dengan gagasan lainnya.
+        Kesimpulan harus lahir dari penalaran yang benar, bukan
+        dari dugaan yang tidak didukung alasan.
+      </p>
+
+      <h3>4. Berbasis Data dan Fakta</h3>
+      <p>
+        Karya ilmiah harus memiliki dasar informasi yang dapat
+        diperiksa. Data dapat diperoleh melalui pengamatan,
+        wawancara, angket, dokumentasi, percobaan, atau sumber
+        tertulis yang tepercaya.
+      </p>
+
+      <h3>5. Menggunakan Bahasa Baku</h3>
+      <p>
+        Bahasa karya ilmiah harus jelas, tepat, dan mengikuti
+        kaidah bahasa Indonesia. Hindari bahasa percakapan yang
+        terlalu santai, kata-kata yang bermakna ganda, serta
+        ungkapan emosional yang tidak diperlukan.
+      </p>
+
+      <h3>6. Dapat Dipertanggungjawabkan</h3>
+      <p>
+        Informasi, data, kutipan, dan kesimpulan harus dapat
+        ditelusuri. Penulis harus bersedia menjelaskan sumber
+        informasi serta cara memperoleh dan mengolah data.
+      </p>
+
+      <div class="success">
+        <strong>Kesimpulan penting:</strong> Objektif berarti
+        berdasarkan bukti, sistematis berarti tersusun teratur,
+        logis berarti masuk akal, dan dapat dipertanggungjawabkan
+        berarti sumber serta prosesnya jelas.
+      </div>
+    </section>
+
+    <!-- JENIS -->
+    <section class="content-card" id="jenis">
+      <div class="section-number">Bagian 03 · Mengenal Bentuk Tulisan</div>
+      <h2>Jenis-Jenis Karya Ilmiah</h2>
+
+      <p>
+        Karya ilmiah memiliki beberapa bentuk. Perbedaannya terletak
+        pada tujuan, kedalaman pembahasan, metode, dan lingkungan
+        penggunaannya.
+      </p>
+
+      <div class="mini-grid">
+        <div class="mini-card">
+          <strong>1. Makalah</strong>
+          Tulisan yang membahas suatu persoalan berdasarkan kajian
+          pustaka, pengamatan, atau pembahasan tertentu. Biasanya
+          digunakan dalam kegiatan pembelajaran atau diskusi.
+        </div>
+        <div class="mini-card">
+          <strong>2. Artikel ilmiah</strong>
+          Tulisan ilmiah yang relatif ringkas dan membahas suatu
+          persoalan berdasarkan kajian atau hasil penelitian.
+          Dapat diterbitkan dalam jurnal atau media ilmiah.
+        </div>
+        <div class="mini-card">
+          <strong>3. Laporan penelitian</strong>
+          Tulisan yang menjelaskan proses dan hasil penelitian,
+          mulai dari masalah, metode, data, pembahasan, hingga
+          kesimpulan.
+        </div>
+        <div class="mini-card">
+          <strong>4. Skripsi, tesis, dan disertasi</strong>
+          Karya ilmiah yang disusun sebagai persyaratan akademik
+          pada jenjang pendidikan tinggi, dengan tingkat kedalaman
+          dan kontribusi yang berbeda.
+        </div>
+      </div>
+
+      <div class="info">
+        <strong>Catatan:</strong> Untuk pembelajaran di SMA,
+        peserta didik dapat mulai berlatih melalui makalah sederhana
+        atau laporan penelitian kecil berdasarkan masalah di
+        lingkungan sekolah.
+      </div>
+    </section>
+
+    <!-- STRUKTUR -->
+    <section class="content-card" id="struktur">
+      <div class="section-number">Bagian 04 · Menyusun Kerangka</div>
+      <h2>Struktur Umum Karya Ilmiah</h2>
+
+      <p>
+        Struktur karya ilmiah adalah susunan bagian-bagian yang
+        membentuk sebuah tulisan ilmiah. Setiap bagian mempunyai
+        fungsi tersendiri dan saling berhubungan.
+      </p>
+
+      <div class="highlight">
+        <strong>Urutan umum:</strong><br>
+        Pendahuluan → Kajian Pustaka → Metode → Hasil dan Pembahasan
+        → Simpulan dan Saran → Daftar Pustaka.
+      </div>
+
+      <h3>1. Pendahuluan</h3>
+      <p>
+        Pendahuluan merupakan bagian awal yang menjelaskan alasan
+        suatu topik perlu dibahas atau diteliti. Bagian ini membantu
+        pembaca memahami persoalan yang menjadi perhatian penulis.
+      </p>
+      <p>Secara umum, pendahuluan memuat:</p>
+      <ul>
+        <li><strong>Latar belakang:</strong> alasan atau kondisi yang melandasi pemilihan topik.</li>
+        <li><strong>Identifikasi masalah:</strong> berbagai persoalan yang ditemukan berkaitan dengan topik.</li>
+        <li><strong>Rumusan masalah:</strong> pertanyaan utama yang ingin dijawab.</li>
+        <li><strong>Tujuan:</strong> hal yang ingin dicapai melalui penulisan atau penelitian.</li>
+        <li><strong>Manfaat:</strong> kegunaan hasil pembahasan bagi pembaca atau pihak terkait.</li>
+      </ul>
+
+      <div class="example">
+        <div class="example-title">Contoh rumusan masalah</div>
+        Topik: Kebiasaan membaca siswa.
+        <br><br>
+        1. Bagaimana kebiasaan membaca siswa kelas XI di luar
+        kegiatan pembelajaran?
+        <br>
+        2. Jenis bacaan apa yang paling sering dipilih siswa?
+        <br>
+        3. Faktor apa saja yang memengaruhi kebiasaan membaca siswa?
+      </div>
+
+      <h3>2. Kajian Pustaka</h3>
+      <p>
+        Kajian pustaka adalah bagian yang berisi teori, konsep,
+        dan hasil penelitian terdahulu yang berkaitan dengan topik.
+        Bagian ini menunjukkan bahwa penulis tidak membahas masalah
+        hanya berdasarkan dugaan pribadi.
+      </p>
+      <p>
+        Misalnya, ketika meneliti kebiasaan membaca, penulis dapat
+        mencari referensi tentang pengertian membaca, manfaat
+        membaca, budaya literasi, dan faktor yang memengaruhi minat
+        baca.
+      </p>
+      <p>
+        Sumber kajian pustaka dapat berupa buku, jurnal ilmiah,
+        laporan penelitian, dan dokumen resmi yang relevan.
+        Penulis perlu mencatat identitas sumber sejak awal.
+      </p>
+
+      <h3>3. Metode Penelitian</h3>
+      <p>
+        Metode penelitian menjelaskan cara penulis memperoleh dan
+        mengolah data. Dengan membaca bagian ini, orang lain dapat
+        memahami bagaimana penelitian dilakukan.
+      </p>
+      <p>Bagian metode biasanya menjelaskan:</p>
+      <ul>
+        <li>Jenis atau pendekatan penelitian.</li>
+        <li>Tempat dan waktu penelitian.</li>
+        <li>Subjek atau objek penelitian.</li>
+        <li>Teknik pengumpulan data.</li>
+        <li>Teknik pengolahan atau analisis data.</li>
+      </ul>
+
+      <div class="example">
+        <div class="example-title">Contoh sederhana metode</div>
+        Penelitian dilakukan melalui survei terhadap 30 siswa
+        kelas XI. Data dikumpulkan menggunakan angket berisi
+        pertanyaan tentang kebiasaan membaca. Jawaban responden
+        kemudian dikelompokkan dan dihitung untuk mengetahui
+        kecenderungan kebiasaan membaca siswa.
+      </div>
+
+      <h3>4. Hasil dan Pembahasan</h3>
+      <p>
+        Hasil penelitian berisi data atau temuan yang diperoleh
+        selama proses penelitian. Pembahasan menjelaskan arti
+        temuan tersebut, menghubungkannya dengan rumusan masalah,
+        dan membandingkannya dengan teori atau penelitian yang
+        relevan.
+      </p>
+      <p>
+        Hasil menjawab pertanyaan, "Apa yang ditemukan?"
+        Sementara pembahasan menjawab, "Apa arti temuan tersebut
+        dan mengapa hal itu dapat terjadi?"
+      </p>
+
+      <div class="example">
+        <div class="example-title">Contoh hasil dan pembahasan</div>
+        Dari 30 siswa yang mengikuti survei, 18 siswa menyatakan
+        membaca buku di luar pelajaran setidaknya satu kali dalam
+        seminggu. Sementara itu, 12 siswa menyatakan jarang
+        melakukannya.
+        <br><br>
+        Temuan tersebut menunjukkan bahwa kebiasaan membaca
+        di luar kegiatan pembelajaran belum merata pada kelompok
+        responden. Hasil ini dapat menjadi bahan pertimbangan
+        untuk mengembangkan kegiatan literasi yang lebih menarik.
+      </div>
+
+      <h3>5. Simpulan dan Saran</h3>
+      <p>
+        Simpulan merupakan jawaban ringkas atas rumusan masalah
+        berdasarkan hasil dan pembahasan. Simpulan tidak boleh
+        memuat klaim yang tidak didukung data.
+      </p>
+      <p>
+        Saran berisi masukan atau tindak lanjut yang dapat
+        dilakukan berdasarkan hasil penelitian.
+      </p>
+
+      <div class="example">
+        <div class="example-title">Contoh simpulan dan saran</div>
+        Simpulan: Berdasarkan survei terhadap 30 siswa, kebiasaan
+        membaca di luar pembelajaran masih berbeda-beda. Sebagian
+        responden telah membaca secara rutin, sedangkan sebagian
+        lainnya masih jarang membaca.
+        <br><br>
+        Saran: Sekolah dapat mengembangkan kegiatan membaca
+        yang bervariasi dan menyediakan bahan bacaan yang sesuai
+        dengan minat peserta didik.
+      </div>
+
+      <h3>6. Daftar Pustaka</h3>
+      <p>
+        Daftar pustaka memuat sumber-sumber yang benar-benar
+        digunakan dan dirujuk dalam karya ilmiah. Bagian ini
+        memungkinkan pembaca menelusuri asal informasi yang
+        digunakan penulis.
+      </p>
+      <p>
+        Daftar pustaka bukan sekadar daftar buku yang pernah
+        dibaca. Sumber yang dicantumkan harus berkaitan dengan
+        isi tulisan dan mengikuti aturan penulisan yang digunakan.
+      </p>
+
+      <div class="info">
+        <strong>Perlu diketahui:</strong> Susunan karya ilmiah
+        dapat berbeda sesuai jenis tulisan dan pedoman lembaga.
+        Namun, bagian-bagian di atas merupakan kerangka umum
+        yang dapat digunakan untuk latihan di sekolah.
+      </div>
+    </section>
+
+    <!-- PROSES -->
+    <section class="content-card" id="proses">
+      <div class="section-number">Bagian 05 · Dari Gagasan Menjadi Tulisan</div>
+      <h2>Langkah-Langkah Menulis Karya Ilmiah</h2>
+
+      <p>
+        Menulis karya ilmiah tidak sebaiknya dilakukan secara
+        terburu-buru. Penulis perlu melalui beberapa tahapan agar
+        tulisan memiliki arah yang jelas dan didukung informasi
+        yang cukup.
+      </p>
+
+      <ol class="step-list">
+        <li>
+          <strong>Menentukan topik.</strong><br>
+          Pilih persoalan yang menarik, dekat dengan kehidupan,
+          dan memungkinkan untuk dikaji. Hindari topik yang
+          terlalu luas.
+        </li>
+        <li>
+          <strong>Mengidentifikasi masalah.</strong><br>
+          Amati keadaan, temukan persoalan, lalu tentukan hal
+          yang ingin diketahui atau dijelaskan.
+        </li>
+        <li>
+          <strong>Merumuskan masalah dan tujuan.</strong><br>
+          Ubah persoalan menjadi pertanyaan yang jelas.
+          Tentukan pula tujuan penulisan agar pembahasan tidak
+          melebar.
+        </li>
+        <li>
+          <strong>Mencari referensi.</strong><br>
+          Baca buku, jurnal, laporan, dan sumber tepercaya yang
+          sesuai dengan topik. Catat identitas sumber.
+        </li>
+        <li>
+          <strong>Menentukan metode dan mengumpulkan data.</strong><br>
+          Tentukan cara memperoleh informasi, misalnya melalui
+          observasi, wawancara, angket, dokumentasi, atau kajian
+          pustaka.
+        </li>
+        <li>
+          <strong>Mengolah dan menganalisis data.</strong><br>
+          Kelompokkan informasi, periksa kesesuaiannya, lalu
+          jelaskan temuan berdasarkan bukti yang diperoleh.
+        </li>
+        <li>
+          <strong>Menyusun kerangka tulisan.</strong><br>
+          Atur gagasan ke dalam pendahuluan, kajian pustaka,
+          metode, hasil dan pembahasan, simpulan, serta daftar
+          pustaka.
+        </li>
+        <li>
+          <strong>Menulis dan mengembangkan pembahasan.</strong><br>
+          Kembangkan kerangka menjadi paragraf yang runtut.
+          Gunakan bahasa baku dan cantumkan sumber ketika
+          menggunakan gagasan orang lain.
+        </li>
+        <li>
+          <strong>Merevisi dan menyunting.</strong><br>
+          Periksa isi, ketepatan data, alur penjelasan, ejaan,
+          tanda baca, kutipan, dan daftar pustaka.
+        </li>
+        <li>
+          <strong>Menyajikan hasil karya.</strong><br>
+          Sampaikan hasil penelitian atau pembahasan secara
+          lisan maupun tertulis dengan jelas dan bertanggung
+          jawab.
+        </li>
+      </ol>
+
+      <h3>Menentukan Topik yang Baik</h3>
+      <p>
+        Topik yang baik tidak harus membahas persoalan besar.
+        Masalah sederhana di lingkungan sekolah pun dapat
+        menjadi bahan karya ilmiah jika dirumuskan dengan jelas
+        dan dikaji menggunakan cara yang tepat.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Topik terlalu luas</th>
+            <th>Topik lebih spesifik</th>
+          </tr>
+          <tr>
+            <td>Pendidikan di Indonesia</td>
+            <td>Kebiasaan membaca siswa kelas XI di luar jam pelajaran.</td>
+          </tr>
+          <tr>
+            <td>Lingkungan sekolah</td>
+            <td>Pengelolaan sampah plastik di lingkungan sekolah.</td>
+          </tr>
+          <tr>
+            <td>Penggunaan teknologi</td>
+            <td>Pemanfaatan telepon pintar untuk mencari bahan pembelajaran oleh siswa kelas XI.</td>
+          </tr>
+          <tr>
+            <td>Kesehatan remaja</td>
+            <td>Kebiasaan membawa bekal dari rumah pada siswa kelas XI.</td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>Menentukan Rumusan Masalah</h3>
+      <p>
+        Rumusan masalah adalah pertanyaan yang menjadi fokus
+        pembahasan. Rumusan masalah harus jelas, tidak terlalu
+        luas, dan dapat dijawab melalui data atau kajian.
+      </p>
+
+      <div class="example">
+        <div class="example-title">Contoh mengembangkan topik</div>
+        <strong>Topik:</strong> Pengelolaan sampah plastik di sekolah.
+        <br><br>
+        <strong>Rumusan masalah:</strong>
+        <ol>
+          <li>Bagaimana kondisi pengelolaan sampah plastik di lingkungan sekolah?</li>
+          <li>Jenis sampah plastik apa yang paling banyak ditemukan pada lokasi pengamatan?</li>
+          <li>Upaya apa yang dapat dilakukan untuk meningkatkan pengelolaan sampah plastik?</li>
+        </ol>
+        <strong>Tujuan:</strong> Mendeskripsikan kondisi pengelolaan
+        sampah plastik dan mengidentifikasi upaya perbaikan yang
+        dapat dilakukan.
+      </div>
+
+      <h3>Mengenal Teknik Pengumpulan Data</h3>
+      <div class="mini-grid">
+        <div class="mini-card">
+          <strong>Observasi</strong>
+          Mengamati keadaan atau peristiwa secara langsung.
+          Contoh: mengamati kondisi tempat sampah di sekolah.
+        </div>
+        <div class="mini-card">
+          <strong>Wawancara</strong>
+          Mengajukan pertanyaan kepada narasumber untuk memperoleh
+          informasi. Contoh: mewawancarai petugas kebersihan.
+        </div>
+        <div class="mini-card">
+          <strong>Angket atau kuesioner</strong>
+          Mengumpulkan jawaban dari sejumlah responden melalui
+          daftar pertanyaan.
+        </div>
+        <div class="mini-card">
+          <strong>Dokumentasi</strong>
+          Mengumpulkan bukti berupa foto, catatan, arsip, atau
+          dokumen yang relevan.
+        </div>
+        <div class="mini-card">
+          <strong>Studi pustaka</strong>
+          Mengumpulkan informasi dari buku, jurnal, laporan,
+          dan sumber tertulis tepercaya.
+        </div>
+      </div>
+
+      <div class="highlight">
+        <strong>Hal penting:</strong> Pilih teknik pengumpulan data
+        sesuai dengan pertanyaan penelitian. Jangan mengaku telah
+        melakukan wawancara, survei, atau observasi jika kegiatan
+        tersebut sebenarnya tidak dilakukan.
+      </div>
+    </section>
+
+    <!-- ETIKA -->
+    <section class="content-card" id="etika">
+      <div class="section-number">Bagian 06 · Kejujuran Akademik</div>
+      <h2>Etika dalam Menulis Karya Ilmiah</h2>
+
+      <p class="lead">
+        Karya ilmiah bukan hanya menuntut kecerdasan, tetapi juga
+        kejujuran. Penulis harus menghargai data, sumber informasi,
+        dan hasil pemikiran orang lain.
+      </p>
+
+      <h3>1. Mencantumkan Sumber Kutipan</h3>
+      <p>
+        Jika menggunakan gagasan, pendapat, data, atau kalimat
+        dari orang lain, penulis harus menyebutkan sumbernya.
+        Tujuannya agar pembaca mengetahui asal informasi dan
+        penulis tidak mengambil hak intelektual orang lain.
+      </p>
+
+      <h3>2. Tidak Melakukan Plagiarisme</h3>
+      <p>
+        Plagiarisme adalah tindakan mengambil atau menggunakan
+        karya, gagasan, kalimat, atau hasil pemikiran orang lain
+        seolah-olah merupakan karya sendiri tanpa memberikan
+        pengakuan yang semestinya.
+      </p>
+
+      <p>Contoh tindakan yang termasuk plagiarisme:</p>
+      <ul>
+        <li>Menyalin tulisan dari internet tanpa mencantumkan sumber.</li>
+        <li>Mengambil paragraf dari buku dan mengakuinya sebagai tulisan sendiri.</li>
+        <li>Menggunakan karya teman tanpa izin dan tanpa pengakuan.</li>
+        <li>Mengubah beberapa kata dari tulisan orang lain tetapi tetap tidak mencantumkan sumber.</li>
+      </ul>
+
+      <div class="example">
+        <div class="example-title">Contoh sederhana</div>
+        <strong>Tindakan yang tidak benar:</strong><br>
+        Siswa menyalin tiga paragraf dari sebuah artikel internet
+        lalu memasukkannya ke dalam makalah tanpa menyebutkan
+        penulis atau sumber artikel.
+        <br><br>
+        <strong>Tindakan yang benar:</strong><br>
+        Siswa membaca artikel tersebut, memahami isinya,
+        menjelaskan kembali menggunakan kalimat sendiri,
+        dan tetap mencantumkan sumber gagasan tersebut.
+      </div>
+
+      <h3>3. Tidak Memalsukan Data</h3>
+      <p>
+        Data harus disajikan sesuai kenyataan. Penulis tidak boleh
+        mengubah jumlah responden, membuat jawaban wawancara,
+        atau menciptakan hasil pengamatan yang tidak pernah
+        dilakukan.
+      </p>
+
+      <h3>4. Menghargai Narasumber dan Responden</h3>
+      <p>
+        Jika mengumpulkan informasi melalui wawancara atau angket,
+        penulis harus bersikap sopan, menjelaskan tujuan kegiatan,
+        menjaga informasi pribadi, serta tidak memaksa seseorang
+        untuk memberikan jawaban.
+      </p>
+
+      <h3>5. Menggunakan Teknologi dan Kecerdasan Buatan secara Bertanggung Jawab</h3>
+      <p>
+        Teknologi digital dan kecerdasan buatan dapat membantu
+        mencari ide, menyusun kerangka, atau memahami suatu
+        konsep. Namun, penulis tetap bertanggung jawab atas
+        isi karya yang disusun.
+      </p>
+      <ul>
+        <li>Periksa kembali informasi yang diperoleh dari alat digital.</li>
+        <li>Jangan menerima begitu saja jawaban yang belum diverifikasi.</li>
+        <li>Jangan membuat data penelitian menggunakan hasil rekaan alat AI.</li>
+        <li>Jangan mengaku melakukan kegiatan penelitian yang tidak pernah dilakukan.</li>
+        <li>Ikuti aturan guru atau lembaga mengenai penggunaan AI dan pengungkapannya.</li>
+      </ul>
+
+      <div class="success">
+        <strong>Prinsip utama etika ilmiah:</strong> Jujur terhadap
+        sumber, jujur terhadap data, jujur terhadap proses, dan
+        bertanggung jawab terhadap kesimpulan.
+      </div>
+    </section>
+
+    <!-- KUTIPAN -->
+    <section class="content-card" id="kutipan">
+      <div class="section-number">Bagian 07 · Menghargai Sumber Informasi</div>
+      <h2>Kutipan dan Daftar Pustaka</h2>
+
+      <p>
+        Dalam menulis karya ilmiah, kita sering menggunakan
+        informasi dari buku, artikel, jurnal, atau sumber lainnya.
+        Informasi tersebut dapat digunakan melalui kutipan langsung
+        maupun kutipan tidak langsung.
+      </p>
+
+      <h3>1. Kutipan Langsung</h3>
+      <p>
+        Kutipan langsung adalah pengambilan kalimat dari sumber
+        asli dengan mempertahankan susunan kata-katanya.
+        Kutipan langsung harus diberi tanda kutip jika bentuknya
+        berupa kutipan pendek dan dilengkapi identitas sumber
+        sesuai gaya sitasi yang digunakan.
+      </p>
+
+      <div class="example">
+        <div class="example-title">Contoh ilustratif</div>
+        Penulis sumber menyatakan, "Membaca merupakan kegiatan
+        yang dapat memperluas pengetahuan seseorang"
+        (Nama Penulis, 2024, hlm. 15).
+        <br><br>
+        <small>Catatan: Contoh ini hanya ilustrasi format. Nama
+        penulis, tahun, dan halaman harus berasal dari sumber
+        yang benar-benar digunakan.</small>
+      </div>
+
+      <h3>2. Kutipan Tidak Langsung</h3>
+      <p>
+        Kutipan tidak langsung adalah penyampaian kembali gagasan
+        dari sumber lain menggunakan kalimat sendiri. Meskipun
+        kalimatnya sudah diubah, sumber gagasan tetap harus
+        dicantumkan.
+      </p>
+
+      <div class="example">
+        <div class="example-title">Contoh ilustratif</div>
+        Gagasan sumber: Membaca dapat membantu seseorang
+        memperoleh informasi dan memperluas wawasan.
+        <br><br>
+        Penulisan kembali: Kegiatan membaca memberikan kesempatan
+        kepada seseorang untuk mengenal berbagai informasi
+        dan menambah pengetahuannya (Nama Penulis, 2024).
+      </div>
+
+      <h3>3. Perbedaan Kutipan Langsung dan Tidak Langsung</h3>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Aspek</th>
+            <th>Kutipan langsung</th>
+            <th>Kutipan tidak langsung</th>
+          </tr>
+          <tr>
+            <td>Bentuk kalimat</td>
+            <td>Sama seperti sumber asli.</td>
+            <td>Disampaikan dengan kalimat sendiri.</td>
+          </tr>
+          <tr>
+            <td>Tanda kutip</td>
+            <td>Umumnya digunakan untuk kutipan pendek.</td>
+            <td>Tidak menggunakan tanda kutip.</td>
+          </tr>
+          <tr>
+            <td>Sumber</td>
+            <td>Wajib dicantumkan.</td>
+            <td>Wajib dicantumkan.</td>
+          </tr>
+          <tr>
+            <td>Tujuan</td>
+            <td>Mempertahankan pernyataan asli.</td>
+            <td>Menjelaskan kembali gagasan dengan pemahaman sendiri.</td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>4. Apa Itu Daftar Pustaka?</h3>
+      <p>
+        Daftar pustaka adalah daftar sumber yang benar-benar
+        digunakan dalam penyusunan karya ilmiah. Setiap sumber
+        perlu ditulis dengan identitas yang memadai agar pembaca
+        dapat menemukannya kembali.
+      </p>
+
+      <p>Informasi yang biasanya dicatat antara lain:</p>
+      <ul>
+        <li>Nama penulis atau lembaga.</li>
+        <li>Tahun terbit.</li>
+        <li>Judul buku atau artikel.</li>
+        <li>Nama penerbit atau nama jurnal.</li>
+        <li>Volume, nomor, dan halaman jika diperlukan.</li>
+        <li>Alamat laman dan tanggal akses jika mengikuti pedoman yang mensyaratkannya.</li>
+      </ul>
+
+      <h3>5. Contoh Penulisan Daftar Pustaka</h3>
+
+      <div class="example">
+        <div class="example-title">Contoh buku · Format ilustratif</div>
+        Keraf, Gorys. 2004. <em>Komposisi: Sebuah Pengantar Kemahiran
+        Bahasa</em>. Ende: Nusa Indah.
+        <br><br>
+        <small>Contoh ini menunjukkan unsur penulisan buku.
+        Periksa kembali edisi dan data bibliografi pada buku
+        yang benar-benar digunakan.</small>
+      </div>
+
+      <div class="example">
+        <div class="example-title">Contoh artikel jurnal · Format ilustratif</div>
+        Nama Belakang, Nama Depan. 2023. "Judul Artikel Penelitian."
+        <em>Nama Jurnal</em>, 5(2), 20–30.
+        <br><br>
+        <small>Nama penulis, judul, jurnal, volume, nomor, dan
+        halaman di atas merupakan contoh format, bukan referensi
+        penelitian sungguhan.</small>
+      </div>
+
+      <div class="example">
+        <div class="example-title">Contoh sumber dari internet · Format ilustratif</div>
+        Nama Lembaga. 2024. <em>Judul Halaman atau Artikel</em>.
+        Alamat situs: https://contoh.id
+        <br><br>
+        <small>Gunakan alamat situs yang benar-benar dibaca.
+        Cantumkan tanggal akses jika diminta oleh pedoman
+        penulisan yang digunakan.</small>
+      </div>
+
+      <h3>6. Mengapa Kutipan dan Daftar Pustaka Harus Sesuai?</h3>
+      <p>
+        Kutipan dalam isi tulisan harus dapat ditemukan
+        sumbernya di daftar pustaka. Sebaliknya, daftar pustaka
+        sebaiknya hanya memuat sumber yang benar-benar digunakan.
+        Jangan mencantumkan buku atau artikel yang tidak pernah
+        dibaca hanya agar daftar pustaka terlihat panjang.
+      </p>
+
+      <div class="info">
+        <strong>Catatan penting:</strong> Terdapat beberapa gaya
+        penulisan sitasi, seperti APA dan gaya lainnya. Setiap
+        gaya mempunyai aturan tersendiri. Gunakan satu pedoman
+        secara konsisten dan ikuti ketentuan yang diberikan guru
+        atau lembaga.
+      </div>
+    </section>
+
+    <!-- MENILAI -->
+    <section class="content-card" id="menilai">
+      <div class="section-number">Bagian 08 · Berpikir Kritis</div>
+      <h2>Menilai Kualitas Karya Ilmiah</h2>
+
+      <p>
+        Membaca karya ilmiah tidak cukup hanya memahami isinya.
+        Kita juga perlu menilai apakah tulisan tersebut memiliki
+        dasar yang kuat, data yang memadai, dan kesimpulan yang
+        masuk akal.
+      </p>
+
+      <h3>1. Apakah Masalahnya Jelas?</h3>
+      <p>
+        Periksa apakah topik dan rumusan masalah dijelaskan
+        dengan baik. Tulisan yang baik memiliki fokus sehingga
+        pembaca mengetahui persoalan apa yang sedang dikaji.
+      </p>
+
+      <h3>2. Apakah Sumber Informasinya Tepercaya?</h3>
+      <p>
+        Periksa siapa penulisnya, dari mana informasi diterbitkan,
+        kapan informasi tersebut diterbitkan, dan apakah sumber
+        tersebut sesuai dengan topik. Informasi dari lembaga
+        resmi, buku akademik, dan jurnal ilmiah umumnya lebih
+        dapat dipertanggungjawabkan daripada unggahan tanpa
+        identitas yang jelas.
+      </p>
+
+      <h3>3. Apakah Data yang Digunakan Cukup?</h3>
+      <p>
+        Data harus sesuai dengan masalah yang dibahas. Jika
+        penelitian hanya melibatkan sedikit responden, penulis
+        tidak boleh langsung membuat kesimpulan yang mewakili
+        seluruh masyarakat.
+      </p>
+
+      <h3>4. Apakah Metodenya Tepat?</h3>
+      <p>
+        Periksa apakah cara mengumpulkan data sesuai dengan
+        pertanyaan penelitian. Misalnya, jika ingin mengetahui
+        pendapat siswa, angket atau wawancara dapat digunakan.
+        Jika ingin mengetahui kondisi kebersihan lingkungan,
+        observasi langsung dapat membantu.
+      </p>
+
+      <h3>5. Apakah Pembahasan Sesuai dengan Data?</h3>
+      <p>
+        Penulis harus membahas temuan yang benar-benar diperoleh.
+        Jangan sampai data menunjukkan satu hal, tetapi
+        pembahasan justru menyatakan hal yang bertentangan.
+      </p>
+
+      <h3>6. Apakah Simpulan Menjawab Rumusan Masalah?</h3>
+      <p>
+        Simpulan harus sesuai dengan hasil penelitian. Kesimpulan
+        tidak boleh lebih luas daripada bukti yang tersedia.
+      </p>
+
+      <div class="example">
+        <div class="example-title">Contoh menilai kesimpulan</div>
+        <strong>Data:</strong> Dari 30 siswa yang disurvei,
+        18 siswa menyatakan membaca buku di luar pelajaran
+        setidaknya satu kali dalam seminggu.
+        <br><br>
+        <strong>Kesimpulan yang tidak tepat:</strong><br>
+        "Seluruh siswa di Indonesia memiliki kebiasaan membaca
+        yang baik."
+        <br><br>
+        <strong>Kesimpulan yang lebih tepat:</strong><br>
+        "Dalam kelompok 30 siswa yang disurvei, sebagian besar
+        responden menyatakan membaca buku di luar pelajaran
+        setidaknya satu kali dalam seminggu."
+      </div>
+
+      <h3>Checklist Menilai Karya Ilmiah</h3>
+      <ul class="checklist">
+        <li>Apakah topik dan rumusan masalahnya jelas?</li>
+        <li>Apakah tujuan penelitiannya sesuai dengan masalah?</li>
+        <li>Apakah sumber informasi dapat dipercaya?</li>
+        <li>Apakah data diperoleh melalui cara yang jelas?</li>
+        <li>Apakah pembahasan didukung bukti?</li>
+        <li>Apakah kesimpulan sesuai dengan hasil?</li>
+        <li>Apakah kutipan dan daftar pustaka dicantumkan dengan benar?</li>
+        <li>Apakah bahasa yang digunakan jelas dan baku?</li>
+      </ul>
+    </section>
+
+    <!-- PRESENTASI -->
+    <section class="content-card" id="presentasi">
+      <div class="section-number">Bagian 09 · Mengomunikasikan Temuan</div>
+      <h2>Menyajikan Karya Ilmiah</h2>
+
+      <p>
+        Karya ilmiah tidak hanya disusun untuk dibaca, tetapi
+        juga dapat disampaikan secara lisan melalui presentasi.
+        Presentasi bertujuan menjelaskan masalah, proses,
+        temuan, dan kesimpulan kepada orang lain.
+      </p>
+
+      <h3>1. Menyiapkan Presentasi</h3>
+      <ul>
+        <li>Pahami isi karya ilmiah, bukan sekadar menghafalkan teks.</li>
+        <li>Tentukan bagian penting yang perlu disampaikan.</li>
+        <li>Susun materi presentasi secara runtut.</li>
+        <li>Gunakan slide yang ringkas dan mudah dibaca.</li>
+        <li>Siapkan data atau bukti pendukung yang diperlukan.</li>
+      </ul>
+
+      <h3>2. Urutan Presentasi Ilmiah</h3>
+      <ol>
+        <li><strong>Pembukaan:</strong> salam, perkenalan, dan pengantar topik.</li>
+        <li><strong>Latar belakang:</strong> alasan masalah tersebut dikaji.</li>
+        <li><strong>Tujuan dan metode:</strong> hal yang ingin diketahui dan cara memperoleh data.</li>
+        <li><strong>Hasil:</strong> temuan utama yang diperoleh.</li>
+        <li><strong>Pembahasan:</strong> penjelasan mengenai makna temuan.</li>
+        <li><strong>Simpulan:</strong> jawaban atas rumusan masalah.</li>
+        <li><strong>Tanya jawab:</strong> menjawab pertanyaan dengan jelas dan berdasarkan bukti.</li>
+      </ol>
+
+      <h3>3. Teknik Berbicara saat Presentasi</h3>
+      <div class="mini-grid">
+        <div class="mini-card">
+          <strong>Artikulasi</strong>
+          Ucapkan kata dengan jelas sehingga mudah dipahami.
+        </div>
+        <div class="mini-card">
+          <strong>Intonasi</strong>
+          Atur tinggi rendah suara agar penyampaian tidak monoton.
+        </div>
+        <div class="mini-card">
+          <strong>Volume</strong>
+          Sesuaikan suara dengan ruangan dan jumlah pendengar.
+        </div>
+        <div class="mini-card">
+          <strong>Kontak mata</strong>
+          Arahkan pandangan kepada pendengar, bukan terus-menerus
+          membaca layar.
+        </div>
+        <div class="mini-card">
+          <strong>Sikap percaya diri</strong>
+          Berdiri dengan baik, bersikap tenang, dan tidak tergesa-gesa.
+        </div>
+        <div class="mini-card">
+          <strong>Penguasaan materi</strong>
+          Pahami data dan alasan di balik kesimpulan yang disampaikan.
+        </div>
+      </div>
+
+      <h3>4. Menjawab Pertanyaan</h3>
+      <p>
+        Dalam presentasi ilmiah, pertanyaan dari pendengar
+        merupakan bagian penting. Jawablah dengan sopan,
+        langsung pada persoalan, dan berdasarkan informasi
+        yang tersedia.
+      </p>
+      <p>
+        Jika belum mengetahui jawabannya, sampaikan dengan jujur.
+        Jangan membuat jawaban atau data baru hanya untuk
+        terlihat menguasai materi.
+      </p>
+
+      <div class="quote-example">
+        "Terima kasih atas pertanyaannya. Berdasarkan data yang
+        kami peroleh, hal tersebut belum dapat disimpulkan secara
+        pasti. Diperlukan pengamatan lebih lanjut untuk
+        mendapatkan jawaban yang lebih kuat."
+      </div>
+    </section>
+
+    <!-- LATIHAN -->
+    <section class="content-card" id="latihan">
+      <div class="section-number">Bagian 10 · Menguji Pemahaman</div>
+      <h2>Latihan Pemahaman</h2>
+
+      <p>
+        Bacalah setiap soal dengan teliti. Jawablah menggunakan
+        pemahaman sendiri dan sertakan alasan jika diperlukan.
+      </p>
+
+      <h3>A. Pertanyaan Pemahaman</h3>
+      <ol>
+        <li>Jelaskan pengertian karya ilmiah menggunakan bahasamu sendiri.</li>
+        <li>Mengapa karya ilmiah harus bersifat objektif?</li>
+        <li>Sebutkan dan jelaskan lima ciri karya ilmiah.</li>
+        <li>Apa fungsi pendahuluan dalam sebuah karya ilmiah?</li>
+        <li>Mengapa metode penelitian harus dijelaskan secara rinci?</li>
+        <li>Apa perbedaan hasil penelitian dan pembahasan?</li>
+        <li>Jelaskan perbedaan kutipan langsung dan kutipan tidak langsung.</li>
+        <li>Apa yang dimaksud dengan plagiarisme? Berikan contohnya.</li>
+        <li>Mengapa kesimpulan harus sesuai dengan data penelitian?</li>
+        <li>Sebutkan hal-hal yang harus diperhatikan saat mempresentasikan karya ilmiah.</li>
+      </ol>
+
+      <h3>B. Analisis Kasus</h3>
+      <div class="example">
+        <div class="example-title">Kasus 1 · Data yang tidak sesuai</div>
+        Seorang siswa melakukan survei terhadap 20 teman sekelasnya.
+        Dari hasil survei, 12 siswa menyatakan membawa bekal dari
+        rumah. Namun, dalam kesimpulannya siswa tersebut menulis:
+        "Hampir semua siswa di sekolah selalu membawa bekal dari rumah."
+        <br><br>
+        <strong>Pertanyaan:</strong>
+        <ol>
+          <li>Apakah kesimpulan tersebut sudah tepat?</li>
+          <li>Mengapa kesimpulan itu perlu diperbaiki?</li>
+          <li>Tuliskan kesimpulan yang lebih sesuai dengan data.</li>
+        </ol>
+      </div>
+
+      <div class="example">
+        <div class="example-title">Kasus 2 · Plagiarisme</div>
+        Seorang siswa mengambil tulisan dari sebuah situs internet.
+        Ia mengganti beberapa kata, tetapi tidak mencantumkan
+        sumbernya dan mengaku bahwa tulisan tersebut merupakan
+        hasil pemikirannya sendiri.
+        <br><br>
+        <strong>Pertanyaan:</strong>
+        <ol>
+          <li>Apakah tindakan tersebut termasuk plagiarisme?</li>
+          <li>Mengapa mengganti beberapa kata tidak otomatis membuat tulisan menjadi karya sendiri?</li>
+          <li>Bagaimana cara menggunakan informasi dari internet secara benar?</li>
+        </ol>
+      </div>
+
+      <div class="example">
+        <div class="example-title">Kasus 3 · Memilih sumber</div>
+        Kamu sedang menulis karya ilmiah tentang sampah plastik.
+        Kamu menemukan dua sumber:
+        <br><br>
+        A. Unggahan media sosial tanpa nama penulis dan tanpa
+        keterangan asal data.
+        <br><br>
+        B. Laporan resmi lembaga lingkungan yang mencantumkan
+        identitas penerbit, tahun, dan sumber data.
+        <br><br>
+        <strong>Pertanyaan:</strong>
+        <ol>
+          <li>Sumber mana yang lebih layak dijadikan referensi utama?</li>
+          <li>Apa yang harus diperiksa sebelum menggunakan suatu sumber?</li>
+          <li>Apakah semua informasi dari sumber resmi boleh diterima tanpa diperiksa? Jelaskan.</li>
+        </ol>
+      </div>
+
+      <h3>C. Tugas Menulis Singkat</h3>
+      <p>
+        Pilih satu persoalan sederhana di lingkungan sekolah.
+        Buatlah satu paragraf latar belakang dan tiga rumusan
+        masalah yang dapat dikaji melalui pengamatan atau
+        pengumpulan informasi.
+      </p>
+    </section>
+
+    <!-- PROYEK -->
+    <section class="content-card" id="proyek">
+      <div class="section-number">Bagian 11 · Proyek Pembelajaran</div>
+      <h2>Proyek: Menyusun Karya Ilmiah Sederhana</h2>
+
+      <p class="lead">
+        Sekarang saatnya menerapkan pengetahuan yang telah
+        dipelajari. Buatlah karya ilmiah sederhana berdasarkan
+        persoalan nyata yang dapat ditemukan di lingkungan
+        sekolah atau masyarakat.
+      </p>
+
+      <h3>Tema yang Dapat Dipilih</h3>
+      <ul>
+        <li>Kebiasaan membaca peserta didik.</li>
+        <li>Pengelolaan sampah di lingkungan sekolah.</li>
+        <li>Penggunaan telepon pintar untuk kegiatan belajar.</li>
+        <li>Kebiasaan membawa bekal dari rumah.</li>
+        <li>Penggunaan bahasa Indonesia dalam komunikasi sehari-hari.</li>
+        <li>Pemanfaatan perpustakaan sekolah.</li>
+        <li>Upaya menjaga kebersihan lingkungan kelas.</li>
+      </ul>
+
+      <h3>Ketentuan Proyek</h3>
+      <ol class="step-list">
+        <li>
+          <strong>Pilih satu topik.</strong><br>
+          Pilih masalah yang menarik dan dapat dikaji dengan
+          kemampuan serta waktu yang tersedia.
+        </li>
+        <li>
+          <strong>Susun pendahuluan.</strong><br>
+          Jelaskan latar belakang, rumusan masalah, tujuan,
+          dan manfaat.
+        </li>
+        <li>
+          <strong>Kumpulkan referensi.</strong><br>
+          Gunakan sumber tepercaya dan catat identitas setiap
+          sumber yang dipakai.
+        </li>
+        <li>
+          <strong>Tentukan metode.</strong><br>
+          Pilih observasi, wawancara, angket, dokumentasi,
+          atau studi pustaka sesuai kebutuhan.
+        </li>
+        <li>
+          <strong>Kumpulkan dan olah data.</strong><br>
+          Sajikan informasi sesuai keadaan sebenarnya.
+          Jangan membuat data yang tidak diperoleh.
+        </li>
+        <li>
+          <strong>Tulis hasil dan pembahasan.</strong><br>
+          Jelaskan temuan dan hubungkan dengan masalah
+          serta referensi yang digunakan.
+        </li>
+        <li>
+          <strong>Buat simpulan dan saran.</strong><br>
+          Jawab rumusan masalah berdasarkan hasil yang
+          diperoleh.
+        </li>
+        <li>
+          <strong>Susun daftar pustaka.</strong><br>
+          Cantumkan seluruh sumber yang dirujuk secara konsisten.
+        </li>
+        <li>
+          <strong>Presentasikan hasilnya.</strong><br>
+          Sampaikan isi karya ilmiah secara runtut dan
+          bersiaplah menjawab pertanyaan.
+        </li>
+      </ol>
+
+      <h3>Format Laporan Proyek</h3>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Bagian</th>
+            <th>Isi yang harus disajikan</th>
+          </tr>
+          <tr>
+            <td>Judul</td>
+            <td>Singkat, jelas, dan menggambarkan topik.</td>
+          </tr>
+          <tr>
+            <td>Pendahuluan</td>
+            <td>Latar belakang, rumusan masalah, tujuan, manfaat.</td>
+          </tr>
+          <tr>
+            <td>Kajian pustaka</td>
+            <td>Konsep dan informasi dari sumber tepercaya.</td>
+          </tr>
+          <tr>
+            <td>Metode</td>
+            <td>Cara memperoleh dan mengolah data.</td>
+          </tr>
+          <tr>
+            <td>Hasil dan pembahasan</td>
+            <td>Temuan, data, dan penjelasannya.</td>
+          </tr>
+          <tr>
+            <td>Simpulan dan saran</td>
+            <td>Jawaban atas masalah dan masukan tindak lanjut.</td>
+          </tr>
+          <tr>
+            <td>Daftar pustaka</td>
+            <td>Identitas sumber yang benar-benar digunakan.</td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>Rubrik Penilaian Proyek</h3>
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Aspek Penilaian</th>
+            <th>Bobot</th>
+            <th>Hal yang Dinilai</th>
+          </tr>
+          <tr>
+            <td>Ketepatan topik dan rumusan masalah</td>
+            <td>15%</td>
+            <td>Fokus, jelas, dan sesuai dengan tujuan.</td>
+          </tr>
+          <tr>
+            <td>Kualitas sumber dan data</td>
+            <td>20%</td>
+            <td>Relevan, tepercaya, dan dapat ditelusuri.</td>
+          </tr>
+          <tr>
+            <td>Struktur dan kelengkapan</td>
+            <td>20%</td>
+            <td>Bagian karya ilmiah tersusun dengan baik.</td>
+          </tr>
+          <tr>
+            <td>Analisis dan simpulan</td>
+            <td>20%</td>
+            <td>Logis dan sesuai dengan bukti.</td>
+          </tr>
+          <tr>
+            <td>Bahasa dan etika ilmiah</td>
+            <td>15%</td>
+            <td>Bahasa baku, kutipan, dan kejujuran akademik.</td>
+          </tr>
+          <tr>
+            <td>Presentasi</td>
+            <td>10%</td>
+            <td>Kejelasan, penguasaan materi, dan sikap.</td>
+          </tr>
+          <tr>
+            <th>Total</th>
+            <th>100%</th>
+            <th></th>
+          </tr>
+        </table>
+      </div>
+
+      <div class="success">
+        <strong>Pesan proyek:</strong> Penelitian sederhana yang
+        dilakukan dengan jujur dan sungguh-sungguh jauh lebih
+        bernilai daripada laporan yang terlihat sempurna tetapi
+        datanya dibuat-buat.
+      </div>
+    </section>
+
+    <!-- RANGKUMAN -->
+    <section class="content-card" id="rangkuman">
+      <div class="section-number">Bagian 12 · Mengingat Kembali</div>
+      <h2>Rangkuman Materi</h2>
+
+      <ol>
+        <li>Karya ilmiah adalah tulisan yang disusun berdasarkan fakta, data, dan cara berpikir ilmiah.</li>
+        <li>Ciri karya ilmiah meliputi objektif, sistematis, logis, berbasis data, menggunakan bahasa baku, dan dapat dipertanggungjawabkan.</li>
+        <li>Jenis karya ilmiah antara lain makalah, artikel ilmiah, laporan penelitian, skripsi, tesis, dan disertasi.</li>
+        <li>Struktur umum karya ilmiah terdiri atas pendahuluan, kajian pustaka, metode, hasil dan pembahasan, simpulan dan saran, serta daftar pustaka.</li>
+        <li>Penulisan karya ilmiah dilakukan melalui tahapan menentukan topik, merumuskan masalah, mencari referensi, mengumpulkan data, menganalisis, menulis, merevisi, dan menyajikan hasil.</li>
+        <li>Etika ilmiah menuntut kejujuran, pencantuman sumber, larangan plagiarisme, dan larangan memalsukan data.</li>
+        <li>Kutipan dapat berupa kutipan langsung dan tidak langsung. Keduanya tetap harus mencantumkan sumber.</li>
+        <li>Karya ilmiah yang baik memiliki masalah yang jelas, data yang memadai, metode yang tepat, dan kesimpulan yang sesuai dengan hasil.</li>
+        <li>Presentasi ilmiah harus disampaikan secara runtut, singkat, jelas, dan berdasarkan bukti.</li>
+      </ol>
+
+      <div class="highlight">
+        <strong>Inti pembelajaran:</strong> Berpikir ilmiah berarti
+        membiasakan diri untuk bertanya, mencari bukti, memeriksa
+        informasi, menganalisis secara logis, dan menyampaikan
+        kesimpulan dengan jujur.
+      </div>
+    </section>
+
+    <!-- REFLEKSI -->
+    <section class="content-card" id="refleksi">
+      <div class="section-number">Bagian 13 · Refleksi Pembelajaran</div>
+      <h2>Refleksi Diri</h2>
+
+      <p>
+        Setelah mempelajari materi karya ilmiah, renungkan
+        pengalaman dan pemahamanmu. Jawablah pertanyaan berikut
+        dengan jujur.
+      </p>
+
+      <div class="reflection">
+        <ol>
+          <li>Apa hal baru yang kamu pahami setelah mempelajari karya ilmiah?</li>
+          <li>Mengapa sebuah pendapat perlu didukung data dan bukti?</li>
+          <li>Bagian mana dari proses penulisan karya ilmiah yang menurutmu paling menantang?</li>
+          <li>Bagaimana caramu memastikan informasi dari internet dapat dipercaya?</li>
+          <li>Mengapa kejujuran menjadi hal penting dalam penelitian?</li>
+          <li>Persoalan apa di lingkungan sekitarmu yang ingin kamu teliti lebih lanjut?</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PENUTUP -->
+    <section class="content-card closing">
+      <blockquote>
+        "Ilmu tumbuh dari rasa ingin tahu, menjadi kuat melalui
+        bukti, dan memberi manfaat ketika disampaikan dengan
+        kejujuran."
+      </blockquote>
+      <span>— MANDALA AKSARA</span>
+      <br>
+      <a href="kelas-xi.html" class="back-link">← Kembali ke Materi Kelas XI</a>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <strong>MANDALA AKSARA</strong>
+  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+  <p>Ruang Literasi dan Pembelajaran Bahasa Indonesia</p>
+  <p>Dikelola Mandiri</p>
+  <p>© 2026 Mandala Aksara. Semua hak dilindungi.</p>
+</footer>
+
+</body>
+</html>
