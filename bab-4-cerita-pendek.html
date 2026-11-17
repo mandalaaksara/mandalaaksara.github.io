@@ -1,0 +1,1919 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAB 4: Cerita Pendek | Mandala Aksara</title>
+  <meta name="description" content="Materi Bahasa Indonesia Kelas XI Fase F tentang cerita pendek, unsur intrinsik dan ekstrinsik, struktur cerpen, nilai budi pekerti, serta keterampilan menulis cerpen.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <style>
+    :root {
+      --navy: #142b4a;
+      --navy-dark: #0d203a;
+      --orange: #f28c28;
+      --gold: #c69a45;
+      --paper: #ffffff;
+      --soft: #f3f5f8;
+      --ink: #26364b;
+      --muted: #657386;
+      --line: #e3e8ef;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f9;
+      color: var(--ink);
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      background: var(--navy-dark);
+      color: white;
+      padding: 13px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      font-family: Georgia, serif;
+      font-weight: bold;
+      font-size: 19px;
+      letter-spacing: 1px;
+      line-height: 1.3;
+    }
+
+    .brand-subtitle {
+      font-size: 11px;
+      color: #d5dfeb;
+      letter-spacing: .3px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+
+    .nav a {
+      color: #edf2f8;
+      transition: .2s;
+    }
+
+    .nav a:hover {
+      color: var(--orange);
+    }
+
+    .hero {
+      background: linear-gradient(125deg, #10243d, #1d4269);
+      color: white;
+      padding: 55px 6%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "MANDALA AKSARA";
+      position: absolute;
+      right: -15px;
+      bottom: -28px;
+      font-family: Georgia, serif;
+      font-size: clamp(40px, 9vw, 100px);
+      font-weight: bold;
+      color: rgba(255,255,255,.035);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1150px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      color: #ffb65e;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2;
+      margin: 0 0 15px;
+      max-width: 850px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: #e0e9f2;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .hero-meta span {
+      border: 1px solid rgba(255,255,255,.25);
+      padding: 6px 13px;
+      border-radius: 30px;
+      font-size: 12px;
+      color: #f3f6fa;
+    }
+
+    .breadcrumb {
+      max-width: 1150px;
+      margin: 20px auto;
+      padding: 0 22px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .breadcrumb a {
+      color: #315c87;
+    }
+
+    .layout {
+      max-width: 1150px;
+      margin: 0 auto 60px;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: 255px minmax(0, 1fr);
+      gap: 25px;
+      align-items: start;
+    }
+
+    .sidebar {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      padding: 20px;
+      position: sticky;
+      top: 18px;
+      box-shadow: 0 5px 20px rgba(20,43,74,.04);
+    }
+
+    .sidebar h3 {
+      font-family: Georgia, serif;
+      color: var(--navy);
+      font-size: 17px;
+      margin: 0 0 14px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--orange);
+    }
+
+    .sidebar-label {
+      color: #8994a2;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 1.3px;
+      margin: 17px 0 7px;
+      text-transform: uppercase;
+    }
+
+    .sidebar-links {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .sidebar-links a {
+      display: block;
+      width: 100%;
+      padding: 9px 11px;
+      border-radius: 7px;
+      font-size: 12px;
+      color: #536276;
+      transition: .2s;
+    }
+
+    .sidebar-links a:hover {
+      background: #f1f4f8;
+      color: var(--navy);
+    }
+
+    .sidebar-links a.active {
+      background: #fff2e5;
+      color: #a85c0b;
+      font-weight: bold;
+      border-left: 3px solid var(--orange);
+    }
+
+    .content {
+      min-width: 0;
+    }
+
+    .content-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: clamp(20px, 4vw, 38px);
+      margin-bottom: 22px;
+      box-shadow: 0 5px 20px rgba(20,43,74,.035);
+    }
+
+    .section-kicker {
+      color: #d47a1d;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      color: var(--navy);
+      font-size: 25px;
+      line-height: 1.35;
+      margin: 0 0 18px;
+    }
+
+    h3 {
+      color: var(--navy);
+      font-size: 17px;
+      margin: 24px 0 9px;
+    }
+
+    h4 {
+      color: var(--navy);
+      margin: 17px 0 7px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul, ol {
+      padding-left: 23px;
+      margin: 8px 0 17px;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .lead {
+      font-size: 16px;
+      color: #43536a;
+    }
+
+    .callout {
+      background: #fff7ed;
+      border-left: 4px solid var(--orange);
+      border-radius: 7px;
+      padding: 15px 18px;
+      margin: 20px 0;
+    }
+
+    .callout strong {
+      color: #9a5717;
+    }
+
+    .note {
+      background: #eef4fa;
+      border-left: 4px solid #527da7;
+      padding: 14px 17px;
+      border-radius: 7px;
+      margin: 18px 0;
+    }
+
+    .concept-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .concept-item {
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      padding: 14px;
+      background: #fcfdff;
+    }
+
+    .concept-item strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+
+    .concept-item span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 17px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 520px;
+      font-size: 13px;
+    }
+
+    th, td {
+      border: 1px solid #e0e6ed;
+      padding: 11px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--navy);
+      color: white;
+    }
+
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    .structure-flow {
+      display: flex;
+      align-items: stretch;
+      gap: 7px;
+      flex-wrap: wrap;
+      margin: 22px 0;
+    }
+
+    .structure-step {
+      flex: 1 1 115px;
+      background: #f1f5f9;
+      border: 1px solid #dce5ee;
+      border-radius: 9px;
+      padding: 13px 9px;
+      text-align: center;
+    }
+
+    .structure-step strong {
+      display: block;
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    .structure-step span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 4px;
+    }
+
+    .example-story {
+      background: #fffdf8;
+      border: 1px solid #eee4d3;
+      border-radius: 10px;
+      padding: 22px;
+      margin: 20px 0;
+    }
+
+    .example-story h3 {
+      font-family: Georgia, serif;
+      text-align: center;
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .example-story .story-subtitle {
+      text-align: center;
+      color: #9a7b4c;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .example-story p {
+      text-align: justify;
+      line-height: 1.85;
+      text-indent: 25px;
+    }
+
+    .example-story .dialog {
+      text-indent: 0;
+      padding-left: 15px;
+      border-left: 2px solid #e6c28d;
+      color: #536276;
+    }
+
+    .analysis-list {
+      display: grid;
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    .analysis-item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 13px 15px;
+    }
+
+    .analysis-item strong {
+      color: #b66a19;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .analysis-item p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .activity {
+      background: #f7f9fc;
+      border: 1px solid #e1e7ef;
+      border-radius: 10px;
+      padding: 18px;
+      margin: 18px 0;
+    }
+
+    .activity h3 {
+      margin-top: 0;
+    }
+
+    .reflection {
+      background: linear-gradient(135deg, #172f4e, #244c72);
+      color: white;
+      border-radius: 12px;
+      padding: 23px;
+      margin: 20px 0;
+    }
+
+    .reflection h3 {
+      color: #ffc47e;
+      margin-top: 0;
+    }
+
+    .reflection li {
+      color: #edf3f8;
+    }
+
+    .quote {
+      text-align: center;
+      padding: 28px 20px;
+      color: #526176;
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    .quote small {
+      display: block;
+      margin-top: 9px;
+      color: #b57428;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .page-navigation {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 25px 0;
+    }
+
+    .page-navigation a {
+      display: inline-block;
+      background: var(--navy);
+      color: white;
+      padding: 11px 17px;
+      border-radius: 7px;
+      font-size: 12px;
+      transition: .2s;
+    }
+
+    .page-navigation a:hover {
+      background: var(--orange);
+    }
+
+    footer {
+      background: var(--navy-dark);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer strong {
+      font-family: Georgia, serif;
+      letter-spacing: 1.2px;
+    }
+
+    footer p {
+      color: #cbd6e2;
+      font-size: 12px;
+      margin: 7px 0;
+    }
+
+    footer small {
+      color: #aebccc;
+      font-size: 11px;
+    }
+
+    @media(max-width: 800px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .concept-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 42px 22px;
+      }
+    }
+
+    @media(max-width: 520px) {
+      .topbar {
+        padding: 12px 17px;
+      }
+
+      .nav {
+        gap: 12px;
+        font-size: 11px;
+      }
+
+      .brand-name {
+        font-size: 16px;
+      }
+
+      .brand-subtitle {
+        font-size: 10px;
+      }
+
+      .page-navigation a {
+        padding: 10px 12px;
+        font-size: 11px;
+      }
+
+      .structure-step {
+        flex-basis: 28%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+      <div>
+        <div class="brand-name">MANDALA AKSARA</div>
+        <div class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">Beranda</a>
+      <a href="perpustakaan-digital.html">Perpustakaan Digital</a>
+      <a href="kelas-xi.html">Kelas XI</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Bahasa Indonesia · Kelas XI · Fase F</div>
+      <h1>BAB 4: Menerapkan Budi Pekerti Luhur melalui Cerita Pendek</h1>
+      <p>
+        Memahami cerita pendek bukan sekadar membaca rangkaian peristiwa.
+        Melalui cerita, kita dapat mengenali berbagai karakter manusia,
+        memahami persoalan kehidupan, dan belajar mengambil keputusan
+        yang mencerminkan nilai-nilai kebaikan.
+      </p>
+      <div class="hero-meta">
+        <span>Materi Pembelajaran</span>
+        <span>Apresiasi Sastra</span>
+        <span>Budi Pekerti</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="breadcrumb">
+    <a href="index.html">Beranda</a> /
+    <a href="kelas-xi.html">Kelas XI</a> /
+    BAB 4: Cerita Pendek
+  </div>
+
+  <main class="layout">
+
+    <aside class="sidebar">
+      <h3>Daftar Materi Kelas XI</h3>
+
+      <div class="sidebar-label">Pembelajaran</div>
+      <div class="sidebar-links">
+        <a href="kelas-xi.html">Kembali ke Kelas XI</a>
+        <a href="bab-1-energi-bersih.html">BAB 1 · Teks Argumentasi</a>
+        <a href="bab-2-air-bersih.html">BAB 2 · Teks Persuasi</a>
+        <a href="bab-3-teks-berita.html">BAB 3 · Teks Berita</a>
+        <a href="bab-4-cerita-pendek.html" class="active">BAB 4 · Cerita Pendek</a>
+      </div>
+
+      <div class="sidebar-label">Isi Materi</div>
+      <div class="sidebar-links">
+        <a href="#pengantar">Pengantar Materi</a>
+        <a href="#tujuan">Tujuan Pembelajaran</a>
+        <a href="#peta-konsep">Peta Konsep</a>
+        <a href="#pengertian">Pengertian Cerpen</a>
+        <a href="#intrinsik">Unsur Intrinsik</a>
+        <a href="#ekstrinsik">Unsur Ekstrinsik</a>
+        <a href="#struktur">Struktur Cerpen</a>
+        <a href="#nilai">Nilai Budi Pekerti</a>
+        <a href="#analisis">Contoh dan Analisis</a>
+        <a href="#menulis">Menulis Cerpen</a>
+        <a href="#aktivitas">Aktivitas Pembelajaran</a>
+        <a href="#refleksi">Refleksi</a>
+        <a href="#rangkuman">Rangkuman</a>
+        <a href="#evaluasi">Latihan dan Evaluasi</a>
+      </div>
+    </aside>
+
+    <div class="content">
+
+      <!-- PENGANTAR -->
+      <section class="content-card" id="pengantar">
+        <div class="section-kicker">Bagian 01 · Pengantar</div>
+        <h2>Belajar Kehidupan melalui Cerita</h2>
+
+        <p class="lead">
+          Pernahkah kamu membaca cerita yang membuatmu terharu, marah,
+          tersenyum, atau bahkan mengubah cara pandangmu terhadap seseorang?
+          Itulah salah satu kekuatan karya sastra.
+        </p>
+
+        <p>
+          Cerita pendek atau cerpen merupakan salah satu bentuk karya sastra
+          yang menggambarkan kehidupan manusia melalui rangkaian peristiwa.
+          Di dalamnya terdapat tokoh yang memiliki sifat, keinginan, persoalan,
+          dan pilihan hidup. Tokoh-tokoh tersebut dapat mengajarkan kita
+          tentang arti kejujuran, tanggung jawab, kepedulian, keberanian,
+          kesabaran, dan berbagai nilai kebaikan lainnya.
+        </p>
+
+        <p>
+          Dalam kehidupan sehari-hari, kita sering dihadapkan pada pilihan:
+          berkata jujur atau berbohong, membantu orang lain atau bersikap
+          tidak peduli, mengakui kesalahan atau mencari alasan untuk
+          menghindarinya. Cerita pendek dapat menghadirkan persoalan seperti
+          itu melalui tokoh dan peristiwa yang menarik untuk direnungkan.
+        </p>
+
+        <div class="callout">
+          <strong>Gagasan utama bab ini:</strong>
+          Cerpen bukan hanya bacaan untuk menghibur. Cerpen juga dapat menjadi
+          sarana untuk memahami kehidupan, mengenali akibat dari suatu
+          tindakan, dan menumbuhkan budi pekerti luhur.
+        </div>
+      </section>
+
+      <!-- TUJUAN -->
+      <section class="content-card" id="tujuan">
+        <div class="section-kicker">Bagian 02 · Tujuan Pembelajaran</div>
+        <h2>Apa yang Akan Kamu Pelajari?</h2>
+
+        <p>Setelah mempelajari bab ini, kamu diharapkan mampu:</p>
+        <ol>
+          <li>Menjelaskan pengertian, ciri-ciri, dan karakteristik cerita pendek.</li>
+          <li>Mengidentifikasi unsur intrinsik dan ekstrinsik dalam cerpen.</li>
+          <li>Menjelaskan struktur cerita pendek berdasarkan tahapan peristiwa.</li>
+          <li>Menganalisis watak tokoh, konflik, dan amanat dalam cerita.</li>
+          <li>Menemukan nilai-nilai budi pekerti yang terkandung dalam cerpen.</li>
+          <li>Menghubungkan nilai dalam cerita dengan kehidupan sehari-hari.</li>
+          <li>Menulis cerpen kreatif dengan memperhatikan unsur dan struktur cerita.</li>
+          <li>Menyunting cerpen agar menjadi tulisan yang runtut, menarik, dan mudah dipahami.</li>
+        </ol>
+      </section>
+
+      <!-- PETA KONSEP -->
+      <section class="content-card" id="peta-konsep">
+        <div class="section-kicker">Bagian 03 · Peta Konsep</div>
+        <h2>Memahami Cerita Pendek</h2>
+
+        <div class="concept-grid">
+          <div class="concept-item">
+            <strong>Pengertian Cerpen</strong>
+            <span>Pengertian, ciri-ciri, dan karakteristik cerita pendek.</span>
+          </div>
+          <div class="concept-item">
+            <strong>Unsur Intrinsik</strong>
+            <span>Tema, tokoh, penokohan, alur, latar, sudut pandang, dan amanat.</span>
+          </div>
+          <div class="concept-item">
+            <strong>Unsur Ekstrinsik</strong>
+            <span>Latar belakang pengarang, masyarakat, budaya, dan nilai kehidupan.</span>
+          </div>
+          <div class="concept-item">
+            <strong>Struktur Cerpen</strong>
+            <span>Orientasi, komplikasi, evaluasi, resolusi, dan koda.</span>
+          </div>
+          <div class="concept-item">
+            <strong>Nilai Budi Pekerti</strong>
+            <span>Kejujuran, tanggung jawab, kepedulian, rendah hati, dan nilai lainnya.</span>
+          </div>
+          <div class="concept-item">
+            <strong>Menulis Cerpen</strong>
+            <span>Mengembangkan ide, tokoh, konflik, alur, dialog, dan revisi.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PENGERTIAN -->
+      <section class="content-card" id="pengertian">
+        <div class="section-kicker">Bagian 04 · Konsep Dasar</div>
+        <h2>Apa Itu Cerita Pendek?</h2>
+
+        <p>
+          Cerita pendek atau cerpen adalah karya sastra berbentuk prosa fiksi
+          yang relatif singkat dan berfokus pada satu konflik atau persoalan
+          utama. Cerpen menggambarkan kehidupan tokoh melalui peristiwa
+          tertentu yang disusun menjadi sebuah cerita.
+        </p>
+
+        <p>
+          Istilah <em>fiksi</em> berarti cerita yang dibangun melalui imajinasi
+          atau rekaan pengarang. Meskipun demikian, cerpen sering mengambil
+          inspirasi dari kejadian nyata, pengalaman pribadi, atau persoalan
+          yang benar-benar terjadi di masyarakat.
+        </p>
+
+        <div class="note">
+          <strong>Perlu diingat:</strong> Cerita fiksi tidak selalu berarti
+          seluruh isinya mustahil terjadi. Cerpen dapat menggambarkan
+          peristiwa yang sangat dekat dengan kehidupan nyata, tetapi
+          tokoh dan rangkaian ceritanya merupakan hasil kreativitas pengarang.
+        </div>
+
+        <h3>Ciri-Ciri Cerita Pendek</h3>
+        <ol>
+          <li>
+            <strong>Relatif singkat.</strong>
+            Cerpen dapat dibaca dalam waktu yang relatif singkat dibandingkan
+            novel, meskipun panjang setiap cerpen berbeda-beda.
+          </li>
+          <li>
+            <strong>Berfokus pada satu konflik utama.</strong>
+            Cerita biasanya mengembangkan satu persoalan pokok agar pembaca
+            dapat mengikuti perkembangan masalah secara jelas.
+          </li>
+          <li>
+            <strong>Tokoh yang terbatas.</strong>
+            Cerpen umumnya tidak menghadirkan terlalu banyak tokoh karena
+            ruang penceritaannya lebih terbatas.
+          </li>
+          <li>
+            <strong>Peristiwa lebih terpusat.</strong>
+            Rangkaian kejadian diarahkan untuk membangun dan menyelesaikan
+            konflik utama.
+          </li>
+          <li>
+            <strong>Memberikan kesan tertentu.</strong>
+            Cerpen sering menghadirkan pengalaman emosional atau pemikiran
+            yang membekas bagi pembaca.
+          </li>
+          <li>
+            <strong>Memiliki unsur pembangun cerita.</strong>
+            Cerpen dibangun melalui tema, tokoh, alur, latar, sudut pandang,
+            dan amanat.
+          </li>
+        </ol>
+
+        <h3>Perbedaan Cerpen dan Novel</h3>
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Aspek</th>
+              <th>Cerpen</th>
+              <th>Novel</th>
+            </tr>
+            <tr>
+              <td>Panjang cerita</td>
+              <td>Relatif singkat.</td>
+              <td>Lebih panjang dan luas.</td>
+            </tr>
+            <tr>
+              <td>Konflik</td>
+              <td>Umumnya berpusat pada satu konflik utama.</td>
+              <td>Dapat memiliki banyak konflik utama dan tambahan.</td>
+            </tr>
+            <tr>
+              <td>Tokoh</td>
+              <td>Biasanya lebih terbatas.</td>
+              <td>Dapat melibatkan banyak tokoh.</td>
+            </tr>
+            <tr>
+              <td>Pengembangan cerita</td>
+              <td>Lebih terpusat dan padat.</td>
+              <td>Lebih luas dan terperinci.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="callout">
+          <strong>Contoh sederhana:</strong>
+          Cerita tentang seorang siswa yang menemukan dompet dan harus
+          memutuskan apakah akan mengembalikannya kepada pemiliknya dapat
+          dikembangkan menjadi cerpen. Konflik utamanya adalah pilihan antara
+          mengambil barang yang bukan miliknya atau bersikap jujur.
+        </div>
+      </section>
+
+      <!-- INTRINSIK -->
+      <section class="content-card" id="intrinsik">
+        <div class="section-kicker">Bagian 05 · Unsur Pembangun</div>
+        <h2>Unsur Intrinsik Cerpen</h2>
+
+        <p>
+          Unsur intrinsik adalah unsur-unsur yang membangun cerita dari dalam.
+          Unsur ini dapat ditemukan dengan memperhatikan isi cerita, mulai
+          dari gagasan utama, tokoh, peristiwa, tempat kejadian, hingga pesan
+          yang ingin disampaikan pengarang.
+        </p>
+
+        <div class="callout">
+          <strong>Ingat:</strong> Intrinsik berarti bagian yang berasal dari
+          dalam cerita. Ketika menganalisis unsur intrinsik, kita sedang
+          membahas bagaimana cerita itu dibangun.
+        </div>
+
+        <h3>1. Tema</h3>
+        <p>
+          Tema adalah gagasan pokok atau ide utama yang mendasari sebuah
+          cerita. Tema menjadi dasar bagi pengarang dalam mengembangkan
+          tokoh, konflik, dan peristiwa.
+        </p>
+        <p>Contoh tema dalam cerpen antara lain:</p>
+        <ul>
+          <li>Persahabatan: hubungan dan kesetiaan antarteman.</li>
+          <li>Keluarga: kasih sayang dan hubungan antaranggota keluarga.</li>
+          <li>Kejujuran: keberanian menyampaikan kebenaran.</li>
+          <li>Perjuangan: usaha menghadapi kesulitan untuk mencapai tujuan.</li>
+          <li>Kepedulian sosial: perhatian terhadap keadaan orang lain.</li>
+        </ul>
+        <p>
+          Tema biasanya dapat ditemukan dengan melihat persoalan yang paling
+          banyak dibahas dan menjadi pusat perkembangan cerita.
+        </p>
+
+        <h3>2. Tokoh dan Penokohan</h3>
+        <p>
+          Tokoh adalah orang atau pelaku yang mengalami berbagai peristiwa
+          dalam cerita. Sementara itu, penokohan adalah cara pengarang
+          menggambarkan watak, sifat, atau karakter tokoh tersebut.
+        </p>
+
+        <p>Tokoh dapat dibedakan berdasarkan perannya:</p>
+        <ul>
+          <li><strong>Tokoh utama:</strong> tokoh yang paling banyak terlibat dan menjadi pusat cerita.</li>
+          <li><strong>Tokoh tambahan:</strong> tokoh yang membantu mengembangkan peristiwa atau mendukung cerita.</li>
+          <li><strong>Protagonis:</strong> tokoh yang menjadi pembawa nilai atau tujuan yang mendapat simpati pembaca.</li>
+          <li><strong>Antagonis:</strong> tokoh yang menentang tujuan tokoh lain atau menjadi sumber pertentangan.</li>
+        </ul>
+
+        <p>
+          Protagonis tidak selalu berarti tokoh yang sempurna dan antagonis
+          tidak selalu berarti tokoh yang sepenuhnya jahat. Keduanya
+          merupakan peran dalam perkembangan konflik cerita.
+        </p>
+
+        <h4>Bagaimana Watak Tokoh Digambarkan?</h4>
+        <p>
+          Pengarang dapat menggambarkan watak tokoh melalui dua cara utama:
+        </p>
+        <ul>
+          <li>
+            <strong>Secara langsung (analitik):</strong> pengarang menyebutkan
+            sifat tokoh secara langsung. Contoh: "Rina adalah anak yang
+            sangat peduli terhadap teman-temannya."
+          </li>
+          <li>
+            <strong>Secara tidak langsung (dramatik):</strong> watak tokoh
+            diketahui melalui tindakan, ucapan, pikiran, reaksi tokoh lain,
+            atau kebiasaan tokoh. Contoh: Rina selalu menyisihkan uang
+            jajannya untuk membantu temannya yang kesulitan.
+          </li>
+        </ul>
+
+        <h3>3. Alur atau Plot</h3>
+        <p>
+          Alur adalah rangkaian peristiwa yang membentuk jalannya cerita.
+          Alur menunjukkan bagaimana suatu kejadian berhubungan dengan
+          kejadian lainnya hingga membentuk konflik dan penyelesaian.
+        </p>
+
+        <p>Secara umum, alur dibedakan menjadi tiga jenis:</p>
+        <div class="analysis-list">
+          <div class="analysis-item">
+            <strong>Alur maju</strong>
+            <p>
+              Peristiwa diceritakan secara berurutan dari awal menuju akhir.
+              Contoh: seorang siswa terlambat, mendapat teguran, memperbaiki
+              kebiasaan, kemudian menjadi lebih disiplin.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>Alur mundur</strong>
+            <p>
+              Cerita dimulai dari peristiwa masa kini, kemudian bergerak
+              kembali ke masa lalu untuk menjelaskan penyebab suatu kejadian.
+              Teknik ini sering menggunakan kilas balik atau <em>flashback</em>.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>Alur campuran</strong>
+            <p>
+              Cerita menggabungkan alur maju dan mundur. Peristiwa masa kini
+              dapat diselingi kenangan atau kejadian masa lalu.
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Dalam alur, biasanya terdapat pengenalan keadaan, munculnya konflik,
+          peningkatan ketegangan, puncak konflik, dan penyelesaian.
+        </p>
+
+        <h3>4. Latar atau Setting</h3>
+        <p>
+          Latar adalah keterangan mengenai tempat, waktu, dan suasana
+          berlangsungnya peristiwa dalam cerita.
+        </p>
+        <ul>
+          <li><strong>Latar tempat:</strong> lokasi terjadinya peristiwa, seperti sekolah, rumah, pasar, atau desa.</li>
+          <li><strong>Latar waktu:</strong> kapan peristiwa berlangsung, seperti pagi hari, malam, musim hujan, atau masa lampau.</li>
+          <li><strong>Latar suasana:</strong> keadaan emosional atau kondisi yang terasa dalam cerita, seperti sedih, tegang, bahagia, sepi, atau mengharukan.</li>
+        </ul>
+        <p>
+          Contoh: "Hujan turun deras pada malam itu. Ruang tunggu rumah sakit
+          terasa begitu sunyi." Kalimat tersebut menggambarkan latar waktu
+          malam hari, tempat rumah sakit, dan suasana sunyi.
+        </p>
+
+        <h3>5. Sudut Pandang</h3>
+        <p>
+          Sudut pandang adalah posisi atau cara pengarang menempatkan
+          pencerita dalam menyampaikan kisah kepada pembaca.
+        </p>
+
+        <ul>
+          <li>
+            <strong>Orang pertama:</strong> pencerita menggunakan kata
+            "aku" atau "saya" sebagai tokoh dalam cerita.
+            Contoh: "Aku berjalan menyusuri lorong sekolah."
+          </li>
+          <li>
+            <strong>Orang ketiga serba tahu:</strong> pencerita berada di
+            luar cerita dan mengetahui berbagai peristiwa, termasuk pikiran
+            serta perasaan sejumlah tokoh.
+            Contoh: "Rani tersenyum, tetapi sebenarnya ia sedang menyimpan
+            kegelisahan."
+          </li>
+          <li>
+            <strong>Orang ketiga terbatas:</strong> pencerita berada di luar
+            cerita, tetapi informasi yang disampaikan lebih banyak berpusat
+            pada pengalaman atau pengetahuan satu tokoh tertentu.
+            Contoh: "Rani melihat pintu itu terbuka. Ia tidak tahu siapa
+            yang baru saja masuk."
+          </li>
+        </ul>
+
+        <h3>6. Amanat</h3>
+        <p>
+          Amanat adalah pesan, nasihat, atau pelajaran yang dapat diambil
+          pembaca dari sebuah cerita. Amanat dapat disampaikan secara
+          langsung maupun tersirat melalui tindakan dan akibat yang dialami
+          tokoh.
+        </p>
+        <p>
+          Contoh: dalam cerita tentang siswa yang mengembalikan dompet,
+          amanatnya dapat berupa pentingnya kejujuran dan menghargai hak
+          milik orang lain.
+        </p>
+
+        <div class="note">
+          <strong>Tips menganalisis unsur intrinsik:</strong>
+          Jangan hanya menebak. Temukan bukti dari kalimat, tindakan,
+          percakapan, dan peristiwa dalam cerita. Bukti tersebut membuat
+          analisismu lebih kuat dan dapat dipertanggungjawabkan.
+        </div>
+      </section>
+
+      <!-- EKSTRINSIK -->
+      <section class="content-card" id="ekstrinsik">
+        <div class="section-kicker">Bagian 06 · Unsur Pembangun</div>
+        <h2>Unsur Ekstrinsik Cerpen</h2>
+
+        <p>
+          Unsur ekstrinsik adalah unsur yang berasal dari luar cerita,
+          tetapi dapat memengaruhi isi, gagasan, atau cara pengarang
+          menggambarkan kehidupan dalam cerpen.
+        </p>
+
+        <p>
+          Jika unsur intrinsik membahas bagian yang terdapat di dalam cerita,
+          unsur ekstrinsik membantu kita memahami latar belakang yang
+          memengaruhi lahirnya cerita tersebut.
+        </p>
+
+        <h3>1. Latar Belakang Pengarang</h3>
+        <p>
+          Pengalaman hidup, pendidikan, lingkungan, pekerjaan, dan
+          pandangan pengarang dapat memengaruhi tema maupun persoalan yang
+          diangkat dalam cerita.
+        </p>
+        <p>
+          Misalnya, pengarang yang tumbuh di lingkungan pedesaan mungkin
+          banyak menggambarkan kehidupan petani, hubungan antartetangga,
+          tradisi, dan alam dalam ceritanya.
+        </p>
+
+        <h3>2. Kondisi Masyarakat</h3>
+        <p>
+          Keadaan sosial, ekonomi, politik, dan perubahan kehidupan
+          masyarakat dapat menjadi latar yang memengaruhi cerita.
+        </p>
+        <p>
+          Misalnya, cerpen yang menggambarkan perjuangan keluarga
+          berpenghasilan rendah dapat memperlihatkan persoalan kesenjangan
+          sosial dan sulitnya memperoleh pendidikan.
+        </p>
+
+        <h3>3. Nilai Budaya dan Adat Istiadat</h3>
+        <p>
+          Kebiasaan, tradisi, adat, dan cara hidup masyarakat dapat
+          memengaruhi perilaku tokoh serta peristiwa dalam cerita.
+          Contohnya adalah tradisi gotong royong, musyawarah, menghormati
+          orang tua, atau menjaga hubungan kekeluargaan.
+        </p>
+
+        <h3>4. Nilai Agama dan Kepercayaan</h3>
+        <p>
+          Nilai agama dan kepercayaan dapat memengaruhi pandangan pengarang
+          tentang kebaikan, tanggung jawab, kejujuran, kesabaran, dan
+          hubungan manusia dengan Tuhan.
+        </p>
+
+        <h3>5. Nilai Sosial dan Moral</h3>
+        <p>
+          Pandangan tentang perilaku yang baik dan buruk dalam masyarakat
+          juga dapat memengaruhi cerita. Misalnya, sikap menghargai sesama,
+          kepedulian, keadilan, dan keberanian membela kebenaran.
+        </p>
+
+        <div class="callout">
+          <strong>Perbedaan yang perlu dipahami:</strong>
+          Unsur intrinsik membahas apa yang membangun cerita dari dalam,
+          sedangkan unsur ekstrinsik membahas latar belakang atau keadaan
+          di luar cerita yang ikut memengaruhinya.
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Unsur Intrinsik</th>
+              <th>Unsur Ekstrinsik</th>
+            </tr>
+            <tr>
+              <td>Tokoh dan penokohan.</td>
+              <td>Latar belakang kehidupan pengarang.</td>
+            </tr>
+            <tr>
+              <td>Alur atau rangkaian peristiwa.</td>
+              <td>Kondisi sosial masyarakat.</td>
+            </tr>
+            <tr>
+              <td>Latar tempat, waktu, suasana.</td>
+              <td>Nilai budaya dan adat istiadat.</td>
+            </tr>
+            <tr>
+              <td>Tema dan amanat.</td>
+              <td>Pandangan agama, moral, dan nilai kehidupan.</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- STRUKTUR -->
+      <section class="content-card" id="struktur">
+        <div class="section-kicker">Bagian 07 · Susunan Cerita</div>
+        <h2>Struktur Cerita Pendek</h2>
+
+        <p>
+          Struktur cerpen adalah susunan bagian-bagian cerita yang membantu
+          membentuk rangkaian peristiwa secara runtut. Salah satu pola
+          struktur yang dapat digunakan untuk memahami cerpen terdiri atas
+          lima tahap.
+        </p>
+
+        <div class="structure-flow">
+          <div class="structure-step">
+            <strong>1. Orientasi</strong>
+            <span>Pengenalan cerita</span>
+          </div>
+          <div class="structure-step">
+            <strong>2. Komplikasi</strong>
+            <span>Masalah muncul</span>
+          </div>
+          <div class="structure-step">
+            <strong>3. Evaluasi</strong>
+            <span>Konflik berkembang</span>
+          </div>
+          <div class="structure-step">
+            <strong>4. Resolusi</strong>
+            <span>Penyelesaian masalah</span>
+          </div>
+          <div class="structure-step">
+            <strong>5. Koda</strong>
+            <span>Penutup atau pesan</span>
+          </div>
+        </div>
+
+        <h3>1. Orientasi</h3>
+        <p>
+          Orientasi merupakan bagian awal cerita yang memperkenalkan tokoh,
+          latar, dan situasi awal. Pada bagian ini, pembaca mulai mengenal
+          siapa yang terlibat dalam cerita, di mana peristiwa berlangsung,
+          dan bagaimana keadaan tokoh.
+        </p>
+        <p>
+          Contoh: "Setiap pagi, Dimas selalu datang paling awal ke sekolah.
+          Ia dikenal sebagai siswa yang rajin dan bertanggung jawab."
+        </p>
+
+        <h3>2. Komplikasi</h3>
+        <p>
+          Komplikasi merupakan bagian ketika masalah atau konflik mulai
+          muncul. Konflik dapat terjadi antara tokoh dengan tokoh lain,
+          tokoh dengan lingkungan, atau tokoh dengan dirinya sendiri.
+        </p>
+        <p>
+          Contoh: Dimas menemukan sebuah dompet di halaman sekolah.
+          Di dalamnya terdapat sejumlah uang dan kartu identitas pemiliknya.
+        </p>
+
+        <h3>3. Evaluasi</h3>
+        <p>
+          Evaluasi merupakan tahap ketika konflik semakin berkembang.
+          Tokoh mulai menghadapi akibat dari masalah yang muncul.
+          Ketegangan meningkat dan tokoh biasanya harus mempertimbangkan
+          pilihan yang akan diambil.
+        </p>
+        <p>
+          Contoh: Dimas sedang membutuhkan uang untuk membeli buku.
+          Ia sempat berpikir untuk menyimpan uang tersebut, tetapi ia juga
+          menyadari bahwa uang itu bukan miliknya.
+        </p>
+
+        <h3>4. Resolusi</h3>
+        <p>
+          Resolusi merupakan bagian penyelesaian konflik. Pada tahap ini,
+          pembaca mengetahui keputusan yang diambil tokoh dan bagaimana
+          persoalan yang dihadapinya diselesaikan.
+        </p>
+        <p>
+          Contoh: Dimas menyerahkan dompet itu kepada guru piket agar
+          dikembalikan kepada pemiliknya.
+        </p>
+
+        <h3>5. Koda</h3>
+        <p>
+          Koda merupakan bagian penutup yang dapat berisi perubahan sikap
+          tokoh, kesimpulan, atau pesan yang dapat dipetik dari cerita.
+          Koda tidak selalu harus ditulis secara langsung. Dalam beberapa
+          cerpen, pesan justru dibiarkan tersirat melalui akhir cerita.
+        </p>
+        <p>
+          Contoh: Dimas menyadari bahwa ketenangan hati jauh lebih berharga
+          daripada mendapatkan sesuatu yang bukan haknya.
+        </p>
+
+        <div class="note">
+          <strong>Catatan penting:</strong>
+          Tidak semua cerpen memiliki kelima bagian tersebut secara lengkap
+          atau ditulis dengan urutan yang sama. Ada cerpen yang langsung
+          menghadirkan konflik pada bagian awal, ada pula yang mengakhiri
+          cerita secara terbuka. Lima tahap ini merupakan pola yang
+          membantu kita memahami perkembangan cerita.
+        </div>
+      </section>
+
+      <!-- NILAI BUDI PEKERTI -->
+      <section class="content-card" id="nilai">
+        <div class="section-kicker">Bagian 08 · Pembentukan Karakter</div>
+        <h2>Menemukan Nilai Budi Pekerti dalam Cerpen</h2>
+
+        <p>
+          Salah satu tujuan penting membaca cerpen adalah menemukan nilai
+          kehidupan yang terkandung di dalamnya. Nilai tersebut dapat
+          terlihat melalui sikap, perkataan, keputusan, dan tindakan tokoh
+          ketika menghadapi persoalan.
+        </p>
+
+        <p>
+          Budi pekerti merupakan perilaku atau karakter baik yang tercermin
+          dalam cara seseorang berpikir, berbicara, dan bertindak.
+          Nilai budi pekerti tidak cukup hanya diketahui atau diucapkan,
+          tetapi perlu diterapkan dalam kehidupan sehari-hari.
+        </p>
+
+        <h3>Nilai-Nilai Budi Pekerti yang Dapat Ditemukan</h3>
+
+        <div class="analysis-list">
+          <div class="analysis-item">
+            <strong>1. Kejujuran</strong>
+            <p>
+              Berani berkata benar, tidak menipu, tidak mengambil hak orang
+              lain, dan bersedia mengakui kesalahan.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>2. Tanggung Jawab</strong>
+            <p>
+              Melaksanakan kewajiban, menepati janji, dan bersedia menerima
+              akibat dari keputusan atau tindakan sendiri.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>3. Kepedulian</strong>
+            <p>
+              Memperhatikan keadaan orang lain dan bersedia membantu tanpa
+              mengharapkan imbalan.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>4. Rendah Hati</strong>
+            <p>
+              Tidak sombong, tidak merendahkan orang lain, dan bersedia
+              menerima kritik maupun nasihat.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>5. Kerja Keras</strong>
+            <p>
+              Berusaha dengan sungguh-sungguh dan tidak mudah menyerah
+              ketika menghadapi kesulitan.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>6. Disiplin</strong>
+            <p>
+              Menghargai waktu, menaati aturan, dan menjalankan kewajiban
+              dengan tertib.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>7. Toleransi</strong>
+            <p>
+              Menghargai perbedaan pendapat, kebiasaan, latar belakang,
+              dan keyakinan orang lain.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>8. Kesabaran</strong>
+            <p>
+              Mampu mengendalikan diri, tidak mudah marah, dan tetap
+              berusaha ketika menghadapi keadaan sulit.
+            </p>
+          </div>
+        </div>
+
+        <h3>Bagaimana Cara Menemukan Nilai Budi Pekerti?</h3>
+        <p>
+          Untuk menemukan nilai budi pekerti, jangan hanya mencari kalimat
+          yang berisi nasihat. Perhatikan bagaimana tokoh bertindak ketika
+          menghadapi persoalan.
+        </p>
+        <ol>
+          <li><strong>Amati perilaku tokoh.</strong> Apa yang dilakukan tokoh kepada dirinya sendiri dan orang lain?</li>
+          <li><strong>Perhatikan pilihan tokoh.</strong> Mengapa ia mengambil keputusan tertentu?</li>
+          <li><strong>Amati akibat tindakannya.</strong> Apa yang terjadi setelah tokoh melakukan sesuatu?</li>
+          <li><strong>Temukan nilai yang tercermin.</strong> Apakah tindakan tersebut menunjukkan kejujuran, tanggung jawab, kepedulian, atau nilai lainnya?</li>
+          <li><strong>Hubungkan dengan kehidupan nyata.</strong> Bagaimana nilai tersebut dapat diterapkan dalam kehidupan sehari-hari?</li>
+        </ol>
+
+        <div class="callout">
+          <strong>Ingat:</strong>
+          Nilai budi pekerti dalam cerpen sering kali tidak disampaikan
+          melalui nasihat secara langsung. Pembaca perlu menyimpulkannya
+          berdasarkan tindakan tokoh dan akibat yang muncul.
+        </div>
+      </section>
+
+      <!-- CONTOH CERITA -->
+      <section class="content-card" id="analisis">
+        <div class="section-kicker">Bagian 09 · Contoh dan Analisis</div>
+        <h2>Membaca dan Menganalisis Cerpen</h2>
+
+        <p>
+          Agar lebih mudah memahami unsur dan nilai budi pekerti dalam
+          cerpen, perhatikan contoh cerita berikut. Cerita ini merupakan
+          contoh orisinal untuk pembelajaran.
+        </p>
+
+        <div class="example-story">
+          <h3>Dompet di Bawah Bangku</h3>
+          <div class="story-subtitle">Cerita pendek · Tema kejujuran dan tanggung jawab</div>
+
+          <p>
+            Pagi itu, halaman sekolah masih basah oleh sisa hujan semalam.
+            Arman berjalan tergesa-gesa menuju kelas. Ia harus menyelesaikan
+            tugas kelompok yang belum sempat dikerjakannya di rumah.
+          </p>
+
+          <p>
+            Ketika melewati bangku taman, langkahnya terhenti. Sebuah dompet
+            berwarna cokelat tergeletak di bawah bangku. Arman mengambilnya
+            dan membuka bagian depannya. Ada beberapa lembar uang, kartu
+            identitas, serta sebuah foto keluarga.
+          </p>
+
+          <p>
+            Arman melihat uang itu cukup banyak. Ia teringat bahwa hari ini
+            ia harus membeli buku pelajaran. Uang sakunya sudah habis sejak
+            kemarin.
+          </p>
+
+          <p class="dialog">
+            "Kalau aku ambil sedikit saja, mungkin tidak ada yang tahu,"
+            gumamnya pelan.
+          </p>
+
+          <p>
+            Namun, pandangannya kembali tertuju pada foto keluarga di dalam
+            dompet. Ia membayangkan betapa khawatirnya seseorang yang
+            kehilangan barang penting tersebut.
+          </p>
+
+          <p class="dialog">
+            "Man, kamu sedang apa?" tanya Riko yang baru datang.
+          </p>
+
+          <p class="dialog">
+            "Aku menemukan dompet. Sepertinya milik seseorang di sekolah."
+          </p>
+
+          <p class="dialog">
+            "Wah, lumayan banyak uangnya. Simpan saja dulu. Siapa tahu
+            tidak ada yang mencari," ujar Riko.
+          </p>
+
+          <p>
+            Arman terdiam. Ia tahu bahwa menyimpan barang yang bukan miliknya
+            adalah perbuatan yang tidak benar. Setelah berpikir sejenak,
+            ia memutuskan membawa dompet itu ke ruang guru.
+          </p>
+
+          <p>
+            Tidak lama kemudian, seorang perempuan datang ke ruang guru
+            dengan wajah cemas. Ia adalah petugas perpustakaan yang kehilangan
+            dompet saat membersihkan taman sekolah.
+          </p>
+
+          <p class="dialog">
+            "Alhamdulillah, ternyata masih ada orang jujur. Terima kasih
+            banyak, Nak," ucap perempuan itu dengan mata berkaca-kaca.
+          </p>
+
+          <p>
+            Arman hanya tersenyum. Ia tidak mendapatkan uang untuk membeli
+            buku, tetapi ada perasaan lega yang sulit dijelaskan. Hari itu,
+            ia belajar bahwa melakukan hal yang benar terkadang tidak
+            memberikan keuntungan secara langsung, tetapi membuat hati
+            menjadi tenang.
+          </p>
+
+          <p>
+            Sejak saat itu, Arman semakin memahami bahwa kejujuran bukan
+            sekadar ucapan. Kejujuran harus dibuktikan melalui tindakan,
+            terutama ketika tidak ada orang yang melihat.
+          </p>
+        </div>
+
+        <h3>Analisis Unsur Intrinsik</h3>
+
+        <div class="analysis-list">
+          <div class="analysis-item">
+            <strong>Tema</strong>
+            <p>
+              Kejujuran dan tanggung jawab. Cerita berpusat pada pilihan
+              Arman ketika menemukan barang milik orang lain.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>Tokoh dan Penokohan</strong>
+            <p>
+              Arman: memiliki keinginan pribadi, tetapi akhirnya memilih
+              bersikap jujur. Riko: memberikan saran yang kurang tepat.
+              Petugas perpustakaan: pemilik dompet yang kehilangan barangnya.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>Alur</strong>
+            <p>
+              Alur maju, karena peristiwa diceritakan secara berurutan
+              dari penemuan dompet hingga pengembalian kepada pemiliknya.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>Latar</strong>
+            <p>
+              Tempat: halaman sekolah dan ruang guru. Waktu: pagi hari.
+              Suasana: awalnya tenang, kemudian muncul kebimbangan dan
+              berakhir dengan kelegaan.
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>Sudut Pandang</strong>
+            <p>
+              Orang ketiga, karena pencerita menggunakan nama tokoh dan
+              kata ganti "ia".
+            </p>
+          </div>
+          <div class="analysis-item">
+            <strong>Amanat</strong>
+            <p>
+              Kita harus bersikap jujur dan bertanggung jawab, sekalipun
+              tidak ada orang yang mengawasi.
+            </p>
+          </div>
+        </div>
+
+        <h3>Analisis Struktur Cerpen</h3>
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Struktur</th>
+              <th>Bagian Cerita</th>
+            </tr>
+            <tr>
+              <td>Orientasi</td>
+              <td>Arman berjalan menuju kelas pada pagi hari dan diperkenalkan sebagai tokoh utama.</td>
+            </tr>
+            <tr>
+              <td>Komplikasi</td>
+              <td>Arman menemukan dompet berisi uang dan kartu identitas.</td>
+            </tr>
+            <tr>
+              <td>Evaluasi</td>
+              <td>Arman bimbang karena membutuhkan uang, sementara Riko menyarankan agar dompet disimpan.</td>
+            </tr>
+            <tr>
+              <td>Resolusi</td>
+              <td>Arman membawa dompet ke ruang guru hingga pemiliknya ditemukan.</td>
+            </tr>
+            <tr>
+              <td>Koda</td>
+              <td>Arman memahami bahwa kejujuran harus dibuktikan melalui tindakan.</td>
+            </tr>
+          </table>
+        </div>
+
+        <h3>Nilai Budi Pekerti dalam Cerita</h3>
+        <ul>
+          <li><strong>Kejujuran:</strong> Arman tidak mengambil uang yang bukan miliknya.</li>
+          <li><strong>Tanggung jawab:</strong> Arman berusaha mengembalikan dompet kepada pemiliknya.</li>
+          <li><strong>Kepedulian:</strong> Arman membayangkan kekhawatiran orang yang kehilangan dompet.</li>
+          <li><strong>Keberanian moral:</strong> Arman tetap memilih tindakan yang benar meskipun mendapat saran yang berbeda.</li>
+        </ul>
+
+        <div class="note">
+          <strong>Pelajaran dari cerita:</strong>
+          Nilai budi pekerti terlihat bukan hanya dari apa yang dikatakan
+          tokoh, melainkan terutama dari keputusan yang diambil ketika
+          menghadapi pilihan sulit.
+        </div>
+      </section>
+
+      <!-- MENULIS -->
+      <section class="content-card" id="menulis">
+        <div class="section-kicker">Bagian 10 · Keterampilan Menulis</div>
+        <h2>Menulis Cerpen Kreatif</h2>
+
+        <p>
+          Setelah mampu memahami dan menganalisis cerpen, langkah berikutnya
+          adalah mencoba menulis cerita sendiri. Menulis cerpen merupakan
+          kegiatan menuangkan gagasan, pengalaman, pengamatan, dan imajinasi
+          menjadi sebuah cerita yang menarik serta memiliki makna.
+        </p>
+
+        <p>
+          Kamu tidak harus menjadi penulis profesional untuk mulai menulis.
+          Pengalaman sederhana dalam kehidupan sehari-hari dapat menjadi
+          bahan cerita yang menarik jika dikembangkan dengan baik.
+        </p>
+
+        <h3>Langkah-Langkah Menulis Cerpen</h3>
+
+        <h4>1. Menentukan Tema dan Ide Cerita</h4>
+        <p>
+          Tema merupakan gagasan utama yang akan menjadi dasar cerita.
+          Pilih tema yang dekat dengan kehidupan atau hal yang menarik
+          perhatianmu.
+        </p>
+        <p>Contoh tema:</p>
+        <ul>
+          <li>Persahabatan yang diuji oleh kesalahpahaman.</li>
+          <li>Perjuangan seorang siswa meraih cita-cita.</li>
+          <li>Kejujuran ketika menghadapi masalah.</li>
+          <li>Hubungan anak dengan orang tua.</li>
+          <li>Kepedulian terhadap lingkungan sekitar.</li>
+        </ul>
+
+        <h4>2. Menentukan Tokoh dan Karakter</h4>
+        <p>
+          Tentukan siapa saja yang akan terlibat dalam cerita. Berikan
+          karakter yang jelas agar setiap tokoh memiliki peran dalam
+          perkembangan cerita.
+        </p>
+        <p>
+          Misalnya, tokoh utama bernama Nisa yang rajin tetapi kurang percaya
+          diri. Tokoh pendampingnya adalah Sari yang ramah dan suka
+          memberikan semangat.
+        </p>
+
+        <h4>3. Menyusun Kerangka Alur</h4>
+        <p>
+          Kerangka alur membantu penulis menyusun cerita agar tidak
+          melompat-lompat dan kehilangan arah. Tuliskan garis besar
+          peristiwa dari awal hingga akhir.
+        </p>
+        <p>Contoh kerangka sederhana:</p>
+        <ol>
+          <li>Orientasi: Nisa dikenal sebagai siswa yang pandai, tetapi kurang percaya diri.</li>
+          <li>Komplikasi: Nisa diminta mewakili kelas dalam lomba membaca puisi.</li>
+          <li>Evaluasi: Nisa merasa takut gagal dan ingin mengundurkan diri.</li>
+          <li>Resolusi: Dengan dukungan sahabat dan latihan, Nisa berani tampil.</li>
+          <li>Koda: Nisa memahami bahwa keberanian tumbuh ketika seseorang mau mencoba.</li>
+        </ol>
+
+        <h4>4. Mengembangkan Cerita dengan Deskripsi dan Dialog</h4>
+        <p>
+          Deskripsi digunakan untuk menggambarkan suasana, tempat, keadaan,
+          dan perasaan tokoh. Dialog digunakan untuk memperlihatkan
+          percakapan antartokoh.
+        </p>
+        <p>
+          Contoh deskripsi: "Tangan Nisa terasa dingin. Ia berdiri di balik
+          tirai panggung sambil memandangi deretan kursi yang dipenuhi
+          penonton."
+        </p>
+        <p>
+          Contoh dialog:
+        </p>
+        <div class="note">
+          "Kamu pasti bisa, Nis. Yang penting berani mencoba," kata Sari.
+          <br>
+          "Aku takut salah di depan semua orang," jawab Nisa.
+          <br>
+          "Tidak apa-apa merasa takut. Tapi jangan biarkan rasa takut
+          menghentikan langkahmu."
+        </div>
+
+        <h4>5. Menggunakan Gaya Bahasa yang Menarik</h4>
+        <p>
+          Gaya bahasa membantu membuat cerita lebih hidup dan memberikan
+          kesan kepada pembaca. Gunakan pilihan kata yang tepat, kalimat
+          yang bervariasi, dan deskripsi yang sesuai dengan suasana.
+        </p>
+        <p>
+          Contoh: "Matahari perlahan tenggelam di balik perbukitan, seolah
+          ikut menyimpan rahasia yang belum sempat diungkapkan."
+        </p>
+        <p>
+          Gunakan majas jika sesuai, misalnya personifikasi, metafora,
+          simile, atau hiperbola. Namun, jangan berlebihan. Bahasa yang
+          indah tetap harus mudah dipahami.
+        </p>
+
+        <h4>6. Membaca Ulang dan Merevisi</h4>
+        <p>
+          Setelah selesai menulis, bacalah kembali cerpenmu. Periksa apakah
+          alurnya mudah diikuti, tokohnya konsisten, konflik berkembang
+          dengan baik, dan akhir cerita terasa sesuai.
+        </p>
+        <p>Perhatikan beberapa hal berikut:</p>
+        <ul>
+          <li>Ketepatan ejaan, tanda baca, dan penggunaan huruf kapital.</li>
+          <li>Keefektifan kalimat dan ketepatan pilihan kata.</li>
+          <li>Kesesuaian dialog dengan karakter tokoh.</li>
+          <li>Keterhubungan antara awal, konflik, dan penyelesaian.</li>
+          <li>Kejelasan nilai atau kesan yang ingin disampaikan.</li>
+        </ul>
+
+        <div class="callout">
+          <strong>Tips menulis:</strong>
+          Jangan menunggu ide yang luar biasa untuk mulai menulis.
+          Peristiwa sederhana seperti membantu teman, kehilangan sesuatu,
+          meminta maaf, atau menghadapi kegagalan dapat menjadi cerita
+          yang bermakna.
+        </div>
+
+        <h3>Memilih Judul Cerpen</h3>
+        <p>
+          Judul merupakan bagian pertama yang dibaca orang. Judul yang baik
+          sebaiknya menarik perhatian, sesuai dengan isi cerita, dan dapat
+          menimbulkan rasa ingin tahu.
+        </p>
+        <p>Contoh judul berdasarkan tema:</p>
+        <ul>
+          <li>Kejujuran: "Uang Kembalian yang Terlupa".</li>
+          <li>Persahabatan: "Bangku Kosong di Sebelahku".</li>
+          <li>Keluarga: "Sepiring Nasi untuk Ibu".</li>
+          <li>Perjuangan: "Langkah Kecil Menuju Mimpi".</li>
+          <li>Kepedulian: "Pohon Terakhir di Halaman Sekolah".</li>
+        </ul>
+      </section>
+
+      <!-- AKTIVITAS -->
+      <section class="content-card" id="aktivitas">
+        <div class="section-kicker">Bagian 11 · Aktivitas Pembelajaran</div>
+        <h2>Saatnya Berlatih</h2>
+
+        <p>
+          Setelah mempelajari materi, kerjakan kegiatan berikut untuk
+          menguji pemahaman sekaligus mengembangkan kemampuan apresiasi
+          sastra.
+        </p>
+
+        <div class="activity">
+          <h3>Aktivitas 1 · Memburu Unsur Cerpen</h3>
+          <p>
+            Pilih sebuah cerpen yang pernah kamu baca. Bacalah kembali
+            cerpen tersebut, kemudian identifikasikan unsur-unsur
+            intrinsiknya.
+          </p>
+          <ol>
+            <li>Siapa tokoh utama dan bagaimana wataknya?</li>
+            <li>Apa tema yang mendasari cerita?</li>
+            <li>Bagaimana urutan peristiwa dan konflik yang terjadi?</li>
+            <li>Di mana dan kapan cerita berlangsung?</li>
+            <li>Sudut pandang apa yang digunakan pengarang?</li>
+            <li>Apa amanat yang dapat ditemukan?</li>
+          </ol>
+          <p><strong>Hasil kegiatan:</strong> Buat tabel analisis unsur intrinsik disertai bukti dari cerita.</p>
+        </div>
+
+        <div class="activity">
+          <h3>Aktivitas 2 · Menemukan Nilai Budi Pekerti</h3>
+          <p>
+            Diskusikan bersama temanmu nilai-nilai budi pekerti yang
+            terdapat dalam cerpen yang telah dipilih.
+          </p>
+          <ol>
+            <li>Perilaku apa yang menunjukkan nilai kebaikan?</li>
+            <li>Perilaku apa yang seharusnya tidak ditiru?</li>
+            <li>Apa akibat dari keputusan tokoh?</li>
+            <li>Jika kamu berada dalam situasi yang sama, apa yang akan kamu lakukan?</li>
+            <li>Bagaimana menerapkan nilai cerita tersebut dalam kehidupan sehari-hari?</li>
+          </ol>
+          <p><strong>Hasil kegiatan:</strong> Presentasikan hasil diskusi secara lisan.</p>
+        </div>
+
+        <div class="activity">
+          <h3>Aktivitas 3 · Menulis Cerpen Sendiri</h3>
+          <p>
+            Buatlah sebuah cerpen berdasarkan pengalaman, pengamatan,
+            atau imajinasimu. Pilih salah satu nilai budi pekerti sebagai
+            dasar cerita.
+          </p>
+          <ol>
+            <li>Tentukan tema dan judul.</li>
+            <li>Buat tokoh beserta karakter masing-masing.</li>
+            <li>Susun kerangka cerita dari awal hingga akhir.</li>
+            <li>Kembangkan konflik yang menarik dan masuk akal.</li>
+            <li>Gunakan deskripsi serta dialog untuk menghidupkan cerita.</li>
+            <li>Akhiri cerita dengan penyelesaian yang bermakna.</li>
+            <li>Baca ulang dan perbaiki tulisan sebelum dikumpulkan.</li>
+          </ol>
+          <p><strong>Hasil kegiatan:</strong> Satu cerpen orisinal dengan panjang sekitar 500–800 kata.</p>
+        </div>
+      </section>
+
+      <!-- REFLEKSI -->
+      <section class="content-card" id="refleksi">
+        <div class="section-kicker">Bagian 12 · Refleksi</div>
+        <h2>Belajar Menjadi Manusia yang Lebih Baik</h2>
+
+        <p>
+          Cerita yang baik tidak hanya meninggalkan kesan setelah selesai
+          dibaca. Cerita juga dapat mengajak kita berpikir tentang sikap,
+          keputusan, dan cara memperlakukan orang lain.
+        </p>
+
+        <div class="reflection">
+          <h3>Pertanyaan Refleksi</h3>
+          <ol>
+            <li>Tokoh seperti apa yang paling menginspirasi kamu? Mengapa?</li>
+            <li>Nilai budi pekerti apa yang paling penting untuk diterapkan dalam kehidupan sehari-hari?</li>
+            <li>Pernahkah kamu menghadapi situasi yang mengharuskanmu memilih antara kepentingan pribadi dan melakukan hal yang benar?</li>
+            <li>Apa pelajaran yang kamu dapatkan dari tokoh yang melakukan kesalahan?</li>
+            <li>Setelah mempelajari bab ini, kebiasaan baik apa yang ingin kamu perbaiki?</li>
+          </ol>
+        </div>
+
+        <p>
+          Ingatlah bahwa memahami nilai kebaikan merupakan langkah awal.
+          Hal yang lebih penting adalah berusaha menerapkannya dalam
+          kehidupan nyata, baik di rumah, sekolah, maupun masyarakat.
+        </p>
+      </section>
+
+      <!-- RANGKUMAN -->
+      <section class="content-card" id="rangkuman">
+        <div class="section-kicker">Bagian 13 · Rangkuman</div>
+        <h2>Hal-Hal Penting yang Perlu Diingat</h2>
+
+        <ol>
+          <li>Cerpen adalah karya sastra berbentuk prosa fiksi yang relatif singkat dan berfokus pada satu konflik utama.</li>
+          <li>Unsur intrinsik merupakan unsur yang membangun cerita dari dalam, meliputi tema, tokoh dan penokohan, alur, latar, sudut pandang, dan amanat.</li>
+          <li>Unsur ekstrinsik merupakan faktor dari luar cerita yang memengaruhi karya, seperti latar belakang pengarang, kondisi masyarakat, budaya, agama, dan nilai kehidupan.</li>
+          <li>Struktur cerpen dapat terdiri atas orientasi, komplikasi, evaluasi, resolusi, dan koda.</li>
+          <li>Nilai budi pekerti dapat ditemukan melalui sikap, perkataan, keputusan, dan akibat tindakan tokoh.</li>
+          <li>Nilai budi pekerti antara lain kejujuran, tanggung jawab, kepedulian, rendah hati, kerja keras, disiplin, toleransi, dan kesabaran.</li>
+          <li>Menulis cerpen dimulai dengan menentukan tema, tokoh, kerangka alur, mengembangkan cerita, menggunakan bahasa yang menarik, dan melakukan revisi.</li>
+          <li>Cerpen dapat menjadi sarana hiburan sekaligus pembelajaran untuk memahami kehidupan dan membangun karakter.</li>
+        </ol>
+
+        <div class="callout">
+          <strong>Kesimpulan:</strong>
+          Cerita pendek mengajarkan kita untuk memahami manusia melalui
+          pengalaman tokoh-tokohnya. Dari setiap konflik, pilihan, dan
+          penyelesaian, kita dapat menemukan pelajaran tentang bagaimana
+          seharusnya bersikap dalam kehidupan.
+        </div>
+      </section>
+
+      <!-- EVALUASI -->
+      <section class="content-card" id="evaluasi">
+        <div class="section-kicker">Bagian 14 · Latihan dan Evaluasi</div>
+        <h2>Uji Pemahamanmu</h2>
+
+        <p>
+          Jawablah pertanyaan berikut berdasarkan materi yang telah
+          dipelajari. Gunakan alasan dan contoh yang tepat untuk
+          memperkuat jawabanmu.
+        </p>
+
+        <h3>A. Pertanyaan Pemahaman</h3>
+        <ol>
+          <li>Jelaskan pengertian cerita pendek dengan bahasamu sendiri.</li>
+          <li>Sebutkan dan jelaskan enam unsur intrinsik cerpen.</li>
+          <li>Apa perbedaan unsur intrinsik dan ekstrinsik? Berikan masing-masing dua contoh.</li>
+          <li>Jelaskan lima tahapan struktur cerpen beserta fungsinya.</li>
+          <li>Apa perbedaan alur maju, alur mundur, dan alur campuran?</li>
+          <li>Bagaimana cara mengetahui watak tokoh secara tidak langsung?</li>
+          <li>Mengapa tindakan tokoh dapat menjadi petunjuk untuk menemukan nilai budi pekerti?</li>
+          <li>Sebutkan empat nilai budi pekerti dan berikan contoh penerapannya di sekolah.</li>
+          <li>Mengapa konflik penting dalam sebuah cerpen?</li>
+          <li>Apa saja hal yang harus diperhatikan ketika menyunting cerpen?</li>
+        </ol>
+
+        <h3>B. Analisis dan Penalaran</h3>
+        <p>
+          Perhatikan ilustrasi berikut.
+        </p>
+
+        <div class="note">
+          Raka ditunjuk menjadi ketua kelompok. Ketika tugas kelompok
+          hampir selesai, ia menyadari bahwa salah satu anggota belum
+          mengerjakan bagiannya. Raka sempat marah, tetapi kemudian
+          memilih berbicara baik-baik dan membantu temannya memahami
+          tugas tersebut. Mereka akhirnya menyelesaikan pekerjaan
+          bersama-sama.
+        </div>
+
+        <ol>
+          <li>Nilai budi pekerti apa yang ditunjukkan oleh Raka?</li>
+          <li>Bagaimana cara Raka menyelesaikan persoalan kelompoknya?</li>
+          <li>Jika kamu menjadi anggota kelompok tersebut, apa yang akan kamu lakukan?</li>
+          <li>Menurutmu, mengapa kerja sama dan komunikasi penting dalam menyelesaikan konflik?</li>
+        </ol>
+
+        <h3>C. Proyek Menulis Cerpen</h3>
+        <p>
+          Buatlah sebuah cerpen orisinal dengan tema pilihanmu sendiri.
+          Cerita harus mengandung sekurang-kurangnya satu nilai budi
+          pekerti yang dapat dipetik pembaca.
+        </p>
+
+        <p><strong>Ketentuan penulisan:</strong></p>
+        <ul>
+          <li>Judul sesuai dengan isi cerita.</li>
+          <li>Memiliki tokoh dan karakter yang jelas.</li>
+          <li>Mengandung konflik yang dapat dipahami.</li>
+          <li>Memiliki rangkaian peristiwa yang runtut.</li>
+          <li>Menggunakan dialog dan deskripsi secara tepat.</li>
+          <li>Memperhatikan ejaan, tanda baca, dan pilihan kata.</li>
+          <li>Memuat nilai kehidupan atau budi pekerti.</li>
+        </ul>
+
+        <h3>Kriteria Penilaian Proyek</h3>
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Aspek Penilaian</th>
+              <th>Hal yang Dinilai</th>
+            </tr>
+            <tr>
+              <td>Kreativitas</td>
+              <td>Keaslian ide, daya tarik judul, dan pengembangan cerita.</td>
+            </tr>
+            <tr>
+              <td>Unsur Cerpen</td>
+              <td>Kejelasan tema, tokoh, penokohan, alur, latar, sudut pandang, dan amanat.</td>
+            </tr>
+            <tr>
+              <td>Struktur</td>
+              <td>Keteraturan perkembangan cerita dan penyelesaian konflik.</td>
+            </tr>
+            <tr>
+              <td>Bahasa</td>
+              <td>Ketepatan ejaan, pilihan kata, kalimat, dialog, dan gaya bahasa.</td>
+            </tr>
+            <tr>
+              <td>Nilai Budi Pekerti</td>
+              <td>Kedalaman nilai kehidupan dan relevansinya dengan pengalaman manusia.</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <div class="quote">
+        "Cerita yang baik bukan hanya mengajak kita membayangkan kehidupan,
+        tetapi juga mengajarkan kita memahami dan memperbaikinya."
+        <small>— MANDALA AKSARA</small>
+      </div>
+
+      <div class="page-navigation">
+        <a href="bab-3-teks-berita.html">← BAB 3</a>
+        <a href="kelas-xi.html">Daftar Materi Kelas XI →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <strong>MANDALA AKSARA</strong>
+    <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+    <p>Ruang Literasi dan Pembelajaran Bahasa Indonesia</p>
+    <small>Dikelola Mandiri</small>
+  </footer>
+
+</body>
+</html>
