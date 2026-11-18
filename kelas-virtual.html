@@ -3,19 +3,19 @@
 <html lang="id">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7HFZ0YC7P9');
-</script>
-  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ruang Kelas Virtual Mandala Aksara untuk pembelajaran melalui Google Meet dan video YouTube.">
   <title>Kelas Virtual | Mandala Aksara</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 
   <style>
     :root {
@@ -27,7 +27,9 @@
       --text: #263445;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -83,7 +85,8 @@
       gap: 22px;
     }
 
-    .meet-card, .video-card {
+    .meet-card,
+    .video-card {
       background: white;
       border: 1px solid #e4e9ef;
       border-radius: 15px;
@@ -100,13 +103,15 @@
       margin-bottom: 12px;
     }
 
-    .meet-card h3, .video-info h3 {
+    .meet-card h3,
+    .video-info h3 {
       color: var(--navy);
       margin: 0 0 10px;
       font-size: 20px;
     }
 
-    .meet-card p, .video-info p {
+    .meet-card p,
+    .video-info p {
       color: #667487;
       line-height: 1.7;
     }
@@ -203,7 +208,8 @@
     }
 
     @media (max-width: 700px) {
-      .meet-grid, .video-grid {
+      .meet-grid,
+      .video-grid {
         grid-template-columns: 1fr;
       }
 
@@ -220,22 +226,48 @@
 
 <body>
 
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="top-inner">
+    <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+
+    <div class="top-actions">
+      <form class="search" role="search" onsubmit="return searchSite(event)">
+        <input id="searchInput" type="search"
+               placeholder="Cari materi..." aria-label="Cari materi">
+        <button type="submit" aria-label="Cari">⌕</button>
+      </form>
+
+      <a class="top-virtual" href="kelas-virtual.html">
+        ▣ <span>Kelas Virtual</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER DAN NAVIGASI -->
 <header class="site-header">
-  <a href="index.html" class="brand">
+  <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
     <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-    <span>MANDALA AKSARA</span>
+
+    <span class="brand-copy">
+      <strong>MANDALA AKSARA</strong>
+      <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+    </span>
   </a>
 
-  <button id="menuToggle" type="button"
-    aria-label="Buka menu" aria-expanded="false">☰</button>
+  <button class="menu-toggle" id="menuToggle" type="button"
+          aria-label="Buka navigasi" aria-expanded="false"
+          aria-controls="mainNav">☰</button>
 
-  <nav id="mainNav">
+  <nav id="mainNav" aria-label="Navigasi utama">
     <a href="index.html">Beranda</a>
 
     <div class="nav-dropdown">
-      <button type="button" class="nav-trigger">
-        Materi Pembelajaran <span>⌄</span>
+      <button type="button" class="nav-trigger" aria-haspopup="true">
+        Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
       </button>
+
       <div class="dropdown">
         <a href="kelas-x.html">Kelas X</a>
         <a href="kelas-xi.html">Kelas XI</a>
@@ -245,7 +277,11 @@
 
     <a href="galeri.html">Galeri</a>
     <a href="perpustakaan.html">Perpustakaan Digital</a>
-    <a href="kelas-virtual.html" class="active">Kelas Virtual</a>
+
+    <a class="active" href="kelas-virtual.html" aria-current="page">
+      Kelas Virtual
+    </a>
+
     <a href="tentang.html">Tentang</a>
   </nav>
 </header>
@@ -279,10 +315,12 @@
           Ruang pertemuan yang dapat digunakan kembali
           untuk kegiatan pembelajaran.
         </p>
+
         <a id="permanentMeetButton" class="action-link"
-          href="#" target="_blank" rel="noopener" hidden>
+           href="#" target="_blank" rel="noopener" hidden>
           Gabung Pertemuan
         </a>
+
         <p id="permanentMeetNotice" class="notice">
           Tautan ruang Meet belum diatur.
         </p>
@@ -295,7 +333,9 @@
           Akses pertemuan berdasarkan jadwal dan kegiatan
           pembelajaran yang telah ditentukan.
         </p>
+
         <div id="meetingList"></div>
+
         <p id="meetingEmpty" class="notice">
           Informasi jadwal belum tersedia.
         </p>
@@ -306,6 +346,7 @@
 
   <section class="video-section">
     <div class="virtual-container">
+
       <div class="section-heading">
         <h2>Video Pembelajaran</h2>
         <p>
@@ -320,6 +361,7 @@
       <div id="videoEmpty" class="empty-state" hidden>
         Koleksi video sedang disiapkan.
       </div>
+
     </div>
   </section>
 
@@ -329,16 +371,41 @@
       pikiran terbuka dan semangat belajar menyala,
       ruang belajar dapat hadir di mana saja.”
     </blockquote>
+
     <cite>— Mandala Aksara</cite>
   </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
-  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+  <div class="footer-main">
+
+    <div class="footer-brand">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+
+      <div class="footer-brand-copy">
+        <b>MANDALA AKSARA</b>
+        <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+        <span class="managed-label">Dikelola Mandiri</span>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Navigasi footer">
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+    </nav>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+  </div>
 </footer>
 
+<!-- PENGATURAN GOOGLE MEET DAN VIDEO YOUTUBE -->
 <script>
   // =====================================
   // PENGATURAN GOOGLE MEET
@@ -367,21 +434,21 @@
       title: "Teks Laporan Hasil Observasi",
       description: "Video pembelajaran untuk memahami konsep, struktur, dan kaidah kebahasaan Teks Laporan Hasil Observasi.",
       id: "276sb73swLY"
-    },   
-     {
+    },
+    {
       type: "video",
       title: "Teks Hikayat",
       description: "Video pembelajaran untuk memahami struktur, unsur hikayat, dan ciri-ciri Teks Hikayat.",
       id: "YEVokDu5p4g"
-    }, 
+    },
     {
       type: "video",
       title: "Contoh Video Pembelajaran",
       description: "Video contoh untuk menguji pemutar YouTube Mandala Aksara.",
       id: "WabdFKoxcco"
-    },
+    }
 
-     /*
+    /*
     Tambahkan playlist dengan format:
 
     ,{
@@ -518,36 +585,14 @@
       card.append(frameBox, info);
       videoContainer.appendChild(card);
     });
+
   } else {
     videoEmpty.hidden = false;
   }
-
-  // =====================================
-  // NAVIGASI MENU
-  // =====================================
-
-  const toggle = document.getElementById("menuToggle");
-  const nav = document.getElementById("mainNav");
-
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("open");
-
-      toggle.setAttribute(
-        "aria-expanded",
-        nav.classList.contains("open")
-      );
-    });
-  }
-
-  document.querySelectorAll(".nav-trigger").forEach(button => {
-    button.addEventListener("click", () => {
-      if (window.matchMedia("(max-width: 1050px)").matches) {
-        button.parentElement.classList.toggle("expanded");
-      }
-    });
-  });
 </script>
+
+<!-- SCRIPT NAVIGASI BERSAMA -->
+<script src="script.js"></script>
 
 </body>
 </html>
