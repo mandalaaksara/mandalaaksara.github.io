@@ -764,3 +764,365 @@ footer{
     line-height:1.6;
   }
 }
+
+
+
+/* =========================================================
+   PENYEMPURNAAN BERANDA MANDALA AKSARA
+   Ditambahkan di akhir agar aturan lama tetap terjaga.
+   ========================================================= */
+
+/* Header: ruang logo dan navigasi lebih seimbang */
+.site-header {
+  min-height: 112px;
+  padding: 13px 3.5%;
+  gap: 24px;
+}
+
+.brand {
+  flex: 0 1 410px;
+  min-width: 280px;
+  gap: 13px;
+}
+
+.brand img {
+  width: 88px;
+  height: 76px;
+  flex: 0 0 88px;
+  object-fit: contain;
+}
+
+/* Semua menu sejajar pada garis tengah dan tinggi seragam */
+#mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  min-width: 0;
+}
+
+#mainNav > a,
+#mainNav .nav-trigger {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 13px;
+  line-height: 1.2;
+  border-radius: 7px;
+}
+
+#mainNav .nav-trigger { gap: 7px; }
+
+.nav-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  top: calc(100% + 1px);
+  border: 1px solid #e8edf3;
+  border-top: 3px solid var(--orange);
+  border-radius: 0 0 8px 8px;
+}
+
+.dropdown a {
+  padding: 11px 13px;
+  border-radius: 5px;
+}
+
+.nav-dropdown:hover .dropdown,
+.nav-dropdown:focus-within .dropdown,
+.nav-dropdown.expanded .dropdown {
+  display: block;
+}
+
+/* Topbar dibuat lebih ringkas dan seimbang */
+.top-inner {
+  min-height: 52px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.search { height: 38px; }
+
+/* Hero: proporsi teks dan foto lebih nyaman */
+.hero {
+  min-height: 390px;
+  grid-template-columns: 48% 52%;
+}
+
+.hero-copy { padding-top: 58px; padding-bottom: 58px; }
+.hero-photo { min-height: 390px; }
+
+/* Kartu fitur: ukuran ikon, teks, dan jarak lebih konsisten */
+.feature-strip {
+  width: calc(100% - 48px);
+  padding: 13px 10px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.feature {
+  min-width: 0;
+  min-height: 68px;
+  padding: 9px 14px;
+}
+
+.feature b { line-height: 1.35; }
+.feature small { line-height: 1.4; }
+
+/* Konten utama dan footer */
+.content-grid {
+  width: calc(100% - 48px);
+  align-items: stretch;
+}
+
+.footer-main {
+  width: calc(100% - 48px);
+}
+
+.footer-brand img {
+  width: 70px;
+  height: 62px;
+  flex: 0 0 70px;
+  object-fit: contain;
+}
+
+.footer-brand-copy { min-width: 0; }
+
+.managed-label {
+  display: inline-block;
+  margin-top: 6px;
+  color: #e8bd70;
+  font-size: 10px;
+  letter-spacing: .4px;
+}
+
+/* Fokus keyboard lebih jelas */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #f5bd75;
+  outline-offset: 3px;
+}
+
+/* Tablet dan laptop kecil */
+@media (max-width: 1150px) {
+  .site-header {
+    flex-wrap: wrap;
+    gap: 10px 18px;
+  }
+
+  .brand { flex: 1 1 auto; }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 42px;
+    margin-left: auto;
+  }
+
+  #mainNav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 3px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255,255,255,.14);
+  }
+
+  #mainNav.open { display: flex; }
+
+  #mainNav > a,
+  #mainNav .nav-trigger {
+    width: 100%;
+    min-height: 43px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .nav-dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown {
+    position: static;
+    min-width: 0;
+    margin: 0 0 5px 10px;
+    box-shadow: none;
+  }
+
+  .nav-dropdown:hover .dropdown { display: none; }
+  .nav-dropdown:focus-within .dropdown,
+  .nav-dropdown.expanded .dropdown { display: block; }
+
+  .feature-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature:nth-child(2),
+  .feature:nth-child(4) { border-right: 0; }
+
+  .feature:nth-child(5) {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--line, #e2e7ee);
+    border-right: 0;
+  }
+
+  .content-grid { grid-template-columns: 1fr 1fr; }
+
+  .quote-panel {
+    grid-column: 1 / -1;
+    min-height: 190px;
+  }
+}
+
+/* Ponsel */
+@media (max-width: 650px) {
+  .top-inner {
+    min-height: 0;
+    padding: 9px 15px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .top-intro { font-size: 11px; }
+
+  .top-actions {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .search {
+    flex: 1;
+    max-width: 260px;
+    height: 36px;
+  }
+
+  .search input {
+    width: 100%;
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  .top-virtual { font-size: 12px; }
+
+  .site-header {
+    min-height: 78px;
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 9px;
+  }
+
+  .brand img {
+    width: 58px;
+    height: 54px;
+    flex-basis: 58px;
+  }
+
+  .brand strong {
+    font-size: 16px;
+    letter-spacing: .5px;
+  }
+
+  .brand small {
+    max-width: 230px;
+    margin-top: 4px;
+    font-size: 8px;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 39px;
+    flex: 0 0 40px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-copy { padding: 36px 23px 32px; }
+
+  .hero h1 { font-size: clamp(39px, 11vw, 54px); }
+  .tagline { font-size: 21px; }
+
+  .hero-photo {
+    width: 100%;
+    min-height: 235px;
+    flex: 0 0 235px;
+    background:
+      linear-gradient(to bottom, rgba(13,32,58,.08), rgba(13,32,58,.20)),
+      url("hero-perpustakaan.jpg") center center / cover no-repeat;
+  }
+
+  .feature-strip {
+    width: calc(100% - 24px);
+    margin: 12px auto;
+    padding: 7px 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    min-height: 64px;
+    padding: 9px 7px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line, #e2e7ee);
+  }
+
+  .feature:nth-child(5) {
+    grid-column: auto;
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .content-grid {
+    width: calc(100% - 24px);
+    margin: 13px auto 25px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .quote-panel {
+    grid-column: auto;
+    min-height: 190px;
+    padding: 22px;
+  }
+
+  .news-body { grid-template-columns: 1fr; }
+  .news-thumb { min-height: 115px; }
+
+  .footer-main {
+    width: calc(100% - 36px);
+    min-height: 0;
+    padding: 23px 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .footer-brand img {
+    width: 60px;
+    height: 54px;
+    flex-basis: 60px;
+  }
+
+  .footer-brand b { font-size: 14px; }
+
+  .footer-links {
+    justify-content: flex-start;
+    gap: 12px 17px;
+  }
+
+  .copyright { font-size: 10px; }
+}
