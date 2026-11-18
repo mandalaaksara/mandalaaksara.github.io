@@ -2,11 +2,20 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mengenal Mandala Aksara, ruang literasi dan pembelajaran Bahasa Indonesia yang dikelola secara mandiri.">
   <title>Tentang | Mandala Aksara</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 
   <style>
     :root {
@@ -18,7 +27,9 @@
       --text: #263445;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -135,31 +146,65 @@
     }
 
     @media (max-width: 700px) {
-      .about-hero { padding: 48px 18px; }
-      .about-container { padding: 32px 16px; }
-      .identity-panel { padding: 21px; }
+      .about-hero {
+        padding: 48px 18px;
+      }
+
+      .about-container {
+        padding: 32px 16px;
+      }
+
+      .identity-panel {
+        padding: 21px;
+      }
     }
   </style>
 </head>
 
 <body>
 
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="top-inner">
+    <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+
+    <div class="top-actions">
+      <form class="search" role="search" onsubmit="return searchSite(event)">
+        <input id="searchInput" type="search"
+               placeholder="Cari materi..." aria-label="Cari materi">
+        <button type="submit" aria-label="Cari">⌕</button>
+      </form>
+
+      <a class="top-virtual" href="kelas-virtual.html">
+        ▣ <span>Kelas Virtual</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER DAN NAVIGASI -->
 <header class="site-header">
-  <a href="index.html" class="brand">
+  <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
     <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-    <span>MANDALA AKSARA</span>
+
+    <span class="brand-copy">
+      <strong>MANDALA AKSARA</strong>
+      <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+    </span>
   </a>
 
-  <button id="menuToggle" type="button"
-    aria-label="Buka menu" aria-expanded="false">☰</button>
+  <button class="menu-toggle" id="menuToggle" type="button"
+          aria-label="Buka navigasi" aria-expanded="false"
+          aria-controls="mainNav">☰</button>
 
-  <nav id="mainNav">
+  <nav id="mainNav" aria-label="Navigasi utama">
     <a href="index.html">Beranda</a>
 
     <div class="nav-dropdown">
-      <button type="button" class="nav-trigger">
-        Materi Pembelajaran <span>⌄</span>
+      <button type="button" class="nav-trigger" aria-haspopup="true">
+        Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
       </button>
+
       <div class="dropdown">
         <a href="kelas-x.html">Kelas X</a>
         <a href="kelas-xi.html">Kelas XI</a>
@@ -170,7 +215,10 @@
     <a href="galeri.html">Galeri</a>
     <a href="perpustakaan.html">Perpustakaan Digital</a>
     <a href="kelas-virtual.html">Kelas Virtual</a>
-    <a href="tentang.html" class="active">Tentang</a>
+
+    <a class="active" href="tentang.html" aria-current="page">
+      Tentang
+    </a>
   </nav>
 </header>
 
@@ -188,6 +236,7 @@
 
     <section class="about-section">
       <h2>Mengenal Mandala Aksara</h2>
+
       <p>
         Mandala Aksara merupakan ruang literasi dan
         pembelajaran Bahasa Indonesia yang dikembangkan
@@ -196,6 +245,7 @@
         memperluas wawasan, serta mengembangkan kemampuan
         berpikir dan berekspresi.
       </p>
+
       <p>
         Melalui berbagai bahan pembelajaran dan bacaan,
         Mandala Aksara berupaya menghadirkan pengalaman
@@ -206,11 +256,13 @@
 
     <section class="about-section">
       <h2>Ruang Belajar dan Literasi</h2>
+
       <p>
         Bahasa bukan sekadar alat komunikasi. Di dalamnya
         terdapat gagasan, pengetahuan, kebudayaan, dan
         cara manusia memahami kehidupan.
       </p>
+
       <p>
         Karena itu, Mandala Aksara menyediakan ruang untuk
         mempelajari kebahasaan, mengapresiasi karya sastra,
@@ -221,12 +273,14 @@
 
     <section class="about-section">
       <h2>Ruang yang Terus Bertumbuh</h2>
+
       <p>
         Mandala Aksara dikembangkan secara bertahap.
         Materi, koleksi bacaan, karya, dan dokumentasi
         akan terus diperbarui sesuai kebutuhan dan
         perkembangan dunia literasi.
       </p>
+
       <p>
         Setiap gagasan dan kontribusi yang membangun
         diharapkan dapat memperkaya ruang belajar ini
@@ -236,16 +290,20 @@
 
     <section class="identity-panel">
       <h2>Identitas Mandala Aksara</h2>
+
       <p>
         <strong>Nama:</strong> Mandala Aksara
       </p>
+
       <p>
         <strong>Ruang lingkup:</strong> Literasi,
         Bahasa Indonesia, kebahasaan, dan kesusastraan.
       </p>
+
       <p>
         <strong>Pengelolaan:</strong> Dikelola secara mandiri.
       </p>
+
       <div class="slogan">
         <p>
           Menjelajah Kata, Mendalami Makna,
@@ -262,38 +320,42 @@
       memperluas pandangan, dan literasi menuntun
       manusia memahami dunia dengan lebih bijaksana.”
     </blockquote>
+
     <cite>— Mandala Aksara</cite>
   </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
-  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+  <div class="footer-main">
+
+    <div class="footer-brand">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+
+      <div class="footer-brand-copy">
+        <b>MANDALA AKSARA</b>
+        <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+        <span class="managed-label">Dikelola Mandiri</span>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Navigasi footer">
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+    </nav>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+  </div>
 </footer>
 
-<script>
-  const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('mainNav');
-
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      toggle.setAttribute(
-        'aria-expanded',
-        nav.classList.contains('open')
-      );
-    });
-  }
-
-  document.querySelectorAll('.nav-trigger').forEach(button => {
-    button.addEventListener('click', () => {
-      if (window.matchMedia('(max-width: 1050px)').matches) {
-        button.parentElement.classList.toggle('expanded');
-      }
-    });
-  });
-</script>
+<!-- SCRIPT NAVIGASI BERSAMA -->
+<script src="script.js"></script>
 
 </body>
 </html>
