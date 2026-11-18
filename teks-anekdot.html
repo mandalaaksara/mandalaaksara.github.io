@@ -1,214 +1,794 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7HFZ0YC7P9');
-</script>
-  
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Teks Anekdot | Mandala Aksara</title>
-<link href="style.css" rel="stylesheet"/>
-<style>
-:root{--navy:#142B4A;--navy-dark:#0D203A;--orange:#F28C28;--gold:#C69A45;--text:#34445B;--muted:#68778B;--soft:#F3F5F8;--border:#DCE3EC}
-*{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;background:#F7F8FA;color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.75}
-a{color:inherit}
-.site-header{background:var(--navy-dark);color:white;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;position:sticky;top:0;z-index:1000;box-shadow:0 3px 12px rgba(0,0,0,.15)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
-.brand img{width:46px;height:46px;object-fit:contain}
-.brand-name{font-size:19px;font-weight:800;letter-spacing:1px;color:white}
-.brand-subtitle{display:block;font-size:10px;color:#D9E1EC;letter-spacing:.5px}
-#menuToggle{display:none;border:1px solid rgba(255,255,255,.35);background:transparent;color:white;padding:8px 12px;border-radius:7px;font-size:22px;cursor:pointer}
-#mainNav{display:flex;align-items:center;gap:20px}
-#mainNav>a,.nav-trigger{color:white;text-decoration:none;font-size:13px;font-weight:600}
-.nav-trigger{border:none;background:transparent;cursor:pointer;padding:8px 0}
-.nav-dropdown{position:relative}
-.dropdown{display:none;position:absolute;top:100%;left:0;min-width:155px;background:white;box-shadow:0 8px 22px rgba(0,0,0,.15);border-radius:8px;overflow:hidden}
-.nav-dropdown:hover .dropdown,.nav-dropdown.expanded .dropdown{display:block}
-.dropdown a{display:block;padding:10px 15px;color:var(--navy);text-decoration:none;font-size:13px}
-.dropdown a:hover{background:var(--soft);color:var(--orange)}
-.hero{background:linear-gradient(120deg,var(--navy-dark),var(--navy));color:white;padding:55px 7%;text-align:center}
-.hero .eyebrow{color:#F6B65F;text-transform:uppercase;font-size:12px;letter-spacing:2px;font-weight:bold}
-.hero h1{font-size:clamp(27px,4vw,42px);line-height:1.2;margin:12px 0}
-.hero p{max-width:720px;margin:0 auto;color:#E0E7F0}
-.page-layout{max-width:1350px;margin:35px auto 60px;padding:0 22px;display:grid;grid-template-columns:255px minmax(0,1fr);gap:30px;align-items:start}
-.sidebar{background:white;border:1px solid var(--border);border-radius:13px;padding:20px 15px;position:sticky;top:95px;max-height:calc(100vh - 115px);overflow-y:auto}
-.sidebar h2{color:var(--navy);font-size:18px;margin:0 0 15px}
-.sidebar a{display:block;text-decoration:none;color:#485970;font-size:13px;font-weight:600;padding:9px 11px;margin:3px 0;border-radius:7px;line-height:1.4}
-.sidebar a:hover,.sidebar a.active{background:#FFF1E2;color:#B85D0B;border-left:3px solid var(--orange)}
-.content{min-width:0}
-.content section{background:white;border:1px solid var(--border);border-radius:12px;padding:27px;margin-bottom:22px;scroll-margin-top:105px}
-.content h2{color:var(--navy);font-size:25px;line-height:1.35;margin:0 0 18px;padding-bottom:12px;border-bottom:2px solid #E3E8EF}
-.content h3{color:var(--navy);font-size:18px;margin:23px 0 10px}
-.content p{margin:10px 0 15px}
-.content li{margin-bottom:7px}
-.note{background:#FFF5E9;border-left:4px solid var(--orange);border-radius:7px;padding:15px 18px;margin:18px 0}
-.info-card{background:#F8FAFC;border:1px solid var(--border);border-radius:9px;padding:20px;margin:15px 0}
-.info-card strong{color:var(--navy)}
-.two-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
-.feature{background:var(--soft);border-radius:9px;padding:17px;border-top:3px solid var(--orange)}
-.feature h3{margin-top:0}
-.step{display:flex;gap:15px;margin:17px 0;align-items:flex-start}
-.step-number{flex:0 0 34px;height:34px;display:grid;place-items:center;background:var(--navy);color:white;border-radius:50%;font-weight:bold}
-.example{background:#F9FAFC;border:1px solid var(--border);padding:20px;border-radius:9px;margin:16px 0}
-.example h3{margin-top:0}
-.example ol{padding-left:25px}
-.dialogue{border-left:3px solid var(--orange);padding:9px 15px;margin:12px 0;background:#fff}
-.dialogue strong{color:var(--navy)}
-.enrichment{border:1px dashed #D5A04B;background:#FFFAF1;border-radius:9px;padding:17px;margin:16px 0}
-.enrichment-label{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:bold;color:#9B5A12;margin-bottom:5px}
-.reflection{background:var(--navy);color:white;padding:25px;border-radius:12px;margin-top:25px}
-.reflection h3{color:#F6B65F;margin-top:0}
-.final-quote{text-align:center;padding:38px 20px;color:var(--navy);font-family:Georgia,serif;font-size:19px;font-style:italic}
-.final-quote span{display:block;margin-top:12px;color:var(--gold);font-family:Arial,sans-serif;font-size:14px;font-weight:bold;font-style:normal}
-.site-footer{background:var(--navy-dark);color:#DCE4EF;text-align:center;padding:25px 15px;font-size:13px}
-.site-footer strong{color:white}
-@media(max-width:900px){.site-header{flex-wrap:wrap}#menuToggle{display:block}#mainNav{display:none;flex-direction:column;align-items:stretch;width:100%;gap:4px;padding:10px 0}#mainNav.open{display:flex}#mainNav>a,.nav-trigger{display:block;padding:10px 5px;text-align:left}.dropdown{position:static;box-shadow:none;background:rgba(255,255,255,.08);margin-left:12px}.dropdown a{color:white}.page-layout{grid-template-columns:1fr;margin-top:20px}.sidebar{position:static;max-height:none}.sidebar-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px}}
-@media(max-width:560px){.hero{padding:38px 20px}.page-layout{padding:0 12px}.content section{padding:19px}.content h2{font-size:21px}.two-columns,.sidebar-list{grid-template-columns:1fr}.brand-name{font-size:16px}}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
 
-/* Komponen khusus materi Anekdot; kerangka utama mengikuti Master Template LHO */
-.structure{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px;margin:16px 0}
-.structure>div{background:#F8FAFC;border:1px solid var(--border);border-radius:9px;padding:16px}
-.structure b{display:block;color:var(--navy);margin-bottom:7px}
-.num{display:inline-grid;place-items:center;width:27px;height:27px;background:#FFF1E2;color:#B85D0B;border-radius:50%;margin-right:7px}
-.dialogue{background:#F9FAFC;border:1px solid var(--border);border-radius:9px;padding:18px 20px;margin:16px 0}
-.dialogue p{margin:9px 0}
-.speaker{font-weight:bold;color:var(--navy)}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materi Bahasa Indonesia Kelas X tentang teks anekdot: pengertian, ciri, tujuan, struktur, kaidah kebahasaan, contoh, dan aktivitas pembelajaran.">
+  <title>Teks Anekdot | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --anekdot-navy: #142B4A;
+      --anekdot-dark: #0D203A;
+      --anekdot-orange: #F28C28;
+      --anekdot-gold: #C69A45;
+      --anekdot-text: #34445B;
+      --anekdot-muted: #68778B;
+      --anekdot-soft: #F3F5F8;
+      --anekdot-border: #DCE3EC;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #F7F8FA;
+      color: var(--anekdot-text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+    }
+
+    .anekdot-hero {
+      background: linear-gradient(120deg, var(--anekdot-dark), var(--anekdot-navy));
+      color: white;
+      padding: 58px 7%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .anekdot-hero::before,
+    .anekdot-hero::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(246,182,95,.2);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .anekdot-hero::before {
+      width: 260px;
+      height: 260px;
+      top: -150px;
+      left: -80px;
+    }
+
+    .anekdot-hero::after {
+      width: 330px;
+      height: 330px;
+      right: -170px;
+      bottom: -220px;
+    }
+
+    .anekdot-hero .eyebrow {
+      color: #F6B65F;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    .anekdot-hero h1 {
+      font-size: clamp(28px, 4vw, 43px);
+      line-height: 1.2;
+      margin: 12px 0;
+      color: white;
+    }
+
+    .anekdot-hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      color: #E0E7F0;
+    }
+
+    .page-layout {
+      max-width: 1350px;
+      margin: 35px auto 60px;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: 255px minmax(0, 1fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .sidebar {
+      background: white;
+      border: 1px solid var(--anekdot-border);
+      border-radius: 13px;
+      padding: 20px 15px;
+      position: sticky;
+      top: 95px;
+      max-height: calc(100vh - 115px);
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: var(--anekdot-navy);
+      font-size: 18px;
+      margin: 0 0 15px;
+    }
+
+    .sidebar a {
+      display: block;
+      text-decoration: none;
+      color: #485970;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 9px 11px;
+      margin: 3px 0;
+      border-radius: 7px;
+      line-height: 1.4;
+      transition: .2s ease;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      background: #FFF1E2;
+      color: #B85D0B;
+      border-left: 3px solid var(--anekdot-orange);
+    }
+
+    .content {
+      min-width: 0;
+    }
+
+    .content section {
+      background: white;
+      border: 1px solid var(--anekdot-border);
+      border-radius: 12px;
+      padding: 27px;
+      margin-bottom: 22px;
+      scroll-margin-top: 105px;
+    }
+
+    .content h2 {
+      color: var(--anekdot-navy);
+      font-size: 25px;
+      line-height: 1.35;
+      margin: 0 0 18px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #E3E8EF;
+    }
+
+    .content h3 {
+      color: var(--anekdot-navy);
+      font-size: 18px;
+      margin: 23px 0 10px;
+    }
+
+    .content p {
+      margin: 10px 0 15px;
+    }
+
+    .content li {
+      margin-bottom: 7px;
+    }
+
+    .content a {
+      color: #B85D0B;
+    }
+
+    .note {
+      background: #FFF5E9;
+      border-left: 4px solid var(--anekdot-orange);
+      border-radius: 7px;
+      padding: 15px 18px;
+      margin: 18px 0;
+    }
+
+    .info-card {
+      background: #F8FAFC;
+      border: 1px solid var(--anekdot-border);
+      border-radius: 9px;
+      padding: 20px;
+      margin: 15px 0;
+    }
+
+    .info-card strong {
+      color: var(--anekdot-navy);
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .feature {
+      background: var(--anekdot-soft);
+      border-radius: 9px;
+      padding: 17px;
+      border-top: 3px solid var(--anekdot-orange);
+    }
+
+    .feature h3 {
+      margin-top: 0;
+    }
+
+    .structure {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .structure > div {
+      background: #F8FAFC;
+      border: 1px solid var(--anekdot-border);
+      border-radius: 9px;
+      padding: 16px;
+    }
+
+    .structure b {
+      display: block;
+      color: var(--anekdot-navy);
+      margin-bottom: 7px;
+    }
+
+    .num {
+      display: inline-grid;
+      place-items: center;
+      width: 27px;
+      height: 27px;
+      background: #FFF1E2;
+      color: #B85D0B;
+      border-radius: 50%;
+      margin-right: 7px;
+    }
+
+    .dialogue {
+      background: #F9FAFC;
+      border: 1px solid var(--anekdot-border);
+      border-left: 4px solid var(--anekdot-orange);
+      border-radius: 9px;
+      padding: 18px 20px;
+      margin: 16px 0;
+    }
+
+    .dialogue p {
+      margin: 9px 0;
+    }
+
+    .speaker {
+      font-weight: bold;
+      color: var(--anekdot-navy);
+    }
+
+    .example {
+      background: #F9FAFC;
+      border: 1px solid var(--anekdot-border);
+      padding: 20px;
+      border-radius: 9px;
+      margin: 16px 0;
+    }
+
+    .example h3 {
+      margin-top: 0;
+    }
+
+    .enrichment {
+      border: 1px dashed #D5A04B;
+      background: #FFFAF1;
+      border-radius: 9px;
+      padding: 17px;
+      margin: 16px 0;
+    }
+
+    .enrichment-label {
+      display: inline-block;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: #9B5A12;
+      margin-bottom: 5px;
+    }
+
+    .illustration {
+      margin: 20px 0;
+      overflow: hidden;
+      border-radius: 12px;
+      border: 1px solid var(--anekdot-border);
+      background: #F8FAFC;
+    }
+
+    .illustration img {
+      display: block;
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+    }
+
+    .illustration figcaption {
+      padding: 10px 15px;
+      color: var(--anekdot-muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .reflection {
+      background: var(--anekdot-navy);
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .reflection h3 {
+      color: #F6B65F;
+      margin-top: 0;
+    }
+
+    .reflection p {
+      color: #E0E7F0;
+    }
+
+    .reflection .video-link {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 17px;
+      background: var(--anekdot-orange);
+      color: #172B45;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 7px;
+    }
+
+    .reflection .video-link:hover {
+      background: #FFAB4D;
+    }
+
+    .final-quote {
+      text-align: center;
+      padding: 38px 20px;
+      color: var(--anekdot-navy);
+      font-family: Georgia, serif;
+      font-size: 19px;
+      font-style: italic;
+    }
+
+    .final-quote span {
+      display: block;
+      margin-top: 12px;
+      color: var(--anekdot-gold);
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    @media (max-width: 900px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+      }
+
+      .sidebar {
+        position: static;
+        max-height: none;
+      }
+
+      .sidebar-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .anekdot-hero {
+        padding: 38px 20px;
+      }
+
+      .page-layout {
+        padding: 0 12px;
+      }
+
+      .content section {
+        padding: 19px;
+      }
+
+      .content h2 {
+        font-size: 21px;
+      }
+
+      .two-columns,
+      .sidebar-list {
+        grid-template-columns: 1fr;
+      }
+
+      .illustration img {
+        max-height: 240px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header class="site-header">
-<a class="brand" href="index.html">
-<img alt="Logo Mandala Aksara" src="logo-mandala-aksara.png"/>
-<span><span class="brand-name">MANDALA AKSARA</span><span class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</span></span>
-</a>
-<button aria-expanded="false" aria-label="Buka menu" id="menuToggle">☰</button>
-<nav id="mainNav">
-<a href="index.html">Beranda</a>
-<div class="nav-dropdown">
-<button class="nav-trigger" type="button">Materi Pembelajaran ⌄</button>
-<div class="dropdown"><a href="kelas-x.html">Kelas X</a><a href="kelas-xi.html">Kelas XI</a><a href="kelas-xii.html">Kelas XII</a></div>
-</div>
-<a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="https://mandalaaksara.github.io/kelas-virtual.html">Kelas Virtual</a><a href="tentang.html">Tentang</a>
-</nav>
-</header>
-<section class="hero">
-<div class="eyebrow">Bahasa Indonesia · Fase E · Kelas X</div>
-<h1>Teks Anekdot</h1>
-<p>Mengungkapkan kritik lewat humor: memahami cerita singkat yang menghibur sekaligus mengajak pembaca berpikir.</p>
-</section>
-<div class="page-layout">
-<aside class="sidebar">
-<h2>Daftar Materi</h2>
-<div class="sidebar-list"><a href="#tujuan-pembelajaran">Tujuan Pembelajaran</a><a href="#definisi">Definisi Teks Anekdot</a><a href="#ciri">Ciri Teks Anekdot</a><a href="#tujuan">Tujuan Teks Anekdot</a><a href="#struktur">Struktur Teks Anekdot</a><a href="#contoh">Contoh Teks Anekdot: Kursi yang Membuat Lupa</a><a href="#kaidah">Kaidah Kebahasaan Teks Anekdot</a><a href="#analisis">Analisis Contoh Anekdot</a><a href="#aktivitas">Aktivitas Pembelajaran</a><a href="#refleksi">Refleksi dan Evaluasi</a><a href="#kesimpulan">Kesimpulan</a><a href="#kelas-virtual">Penjelajahan ke Kelas Virtual</a></div>
-</aside>
-<main class="content"><section class="card" id="tujuan-pembelajaran"><h2 class="section">Tujuan Pembelajaran</h2>
-<p>Setelah mempelajari materi ini, peserta didik diharapkan mampu:</p>
-<ol><li>Menjelaskan pengertian, ciri, dan tujuan teks anekdot.</li><li>Mengidentifikasi struktur teks anekdot: abstrak, orientasi, krisis, reaksi, dan koda.</li><li>Mengenali kaidah kebahasaan yang digunakan dalam teks anekdot.</li><li>Menafsirkan kritik atau pesan yang disampaikan melalui humor.</li><li>Menyusun teks anekdot yang kreatif, santun, dan relevan dengan kehidupan sehari-hari.</li></ol>
-</section><section class="card" id="definisi"><h2 class="section">Definisi Teks Anekdot</h2>
-<p>Anekdot adalah cerita pendek yang lucu dan biasanya berdasarkan kejadian nyata, meskipun seringkali dilebih-lebihkan untuk efek komedi. Anekdot seringkali melibatkan tokoh-tokoh terkenal atau situasi sehari-hari yang familiar, sehingga mudah dipahami dan dinikmati oleh banyak orang.</p>
-<div class="note"><strong>Gagasan utama:</strong> teks anekdot tidak hanya bertujuan membuat pembaca tertawa. Di balik kelucuannya, sering terdapat sindiran, kritik, atau ajakan untuk melihat suatu persoalan secara lebih jernih.</div>
-<h3>Humor dan kritik</h3><p>Humor menjadi cara untuk menyampaikan kritik tanpa harus selalu menggunakan uraian yang keras atau menggurui. Pembaca diajak menangkap ketidaksesuaian antara harapan dan kenyataan, ucapan dan tindakan, atau aturan dan pelaksanaannya.</p>
-</section><section class="card" id="ciri"><h2 class="section">Ciri Teks Anekdot</h2>
-<p>Bahan ajar memuat enam ciri teks anekdot berikut.</p>
-<ol>
-<li><strong>Mampu menghibur dan membuat tertawa.</strong> Teks anekdot memuat beragam kisah lucu, humor, atau membuat pembaca terhibur.</li>
-<li><strong>Memiliki sifat menyindir.</strong> Dalam beberapa kisah, teks anekdot dipakai sebagai media untuk menyindir sesuatu, baik orang maupun kelompok.</li>
-<li><strong>Bisa jadi mengenai orang penting.</strong> Karena tidak ada aturan yang ketat untuk membuat teks anekdot, teks ini biasa digunakan untuk membahas orang-orang penting.</li>
-<li><strong>Memiliki tujuan tertentu.</strong> Tidak seperti teks yang lain, teks anekdot lebih fleksibel untuk dibentuk sesuai keinginan penulis.</li>
-<li><strong>Menceritakan karakter hewan dan manusia.</strong> Karakter hewan dan manusia sering terhubung secara umum dan realistis.</li>
-<li><strong>Kisahnya hampir menyerupai dongeng.</strong> Penulis membuat sebuah cerita lain yang sebenarnya berhubungan dengan kehidupan saat ini.</li>
-</ol>
-<div class="note"><strong>Pengayaan:</strong> tokoh dalam anekdot dapat berupa manusia, hewan, atau tokoh rekaan. Hal yang penting ialah cerita tersebut menyampaikan kelucuan dan makna kritik yang dapat ditangkap pembaca.</div>
-</section><section class="card" id="tujuan"><h2 class="section">Tujuan Teks Anekdot</h2>
-<h3>1. Membangkitkan tawa pembaca</h3><p>Teks anekdot memiliki ciri berupa sifat lucu. Tujuan pembuatannya adalah membangkitkan tawa pembaca. Oleh karena itu, dalam membuat teks anekdot dibutuhkan kemampuan memahami selera humor yang sesuai dengan suatu keadaan.</p>
-<h3>2. Sebagai sarana hiburan</h3><p>Tujuan kedua teks anekdot adalah sebagai sarana hiburan. Teks anekdot yang bersifat lucu bertujuan juga untuk menghibur pembaca. Oleh karena itu, tidak sedikit orang yang akan terhibur setelah membaca teks anekdot.</p>
-<h3>3. Sebagai sarana untuk mengkritik</h3><p>Teks anekdot biasanya digunakan untuk mengkritik sebuah peristiwa yang sedang terjadi. Dengan adanya teks anekdot, pembaca akan tertawa, terhibur, sekaligus mendapatkan suatu informasi dalam bentuk kritikan.</p>
-</section><section class="card" id="struktur"><h2 class="section">Struktur Teks Anekdot</h2>
-<p>Teks anekdot dalam bahan ajar disusun atas lima bagian.</p>
-<div class="structure">
-<div><b><span class="num">1</span>Abstrak</b>Bagian pendahuluan atau pembuka teks.</div>
-<div><b><span class="num">2</span>Orientasi</b>Awal suatu kejadian atau saat cerita mulai bergulir.</div>
-<div><b><span class="num">3</span>Krisis</b>Puncak cerita yang berisi konflik atau masalah yang terjadi pada karakter.</div>
-<div><b><span class="num">4</span>Reaksi</b>Respons atau reaksi yang dilakukan karakter setelah mengalami krisis.</div>
-<div><b><span class="num">5</span>Koda</b>Bagian penutup teks yang berisi amanat atau kritik.</div>
-</div>
-<h3>Fungsi setiap struktur</h3><p>Abstrak memberi gambaran awal, orientasi mengenalkan situasi, krisis menghadirkan persoalan atau kejutan, reaksi menunjukkan tanggapan tokoh, sedangkan koda menegaskan pesan atau kritik yang dapat direnungkan pembaca.</p>
-</section><section class="card" id="contoh"><h2 class="section">Contoh Teks Anekdot: Kursi yang Membuat Lupa</h2>
-<p><strong>Di suatu siang, ada dua bocah yang tengah bercanda di bawah pohon rindang.</strong></p>
-<div class="dialogue">
-<p><span class="speaker">Bagus:</span> “Anton, kita main tebak-tebakan, yuk! Kursi apa yang membuat orang lupa ingatan?”</p>
-<p><span class="speaker">Anton:</span> “Kursi goyang! Orang yang duduk di atas kursi goyang akan mengantuk dan tertidur. Saat tidur, orang kan lupa.”</p>
-<p><span class="speaker">Bagus:</span> (Tertawa) “Meski lucu, tapi jawabanmu salah.”</p>
-<p><span class="speaker">Anton:</span> “Hmm... kursi apa, ya?”</p>
-<p><span class="speaker">Bagus:</span> “Jawabannya adalah kursi DPR!”</p>
-<p><span class="speaker">Anton:</span> “Lho, kok begitu?”</p>
-<p><span class="speaker">Bagus:</span> “Jelas, lah! Coba kamu ingat, sebelum duduk di kursi DPR, banyak caleg yang berjanji macam-macam agar masyarakat memilih mereka. Tapi setelah merasakan kursi DPR, sekejap saja mereka hilang ingatan akan janji-janjinya.”</p>
-<p><span class="speaker">Anton:</span> “Oh, iya, betul juga.”</p>
-</div>
-<p><em>Catatan:</em> Contoh cerita di atas dipertahankan dari bahan ajar yang diberikan. Tokoh dan dialognya digunakan sebagai bahan analisis struktur, humor, serta kritik sosial.</p>
-</section><section class="card" id="kaidah"><h2 class="section">Kaidah Kebahasaan Teks Anekdot</h2>
-<p>Bahan ajar mengidentifikasi lima kaidah kebahasaan berikut.</p>
-<ol>
-<li><strong>Menggunakan kalimat yang menyatakan kejadian sebenarnya yang sudah terjadi (peristiwa masa lalu).</strong></li>
-<li><strong>Menggunakan kalimat retoris,</strong> yaitu jenis kalimat pertanyaan yang tidak membutuhkan jawaban.</li>
-<li><strong>Menggunakan konjungsi (kata penghubung) yang menyatakan hubungan waktu.</strong> Contohnya kemudian, lalu, selanjutnya, dan sebagainya.</li>
-<li><strong>Menggunakan kata kerja aksi.</strong> Contohnya menulis, membaca, bernyanyi, belajar, dan sebagainya.</li>
-<li><strong>Menggunakan kalimat perintah.</strong> Contohnya “Jangan buang sampah sembarangan!” dan “Jawablah pertanyaanku!”</li>
-</ol>
-<h3>Contoh pengenalan dalam teks</h3>
-<ul><li>Peristiwa masa lalu: “Sebelum duduk di kursi DPR, banyak caleg yang berjanji...”</li><li>Kalimat retoris/pertanyaan: “Kursi apa yang membuat orang lupa ingatan?”</li><li>Konjungsi waktu: kata “setelah” dalam “setelah merasakan kursi DPR”.</li><li>Kata kerja aksi: “duduk”, “berjanji”, “memilih”, dan “merasakan”.</li></ul>
-</section><section class="card" id="analisis"><h2 class="section">Analisis Contoh Anekdot</h2>
-<p>Berikut pemetaan contoh “Kursi yang Membuat Lupa” berdasarkan lima struktur. Pemetaan ini merupakan pengayaan untuk membantu memahami cara kerja struktur dalam sebuah cerita.</p>
-<ul>
-<li><strong>Abstrak:</strong> gagasan tentang kursi yang membuat orang lupa ingatan, diperkenalkan melalui tebak-tebakan.</li>
-<li><strong>Orientasi:</strong> Bagus dan Anton sedang bercanda di bawah pohon rindang pada suatu siang.</li>
-<li><strong>Krisis:</strong> Bagus mengungkap jawaban “kursi DPR” dan mengaitkannya dengan janji para calon legislatif yang dilupakan setelah terpilih.</li>
-<li><strong>Reaksi:</strong> Anton bertanya “Lho, kok begitu?” lalu menerima penjelasan Bagus dengan mengatakan, “Oh, iya, betul juga.”</li>
-<li><strong>Koda:</strong> kritik tersirat bahwa sebagian orang dapat melupakan janji setelah memperoleh jabatan. Pesan ini disimpulkan dari isi cerita.</li>
-</ul>
-<div class="note"><strong>Diskusi:</strong> Humor dalam cerita muncul dari perubahan makna “kursi”: mula-mula dipahami sebagai benda untuk duduk, kemudian menjadi lambang jabatan dan kekuasaan.</div>
-</section><section class="card" id="aktivitas"><h2 class="section">Aktivitas Pembelajaran</h2>
-<h3>Aktivitas 1 — Membongkar struktur</h3><p>Bacalah kembali cerita “Kursi yang Membuat Lupa”. Tandai bagian yang menunjukkan abstrak, orientasi, krisis, reaksi, dan koda. Sertakan alasan untuk setiap penandaan.</p>
-<h3>Aktivitas 2 — Menemukan kritik</h3><p>Diskusikan bersama kelompok: persoalan apa yang dikritik dalam cerita? Siapa atau apa yang menjadi sasaran kritik? Apakah humor membuat kritik lebih mudah diterima? Jelaskan dengan bukti dari teks.</p>
-<h3>Aktivitas 3 — Menulis anekdot</h3><ol><li>Pilih persoalan sederhana yang dekat dengan kehidupan, misalnya kebiasaan di sekolah, pelayanan publik, lingkungan, atau penggunaan teknologi.</li><li>Tentukan kritik atau pesan yang ingin disampaikan.</li><li>Buat tokoh dan situasi yang masuk akal.</li><li>Susun cerita dengan lima struktur teks anekdot.</li><li>Gunakan humor yang santun dan tidak merendahkan identitas atau kondisi pribadi seseorang.</li><li>Bacakan atau tampilkan karya, lalu mintalah tanggapan pembaca.</li></ol>
-</section><section class="card" id="refleksi"><h2 class="section">Refleksi dan Evaluasi</h2>
-<h3>Pertanyaan refleksi</h3><ol><li>Apa perbedaan cerita lucu biasa dengan teks anekdot?</li><li>Mengapa kritik dalam anekdot sering disampaikan melalui humor?</li><li>Bagian struktur manakah yang paling menentukan munculnya kelucuan atau kejutan?</li><li>Bagaimana cara menyampaikan kritik tanpa menghina atau merendahkan orang lain?</li><li>Persoalan apa di lingkungan sekitar yang menurutmu layak diangkat menjadi anekdot?</li></ol>
-<h3>Uji pemahaman</h3><ol><li>Sebutkan definisi teks anekdot berdasarkan materi.</li><li>Jelaskan tiga tujuan teks anekdot.</li><li>Sebutkan dan jelaskan lima struktur teks anekdot.</li><li>Apa yang dimaksud dengan kalimat retoris? Berikan satu contoh.</li><li>Jelaskan kritik yang disampaikan dalam cerita “Kursi yang Membuat Lupa”.</li></ol>
-<p><strong>Tugas produk:</strong> tulislah satu teks anekdot bertema kehidupan sehari-hari. Beri penanda pada setiap strukturnya dan tuliskan kritik atau pesan yang ingin disampaikan.</p>
-</section><section class="card" id="kesimpulan"><h2 class="section">Kesimpulan</h2>
-<p>Teks anekdot merupakan cerita pendek yang lucu dan dapat berangkat dari kejadian nyata. Kelucuan dalam anekdot bukan sekadar hiburan, melainkan dapat menjadi sarana menyampaikan sindiran, kritik, dan pesan. Untuk memahami maupun menulisnya, pembaca perlu mengenali ciri, tujuan, lima struktur, serta kaidah kebahasaannya.</p>
-<p>Anekdot yang baik mengajak pembaca tertawa sekaligus berpikir. Kritik disampaikan secara cerdas, relevan, dan tetap memperhatikan kesantunan.</p>
-</section><section id="kelas-virtual">
-<h2>Belajar Lebih Lanjut: Kelas Virtual</h2>
-<div class="reflection">
-<h3>Jelajahi Kelas Virtual Mandala Aksara</h3>
-<p>Untuk memperdalam pemahaman tentang teks anekdot, silakan kunjungi ruang pembelajaran virtual Mandala Aksara. Di sana peserta didik dapat menyimak video pembelajaran dan materi audiovisual lainnya.</p>
-<a class="video-link" href="https://mandalaaksara.github.io/kelas-virtual.html">Kunjungi Kelas Virtual →</a>
-</div>
-</section></main>
-</div>
-<div class="final-quote">“Humor dapat membuat kita tertawa, tetapi kritik yang jernih mengajak kita berpikir dan berbenah.”<span>— Mandala Aksara</span></div>
-<footer class="site-footer">
-<p>© 2026 <strong>Mandala Aksara</strong> · Dikelola Mandiri</p>
-<p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
-</footer>
-<script>
-const menuToggle=document.getElementById('menuToggle');
-const mainNav=document.getElementById('mainNav');
-menuToggle.addEventListener('click',()=>{const open=mainNav.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));});
-document.querySelectorAll('.nav-trigger').forEach(button=>button.addEventListener('click',()=>button.parentElement.classList.toggle('expanded')));
-const sections=[...document.querySelectorAll('.content section')];
-const links=[...document.querySelectorAll('.sidebar a')];
-const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+entry.target.id));}});},{rootMargin:'-25% 0px -65% 0px'});
-sections.forEach(section=>observer.observe(section));
-</script>
+
+  <div class="topbar">
+    <div class="top-inner">
+      <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+      <div class="top-actions">
+        <form class="search" role="search" onsubmit="return searchSite(event)">
+          <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+          <button type="submit" aria-label="Cari">⌕</button>
+        </form>
+        <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+      <span class="brand-copy">
+        <strong>MANDALA AKSARA</strong>
+        <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nav-trigger" aria-haspopup="true">
+          Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
+        </button>
+        <div class="dropdown">
+          <a href="kelas-x.html" class="active" aria-current="page">Kelas X</a>
+          <a href="kelas-xi.html">Kelas XI</a>
+          <a href="kelas-xii.html">Kelas XII</a>
+        </div>
+      </div>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
+
+  <section class="anekdot-hero">
+    <div class="eyebrow">Bahasa Indonesia · Fase E · Kelas X</div>
+    <h1>Teks Anekdot</h1>
+    <p>Mengungkapkan kritik lewat humor: memahami cerita singkat yang menghibur sekaligus mengajak pembaca berpikir.</p>
+  </section>
+
+  <div class="page-layout">
+
+    <aside class="sidebar">
+      <h2>Daftar Materi</h2>
+      <div class="sidebar-list">
+        <a href="#tujuan-pembelajaran">Tujuan Pembelajaran</a>
+        <a href="#definisi">Definisi Teks Anekdot</a>
+        <a href="#ciri">Ciri Teks Anekdot</a>
+        <a href="#tujuan">Tujuan Teks Anekdot</a>
+        <a href="#struktur">Struktur Teks Anekdot</a>
+        <a href="#contoh">Contoh Teks Anekdot</a>
+        <a href="#kaidah">Kaidah Kebahasaan</a>
+        <a href="#analisis">Analisis Contoh Anekdot</a>
+        <a href="#aktivitas">Aktivitas Pembelajaran</a>
+        <a href="#refleksi">Refleksi dan Evaluasi</a>
+        <a href="#kesimpulan">Kesimpulan</a>
+        <a href="#kelas-virtual">Penjelajahan ke Kelas Virtual</a>
+      </div>
+    </aside>
+
+    <main class="content">
+
+      <section id="tujuan-pembelajaran">
+        <h2>Tujuan Pembelajaran</h2>
+        <p>Setelah mempelajari materi ini, peserta didik diharapkan mampu:</p>
+        <ol>
+          <li>Menjelaskan pengertian, ciri, dan tujuan teks anekdot.</li>
+          <li>Mengidentifikasi struktur teks anekdot: abstrak, orientasi, krisis, reaksi, dan koda.</li>
+          <li>Mengenali kaidah kebahasaan yang digunakan dalam teks anekdot.</li>
+          <li>Menafsirkan kritik atau pesan yang disampaikan melalui humor.</li>
+          <li>Menyusun teks anekdot yang kreatif, santun, dan relevan dengan kehidupan sehari-hari.</li>
+        </ol>
+      </section>
+
+      <section id="definisi">
+        <h2>Definisi Teks Anekdot</h2>
+
+        <p>Teks anekdot adalah cerita singkat yang mengandung humor atau kelucuan dan biasanya menyampaikan kritik terhadap suatu keadaan. Ceritanya dapat berangkat dari kejadian nyata, pengalaman sehari-hari, atau peristiwa rekaan yang dibuat menyerupai kenyataan.</p>
+
+        <p>Anekdot sering mengangkat persoalan yang dekat dengan kehidupan masyarakat, seperti pelayanan publik, pendidikan, kebiasaan sosial, lingkungan, hingga perilaku orang yang memiliki jabatan. Cerita disampaikan secara ringan agar pembaca tertarik mengikuti alurnya.</p>
+
+        <figure class="illustration">
+          <img src="anekdot-ilustrasi.jpg" alt="Ilustrasi seseorang menyampaikan cerita humor di hadapan beberapa pendengar">
+          <figcaption>Humor dalam anekdot dapat menjadi cara untuk menyampaikan kritik dan mengajak orang berpikir</figcaption>
+        </figure>
+
+        <div class="note">
+          <strong>Gagasan utama:</strong> teks anekdot tidak hanya bertujuan membuat pembaca tertawa. Di balik kelucuannya, sering terdapat sindiran, kritik, atau ajakan untuk melihat suatu persoalan secara lebih jernih.
+        </div>
+
+        <h3>Humor dan kritik</h3>
+        <p>Humor menjadi cara untuk menyampaikan kritik tanpa harus selalu menggunakan uraian yang keras atau menggurui. Pembaca diajak menangkap ketidaksesuaian antara harapan dan kenyataan, ucapan dan tindakan, atau aturan dan pelaksanaannya.</p>
+
+        <div class="info-card">
+          <strong>Contoh sederhana:</strong>
+          <p>Seorang petugas memasang tulisan “Dilarang membuang sampah sembarangan” di tempat yang justru dipenuhi sampah. Keadaan tersebut dapat dijadikan bahan anekdot untuk menyindir perilaku orang yang tidak menjalankan aturan yang dibuatnya sendiri.</p>
+        </div>
+      </section>
+
+      <section id="ciri">
+        <h2>Ciri Teks Anekdot</h2>
+        <p>Bahan ajar memuat enam ciri teks anekdot berikut.</p>
+
+        <ol>
+          <li><strong>Mampu menghibur dan membuat tertawa.</strong> Teks anekdot memuat beragam kisah lucu, humor, atau membuat pembaca terhibur.</li>
+          <li><strong>Memiliki sifat menyindir.</strong> Dalam beberapa kisah, teks anekdot dipakai sebagai media untuk menyindir sesuatu, baik orang maupun kelompok.</li>
+          <li><strong>Bisa jadi mengenai orang penting.</strong> Karena tidak ada aturan yang ketat untuk membuat teks anekdot, teks ini biasa digunakan untuk membahas orang-orang penting.</li>
+          <li><strong>Memiliki tujuan tertentu.</strong> Tidak seperti teks yang lain, teks anekdot lebih fleksibel untuk dibentuk sesuai keinginan penulis.</li>
+          <li><strong>Menceritakan karakter hewan dan manusia.</strong> Karakter hewan dan manusia sering terhubung secara umum dan realistis.</li>
+          <li><strong>Kisahnya hampir menyerupai dongeng.</strong> Penulis membuat sebuah cerita lain yang sebenarnya berhubungan dengan kehidupan saat ini.</li>
+        </ol>
+
+        <div class="note">
+          <strong>Pengayaan:</strong> tokoh dalam anekdot dapat berupa manusia, hewan, atau tokoh rekaan. Hal yang penting ialah cerita tersebut menyampaikan kelucuan dan makna kritik yang dapat ditangkap pembaca.
+        </div>
+
+        <h3>Hal yang perlu diperhatikan</h3>
+        <p>Tidak semua cerita lucu dapat disebut anekdot. Cerita lucu biasa mungkin hanya bertujuan menghibur, sedangkan anekdot umumnya memiliki maksud tambahan, yaitu menyampaikan sindiran, kritik, atau pesan tertentu.</p>
+      </section>
+
+      <section id="tujuan">
+        <h2>Tujuan Teks Anekdot</h2>
+
+        <h3>1. Membangkitkan tawa pembaca</h3>
+        <p>Teks anekdot memiliki ciri berupa sifat lucu. Tujuan pembuatannya adalah membangkitkan tawa pembaca. Oleh karena itu, dalam membuat teks anekdot dibutuhkan kemampuan memahami selera humor yang sesuai dengan suatu keadaan.</p>
+
+        <h3>2. Sebagai sarana hiburan</h3>
+        <p>Tujuan kedua teks anekdot adalah sebagai sarana hiburan. Teks anekdot yang bersifat lucu bertujuan juga untuk menghibur pembaca. Oleh karena itu, tidak sedikit orang yang akan terhibur setelah membaca teks anekdot.</p>
+
+        <h3>3. Sebagai sarana untuk mengkritik</h3>
+        <p>Teks anekdot biasanya digunakan untuk mengkritik sebuah peristiwa yang sedang terjadi. Dengan adanya teks anekdot, pembaca akan tertawa, terhibur, sekaligus mendapatkan suatu informasi dalam bentuk kritikan.</p>
+
+        <div class="two-columns">
+          <div class="feature">
+            <h3>Menghibur</h3>
+            <p>Kelucuan membuat cerita menarik dan menyenangkan untuk dibaca.</p>
+          </div>
+          <div class="feature">
+            <h3>Menyadarkan</h3>
+            <p>Kritik di balik cerita mengajak pembaca menyadari persoalan yang terjadi di sekitarnya.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="struktur">
+        <h2>Struktur Teks Anekdot</h2>
+        <p>Teks anekdot dalam bahan ajar disusun atas lima bagian.</p>
+
+        <div class="structure">
+          <div>
+            <b><span class="num">1</span>Abstrak</b>
+            Bagian pendahuluan atau pembuka teks.
+          </div>
+          <div>
+            <b><span class="num">2</span>Orientasi</b>
+            Awal suatu kejadian atau saat cerita mulai bergulir.
+          </div>
+          <div>
+            <b><span class="num">3</span>Krisis</b>
+            Puncak cerita yang berisi konflik atau masalah yang terjadi pada karakter.
+          </div>
+          <div>
+            <b><span class="num">4</span>Reaksi</b>
+            Respons atau reaksi yang dilakukan karakter setelah mengalami krisis.
+          </div>
+          <div>
+            <b><span class="num">5</span>Koda</b>
+            Bagian penutup teks yang berisi amanat atau kritik.
+          </div>
+        </div>
+
+        <h3>Fungsi setiap struktur</h3>
+        <p>Abstrak memberi gambaran awal, orientasi mengenalkan situasi, krisis menghadirkan persoalan atau kejutan, reaksi menunjukkan tanggapan tokoh, sedangkan koda menegaskan pesan atau kritik yang dapat direnungkan pembaca.</p>
+
+        <div class="enrichment">
+          <span class="enrichment-label">Cara mudah mengingat</span>
+          <p><strong>Abstrak:</strong> cerita tentang apa? <strong>Orientasi:</strong> siapa dan di mana? <strong>Krisis:</strong> masalah atau kejutan apa yang muncul? <strong>Reaksi:</strong> bagaimana tanggapan tokoh? <strong>Koda:</strong> apa pesan atau kritiknya?</p>
+        </div>
+
+        <p>Kelima bagian tersebut membantu cerita tersusun dengan runtut. Namun, dalam praktiknya, tidak semua teks anekdot selalu menampilkan setiap bagian secara terpisah atau dengan panjang yang sama.</p>
+      </section>
+
+      <section id="contoh">
+        <h2>Contoh Teks Anekdot: Kursi yang Membuat Lupa</h2>
+
+        <p><strong>Di suatu siang, ada dua bocah yang tengah bercanda di bawah pohon rindang.</strong></p>
+
+        <div class="dialogue">
+          <p><span class="speaker">Bagus:</span> “Anton, kita main tebak-tebakan, yuk! Kursi apa yang membuat orang lupa ingatan?”</p>
+          <p><span class="speaker">Anton:</span> “Kursi goyang! Orang yang duduk di atas kursi goyang akan mengantuk dan tertidur. Saat tidur, orang kan lupa.”</p>
+          <p><span class="speaker">Bagus:</span> (Tertawa) “Meski lucu, tapi jawabanmu salah.”</p>
+          <p><span class="speaker">Anton:</span> “Hmm... kursi apa, ya?”</p>
+          <p><span class="speaker">Bagus:</span> “Jawabannya adalah kursi DPR!”</p>
+          <p><span class="speaker">Anton:</span> “Lho, kok begitu?”</p>
+          <p><span class="speaker">Bagus:</span> “Jelas, lah! Coba kamu ingat, sebelum duduk di kursi DPR, banyak caleg yang berjanji macam-macam agar masyarakat memilih mereka. Tapi setelah merasakan kursi DPR, sekejap saja mereka hilang ingatan akan janji-janjinya.”</p>
+          <p><span class="speaker">Anton:</span> “Oh, iya, betul juga.”</p>
+        </div>
+
+        <p><em>Catatan:</em> Contoh cerita di atas dipertahankan dari bahan ajar yang diberikan. Tokoh dan dialognya digunakan sebagai bahan analisis struktur, humor, serta kritik sosial.</p>
+
+        <div class="note">
+          <strong>Perhatikan kelucuannya:</strong> pertanyaan tentang “kursi” awalnya membuat pembaca membayangkan sebuah benda untuk duduk. Namun, jawaban Bagus mengarah pada “kursi DPR” sebagai lambang jabatan. Perubahan makna inilah yang menimbulkan kejutan sekaligus menyampaikan kritik.
+        </div>
+      </section>
+
+      <section id="kaidah">
+        <h2>Kaidah Kebahasaan Teks Anekdot</h2>
+        <p>Bahan ajar mengidentifikasi lima kaidah kebahasaan berikut.</p>
+
+        <ol>
+          <li><strong>Menggunakan kalimat yang menyatakan kejadian sebenarnya yang sudah terjadi (peristiwa masa lalu).</strong></li>
+          <li><strong>Menggunakan kalimat retoris,</strong> yaitu jenis kalimat pertanyaan yang tidak membutuhkan jawaban.</li>
+          <li><strong>Menggunakan konjungsi (kata penghubung) yang menyatakan hubungan waktu.</strong> Contohnya kemudian, lalu, selanjutnya, dan sebagainya.</li>
+          <li><strong>Menggunakan kata kerja aksi.</strong> Contohnya menulis, membaca, bernyanyi, belajar, dan sebagainya.</li>
+          <li><strong>Menggunakan kalimat perintah.</strong> Contohnya “Jangan buang sampah sembarangan!” dan “Jawablah pertanyaanku!”</li>
+        </ol>
+
+        <h3>Contoh pengenalan dalam teks</h3>
+        <ul>
+          <li>Peristiwa masa lalu: “Sebelum duduk di kursi DPR, banyak caleg yang berjanji...”</li>
+          <li>Kalimat retoris/pertanyaan: “Kursi apa yang membuat orang lupa ingatan?”</li>
+          <li>Konjungsi waktu: kata “setelah” dalam “setelah merasakan kursi DPR”.</li>
+          <li>Kata kerja aksi: “duduk”, “berjanji”, “memilih”, dan “merasakan”.</li>
+        </ul>
+
+        <div class="enrichment">
+          <span class="enrichment-label">Pengayaan kebahasaan</span>
+          <p>Dalam teks anekdot, dialog antartokoh juga sering digunakan untuk menghidupkan cerita. Pilihan kata yang sederhana, pertanyaan yang mengundang rasa ingin tahu, dan jawaban yang tidak terduga dapat membantu membangun humor.</p>
+        </div>
+      </section>
+
+      <section id="analisis">
+        <h2>Analisis Contoh Anekdot</h2>
+        <p>Berikut pemetaan contoh “Kursi yang Membuat Lupa” berdasarkan lima struktur. Pemetaan ini merupakan pengayaan untuk membantu memahami cara kerja struktur dalam sebuah cerita.</p>
+
+        <ul>
+          <li><strong>Abstrak:</strong> gagasan tentang kursi yang membuat orang lupa ingatan, diperkenalkan melalui tebak-tebakan.</li>
+          <li><strong>Orientasi:</strong> Bagus dan Anton sedang bercanda di bawah pohon rindang pada suatu siang.</li>
+          <li><strong>Krisis:</strong> Bagus mengungkap jawaban “kursi DPR” dan mengaitkannya dengan janji para calon legislatif yang dilupakan setelah terpilih.</li>
+          <li><strong>Reaksi:</strong> Anton bertanya “Lho, kok begitu?” lalu menerima penjelasan Bagus dengan mengatakan, “Oh, iya, betul juga.”</li>
+          <li><strong>Koda:</strong> kritik tersirat bahwa sebagian orang dapat melupakan janji setelah memperoleh jabatan. Pesan ini disimpulkan dari isi cerita.</li>
+        </ul>
+
+        <div class="note">
+          <strong>Diskusi:</strong> Humor dalam cerita muncul dari perubahan makna “kursi”: mula-mula dipahami sebagai benda untuk duduk, kemudian menjadi lambang jabatan dan kekuasaan.
+        </div>
+
+        <h3>Memahami kritik yang tersirat</h3>
+        <p>Kritik dalam cerita tidak disampaikan secara langsung melalui uraian panjang. Penulis menggunakan tebak-tebakan dan jawaban yang mengejutkan agar pembaca memahami persoalan dengan cara yang lebih ringan.</p>
+        <p>Dengan demikian, pembaca tidak hanya menikmati kelucuannya, tetapi juga diajak berpikir tentang tanggung jawab seseorang setelah memperoleh kepercayaan atau jabatan.</p>
+      </section>
+
+      <section id="aktivitas">
+        <h2>Aktivitas Pembelajaran</h2>
+        <h3>Aktivitas 1 — Membongkar struktur</h3><p>Bacalah kembali cerita “Kursi yang Membuat Lupa”. Tandai bagian yang menunjukkan abstrak, orientasi, krisis, reaksi, dan koda. Sertakan alasan untuk setiap penandaan.</p>
+        <h3>Aktivitas 2 — Menemukan kritik</h3><p>Diskusikan bersama kelompok: persoalan apa yang dikritik dalam cerita? Siapa atau apa yang menjadi sasaran kritik? Apakah humor membuat kritik lebih mudah diterima? Jelaskan dengan bukti dari teks.</p>
+        <h3>Aktivitas 3 — Menulis anekdot</h3><ol><li>Pilih persoalan sederhana yang dekat dengan kehidupan, misalnya kebiasaan di sekolah, pelayanan publik, lingkungan, atau penggunaan teknologi.</li><li>Tentukan kritik atau pesan yang ingin disampaikan.</li><li>Buat tokoh dan situasi yang masuk akal.</li><li>Susun cerita dengan lima struktur teks anekdot.</li><li>Gunakan humor yang santun dan tidak merendahkan identitas atau kondisi pribadi seseorang.</li><li>Bacakan atau tampilkan karya, lalu mintalah tanggapan pembaca.</li></ol>
+      </section>
+
+      <section id="refleksi">
+        <h2>Refleksi dan Evaluasi</h2>
+
+        <h3>Pertanyaan refleksi</h3>
+        <ol>
+          <li>Apa perbedaan cerita lucu biasa dengan teks anekdot?</li>
+          <li>Mengapa kritik dalam anekdot sering disampaikan melalui humor?</li>
+          <li>Bagian struktur manakah yang paling menentukan munculnya kelucuan atau kejutan?</li>
+          <li>Bagaimana cara menyampaikan kritik tanpa menghina atau merendahkan orang lain?</li>
+          <li>Persoalan apa di lingkungan sekitar yang menurutmu layak diangkat menjadi anekdot?</li>
+        </ol>
+
+        <h3>Uji pemahaman</h3>
+        <ol>
+          <li>Sebutkan definisi teks anekdot berdasarkan materi.</li>
+          <li>Jelaskan tiga tujuan teks anekdot.</li>
+          <li>Sebutkan dan jelaskan lima struktur teks anekdot.</li>
+          <li>Apa yang dimaksud dengan kalimat retoris? Berikan satu contoh.</li>
+          <li>Jelaskan kritik yang disampaikan dalam cerita “Kursi yang Membuat Lupa”.</li>
+        </ol>
+
+        <p><strong>Tugas produk:</strong> tulislah satu teks anekdot bertema kehidupan sehari-hari. Beri penanda pada setiap strukturnya dan tuliskan kritik atau pesan yang ingin disampaikan.</p>
+      </section>
+
+      <section id="kesimpulan">
+        <h2>Kesimpulan</h2>
+        <p>Teks anekdot merupakan cerita pendek yang lucu dan dapat berangkat dari kejadian nyata. Kelucuan dalam anekdot bukan sekadar hiburan, melainkan dapat menjadi sarana menyampaikan sindiran, kritik, dan pesan. Untuk memahami maupun menulisnya, pembaca perlu mengenali ciri, tujuan, lima struktur, serta kaidah kebahasaannya.</p>
+
+        <p>Anekdot yang baik mengajak pembaca tertawa sekaligus berpikir. Kritik disampaikan secara cerdas, relevan, dan tetap memperhatikan kesantunan.</p>
+
+        <div class="note">
+          <strong>Inti pembelajaran:</strong> di balik cerita yang mengundang tawa, terdapat persoalan yang dapat direnungkan. Humor yang baik bukan untuk merendahkan orang lain, melainkan membantu kita melihat keadaan secara lebih kritis.
+        </div>
+      </section>
+
+      <section id="kelas-virtual">
+        <h2>Belajar Lebih Lanjut: Kelas Virtual</h2>
+        <div class="reflection">
+          <h3>Jelajahi Kelas Virtual Mandala Aksara</h3>
+          <p>Untuk memperdalam pemahaman tentang teks anekdot, silakan kunjungi ruang pembelajaran virtual Mandala Aksara. Di sana peserta didik dapat menyimak video pembelajaran dan materi audiovisual lainnya.</p>
+          <a class="video-link" href="kelas-virtual.html">Kunjungi Kelas Virtual →</a>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <div class="final-quote">
+    “Humor dapat membuat kita tertawa, tetapi kritik yang jernih mengajak kita berpikir dan berbenah.”
+    <span>— Mandala Aksara</span>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+        <div class="footer-brand-copy">
+          <b>MANDALA AKSARA</b>
+          <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+          <span class="managed-label">Dikelola Mandiri</span>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="perpustakaan.html">Perpustakaan Digital</a>
+        <a href="kelas-virtual.html">Kelas Virtual</a>
+      </nav>
+    </div>
+    <div class="copyright">
+      © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    // Penanda otomatis pada daftar materi saat bagian dibaca
+    const sections = document.querySelectorAll('.content section');
+    const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            sidebarLinks.forEach(link => {
+              link.classList.toggle(
+                'active',
+                link.getAttribute('href') === '#' + entry.target.id
+              );
+            });
+          }
+        });
+      }, {
+        rootMargin: '-25% 0px -65% 0px'
+      });
+
+      sections.forEach(section => observer.observe(section));
+    }
+  </script>
+
 </body>
 </html>
