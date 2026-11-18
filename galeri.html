@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -14,8 +14,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Galeri Mandala Aksara, ruang dokumentasi aktivitas literasi, pembelajaran, dan kreativitas.">
+  <meta name="theme-color" content="#0d203a">
+
   <title>Galeri | Mandala Aksara</title>
-  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="style.css?v=3">
 
   <style>
     :root {
@@ -27,7 +30,9 @@
       --text: #263445;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -36,24 +41,65 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    /* =====================================
+       HERO GALERI
+    ===================================== */
+
     .gallery-hero {
+      position: relative;
+      overflow: hidden;
       background: linear-gradient(135deg, var(--navy-dark), var(--navy));
       color: white;
       text-align: center;
       padding: 65px 20px;
     }
 
+    .gallery-hero::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border: 1px solid rgba(198,154,69,.16);
+      border-radius: 50%;
+      top: -160px;
+      right: -60px;
+    }
+
+    .gallery-hero::after {
+      content: "";
+      position: absolute;
+      width: 230px;
+      height: 230px;
+      border: 1px solid rgba(242,140,40,.13);
+      border-radius: 50%;
+      bottom: -150px;
+      left: -60px;
+    }
+
     .gallery-hero h1 {
+      position: relative;
+      z-index: 1;
       margin: 0 0 15px;
+      font-family: Georgia, serif;
       font-size: clamp(30px, 5vw, 44px);
     }
 
+    .gallery-hero h1 span {
+      color: var(--orange);
+    }
+
     .gallery-hero p {
+      position: relative;
+      z-index: 1;
       max-width: 720px;
       margin: auto;
       color: #e7edf5;
       line-height: 1.8;
     }
+
+    /* =====================================
+       KONTEN GALERI
+    ===================================== */
 
     .gallery-container {
       max-width: 1100px;
@@ -141,6 +187,10 @@
       color: #73552d;
     }
 
+    /* =====================================
+       KUTIPAN PENUTUP
+    ===================================== */
+
     .gallery-quote {
       max-width: 850px;
       margin: 15px auto 50px;
@@ -151,6 +201,7 @@
     .gallery-quote blockquote {
       margin: 0;
       color: var(--navy);
+      font-family: Georgia, serif;
       font-size: 18px;
       font-style: italic;
       line-height: 1.8;
@@ -164,6 +215,10 @@
       font-weight: bold;
     }
 
+    /* =====================================
+       RESPONSIVE GALERI
+    ===================================== */
+
     @media (max-width: 700px) {
       .gallery-grid {
         grid-template-columns: 1fr;
@@ -176,163 +231,234 @@
       .gallery-container {
         padding: 32px 16px;
       }
+
+      .gallery-image {
+        min-height: 165px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header class="site-header">
-  <a href="index.html" class="brand">
-    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-    <span>MANDALA AKSARA</span>
-  </a>
+  <!-- =====================================
+       TOPBAR
+  ===================================== -->
 
-  <button id="menuToggle" type="button"
-    aria-label="Buka menu" aria-expanded="false">☰</button>
+  <div class="topbar">
+    <div class="top-inner">
+      <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
 
-  <nav id="mainNav">
-    <a href="index.html">Beranda</a>
+      <div class="top-actions">
+        <form class="search" role="search" onsubmit="return searchSite(event)">
+          <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+          <button type="submit" aria-label="Cari">⌕</button>
+        </form>
 
-    <div class="nav-dropdown">
-      <button type="button" class="nav-trigger">
-        Materi Pembelajaran <span>⌄</span>
-      </button>
-      <div class="dropdown">
-        <a href="kelas-x.html">Kelas X</a>
-        <a href="kelas-xi.html">Kelas XI</a>
-        <a href="kelas-xii.html">Kelas XII</a>
+        <a class="top-virtual" href="kelas-virtual.html">
+          ▣ <span>Kelas Virtual</span>
+        </a>
       </div>
     </div>
+  </div>
 
-    <a href="galeri.html" class="active">Galeri</a>
-    <a href="perpustakaan.html">Perpustakaan Digital</a>
-    <a href="kelas-virtual.html">Kelas Virtual</a>
-    <a href="tentang.html">Tentang</a>
-  </nav>
-</header>
+  <!-- =====================================
+       HEADER DAN NAVIGASI UTAMA
+  ===================================== -->
 
-<main>
+  <header class="site-header">
 
-  <section class="gallery-hero">
-    <h1>Galeri Mandala Aksara</h1>
-    <p>
-      Ruang untuk merekam perjalanan literasi,
-      mengapresiasi kreativitas, dan mengabadikan
-      setiap proses pembelajaran.
-    </p>
-  </section>
+    <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
 
-  <section class="gallery-container">
-    <p class="intro">
-      Setiap kegiatan menyimpan pengalaman, setiap karya
-      menghadirkan gagasan, dan setiap dokumentasi menjadi
-      bagian dari perjalanan belajar. Galeri ini disediakan
-      sebagai ruang apresiasi terhadap proses dan kreativitas.
-    </p>
+      <span class="brand-copy">
+        <strong>MANDALA AKSARA</strong>
+        <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+      </span>
+    </a>
 
-    <div class="gallery-grid">
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Buka navigasi"
+      aria-expanded="false"
+      aria-controls="mainNav">☰</button>
 
-      <!-- AKTIVITAS LITERASI -->
-      <a class="gallery-card" href="satu-hari-satu-kata.html">
-        <div class="gallery-image">📚</div>
-        <div class="gallery-content">
-          <h2>Aktivitas Literasi</h2>
-          <p>
-            Dokumentasi kegiatan membaca, menulis,
-            berdiskusi, dan membangun budaya literasi.
-          </p>
-          <span class="gallery-link">
-            Jelajahi Satu Hari Satu Kata →
-          </span>
+    <nav id="mainNav" aria-label="Navigasi utama">
+
+      <a href="index.html">Beranda</a>
+
+      <div class="nav-dropdown">
+        <button type="button" class="nav-trigger" aria-haspopup="true">
+          Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
+        </button>
+
+        <div class="dropdown">
+          <a href="kelas-x.html">Kelas X</a>
+          <a href="kelas-xi.html">Kelas XI</a>
+          <a href="kelas-xii.html">Kelas XII</a>
         </div>
-      </a>
+      </div>
 
-      <!-- PROSES PEMBELAJARAN -->
-      <article class="gallery-card">
-        <div class="gallery-image">✍️</div>
-        <div class="gallery-content">
-          <h2>Proses Pembelajaran</h2>
-          <p>
-            Rekaman pengalaman belajar, eksplorasi
-            pengetahuan, dan kegiatan pembelajaran.
-          </p>
-        </div>
-      </article>
+      <a class="active" href="galeri.html" aria-current="page">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+      <a href="tentang.html">Tentang</a>
 
-      <!-- KARYA DAN KREATIVITAS -->
-      <article class="gallery-card">
-        <div class="gallery-image">🎨</div>
-        <div class="gallery-content">
-          <h2>Karya dan Kreativitas</h2>
-          <p>
-            Apresiasi terhadap puisi, cerita pendek,
-            poster, dan berbagai karya kreatif.
-          </p>
-        </div>
-      </article>
+    </nav>
+  </header>
 
-      <!-- DOKUMENTASI KEGIATAN -->
-      <article class="gallery-card">
-        <div class="gallery-image">🌿</div>
-        <div class="gallery-content">
-          <h2>Dokumentasi Kegiatan</h2>
-          <p>
-            Kumpulan momen, pengalaman, dan kegiatan
-            yang menjadi bagian dari perjalanan literasi.
-          </p>
+  <main>
+
+    <!-- =====================================
+         HERO GALERI
+    ===================================== -->
+
+    <section class="gallery-hero">
+      <h1>Galeri <span>Mandala Aksara</span></h1>
+
+      <p>
+        Ruang untuk merekam perjalanan literasi,
+        mengapresiasi kreativitas, dan mengabadikan
+        setiap proses pembelajaran.
+      </p>
+    </section>
+
+    <!-- =====================================
+         DAFTAR GALERI
+    ===================================== -->
+
+    <section class="gallery-container">
+
+      <p class="intro">
+        Setiap kegiatan menyimpan pengalaman, setiap karya
+        menghadirkan gagasan, dan setiap dokumentasi menjadi
+        bagian dari perjalanan belajar. Galeri ini disediakan
+        sebagai ruang apresiasi terhadap proses dan kreativitas.
+      </p>
+
+      <div class="gallery-grid">
+
+        <!-- AKTIVITAS LITERASI -->
+        <a class="gallery-card" href="satu-hari-satu-kata.html">
+          <div class="gallery-image">📚</div>
+
+          <div class="gallery-content">
+            <h2>Aktivitas Literasi</h2>
+
+            <p>
+              Dokumentasi kegiatan membaca, menulis,
+              berdiskusi, dan membangun budaya literasi.
+            </p>
+
+            <span class="gallery-link">
+              Jelajahi Satu Hari Satu Kata →
+            </span>
+          </div>
+        </a>
+
+        <!-- PROSES PEMBELAJARAN -->
+        <article class="gallery-card">
+          <div class="gallery-image">✍️</div>
+
+          <div class="gallery-content">
+            <h2>Proses Pembelajaran</h2>
+
+            <p>
+              Rekaman pengalaman belajar, eksplorasi
+              pengetahuan, dan kegiatan pembelajaran.
+            </p>
+          </div>
+        </article>
+
+        <!-- KARYA DAN KREATIVITAS -->
+        <article class="gallery-card">
+          <div class="gallery-image">🎨</div>
+
+          <div class="gallery-content">
+            <h2>Karya dan Kreativitas</h2>
+
+            <p>
+              Apresiasi terhadap puisi, cerita pendek,
+              poster, dan berbagai karya kreatif.
+            </p>
+          </div>
+        </article>
+
+        <!-- DOKUMENTASI KEGIATAN -->
+        <article class="gallery-card">
+          <div class="gallery-image">🌿</div>
+
+          <div class="gallery-content">
+            <h2>Dokumentasi Kegiatan</h2>
+
+            <p>
+              Kumpulan momen, pengalaman, dan kegiatan
+              yang menjadi bagian dari perjalanan literasi.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="gallery-note">
+        <strong>Catatan:</strong>
+        Koleksi foto dan dokumentasi akan ditambahkan
+        secara bertahap. Setiap karya dan dokumentasi
+        diharapkan mencerminkan semangat belajar,
+        kreativitas, dan apresiasi.
+      </div>
+
+    </section>
+
+    <!-- =====================================
+         KUTIPAN PENUTUP
+    ===================================== -->
+
+    <section class="gallery-quote">
+      <blockquote>
+        “Sebuah dokumentasi bukan sekadar rekaman masa lalu,
+        melainkan jejak yang mengingatkan kita bahwa setiap
+        proses memiliki cerita dan setiap karya memiliki makna.”
+      </blockquote>
+
+      <cite>— Mandala Aksara</cite>
+    </section>
+
+  </main>
+
+  <!-- =====================================
+       FOOTER
+  ===================================== -->
+
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+
+        <div class="footer-brand-copy">
+          <b>MANDALA AKSARA</b>
+          <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+          <span class="managed-label">Dikelola Mandiri</span>
         </div>
-      </article>
+      </div>
+
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="perpustakaan.html">Perpustakaan Digital</a>
+        <a href="kelas-virtual.html">Kelas Virtual</a>
+      </nav>
 
     </div>
 
-    <div class="gallery-note">
-      <strong>Catatan:</strong>
-      Koleksi foto dan dokumentasi akan ditambahkan
-      secara bertahap. Setiap karya dan dokumentasi
-      diharapkan mencerminkan semangat belajar,
-      kreativitas, dan apresiasi.
+    <div class="copyright">
+      © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
     </div>
-  </section>
 
-  <section class="gallery-quote">
-    <blockquote>
-      “Sebuah dokumentasi bukan sekadar rekaman masa lalu,
-      melainkan jejak yang mengingatkan kita bahwa setiap
-      proses memiliki cerita dan setiap karya memiliki makna.”
-    </blockquote>
-    <cite>— Mandala Aksara</cite>
-  </section>
+  </footer>
 
-</main>
-
-<footer class="site-footer">
-  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
-  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
-</footer>
-
-<script>
-  const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('mainNav');
-
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      toggle.setAttribute(
-        'aria-expanded',
-        nav.classList.contains('open')
-      );
-    });
-  }
-
-  document.querySelectorAll('.nav-trigger').forEach(button => {
-    button.addEventListener('click', () => {
-      if (window.matchMedia('(max-width: 1050px)').matches) {
-        button.parentElement.classList.toggle('expanded');
-      }
-    });
-  });
-</script>
+  <script src="script.js"></script>
 
 </body>
 </html>
