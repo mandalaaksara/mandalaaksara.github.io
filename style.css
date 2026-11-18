@@ -1159,3 +1159,19 @@ input:focus-visible {
 #mainNav .dropdown {
   top: 100%;
 }
+
+/* =====================================
+   NAVIGASI KHUSUS HP
+   Menu tertutup sampai tombol hamburger ditekan
+===================================== */
+
+@media (max-width: 650px) {
+  #mainNav {
+    display: none !important;
+  }
+
+  #mainNav.open {
+    display: flex !important;
+  }
+}
+
