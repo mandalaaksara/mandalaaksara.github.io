@@ -1,19 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-7HFZ0YC7P9');
-</script>
-  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perpustakaan Digital | Mandala Aksara</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 
   <style>
     .library-hero {
@@ -150,25 +151,48 @@
 
 <body>
 
-<header class="site-header">
-  <a class="brand" href="index.html">
-    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-    <div>
-      <strong>MANDALA AKSARA</strong>
-      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="top-inner">
+    <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+
+    <div class="top-actions">
+      <form class="search" role="search" onsubmit="return searchSite(event)">
+        <input id="searchInput" type="search"
+               placeholder="Cari materi..." aria-label="Cari materi">
+        <button type="submit" aria-label="Cari">⌕</button>
+      </form>
+
+      <a class="top-virtual" href="kelas-virtual.html">
+        ▣ <span>Kelas Virtual</span>
+      </a>
     </div>
+  </div>
+</div>
+
+<!-- HEADER DAN NAVIGASI -->
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+
+    <span class="brand-copy">
+      <strong>MANDALA AKSARA</strong>
+      <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+    </span>
   </a>
 
-  <button class="menu-toggle" id="menuToggle"
-          aria-label="Buka navigasi" aria-expanded="false">☰</button>
+  <button class="menu-toggle" id="menuToggle" type="button"
+          aria-label="Buka navigasi" aria-expanded="false"
+          aria-controls="mainNav">☰</button>
 
   <nav id="mainNav" aria-label="Navigasi utama">
     <a href="index.html">Beranda</a>
 
     <div class="nav-dropdown">
-      <button type="button" class="nav-trigger">
-        Materi Pembelajaran <span>⌄</span>
+      <button type="button" class="nav-trigger" aria-haspopup="true">
+        Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
       </button>
+
       <div class="dropdown">
         <a href="kelas-x.html">Kelas X</a>
         <a href="kelas-xi.html">Kelas XI</a>
@@ -177,7 +201,11 @@
     </div>
 
     <a href="galeri.html">Galeri</a>
-    <a href="perpustakaan.html" class="active">Perpustakaan Digital</a>
+
+    <a class="active" href="perpustakaan.html" aria-current="page">
+      Perpustakaan Digital
+    </a>
+
     <a href="kelas-virtual.html">Kelas Virtual</a>
     <a href="tentang.html">Tentang</a>
   </nav>
@@ -210,6 +238,7 @@
       <a href="karya-sastra.html" class="library-card">
         <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=900"
              alt="Buku dan karya sastra">
+
         <div class="library-card-body">
           <h3>Karya Sastra</h3>
           <p>
@@ -223,6 +252,7 @@
       <a href="referensi-kebahasaan.html" class="library-card">
         <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=900"
              alt="Buku referensi kebahasaan">
+
         <div class="library-card-body">
           <h3>Referensi Kebahasaan</h3>
           <p>
@@ -236,6 +266,7 @@
       <a href="bahan-bacaan.html" class="library-card">
         <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=900"
              alt="Rak buku dan bahan bacaan">
+
         <div class="library-card-body">
           <h3>Bahan Bacaan</h3>
           <p>
@@ -249,6 +280,7 @@
       <a href="karya-ilmiah.html" class="library-card">
         <img src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=900"
              alt="Dokumen dan karya ilmiah">
+
         <div class="library-card-body">
           <h3>Karya Ilmiah</h3>
           <p>
@@ -264,39 +296,43 @@
     <div class="library-quote">
       “Membaca adalah perjalanan memasuki dunia pengetahuan;
       menulis adalah cara mengabadikan pemikiran.”
+      <br>
+      <strong>— Mandala Aksara</strong>
     </div>
 
   </section>
 
 </main>
 
-<footer>
-  <p>© 2026 Mandala Aksara · Dikelola Mandiri</p>
-  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-main">
+
+    <div class="footer-brand">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+
+      <div class="footer-brand-copy">
+        <b>MANDALA AKSARA</b>
+        <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+        <span class="managed-label">Dikelola Mandiri</span>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Navigasi footer">
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+    </nav>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+  </div>
 </footer>
 
-<script>
-const toggle = document.getElementById('menuToggle');
-const nav = document.getElementById('mainNav');
-
-if (toggle && nav) {
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    toggle.setAttribute(
-      'aria-expanded',
-      nav.classList.contains('open')
-    );
-  });
-}
-
-document.querySelectorAll('.nav-trigger').forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (window.matchMedia('(max-width: 1050px)').matches) {
-      btn.parentElement.classList.toggle('expanded');
-    }
-  });
-});
-</script>
+<script src="script.js"></script>
 
 </body>
-  </html>
+</html>
