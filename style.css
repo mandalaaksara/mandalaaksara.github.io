@@ -677,10 +677,10 @@ footer{
     gap:9px;
   }
 
-  .brand img{
-    width:62px;
-    height:55px;
-  }
+  .brand img {
+  width: 85px;
+  height: 70px;
+}
 
   .brand strong{
     font-size:17px;
