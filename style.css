@@ -1126,3 +1126,43 @@ input:focus-visible {
 
   .copyright { font-size: 10px; }
 }
+/* PERBAIKAN POSISI NAVIGASI UTAMA */
+#mainNav {
+  display: flex;
+  align-items: center !important;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+#mainNav > a,
+#mainNav > .nav-dropdown {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainNav > a,
+#mainNav .nav-trigger {
+  height: 46px;
+  min-height: 46px;
+  padding: 0 13px !important;
+  margin: 0;
+  line-height: 1;
+}
+
+#mainNav .nav-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+#mainNav .nav-dropdown {
+  position: relative;
+  align-items: center;
+}
+
+#mainNav .dropdown {
+  top: 100%;
+}
