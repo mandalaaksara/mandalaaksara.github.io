@@ -1,161 +1,608 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materi pembelajaran Bahasa Indonesia Kelas XII Mandala Aksara, meliputi surat resmi, teks prosedur kompleks, novel, teks eksplanasi kompleks, dan esai.">
 
-\<!DOCTYPE html>
+  <title>Bahasa Indonesia Kelas XII | Mandala Aksara</title>
 
-\<html lang="id"> \<head>   \<meta charset="UTF-8">   \<meta name="viewport" content="width=device-width, initial-scale=1.0">   \<meta name="description" content="Halaman pembelajaran Bahasa Indonesia Kelas XII Mandala Aksara. Ruang belajar, literasi, dan pengembangan kompetensi berbahasa.">   \<title>Bahasa Indonesia Kelas XII | Mandala Aksara\</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
 
-&#x20; \<!-- Google Analytics -->
+  <link rel="stylesheet" href="style.css">
 
-&#x20; \<script async src="[https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9](https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9)">\</script>
+  <style>
+    /* =====================================
+       HALAMAN KELAS XII
+    ===================================== */
 
-&#x20; \<script>     window\.dataLayer = window\.dataLayer || [];     function gtag(){dataLayer.push(arguments);}     gtag('js', new Date());     gtag('config', 'G-7HFZ0YC7P9');   \</script>
+    .kelas-xii-page {
+      background: #f3f5f8;
+      min-height: 70vh;
+      padding-bottom: 50px;
+    }
 
-&#x20; \<link rel="stylesheet" href="style.css">
+    /* HERO */
 
-&#x20; \<style>     /\* =====================================        HALAMAN KELAS XII     ===================================== \*/      .kelas-xii-page {       background: #f3f5f8;       min-height: 70vh;       padding-bottom: 60px;     }      .xii-hero {       background: linear-gradient(120deg, #142b4a, #0d203a);       color: #fff;       padding: 65px 20px;       text-align: center;       position: relative;       overflow: hidden;     }      .xii-hero::before {       content: "";       position: absolute;       width: 280px;       height: 280px;       border: 1px solid rgba(255,255,255,.09);       border-radius: 50%;       top: -140px;       right: -65px;     }      .xii-hero::after {       content: "";       position: absolute;       width: 220px;       height: 220px;       border: 1px solid rgba(242,140,40,.2);       border-radius: 50%;       bottom: -130px;       left: -60px;     }      .xii-hero-content {       position: relative;       z-index: 1;       max-width: 850px;       margin: auto;     }      .xii-label {       display: inline-block;       color: #f5bd67;       border: 1px solid rgba(245,189,103,.5);       border-radius: 30px;       padding: 7px 17px;       font-size: 12px;       font-weight: 700;       letter-spacing: 1.5px;       margin-bottom: 18px;     }      .xii-hero h1 {       color: #fff;       font-size: clamp(30px, 5vw, 43px);       line-height: 1.2;       margin: 0 0 15px;     }      .xii-hero h1 span {       color: #f28c28;     }      .xii-hero p {       color: #e0e7f0;       font-size: 16px;       line-height: 1.8;       max-width: 680px;       margin: auto;     }      .xii-container {       max-width: 1000px;       margin: 0 auto;       padding: 45px 20px 0;     }      .xii-intro {       background: #fff;       border-radius: 15px;       padding: 32px;       box-shadow: 0 5px 22px rgba(20,43,74,.06);       border-top: 4px solid #f28c28;     }      .xii-intro h2 {       color: #142b4a;       font-size: 24px;       margin: 0 0 15px;     }      .xii-intro p {       color: #46566b;       font-size: 15px;       line-height: 1.9;       margin: 0 0 12px;     }      .xii-info {       display: grid;       grid-template-columns: repeat(2, minmax(0, 1fr));       gap: 18px;       margin-top: 22px;     }      .xii-info-card {       background: #fff;       border: 1px solid #e5eaf0;       border-radius: 13px;       padding: 23px;     }      .xii-info-card .info-icon {       font-size: 27px;       margin-bottom: 10px;     }      .xii-info-card h3 {       color: #142b4a;       font-size: 17px;       margin: 0 0 9px;     }      .xii-info-card p {       color: #657386;       font-size: 14px;       line-height: 1.75;       margin: 0;     }      .xii-coming {       margin-top: 25px;       background: #fff;       border: 1px dashed #d5a45c;       border-radius: 15px;       padding: 35px 25px;       text-align: center;     }      .xii-coming .coming-icon {       font-size: 38px;       margin-bottom: 12px;     }      .xii-coming h2 {       color: #142b4a;       font-size: 22px;       margin: 0 0 12px;     }      .xii-coming p {       color: #657386;       font-size: 14px;       line-height: 1.8;       max-width: 620px;       margin: 0 auto;     }      .xii-quote {       margin-top: 28px;       padding: 25px 20px;       text-align: center;       color: #526176;       font-style: italic;       line-height: 1.8;     }      .xii-quote strong {       display: block;       color: #c0802c;       font-style: normal;       margin-top: 8px;       font-size: 13px;     }      @media (max-width: 650px) {       .xii-hero {         padding: 48px 18px;       }        .xii-hero p {         font-size: 14px;       }        .xii-container {         padding: 28px 15px 0;       }        .xii-intro {         padding: 24px 20px;       }        .xii-intro h2 {         font-size: 21px;       }        .xii-info {         grid-template-columns: 1fr;         gap: 13px;       }        .xii-info-card {         padding: 20px;       }        .xii-coming {         padding: 28px 18px;       }     }   \</style>
+    .xii-hero {
+      background: linear-gradient(120deg, #142b4a, #0d203a);
+      color: #fff;
+      padding: 65px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-\</head>
+    .xii-hero::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 50%;
+      top: -140px;
+      right: -65px;
+    }
 
-\<body>
+    .xii-hero::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border: 1px solid rgba(242,140,40,.2);
+      border-radius: 50%;
+      bottom: -130px;
+      left: -60px;
+    }
 
-&#x20; \<!-- TOPBAR -->
+    .xii-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+      margin: auto;
+    }
 
-&#x20; \<div class="topbar">     \<div class="top-inner">       \<span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia\</span>       \<div class="top-actions">         \<form class="search" role="search" onsubmit="return searchSite(event)">           \<input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">           \<button type="submit" aria-label="Cari">⌕\</button>         \</form>         \<a class="top-virtual" href="kelas-virtual.html">▣ \<span>Kelas Virtual\</span>\</a>       \</div>     \</div>   \</div>
+    .xii-label {
+      display: inline-block;
+      color: #f5bd67;
+      border: 1px solid rgba(245,189,103,.5);
+      border-radius: 30px;
+      padding: 7px 17px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 18px;
+    }
 
-&#x20; \<!-- HEADER DAN NAVIGASI -->
+    .xii-hero h1 {
+      color: #fff;
+      font-size: clamp(30px, 5vw, 43px);
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
 
-&#x20; \<header class="site-header">     \<a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">       \<img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">       \<span class="brand-copy">         \<strong>MANDALA AKSARA\</strong>         \<small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.\</small>       \</span>     \</a>
+    .xii-hero h1 span {
+      color: #f28c28;
+    }
 
-```
-<button class="menu-toggle" id="menuToggle" type="button"
-  aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
+    .xii-hero p {
+      color: #e0e7f0;
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 680px;
+      margin: auto;
+    }
 
-<nav id="mainNav" aria-label="Navigasi utama">
-  <a href="index.html">Beranda</a>
+    /* KONTEN */
 
-  <div class="nav-dropdown">
-    <button type="button" class="nav-trigger" aria-haspopup="true">
-      Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
-    </button>
-    <div class="dropdown">
-      <a href="kelas-x.html">Kelas X</a>
-      <a href="kelas-xi.html">Kelas XI</a>
-      <a href="kelas-xii.html" class="active" aria-current="page">Kelas XII</a>
+    .xii-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 45px 20px 0;
+    }
+
+    .xii-intro {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px 32px;
+      box-shadow: 0 5px 22px rgba(20,43,74,.06);
+      border-top: 4px solid #f28c28;
+    }
+
+    .xii-intro h2 {
+      color: #142b4a;
+      font-size: 24px;
+      margin: 0 0 14px;
+    }
+
+    .xii-intro p {
+      color: #46566b;
+      font-size: 15px;
+      line-height: 1.9;
+      margin: 0 0 10px;
+    }
+
+    .xii-intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* JUDUL DAFTAR MATERI */
+
+    .xii-section-heading {
+      margin: 42px 0 22px;
+    }
+
+    .xii-section-heading h2 {
+      color: #142b4a;
+      font-size: 25px;
+      margin: 0 0 8px;
+    }
+
+    .xii-section-heading p {
+      color: #657386;
+      font-size: 14px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* KARTU MATERI */
+
+    .xii-material-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .xii-material-card {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border: 1px solid #e5eaf0;
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(20,43,74,.04);
+      transition: transform .25s ease, box-shadow .25s ease;
+      min-height: 215px;
+    }
+
+    .xii-material-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 9px 24px rgba(20,43,74,.10);
+    }
+
+    .xii-card-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .xii-card-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 45px;
+      height: 45px;
+      border-radius: 12px;
+      background: #142b4a;
+      color: #f5bd67;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .xii-card-category {
+      color: #c0802c;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+
+    .xii-material-card h3 {
+      color: #142b4a;
+      font-size: 19px;
+      line-height: 1.4;
+      margin: 0 0 10px;
+    }
+
+    .xii-material-card p {
+      color: #657386;
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 0 0 20px;
+      flex-grow: 1;
+    }
+
+    .xii-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      align-self: flex-start;
+      color: #142b4a;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid #f28c28;
+      padding-bottom: 5px;
+      transition: color .2s ease;
+    }
+
+    .xii-card-link:hover {
+      color: #d97716;
+    }
+
+    /* CATATAN */
+
+    .xii-note {
+      margin-top: 30px;
+      background: #fff9ef;
+      border-left: 4px solid #f28c28;
+      border-radius: 10px;
+      padding: 20px 23px;
+    }
+
+    .xii-note p {
+      color: #66543d;
+      font-size: 13px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* KUTIPAN PENUTUP */
+
+    .xii-quote {
+      margin-top: 30px;
+      padding: 25px 20px;
+      text-align: center;
+      color: #526176;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    .xii-quote strong {
+      display: block;
+      color: #c0802c;
+      font-style: normal;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 650px) {
+      .xii-hero {
+        padding: 48px 18px;
+      }
+
+      .xii-hero p {
+        font-size: 14px;
+      }
+
+      .xii-container {
+        padding: 28px 15px 0;
+      }
+
+      .xii-intro {
+        padding: 24px 20px;
+      }
+
+      .xii-intro h2 {
+        font-size: 21px;
+      }
+
+      .xii-section-heading {
+        margin-top: 32px;
+      }
+
+      .xii-section-heading h2 {
+        font-size: 22px;
+      }
+
+      .xii-material-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .xii-material-card {
+        padding: 21px;
+        min-height: auto;
+      }
+
+      .xii-material-card h3 {
+        font-size: 18px;
+      }
+
+      .xii-note {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+
+  <div class="topbar">
+    <div class="top-inner">
+      <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+
+      <div class="top-actions">
+        <form class="search" role="search" onsubmit="return searchSite(event)">
+          <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+          <button type="submit" aria-label="Cari">⌕</button>
+        </form>
+
+        <a class="top-virtual" href="kelas-virtual.html">
+          ▣ <span>Kelas Virtual</span>
+        </a>
+      </div>
     </div>
   </div>
 
-  <a href="galeri.html">Galeri</a>
-  <a href="perpustakaan.html">Perpustakaan Digital</a>
-  <a href="kelas-virtual.html">Kelas Virtual</a>
-  <a href="tentang.html">Tentang</a>
-</nav>
-```
+  <!-- HEADER DAN NAVIGASI -->
 
-&#x20; \</header>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
 
-&#x20; \<!-- KONTEN HALAMAN -->
+      <span class="brand-copy">
+        <strong>MANDALA AKSARA</strong>
+        <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+      </span>
+    </a>
 
-&#x20; \<main class="kelas-xii-page">
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
 
-```
-<section class="xii-hero">
-  <div class="xii-hero-content">
-    <span class="xii-label">MATERI PEMBELAJARAN</span>
-    <h1>Bahasa Indonesia <span>Kelas XII</span></h1>
-    <p>
-      Ruang untuk memperdalam kemampuan berbahasa, mengembangkan
-      pemikiran kritis, mengapresiasi karya sastra, dan memperluas
-      wawasan melalui literasi.
-    </p>
-  </div>
-</section>
+    <nav id="mainNav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
 
-<div class="xii-container">
+      <div class="nav-dropdown">
+        <button type="button" class="nav-trigger" aria-haspopup="true">
+          Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
+        </button>
 
-  <section class="xii-intro">
-    <h2>Selamat Datang di Ruang Belajar Kelas XII</h2>
+        <div class="dropdown">
+          <a href="kelas-x.html">Kelas X</a>
+          <a href="kelas-xi.html">Kelas XI</a>
+          <a href="kelas-xii.html" class="active" aria-current="page">Kelas XII</a>
+        </div>
+      </div>
 
-    <p>
-      Bahasa Indonesia bukan sekadar mata pelajaran tentang membaca,
-      menulis, berbicara, dan menyimak. Bahasa juga menjadi sarana
-      untuk memahami kehidupan, menyampaikan gagasan, membangun
-      pengetahuan, serta mengembangkan cara berpikir yang kritis
-      dan kreatif.
-    </p>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
 
-    <p>
-      Melalui halaman ini, peserta didik akan menemukan berbagai
-      bahan pembelajaran Bahasa Indonesia yang disusun untuk
-      mendukung kegiatan belajar, memperkaya pengalaman literasi,
-      dan mengembangkan keterampilan berkomunikasi.
-    </p>
-  </section>
+  <!-- KONTEN HALAMAN -->
 
-  <section class="xii-info">
-    <article class="xii-info-card">
-      <div class="info-icon">📖</div>
-      <h3>Belajar dan Memahami</h3>
-      <p>
-        Mempelajari berbagai materi Bahasa Indonesia melalui
-        penjelasan, contoh, dan kegiatan pembelajaran yang
-        disusun secara bertahap.
-      </p>
-    </article>
+  <main class="kelas-xii-page">
 
-    <article class="xii-info-card">
-      <div class="info-icon">✍️</div>
-      <h3>Berkarya dan Bereksplorasi</h3>
-      <p>
-        Mengembangkan kemampuan membaca, menulis, menyimak,
-        berbicara, serta mengungkapkan gagasan secara kreatif
-        dan bertanggung jawab.
-      </p>
-    </article>
-  </section>
+    <!-- HERO -->
 
-  <section class="xii-coming">
-    <div class="coming-icon">📚</div>
-    <h2>Materi Pembelajaran Sedang Dipersiapkan</h2>
-    <p>
-      Materi Bahasa Indonesia Kelas XII akan hadir secara bertahap.
-      Halaman ini akan diperbarui dengan bahan ajar, aktivitas
-      pembelajaran, latihan, dan sumber literasi yang dapat
-      dimanfaatkan dalam proses belajar.
-    </p>
-  </section>
+    <section class="xii-hero">
+      <div class="xii-hero-content">
+        <span class="xii-label">MATERI PEMBELAJARAN</span>
 
-  <div class="xii-quote">
-    “Setiap perjalanan menuju pengetahuan dimulai dari keberanian
-    untuk terus belajar dan memahami.”
-    <strong>— Mandala Aksara</strong>
-  </div>
+        <h1>Bahasa Indonesia <span>Kelas XII</span></h1>
 
-</div>
-```
+        <p>
+          Ruang untuk memperdalam kemampuan berbahasa, mengembangkan
+          pemikiran kritis, mengapresiasi karya sastra, dan memperluas
+          wawasan melalui kegiatan literasi.
+        </p>
+      </div>
+    </section>
 
-&#x20; \</main>
+    <div class="xii-container">
 
-&#x20; \<!-- FOOTER -->
+      <!-- PENGANTAR -->
 
-&#x20; \<footer class="site-footer">     \<div class="footer-main">       \<div class="footer-brand">         \<img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">         \<div class="footer-brand-copy">           \<b>MANDALA AKSARA\</b>           \<small>Ruang Literasi dan Pembelajaran Bahasa Indonesia\</small>           \<span class="managed-label">Dikelola Mandiri\</span>         \</div>       \</div>
+      <section class="xii-intro">
+        <h2>Selamat Datang di Ruang Belajar Kelas XII</h2>
 
-```
-  <nav class="footer-links" aria-label="Navigasi footer">
-    <a href="tentang.html">Tentang</a>
-    <a href="galeri.html">Galeri</a>
-    <a href="perpustakaan.html">Perpustakaan Digital</a>
-    <a href="kelas-virtual.html">Kelas Virtual</a>
-  </nav>
-</div>
+        <p>
+          Bahasa Indonesia bukan sekadar mata pelajaran tentang membaca,
+          menulis, berbicara, dan menyimak. Bahasa juga menjadi sarana
+          untuk memahami kehidupan, menyampaikan gagasan, membangun
+          pengetahuan, serta mengembangkan cara berpikir yang kritis
+          dan kreatif.
+        </p>
 
-<div class="copyright">
-  © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
-</div>
-```
+        <p>
+          Melalui halaman ini, peserta didik dapat mempelajari berbagai
+          jenis teks, memahami karakteristik karya sastra, serta
+          mengembangkan keterampilan berkomunikasi melalui materi,
+          contoh, dan aktivitas pembelajaran.
+        </p>
+      </section>
 
-&#x20; \</footer>
+      <!-- DAFTAR MATERI -->
 
-&#x20; \<script src="script.js">\</script>
+      <section aria-labelledby="judul-materi">
 
-\</body>
-\</html>
+        <div class="xii-section-heading">
+          <h2 id="judul-materi">Daftar Materi Pembelajaran</h2>
+          <p>
+            Pilih bab yang ingin dipelajari untuk membuka materi
+            Bahasa Indonesia Kelas XII.
+          </p>
+        </div>
+
+        <div class="xii-material-grid">
+
+          <!-- BAB 1 -->
+
+          <article class="xii-material-card">
+            <div class="xii-card-top">
+              <span class="xii-card-number">01</span>
+              <span class="xii-card-category">Bab 1</span>
+            </div>
+
+            <h3>Surat Resmi</h3>
+
+            <p>
+              Memahami fungsi, struktur, unsur, dan kaidah kebahasaan
+              surat resmi serta mempelajari cara menyusunnya secara
+              tepat sesuai kebutuhan komunikasi formal.
+            </p>
+
+            <a class="xii-card-link" href="bab-1-surat-resmi.html">
+              Pelajari Materi <span>→</span>
+            </a>
+          </article>
+
+          <!-- BAB 2 -->
+
+          <article class="xii-material-card">
+            <div class="xii-card-top">
+              <span class="xii-card-number">02</span>
+              <span class="xii-card-category">Bab 2</span>
+            </div>
+
+            <h3>Teks Prosedur Kompleks</h3>
+
+            <p>
+              Mempelajari tujuan, struktur, tahapan, dan ciri kebahasaan
+              teks prosedur kompleks untuk memahami serta menyampaikan
+              petunjuk secara runtut dan jelas.
+            </p>
+
+            <a class="xii-card-link" href="bab-2-teks-prosedur-kompleks.html">
+              Pelajari Materi <span>→</span>
+            </a>
+          </article>
+
+          <!-- BAB 3 -->
+
+          <article class="xii-material-card">
+            <div class="xii-card-top">
+              <span class="xii-card-number">03</span>
+              <span class="xii-card-category">Bab 3</span>
+            </div>
+
+            <h3>Novel</h3>
+
+            <p>
+              Mengapresiasi karya sastra melalui pemahaman unsur
+              intrinsik, unsur ekstrinsik, karakter tokoh, konflik,
+              sudut pandang, dan nilai-nilai kehidupan dalam novel.
+            </p>
+
+            <a class="xii-card-link" href="bab-3-novel.html">
+              Pelajari Materi <span>→</span>
+            </a>
+          </article>
+
+          <!-- BAB 4 -->
+
+          <article class="xii-material-card">
+            <div class="xii-card-top">
+              <span class="xii-card-number">04</span>
+              <span class="xii-card-category">Bab 4</span>
+            </div>
+
+            <h3>Teks Eksplanasi Kompleks</h3>
+
+            <p>
+              Memahami proses terjadinya suatu fenomena melalui
+              hubungan sebab-akibat, struktur penjelasan, fakta,
+              dan penggunaan bahasa yang logis.
+            </p>
+
+            <a class="xii-card-link" href="bab-4-teks-eksplanasi-kompleks.html">
+              Pelajari Materi <span>→</span>
+            </a>
+          </article>
+
+          <!-- BAB 5 -->
+
+          <article class="xii-material-card">
+            <div class="xii-card-top">
+              <span class="xii-card-number">05</span>
+              <span class="xii-card-category">Bab 5</span>
+            </div>
+
+            <h3>Esai</h3>
+
+            <p>
+              Mengenali karakteristik, struktur, dan cara menyusun
+              esai dengan mengembangkan gagasan, argumentasi,
+              serta dukungan fakta secara runtut dan meyakinkan.
+            </p>
+
+            <a class="xii-card-link" href="bab-5-esai.html">
+              Pelajari Materi <span>→</span>
+            </a>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- CATATAN -->
+
+      <div class="xii-note">
+        <p>
+          <strong>Catatan:</strong> Materi pembelajaran disusun dan
+          dikembangkan secara bertahap. Setiap bab akan dilengkapi
+          dengan penjelasan, contoh, dan aktivitas pembelajaran
+          untuk membantu peserta didik memahami materi.
+        </p>
+      </div>
+
+      <!-- KUTIPAN PENUTUP -->
+
+      <div class="xii-quote">
+        “Belajar bukan sekadar mengumpulkan pengetahuan,
+        melainkan membangun pemahaman untuk menghadapi kehidupan.”
+        <strong>— Mandala Aksara</strong>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+
+        <div class="footer-brand-copy">
+          <b>MANDALA AKSARA</b>
+          <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+          <span class="managed-label">Dikelola Mandiri</span>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="perpustakaan.html">Perpustakaan Digital</a>
+        <a href="kelas-virtual.html">Kelas Virtual</a>
+      </nav>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
