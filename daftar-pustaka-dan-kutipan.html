@@ -1,0 +1,541 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Daftar Pustaka dan Kutipan | Mandala Aksara</title>
+
+  <meta name="description" content="Pelajari berbagai gaya penulisan daftar pustaka dan kutipan, mulai dari APA 7, MLA 9, Chicago, hingga IEEE melalui Perpustakaan Digital Mandala Aksara.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ================================
+       DAFTAR PUSTAKA DAN KUTIPAN
+    ================================= */
+
+    .referensi-gaya-page {
+      color: #263448;
+      background: #f7f8fa;
+      min-height: 70vh;
+      padding-bottom: 55px;
+    }
+
+    .referensi-gaya-container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    .referensi-gaya-breadcrumb {
+      padding: 22px 0 12px;
+      font-size: 13px;
+      color: #718096;
+    }
+
+    .referensi-gaya-breadcrumb a {
+      color: #17436b;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    .referensi-gaya-breadcrumb a:hover {
+      color: #e77924;
+    }
+
+    .referensi-gaya-breadcrumb span {
+      margin: 0 7px;
+      color: #b0b8c3;
+    }
+
+    .referensi-gaya-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 48px 42px;
+      border-radius: 18px;
+      background: linear-gradient(120deg, #102f50, #174b70);
+      color: #ffffff;
+      margin-bottom: 38px;
+      box-shadow: 0 12px 30px rgba(16, 47, 80, .12);
+    }
+
+    .referensi-gaya-hero::before {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      right: -65px;
+      top: -105px;
+      box-shadow:
+        0 0 0 22px rgba(255,255,255,.035),
+        0 0 0 45px rgba(255,255,255,.025);
+    }
+
+    .referensi-gaya-hero::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 5px;
+      border-radius: 10px;
+      background: #ed8a32;
+      left: 42px;
+      bottom: 28px;
+    }
+
+    .referensi-gaya-eyebrow {
+      display: inline-block;
+      color: #ffc47d;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+
+    .referensi-gaya-hero h1 {
+      position: relative;
+      z-index: 1;
+      color: #ffffff;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.2;
+      margin: 0 0 16px;
+    }
+
+    .referensi-gaya-hero p {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      color: #e4edf5;
+      font-size: 16px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .referensi-gaya-intro {
+      max-width: 900px;
+      margin: 0 auto 32px;
+      text-align: center;
+    }
+
+    .referensi-gaya-intro h2 {
+      color: #153b5b;
+      font-size: 25px;
+      margin: 0 0 13px;
+    }
+
+    .referensi-gaya-intro p {
+      color: #596779;
+      font-size: 15px;
+      line-height: 1.85;
+      margin: 0;
+    }
+
+    .referensi-gaya-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .referensi-gaya-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-height: 255px;
+      padding: 27px;
+      background: #ffffff;
+      border: 1px solid #e7ebf0;
+      border-radius: 15px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 5px 18px rgba(24, 49, 75, .045);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+
+    .referensi-gaya-card:hover {
+      transform: translateY(-5px);
+      border-color: #e7a05e;
+      box-shadow: 0 12px 26px rgba(24, 49, 75, .10);
+    }
+
+    .referensi-gaya-card-top {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 18px;
+    }
+
+    .referensi-gaya-number {
+      display: flex;
+      flex: 0 0 52px;
+      width: 52px;
+      height: 52px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 13px;
+      background: #edf3f8;
+      color: #17436b;
+      font-size: 19px;
+      font-weight: 800;
+    }
+
+    .referensi-gaya-card:nth-child(2) .referensi-gaya-number {
+      background: #fff1e5;
+      color: #c76b20;
+    }
+
+    .referensi-gaya-card:nth-child(3) .referensi-gaya-number {
+      background: #f2eef9;
+      color: #72559c;
+    }
+
+    .referensi-gaya-card:nth-child(4) .referensi-gaya-number {
+      background: #eaf3ef;
+      color: #327458;
+    }
+
+    .referensi-gaya-card h3 {
+      color: #173b5b;
+      font-size: 21px;
+      margin: 0 0 5px;
+    }
+
+    .referensi-gaya-card .referensi-gaya-fullname {
+      color: #8490a0;
+      font-size: 11px;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+
+    .referensi-gaya-card p {
+      color: #596779;
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 0 0 20px;
+    }
+
+    .referensi-gaya-card .referensi-gaya-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: auto;
+      color: #d87527;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .referensi-gaya-note {
+      margin-top: 36px;
+      padding: 23px 25px;
+      border-left: 4px solid #e88936;
+      border-radius: 0 12px 12px 0;
+      background: #fff5eb;
+    }
+
+    .referensi-gaya-note h3 {
+      color: #71431f;
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    .referensi-gaya-note p {
+      color: #725d4b;
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .referensi-gaya-back {
+      text-align: center;
+      margin-top: 34px;
+    }
+
+    .referensi-gaya-back a {
+      display: inline-block;
+      padding: 11px 20px;
+      border: 1px solid #17436b;
+      border-radius: 8px;
+      color: #17436b;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      transition: all .2s ease;
+    }
+
+    .referensi-gaya-back a:hover {
+      background: #17436b;
+      color: #ffffff;
+    }
+
+    @media (max-width: 700px) {
+      .referensi-gaya-hero {
+        padding: 35px 24px 43px;
+        border-radius: 13px;
+      }
+
+      .referensi-gaya-hero::after {
+        left: 24px;
+        bottom: 20px;
+      }
+
+      .referensi-gaya-hero p {
+        font-size: 14px;
+      }
+
+      .referensi-gaya-intro h2 {
+        font-size: 21px;
+      }
+
+      .referensi-gaya-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .referensi-gaya-card {
+        min-height: 0;
+        padding: 22px;
+      }
+
+      .referensi-gaya-card h3 {
+        font-size: 19px;
+      }
+
+      .referensi-gaya-breadcrumb {
+        font-size: 11px;
+        line-height: 1.8;
+      }
+
+      .referensi-gaya-note {
+        padding: 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="top-inner">
+      <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+      <div class="top-actions">
+        <form class="search" role="search" onsubmit="return searchSite(event)">
+          <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+          <button type="submit" aria-label="Cari">⌕</button>
+        </form>
+        <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+      <span class="brand-copy">
+        <strong>MANDALA AKSARA</strong>
+        <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nav-trigger" aria-haspopup="true">
+          Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
+        </button>
+        <div class="dropdown">
+          <a href="kelas-x.html">Kelas X</a>
+          <a href="kelas-xi.html">Kelas XI</a>
+          <a href="kelas-xii.html">Kelas XII</a>
+        </div>
+      </div>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html" class="active" aria-current="page">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
+
+  <!-- KONTEN HALAMAN -->
+  <main class="referensi-gaya-page">
+    <div class="referensi-gaya-container">
+
+      <!-- BREADCRUMB -->
+      <div class="referensi-gaya-breadcrumb">
+        <a href="perpustakaan.html">Perpustakaan Digital</a>
+        <span>›</span>
+        <a href="referensi-kebahasaan.html">Referensi Kebahasaan</a>
+        <span>›</span>
+        <strong>Daftar Pustaka dan Kutipan</strong>
+      </div>
+
+      <!-- HERO -->
+      <section class="referensi-gaya-hero">
+        <span class="referensi-gaya-eyebrow">Perpustakaan Digital</span>
+        <h1>Daftar Pustaka dan Kutipan</h1>
+        <p>
+          Mengenal cara menuliskan sumber rujukan dan kutipan secara tepat
+          merupakan bagian penting dalam kegiatan membaca, menulis, dan
+          menyusun karya ilmiah. Melalui materi ini, kita akan mempelajari
+          beberapa gaya penulisan referensi yang digunakan dalam dunia
+          akademik.
+        </p>
+      </section>
+
+      <!-- PENJELASAN -->
+      <section class="referensi-gaya-intro">
+        <h2>Mengenal Berbagai Gaya Penulisan Referensi</h2>
+        <p>
+          Setiap gaya penulisan memiliki aturan tersendiri dalam mencantumkan
+          sumber bacaan, menulis kutipan, dan menyusun daftar pustaka.
+          Perbedaan tersebut dapat terlihat pada urutan informasi, penggunaan
+          tanda baca, serta cara mencantumkan nama penulis dan tahun terbit.
+          Pilih gaya penulisan berikut untuk mempelajari aturan dan contoh
+          penerapannya.
+        </p>
+      </section>
+
+      <!-- PILIHAN GAYA PENULISAN -->
+      <section class="referensi-gaya-grid" aria-label="Pilihan gaya penulisan referensi">
+
+        <!-- APA 7 -->
+        <a class="referensi-gaya-card" href="daftar-pustaka-apa-7.html">
+          <div class="referensi-gaya-card-top">
+            <div class="referensi-gaya-number">01</div>
+            <div>
+              <h3>Gaya APA 7</h3>
+              <div class="referensi-gaya-fullname">
+                American Psychological Association
+              </div>
+            </div>
+          </div>
+          <p>
+            Mempelajari sistem penulisan dengan pola nama penulis dan tahun
+            terbit. Gaya ini banyak digunakan dalam bidang pendidikan,
+            psikologi, dan ilmu sosial.
+          </p>
+          <span class="referensi-gaya-link">Pelajari APA 7 <span>→</span></span>
+        </a>
+
+        <!-- MLA 9 -->
+        <a class="referensi-gaya-card" href="daftar-pustaka-mla-9.html">
+          <div class="referensi-gaya-card-top">
+            <div class="referensi-gaya-number">02</div>
+            <div>
+              <h3>Gaya MLA 9</h3>
+              <div class="referensi-gaya-fullname">
+                Modern Language Association
+              </div>
+            </div>
+          </div>
+          <p>
+            Mengenal sistem kutipan yang menggunakan nama penulis dan nomor
+            halaman. Gaya ini banyak diterapkan dalam kajian bahasa,
+            sastra, dan humaniora.
+          </p>
+          <span class="referensi-gaya-link">Pelajari MLA 9 <span>→</span></span>
+        </a>
+
+        <!-- CHICAGO -->
+        <a class="referensi-gaya-card" href="daftar-pustaka-chicago.html">
+          <div class="referensi-gaya-card-top">
+            <div class="referensi-gaya-number">03</div>
+            <div>
+              <h3>Gaya Chicago</h3>
+              <div class="referensi-gaya-fullname">
+                The Chicago Manual of Style
+              </div>
+            </div>
+          </div>
+          <p>
+            Memahami dua sistem utama, yaitu Notes and Bibliography serta
+            Author-Date, yang digunakan dalam berbagai bidang penulisan
+            akademik dan humaniora.
+          </p>
+          <span class="referensi-gaya-link">Pelajari Chicago <span>→</span></span>
+        </a>
+
+        <!-- IEEE -->
+        <a class="referensi-gaya-card" href="daftar-pustaka-ieee.html">
+          <div class="referensi-gaya-card-top">
+            <div class="referensi-gaya-number">04</div>
+            <div>
+              <h3>Gaya IEEE</h3>
+              <div class="referensi-gaya-fullname">
+                Institute of Electrical and Electronics Engineers
+              </div>
+            </div>
+          </div>
+          <p>
+            Mempelajari sistem kutipan menggunakan nomor dalam tanda kurung
+            siku, seperti [1] dan [2], yang disusun berdasarkan urutan
+            kemunculan sumber dalam tulisan.
+          </p>
+          <span class="referensi-gaya-link">Pelajari IEEE <span>→</span></span>
+        </a>
+
+      </section>
+
+      <!-- CATATAN -->
+      <aside class="referensi-gaya-note">
+        <h3>Catatan Pembelajaran</h3>
+        <p>
+          Keempat gaya tersebut memiliki aturan dan tujuan penggunaan yang
+          berbeda. Dalam menyusun karya tulis, gunakan gaya referensi yang
+          diminta oleh guru, dosen, penerbit, atau lembaga terkait. Hal yang
+          paling penting adalah menuliskan sumber secara akurat, konsisten,
+          dan dapat ditelusuri kembali.
+        </p>
+      </aside>
+
+      <!-- KEMBALI -->
+      <div class="referensi-gaya-back">
+        <a href="referensi-kebahasaan.html">← Kembali ke Referensi Kebahasaan</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+        <div class="footer-brand-copy">
+          <b>MANDALA AKSARA</b>
+          <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+          <span class="managed-label">Dikelola Mandiri</span>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="perpustakaan.html">Perpustakaan Digital</a>
+        <a href="kelas-virtual.html">Kelas Virtual</a>
+      </nav>
+    </div>
+    <div class="copyright">
+      © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
