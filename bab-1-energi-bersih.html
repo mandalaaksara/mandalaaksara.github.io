@@ -13,160 +13,75 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Materi Bahasa Indonesia Kelas XI tentang teks argumentasi dengan tema energi bersih.">
+  <meta name="description" content="Materi Bahasa Indonesia Kelas XI tentang teks argumentasi dengan tema energi bersih. Pelajari struktur, fakta, opini, kaidah kebahasaan, dan cara menyusun argumen yang kuat.">
   <title>Kritis Berargumen tentang Energi Bersih | Mandala Aksara</title>
   <link rel="stylesheet" href="style.css">
 
   <style>
-    :root {
-      --navy: #142B4A;
-      --orange: #F28C28;
-      --gold: #C69A45;
-      --white: #FFFFFF;
-      --soft: #F3F5F8;
-      --dark: #343A40;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: var(--dark);
-      background: var(--soft);
+    .energy-page {
+      --energy-navy: #142B4A;
+      --energy-orange: #F28C28;
+      --energy-gold: #C69A45;
+      --energy-soft: #F3F5F8;
+      --energy-ink: #343A40;
+      color: var(--energy-ink);
+      background: var(--energy-soft);
       line-height: 1.7;
     }
 
-    a { text-decoration: none; }
-
-    header {
-      background: var(--white);
-      padding: 14px 6%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 14px;
-      box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    .energy-page * {
+      box-sizing: border-box;
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      color: var(--navy);
+    .energy-page html {
+      scroll-behavior: smooth;
     }
 
-    .brand img {
-      width: 58px;
-      height: 58px;
-      object-fit: contain;
+    .energy-page a {
+      text-decoration: none;
     }
 
-    .brand h2 {
-      margin: 0;
-      font-size: 19px;
-      letter-spacing: 1px;
-    }
-
-    .brand small {
-      display: block;
-      font-size: 11px;
-      color: #666;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-    }
-
-    nav a {
-      color: var(--navy);
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    nav a:hover { color: var(--orange); }
-
-    .nav-dropdown { position: relative; }
-
-    .nav-trigger {
-      border: 0;
-      background: transparent;
-      color: var(--navy);
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .dropdown {
-      display: none;
-      position: absolute;
-      z-index: 20;
-      top: 100%;
-      left: 0;
-      min-width: 160px;
-      background: white;
-      padding: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,.12);
-      border-radius: 8px;
-    }
-
-    .dropdown a {
-      display: block;
-      padding: 9px;
-    }
-
-    .nav-dropdown:hover .dropdown,
-    .nav-dropdown:focus-within .dropdown {
-      display: block;
-    }
-
-    .menu-toggle { display: none; }
-
-    .hero {
+    .energy-hero {
       background: linear-gradient(120deg, #142B4A, #25496F);
       color: white;
       padding: 65px 8%;
       text-align: center;
-      border-bottom: 5px solid var(--orange);
+      border-bottom: 5px solid var(--energy-orange);
     }
 
-    .hero .label {
+    .energy-hero .label {
       color: #F5C77D;
       font-weight: bold;
       letter-spacing: 2px;
       font-size: 13px;
     }
 
-    .hero h1 {
+    .energy-hero h1 {
       font-family: Georgia, serif;
       font-size: clamp(28px, 5vw, 42px);
       margin: 12px 0;
+      color: white;
     }
 
-    .hero p {
+    .energy-hero p {
       max-width: 760px;
       margin: auto;
       color: #E5EAF0;
     }
 
-    .hero-meta {
+    .energy-hero .hero-meta {
       margin-top: 20px;
       color: #F5C77D;
       font-size: 13px;
     }
 
-    main {
+    .energy-main {
       max-width: 1120px;
       margin: 35px auto;
       padding: 0 20px;
     }
 
-    .section {
+    .energy-section {
       background: white;
       border-radius: 14px;
       padding: 28px;
@@ -174,9 +89,10 @@
       box-shadow: 0 4px 16px rgba(20,43,74,.06);
       position: relative;
       overflow: hidden;
+      scroll-margin-top: 25px;
     }
 
-    .ma-watermark::before {
+    .energy-section.ma-watermark::before {
       content: "";
       position: absolute;
       inset: 0;
@@ -189,30 +105,37 @@
       pointer-events: none;
     }
 
-    .section > * {
+    .energy-section > * {
       position: relative;
     }
 
-    .section h2 {
-      color: var(--navy);
+    .energy-section h2 {
+      color: var(--energy-navy);
       margin-top: 0;
-      border-left: 4px solid var(--orange);
+      border-left: 4px solid var(--energy-orange);
       padding-left: 13px;
     }
 
-    .section h3 { color: var(--navy); }
+    .energy-section h3,
+    .energy-section h4 {
+      color: var(--energy-navy);
+    }
 
-    .section h4 { color: var(--navy); }
+    .energy-section p {
+      text-align: justify;
+    }
 
-    .section p { text-align: justify; }
+    .energy-section li {
+      margin-bottom: 7px;
+    }
 
-    .grid {
+    .energy-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 18px;
     }
 
-    .card {
+    .energy-card {
       background: white;
       border: 1px solid #E5E9EF;
       border-radius: 12px;
@@ -220,22 +143,24 @@
       box-shadow: 0 3px 12px rgba(0,0,0,.04);
     }
 
-    .card h3 { margin-top: 0; }
+    .energy-card h3 {
+      margin-top: 0;
+    }
 
-    .number {
+    .energy-number {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       width: 34px;
       height: 34px;
-      background: var(--navy);
+      background: var(--energy-navy);
       color: white;
       border-radius: 50%;
       font-weight: bold;
       margin-bottom: 8px;
     }
 
-    .tag {
+    .energy-tag {
       display: inline-block;
       background: #FFF1E2;
       color: #9A5310;
@@ -246,38 +171,44 @@
       margin: 3px;
     }
 
-    .callout {
+    .energy-callout {
       background: #EEF3F8;
-      border-left: 4px solid var(--gold);
+      border-left: 4px solid var(--energy-gold);
       padding: 18px;
       border-radius: 8px;
       margin: 18px 0;
     }
 
-    .callout p:last-child { margin-bottom: 0; }
-
-    .pengayaan {
-      background: linear-gradient(135deg, #142B4A, #25496F);
-      color: white;
-      border-left: 5px solid var(--orange);
+    .energy-callout p:last-child {
+      margin-bottom: 0;
     }
 
-    .pengayaan h2,
-    .pengayaan h3 { color: white; }
+    .energy-enrichment {
+      background: linear-gradient(135deg, #142B4A, #25496F);
+      color: white;
+      border-left: 5px solid var(--energy-orange);
+    }
 
-    .pengayaan p { color: #E5EAF0; }
+    .energy-enrichment h2,
+    .energy-enrichment h3 {
+      color: white;
+    }
 
-    .pengayaan .card {
+    .energy-enrichment p {
+      color: #E5EAF0;
+    }
+
+    .energy-enrichment .energy-card {
       background: rgba(255,255,255,.08);
       border-color: rgba(255,255,255,.2);
     }
 
-    .pengayaan .tag {
+    .energy-enrichment .energy-tag {
       background: rgba(255,255,255,.15);
       color: #FFE0B5;
     }
 
-    .materi-nav {
+    .energy-materi-nav {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
       gap: 10px;
@@ -285,24 +216,24 @@
       list-style: none;
     }
 
-    .materi-nav a {
+    .energy-materi-nav a {
       display: block;
       padding: 11px 14px;
       background: #F3F5F8;
-      color: var(--navy);
+      color: var(--energy-navy);
       border-radius: 8px;
-      border-left: 3px solid var(--orange);
+      border-left: 3px solid var(--energy-orange);
       font-size: 14px;
       font-weight: bold;
       transition: .2s;
     }
 
-    .materi-nav a:hover {
+    .energy-materi-nav a:hover {
       background: #E8EDF3;
       transform: translateX(3px);
     }
 
-    .example {
+    .energy-example {
       background: #FFFCF5;
       border: 1px solid #E9DFC9;
       border-radius: 10px;
@@ -310,46 +241,55 @@
       margin: 18px 0;
     }
 
-    .example h3 { margin-top: 0; }
+    .energy-example h3 {
+      margin-top: 0;
+    }
 
-    .example p { text-indent: 28px; }
+    .energy-example p {
+      text-indent: 28px;
+    }
 
-    .structure {
-      border-left: 4px solid var(--gold);
+    .energy-structure {
+      border-left: 4px solid var(--energy-gold);
       padding: 12px 18px;
       background: #FAF8F2;
       margin: 15px 0;
       border-radius: 5px;
     }
 
-    .structure h3 { margin-top: 0; }
+    .energy-structure h3 {
+      margin-top: 0;
+    }
 
-    .table-wrap {
+    .energy-table-wrap {
       overflow-x: auto;
       margin: 18px 0;
     }
 
-    table {
+    .energy-table {
       width: 100%;
       border-collapse: collapse;
       min-width: 560px;
     }
 
-    th, td {
+    .energy-table th,
+    .energy-table td {
       padding: 12px;
       border: 1px solid #E0E5EC;
       text-align: left;
       vertical-align: top;
     }
 
-    th {
-      background: var(--navy);
+    .energy-table th {
+      background: var(--energy-navy);
       color: white;
     }
 
-    tr:nth-child(even) { background: #F7F9FB; }
+    .energy-table tr:nth-child(even) {
+      background: #F7F9FB;
+    }
 
-    .question {
+    .energy-question {
       background: #F8FAFC;
       border: 1px solid #E5E9EF;
       padding: 16px 20px;
@@ -357,36 +297,44 @@
       margin: 14px 0;
     }
 
-    .question strong { color: var(--navy); }
+    .energy-question strong {
+      color: var(--energy-navy);
+    }
 
-    .button {
+    .energy-button {
       display: inline-block;
-      background: var(--orange);
+      background: var(--energy-orange);
       color: white;
       padding: 10px 20px;
       border-radius: 7px;
       font-weight: bold;
-      margin-top: 10px;
+      margin: 10px 7px 0 0;
+      transition: .2s;
     }
 
-    .button:hover { background: #D87516; }
-
-    .button.secondary {
-      background: var(--navy);
+    .energy-button:hover {
+      background: #D87516;
+      color: white;
     }
 
-    .button.secondary:hover { background: #25496F; }
+    .energy-button.secondary {
+      background: var(--energy-navy);
+    }
 
-    .closing-quote {
+    .energy-button.secondary:hover {
+      background: #25496F;
+    }
+
+    .energy-quote {
       text-align: center;
       padding: 20px;
-      color: var(--navy);
+      color: var(--energy-navy);
       font-family: Georgia, serif;
       font-size: 19px;
       font-style: italic;
     }
 
-    .closing-quote small {
+    .energy-quote small {
       display: block;
       margin-top: 10px;
       font-family: Arial, sans-serif;
@@ -396,108 +344,70 @@
       letter-spacing: 1px;
     }
 
-    footer {
-      background: var(--navy);
-      color: white;
+    .energy-back-link {
       text-align: center;
-      padding: 28px 15px;
-      border-top: 5px solid var(--orange);
-      font-size: 13px;
-    }
-
-    footer p { margin: 5px; text-align: center; }
-
-    @media (max-width: 1050px) {
-      header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-        padding: 10px 15px;
-      }
-
-      header .brand { min-width: 0; }
-
-      header .menu-toggle {
-        display: block;
-        margin-left: auto;
-        background: var(--navy);
-        color: white;
-        border: 0;
-        border-radius: 5px;
-        padding: 10px 13px;
-        font-size: 19px;
-        cursor: pointer;
-      }
-
-      header nav#mainNav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      header nav#mainNav.open { display: flex; }
-
-      header nav#mainNav > a,
-      header nav#mainNav .nav-trigger {
-        width: 100%;
-        text-align: left;
-      }
-
-      header nav#mainNav .dropdown {
-        position: static;
-        box-shadow: none;
-        padding-left: 20px;
-      }
-
-      header nav#mainNav .nav-dropdown:hover .dropdown {
-        display: none;
-      }
-
-      header nav#mainNav .nav-dropdown.expanded .dropdown {
-        display: block;
-      }
+      margin: 10px 0 30px;
     }
 
     @media (max-width: 650px) {
-      .hero { padding: 45px 20px; }
-      .section { padding: 22px 18px; }
-      .materi-nav { grid-template-columns: 1fr; }
+      .energy-hero {
+        padding: 45px 20px;
+      }
+
+      .energy-section {
+        padding: 22px 18px;
+      }
+
+      .energy-materi-nav {
+        grid-template-columns: 1fr;
+      }
+
+      .energy-quote {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <a class="brand" href="index.html">
-    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-    <div>
-      <h2>MANDALA AKSARA</h2>
-      <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+<div class="topbar">
+  <div class="top-inner">
+    <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+    <div class="top-actions">
+      <form class="search" role="search" onsubmit="return searchSite(event)">
+        <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+        <button type="submit" aria-label="Cari">⌕</button>
+      </form>
+      <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
     </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span class="brand-copy">
+      <strong>MANDALA AKSARA</strong>
+      <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+    </span>
   </a>
 
-  <button class="menu-toggle" id="menuToggle"
-          aria-label="Buka navigasi" aria-expanded="false">☰</button>
+  <button class="menu-toggle" id="menuToggle" type="button"
+    aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
 
   <nav id="mainNav" aria-label="Navigasi utama">
     <a href="index.html">Beranda</a>
-
     <div class="nav-dropdown">
-      <button type="button" class="nav-trigger">
-        Materi Pembelajaran <span>⌄</span>
+      <button type="button" class="nav-trigger" aria-haspopup="true">
+        Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
       </button>
       <div class="dropdown">
         <a href="kelas-x.html">Kelas X</a>
-        <a href="kelas-xi.html" class="active">Kelas XI</a>
+        <a href="kelas-xi.html" class="active" aria-current="page">Kelas XI</a>
         <a href="kelas-xii.html">Kelas XII</a>
       </div>
     </div>
-
     <a href="galeri.html">Galeri</a>
     <a href="perpustakaan.html">Perpustakaan Digital</a>
     <a href="kelas-virtual.html">Kelas Virtual</a>
@@ -505,46 +415,52 @@
   </nav>
 </header>
 
-<section class="hero">
+<div class="energy-page">
+
+<section class="energy-hero">
   <div class="label">FASE F · KELAS XI</div>
   <h1>Kritis Berargumen tentang Energi Bersih</h1>
   <p>
-    Membangun kemampuan berpikir kritis melalui teks argumentasi,
-    menguji kebenaran informasi, menyusun alasan berdasarkan bukti,
-    dan menyampaikan gagasan tentang masa depan energi yang lebih bersih.
+    Belajar menyampaikan pendapat dengan alasan yang masuk akal,
+    memeriksa kebenaran informasi, dan menggunakan bukti untuk
+    membangun argumen tentang masa depan energi yang lebih bersih.
   </p>
   <div class="hero-meta">
     Materi Pembelajaran Bahasa Indonesia · Bab 1 · Dikelola Mandiri
   </div>
 </section>
 
-<main>
+<main class="energy-main">
 
-  <section class="section ma-watermark">
+  <section class="energy-section ma-watermark">
     <h2>Petunjuk Belajar</h2>
     <p>
-      Pelajari materi secara berurutan. Amati contoh teks, pahami
-      struktur dan kaidah kebahasaannya, kemudian kerjakan aktivitas
-      serta latihan yang tersedia. Jangan hanya menerima sebuah
-      pendapat sebagai kebenaran. Periksa alasan, bukti, dan sumber
-      informasi yang mendukungnya.
+      Pelajari materi ini secara berurutan. Mulailah dengan memahami
+      pengertian teks argumentasi, kemudian pelajari struktur dan
+      kaidah kebahasaannya. Perhatikan contoh teks yang tersedia
+      sebelum mengerjakan latihan.
+    </p>
+    <p>
+      Saat membaca sebuah pendapat, jangan langsung menganggapnya
+      benar. Perhatikan alasan yang digunakan, periksa bukti
+      pendukungnya, dan pastikan sumber informasinya dapat dipercaya.
     </p>
 
-    <div class="callout">
+    <div class="energy-callout">
       <strong>Pertanyaan Pemantik</strong>
       <p>
-        Apakah penggunaan energi bersih benar-benar menjadi kebutuhan
-        mendesak? Bagaimana kita dapat meyakinkan orang lain bahwa
-        peralihan menuju energi bersih perlu dilakukan?
+        Mengapa energi bersih semakin dibutuhkan? Bagaimana cara
+        meyakinkan orang lain bahwa peralihan menuju energi bersih
+        penting untuk dilakukan?
       </p>
     </div>
   </section>
 
-  <section class="section ma-watermark">
+  <section class="energy-section ma-watermark">
     <h2>Daftar Materi</h2>
     <p>Pilih bagian yang ingin dipelajari atau ikuti urutan pembahasan berikut.</p>
 
-    <ul class="materi-nav">
+    <ul class="energy-materi-nav">
       <li><a href="#tujuan">Tujuan Pembelajaran</a></li>
       <li><a href="#pengertian">Pengertian Teks Argumentasi</a></li>
       <li><a href="#tujuan-teks">Tujuan dan Ciri-Ciri</a></li>
@@ -562,195 +478,236 @@
     </ul>
   </section>
 
-  <section class="section ma-watermark" id="tujuan">
+  <section class="energy-section ma-watermark" id="tujuan">
     <h2>1. Tujuan Pembelajaran</h2>
     <p>Setelah mempelajari materi ini, peserta didik diharapkan mampu:</p>
     <ul>
-      <li>Menjelaskan pengertian, tujuan, dan karakteristik teks argumentasi.</li>
-      <li>Mengidentifikasi struktur teks argumentasi secara tepat.</li>
+      <li>Menjelaskan pengertian, tujuan, dan ciri-ciri teks argumentasi.</li>
+      <li>Mengidentifikasi bagian-bagian atau struktur teks argumentasi.</li>
       <li>Membedakan fakta, opini, data, dan bukti pendukung.</li>
-      <li>Menganalisis kekuatan dan kelemahan sebuah argumen.</li>
-      <li>Menggunakan kaidah kebahasaan teks argumentasi.</li>
+      <li>Menilai apakah sebuah argumen disusun secara logis dan didukung bukti yang tepat.</li>
+      <li>Mengenali dan menggunakan kaidah kebahasaan teks argumentasi.</li>
       <li>Menyusun teks argumentasi berdasarkan isu energi bersih.</li>
-      <li>Mempresentasikan gagasan dan hasil penelitian secara logis dan santun.</li>
+      <li>Menyampaikan gagasan dan hasil penelitian secara runtut dan santun.</li>
     </ul>
   </section>
 
-  <section class="section ma-watermark" id="pengertian">
+  <section class="energy-section ma-watermark" id="pengertian">
     <h2>2. Pengertian Teks Argumentasi</h2>
     <p>
-      Teks argumentasi adalah teks yang berisi pendapat atau pandangan
-      penulis mengenai suatu persoalan yang disertai alasan, fakta,
-      data, contoh, maupun bukti pendukung. Pendapat tersebut disusun
-      secara logis agar pembaca dapat memahami dan mempertimbangkan
-      kebenaran gagasan yang disampaikan.
+      Teks argumentasi adalah tulisan yang berisi pendapat atau
+      pandangan seseorang tentang suatu persoalan. Pendapat tersebut
+      disertai alasan dan bukti agar pembaca dapat memahami mengapa
+      penulis memiliki pandangan seperti itu.
     </p>
-
     <p>
-      Dalam kehidupan sehari-hari, kita sering menemukan perbedaan
-      pendapat tentang berbagai persoalan, seperti penggunaan kendaraan
-      listrik, pengelolaan sampah, pemanfaatan energi matahari, dan
-      pelestarian lingkungan. Ketika seseorang menyampaikan pendapat
-      disertai alasan dan bukti yang dapat diperiksa, ia sedang
-      membangun sebuah argumentasi.
+      Bukti yang digunakan dapat berupa fakta, data, hasil penelitian,
+      pendapat ahli, atau contoh nyata. Dengan adanya bukti, pendapat
+      tidak hanya menjadi pernyataan pribadi, tetapi memiliki dasar
+      yang dapat diperiksa kebenarannya.
+    </p>
+    <p>
+      Dalam kehidupan sehari-hari, kita sering menjumpai perbedaan
+      pendapat. Misalnya, ada yang setuju dengan penggunaan kendaraan
+      listrik, ada yang lebih memilih transportasi umum, dan ada pula
+      yang menganggap pengembangan energi matahari perlu diprioritaskan.
+      Ketika seseorang menyampaikan pandangan disertai alasan dan
+      bukti yang relevan, ia sedang membangun argumentasi.
     </p>
 
-    <div class="callout">
+    <div class="energy-callout">
       <strong>Perhatikan perbedaannya!</strong>
+      <p><strong>Pendapat:</strong> "Energi matahari merupakan sumber energi yang baik."</p>
       <p>
-        Pendapat: "Energi matahari merupakan sumber energi yang baik."
+        <strong>Argumentasi:</strong> "Energi matahari layak dikembangkan
+        karena dapat dimanfaatkan untuk menghasilkan listrik tanpa
+        pembakaran bahan bakar fosil pada saat listrik dihasilkan."
       </p>
       <p>
-        Argumentasi: "Energi matahari layak dikembangkan karena sinar
-        matahari tersedia secara alami dan dapat dimanfaatkan untuk
-        menghasilkan listrik tanpa pembakaran bahan bakar fosil pada
-        saat proses pembangkitan listrik."
-      </p>
-      <p>
-        Kalimat kedua lebih kuat karena pendapat disertai alasan yang
-        dapat dijelaskan dan diuji.
+        Kalimat kedua lebih kuat karena pendapat disertai alasan
+        yang dapat dijelaskan. Meskipun demikian, jika digunakan
+        dalam tulisan ilmiah, alasan tersebut tetap perlu didukung
+        informasi dan sumber yang dapat dipercaya.
       </p>
     </div>
+
+    <h3>Apa yang Membuat Argumentasi Menjadi Kuat?</h3>
+    <p>
+      Argumentasi yang kuat memiliki tiga unsur penting: pendapat
+      yang jelas, alasan yang masuk akal, dan bukti yang sesuai.
+      Ketiganya saling melengkapi. Pendapat tanpa alasan akan sulit
+      meyakinkan pembaca, sedangkan alasan tanpa bukti dapat menjadi
+      klaim yang belum terbukti.
+    </p>
   </section>
 
-  <section class="section ma-watermark" id="tujuan-teks">
+  <section class="energy-section ma-watermark" id="tujuan-teks">
     <h2>3. Tujuan dan Ciri-Ciri Teks Argumentasi</h2>
 
     <h3>A. Tujuan Teks Argumentasi</h3>
     <ul>
       <li>Meyakinkan pembaca melalui alasan dan bukti yang masuk akal.</li>
       <li>Mengajak pembaca mempertimbangkan suatu persoalan dari sudut pandang tertentu.</li>
-      <li>Menjelaskan hubungan antara pendapat dan fakta yang mendukungnya.</li>
-      <li>Mendorong pembaca berpikir kritis terhadap suatu isu.</li>
+      <li>Menjelaskan mengapa suatu pendapat layak diterima atau dipertimbangkan.</li>
+      <li>Mendorong pembaca berpikir kritis sebelum mengambil kesimpulan.</li>
     </ul>
 
     <h3>B. Ciri-Ciri Teks Argumentasi</h3>
-    <div class="grid">
-      <div class="card">
+    <div class="energy-grid">
+      <div class="energy-card">
         <h3>Memiliki Pendapat</h3>
-        <p>Berisi gagasan atau posisi penulis terhadap suatu permasalahan.</p>
+        <p>Penulis menyampaikan gagasan atau sikap terhadap suatu persoalan.</p>
       </div>
-
-      <div class="card">
+      <div class="energy-card">
         <h3>Disertai Alasan</h3>
-        <p>Pendapat diperkuat dengan penjelasan yang logis dan relevan.</p>
+        <p>Setiap pendapat dijelaskan dengan alasan yang masuk akal dan berkaitan dengan topik.</p>
       </div>
-
-      <div class="card">
+      <div class="energy-card">
         <h3>Menggunakan Bukti</h3>
-        <p>Didukung fakta, data, hasil penelitian, atau contoh nyata.</p>
+        <p>Pendapat diperkuat dengan fakta, data, hasil penelitian, atau contoh nyata.</p>
       </div>
+      <div class="energy-card">
+        <h3>Disusun secara Logis</h3>
+        <p>Gagasan disampaikan secara runtut sehingga hubungan antaride mudah dipahami.</p>
+      </div>
+    </div>
 
-      <div class="card">
-        <h3>Berpikir Logis</h3>
-        <p>Gagasan disusun secara runtut dan tidak saling bertentangan.</p>
-      </div>
+    <div class="energy-callout">
+      <strong>Ingat!</strong>
+      <p>
+        Tujuan argumentasi bukan untuk memaksa orang lain agar selalu
+        setuju. Argumentasi bertujuan menyampaikan pandangan dengan
+        alasan yang dapat dipertanggungjawabkan sehingga pembaca
+        memiliki bahan untuk mempertimbangkannya.
+      </p>
     </div>
   </section>
 
-  <section class="section ma-watermark" id="struktur">
+  <section class="energy-section ma-watermark" id="struktur">
     <h2>4. Struktur Teks Argumentasi</h2>
     <p>
-      Secara umum, teks argumentasi memiliki tiga bagian utama.
-      Ketiganya saling berkaitan dalam membangun pendapat yang kuat.
+      Teks argumentasi umumnya disusun dalam tiga bagian utama.
+      Ketiga bagian tersebut membantu penulis menyampaikan gagasan
+      dari pengenalan persoalan hingga kesimpulan.
     </p>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>1. Pengenalan Isu</h3>
       <p>
-        Bagian pembuka yang memperkenalkan topik atau persoalan
-        yang akan dibahas. Penulis menjelaskan latar belakang
-        permasalahan dan menunjukkan posisi atau pendapat awalnya.
+        Bagian pembuka yang memperkenalkan topik atau masalah
+        yang akan dibahas. Penulis memberikan gambaran mengenai
+        persoalan dan menyampaikan pendapat awalnya.
       </p>
       <p><strong>Contoh:</strong> Kebutuhan energi terus meningkat, sementara penggunaan bahan bakar fosil menimbulkan persoalan lingkungan. Oleh karena itu, pengembangan energi bersih perlu menjadi perhatian.</p>
     </div>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>2. Rangkaian Argumen</h3>
       <p>
-        Bagian yang berisi alasan, fakta, data, contoh, dan penjelasan
-        untuk memperkuat pendapat penulis. Setiap argumen harus
-        relevan dengan isu yang dibahas.
+        Bagian ini berisi alasan yang mendukung pendapat penulis.
+        Alasan dapat diperkuat dengan fakta, data, hasil penelitian,
+        pendapat ahli, atau contoh nyata.
       </p>
-      <p><strong>Contoh:</strong> Energi matahari dapat dimanfaatkan untuk menghasilkan listrik. Selain itu, pemanfaatannya dapat mengurangi ketergantungan pada sumber energi fosil.</p>
+      <p><strong>Contoh:</strong> Energi matahari dapat dimanfaatkan untuk menghasilkan listrik. Pemanfaatannya dapat membantu mengurangi ketergantungan pada bahan bakar fosil, terutama jika didukung teknologi dan perencanaan yang tepat.</p>
     </div>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>3. Penegasan Ulang</h3>
       <p>
         Bagian penutup yang menegaskan kembali pendapat utama
-        berdasarkan rangkaian alasan yang telah disampaikan.
-        Penegasan ulang bukan sekadar mengulang kalimat pembuka,
-        melainkan memperkuat kesimpulan.
+        berdasarkan alasan yang telah dijelaskan. Penulis dapat
+        menyampaikan kesimpulan atau ajakan yang sesuai dengan
+        pembahasan.
       </p>
-      <p><strong>Contoh:</strong> Dengan demikian, pengembangan energi bersih perlu dilakukan secara terencana agar kebutuhan energi dapat dipenuhi dengan memperhatikan kelestarian lingkungan.</p>
+      <p><strong>Contoh:</strong> Dengan demikian, pengembangan energi bersih perlu dilakukan secara terencana agar kebutuhan energi dapat dipenuhi dengan tetap memperhatikan kelestarian lingkungan.</p>
+    </div>
+
+    <div class="energy-callout">
+      <strong>Cara mudah mengingat struktur:</strong>
+      <p>
+        Pembuka memperkenalkan masalah, bagian isi menjelaskan
+        alasan dan bukti, sedangkan penutup menegaskan kembali
+        pendapat berdasarkan pembahasan.
+      </p>
     </div>
   </section>
 
-  <section class="section ma-watermark" id="bukti">
+  <section class="energy-section ma-watermark" id="bukti">
     <h2>5. Fakta, Data, dan Bukti Pendukung</h2>
     <p>
-      Kekuatan teks argumentasi tidak hanya ditentukan oleh bagusnya
-      kalimat, tetapi juga oleh kualitas bukti yang digunakan.
-      Penulis perlu membedakan pendapat pribadi dengan informasi
-      yang dapat diverifikasi.
+      Pendapat yang baik perlu didukung informasi yang tepat.
+      Karena itu, penulis teks argumentasi harus mampu membedakan
+      fakta dan opini serta memilih bukti yang sesuai dengan
+      persoalan yang dibahas.
     </p>
 
-    <h3>A. Fakta dan Opini</h3>
-    <div class="table-wrap">
-      <table>
+    <h3>A. Perbedaan Fakta dan Opini</h3>
+    <div class="energy-table-wrap">
+      <table class="energy-table">
         <tr>
           <th>Fakta</th>
           <th>Opini</th>
         </tr>
         <tr>
-          <td>Dapat diperiksa kebenarannya melalui bukti atau sumber yang jelas.</td>
-          <td>Berisi penilaian, pandangan, atau pendapat seseorang.</td>
+          <td>
+            Informasi yang kebenarannya dapat diperiksa melalui
+            bukti atau sumber yang jelas.
+          </td>
+          <td>
+            Pendapat, penilaian, atau pandangan seseorang
+            terhadap suatu persoalan.
+          </td>
         </tr>
         <tr>
-          <td>Contoh: Panel surya mengubah energi cahaya matahari menjadi energi listrik.</td>
-          <td>Contoh: Energi surya merupakan pilihan energi paling menarik untuk dikembangkan.</td>
+          <td>Panel surya mengubah energi cahaya matahari menjadi energi listrik.</td>
+          <td>Energi surya merupakan pilihan energi paling menarik untuk dikembangkan.</td>
         </tr>
       </table>
     </div>
 
+    <p>
+      Perlu diingat, sebuah kalimat tidak otomatis menjadi fakta
+      hanya karena terdengar meyakinkan. Informasi tersebut harus
+      dapat diperiksa melalui sumber yang dapat dipercaya.
+      Sebaliknya, opini bukan berarti selalu salah. Opini dapat
+      menjadi dasar argumentasi selama didukung alasan dan bukti.
+    </p>
+
     <h3>B. Jenis Bukti Pendukung</h3>
-    <div class="grid">
-      <div class="card">
+    <div class="energy-grid">
+      <div class="energy-card">
         <h3>Data dan Angka</h3>
         <p>
-          Informasi kuantitatif dari laporan atau penelitian.
-          Data harus disertai sumber, tahun, dan konteks yang jelas.
+          Informasi berupa jumlah, persentase, atau hasil pengukuran
+          dari laporan dan penelitian. Data perlu disertai sumber,
+          tahun, dan konteks yang jelas.
         </p>
       </div>
-
-      <div class="card">
+      <div class="energy-card">
         <h3>Pendapat Ahli</h3>
         <p>
-          Pandangan dari orang yang memiliki keahlian dan kompetensi
-          pada bidang yang dibahas.
+          Pandangan dari orang yang memiliki pengetahuan dan
+          keahlian pada bidang yang sedang dibahas.
         </p>
       </div>
-
-      <div class="card">
+      <div class="energy-card">
         <h3>Contoh Nyata</h3>
         <p>
-          Peristiwa atau penerapan yang benar-benar terjadi dan
-          relevan dengan pendapat penulis.
+          Peristiwa atau penerapan yang benar-benar terjadi
+          dan sesuai dengan pendapat yang disampaikan.
         </p>
       </div>
-
-      <div class="card">
+      <div class="energy-card">
         <h3>Hubungan Sebab-Akibat</h3>
         <p>
-          Penjelasan mengenai hubungan suatu tindakan dengan
-          akibat yang ditimbulkannya.
+          Penjelasan mengenai hubungan antara suatu tindakan
+          dan akibat yang dapat ditimbulkannya.
         </p>
       </div>
     </div>
 
-    <div class="callout">
-      <strong>Catatan penting tentang data</strong>
+    <div class="energy-callout">
+      <strong>Catatan penting tentang penggunaan data</strong>
       <p>
         Misalnya, ketika menggunakan data bauran energi terbarukan
         dari Kementerian Energi dan Sumber Daya Mineral (ESDM),
@@ -758,18 +715,25 @@
         sumber dokumennya. Jangan menggunakan angka lama seolah-olah
         merupakan data terbaru.
       </p>
+      <p>
+        Biasakan memeriksa siapa yang menerbitkan informasi,
+        kapan informasi diterbitkan, dan dari mana data tersebut
+        diperoleh.
+      </p>
     </div>
   </section>
 
-  <section class="section ma-watermark" id="kebahasaan">
+  <section class="energy-section ma-watermark" id="kebahasaan">
     <h2>6. Kaidah Kebahasaan Teks Argumentasi</h2>
     <p>
-      Teks argumentasi menggunakan pilihan kata dan kalimat yang
-      membantu pembaca memahami hubungan antaride.
+      Kaidah kebahasaan adalah ciri penggunaan bahasa dalam sebuah
+      teks. Dalam teks argumentasi, pilihan kata dan kalimat
+      digunakan untuk menjelaskan pendapat, menghubungkan alasan,
+      serta memperkuat kesimpulan.
     </p>
 
-    <div class="table-wrap">
-      <table>
+    <div class="energy-table-wrap">
+      <table class="energy-table">
         <tr>
           <th>Kaidah Kebahasaan</th>
           <th>Contoh Kata atau Ungkapan</th>
@@ -788,7 +752,7 @@
         <tr>
           <td>Konjungsi penyimpulan</td>
           <td>Jadi, dengan demikian, oleh karena itu</td>
-          <td>Menghubungkan alasan dengan kesimpulan.</td>
+          <td>Menghubungkan pembahasan dengan kesimpulan.</td>
         </tr>
         <tr>
           <td>Kata kerja mental</td>
@@ -809,110 +773,121 @@
       <li>Energi terbarukan memiliki potensi besar. <strong>Namun</strong>, pengembangannya tetap memerlukan perencanaan dan investasi.</li>
       <li><strong>Dengan demikian</strong>, penggunaan energi bersih perlu didukung oleh kebijakan dan partisipasi masyarakat.</li>
     </ul>
+
+    <div class="energy-callout">
+      <strong>Tips menulis:</strong>
+      <p>
+        Gunakan kata penghubung sesuai dengan hubungan maknanya.
+        Jangan menggunakan kata "oleh karena itu" hanya agar
+        tulisan terlihat ilmiah. Pastikan memang ada alasan
+        yang mengarah pada kesimpulan.
+      </p>
+    </div>
   </section>
 
-  <section class="section ma-watermark" id="evaluasi">
+  <section class="energy-section ma-watermark" id="evaluasi">
     <h2>7. Mengevaluasi Kualitas Argumen</h2>
     <p>
-      Tidak semua pendapat yang disertai kalimat panjang dapat
-      disebut sebagai argumen yang kuat. Sebuah argumen perlu
-      diperiksa berdasarkan kualitas alasan dan bukti pendukungnya.
+      Tidak semua pendapat yang disampaikan dengan kalimat panjang
+      merupakan argumen yang kuat. Sebuah argumen perlu diperiksa
+      agar kita tidak mudah menerima informasi yang keliru.
     </p>
 
-    <div class="grid">
-      <div class="card">
+    <div class="energy-grid">
+      <div class="energy-card">
         <h3>Logis</h3>
         <p>Apakah alasan yang disampaikan masuk akal dan tidak bertentangan?</p>
       </div>
-
-      <div class="card">
+      <div class="energy-card">
         <h3>Relevan</h3>
-        <p>Apakah bukti benar-benar berkaitan dengan pendapat utama?</p>
+        <p>Apakah bukti yang digunakan benar-benar berkaitan dengan pendapat utama?</p>
       </div>
-
-      <div class="card">
+      <div class="energy-card">
         <h3>Kredibel</h3>
-        <p>Apakah sumber informasi dapat dipercaya dan diperiksa?</p>
+        <p>Apakah sumber informasi dapat dipercaya dan diperiksa kembali?</p>
       </div>
-
-      <div class="card">
+      <div class="energy-card">
         <h3>Memadai</h3>
         <p>Apakah bukti yang diberikan cukup untuk mendukung kesimpulan?</p>
       </div>
     </div>
 
-    <div class="callout">
+    <div class="energy-callout">
       <strong>Waspadai generalisasi berlebihan!</strong>
       <p>
-        Pernyataan: "Saya pernah melihat satu panel surya rusak.
+        Perhatikan pernyataan berikut:
+      </p>
+      <p>
+        "Saya pernah melihat satu panel surya rusak.
         Jadi, semua teknologi energi surya tidak dapat diandalkan."
       </p>
       <p>
         Pernyataan tersebut merupakan generalisasi berlebihan.
-        Kesimpulan yang luas tidak dapat dibuat hanya berdasarkan
-        satu pengalaman atau satu kejadian.
+        Artinya, seseorang membuat kesimpulan yang terlalu luas
+        hanya berdasarkan satu kejadian. Untuk menilai keandalan
+        teknologi, diperlukan informasi dan bukti yang lebih banyak.
       </p>
     </div>
 
     <h3>Pertanyaan untuk Menguji Argumen</h3>
     <ol>
       <li>Apakah pendapat utama disampaikan dengan jelas?</li>
-      <li>Apakah alasan yang diberikan relevan?</li>
+      <li>Apakah alasan yang diberikan berkaitan dengan persoalan?</li>
       <li>Apakah sumber data disebutkan secara jelas?</li>
-      <li>Apakah bukti cukup untuk mendukung pendapat?</li>
-      <li>Apakah terdapat kesimpulan yang terlalu luas atau terburu-buru?</li>
+      <li>Apakah bukti yang digunakan cukup untuk mendukung pendapat?</li>
+      <li>Apakah kesimpulan dibuat secara wajar berdasarkan bukti?</li>
     </ol>
   </section>
 
-  <section class="section ma-watermark" id="contoh">
+  <section class="energy-section ma-watermark" id="contoh">
     <h2>8. Contoh Teks Argumentasi: Energi Bersih untuk Masa Depan</h2>
 
-    <div class="example">
+    <div class="energy-example">
       <h3>Energi Bersih untuk Masa Depan</h3>
 
       <p>
         Kebutuhan energi merupakan bagian penting dalam kehidupan
-        manusia. Hampir seluruh kegiatan masyarakat, mulai dari
+        manusia. Hampir semua kegiatan masyarakat, mulai dari
         transportasi, pendidikan, industri, hingga komunikasi,
-        memerlukan energi. Selama ini, sebagian kebutuhan tersebut
-        masih dipenuhi melalui penggunaan bahan bakar fosil.
-        Padahal, pembakaran bahan bakar fosil menghasilkan emisi
-        yang berkontribusi terhadap perubahan iklim. Oleh karena itu,
-        pengembangan energi bersih perlu menjadi salah satu prioritas
-        dalam pembangunan.
+        membutuhkan energi. Selama ini, sebagian kebutuhan energi
+        masih dipenuhi dengan bahan bakar fosil, seperti minyak bumi,
+        batu bara, dan gas alam. Penggunaan bahan bakar fosil melalui
+        proses pembakaran menghasilkan emisi yang berkontribusi
+        terhadap perubahan iklim. Oleh karena itu, pengembangan
+        energi bersih perlu menjadi salah satu perhatian dalam
+        pembangunan.
       </p>
 
       <p>
         Salah satu alasan penting untuk mengembangkan energi bersih
-        adalah potensi sumber daya alam yang dapat dimanfaatkan.
-        Indonesia memiliki sinar matahari yang melimpah, potensi
-        tenaga air, panas bumi, angin, dan sumber energi terbarukan
-        lainnya. Potensi tersebut dapat dimanfaatkan melalui
-        teknologi yang sesuai dengan kondisi setiap wilayah.
-        Pemanfaatan energi matahari, misalnya, dapat membantu
-        menyediakan listrik bagi bangunan, fasilitas umum, maupun
-        wilayah yang belum terjangkau jaringan listrik secara optimal.
+        adalah tersedianya berbagai sumber energi terbarukan.
+        Indonesia memiliki potensi sinar matahari, tenaga air,
+        panas bumi, angin, dan sumber energi lainnya. Potensi tersebut
+        dapat dimanfaatkan dengan teknologi yang sesuai dengan kondisi
+        setiap wilayah. Sebagai contoh, panel surya dapat mengubah
+        cahaya matahari menjadi energi listrik untuk memenuhi
+        sebagian kebutuhan listrik bangunan dan fasilitas umum.
       </p>
 
       <p>
-        Selain memiliki potensi sumber daya, energi bersih juga
-        penting untuk mengurangi ketergantungan pada bahan bakar
-        fosil. Ketergantungan yang terlalu besar terhadap satu jenis
-        sumber energi dapat menimbulkan kerentanan ketika pasokan
-        terganggu atau harga energi mengalami perubahan. Dengan
-        mengembangkan beragam sumber energi, ketahanan energi
-        dapat diperkuat. Namun, pengembangan energi bersih tetap
-        memerlukan investasi, teknologi, infrastruktur, dan
-        perencanaan yang matang.
+        Selain memanfaatkan sumber daya alam, pengembangan energi
+        bersih juga dapat membantu mengurangi ketergantungan pada
+        bahan bakar fosil. Ketergantungan yang terlalu besar pada
+        satu jenis sumber energi dapat menimbulkan masalah ketika
+        pasokan terganggu atau harga energi berubah. Dengan
+        mengembangkan berbagai sumber energi, pilihan pemenuhan
+        kebutuhan energi menjadi lebih beragam. Namun, pengembangan
+        energi bersih tetap membutuhkan biaya, teknologi,
+        infrastruktur, dan perencanaan yang matang.
       </p>
 
       <p>
-        Pengembangan energi bersih juga perlu memperhatikan
+        Pengembangan energi bersih juga harus memperhatikan
         kepentingan masyarakat dan kelestarian lingkungan.
-        Pembangunan pembangkit energi tidak boleh mengabaikan
+        Pembangunan fasilitas energi tidak boleh mengabaikan
         kondisi sosial maupun ekosistem di sekitarnya. Oleh sebab
-        itu, setiap proyek harus melalui kajian yang tepat dan
-        melibatkan masyarakat yang terdampak.
+        itu, setiap proyek perlu melalui kajian yang tepat dan
+        memperhatikan masyarakat yang terdampak.
       </p>
 
       <p>
@@ -920,14 +895,13 @@
         teknologi, melainkan bagian dari upaya membangun masa
         depan yang lebih berkelanjutan. Pemerintah, dunia usaha,
         lembaga pendidikan, dan masyarakat perlu bekerja sama
-        untuk mempercepat pengembangan energi bersih secara
-        bertanggung jawab.
+        untuk mengembangkan energi bersih secara bertanggung jawab.
       </p>
     </div>
 
     <h3>Analisis Struktur Teks</h3>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>Pengenalan Isu</h3>
       <p>
         Paragraf pertama memperkenalkan kebutuhan energi,
@@ -936,16 +910,16 @@
       </p>
     </div>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>Rangkaian Argumen</h3>
       <p>
-        Paragraf kedua sampai keempat memaparkan potensi energi
+        Paragraf kedua sampai keempat menjelaskan potensi energi
         terbarukan, manfaat pengembangan energi bersih, serta
         pentingnya memperhatikan kondisi sosial dan lingkungan.
       </p>
     </div>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>Penegasan Ulang</h3>
       <p>
         Paragraf kelima menegaskan kembali bahwa pengembangan
@@ -954,8 +928,8 @@
     </div>
 
     <h3>Analisis Kaidah Kebahasaan</h3>
-    <div class="table-wrap">
-      <table>
+    <div class="energy-table-wrap">
+      <table class="energy-table">
         <tr>
           <th>Unsur</th>
           <th>Contoh dalam Teks</th>
@@ -984,62 +958,62 @@
       </table>
     </div>
 
-    <div class="callout">
-      <strong>Catatan analisis</strong>
+    <div class="energy-callout">
+      <strong>Catatan Analisis</strong>
       <p>
-        Contoh teks tersebut merupakan model argumentasi.
+        Contoh teks tersebut merupakan model teks argumentasi.
         Untuk menjadikannya tulisan berbasis penelitian, penulis
-        perlu menambahkan data terverifikasi, sumber rujukan,
-        dan hasil pengamatan yang sesuai dengan topik.
+        perlu menambahkan data yang telah diperiksa kebenarannya,
+        sumber rujukan, dan hasil pengamatan yang sesuai dengan topik.
       </p>
     </div>
   </section>
 
-  <section class="section ma-watermark pengayaan" id="pengayaan">
+  <section class="energy-section ma-watermark energy-enrichment" id="pengayaan">
     <h2>9. Pengayaan</h2>
     <p>
       Energi bersih merupakan isu yang terus berkembang.
       Untuk memperluas wawasan, peserta didik dapat mempelajari
-      berbagai sumber energi dan tantangan penerapannya.
-      Pengayaan ini bertujuan menghubungkan kemampuan berbahasa
-      dengan pengetahuan tentang persoalan nyata.
+      berbagai sumber energi serta manfaat dan tantangan
+      penerapannya. Pengayaan ini menghubungkan kemampuan
+      berbahasa dengan persoalan nyata di lingkungan sekitar.
     </p>
 
-    <div class="grid">
-      <div class="card">
+    <div class="energy-grid">
+      <div class="energy-card">
         <h3>Energi Matahari</h3>
         <p>
           Pelajari cara kerja panel surya, manfaatnya,
           serta tantangan pemasangan dan penyimpanan energi.
         </p>
-        <span class="tag">Energi Surya</span>
+        <span class="energy-tag">Energi Surya</span>
       </div>
 
-      <div class="card">
+      <div class="energy-card">
         <h3>Energi Angin dan Air</h3>
         <p>
           Amati bagaimana angin dan aliran air dapat dimanfaatkan
           untuk menghasilkan energi listrik.
         </p>
-        <span class="tag">Energi Terbarukan</span>
+        <span class="energy-tag">Energi Terbarukan</span>
       </div>
 
-      <div class="card">
+      <div class="energy-card">
         <h3>Panas Bumi dan Bioenergi</h3>
         <p>
           Kenali potensi panas bumi serta pemanfaatan bahan
           organik sebagai sumber energi.
         </p>
-        <span class="tag">Sumber Energi</span>
+        <span class="energy-tag">Sumber Energi</span>
       </div>
 
-      <div class="card">
+      <div class="energy-card">
         <h3>Efisiensi Energi</h3>
         <p>
           Pelajari langkah menghemat energi di rumah,
           sekolah, dan lingkungan masyarakat.
         </p>
-        <span class="tag">Gaya Hidup</span>
+        <span class="energy-tag">Gaya Hidup</span>
       </div>
     </div>
 
@@ -1063,7 +1037,8 @@
     </p>
   </section>
 
-  <section class="section ma-watermark" id="aktivitas">
+  <!-- AKTIVITAS PEMBELAJARAN DIPERTAHANKAN SESUAI KODE ASLI -->
+  <section class="energy-section ma-watermark" id="aktivitas">
     <h2>10. Aktivitas Pembelajaran</h2>
     <p>
       Lakukan kegiatan berikut secara berkelompok atau mandiri.
@@ -1071,9 +1046,9 @@
       mengaplikasikan, dan merefleksikan pengetahuan.
     </p>
 
-    <div class="grid">
-      <div class="card">
-        <div class="number">1</div>
+    <div class="energy-grid">
+      <div class="energy-card">
+        <div class="energy-number">1</div>
         <h3>Mengamati Isu</h3>
         <p>
           Amati persoalan penggunaan energi di lingkungan sekitar.
@@ -1081,8 +1056,8 @@
         </p>
       </div>
 
-      <div class="card">
-        <div class="number">2</div>
+      <div class="energy-card">
+        <div class="energy-number">2</div>
         <h3>Mengumpulkan Informasi</h3>
         <p>
           Cari data dari sumber tepercaya, seperti lembaga
@@ -1090,8 +1065,8 @@
         </p>
       </div>
 
-      <div class="card">
-        <div class="number">3</div>
+      <div class="energy-card">
+        <div class="energy-number">3</div>
         <h3>Menyusun Argumen</h3>
         <p>
           Tentukan pendapat utama dan susun alasan serta
@@ -1099,8 +1074,8 @@
         </p>
       </div>
 
-      <div class="card">
-        <div class="number">4</div>
+      <div class="energy-card">
+        <div class="energy-number">4</div>
         <h3>Berdiskusi</h3>
         <p>
           Sampaikan pendapat dan tanggapi pandangan teman
@@ -1110,10 +1085,15 @@
     </div>
   </section>
 
-  <section class="section ma-watermark" id="menulis">
+  <section class="energy-section ma-watermark" id="menulis">
     <h2>11. Langkah-Langkah Menulis Teks Argumentasi</h2>
+    <p>
+      Menulis teks argumentasi akan lebih mudah jika dilakukan
+      secara bertahap. Jangan langsung menulis seluruh paragraf.
+      Tentukan dahulu persoalan, pendapat, dan bukti yang akan digunakan.
+    </p>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>Langkah 1: Memilih Isu</h3>
       <p>
         Tentukan persoalan yang menarik dan layak dibahas.
@@ -1122,41 +1102,43 @@
       </p>
     </div>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>Langkah 2: Menentukan Pendapat</h3>
       <p>
-        Tentukan posisi yang ingin disampaikan. Pastikan
-        pendapat dapat dijelaskan dan didukung bukti.
+        Tentukan posisi atau pandangan yang ingin disampaikan.
+        Pastikan pendapat tersebut jelas dan dapat dijelaskan
+        dengan alasan yang masuk akal.
       </p>
     </div>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>Langkah 3: Mengumpulkan Data</h3>
       <p>
         Cari fakta, angka, hasil penelitian, contoh nyata,
-        atau pendapat ahli yang relevan. Catat sumbernya.
+        atau pendapat ahli yang relevan. Catat sumbernya
+        agar informasi dapat diperiksa kembali.
       </p>
     </div>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>Langkah 4: Menyusun Rangkaian Argumen</h3>
       <p>
         Kembangkan pendapat menjadi beberapa alasan yang
-        saling berkaitan. Susun dari alasan yang paling
-        kuat dan relevan.
+        saling berkaitan. Setiap alasan sebaiknya dilengkapi
+        bukti yang sesuai.
       </p>
     </div>
 
-    <div class="structure">
+    <div class="energy-structure">
       <h3>Langkah 5: Menyunting Tulisan</h3>
       <p>
-        Periksa kembali isi, struktur, ketepatan data,
-        pilihan kata, ejaan, tanda baca, dan keterpaduan
-        antarkalimat.
+        Baca kembali tulisan yang telah dibuat. Periksa isi,
+        struktur, ketepatan data, pilihan kata, ejaan, tanda baca,
+        dan hubungan antarkalimat.
       </p>
     </div>
 
-    <div class="callout">
+    <div class="energy-callout">
       <strong>Ingat!</strong>
       <p>
         Teks argumentasi yang baik tidak harus menggunakan
@@ -1166,7 +1148,7 @@
     </div>
   </section>
 
-  <section class="section ma-watermark" id="presentasi">
+  <section class="energy-section ma-watermark" id="presentasi">
     <h2>12. Mempresentasikan Hasil Penelitian</h2>
     <p>
       Argumentasi dapat dikembangkan melalui kegiatan penelitian
@@ -1176,8 +1158,8 @@
 
     <h3>Sistematika Presentasi Hasil Penelitian</h3>
 
-    <div class="table-wrap">
-      <table>
+    <div class="energy-table-wrap">
+      <table class="energy-table">
         <tr>
           <th>Bagian</th>
           <th>Isi yang Disampaikan</th>
@@ -1215,34 +1197,34 @@
     </ul>
   </section>
 
-  <section class="section ma-watermark" id="latihan">
+  <section class="energy-section ma-watermark" id="latihan">
     <h2>13. Latihan Pemahaman</h2>
     <p>
       Jawablah pertanyaan berikut berdasarkan materi
       yang telah dipelajari.
     </p>
 
-    <div class="question">
+    <div class="energy-question">
       <strong>1. Apa yang dimaksud dengan teks argumentasi?</strong>
       <p>Jelaskan pengertian teks argumentasi menggunakan bahasamu sendiri.</p>
     </div>
 
-    <div class="question">
+    <div class="energy-question">
       <strong>2. Apa tujuan utama teks argumentasi?</strong>
       <p>Jelaskan hubungan antara pendapat, alasan, dan bukti dalam teks argumentasi.</p>
     </div>
 
-    <div class="question">
+    <div class="energy-question">
       <strong>3. Sebutkan dan jelaskan tiga struktur teks argumentasi.</strong>
       <p>Berikan contoh singkat untuk setiap bagian.</p>
     </div>
 
-    <div class="question">
+    <div class="energy-question">
       <strong>4. Mengapa data dan sumber informasi penting dalam argumentasi?</strong>
       <p>Jelaskan risiko menggunakan data tanpa sumber yang jelas.</p>
     </div>
 
-    <div class="question">
+    <div class="energy-question">
       <strong>5. Perhatikan pernyataan berikut!</strong>
       <p>
         "Satu kendaraan listrik mengalami kerusakan. Oleh karena itu,
@@ -1251,17 +1233,17 @@
       <p>Apakah pernyataan tersebut merupakan argumen yang kuat? Jelaskan alasanmu.</p>
     </div>
 
-    <div class="question">
+    <div class="energy-question">
       <strong>6. Buatlah satu paragraf argumentasi tentang pentingnya menghemat energi.</strong>
       <p>Gunakan alasan yang logis dan sertakan contoh atau bukti pendukung.</p>
     </div>
 
-    <div class="question">
+    <div class="energy-question">
       <strong>7. Bagaimana cara menyampaikan perbedaan pendapat secara santun?</strong>
       <p>Berikan contoh tanggapan yang menunjukkan sikap kritis dan menghargai orang lain.</p>
     </div>
 
-    <div class="callout">
+    <div class="energy-callout">
       <strong>Tugas Proyek</strong>
       <p>
         Buatlah teks argumentasi bertema "Energi Bersih untuk
@@ -1272,11 +1254,13 @@
     </div>
   </section>
 
-  <section class="section ma-watermark" id="refleksi">
+  <section class="energy-section ma-watermark" id="refleksi">
     <h2>14. Refleksi Pembelajaran</h2>
     <p>
       Setelah mempelajari materi ini, renungkan pengalaman
-      belajar yang telah kamu lalui.
+      belajar yang telah kamu lalui. Refleksi membantu kamu
+      mengetahui hal-hal yang sudah dipahami dan bagian yang
+      masih perlu ditingkatkan.
     </p>
 
     <ul>
@@ -1287,7 +1271,7 @@
       <li>Keterampilan apa yang masih perlu saya tingkatkan?</li>
     </ul>
 
-    <div class="callout">
+    <div class="energy-callout">
       <strong>Pesan Pembelajaran</strong>
       <p>
         Berpikir kritis bukan berarti selalu menolak pendapat
@@ -1298,60 +1282,59 @@
     </div>
   </section>
 
-  <section class="section ma-watermark">
+  <section class="energy-section ma-watermark">
     <h2>Belajar Lebih Lanjut</h2>
     <p>
-      Terus kembangkan kemampuan membaca, menulis, berdiskusi,
-      dan menyampaikan gagasan. Gunakan berbagai sumber
-      pembelajaran untuk memperluas wawasan dan memperdalam
-      pemahaman mengenai teks argumentasi.
+      Kemampuan berargumentasi tidak hanya berguna saat menulis
+      teks. Keterampilan ini juga membantu kita berdiskusi,
+      menilai informasi, mengambil keputusan, dan menyampaikan
+      gagasan dalam kehidupan sehari-hari.
+    </p>
+    <p>
+      Teruslah membaca berbagai sumber, memeriksa kebenaran
+      informasi, dan berlatih menyampaikan pendapat dengan
+      alasan yang jelas serta sikap yang santun.
     </p>
 
-    <a class="button" href="kelas-virtual.html">Kunjungi Kelas Virtual</a>
-    <a class="button secondary" href="kelas-xi.html">Kembali ke Kelas XI</a>
+    <a class="energy-button" href="kelas-virtual.html">Kunjungi Kelas Virtual</a>
+    <a class="energy-button secondary" href="kelas-xi.html">Kembali ke Kelas XI</a>
   </section>
 
-  <div class="closing-quote">
+  <div class="energy-quote">
     “Pendapat menjadi bermakna ketika disertai alasan,
     dan keyakinan menjadi kuat ketika berpijak pada bukti.”
     <small>— MANDALA AKSARA</small>
   </div>
 
-  <p style="text-align:center;">
-    <a class="button secondary" href="kelas-xi.html">← Kembali ke Ruang Materi Kelas XI</a>
+  <p class="energy-back-link">
+    <a class="energy-button secondary" href="kelas-xi.html">← Kembali ke Ruang Materi Kelas XI</a>
   </p>
 
 </main>
+</div>
 
-<footer>
-  <p><strong>MANDALA AKSARA</strong></p>
-  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
-  <p>Ruang Literasi dan Pembelajaran Bahasa Indonesia</p>
-  <p>Dikelola Mandiri</p>
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+      <div class="footer-brand-copy">
+        <b>MANDALA AKSARA</b>
+        <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+        <span class="managed-label">Dikelola Mandiri</span>
+      </div>
+    </div>
+    <nav class="footer-links" aria-label="Navigasi footer">
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+    </nav>
+  </div>
+  <div class="copyright">
+    © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+  </div>
 </footer>
 
-<script>
-  const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('mainNav');
-
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      toggle.setAttribute(
-        'aria-expanded',
-        nav.classList.contains('open')
-      );
-    });
-  }
-
-  document.querySelectorAll('.nav-trigger').forEach(btn => {
-    btn.addEventListener('click', () => {
-      if (window.matchMedia('(max-width: 1050px)').matches) {
-        btn.parentElement.classList.toggle('expanded');
-      }
-    });
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
