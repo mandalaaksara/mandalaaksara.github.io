@@ -1,0 +1,2620 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materi Bahasa Indonesia Kelas XII tentang teks eksplanasi kompleks, kecerdasan artifisial, informasi implisit, gagasan utama, evaluasi informasi, model refleksi 5R, akurasi data, diskusi, dan konjungsi.">
+  <meta name="keywords" content="teks eksplanasi kompleks, kecerdasan artifisial, AI, Bahasa Indonesia kelas XII, informasi implisit, konjungsi">
+  <meta name="author" content="Mandala Aksara">
+
+  <title>BAB 4: Menerapkan Kecerdasan Artifisial dalam Kehidupan Modern | Mandala Aksara</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* =========================================
+       BAB 4 TEKS EKSPLANASI KOMPLEKS
+       MASTER TEMPLATE MANDALA AKSARA V1.0
+    ========================================= */
+
+    .eksplanasi-page {
+      --eks-navy: #142b4a;
+      --eks-orange: #e98b2a;
+      --eks-gold: #d9ad55;
+      --eks-text: #293548;
+      --eks-muted: #687587;
+      --eks-line: #e5e9ef;
+      --eks-soft: #f5f7fa;
+      color: var(--eks-text);
+      line-height: 1.8;
+    }
+
+    .eksplanasi-page * {
+      box-sizing: border-box;
+    }
+
+    .eks-hero {
+      position: relative;
+      overflow: hidden;
+      max-width: 1200px;
+      margin: 28px auto 30px;
+      padding: 48px 30px;
+      border-radius: 18px;
+      background: linear-gradient(120deg, #142b4a 0%, #203f65 72%, #315477 100%);
+      color: #fff;
+      box-shadow: 0 12px 30px rgba(20,43,74,.12);
+    }
+
+    .eks-hero::after {
+      content: "AI";
+      position: absolute;
+      right: 38px;
+      bottom: -55px;
+      color: rgba(255,255,255,.045);
+      font-family: Georgia, serif;
+      font-size: 210px;
+      font-weight: bold;
+      pointer-events: none;
+    }
+
+    .eks-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+    }
+
+    .eks-label {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 5px 13px;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 30px;
+      color: #ffe0a5;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .eks-hero h1 {
+      margin: 0 0 12px;
+      color: #fff;
+      font-family: Georgia, serif;
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      line-height: 1.25;
+    }
+
+    .eks-hero p {
+      max-width: 760px;
+      margin: 0;
+      color: #e8eef5;
+      font-size: 1rem;
+    }
+
+    .eks-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 22px;
+      margin-top: 22px;
+      color: #f5d9a7;
+      font-size: .88rem;
+    }
+
+    .eks-layout {
+      display: grid;
+      grid-template-columns: 270px minmax(0, 1fr);
+      gap: 28px;
+      max-width: 1200px;
+      margin: 0 auto 55px;
+      padding: 0 15px;
+      align-items: start;
+    }
+
+    .eks-sidebar {
+      position: sticky;
+      top: 20px;
+      padding: 22px 18px;
+      border: 1px solid var(--eks-line);
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 0 5px 20px rgba(20,43,74,.045);
+    }
+
+    .eks-sidebar h3 {
+      margin: 0 0 14px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--eks-orange);
+      color: var(--eks-navy);
+      font-size: 1rem;
+    }
+
+    .eks-sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .eks-sidebar nav a {
+      display: block;
+      padding: 9px 11px;
+      border-radius: 7px;
+      color: #46556a;
+      font-size: .9rem;
+      line-height: 1.45;
+      text-decoration: none;
+      transition: .2s ease;
+    }
+
+    .eks-sidebar nav a:hover,
+    .eks-sidebar nav a.active {
+      background: #fff3e5;
+      color: #a95c12;
+      font-weight: 700;
+    }
+
+    .eks-sidebar .sidebar-note {
+      margin-top: 18px;
+      padding: 13px;
+      border-left: 3px solid var(--eks-orange);
+      border-radius: 5px;
+      background: var(--eks-soft);
+      color: var(--eks-muted);
+      font-size: .82rem;
+      line-height: 1.6;
+    }
+
+    .eks-content {
+      min-width: 0;
+    }
+
+    .eks-section {
+      scroll-margin-top: 25px;
+      margin-bottom: 28px;
+      padding: 28px 30px;
+      border: 1px solid var(--eks-line);
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 0 5px 20px rgba(20,43,74,.035);
+    }
+
+    .eks-section h2 {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin: 0 0 20px;
+      color: var(--eks-navy);
+      font-family: Georgia, serif;
+      font-size: 1.55rem;
+      line-height: 1.35;
+    }
+
+    .eks-section h2 .number {
+      display: inline-flex;
+      flex: 0 0 38px;
+      width: 38px;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: var(--eks-navy);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: .95rem;
+    }
+
+    .eks-section h3 {
+      margin: 25px 0 10px;
+      color: #23466c;
+      font-size: 1.12rem;
+    }
+
+    .eks-section h4 {
+      margin: 18px 0 7px;
+      color: #344d69;
+      font-size: 1rem;
+    }
+
+    .eks-section p {
+      margin: 0 0 14px;
+    }
+
+    .eks-section ul,
+    .eks-section ol {
+      margin: 10px 0 18px;
+      padding-left: 23px;
+    }
+
+    .eks-section li {
+      margin-bottom: 8px;
+      padding-left: 3px;
+    }
+
+    .eks-lead {
+      color: #52647a;
+      font-size: 1.04rem;
+    }
+
+    .eks-callout {
+      margin: 20px 0;
+      padding: 17px 20px;
+      border-left: 4px solid var(--eks-orange);
+      border-radius: 8px;
+      background: #fff7ed;
+    }
+
+    .eks-callout strong {
+      color: #96510e;
+    }
+
+    .eks-example {
+      margin: 18px 0;
+      padding: 18px 20px;
+      border: 1px solid #e8edf3;
+      border-radius: 10px;
+      background: #f7f9fc;
+    }
+
+    .eks-example-title {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--eks-navy);
+      font-weight: 700;
+    }
+
+    .eks-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 18px 0;
+    }
+
+    .eks-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .92rem;
+    }
+
+    .eks-table th,
+    .eks-table td {
+      padding: 12px 14px;
+      border: 1px solid #e1e7ef;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .eks-table th {
+      background: #edf2f8;
+      color: var(--eks-navy);
+    }
+
+    .eks-step {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 13px;
+      margin: 17px 0;
+      align-items: start;
+    }
+
+    .eks-step-number {
+      display: flex;
+      width: 38px;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #fff0df;
+      color: #a65b13;
+      font-weight: 800;
+    }
+
+    .eks-step h4 {
+      margin: 0 0 5px;
+    }
+
+    .eks-step p {
+      margin: 0;
+    }
+
+    .eks-link {
+      color: #b76616;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .eks-link:hover {
+      color: var(--eks-navy);
+    }
+
+    .eks-quote {
+      margin: 30px 0;
+      padding: 25px;
+      border-radius: 12px;
+      background: linear-gradient(120deg, #f4f6f9, #fff8ed);
+      color: #394b61;
+      text-align: center;
+      font-family: Georgia, serif;
+      font-size: 1.12rem;
+      font-style: italic;
+    }
+
+    .eks-quote span {
+      display: block;
+      margin-top: 10px;
+      color: #a6631c;
+      font-family: Arial, sans-serif;
+      font-size: .85rem;
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .eks-activity {
+      border-top: 4px solid var(--eks-orange);
+    }
+
+    .eks-task {
+      margin: 18px 0;
+      padding: 18px 20px;
+      border: 1px solid var(--eks-line);
+      border-radius: 10px;
+      background: #fbfcfe;
+    }
+
+    .eks-task h3 {
+      margin-top: 0;
+    }
+
+    .eks-ref-list li {
+      overflow-wrap: anywhere;
+    }
+
+    .eks-bottom-nav {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 30px 0;
+    }
+
+    .eks-bottom-nav a {
+      display: inline-block;
+      padding: 10px 17px;
+      border-radius: 7px;
+      background: var(--eks-navy);
+      color: #fff;
+      font-size: .9rem;
+      text-decoration: none;
+      transition: .2s ease;
+    }
+
+    .eks-bottom-nav a:hover {
+      background: #e18425;
+    }
+
+    @media (max-width: 900px) {
+      .eks-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .eks-sidebar {
+        position: static;
+      }
+
+      .eks-sidebar nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5px 8px;
+      }
+
+      .eks-sidebar .sidebar-note {
+        margin-top: 12px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .eks-hero {
+        margin: 18px 12px 22px;
+        padding: 32px 22px;
+        border-radius: 13px;
+      }
+
+      .eks-hero::after {
+        right: 10px;
+        font-size: 135px;
+      }
+
+      .eks-layout {
+        padding: 0 12px;
+        gap: 18px;
+      }
+
+      .eks-sidebar {
+        padding: 17px 14px;
+      }
+
+      .eks-sidebar nav {
+        grid-template-columns: 1fr;
+      }
+
+      .eks-section {
+        padding: 22px 18px;
+        margin-bottom: 18px;
+      }
+
+      .eks-section h2 {
+        font-size: 1.3rem;
+      }
+
+      .eks-section h2 .number {
+        flex-basis: 34px;
+        width: 34px;
+        height: 34px;
+      }
+
+      .eks-bottom-nav {
+        flex-direction: column;
+      }
+
+      .eks-bottom-nav a {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="top-inner">
+      <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+      <div class="top-actions">
+        <form class="search" role="search" onsubmit="return searchSite(event)">
+          <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+          <button type="submit" aria-label="Cari">⌕</button>
+        </form>
+        <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+      <span class="brand-copy">
+        <strong>MANDALA AKSARA</strong>
+        <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nav-trigger" aria-haspopup="true">
+          Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
+        </button>
+        <div class="dropdown">
+          <a href="kelas-x.html">Kelas X</a>
+          <a href="kelas-xi.html">Kelas XI</a>
+          <a href="kelas-xii.html" class="active">Kelas XII</a>
+        </div>
+      </div>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
+
+  <main class="eksplanasi-page">
+
+    <!-- HERO -->
+    <section class="eks-hero">
+      <div class="eks-hero-content">
+        <span class="eks-label">Bahasa Indonesia · Kelas XII</span>
+        <h1>BAB 4: Menerapkan Kecerdasan Artifisial dalam Kehidupan Modern</h1>
+        <p>
+          Memahami fenomena kecerdasan artifisial melalui teks eksplanasi kompleks,
+          menilai informasi secara kritis, memeriksa keakuratan data, dan
+          menyampaikan gagasan dengan bahasa yang tepat.
+        </p>
+        <div class="eks-meta">
+          <span>📖 Materi: Teks Eksplanasi Kompleks</span>
+          <span>✦ Delapan bagian pembelajaran</span>
+          <span>🔎 Literasi informasi dan AI</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="eks-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="eks-sidebar">
+        <h3>Daftar Materi</h3>
+        <nav aria-label="Daftar isi materi">
+          <a href="#pengantar">Pengantar</a>
+          <a href="#pengertian">4.1 Pengertian dan Informasi Implisit</a>
+          <a href="#gagasan">4.2 Gagasan Utama dan Penjelas</a>
+          <a href="#evaluasi">4.3 Mengevaluasi Gagasan</a>
+          <a href="#refleksi">4.4 Refleksi Model 5R</a>
+          <a href="#struktur">4.5 Struktur, Kebahasaan, Gaya Bahasa, dan Tujuan</a>
+          <a href="#akurasi">4.6 Menganalisis Akurasi Data</a>
+          <a href="#diskusi">4.7 Diskusi dan Gelar Wicara</a>
+          <a href="#konjungsi">4.8 Konjungsi</a>
+          <a href="#aktivitas">Aktivitas Pembelajaran</a>
+          <a href="#rangkuman">Rangkuman</a>
+          <a href="#referensi">Referensi</a>
+        </nav>
+
+        <div class="sidebar-note">
+          <strong>Petunjuk belajar</strong><br>
+          Bacalah materi secara berurutan. Ketika menemukan informasi tentang
+          kecerdasan artifisial, biasakan bertanya: dari mana data itu berasal,
+          apakah masuk akal, dan bagaimana cara memeriksanya?
+        </div>
+      </aside>
+
+      <!-- KONTEN -->
+      <article class="eks-content">
+
+        <!-- PENGANTAR -->
+        <section class="eks-section" id="pengantar">
+          <h2>Pengantar: Memahami Kecerdasan Artifisial</h2>
+
+          <p class="eks-lead">
+            Kecerdasan artifisial atau <em>Artificial Intelligence</em> (AI)
+            semakin banyak digunakan dalam kehidupan modern. Teknologi ini
+            dapat membantu manusia mencari informasi, menerjemahkan bahasa,
+            mengenali gambar, menganalisis data, hingga menghasilkan teks.
+          </p>
+
+          <p>
+            Ketika menggunakan aplikasi penerjemah, asisten virtual, sistem
+            rekomendasi video, atau aplikasi yang dapat menjawab pertanyaan,
+            kita mungkin sedang berinteraksi dengan teknologi berbasis AI.
+            Kehadirannya membuat berbagai pekerjaan menjadi lebih mudah,
+            tetapi juga menimbulkan pertanyaan tentang ketepatan informasi,
+            keamanan data, dan tanggung jawab penggunanya.
+          </p>
+
+          <p>
+            Fenomena tersebut dapat dijelaskan melalui teks eksplanasi.
+            Teks ini membantu pembaca memahami bagaimana suatu fenomena
+            terjadi, apa penyebabnya, bagaimana prosesnya berlangsung,
+            serta apa akibat yang ditimbulkannya.
+          </p>
+
+          <div class="eks-callout">
+            <strong>Pertanyaan pemantik</strong>
+            <p>
+              Jika sebuah aplikasi AI memberikan jawaban yang terdengar
+              meyakinkan, apakah jawaban itu pasti benar? Bagaimana cara
+              kita membuktikan bahwa informasi tersebut dapat dipercaya?
+            </p>
+          </div>
+
+          <p>
+            Melalui bab ini, kita tidak hanya belajar memahami teks
+            eksplanasi kompleks, tetapi juga berlatih menjadi pembaca
+            yang kritis. Kita akan mempelajari cara menemukan gagasan,
+            menilai kekuatan argumen, memeriksa data, melakukan refleksi,
+            dan menyampaikan pendapat dalam diskusi.
+          </p>
+        </section>
+
+        <!-- 4.1 -->
+        <section class="eks-section" id="pengertian">
+          <h2><span class="number">4.1</span> Pengertian dan Informasi Implisit</h2>
+
+          <h3>A. Pengertian Teks Eksplanasi Kompleks</h3>
+
+          <p>
+            Teks eksplanasi adalah teks yang menjelaskan bagaimana atau
+            mengapa suatu fenomena terjadi. Fenomena yang dibahas dapat
+            berupa fenomena alam, sosial, budaya, maupun perkembangan
+            ilmu pengetahuan dan teknologi.
+          </p>
+
+          <p>
+            Teks eksplanasi kompleks merupakan teks yang membahas
+            fenomena melalui proses penjelasan yang lebih mendalam.
+            Hubungan sebab-akibatnya dapat melibatkan beberapa faktor
+            yang saling berkaitan. Pembaca tidak hanya diberi tahu
+            bahwa suatu peristiwa terjadi, tetapi juga diajak memahami
+            penyebab, proses, hubungan antarfaktor, dan dampaknya.
+          </p>
+
+          <p>
+            Dalam pembahasan teks eksplanasi, Emilia (2012) menjadi
+            salah satu rujukan yang digunakan untuk memahami penjelasan
+            fenomena secara lebih mendalam. Kompleksitas suatu teks
+            dapat terlihat dari banyaknya faktor yang dibahas dan
+            hubungan di antara faktor-faktor tersebut.
+          </p>
+
+          <h3>B. Perbedaan Eksplanasi Sederhana dan Kompleks</h3>
+
+          <div class="eks-table-wrap">
+            <table class="eks-table">
+              <thead>
+                <tr>
+                  <th>Aspek</th>
+                  <th>Eksplanasi Sederhana</th>
+                  <th>Eksplanasi Kompleks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Penjelasan</td>
+                  <td>Menjelaskan proses atau penyebab secara relatif sederhana.</td>
+                  <td>Menjelaskan fenomena melalui beberapa faktor yang saling berkaitan.</td>
+                </tr>
+                <tr>
+                  <td>Hubungan sebab-akibat</td>
+                  <td>Cenderung lebih langsung dan mudah diikuti.</td>
+                  <td>Dapat melibatkan sebab-akibat berlapis.</td>
+                </tr>
+                <tr>
+                  <td>Kedalaman pembahasan</td>
+                  <td>Berfokus pada informasi pokok.</td>
+                  <td>Dapat mencakup analisis, data, dampak, dan hubungan antarfaktor.</td>
+                </tr>
+                <tr>
+                  <td>Contoh topik</td>
+                  <td>Proses terjadinya hujan.</td>
+                  <td>Pengaruh perkembangan AI terhadap pendidikan, pekerjaan, dan kehidupan sosial.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Perbedaan tersebut terutama terletak pada kedalaman dan
+            kerumitan penjelasannya. Keduanya tetap bertujuan memberikan
+            pemahaman mengenai suatu fenomena.
+          </p>
+
+          <h3>C. Memahami Hubungan Sebab-Akibat Berlapis</h3>
+
+          <p>
+            Dalam teks eksplanasi kompleks, sebuah fenomena dapat
+            dipengaruhi oleh beberapa penyebab. Penyebab tersebut
+            dapat saling berhubungan dan menghasilkan dampak yang
+            berbeda-beda.
+          </p>
+
+          <div class="eks-example">
+            <span class="eks-example-title">Contoh: Penggunaan AI dalam pendidikan</span>
+            <p>
+              Perkembangan teknologi komputer dan pengolahan data
+              memungkinkan terciptanya sistem AI yang semakin canggih.
+              Sistem tersebut dapat membantu mengolah informasi dan
+              memberikan respons berdasarkan data yang diproses.
+            </p>
+            <p>
+              Dalam pendidikan, AI dapat membantu siswa mencari
+              penjelasan tambahan dan membantu guru menyiapkan bahan
+              pembelajaran. Namun, jika jawaban AI diterima tanpa
+              pemeriksaan, siswa dapat memperoleh informasi yang
+              keliru atau menjadi terlalu bergantung pada teknologi.
+            </p>
+            <p>
+              Dengan demikian, manfaat AI dalam pendidikan tidak
+              hanya dipengaruhi oleh kemampuan teknologinya, tetapi
+              juga oleh cara manusia menggunakannya.
+            </p>
+          </div>
+
+          <p>
+            Dari contoh tersebut, kita dapat melihat bahwa satu
+            perkembangan teknologi dapat membawa manfaat sekaligus
+            tantangan. Penjelasan yang baik perlu menunjukkan hubungan
+            antara perkembangan teknologi, cara penggunaan, dan
+            akibat yang muncul.
+          </p>
+
+          <h3>D. Pengertian Informasi Implisit</h3>
+
+          <p>
+            Informasi implisit adalah informasi yang tidak disampaikan
+            secara langsung dalam teks, tetapi dapat dipahami melalui
+            petunjuk yang tersedia. Pembaca perlu menafsirkan makna
+            berdasarkan konteks, pilihan kata, nada penyampaian,
+            hubungan antarkalimat, atau keadaan yang digambarkan.
+          </p>
+
+          <p>
+            Informasi implisit berbeda dengan informasi eksplisit.
+            Informasi eksplisit dinyatakan secara langsung sehingga
+            pembaca dapat menemukannya dengan membaca kalimat yang
+            bersangkutan. Sementara itu, informasi implisit perlu
+            disimpulkan.
+          </p>
+
+          <div class="eks-table-wrap">
+            <table class="eks-table">
+              <thead>
+                <tr>
+                  <th>Jenis Informasi</th>
+                  <th>Pengertian</th>
+                  <th>Contoh</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Eksplisit</td>
+                  <td>Disampaikan secara langsung dalam teks.</td>
+                  <td>“AI dapat membantu pengguna menyusun draf tulisan.”</td>
+                </tr>
+                <tr>
+                  <td>Implisit</td>
+                  <td>Tidak dinyatakan langsung, tetapi dapat disimpulkan dari konteks.</td>
+                  <td>“Ia menyerahkan seluruh tugas kepada aplikasi dan tidak membaca kembali hasilnya.”</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Dari contoh informasi implisit tersebut, pembaca dapat
+            menyimpulkan bahwa tokoh terlalu bergantung pada aplikasi
+            dan kurang melakukan pemeriksaan terhadap hasil pekerjaan.
+            Kesimpulan itu tidak ditulis secara langsung, tetapi
+            didukung oleh tindakan tokoh.
+          </p>
+
+          <h3>E. Cara Menemukan Informasi Implisit</h3>
+
+          <ol>
+            <li>
+              <strong>Perhatikan pilihan kata.</strong>
+              Kata-kata tertentu dapat menunjukkan sikap penulis,
+              misalnya kata yang bernada khawatir, optimistis,
+              kritis, atau menyindir.
+            </li>
+            <li>
+              <strong>Perhatikan konteks kalimat.</strong>
+              Jangan menafsirkan satu kalimat secara terpisah.
+              Hubungkan dengan kalimat sebelum dan sesudahnya.
+            </li>
+            <li>
+              <strong>Amati hubungan sebab-akibat.</strong>
+              Dampak yang disebutkan dapat memberikan petunjuk
+              mengenai persoalan yang sebenarnya sedang dibahas.
+            </li>
+            <li>
+              <strong>Bedakan fakta dan penafsiran.</strong>
+              Pastikan kesimpulan memiliki dasar berupa informasi
+              yang benar-benar terdapat dalam teks.
+            </li>
+          </ol>
+
+          <div class="eks-callout">
+            <strong>Hal penting</strong>
+            <p>
+              Menyimpulkan informasi implisit bukan berarti bebas
+              menebak maksud penulis. Kesimpulan harus didukung
+              petunjuk yang terdapat dalam teks.
+            </p>
+          </div>
+        </section>
+
+        <!-- 4.2 -->
+        <section class="eks-section" id="gagasan">
+          <h2><span class="number">4.2</span> Gagasan Utama dan Gagasan Penjelas</h2>
+
+          <h3>A. Pengertian Gagasan Utama</h3>
+
+          <p>
+            Gagasan utama adalah ide pokok yang menjadi dasar pembahasan
+            dalam sebuah paragraf. Gagasan utama menunjukkan hal yang
+            paling penting yang ingin disampaikan penulis.
+          </p>
+
+          <p>
+            Dalam sebuah teks, gagasan utama dapat ditemukan dengan
+            memperhatikan judul, subjudul, kata kunci, dan kalimat
+            utama setiap paragraf. Namun, judul hanya memberikan
+            petunjuk mengenai topik. Untuk menemukan gagasan utama
+            secara tepat, kita tetap perlu membaca isi paragraf.
+          </p>
+
+          <h3>B. Gagasan Penjelas</h3>
+
+          <p>
+            Gagasan penjelas adalah ide atau informasi yang mendukung
+            gagasan utama. Gagasan penjelas dapat berupa alasan,
+            contoh, data, uraian proses, akibat, perbandingan,
+            atau keterangan tambahan.
+          </p>
+
+          <div class="eks-example">
+            <span class="eks-example-title">Contoh paragraf</span>
+            <p>
+              Kecerdasan artifisial dapat membantu proses pembelajaran
+              di sekolah. Siswa dapat menggunakannya untuk memperoleh
+              penjelasan tambahan mengenai materi yang belum dipahami.
+              Guru juga dapat memanfaatkannya untuk menyusun bahan
+              ajar dan merancang kegiatan belajar. Meskipun demikian,
+              informasi yang dihasilkan AI tetap perlu diperiksa
+              agar tidak terjadi kesalahan pemahaman.
+            </p>
+            <p>
+              <strong>Gagasan utama:</strong> AI dapat membantu proses
+              pembelajaran di sekolah.
+            </p>
+            <p>
+              <strong>Gagasan penjelas:</strong> AI membantu siswa
+              memahami materi, membantu guru menyiapkan bahan ajar,
+              dan tetap memerlukan pemeriksaan informasi.
+            </p>
+          </div>
+
+          <h3>C. Jenis Paragraf Berdasarkan Letak Gagasan Utama</h3>
+
+          <p>
+            Berdasarkan letak kalimat utamanya, paragraf dapat
+            dibedakan menjadi paragraf deduktif, induktif, dan campuran.
+          </p>
+
+          <div class="eks-step">
+            <div class="eks-step-number">1</div>
+            <div>
+              <h4>Paragraf deduktif</h4>
+              <p>
+                Paragraf deduktif menempatkan gagasan utama di awal
+                paragraf. Kalimat berikutnya berfungsi menjelaskan,
+                memberikan alasan, atau menyertakan contoh.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Penggunaan AI dalam pembelajaran memerlukan sikap
+                kritis dari siswa. Jawaban yang dihasilkan teknologi
+                tersebut belum tentu selalu tepat. Siswa perlu
+                membandingkan informasi dengan buku, artikel ilmiah,
+                atau sumber tepercaya lainnya.
+                <br><br>
+                <strong>Gagasan utama:</strong> Penggunaan AI dalam
+                pembelajaran memerlukan sikap kritis dari siswa.
+              </div>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">2</div>
+            <div>
+              <h4>Paragraf induktif</h4>
+              <p>
+                Paragraf induktif menempatkan gagasan utama di akhir
+                paragraf. Kalimat-kalimat awal berisi uraian, contoh,
+                atau fakta yang mengarah pada kesimpulan.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Siswa dapat menggunakan AI untuk mencari penjelasan
+                tambahan. Guru dapat memanfaatkannya untuk menyiapkan
+                bahan pembelajaran. Peneliti juga dapat menggunakannya
+                untuk membantu mengolah informasi. Berbagai contoh
+                tersebut menunjukkan bahwa AI dapat dimanfaatkan
+                dalam berbagai kegiatan pendidikan.
+                <br><br>
+                <strong>Gagasan utama:</strong> AI dapat dimanfaatkan
+                dalam berbagai kegiatan pendidikan.
+              </div>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">3</div>
+            <div>
+              <h4>Paragraf campuran</h4>
+              <p>
+                Paragraf campuran menempatkan gagasan utama di awal
+                dan menegaskannya kembali di akhir paragraf dengan
+                susunan kalimat yang dapat berbeda.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Penggunaan AI harus disertai tanggung jawab.
+                Pengguna perlu memahami tujuan pemakaiannya,
+                memeriksa kebenaran informasi, dan menjaga data
+                pribadi. Oleh sebab itu, pemanfaatan AI yang
+                bertanggung jawab menjadi hal penting dalam
+                kehidupan modern.
+                <br><br>
+                <strong>Gagasan utama:</strong> Penggunaan AI harus
+                disertai tanggung jawab.
+              </div>
+            </div>
+          </div>
+
+          <h3>D. Langkah Menentukan Gagasan Utama</h3>
+
+          <ol>
+            <li>Baca seluruh paragraf sampai selesai.</li>
+            <li>Tentukan topik yang paling banyak dibahas.</li>
+            <li>Temukan kalimat yang memuat inti pembahasan.</li>
+            <li>Periksa kalimat lain untuk mengetahui informasi pendukungnya.</li>
+            <li>Rumuskan gagasan utama dengan kalimat sendiri tanpa mengubah makna.</li>
+          </ol>
+
+          <div class="eks-callout">
+            <strong>Ingat!</strong>
+            <p>
+              Gagasan utama tidak selalu sama dengan kalimat pertama.
+              Pada paragraf induktif, gagasan utama berada di akhir.
+              Pada paragraf campuran, gagasan utama ditegaskan di awal
+              dan kembali ditekankan pada bagian akhir.
+            </p>
+          </div>
+        </section>
+
+        <!-- 4.3 -->
+        <section class="eks-section" id="evaluasi">
+          <h2><span class="number">4.3</span> Mengevaluasi Gagasan</h2>
+
+          <h3>A. Mengapa Gagasan Perlu Dievaluasi?</h3>
+
+          <p>
+            Ketika membaca teks tentang teknologi, kita akan menemukan
+            berbagai pernyataan, pendapat, alasan, dan data. Tidak semua
+            informasi memiliki kekuatan yang sama. Ada pernyataan yang
+            didukung bukti kuat, ada yang hanya berupa pendapat,
+            dan ada pula yang tidak sesuai dengan fakta.
+          </p>
+
+          <p>
+            Mengevaluasi gagasan berarti menilai apakah suatu gagasan
+            disampaikan dengan alasan yang masuk akal, didukung
+            informasi yang akurat, dan sesuai dengan topik yang dibahas.
+          </p>
+
+          <h3>B. Tiga Aspek Evaluasi Gagasan</h3>
+
+          <div class="eks-table-wrap">
+            <table class="eks-table">
+              <thead>
+                <tr>
+                  <th>Aspek</th>
+                  <th>Kategori</th>
+                  <th>Pertanyaan Penilaian</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kekuatan argumen</td>
+                  <td>Kuat, sedang, lemah</td>
+                  <td>Apakah alasan dan bukti yang digunakan cukup mendukung pendapat?</td>
+                </tr>
+                <tr>
+                  <td>Keakuratan informasi</td>
+                  <td>Tepat, tidak tepat</td>
+                  <td>Apakah informasi sesuai dengan fakta dan sumber yang dapat dipercaya?</td>
+                </tr>
+                <tr>
+                  <td>Relevansi</td>
+                  <td>Relevan, tidak relevan</td>
+                  <td>Apakah informasi berhubungan langsung dengan topik pembahasan?</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>C. Menilai Kekuatan Argumen</h3>
+
+          <p>
+            Argumen adalah alasan atau penjelasan yang digunakan untuk
+            mendukung suatu pendapat. Argumen yang baik tidak hanya
+            menyampaikan keyakinan penulis, tetapi juga memberikan
+            alasan dan bukti yang dapat diperiksa.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Kuat:</strong> pendapat didukung alasan yang jelas,
+              bukti yang relevan, dan sumber yang dapat dipercaya.
+            </li>
+            <li>
+              <strong>Sedang:</strong> pendapat memiliki alasan yang masuk
+              akal, tetapi bukti atau penjelasannya masih terbatas.
+            </li>
+            <li>
+              <strong>Lemah:</strong> pendapat hanya didasarkan pada
+              dugaan, perasaan, atau pernyataan tanpa bukti yang memadai.
+            </li>
+          </ul>
+
+          <div class="eks-example">
+            <span class="eks-example-title">Contoh penilaian argumen</span>
+            <p>
+              <strong>Pernyataan:</strong> AI dapat membantu siswa
+              memahami materi pelajaran.
+            </p>
+            <p>
+              <strong>Argumen lemah:</strong> AI pasti membuat semua
+              siswa menjadi lebih pintar karena teknologinya canggih.
+            </p>
+            <p>
+              <strong>Argumen lebih kuat:</strong> AI dapat memberikan
+              penjelasan tambahan dan contoh sesuai pertanyaan siswa.
+              Namun, manfaat tersebut bergantung pada ketepatan
+              informasi dan kemampuan siswa memeriksa jawabannya.
+            </p>
+          </div>
+
+          <h3>D. Menilai Keakuratan Informasi</h3>
+
+          <p>
+            Informasi yang akurat adalah informasi yang sesuai dengan
+            fakta dan didukung bukti yang dapat diperiksa. Untuk
+            menilainya, kita perlu memperhatikan sumber informasi,
+            tanggal penerbitan, data yang digunakan, serta kesesuaian
+            antara pernyataan dan bukti.
+          </p>
+
+          <p>
+            Jangan langsung menerima suatu pernyataan hanya karena
+            disampaikan dengan bahasa yang meyakinkan, menggunakan
+            angka, atau berasal dari aplikasi AI. Periksa apakah
+            sumbernya jelas dan apakah informasi tersebut dapat
+            ditemukan pada sumber lain yang tepercaya.
+          </p>
+
+          <h3>E. Menilai Relevansi Informasi</h3>
+
+          <p>
+            Informasi dikatakan relevan apabila berhubungan dengan
+            topik atau persoalan yang sedang dibahas. Informasi yang
+            benar belum tentu relevan jika tidak membantu menjelaskan
+            gagasan utama.
+          </p>
+
+          <div class="eks-example">
+            <span class="eks-example-title">Contoh</span>
+            <p>
+              Topik: Penggunaan AI dalam kegiatan pembelajaran.
+            </p>
+            <ul>
+              <li>
+                Informasi tentang AI yang membantu siswa memahami
+                materi merupakan informasi relevan.
+              </li>
+              <li>
+                Informasi tentang sejarah penemuan telepon, jika
+                tidak dihubungkan dengan pembahasan AI dalam
+                pembelajaran, merupakan informasi yang tidak relevan.
+              </li>
+            </ul>
+          </div>
+
+          <div class="eks-callout">
+            <strong>Kesimpulan</strong>
+            <p>
+              Ketika mengevaluasi gagasan, jangan hanya bertanya
+              apakah pernyataan itu menarik. Periksa kekuatan
+              alasannya, kebenaran informasinya, dan hubungannya
+              dengan topik yang dibahas.
+            </p>
+          </div>
+        </section>
+
+        <!-- 4.4 -->
+        <section class="eks-section" id="refleksi">
+          <h2><span class="number">4.4</span> Refleksi dengan Model 5R</h2>
+
+          <h3>A. Pengertian Refleksi</h3>
+
+          <p>
+            Refleksi adalah kegiatan memikirkan kembali informasi,
+            pengalaman, atau kegiatan yang telah dilakukan untuk
+            memperoleh pemahaman yang lebih baik. Melalui refleksi,
+            seseorang tidak hanya mengingat apa yang terjadi,
+            tetapi juga menilai makna dan manfaatnya.
+          </p>
+
+          <p>
+            Dalam pembelajaran teks eksplanasi kompleks, refleksi
+            membantu siswa memahami isi bacaan, menghubungkannya
+            dengan pengalaman, memberikan penilaian, dan menyusun
+            gagasan baru.
+          </p>
+
+          <h3>B. Lima Tahap Model 5R</h3>
+
+          <div class="eks-step">
+            <div class="eks-step-number">1</div>
+            <div>
+              <h4>Reporting – Melaporkan</h4>
+              <p>
+                Menyampaikan kembali isi teks atau pengalaman secara
+                objektif. Pada tahap ini, kita menjelaskan apa yang
+                dibahas tanpa terlebih dahulu memberikan penilaian pribadi.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Teks membahas penggunaan AI dalam pendidikan,
+                manfaatnya untuk membantu pembelajaran, serta
+                risiko informasi yang tidak akurat.
+              </div>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">2</div>
+            <div>
+              <h4>Responding – Menanggapi</h4>
+              <p>
+                Menyampaikan tanggapan atau reaksi pribadi terhadap
+                isi teks. Kita dapat menjelaskan bagian yang menarik,
+                mengejutkan, mengkhawatirkan, atau menimbulkan pertanyaan.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Saya tertarik dengan kemampuan AI membantu siswa,
+                tetapi saya juga khawatir jika pengguna terlalu
+                bergantung pada jawabannya.
+              </div>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">3</div>
+            <div>
+              <h4>Relating – Mengaitkan</h4>
+              <p>
+                Menghubungkan isi teks dengan pengalaman pribadi,
+                pengetahuan sebelumnya, atau keadaan di lingkungan sekitar.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Saya pernah menggunakan AI untuk mencari penjelasan
+                materi pelajaran. Pengalaman itu membuat saya menyadari
+                bahwa jawaban yang diperoleh tetap perlu dibandingkan
+                dengan buku atau sumber pembelajaran lainnya.
+              </div>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">4</div>
+            <div>
+              <h4>Reasoning – Memberikan Alasan</h4>
+              <p>
+                Menjelaskan alasan dan penilaian secara logis.
+                Pada tahap ini, kita tidak cukup mengatakan setuju
+                atau tidak setuju, tetapi perlu memberikan dasar
+                yang dapat dipahami.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Informasi dari AI perlu diperiksa karena sistem
+                tersebut dapat menghasilkan jawaban yang keliru.
+                Pemeriksaan membantu pengguna mengurangi risiko
+                menyebarkan informasi yang tidak benar.
+              </div>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">5</div>
+            <div>
+              <h4>Reconstructing – Membangun Kembali</h4>
+              <p>
+                Menyusun pemahaman baru, perbaikan, atau saran
+                berdasarkan hasil refleksi. Tahap ini menunjukkan
+                bagaimana seseorang akan bertindak setelah memperoleh
+                pemahaman yang lebih baik.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Saya akan menggunakan AI sebagai alat bantu belajar,
+                bukan sebagai pengganti proses berpikir. Setiap
+                informasi penting akan saya periksa melalui sumber
+                yang dapat dipercaya.
+              </div>
+            </div>
+          </div>
+
+          <h3>C. Contoh Refleksi 5R secara Utuh</h3>
+
+          <div class="eks-example">
+            <p><strong>Reporting:</strong> Teks menjelaskan bahwa AI
+              dapat membantu kegiatan pembelajaran, tetapi hasilnya
+              tetap perlu diperiksa.</p>
+
+            <p><strong>Responding:</strong> Saya merasa teknologi
+              tersebut bermanfaat, tetapi penggunaannya harus
+              dilakukan secara bijak.</p>
+
+            <p><strong>Relating:</strong> Saya pernah menggunakan AI
+              untuk mencari penjelasan tugas dan menemukan bahwa
+              beberapa informasi perlu diperiksa kembali.</p>
+
+            <p><strong>Reasoning:</strong> Pemeriksaan diperlukan
+              karena jawaban AI tidak selalu benar dan dapat
+              dipengaruhi oleh keterbatasan data atau konteks pertanyaan.</p>
+
+            <p><strong>Reconstructing:</strong> Ke depan, saya akan
+              membandingkan jawaban AI dengan buku, artikel,
+              atau sumber resmi sebelum menggunakannya.</p>
+          </div>
+
+          <div class="eks-callout">
+            <strong>Perbedaan setiap tahap</strong>
+            <p>
+              Reporting menjelaskan apa yang dibahas. Responding
+              menyampaikan reaksi pribadi. Relating menghubungkan
+              dengan pengalaman. Reasoning memberikan alasan logis.
+              Reconstructing menghasilkan pemahaman atau tindakan baru.
+            </p>
+          </div>
+        </section>
+
+        <!-- 4.5 -->
+        <section class="eks-section" id="struktur">
+          <h2><span class="number">4.5</span> Struktur, Kebahasaan, Gaya Bahasa, dan Tujuan</h2>
+
+          <h3>A. Struktur Teks Eksplanasi</h3>
+
+          <p>
+            Teks eksplanasi umumnya disusun dengan struktur yang
+            membantu pembaca memahami fenomena secara bertahap.
+            Struktur yang sering digunakan meliputi pernyataan umum,
+            deretan penjelas, dan interpretasi atau penegasan ulang.
+          </p>
+
+          <div class="eks-step">
+            <div class="eks-step-number">1</div>
+            <div>
+              <h4>Pernyataan umum</h4>
+              <p>
+                Bagian pembuka yang memperkenalkan fenomena yang
+                akan dijelaskan. Bagian ini memberikan gambaran
+                umum mengenai topik dan batas pembahasannya.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Kecerdasan artifisial merupakan teknologi yang
+                memungkinkan sistem komputer melakukan tugas
+                tertentu yang biasanya memerlukan kemampuan
+                manusia, seperti mengenali pola dan mengolah bahasa.
+              </div>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">2</div>
+            <div>
+              <h4>Deretan penjelas</h4>
+              <p>
+                Bagian yang menjelaskan proses terjadinya fenomena,
+                faktor penyebab, hubungan sebab-akibat, serta
+                dampak yang ditimbulkan. Bagian ini biasanya
+                menjadi bagian paling panjang dalam teks.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Sistem AI mengolah data melalui metode komputasi
+                tertentu. Hasil pengolahan tersebut digunakan
+                untuk mengenali pola dan menghasilkan keluaran
+                berdasarkan masukan yang diberikan pengguna.
+                Kemampuan tersebut dapat dimanfaatkan dalam
+                berbagai bidang, termasuk pendidikan dan kesehatan.
+              </div>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">3</div>
+            <div>
+              <h4>Interpretasi atau penegasan ulang</h4>
+              <p>
+                Bagian penutup yang dapat berisi kesimpulan,
+                tanggapan umum, atau penegasan mengenai fenomena
+                yang telah dijelaskan.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh:</strong><br>
+                Dengan demikian, AI memiliki potensi untuk membantu
+                berbagai kegiatan manusia. Namun, pemanfaatannya
+                perlu disertai pemahaman, pengawasan, dan tanggung jawab.
+              </div>
+            </div>
+          </div>
+
+          <div class="eks-callout">
+            <strong>Catatan penting tentang interpretasi</strong>
+            <p>
+              Interpretasi tidak selalu harus ada dalam setiap
+              teks eksplanasi. Ada teks yang berakhir setelah
+              deretan penjelas. Namun, bagian interpretasi sering
+              digunakan untuk menegaskan kembali atau menyimpulkan
+              dampak dari fenomena yang telah dibahas.
+            </p>
+          </div>
+
+          <h3>B. Ciri Kebahasaan Teks Eksplanasi</h3>
+
+          <p>
+            Teks eksplanasi menggunakan bahasa yang membantu pembaca
+            memahami fenomena secara jelas. Beberapa ciri kebahasaannya
+            adalah sebagai berikut.
+          </p>
+
+          <h4>1. Menggunakan kalimat pasif</h4>
+
+          <p>
+            Kalimat pasif menempatkan sesuatu yang dikenai tindakan
+            sebagai fokus kalimat. Bentuk ini sering digunakan
+            ketika penulis lebih menekankan proses atau objek
+            daripada pelaku.
+          </p>
+
+          <div class="eks-example">
+            <strong>Contoh:</strong><br>
+            Data pengguna <strong>diolah</strong> oleh sistem
+            untuk menghasilkan keluaran tertentu.
+            <br><br>
+            Kata <em>diolah</em> menunjukkan bentuk pasif.
+          </div>
+
+          <h4>2. Menggunakan konjungsi kausalitas</h4>
+
+          <p>
+            Konjungsi kausalitas adalah kata penghubung yang
+            menunjukkan hubungan sebab dan akibat. Contohnya
+            adalah karena, sebab, sehingga, akibatnya, dan oleh
+            karena itu.
+          </p>
+
+          <div class="eks-example">
+            <strong>Contoh:</strong><br>
+            Sistem AI memerlukan data dalam proses pembelajaran
+            sehingga kualitas data dapat memengaruhi hasilnya.
+          </div>
+
+          <h4>3. Menggunakan istilah teknis atau ilmiah</h4>
+
+          <p>
+            Istilah teknis digunakan untuk menjelaskan konsep
+            tertentu secara lebih tepat. Dalam pembahasan AI,
+            istilah yang dapat ditemukan antara lain:
+          </p>
+
+          <ul>
+            <li>
+              <strong>Algoritma:</strong> langkah atau prosedur
+              sistematis untuk menyelesaikan suatu masalah.
+            </li>
+            <li>
+              <strong>Data:</strong> kumpulan fakta atau keterangan
+              yang dapat diolah menjadi informasi.
+            </li>
+            <li>
+              <strong>Model AI:</strong> sistem yang dibangun
+              melalui proses pengembangan dan pelatihan untuk
+              menjalankan tugas tertentu.
+            </li>
+            <li>
+              <strong>Machine learning:</strong> pendekatan
+              pengembangan sistem yang memungkinkan komputer
+              mempelajari pola dari data.
+            </li>
+            <li>
+              <strong>Generative AI:</strong> jenis AI yang
+              dapat menghasilkan konten baru, misalnya teks,
+              gambar, atau suara.
+            </li>
+          </ul>
+
+          <h4>4. Berfokus pada fenomena umum</h4>
+
+          <p>
+            Teks eksplanasi umumnya membahas fenomena atau proses
+            secara umum, bukan sekadar menceritakan pengalaman
+            pribadi seseorang. Penjelasannya diarahkan pada
+            bagaimana atau mengapa fenomena tersebut terjadi.
+          </p>
+
+          <h3>C. Gaya Bahasa Teks Eksplanasi</h3>
+
+          <p>
+            Gaya bahasa adalah cara penulis menyampaikan informasi
+            kepada pembaca. Dalam teks eksplanasi, gaya bahasa
+            umumnya bersifat objektif, informatif, dan jelas.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Objektif dan informatif:</strong>
+              mengutamakan informasi yang dapat diperiksa,
+              bukan sekadar perasaan atau pendapat pribadi.
+            </li>
+            <li>
+              <strong>Langsung dan semiformal:</strong>
+              menggunakan kalimat yang jelas, teratur, dan
+              sesuai dengan konteks pembahasan.
+            </li>
+            <li>
+              <strong>Menggunakan istilah teknis:</strong>
+              memilih istilah yang sesuai dengan bidang
+              fenomena yang dibahas.
+            </li>
+            <li>
+              <strong>Menggunakan perbandingan atau analogi:</strong>
+              membantu pembaca memahami konsep yang sulit
+              melalui contoh yang lebih dekat dengan kehidupan.
+            </li>
+            <li>
+              <strong>Menggunakan pertanyaan retoris:</strong>
+              pertanyaan yang tidak selalu membutuhkan jawaban
+              langsung, tetapi digunakan untuk mengajak pembaca
+              memikirkan suatu persoalan.
+            </li>
+          </ul>
+
+          <div class="eks-example">
+            <span class="eks-example-title">Contoh perbandingan atau analogi</span>
+            Proses kerja model AI dapat dianalogikan seperti
+            seseorang yang belajar mengenali pola dari banyak
+            contoh. Semakin baik contoh dan proses pembelajarannya,
+            semakin besar peluang sistem mengenali pola yang sesuai.
+            <br><br>
+            Analogi tersebut membantu pembaca memahami konsep,
+            tetapi bukan berarti cara kerja AI sama persis dengan
+            cara manusia belajar.
+          </div>
+
+          <div class="eks-example">
+            <span class="eks-example-title">Contoh pertanyaan retoris</span>
+            Jika teknologi dapat membantu manusia memperoleh
+            informasi dengan cepat, bukankah kita juga perlu
+            memastikan bahwa informasi tersebut benar?
+          </div>
+
+          <h3>D. Tujuan Teks Eksplanasi</h3>
+
+          <p>
+            Teks eksplanasi bertujuan memberikan pemahaman
+            mengenai suatu fenomena melalui penjelasan yang
+            teratur. Dalam pembahasan yang merujuk pada Emilia
+            (2011), tujuan teks eksplanasi juga dapat dikaitkan
+            dengan penyampaian informasi, pengembangan pemikiran
+            kritis, dan peningkatan kesadaran terhadap isu di sekitar.
+          </p>
+
+          <ol>
+            <li>
+              <strong>Menyampaikan informasi dan fakta.</strong>
+              Pembaca memperoleh penjelasan mengenai suatu
+              fenomena berdasarkan informasi yang dapat diperiksa.
+            </li>
+            <li>
+              <strong>Mengajak berpikir kritis.</strong>
+              Pembaca didorong memahami hubungan sebab-akibat,
+              membandingkan informasi, dan menilai suatu persoalan.
+            </li>
+            <li>
+              <strong>Menumbuhkan kesadaran.</strong>
+              Pembaca dapat memahami dampak suatu fenomena
+              dan mempertimbangkan sikap yang tepat dalam
+              kehidupan sehari-hari.
+            </li>
+          </ol>
+        </section>
+
+        <!-- 4.6 -->
+        <section class="eks-section" id="akurasi">
+          <h2><span class="number">4.6</span> Menganalisis Akurasi Data</h2>
+
+          <h3>A. Mengapa Data Perlu Diperiksa?</h3>
+
+          <p>
+            Dalam teks eksplanasi, data dapat digunakan untuk
+            memperkuat penjelasan. Data membantu pembaca memahami
+            besarnya suatu fenomena, perubahan yang terjadi,
+            atau hubungan antara beberapa faktor.
+          </p>
+
+          <p>
+            Namun, tidak semua data yang ditemukan di internet
+            dapat langsung dipercaya. Informasi dapat keliru,
+            tidak lengkap, sudah kedaluwarsa, atau disajikan
+            tanpa konteks yang memadai.
+          </p>
+
+          <p>
+            Hal yang sama berlaku pada informasi yang dihasilkan
+            AI. Sistem AI dapat memberikan jawaban yang tampak
+            meyakinkan, tetapi tetap mungkin menghasilkan
+            informasi yang salah, tidak tepat, atau tidak
+            didukung sumber yang jelas.
+          </p>
+
+          <h3>B. Verifikasi Menggunakan Beberapa Sumber</h3>
+
+          <p>
+            Salah satu cara melatih sikap kritis adalah
+            membandingkan informasi dari beberapa sumber
+            yang berbeda. Dalam kegiatan pembelajaran ini,
+            siswa diarahkan menggunakan:
+          </p>
+
+          <ul>
+            <li><strong>Minimal tiga jenis atau layanan AI</strong> untuk memperoleh pembanding jawaban.</li>
+            <li><strong>Minimal dua sumber non-AI</strong> untuk memeriksa informasi melalui dokumen atau publikasi yang dapat ditelusuri.</li>
+          </ul>
+
+          <p>
+            Sumber non-AI dapat berupa artikel koran, laporan
+            lembaga resmi, publikasi organisasi internasional,
+            artikel ilmiah, buku, atau hasil penelusuran
+            literatur akademik seperti Google Scholar.
+          </p>
+
+          <div class="eks-callout">
+            <strong>Tujuan penggunaan beberapa sumber</strong>
+            <p>
+              Membandingkan lima sumber membantu kita melihat
+              apakah suatu informasi konsisten atau justru
+              menunjukkan perbedaan. Akan tetapi, jumlah
+              sumber yang sama pendapatnya tidak otomatis
+              membuktikan bahwa informasi tersebut benar.
+            </p>
+          </div>
+
+          <h3>C. Langkah-Langkah Memeriksa Akurasi Data</h3>
+
+          <div class="eks-step">
+            <div class="eks-step-number">1</div>
+            <div>
+              <h4>Tentukan informasi yang akan diperiksa</h4>
+              <p>
+                Pilih satu pernyataan atau data yang ingin
+                diverifikasi. Buat pertanyaan yang jelas agar
+                setiap sumber memeriksa hal yang sama.
+              </p>
+              <div class="eks-example">
+                <strong>Contoh pertanyaan:</strong><br>
+                Apakah penggunaan AI generatif dapat membantu
+                siswa menyelesaikan tugas pembelajaran?
+              </div>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">2</div>
+            <div>
+              <h4>Periksa melalui beberapa layanan AI</h4>
+              <p>
+                Ajukan pertanyaan yang sama atau setara kepada
+                minimal tiga layanan AI. Catat jawaban,
+                alasan, dan sumber rujukan yang diberikan.
+              </p>
+              <p>
+                Jangan menganggap jawaban AI sebagai bukti
+                akhir. Jawaban tersebut merupakan bahan awal
+                untuk dibandingkan dan diperiksa lebih lanjut.
+              </p>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">3</div>
+            <div>
+              <h4>Bandingkan dengan sumber non-AI</h4>
+              <p>
+                Cari minimal dua sumber non-AI yang relevan.
+                Utamakan laporan asli, penelitian, publikasi
+                lembaga resmi, atau artikel yang menjelaskan
+                asal data dan metode yang digunakan.
+              </p>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">4</div>
+            <div>
+              <h4>Periksa kredibilitas dan konteks</h4>
+              <p>
+                Periksa siapa penulis atau lembaga penerbitnya,
+                kapan informasi diterbitkan, dari mana data
+                berasal, serta apakah metode pengumpulan
+                datanya dijelaskan.
+              </p>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">5</div>
+            <div>
+              <h4>Catat kesamaan dan perbedaan</h4>
+              <p>
+                Buat tabel perbandingan. Tandai informasi
+                yang didukung beberapa sumber, informasi
+                yang berbeda, dan informasi yang belum
+                dapat dibuktikan.
+              </p>
+            </div>
+          </div>
+
+          <div class="eks-step">
+            <div class="eks-step-number">6</div>
+            <div>
+              <h4>Buat kesimpulan berdasarkan bukti</h4>
+              <p>
+                Rumuskan hasil pemeriksaan dengan menyebutkan
+                sumber yang mendukung, keterbatasan data,
+                dan hal-hal yang masih perlu diteliti.
+              </p>
+            </div>
+          </div>
+
+          <h3>D. Tabel Perbandingan Lima Sumber</h3>
+
+          <p>
+            Berikut contoh format pencatatan yang dapat digunakan
+            ketika melakukan verifikasi informasi.
+          </p>
+
+          <div class="eks-table-wrap">
+            <table class="eks-table">
+              <thead>
+                <tr>
+                  <th>Sumber</th>
+                  <th>Jenis</th>
+                  <th>Hasil Pemeriksaan</th>
+                  <th>Catatan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sumber 1</td>
+                  <td>AI</td>
+                  <td>Sesuai / berbeda</td>
+                  <td>Catat jawaban dan rujukan.</td>
+                </tr>
+                <tr>
+                  <td>Sumber 2</td>
+                  <td>AI</td>
+                  <td>Sesuai / berbeda</td>
+                  <td>Catat jawaban dan rujukan.</td>
+                </tr>
+                <tr>
+                  <td>Sumber 3</td>
+                  <td>AI</td>
+                  <td>Sesuai / berbeda</td>
+                  <td>Catat jawaban dan rujukan.</td>
+                </tr>
+                <tr>
+                  <td>Sumber 4</td>
+                  <td>Non-AI</td>
+                  <td>Sesuai / berbeda</td>
+                  <td>Catat penulis, lembaga, dan tanggal.</td>
+                </tr>
+                <tr>
+                  <td>Sumber 5</td>
+                  <td>Non-AI</td>
+                  <td>Sesuai / berbeda</td>
+                  <td>Catat dokumen atau publikasi asli.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>E. Apakah Tiga dari Lima Sumber Sudah Cukup?</h3>
+
+          <p>
+            Dalam kegiatan pembelajaran, kesamaan informasi dari
+            tiga di antara lima sumber dapat digunakan sebagai
+            petunjuk awal bahwa informasi tersebut perlu
+            diperhatikan lebih lanjut. Namun, kesamaan pendapat
+            tidak boleh dijadikan satu-satunya dasar untuk
+            menyatakan data valid.
+          </p>
+
+          <p>
+            Ada kemungkinan beberapa sumber mengambil informasi
+            dari satu sumber yang sama. Jika sumber awalnya
+            keliru, kesalahan tersebut dapat muncul berulang
+            pada sumber lain. Jawaban AI juga dapat mengulang
+            informasi yang sama tanpa benar-benar membuktikan
+            kebenarannya.
+          </p>
+
+          <p>
+            Karena itu, hasil pemeriksaan perlu mempertimbangkan
+            kualitas sumber. Satu laporan resmi atau penelitian
+            yang menjelaskan metode dan data asli dapat lebih
+            kuat daripada beberapa tulisan yang hanya mengulang
+            informasi tanpa bukti.
+          </p>
+
+          <div class="eks-callout">
+            <strong>Prinsip utama verifikasi</strong>
+            <p>
+              Jangan hanya menghitung berapa banyak sumber
+              yang menyatakan hal yang sama. Periksa juga
+              siapa yang menerbitkan informasi, dari mana
+              data berasal, kapan diterbitkan, dan apakah
+              bukti yang digunakan dapat diperiksa.
+            </p>
+          </div>
+
+          <h3>F. Hal yang Perlu Diperhatikan Ketika Menggunakan AI</h3>
+
+          <ul>
+            <li>
+              Jangan memasukkan kata sandi, identitas pribadi,
+              atau informasi rahasia ke dalam layanan AI.
+            </li>
+            <li>
+              Jangan menganggap referensi yang diberikan AI
+              pasti benar. Periksa keberadaan dan isi sumbernya.
+            </li>
+            <li>
+              Jangan menyalin jawaban AI tanpa memahami isinya.
+            </li>
+            <li>
+              Cantumkan penggunaan AI apabila diminta oleh
+              aturan tugas atau ketentuan publikasi.
+            </li>
+            <li>
+              Gunakan AI sebagai alat bantu, bukan pengganti
+              kemampuan berpikir, membaca, dan mengambil keputusan.
+            </li>
+          </ul>
+        </section>
+
+        <!-- 4.7 -->
+        <section class="eks-section" id="diskusi">
+          <h2><span class="number">4.7</span> Diskusi dan Gelar Wicara</h2>
+
+          <h3>A. Pengertian Diskusi dan Gelar Wicara</h3>
+
+          <p>
+            Diskusi adalah kegiatan bertukar pikiran untuk membahas
+            suatu persoalan. Setiap peserta dapat menyampaikan
+            pendapat, memberikan alasan, mengajukan pertanyaan,
+            dan menanggapi pendapat orang lain.
+          </p>
+
+          <p>
+            Gelar wicara atau <em>talk show</em> merupakan kegiatan
+            pembicaraan yang menghadirkan pembawa acara atau
+            moderator bersama narasumber untuk membahas topik
+            tertentu. Kegiatan ini dapat melibatkan peserta
+            yang mengajukan pertanyaan atau memberikan tanggapan.
+          </p>
+
+          <p>
+            Dalam pembelajaran bab ini, diskusi dan gelar wicara
+            dapat digunakan untuk membahas manfaat, risiko,
+            dan tanggung jawab penggunaan kecerdasan artifisial
+            dalam kehidupan modern.
+          </p>
+
+          <h3>B. Pertanyaan Tertutup dan Pertanyaan Terbuka</h3>
+
+          <p>
+            Pertanyaan yang baik membantu diskusi berjalan
+            terarah. Berdasarkan bentuk jawabannya, pertanyaan
+            dapat dibedakan menjadi pertanyaan tertutup dan terbuka.
+          </p>
+
+          <div class="eks-table-wrap">
+            <table class="eks-table">
+              <thead>
+                <tr>
+                  <th>Jenis Pertanyaan</th>
+                  <th>Pengertian</th>
+                  <th>Contoh</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tertutup</td>
+                  <td>
+                    Pertanyaan yang biasanya membutuhkan jawaban
+                    singkat, seperti ya, tidak, angka, atau pilihan tertentu.
+                  </td>
+                  <td>
+                    Apakah kamu pernah menggunakan aplikasi AI?
+                  </td>
+                </tr>
+                <tr>
+                  <td>Terbuka</td>
+                  <td>
+                    Pertanyaan yang mendorong jawaban lebih luas
+                    dan penjelasan mendalam.
+                  </td>
+                  <td>
+                    Bagaimana cara menggunakan AI agar membantu
+                    pembelajaran tanpa membuat siswa bergantung
+                    pada teknologi?
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>
+            Pertanyaan terbuka biasanya lebih sesuai untuk
+            menggali pendapat, alasan, pengalaman, dan gagasan
+            narasumber. Sementara itu, pertanyaan tertutup
+            berguna untuk memperoleh informasi yang spesifik.
+          </p>
+
+          <h3>C. Tata Cara Mengajukan Pertanyaan dan Tanggapan</h3>
+
+          <ol>
+            <li>
+              <strong>Tunggu kesempatan dari moderator.</strong>
+              Jangan memotong pembicaraan narasumber atau peserta lain.
+            </li>
+            <li>
+              <strong>Angkat tangan atau gunakan tanda yang disepakati.</strong>
+              Hal ini membantu moderator mengatur giliran berbicara.
+            </li>
+            <li>
+              <strong>Perkenalkan diri secara singkat.</strong>
+              Sebutkan nama dan identitas yang diperlukan.
+            </li>
+            <li>
+              <strong>Sampaikan inti pertanyaan.</strong>
+              Gunakan kalimat yang jelas, sopan, dan tidak berbelit-belit.
+            </li>
+            <li>
+              <strong>Gunakan kata kunci.</strong>
+              Jika memberikan tanggapan, ringkas terlebih dahulu
+              pokok persoalan agar pendapat mudah dipahami.
+            </li>
+            <li>
+              <strong>Hargai jawaban dan pendapat lain.</strong>
+              Dengarkan tanggapan narasumber sampai selesai.
+            </li>
+          </ol>
+
+          <h3>D. Cara Menanggapi Pendapat</h3>
+
+          <p>
+            Tanggapan yang baik tidak sekadar menyatakan setuju
+            atau tidak setuju. Tanggapan perlu disertai alasan
+            yang jelas dan tetap menghormati orang yang berbicara.
+          </p>
+
+          <div class="eks-example">
+            <span class="eks-example-title">Contoh tanggapan yang santun</span>
+            “Saya memahami pendapat narasumber bahwa AI dapat
+            membantu siswa mencari informasi. Namun, menurut
+            saya, penggunaan AI tetap perlu disertai pemeriksaan
+            sumber karena tidak semua jawaban yang dihasilkan
+            selalu tepat.”
+          </div>
+
+          <h3>E. Contoh Pertanyaan untuk Gelar Wicara tentang AI</h3>
+
+          <ul>
+            <li>Bagaimana AI dapat membantu kegiatan belajar di sekolah?</li>
+            <li>Apa risiko jika siswa terlalu bergantung pada jawaban AI?</li>
+            <li>Bagaimana cara membedakan informasi yang benar dan keliru dari AI?</li>
+            <li>Apakah penggunaan AI dapat memengaruhi kemampuan berpikir kritis siswa? Mengapa?</li>
+            <li>Bagaimana sekolah dapat membangun kebiasaan menggunakan AI secara bertanggung jawab?</li>
+          </ul>
+
+          <div class="eks-callout">
+            <strong>Etika berdiskusi</strong>
+            <p>
+              Berbeda pendapat bukan berarti bermusuhan.
+              Sampaikan kritik terhadap gagasan, bukan menyerang
+              pribadi orang yang menyampaikan gagasan tersebut.
+            </p>
+          </div>
+        </section>
+
+        <!-- 4.8 -->
+        <section class="eks-section" id="konjungsi">
+          <h2><span class="number">4.8</span> Konjungsi</h2>
+
+          <h3>A. Pengertian Konjungsi</h3>
+
+          <p>
+            Konjungsi atau kata penghubung adalah kata yang digunakan
+            untuk menghubungkan unsur bahasa, seperti kata dengan kata,
+            frasa dengan frasa, klausa dengan klausa, atau kalimat
+            dengan kalimat.
+          </p>
+
+          <p>
+            Dalam teks eksplanasi, konjungsi sangat penting karena
+            membantu pembaca memahami hubungan antara informasi.
+            Hubungan tersebut dapat berupa penambahan, pilihan,
+            pertentangan, sebab-akibat, waktu, syarat, dan penegasan.
+          </p>
+
+          <p>
+            Berdasarkan hubungan unsur yang dihubungkan, kita
+            dapat mengenali konjungsi intrakalimat dan konjungsi
+            antarkalimat.
+          </p>
+
+          <h3>B. Konjungsi Intrakalimat</h3>
+
+          <p>
+            Konjungsi intrakalimat adalah kata penghubung yang
+            menghubungkan unsur-unsur di dalam satu kalimat,
+            misalnya dua kata, dua frasa, atau dua klausa.
+          </p>
+
+          <p>
+            Konjungsi intrakalimat tidak digunakan untuk sekadar
+            mengawali kalimat baru sebagai penghubung antarkalimat.
+            Penggunaannya perlu memperhatikan hubungan makna
+            dan susunan kalimat.
+          </p>
+
+          <h4>1. Konjungsi penambahan dan pilihan</h4>
+
+          <div class="eks-table-wrap">
+            <table class="eks-table">
+              <thead>
+                <tr>
+                  <th>Konjungsi</th>
+                  <th>Fungsi</th>
+                  <th>Contoh</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>dan</td>
+                  <td>Menghubungkan unsur yang setara atau menambahkan informasi.</td>
+                  <td>AI dapat membantu guru dan siswa.</td>
+                </tr>
+                <tr>
+                  <td>atau</td>
+                  <td>Menyatakan pilihan.</td>
+                  <td>Siswa dapat menggunakan buku atau sumber digital.</td>
+                </tr>
+                <tr>
+                  <td>bahkan</td>
+                  <td>Memberikan penegasan atau tambahan informasi.</td>
+                  <td>Teknologi tersebut bahkan dapat membantu mengolah data dalam jumlah besar.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>2. Konjungsi sebab-akibat</h4>
+
+          <div class="eks-table-wrap">
+            <table class="eks-table">
+              <thead>
+                <tr>
+                  <th>Konjungsi</th>
+                  <th>Fungsi</th>
+                  <th>Contoh</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>karena</td>
+                  <td>Menyatakan sebab.</td>
+                  <td>Informasi tersebut perlu diperiksa karena sumbernya belum jelas.</td>
+                </tr>
+                <tr>
+                  <td>sehingga</td>
+                  <td>Menyatakan akibat atau hasil.</td>
+                  <td>Data diolah dengan baik sehingga hasilnya lebih mudah dipahami.</td>
+                </tr>
+                <tr>
+                  <td>maka</td>
+                  <td>Menyatakan hasil atau konsekuensi, terutama dalam hubungan syarat.</td>
+                  <td>Jika data tidak lengkap, maka kesimpulan perlu ditinjau kembali.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>3. Konjungsi syarat dan tujuan</h4>
+
+          <div class="eks-table-wrap">
+            <table class="eks-table">
+              <thead>
+                <tr>
+                  <th>Konjungsi</th>
+                  <th>Fungsi</th>
+                  <th>Contoh</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>jika</td>
+                  <td>Menyatakan syarat.</td>
+                  <td>Jika informasi belum jelas, periksa sumber aslinya.</td>
+                </tr>
+                <tr>
+                  <td>apabila</td>
+                  <td>Menyatakan syarat.</td>
+                  <td>Apabila data tidak lengkap, analisis perlu dilanjutkan.</td>
+                </tr>
+                <tr>
+                  <td>agar</td>
+                  <td>Menyatakan tujuan.</td>
+                  <td>Siswa memeriksa sumber agar tidak menerima informasi keliru.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>4. Konjungsi pertentangan dan hubungan lainnya</h4>
+
+          <div class="eks-table-wrap">
+            <table class="eks-table">
+              <thead>
+                <tr>
+                  <th>Konjungsi</th>
+                  <th>Fungsi</th>
+                  <th>Contoh</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>tetapi</td>
+                  <td>Menyatakan pertentangan.</td>
+                  <td>AI dapat membantu belajar, tetapi hasilnya tetap perlu diperiksa.</td>
+                </tr>
+                <tr>
+                  <td>melainkan</td>
+                  <td>Mengoreksi atau mengganti unsur yang dinegasikan.</td>
+                  <td>Tujuannya bukan menggantikan guru, melainkan membantu proses pembelajaran.</td>
+                </tr>
+                <tr>
+                  <td>padahal</td>
+                  <td>Menyatakan pertentangan dengan keadaan yang diperkirakan atau diketahui.</td>
+                  <td>Ia menganggap semua jawaban AI benar, padahal beberapa informasi belum terverifikasi.</td>
+                </tr>
+                <tr>
+                  <td>sedangkan</td>
+                  <td>Membandingkan atau mempertentangkan dua hal.</td>
+                  <td>AI membantu mengolah data, sedangkan manusia menilai hasilnya.</td>
+                </tr>
+                <tr>
+                  <td>bahwa</td>
+                  <td>Menghubungkan klausa yang berisi pernyataan atau isi pikiran.</td>
+                  <td>Peneliti menjelaskan bahwa data perlu diperiksa kembali.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>C. Penggunaan Koma pada Konjungsi Intrakalimat</h3>
+
+          <p>
+            Tidak semua konjungsi intrakalimat menggunakan tanda
+            koma dengan cara yang sama. Penggunaan koma bergantung
+            pada jenis hubungan dan susunan kalimat.
+          </p>
+
+          <ul>
+            <li>
+              Konjungsi <strong>dan</strong> atau <strong>atau</strong>
+              yang menghubungkan unsur setara biasanya tidak didahului
+              koma jika hanya menghubungkan dua unsur.
+              <div class="eks-example">
+                Siswa dapat membaca buku dan artikel ilmiah.
+              </div>
+            </li>
+            <li>
+              Konjungsi pertentangan seperti <strong>tetapi</strong>
+              umumnya didahului koma ketika menghubungkan dua klausa
+              yang berlawanan.
+              <div class="eks-example">
+                AI dapat membantu pembelajaran, tetapi hasilnya
+                tetap perlu diperiksa.
+              </div>
+            </li>
+            <li>
+              Konjungsi <strong>karena</strong> dan <strong>sehingga</strong>
+              biasanya menghubungkan klausa sebab atau akibat dalam
+              satu kalimat. Penggunaan koma perlu memperhatikan
+              susunan dan kejelasan kalimat.
+              <div class="eks-example">
+                Informasi itu perlu diperiksa karena sumbernya belum jelas.
+                <br>
+                Data yang digunakan tidak lengkap sehingga kesimpulannya
+                perlu ditinjau kembali.
+              </div>
+            </li>
+            <li>
+              Kata seperti <strong>kemudian</strong> dan <strong>lalu</strong>
+              dapat menunjukkan urutan peristiwa. Keduanya dapat
+              digunakan dalam satu kalimat atau dalam rangkaian
+              kalimat sesuai kebutuhan.
+              <div class="eks-example">
+                Siswa mengumpulkan data, kemudian membandingkan
+                hasilnya dengan sumber lain.
+              </div>
+            </li>
+          </ul>
+
+          <div class="eks-callout">
+            <strong>Catatan tentang kata “namun”</strong>
+            <p>
+              Kata <em>namun</em> lazim digunakan sebagai penghubung
+              antarkalimat dan biasanya diikuti koma jika berada
+              di awal kalimat. Untuk menghubungkan dua klausa
+              dalam satu kalimat, kata <em>tetapi</em> lebih
+              lazim digunakan.
+            </p>
+          </div>
+
+          <h3>D. Konjungsi Antarkalimat</h3>
+
+          <p>
+            Konjungsi antarkalimat adalah kata atau ungkapan
+            penghubung yang menghubungkan satu kalimat dengan
+            kalimat sebelumnya. Konjungsi ini biasanya berada
+            di awal kalimat baru dan diikuti tanda koma.
+          </p>
+
+          <div class="eks-table-wrap">
+            <table class="eks-table">
+              <thead>
+                <tr>
+                  <th>Konjungsi</th>
+                  <th>Fungsi</th>
+                  <th>Contoh</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Oleh karena itu,</td>
+                  <td>Menyatakan akibat atau kesimpulan dari kalimat sebelumnya.</td>
+                  <td>Jawaban AI belum tentu tepat. Oleh karena itu, pengguna perlu memeriksa sumbernya.</td>
+                </tr>
+                <tr>
+                  <td>Namun,</td>
+                  <td>Menyatakan pertentangan atau perbedaan dengan kalimat sebelumnya.</td>
+                  <td>AI dapat mempercepat pencarian informasi. Namun, hasilnya tetap perlu diperiksa.</td>
+                </tr>
+                <tr>
+                  <td>Dengan demikian,</td>
+                  <td>Menyatakan simpulan.</td>
+                  <td>Data telah dibandingkan dengan beberapa sumber. Dengan demikian, kesimpulan dapat disusun berdasarkan bukti yang tersedia.</td>
+                </tr>
+                <tr>
+                  <td>Selain itu,</td>
+                  <td>Menambahkan informasi.</td>
+                  <td>AI dapat membantu mencari informasi. Selain itu, teknologi ini dapat membantu mengolah data.</td>
+                </tr>
+                <tr>
+                  <td>Sementara itu,</td>
+                  <td>Menunjukkan perbandingan atau keadaan lain yang berlangsung bersamaan.</td>
+                  <td>Sebagian siswa menggunakan AI untuk mencari penjelasan. Sementara itu, guru memanfaatkannya untuk menyiapkan bahan ajar.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>E. Memperbaiki Kesalahan Penggunaan Konjungsi</h3>
+
+          <p>
+            Salah satu kesalahan yang sering ditemukan adalah
+            menggunakan konjungsi intrakalimat untuk mengawali
+            kalimat baru tanpa membentuk hubungan kalimat yang tepat.
+          </p>
+
+          <div class="eks-example">
+            <span class="eks-example-title">Contoh kalimat yang kurang tepat</span>
+            Ia kerap berolahraga. Sehingga wajar badannya sehat.
+            <br><br>
+            <strong>Perbaikan 1:</strong><br>
+            Ia kerap berolahraga sehingga wajar jika badannya sehat.
+            <br><br>
+            <strong>Perbaikan 2:</strong><br>
+            Ia kerap berolahraga. Oleh karena itu, wajar jika
+            badannya sehat.
+          </div>
+
+          <p>
+            Pada perbaikan pertama, kata <em>sehingga</em> digunakan
+            untuk menghubungkan bagian sebab dan akibat dalam satu
+            kalimat. Pada perbaikan kedua, hubungan antarkalimat
+            dinyatakan dengan ungkapan <em>oleh karena itu</em>
+            yang diikuti koma.
+          </p>
+
+          <h3>F. Cara Memilih Konjungsi yang Tepat</h3>
+
+          <ol>
+            <li>
+              Tentukan hubungan makna yang ingin disampaikan:
+              penambahan, pilihan, pertentangan, sebab, akibat,
+              syarat, atau tujuan.
+            </li>
+            <li>
+              Periksa apakah unsur yang dihubungkan masih berada
+              dalam satu kalimat atau sudah menjadi dua kalimat.
+            </li>
+            <li>
+              Pilih konjungsi yang sesuai dengan hubungan tersebut.
+            </li>
+            <li>
+              Periksa kembali penggunaan koma dan tanda baca lainnya.
+            </li>
+            <li>
+              Baca kalimat secara utuh untuk memastikan hubungan
+              antargagasan terasa jelas.
+            </li>
+          </ol>
+
+          <div class="eks-callout">
+            <strong>Kesimpulan</strong>
+            <p>
+              Konjungsi bukan sekadar kata penghubung yang harus
+              dihafalkan. Pemilihannya harus sesuai dengan
+              hubungan makna dan susunan kalimat. Penggunaan
+              konjungsi yang tepat membuat teks eksplanasi
+              lebih runtut, logis, dan mudah dipahami.
+            </p>
+          </div>
+        </section>
+
+        <!-- AKTIVITAS -->
+        <section class="eks-section eks-activity" id="aktivitas">
+          <h2>Aktivitas Pembelajaran</h2>
+
+          <p class="eks-lead">
+            Kerjakan kegiatan berikut untuk menerapkan pemahaman
+            tentang teks eksplanasi kompleks dan kecerdasan
+            artifisial dalam kehidupan modern.
+          </p>
+
+          <div class="eks-task">
+            <h3>Aktivitas 1 – Memahami Isi dan Informasi Implisit</h3>
+            <p>
+              Bacalah sebuah teks eksplanasi yang membahas
+              perkembangan atau penggunaan kecerdasan artifisial.
+              Setelah itu, jawablah pertanyaan berikut.
+            </p>
+            <ol>
+              <li>Apa fenomena utama yang dijelaskan dalam teks?</li>
+              <li>Faktor apa saja yang menyebabkan fenomena tersebut?</li>
+              <li>Informasi apa yang disampaikan secara langsung?</li>
+              <li>Informasi apa yang dapat disimpulkan secara implisit?</li>
+              <li>Bagian mana dalam teks yang menjadi dasar kesimpulanmu?</li>
+            </ol>
+          </div>
+
+          <div class="eks-task">
+            <h3>Aktivitas 2 – Menentukan Gagasan Utama dan Penjelas</h3>
+            <p>
+              Pilihlah tiga paragraf dari teks eksplanasi
+              yang telah dibaca. Kemudian, lakukan kegiatan berikut.
+            </p>
+            <ol>
+              <li>Tentukan gagasan utama setiap paragraf.</li>
+              <li>Catat gagasan penjelas yang mendukungnya.</li>
+              <li>Tentukan apakah paragraf tersebut deduktif, induktif, atau campuran.</li>
+              <li>Jelaskan alasanmu berdasarkan letak gagasan utama.</li>
+            </ol>
+          </div>
+
+          <div class="eks-task">
+            <h3>Aktivitas 3 – Mengevaluasi Gagasan</h3>
+            <p>
+              Temukan tiga pernyataan dari teks atau artikel
+              yang membahas kecerdasan artifisial. Evaluasilah
+              setiap pernyataan berdasarkan aspek berikut.
+            </p>
+            <ol>
+              <li>Kekuatan argumen: kuat, sedang, atau lemah.</li>
+              <li>Keakuratan informasi: tepat atau tidak tepat berdasarkan bukti yang tersedia.</li>
+              <li>Relevansi: relevan atau tidak relevan dengan topik.</li>
+              <li>Berikan alasan untuk setiap penilaian.</li>
+            </ol>
+          </div>
+
+          <div class="eks-task">
+            <h3>Aktivitas 4 – Menulis Refleksi Model 5R</h3>
+            <p>
+              Setelah membaca teks tentang penggunaan AI
+              dalam kehidupan modern, susunlah refleksi
+              menggunakan lima tahap berikut.
+            </p>
+            <ol>
+              <li><strong>Reporting:</strong> laporkan isi teks secara objektif.</li>
+              <li><strong>Responding:</strong> sampaikan tanggapan pribadimu.</li>
+              <li><strong>Relating:</strong> hubungkan dengan pengalaman atau keadaan di sekitarmu.</li>
+              <li><strong>Reasoning:</strong> berikan alasan dan penilaian logis.</li>
+              <li><strong>Reconstructing:</strong> susun gagasan baru atau saran berdasarkan hasil refleksi.</li>
+            </ol>
+          </div>
+
+          <div class="eks-task">
+            <h3>Aktivitas 5 – Menganalisis Struktur dan Kebahasaan</h3>
+            <p>
+              Pilihlah satu teks eksplanasi kompleks yang
+              membahas kecerdasan artifisial. Identifikasilah
+              unsur-unsur berikut.
+            </p>
+            <ol>
+              <li>Pernyataan umum.</li>
+              <li>Deretan penjelas.</li>
+              <li>Interpretasi atau penegasan ulang jika tersedia.</li>
+              <li>Kalimat pasif yang digunakan.</li>
+              <li>Konjungsi sebab-akibat.</li>
+              <li>Istilah teknis atau ilmiah.</li>
+              <li>Gaya bahasa yang digunakan penulis.</li>
+            </ol>
+          </div>
+
+          <div class="eks-task">
+            <h3>Aktivitas 6 – Memeriksa Akurasi Informasi</h3>
+            <p>
+              Pilih satu pernyataan mengenai kecerdasan
+              artifisial yang ingin kamu periksa kebenarannya.
+              Lakukan verifikasi menggunakan ketentuan berikut.
+            </p>
+            <ol>
+              <li>Gunakan minimal tiga jenis atau layanan AI.</li>
+              <li>Gunakan minimal dua sumber non-AI.</li>
+              <li>Catat hasil setiap sumber dalam tabel perbandingan.</li>
+              <li>Periksa kredibilitas, tanggal, dan asal data.</li>
+              <li>Identifikasi kesamaan dan perbedaan informasi.</li>
+              <li>Buat kesimpulan berdasarkan kualitas bukti, bukan hanya jumlah sumber yang setuju.</li>
+            </ol>
+          </div>
+
+          <div class="eks-task">
+            <h3>Aktivitas 7 – Diskusi atau Gelar Wicara</h3>
+            <p>
+              Lakukan diskusi kelompok atau gelar wicara
+              dengan topik:
+              <strong>“Manfaat dan Tantangan Kecerdasan Artifisial
+              dalam Kehidupan Modern”.</strong>
+            </p>
+            <ol>
+              <li>Tentukan moderator dan beberapa narasumber.</li>
+              <li>Susun pertanyaan tertutup dan terbuka.</li>
+              <li>Berikan kesempatan kepada peserta untuk bertanya.</li>
+              <li>Sampaikan tanggapan dengan bahasa yang santun.</li>
+              <li>Catat gagasan penting dan simpulkan hasil diskusi.</li>
+            </ol>
+          </div>
+
+          <div class="eks-task">
+            <h3>Aktivitas 8 – Menggunakan Konjungsi secara Tepat</h3>
+            <p>
+              Buatlah lima kalimat yang berkaitan dengan
+              kecerdasan artifisial. Gunakan konjungsi
+              intrakalimat dan antarkalimat secara tepat.
+            </p>
+            <ol>
+              <li>Buat dua kalimat yang menggunakan konjungsi sebab-akibat.</li>
+              <li>Buat satu kalimat yang menggunakan konjungsi pertentangan.</li>
+              <li>Buat satu pasangan kalimat yang menggunakan konjungsi antarkalimat.</li>
+              <li>Periksa penggunaan tanda koma dan tanda baca lainnya.</li>
+              <li>Jelaskan hubungan makna yang dibentuk oleh konjungsi tersebut.</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- RANGKUMAN -->
+        <section class="eks-section" id="rangkuman">
+          <h2>Rangkuman Pembelajaran</h2>
+
+          <ol>
+            <li>
+              Teks eksplanasi kompleks menjelaskan suatu fenomena
+              secara mendalam melalui hubungan sebab-akibat
+              yang dapat melibatkan beberapa faktor.
+            </li>
+            <li>
+              Informasi implisit merupakan informasi yang
+              tidak disampaikan secara langsung, tetapi
+              dapat disimpulkan berdasarkan petunjuk dalam teks.
+            </li>
+            <li>
+              Gagasan utama merupakan inti pembahasan paragraf,
+              sedangkan gagasan penjelas berfungsi mendukungnya.
+            </li>
+            <li>
+              Paragraf berdasarkan letak gagasan utama dapat
+              dibedakan menjadi deduktif, induktif, dan campuran.
+            </li>
+            <li>
+              Gagasan perlu dievaluasi berdasarkan kekuatan
+              argumen, keakuratan informasi, dan relevansinya.
+            </li>
+            <li>
+              Model refleksi 5R terdiri atas Reporting,
+              Responding, Relating, Reasoning, dan Reconstructing.
+            </li>
+            <li>
+              Struktur teks eksplanasi umumnya terdiri atas
+              pernyataan umum, deretan penjelas, dan interpretasi
+              atau penegasan ulang. Interpretasi tidak selalu
+              harus ada.
+            </li>
+            <li>
+              Data perlu diperiksa melalui sumber yang beragam.
+              Kesamaan jawaban beberapa sumber tidak otomatis
+              menjamin kebenaran informasi.
+            </li>
+            <li>
+              Diskusi dan gelar wicara memerlukan pertanyaan
+              yang jelas, sikap santun, dan kemampuan
+              menghargai perbedaan pendapat.
+            </li>
+            <li>
+              Konjungsi intrakalimat menghubungkan unsur dalam
+              satu kalimat, sedangkan konjungsi antarkalimat
+              menghubungkan kalimat dengan kalimat sebelumnya.
+            </li>
+          </ol>
+
+          <div class="eks-callout">
+            <strong>Pesan utama bab ini</strong>
+            <p>
+              Kecerdasan artifisial dapat membantu manusia
+              dalam berbagai kegiatan, tetapi kemampuan
+              berpikir kritis tetap diperlukan. Teknologi
+              seharusnya membantu manusia memahami dunia,
+              bukan membuat manusia berhenti bertanya,
+              membaca, dan memeriksa kebenaran informasi.
+            </p>
+          </div>
+        </section>
+
+        <!-- REFERENSI -->
+        <section class="eks-section" id="referensi">
+          <h2>Referensi dan Bacaan Lanjutan</h2>
+
+          <p>
+            Referensi berikut dapat digunakan untuk memperdalam
+            pemahaman mengenai teks eksplanasi, kebahasaan,
+            kecerdasan artifisial, dan literasi informasi.
+          </p>
+
+          <ol class="eks-ref-list">
+            <li>
+              Emilia, E. (2012).
+              <em>Pendekatan Genre-Based dalam Pengajaran Bahasa Inggris:
+              Petunjuk untuk Guru.</em>
+              Bandung: Rizqi Press.
+              <br>
+              <span>
+                Rujukan yang berkaitan dengan pendekatan genre
+                dan pembelajaran teks. Periksa kembali edisi
+                dan data bibliografi sesuai buku yang digunakan.
+              </span>
+            </li>
+            <li>
+              Emilia, E. (2011).
+              <br>
+              <span>
+                Rujukan mengenai tujuan pembelajaran teks
+                eksplanasi sebagaimana disebutkan dalam
+                bahan rangkuman. Judul karya dan data
+                penerbitan perlu dilengkapi berdasarkan
+                sumber asli yang digunakan.
+              </span>
+            </li>
+            <li>
+              Badan Pengembangan dan Pembinaan Bahasa.
+              <em>Ejaan Bahasa Indonesia yang Disempurnakan Edisi V.</em>
+              <br>
+              <a class="eks-link" href="https://ejaan.kemendikdasmen.go.id/" target="_blank" rel="noopener noreferrer">
+                Laman resmi EYD V
+              </a>
+              <br>
+              Rujukan untuk penggunaan ejaan dan tanda baca
+              dalam penulisan bahasa Indonesia.
+            </li>
+            <li>
+              UNESCO.
+              <em>Guidance for Generative AI in Education and Research.</em>
+              (2023).
+              <br>
+              <a class="eks-link" href="https://unesdoc.unesco.org/ark:/48223/pf0000386693" target="_blank" rel="noopener noreferrer">
+                Baca publikasi UNESCO
+              </a>
+              <br>
+              Panduan mengenai penggunaan AI generatif
+              dalam pendidikan dan penelitian.
+            </li>
+            <li>
+              World Economic Forum.
+              <em>Future of Jobs Report.</em>
+              <br>
+              <a class="eks-link" href="https://www.weforum.org/publications/" target="_blank" rel="noopener noreferrer">
+                Kumpulan publikasi World Economic Forum
+              </a>
+              <br>
+              Sumber bacaan untuk memahami perubahan
+              dunia kerja dan perkembangan teknologi.
+              Gunakan laporan dan tahun terbit yang
+              sesuai dengan data yang sedang diperiksa.
+            </li>
+            <li>
+              Google Scholar.
+              <em>Penelusuran literatur ilmiah.</em>
+              <br>
+              <a class="eks-link" href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">
+                Buka Google Scholar
+              </a>
+              <br>
+              Sarana untuk menemukan artikel ilmiah,
+              publikasi penelitian, dan sumber akademik.
+            </li>
+          </ol>
+
+          <p>
+            Catatan: sebelum mencantumkan sumber dalam daftar
+            pustaka tugas, periksa kembali judul, penulis,
+            tahun, penerbit, dan tautan dokumen aslinya.
+            Jangan menggunakan data bibliografi yang
+            belum dapat dipastikan.
+          </p>
+        </section>
+
+        <!-- KUTIPAN PENUTUP -->
+        <div class="eks-quote">
+          “Teknologi dapat memperluas kemampuan manusia,
+          tetapi kebijaksanaan tetap tumbuh dari kemauan
+          untuk berpikir, memeriksa, dan bertanggung jawab.”
+          <span>— Mandala Aksara</span>
+        </div>
+
+        <!-- NAVIGASI BAWAH -->
+        <div class="eks-bottom-nav">
+          <a href="bab-3-novel.html">← Kembali ke Bab 3</a>
+          <a href="kelas-xii.html">Kembali ke Materi Kelas XII</a>
+          <a href="bab-5-esai.html">Lanjut Bab 5 →</a>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+        <div class="footer-brand-copy">
+          <b>MANDALA AKSARA</b>
+          <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+          <span class="managed-label">Dikelola Mandiri</span>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="perpustakaan.html">Perpustakaan Digital</a>
+        <a href="kelas-virtual.html">Kelas Virtual</a>
+      </nav>
+    </div>
+    <div class="copyright">
+      © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
