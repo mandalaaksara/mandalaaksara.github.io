@@ -405,23 +405,15 @@
       font-size: .88rem;
       color: var(--b2-muted);
     }
-
-    @media (max-width: 850px) {
-      .bab2-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .bab2-sidebar {
-        position: static;
-      }
-
-      .bab2-sidebar nav {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 3px 8px;
-      }
-    }
-
+    
+@media (max-width: 850px) {
+  .bab2-sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+    
     @media (max-width: 550px) {
       .bab2-hero {
         padding: 45px 6%;
