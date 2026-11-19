@@ -17,93 +17,50 @@
     gtag('config', 'G-7HFZ0YC7P9');
   </script>
 
+  <!-- CSS Utama Mandala Aksara -->
+  <link rel="stylesheet" href="style.css">
+
   <style>
-    :root {
-      --navy: #142b4a;
-      --navy2: #0d203a;
-      --orange: #f28c28;
-      --gold: #c69a45;
-      --paper: #ffffff;
-      --soft: #f3f5f8;
-      --ink: #26364b;
-      --muted: #657386;
-      --line: #e3e8ef;
-      --cream: #fffaf2;
-    }
+    /* =====================================
+       MASTER TEMPLATE MANDALA AKSARA
+       Halaman Materi: BAB 7 - DRAMA
+    ====================================== */
 
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f3f5f8;
-      color: var(--ink);
+    .drama-page {
+      --drama-navy: #142b4a;
+      --drama-navy2: #0d203a;
+      --drama-orange: #f28c28;
+      --drama-gold: #c69a45;
+      --drama-ink: #26364b;
+      --drama-muted: #657386;
+      --drama-line: #e3e8ef;
+      color: var(--drama-ink);
       line-height: 1.75;
     }
 
-    a { color: inherit; text-decoration: none; }
-
-    .topbar {
-      background: var(--navy2);
-      color: white;
-      padding: 13px 5%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
+    .drama-page *,
+    .drama-page *::before,
+    .drama-page *::after {
+      box-sizing: border-box;
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
+    .drama-page a {
+      text-decoration: none;
     }
 
-    .brand img {
-      width: 48px;
-      height: 48px;
-      object-fit: contain;
-    }
-
-    .brand-name {
-      font-family: Georgia, serif;
-      font-weight: bold;
-      font-size: 20px;
-      letter-spacing: 1.5px;
-    }
-
-    .brand-subtitle {
-      font-size: 11px;
-      color: #d6deea;
-      letter-spacing: .3px;
-    }
-
-    .topnav {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      font-size: 13px;
-    }
-
-    .topnav a { color: #edf2f8; }
-    .topnav a:hover { color: var(--orange); }
-
-    .hero {
+    .drama-page .hero {
       background: linear-gradient(125deg, #0d203a, #1d4168);
       color: white;
       padding: 52px 6%;
-      border-bottom: 5px solid var(--orange);
+      border-bottom: 5px solid var(--drama-orange);
     }
 
-    .hero-inner {
+    .drama-page .hero-inner {
       max-width: 1200px;
       margin: auto;
     }
 
-    .eyebrow {
+    .drama-page .eyebrow {
       color: #ffb65f;
       font-weight: bold;
       font-size: 12px;
@@ -111,36 +68,38 @@
       text-transform: uppercase;
     }
 
-    .hero h1 {
+    .drama-page .hero h1 {
+      color: white;
       font-family: Georgia, serif;
       font-size: clamp(30px, 5vw, 46px);
       line-height: 1.2;
       margin: 12px 0;
     }
 
-    .hero p {
+    .drama-page .hero p {
       max-width: 780px;
       color: #e1e9f2;
       margin: 0;
       font-size: 16px;
     }
 
-    .hero-meta {
+    .drama-page .hero-meta {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
       margin-top: 23px;
     }
 
-    .hero-meta span {
+    .drama-page .hero-meta span {
       background: rgba(255,255,255,.1);
       border: 1px solid rgba(255,255,255,.2);
       border-radius: 30px;
       padding: 5px 13px;
       font-size: 12px;
+      color: white;
     }
 
-    .page-layout {
+    .drama-page .page-layout {
       max-width: 1250px;
       margin: 35px auto;
       padding: 0 20px;
@@ -150,9 +109,9 @@
       align-items: start;
     }
 
-    .sidebar {
+    .drama-page .sidebar {
       background: white;
-      border: 1px solid var(--line);
+      border: 1px solid var(--drama-line);
       border-radius: 14px;
       padding: 20px;
       position: sticky;
@@ -160,26 +119,26 @@
       box-shadow: 0 5px 18px rgba(20,43,74,.05);
     }
 
-    .sidebar h3 {
+    .drama-page .sidebar h3 {
       font-family: Georgia, serif;
-      color: var(--navy);
+      color: var(--drama-navy);
       font-size: 18px;
       margin: 0 0 5px;
     }
 
-    .sidebar small {
-      color: var(--muted);
+    .drama-page .sidebar small {
+      color: var(--drama-muted);
       display: block;
       margin-bottom: 15px;
     }
 
-    .sidebar-links {
+    .drama-page .sidebar-links {
       display: flex;
       flex-direction: column;
       gap: 5px;
     }
 
-    .sidebar-links a {
+    .drama-page .sidebar-links a {
       display: block;
       width: 100%;
       padding: 9px 11px;
@@ -189,34 +148,37 @@
       transition: .2s;
     }
 
-    .sidebar-links a:hover {
+    .drama-page .sidebar-links a:hover {
       background: #fff1df;
       color: #a9580a;
     }
 
-    .sidebar-links a.active {
-      background: var(--navy);
+    .drama-page .sidebar-links a.active {
+      background: var(--drama-navy);
       color: white;
       font-weight: bold;
     }
 
-    .content { min-width: 0; }
+    .drama-page .content {
+      min-width: 0;
+    }
 
-    .intro-card, .lesson-section {
+    .drama-page .intro-card,
+    .drama-page .lesson-section {
       background: white;
-      border: 1px solid var(--line);
+      border: 1px solid var(--drama-line);
       border-radius: 14px;
       padding: 28px;
       margin-bottom: 22px;
       box-shadow: 0 5px 18px rgba(20,43,74,.04);
     }
 
-    .intro-card {
-      border-left: 5px solid var(--orange);
+    .drama-page .intro-card {
+      border-left: 5px solid var(--drama-orange);
       background: #fffdf9;
     }
 
-    .section-label {
+    .drama-page .section-label {
       color: #b96a18;
       font-weight: bold;
       font-size: 11px;
@@ -224,54 +186,61 @@
       text-transform: uppercase;
     }
 
-    h2 {
-      color: var(--navy);
+    .drama-page .content h2 {
+      color: var(--drama-navy);
       font-family: Georgia, serif;
       font-size: 25px;
       line-height: 1.35;
       margin: 6px 0 15px;
     }
 
-    h3 {
-      color: var(--navy);
+    .drama-page .content h3 {
+      color: var(--drama-navy);
       font-size: 18px;
       margin: 23px 0 8px;
     }
 
-    h4 {
-      color: var(--navy);
+    .drama-page .content h4 {
+      color: var(--drama-navy);
       font-size: 15px;
       margin: 16px 0 5px;
     }
 
-    p { margin: 10px 0; }
+    .drama-page .content p {
+      margin: 10px 0;
+    }
 
-    ul, ol { padding-left: 23px; }
+    .drama-page .content ul,
+    .drama-page .content ol {
+      padding-left: 23px;
+    }
 
-    li { margin: 6px 0; }
+    .drama-page .content li {
+      margin: 6px 0;
+    }
 
-    .callout {
+    .drama-page .callout {
       background: #f1f5fa;
-      border-left: 4px solid var(--navy);
+      border-left: 4px solid var(--drama-navy);
       padding: 15px 18px;
       border-radius: 7px;
       margin: 17px 0;
     }
 
-    .callout.orange {
+    .drama-page .callout.orange {
       background: #fff5e9;
-      border-left-color: var(--orange);
+      border-left-color: var(--drama-orange);
     }
 
-    .example {
+    .drama-page .example {
       background: #fafbfc;
-      border: 1px solid var(--line);
+      border: 1px solid var(--drama-line);
       border-radius: 10px;
       padding: 18px;
       margin: 15px 0;
     }
 
-    .example-title {
+    .drama-page .example-title {
       font-size: 12px;
       font-weight: bold;
       color: #b96a18;
@@ -280,7 +249,7 @@
       margin-bottom: 8px;
     }
 
-    .drama-script {
+    .drama-page .drama-script {
       background: #fffaf2;
       border: 1px solid #eadfc9;
       border-radius: 10px;
@@ -289,49 +258,56 @@
       font-family: Georgia, serif;
     }
 
-    .drama-script p { margin: 9px 0; }
-
-    .stage-note {
-      color: #8b642e;
-      font-style: italic;
+    .drama-page .drama-script p {
+      margin: 9px 0;
     }
 
-    .character {
+    .drama-page .drama-script em {
+      color: #8b642e;
+    }
+
+    .drama-page .character {
       font-family: Arial, sans-serif;
       font-weight: bold;
-      color: var(--navy);
+      color: var(--drama-navy);
     }
 
-    .table-wrap { overflow-x: auto; margin: 16px 0; }
+    .drama-page .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+    }
 
-    table {
+    .drama-page table {
       border-collapse: collapse;
       width: 100%;
       min-width: 520px;
       font-size: 14px;
     }
 
-    th, td {
-      border: 1px solid var(--line);
+    .drama-page th,
+    .drama-page td {
+      border: 1px solid var(--drama-line);
       padding: 11px 12px;
       text-align: left;
       vertical-align: top;
     }
 
-    th {
-      background: var(--navy);
+    .drama-page th {
+      background: var(--drama-navy);
       color: white;
     }
 
-    tr:nth-child(even) td { background: #f8fafc; }
+    .drama-page tr:nth-child(even) td {
+      background: #f8fafc;
+    }
 
-    .step-list {
+    .drama-page .step-list {
       counter-reset: steps;
       list-style: none;
       padding: 0;
     }
 
-    .step-list li {
+    .drama-page .step-list li {
       counter-increment: steps;
       position: relative;
       padding: 12px 12px 12px 48px;
@@ -340,7 +316,7 @@
       border-radius: 9px;
     }
 
-    .step-list li::before {
+    .drama-page .step-list li::before {
       content: counter(steps);
       position: absolute;
       left: 12px;
@@ -348,40 +324,42 @@
       width: 26px;
       height: 26px;
       border-radius: 50%;
-      background: var(--orange);
+      background: var(--drama-orange);
       color: white;
       font-weight: bold;
       text-align: center;
       line-height: 26px;
     }
 
-    .question {
-      border: 1px solid var(--line);
+    .drama-page .question {
+      border: 1px solid var(--drama-line);
       border-radius: 10px;
       padding: 17px;
       margin: 13px 0;
       background: #fff;
     }
 
-    .question strong { color: var(--navy); }
+    .drama-page .question strong {
+      color: var(--drama-navy);
+    }
 
-    .reflection {
+    .drama-page .reflection {
       background: #f2f6fb;
       border-radius: 10px;
       padding: 20px;
       margin-top: 15px;
     }
 
-    .quote {
+    .drama-page .quote {
       text-align: center;
       padding: 35px 20px;
-      color: var(--navy);
+      color: var(--drama-navy);
       font-family: Georgia, serif;
       font-size: 20px;
       font-style: italic;
     }
 
-    .quote small {
+    .drama-page .quote small {
       display: block;
       margin-top: 12px;
       font-family: Arial, sans-serif;
@@ -391,27 +369,9 @@
       letter-spacing: 1.5px;
     }
 
-    footer {
-      background: var(--navy2);
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    footer strong {
-      font-family: Georgia, serif;
-      letter-spacing: 1.5px;
-    }
-
-    footer p {
-      color: #cbd5e1;
-      font-size: 13px;
-      margin: 5px;
-    }
-
-    .back-link {
+    .drama-page .back-link {
       display: inline-block;
-      background: var(--navy);
+      background: var(--drama-navy);
       color: white;
       padding: 10px 18px;
       border-radius: 7px;
@@ -419,1273 +379,1243 @@
       margin-top: 10px;
     }
 
-    .back-link:hover { background: #244b75; }
+    .drama-page .back-link:hover {
+      background: #244b75;
+    }
 
     @media (max-width: 850px) {
-      .page-layout { grid-template-columns: 1fr; }
-      .sidebar { position: static; }
-      .sidebar-links {
+      .drama-page .page-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .drama-page .sidebar {
+        position: static;
+      }
+
+      .drama-page .sidebar-links {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
     @media (max-width: 560px) {
-      .topbar { padding: 12px 4%; }
-      .topnav { gap: 12px; }
-      .hero { padding: 38px 6%; }
-      .page-layout { padding: 0 12px; margin: 20px auto; }
-      .intro-card, .lesson-section { padding: 20px 17px; }
-      h2 { font-size: 22px; }
-      .sidebar-links { grid-template-columns: 1fr; }
-      .brand-name { font-size: 17px; }
+      .drama-page .hero {
+        padding: 38px 6%;
+      }
+
+      .drama-page .page-layout {
+        padding: 0 12px;
+        margin: 20px auto;
+      }
+
+      .drama-page .intro-card,
+      .drama-page .lesson-section {
+        padding: 20px 17px;
+      }
+
+      .drama-page .content h2 {
+        font-size: 22px;
+      }
+
+      .drama-page .sidebar-links {
+        grid-template-columns: 1fr;
+      }
+
+      .drama-page .drama-script {
+        padding: 15px;
+      }
+
+      .drama-page .quote {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<header class="topbar">
-  <a class="brand" href="index.html">
-    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-    <div>
-      <div class="brand-name">MANDALA AKSARA</div>
-      <div class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</div>
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="top-inner">
+    <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+    <div class="top-actions">
+      <form class="search" role="search" onsubmit="return searchSite(event)">
+        <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+        <button type="submit" aria-label="Cari">⌕</button>
+      </form>
+      <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
     </div>
+  </div>
+</div>
+
+<!-- HEADER DAN NAVIGASI -->
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span class="brand-copy">
+      <strong>MANDALA AKSARA</strong>
+      <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+    </span>
   </a>
 
-  <nav class="topnav">
+  <button class="menu-toggle" id="menuToggle" type="button"
+    aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+  <nav id="mainNav" aria-label="Navigasi utama">
     <a href="index.html">Beranda</a>
-    <a href="perpustakaan-digital.html">Perpustakaan</a>
-    <a href="kelas-xi.html">Kelas XI</a>
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger" aria-haspopup="true">
+        Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html" class="active" aria-current="page">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+    <a href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html">Perpustakaan Digital</a>
     <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
   </nav>
 </header>
 
-<section class="hero">
-  <div class="hero-inner">
-    <div class="eyebrow">Materi Pembelajaran Bahasa Indonesia • Kelas XI</div>
-    <h1>BAB 7: Drama</h1>
-    <p>
-      Realitas Sosial dalam Dialog dan Pertunjukan. Mengenal drama sebagai
-      karya sastra yang menghidupkan persoalan kehidupan melalui tokoh,
-      konflik, dialog, dan pementasan.
-    </p>
-    <div class="hero-meta">
-      <span>Karya Sastra</span>
-      <span>Memahami dan Menganalisis</span>
-      <span>Menulis dan Mementaskan</span>
+<div class="drama-page">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Materi Pembelajaran Bahasa Indonesia • Kelas XI</div>
+      <h1>BAB 7: Drama</h1>
+      <p>
+        Realitas Sosial dalam Dialog dan Pertunjukan. Mengenal drama sebagai
+        karya sastra yang menghidupkan persoalan kehidupan melalui tokoh,
+        konflik, dialog, dan pementasan.
+      </p>
+      <div class="hero-meta">
+        <span>Karya Sastra</span>
+        <span>Memahami dan Menganalisis</span>
+        <span>Menulis dan Mementaskan</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="page-layout">
+  <div class="page-layout">
 
-  <aside class="sidebar">
-    <h3>Materi Kelas XI</h3>
-    <small>Jelajahi setiap bab pembelajaran</small>
+    <aside class="sidebar">
+      <h3>Materi Kelas XI</h3>
+      <small>Jelajahi setiap bab pembelajaran</small>
 
-    <div class="sidebar-links">
-      <a href="kelas-xi.html">← Beranda Kelas XI</a>
-      <a href="bab-1-energi-bersih.html">BAB 1 — Teks Argumentasi</a>
-      <a href="bab-2-air-bersih.html">BAB 2 — Teks Persuasi</a>
-      <a href="bab-3-teks-berita.html">BAB 3 — Teks Berita</a>
-      <a href="bab-4-cerita-pendek.html">BAB 4 — Cerita Pendek</a>
-      <a href="bab-5-teks-resensi.html">BAB 5 — Teks Resensi</a>
-      <a href="bab-6-puisi.html">BAB 6 — Puisi</a>
-      <a class="active" href="bab-7-drama.html">BAB 7 — Drama</a>
-    </div>
-  </aside>
-
-  <main class="content">
-
-    <section class="intro-card">
-      <div class="section-label">Pengantar Pembelajaran</div>
-      <h2>Drama: Ketika Kehidupan Menjadi Pertunjukan</h2>
-      <p>
-        Pernahkah kamu menonton pertunjukan teater, sinetron, film, atau
-        pementasan di sekolah? Di dalamnya ada tokoh yang berbicara,
-        melakukan tindakan, menghadapi masalah, dan berusaha menyelesaikan
-        konflik. Semua peristiwa itu disusun sehingga penonton dapat
-        mengikuti sebuah cerita.
-      </p>
-      <p>
-        Drama merupakan karya sastra yang menggambarkan kehidupan manusia
-        melalui dialog dan tindakan tokoh. Drama tidak hanya dibaca sebagai
-        naskah, tetapi juga dapat diwujudkan menjadi sebuah pertunjukan.
-      </p>
-      <div class="callout orange">
-        <strong>Pertanyaan pemantik:</strong> Mengapa sebuah pertunjukan
-        drama terkadang mampu membuat penonton tertawa, menangis, marah,
-        bahkan memikirkan kembali masalah yang terjadi di masyarakat?
+      <div class="sidebar-links">
+        <a href="kelas-xi.html">← Beranda Kelas XI</a>
+        <a href="bab-1-energi-bersih.html">BAB 1 — Teks Argumentasi</a>
+        <a href="bab-2-air-bersih.html">BAB 2 — Teks Persuasi</a>
+        <a href="bab-3-teks-berita.html">BAB 3 — Teks Berita</a>
+        <a href="bab-4-cerita-pendek.html">BAB 4 — Cerita Pendek</a>
+        <a href="bab-5-teks-resensi.html">BAB 5 — Teks Resensi</a>
+        <a href="bab-6-puisi.html">BAB 6 — Puisi</a>
+        <a class="active" href="bab-7-drama.html">BAB 7 — Drama</a>
       </div>
-    </section>
+    </aside>
 
-    <section class="lesson-section" id="pengertian">
-      <div class="section-label">Materi 1</div>
-      <h2>Apa Itu Drama?</h2>
+    <main class="content">
 
-      <p>
-        Drama adalah karya sastra yang menggambarkan kehidupan dan watak
-        manusia melalui dialog (percakapan) serta tindakan tokoh. Drama
-        biasanya ditulis dalam bentuk naskah yang dapat dipentaskan di
-        hadapan penonton.
-      </p>
-
-      <p>
-        Berbeda dengan cerpen atau novel yang sebagian besar disampaikan
-        melalui narasi pengarang, drama lebih banyak memperlihatkan cerita
-        melalui apa yang dikatakan dan dilakukan para tokohnya.
-      </p>
-
-      <div class="example">
-        <div class="example-title">Contoh sederhana</div>
-        <p><strong>Rani:</strong> "Mengapa halaman sekolah selalu kotor?"</p>
-        <p><strong>Dimas:</strong> "Karena masih banyak yang membuang sampah sembarangan."</p>
-        <p><strong>Rani:</strong> "Kalau begitu, kita harus mulai mengubah kebiasaan itu."</p>
+      <section class="intro-card">
+        <div class="section-label">Pengantar Pembelajaran</div>
+        <h2>Drama: Ketika Kehidupan Menjadi Pertunjukan</h2>
         <p>
-          <em>Rani mengambil sampah di dekat bangku, kemudian memasukkannya
-          ke tempat sampah. Dimas ikut membantu.</em>
+          Pernahkah kamu menonton pertunjukan teater, sinetron, film, atau
+          pementasan di sekolah? Di dalamnya ada tokoh yang berbicara,
+          melakukan tindakan, menghadapi masalah, dan berusaha menyelesaikan
+          konflik. Semua peristiwa itu disusun sehingga penonton dapat
+          mengikuti sebuah cerita.
         </p>
         <p>
-          Dari percakapan dan tindakan sederhana tersebut, penonton dapat
-          memahami persoalan kebersihan serta sikap tokoh-tokohnya tanpa
-          harus dijelaskan panjang lebar oleh narator.
+          Drama merupakan karya sastra yang menggambarkan kehidupan manusia
+          melalui dialog dan tindakan tokoh. Drama tidak hanya dibaca sebagai
+          naskah, tetapi juga dapat diwujudkan menjadi sebuah pertunjukan.
         </p>
-      </div>
-
-      <h3>Drama sebagai karya sastra dan seni pertunjukan</h3>
-      <p>
-        Drama memiliki dua sisi yang saling berkaitan. Pertama, drama sebagai
-        karya sastra, yaitu naskah yang berisi cerita, dialog, tokoh, konflik,
-        dan petunjuk pementasan. Kedua, drama sebagai seni pertunjukan, yaitu
-        perwujudan naskah melalui permainan aktor, gerak, suara, tata panggung,
-        kostum, pencahayaan, dan unsur pendukung lainnya.
-      </p>
-
-      <h3>Perbedaan drama dengan cerpen dan novel</h3>
-      <div class="table-wrap">
-        <table>
-          <tr>
-            <th>Aspek</th>
-            <th>Drama</th>
-            <th>Cerpen/Novel</th>
-          </tr>
-          <tr>
-            <td>Cara penyampaian</td>
-            <td>Dialog dan tindakan tokoh</td>
-            <td>Narasi dan dialog</td>
-          </tr>
-          <tr>
-            <td>Bentuk utama</td>
-            <td>Naskah untuk dipentaskan</td>
-            <td>Prosa atau cerita tertulis</td>
-          </tr>
-          <tr>
-            <td>Petunjuk cerita</td>
-            <td>Dialog dan petunjuk laku</td>
-            <td>Narasi pengarang</td>
-          </tr>
-          <tr>
-            <td>Tujuan penyajian</td>
-            <td>Dapat dibaca dan dipentaskan</td>
-            <td>Dibaca dan dinikmati sebagai cerita</td>
-          </tr>
-        </table>
-      </div>
-
-      <h3>Jenis-jenis drama berdasarkan isinya</h3>
-      <ul>
-        <li>
-          <strong>Tragedi:</strong> drama yang mengisahkan penderitaan,
-          konflik berat, atau peristiwa menyedihkan.
-        </li>
-        <li>
-          <strong>Komedi:</strong> drama yang menghadirkan kelucuan untuk
-          menghibur, sering kali sekaligus menyampaikan kritik.
-        </li>
-        <li>
-          <strong>Tragikomedi:</strong> drama yang memadukan unsur sedih
-          dan lucu.
-        </li>
-        <li>
-          <strong>Melodrama:</strong> drama yang menonjolkan emosi kuat
-          serta pertentangan yang jelas antara kebaikan dan keburukan.
-        </li>
-        <li>
-          <strong>Drama realis:</strong> drama yang menggambarkan kehidupan
-          sehari-hari dengan situasi dan perilaku yang terasa dekat dengan
-          kenyataan.
-        </li>
-      </ul>
-
-      <div class="callout">
-        <strong>Ingat:</strong> Drama bukan hanya cerita yang lucu atau
-        menyedihkan. Drama dapat mengangkat berbagai persoalan kehidupan,
-        mulai dari keluarga, pendidikan, persahabatan, lingkungan, hingga
-        ketidakadilan sosial.
-      </div>
-    </section>
-
-    <section class="lesson-section" id="unsur">
-      <div class="section-label">Materi 2</div>
-      <h2>Unsur-Unsur Pembangun Drama</h2>
-
-      <p>
-        Sebuah drama tidak terbentuk secara kebetulan. Ada unsur-unsur yang
-        saling berkaitan untuk membangun cerita. Unsur tersebut membantu
-        penulis menyusun cerita dan membantu pembaca atau penonton memahami
-        makna pertunjukan.
-      </p>
-
-      <h3>1. Tema</h3>
-      <p>
-        Tema adalah gagasan utama atau persoalan pokok yang menjadi dasar
-        cerita. Tema menjawab pertanyaan: sebenarnya drama ini membicarakan
-        hal apa?
-      </p>
-      <p>Contoh tema drama:</p>
-      <ul>
-        <li>Kejujuran dalam kehidupan sekolah.</li>
-        <li>Perjuangan keluarga menghadapi kemiskinan.</li>
-        <li>Persahabatan dan kesetiakawanan.</li>
-        <li>Ketidakadilan dalam masyarakat.</li>
-        <li>Kerusakan lingkungan akibat ulah manusia.</li>
-      </ul>
-
-      <h3>2. Tokoh dan penokohan</h3>
-      <p>
-        Tokoh adalah orang atau pelaku yang mengalami peristiwa dalam drama.
-        Penokohan adalah cara pengarang menggambarkan watak atau karakter
-        tokoh tersebut.
-      </p>
-      <p>Beberapa jenis tokoh berdasarkan perannya:</p>
-      <ul>
-        <li>
-          <strong>Protagonis:</strong> tokoh yang menjadi pusat perhatian
-          dan biasanya membawa nilai atau tujuan yang diperjuangkan.
-        </li>
-        <li>
-          <strong>Antagonis:</strong> tokoh atau kekuatan yang menentang
-          tujuan protagonis sehingga menimbulkan konflik.
-        </li>
-        <li>
-          <strong>Tritagonis:</strong> tokoh yang berperan sebagai penengah,
-          pendukung, atau penghubung antara pihak-pihak yang berkonflik.
-        </li>
-      </ul>
-      <p>
-        Tokoh juga dapat dibedakan berdasarkan wataknya, misalnya jujur,
-        pemarah, sabar, sombong, peduli, licik, atau bertanggung jawab.
-      </p>
-
-      <h4>Bagaimana mengetahui watak tokoh?</h4>
-      <p>
-        Watak tokoh dapat diketahui melalui ucapan, tindakan, pikiran yang
-        diungkapkan, reaksi tokoh lain, serta petunjuk dalam naskah.
-      </p>
-      <div class="example">
-        <div class="example-title">Contoh analisis watak</div>
-        <p><strong>Dialog:</strong> "Aku tidak mau mengambil uang itu. Bukan hakku."</p>
-        <p>
-          <strong>Analisis:</strong> Tokoh tersebut memiliki watak jujur
-          karena menolak mengambil sesuatu yang bukan miliknya.
-        </p>
-      </div>
-
-      <h3>3. Alur atau plot</h3>
-      <p>
-        Alur adalah rangkaian peristiwa yang membentuk jalannya cerita.
-        Alur menunjukkan bagaimana sebuah persoalan muncul, berkembang,
-        mencapai puncak, kemudian memperoleh penyelesaian.
-      </p>
-      <p>Secara umum, alur drama dapat dijelaskan melalui tahapan berikut:</p>
-      <ol>
-        <li><strong>Pengenalan:</strong> memperkenalkan tokoh, situasi, dan latar.</li>
-        <li><strong>Munculnya konflik:</strong> persoalan mulai terjadi.</li>
-        <li><strong>Perkembangan konflik:</strong> masalah semakin rumit.</li>
-        <li><strong>Klimaks:</strong> konflik mencapai ketegangan tertinggi.</li>
-        <li><strong>Penyelesaian:</strong> konflik mulai menemukan jalan keluar atau berakhir.</li>
-      </ol>
-      <p>
-        Berdasarkan urutan waktunya, alur dapat berupa alur maju, alur mundur,
-        atau alur campuran.
-      </p>
-
-      <h3>4. Latar</h3>
-      <p>
-        Latar adalah keterangan mengenai tempat, waktu, dan suasana
-        berlangsungnya peristiwa dalam drama.
-      </p>
-      <ul>
-        <li><strong>Latar tempat:</strong> di mana peristiwa terjadi, misalnya sekolah, rumah, pasar, atau kantor desa.</li>
-        <li><strong>Latar waktu:</strong> kapan peristiwa berlangsung, misalnya pagi, malam, atau masa tertentu.</li>
-        <li><strong>Latar suasana:</strong> keadaan emosional yang terasa, misalnya tegang, sedih, gembira, atau mencekam.</li>
-      </ul>
-
-      <h3>5. Dialog</h3>
-      <p>
-        Dialog adalah percakapan antartokoh dalam drama. Dialog menjadi
-        sarana utama untuk menyampaikan informasi, memperlihatkan watak,
-        membangun hubungan antartokoh, dan mengembangkan konflik.
-      </p>
-      <p>
-        Dialog yang baik harus terasa wajar, sesuai dengan karakter tokoh,
-        situasi, dan tujuan percakapan. Setiap tokoh sebaiknya memiliki
-        cara berbicara yang tidak selalu sama.
-      </p>
-
-      <h3>6. Amanat</h3>
-      <p>
-        Amanat adalah pesan atau pelajaran yang ingin disampaikan melalui
-        cerita. Amanat dapat disampaikan secara langsung melalui dialog,
-        tetapi sering kali tersirat melalui tindakan dan akibat yang dialami
-        tokoh.
-      </p>
-      <div class="example">
-        <div class="example-title">Contoh amanat</div>
-        <p>
-          Drama menceritakan seorang siswa yang menyontek. Ia memperoleh
-          nilai tinggi, tetapi akhirnya kehilangan kepercayaan guru dan
-          teman-temannya.
-        </p>
-        <p>
-          <strong>Amanat:</strong> Kejujuran lebih penting daripada
-          memperoleh hasil yang baik dengan cara curang.
-        </p>
-      </div>
-    </section>
-
-    <section class="lesson-section" id="naskah">
-      <div class="section-label">Materi 3</div>
-      <h2>Mengenal Isi dan Struktur Naskah Drama</h2>
-
-      <p>
-        Naskah drama adalah teks tertulis yang menjadi pedoman bagi pemain
-        dan seluruh tim pementasan. Naskah berisi dialog, petunjuk tindakan,
-        serta susunan peristiwa yang akan ditampilkan.
-      </p>
-
-      <h3>A. Bagian-bagian dalam naskah drama</h3>
-
-      <h4>1. Teks utama: dialog</h4>
-      <p>
-        Teks utama adalah bagian naskah yang berisi percakapan antartokoh.
-        Bagian inilah yang umumnya diucapkan oleh pemain saat pementasan.
-      </p>
-
-      <h4>2. Teks samping: petunjuk laku atau keterangan panggung</h4>
-      <p>
-        Teks samping adalah keterangan tambahan yang memberikan petunjuk
-        kepada pemain atau tim pementasan. Isinya dapat berupa gerakan,
-        ekspresi, nada bicara, suasana, maupun keadaan panggung.
-      </p>
-      <p>
-        Teks samping biasanya ditulis di dalam tanda kurung dan tidak
-        diucapkan sebagai dialog oleh pemain.
-      </p>
-
-      <div class="example">
-        <div class="example-title">Contoh teks samping</div>
-        <p><strong>Rina:</strong> "Aku sudah mencoba menjelaskan semuanya."</p>
-        <p><em>(Rina menunduk, suaranya terdengar pelan.)</em></p>
-        <p><strong>Andi:</strong> "Tapi mengapa kamu tidak mengatakan yang sebenarnya sejak awal?"</p>
-        <p><em>(Andi berjalan mendekati Rina dengan wajah kecewa.)</em></p>
         <div class="callout orange">
-          Keterangan dalam tanda kurung merupakan petunjuk bagi pemain.
-          Keterangan tersebut membantu menentukan gerakan, ekspresi, dan
-          cara mengucapkan dialog.
+          <strong>Pertanyaan pemantik:</strong> Mengapa sebuah pertunjukan
+          drama terkadang mampu membuat penonton tertawa, menangis, marah,
+          bahkan memikirkan kembali masalah yang terjadi di masyarakat?
         </div>
-      </div>
+      </section>
 
-      <h3>B. Struktur umum drama</h3>
-      <p>
-        Naskah drama dapat memiliki pembagian bagian yang berbeda-beda.
-        Salah satu susunan yang umum dikenal adalah prolog, babak atau
-        adegan, dan epilog.
-      </p>
+      <section class="lesson-section" id="pengertian">
+        <div class="section-label">Materi 1</div>
+        <h2>Apa Itu Drama?</h2>
 
-      <h4>1. Prolog</h4>
-      <p>
-        Prolog merupakan bagian pembuka yang memberikan gambaran awal
-        mengenai cerita, situasi, latar, atau persoalan yang akan diangkat.
-        Prolog dapat disampaikan oleh narator atau melalui bentuk pembuka
-        tertentu.
-      </p>
-
-      <h4>2. Babak dan adegan</h4>
-      <p>
-        Babak adalah bagian besar dalam drama yang menandai perkembangan
-        peristiwa. Di dalam satu babak dapat terdapat beberapa adegan.
-        Adegan biasanya ditandai oleh perubahan situasi, tempat, waktu,
-        atau kehadiran dan keluarnya tokoh.
-      </p>
-
-      <h4>3. Epilog</h4>
-      <p>
-        Epilog merupakan bagian penutup yang memberikan kesimpulan,
-        penegasan pesan, atau gambaran akhir dari cerita.
-      </p>
-
-      <div class="callout">
-        <strong>Catatan penting:</strong> Tidak semua naskah drama harus
-        memiliki prolog dan epilog. Ada naskah yang langsung dimulai dengan
-        dialog dan berakhir pada adegan terakhir. Pembagian babak dan adegan
-        juga dapat disesuaikan dengan kebutuhan cerita.
-      </div>
-
-      <h3>C. Contoh potongan naskah drama</h3>
-      <div class="drama-script">
-        <div class="example-title">Judul: Suara dari Bangku Belakang</div>
-        <p><strong>Tokoh:</strong> Raka, Sinta, dan Bima.</p>
-        <p><strong>Latar:</strong> Ruang kelas, siang hari.</p>
-
-        <p><strong>PROLOG</strong></p>
         <p>
-          <em>
-            (Suasana kelas mulai ramai setelah jam pelajaran selesai.
-            Beberapa siswa bersiap pulang. Di sudut kelas, Raka masih
-            duduk sambil memperhatikan sebuah pengumuman.)
-          </em>
+          Drama adalah karya sastra yang menggambarkan kehidupan dan watak
+          manusia melalui dialog (percakapan) serta tindakan tokoh. Drama
+          biasanya ditulis dalam bentuk naskah yang dapat dipentaskan di
+          hadapan penonton.
         </p>
 
-        <p><strong>ADEGAN 1</strong></p>
-        <p><span class="character">Raka:</span> "Kalian sudah membaca pengumuman itu?"</p>
-        <p><span class="character">Sinta:</span> "Yang tentang bantuan pendidikan? Sudah. Memangnya kenapa?"</p>
-        <p><span class="character">Raka:</span> "Aku ingin mendaftar, tetapi aku tidak tahu harus mulai dari mana."</p>
-        <p><span class="character">Bima:</span> "Kalau memang membutuhkan, kenapa tidak dicoba? Jangan menyerah sebelum bertanya."</p>
         <p>
-          <em>
-            (Raka terdiam. Ia melipat kertas pengumuman, kemudian
-            menatap kedua temannya.)
-          </em>
+          Berbeda dengan cerpen atau novel yang sebagian besar disampaikan
+          melalui narasi pengarang, drama lebih banyak memperlihatkan cerita
+          melalui apa yang dikatakan dan dilakukan para tokohnya.
         </p>
-        <p><span class="character">Raka:</span> "Aku takut dianggap tidak mampu."</p>
-        <p><span class="character">Sinta:</span> "Meminta kesempatan bukanlah sesuatu yang memalukan. Setiap orang berhak mendapatkan peluang untuk belajar."</p>
 
-        <p><strong>EPILOG</strong></p>
+        <div class="example">
+          <div class="example-title">Contoh sederhana</div>
+          <p><strong>Rani:</strong> "Mengapa halaman sekolah selalu kotor?"</p>
+          <p><strong>Dimas:</strong> "Karena masih banyak yang membuang sampah sembarangan."</p>
+          <p><strong>Rani:</strong> "Kalau begitu, kita harus mulai mengubah kebiasaan itu."</p>
+          <p>
+            <em>Rani mengambil sampah di dekat bangku, kemudian memasukkannya
+            ke tempat sampah. Dimas ikut membantu.</em>
+          </p>
+          <p>
+            Dari percakapan dan tindakan sederhana tersebut, penonton dapat
+            memahami persoalan kebersihan serta sikap tokoh-tokohnya tanpa
+            harus dijelaskan panjang lebar oleh narator.
+          </p>
+        </div>
+
+        <h3>Drama sebagai karya sastra dan seni pertunjukan</h3>
         <p>
-          <em>
-            (Ketiganya berjalan menuju ruang guru. Raka menggenggam
-            pengumuman itu dengan lebih yakin.)
-          </em>
+          Drama memiliki dua sisi yang saling berkaitan. Pertama, drama sebagai
+          karya sastra, yaitu naskah yang berisi cerita, dialog, tokoh, konflik,
+          dan petunjuk pementasan. Kedua, drama sebagai seni pertunjukan, yaitu
+          perwujudan naskah melalui permainan aktor, gerak, suara, tata panggung,
+          kostum, pencahayaan, dan unsur pendukung lainnya.
         </p>
+
+        <h3>Perbedaan drama dengan cerpen dan novel</h3>
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Aspek</th>
+              <th>Drama</th>
+              <th>Cerpen/Novel</th>
+            </tr>
+            <tr>
+              <td>Cara penyampaian</td>
+              <td>Dialog dan tindakan tokoh</td>
+              <td>Narasi dan dialog</td>
+            </tr>
+            <tr>
+              <td>Bentuk utama</td>
+              <td>Naskah untuk dipentaskan</td>
+              <td>Prosa atau cerita tertulis</td>
+            </tr>
+            <tr>
+              <td>Petunjuk cerita</td>
+              <td>Dialog dan petunjuk laku</td>
+              <td>Narasi pengarang</td>
+            </tr>
+            <tr>
+              <td>Tujuan penyajian</td>
+              <td>Dapat dibaca dan dipentaskan</td>
+              <td>Dibaca dan dinikmati sebagai cerita</td>
+            </tr>
+          </table>
+        </div>
+
+        <h3>Jenis-jenis drama berdasarkan isinya</h3>
+        <ul>
+          <li><strong>Tragedi:</strong> drama yang mengisahkan penderitaan, konflik berat, atau peristiwa menyedihkan.</li>
+          <li><strong>Komedi:</strong> drama yang menghadirkan kelucuan untuk menghibur, sering kali sekaligus menyampaikan kritik.</li>
+          <li><strong>Tragikomedi:</strong> drama yang memadukan unsur sedih dan lucu.</li>
+          <li><strong>Melodrama:</strong> drama yang menonjolkan emosi kuat serta pertentangan yang jelas antara kebaikan dan keburukan.</li>
+          <li><strong>Drama realis:</strong> drama yang menggambarkan kehidupan sehari-hari dengan situasi dan perilaku yang terasa dekat dengan kenyataan.</li>
+        </ul>
+
+        <div class="callout">
+          <strong>Ingat:</strong> Drama bukan hanya cerita yang lucu atau
+          menyedihkan. Drama dapat mengangkat berbagai persoalan kehidupan,
+          mulai dari keluarga, pendidikan, persahabatan, lingkungan, hingga
+          ketidakadilan sosial.
+        </div>
+      </section>
+
+      <section class="lesson-section" id="unsur">
+        <div class="section-label">Materi 2</div>
+        <h2>Unsur-Unsur Pembangun Drama</h2>
+
         <p>
-          <strong>Pesan cerita:</strong> Jangan membiarkan rasa malu
-          menghalangi seseorang untuk memperjuangkan kesempatan.
+          Sebuah drama tidak terbentuk secara kebetulan. Ada unsur-unsur yang
+          saling berkaitan untuk membangun cerita. Unsur tersebut membantu
+          penulis menyusun cerita dan membantu pembaca atau penonton memahami
+          makna pertunjukan.
         </p>
-      </div>
-      <p>
-        Potongan naskah tersebut memperlihatkan dialog sebagai teks utama
-        dan keterangan dalam tanda kurung sebagai teks samping. Cerita
-        mengangkat persoalan kesempatan memperoleh pendidikan.
-      </p>
-    </section>
 
-    <section class="lesson-section" id="bahasa">
-      <div class="section-label">Materi 4</div>
-      <h2>Ciri Kebahasaan dalam Naskah Drama</h2>
-
-      <p>
-        Bahasa dalam drama memiliki ciri khas karena digunakan untuk
-        membangun percakapan dan menghidupkan tokoh. Bahasa harus mampu
-        membuat penonton memahami situasi sekaligus merasakan emosi
-        yang dialami tokoh.
-      </p>
-
-      <h3>1. Menggunakan kalimat langsung</h3>
-      <p>
-        Kalimat langsung adalah kalimat yang menyampaikan ucapan seseorang
-        sebagaimana diucapkan. Dalam naskah drama, kalimat langsung
-        digunakan untuk menampilkan dialog.
-      </p>
-      <div class="example">
-        <p><strong>Contoh:</strong></p>
-        <p>Rani: "Kapan kita mulai membersihkan lingkungan?"</p>
-        <p>Doni: "Besok pagi. Aku akan mengajak teman-teman yang lain."</p>
-      </div>
-
-      <h3>2. Menggunakan bahasa percakapan</h3>
-      <p>
-        Bahasa percakapan adalah bahasa yang digunakan tokoh ketika
-        berkomunikasi. Pilihan kata dan gaya berbicara harus disesuaikan
-        dengan usia, latar belakang, hubungan, serta karakter tokoh.
-      </p>
-      <p>
-        Seorang kepala desa mungkin berbicara dengan bahasa yang lebih
-        formal ketika menyampaikan pengumuman, sedangkan dua sahabat
-        dapat menggunakan bahasa yang lebih santai.
-      </p>
-
-      <h3>3. Menggunakan kata ganti orang</h3>
-      <p>
-        Dialog sering menggunakan kata ganti seperti aku, saya, kamu,
-        Anda, dia, kami, dan mereka. Pemilihan kata ganti dapat menunjukkan
-        kedekatan, rasa hormat, atau hubungan antartokoh.
-      </p>
-
-      <h3>4. Menggunakan kata seru dan ungkapan emosi</h3>
-      <p>
-        Kata seru dapat digunakan untuk menunjukkan keterkejutan,
-        kekaguman, kekecewaan, atau kemarahan. Contohnya: wah, aduh,
-        astaga, dan ah.
-      </p>
-
-      <h3>5. Menggunakan tanda baca untuk membantu intonasi</h3>
-      <ul>
-        <li><strong>Tanda tanya (?):</strong> menunjukkan pertanyaan.</li>
-        <li><strong>Tanda seru (!):</strong> menunjukkan seruan, perintah, atau emosi kuat.</li>
-        <li><strong>Tanda titik (.):</strong> menandai akhir pernyataan.</li>
-        <li><strong>Tanda elipsis (...):</strong> dapat menunjukkan ucapan yang terputus, keraguan, atau jeda tertentu.</li>
-        <li><strong>Tanda koma (,):</strong> membantu mengatur jeda dalam kalimat.</li>
-      </ul>
-
-      <div class="example">
-        <div class="example-title">Perhatikan perbedaan pengucapan</div>
-        <p><strong>"Kamu datang."</strong> → Pernyataan biasa.</p>
-        <p><strong>"Kamu datang?"</strong> → Pertanyaan atau rasa heran.</p>
-        <p><strong>"Kamu datang!"</strong> → Penegasan atau emosi kuat.</p>
-        <p><strong>"Kamu... datang?"</strong> → Keraguan atau keterkejutan.</p>
-      </div>
-
-      <h3>6. Menggunakan kalimat perintah, ajakan, dan larangan</h3>
-      <p>
-        Drama sering menampilkan tokoh yang memerintah, mengajak,
-        meminta, atau melarang tokoh lain.
-      </p>
-      <ul>
-        <li>Perintah: "Tolong tutup pintu itu!"</li>
-        <li>Ajakan: "Mari kita selesaikan masalah ini bersama."</li>
-        <li>Larangan: "Jangan membuang sampah di sungai!"</li>
-        <li>Permintaan: "Bisakah kamu mendengarkan penjelasanku?"</li>
-      </ul>
-
-      <div class="callout orange">
-        <strong>Hal yang perlu diperhatikan:</strong> Dialog drama tidak
-        harus selalu menggunakan bahasa baku. Bahasa harus sesuai dengan
-        karakter dan situasi, tetapi tetap memperhatikan kesantunan serta
-        tujuan komunikasi.
-      </div>
-    </section>
-
-    <section class="lesson-section" id="sosial">
-      <div class="section-label">Materi 5</div>
-      <h2>Drama dan Realitas Sosial</h2>
-
-      <p>
-        Realitas sosial adalah keadaan, persoalan, hubungan, dan peristiwa
-        yang terjadi dalam kehidupan masyarakat. Drama sering mengambil
-        bahan cerita dari realitas sosial tersebut agar penonton dapat
-        melihat kehidupan dari sudut pandang yang berbeda.
-      </p>
-
-      <p>
-        Persoalan sosial dapat muncul di lingkungan keluarga, sekolah,
-        masyarakat, maupun kehidupan berbangsa. Melalui drama, persoalan
-        yang mungkin selama ini dianggap biasa dapat diperlihatkan
-        secara lebih mendalam.
-      </p>
-
-      <h3>Contoh persoalan sosial yang dapat diangkat dalam drama</h3>
-
-      <h4>1. Kemiskinan dan kesenjangan sosial</h4>
-      <p>
-        Drama dapat menggambarkan keluarga yang kesulitan memenuhi
-        kebutuhan hidup, anak yang harus membantu orang tua, atau
-        perbedaan kesempatan antara kelompok masyarakat.
-      </p>
-
-      <h4>2. Ketidakadilan</h4>
-      <p>
-        Cerita dapat memperlihatkan seseorang yang diperlakukan tidak
-        adil karena status ekonomi, kedudukan, atau latar belakangnya.
-      </p>
-
-      <h4>3. Pergaulan dan perundungan</h4>
-      <p>
-        Drama dapat mengangkat tindakan mengejek, mengucilkan,
-        menyebarkan kebencian, atau menyalahgunakan media sosial.
-        Persoalan tersebut dapat mengajak penonton memahami dampak
-        tindakan terhadap korban.
-      </p>
-
-      <h4>4. Kerusakan lingkungan</h4>
-      <p>
-        Pencemaran sungai, penebangan liar, sampah, dan kurangnya
-        kepedulian terhadap lingkungan dapat menjadi sumber konflik
-        dalam cerita.
-      </p>
-
-      <h4>5. Konflik dalam keluarga</h4>
-      <p>
-        Perbedaan pendapat antara orang tua dan anak, kurangnya komunikasi,
-        serta tanggung jawab dalam keluarga dapat menjadi persoalan
-        yang dekat dengan kehidupan penonton.
-      </p>
-
-      <h3>Mengapa drama mengangkat realitas sosial?</h3>
-      <ol>
-        <li>
-          <strong>Membangun kesadaran:</strong> membuat penonton menyadari
-          bahwa suatu persoalan benar-benar terjadi di sekitarnya.
-        </li>
-        <li>
-          <strong>Menumbuhkan empati:</strong> mengajak penonton memahami
-          perasaan dan keadaan orang lain.
-        </li>
-        <li>
-          <strong>Menyampaikan kritik:</strong> menunjukkan kebiasaan atau
-          keadaan yang perlu diperbaiki.
-        </li>
-        <li>
-          <strong>Memberikan pembelajaran:</strong> memperlihatkan akibat
-          dari tindakan dan pilihan manusia.
-        </li>
-        <li>
-          <strong>Mendorong perubahan:</strong> mengajak masyarakat untuk
-          lebih peduli dan bertindak secara positif.
-        </li>
-      </ol>
-
-      <div class="callout orange">
-        <strong>Drama bukan sekadar meniru kenyataan.</strong> Penulis
-        memilih dan menyusun peristiwa agar penonton dapat memahami
-        persoalan, melihat akibatnya, dan merenungkan pesan yang
-        disampaikan.
-      </div>
-
-      <h3>Menganalisis persoalan sosial dalam drama</h3>
-      <p>
-        Ketika membaca atau menonton drama, jangan hanya memperhatikan
-        siapa tokoh yang baik dan siapa yang jahat. Cobalah memahami
-        persoalan yang melatarbelakangi tindakan tokoh.
-      </p>
-      <ol>
-        <li>Persoalan sosial apa yang diangkat?</li>
-        <li>Siapa saja yang mengalami atau terlibat dalam persoalan tersebut?</li>
-        <li>Apa penyebab terjadinya konflik?</li>
-        <li>Bagaimana sikap setiap tokoh menghadapi masalah?</li>
-        <li>Apa akibat dari tindakan tokoh?</li>
-        <li>Nilai atau pesan apa yang dapat dipelajari?</li>
-      </ol>
-    </section>
-
-    <section class="lesson-section" id="analisis">
-      <div class="section-label">Materi 6</div>
-      <h2>Menganalisis Drama secara Kritis</h2>
-
-      <p>
-        Menganalisis drama berarti memahami isi cerita, mengidentifikasi
-        unsur pembangunnya, menilai cara penulis menyampaikan persoalan,
-        dan menemukan pesan yang terkandung di dalamnya.
-      </p>
-
-      <p>
-        Analisis yang baik tidak cukup hanya mengatakan bahwa sebuah drama
-        menarik, menyedihkan, atau bagus. Penilaian harus disertai alasan
-        dan bukti dari dialog maupun tindakan tokoh.
-      </p>
-
-      <h3>Langkah-langkah menganalisis drama</h3>
-      <ol>
-        <li>
-          <strong>Memahami keseluruhan cerita.</strong> Baca naskah atau
-          saksikan pertunjukan dari awal sampai akhir.
-        </li>
-        <li>
-          <strong>Menentukan tema.</strong> Temukan persoalan utama yang
-          menjadi dasar cerita.
-        </li>
-        <li>
-          <strong>Mengidentifikasi tokoh.</strong> Kenali peran, watak,
-          tujuan, dan hubungan antartokoh.
-        </li>
-        <li>
-          <strong>Menelusuri alur.</strong> Perhatikan awal konflik,
-          perkembangan, puncak, dan penyelesaiannya.
-        </li>
-        <li>
-          <strong>Menemukan latar.</strong> Catat tempat, waktu, dan
-          suasana cerita.
-        </li>
-        <li>
-          <strong>Menafsirkan dialog dan tindakan.</strong> Pahami maksud
-          ucapan serta alasan tokoh melakukan sesuatu.
-        </li>
-        <li>
-          <strong>Merumuskan amanat.</strong> Temukan pelajaran yang
-          dapat diambil dari cerita.
-        </li>
-        <li>
-          <strong>Memberikan penilaian.</strong> Sampaikan kelebihan,
-          kekurangan, dan alasan yang didukung bukti.
-        </li>
-      </ol>
-
-      <h3>Contoh analisis berdasarkan kutipan</h3>
-      <div class="example">
-        <div class="example-title">Kutipan dialog</div>
-        <p><strong>Warga 1:</strong> "Sungai ini dahulu jernih. Anak-anak bahkan bisa bermain di sana."</p>
-        <p><strong>Warga 2:</strong> "Sekarang sampah menumpuk. Kita semua membiarkannya terlalu lama."</p>
-        <p><strong>Warga 1:</strong> "Kalau kita hanya saling menyalahkan, siapa yang akan mulai membersihkannya?"</p>
-      </div>
-
-      <div class="table-wrap">
-        <table>
-          <tr>
-            <th>Aspek</th>
-            <th>Hasil Analisis</th>
-          </tr>
-          <tr>
-            <td>Tema</td>
-            <td>Kerusakan lingkungan dan tanggung jawab masyarakat.</td>
-          </tr>
-          <tr>
-            <td>Konflik</td>
-            <td>Sungai tercemar karena sampah dan kurangnya kepedulian warga.</td>
-          </tr>
-          <tr>
-            <td>Watak tokoh</td>
-            <td>Warga 1 menunjukkan kepedulian dan mengajak orang lain bertindak.</td>
-          </tr>
-          <tr>
-            <td>Amanat</td>
-            <td>Menjaga lingkungan merupakan tanggung jawab bersama.</td>
-          </tr>
-          <tr>
-            <td>Bukti</td>
-            <td>"Kalau kita hanya saling menyalahkan, siapa yang akan mulai membersihkannya?"</td>
-          </tr>
-        </table>
-      </div>
-
-      <h3>Bagaimana memberikan penilaian yang logis?</h3>
-      <p>
-        Penilaian yang logis adalah penilaian yang memiliki alasan jelas
-        dan didukung bukti. Gunakan pola berikut:
-      </p>
-      <div class="callout">
-        <strong>Pendapat → Alasan → Bukti → Kesimpulan</strong>
+        <h3>1. Tema</h3>
         <p>
-          Contoh: "Drama tersebut menarik karena mengangkat persoalan
-          pencemaran sungai yang dekat dengan kehidupan masyarakat.
-          Hal ini terlihat dari dialog warga yang mengeluhkan perubahan
-          kondisi sungai. Dengan demikian, cerita tersebut berhasil
-          mengajak penonton memikirkan tanggung jawab menjaga lingkungan."
+          Tema adalah gagasan utama atau persoalan pokok yang menjadi dasar
+          cerita. Tema menjawab pertanyaan: sebenarnya drama ini membicarakan
+          hal apa?
         </p>
-      </div>
-      <p>
-        Dengan pola tersebut, pendapat tidak hanya menjadi pernyataan
-        pribadi, tetapi dapat dipertanggungjawabkan melalui bukti.
-      </p>
-    </section>
+        <p>Contoh tema drama:</p>
+        <ul>
+          <li>Kejujuran dalam kehidupan sekolah.</li>
+          <li>Perjuangan keluarga menghadapi kemiskinan.</li>
+          <li>Persahabatan dan kesetiakawanan.</li>
+          <li>Ketidakadilan dalam masyarakat.</li>
+          <li>Kerusakan lingkungan akibat ulah manusia.</li>
+        </ul>
 
-    <section class="lesson-section" id="pementasan">
-      <div class="section-label">Materi 7</div>
-      <h2>Menyajikan dan Mementaskan Drama</h2>
-
-      <p>
-        Pementasan drama adalah kegiatan menampilkan cerita di hadapan
-        penonton dengan melibatkan pemain dan unsur pendukung pertunjukan.
-        Naskah yang semula berupa tulisan diubah menjadi pengalaman yang
-        dapat dilihat dan didengar.
-      </p>
-
-      <h3>A. Bentuk penyajian drama</h3>
-
-      <h4>1. Monolog</h4>
-      <p>
-        Monolog adalah penyajian yang dilakukan oleh satu orang pemain.
-        Pemain menyampaikan pikiran, perasaan, pengalaman, atau cerita
-        melalui tuturan dan ekspresi.
-      </p>
-      <p>
-        Contoh: seorang siswa berdiri di panggung dan menceritakan
-        pengalamannya menghadapi perundungan.
-      </p>
-
-      <h4>2. Dialog</h4>
-      <p>
-        Dialog adalah percakapan antara dua orang atau lebih. Dalam
-        pementasan, dialog digunakan untuk menunjukkan hubungan,
-        perbedaan pendapat, dan perkembangan konflik antartokoh.
-      </p>
-      <p>
-        Contoh: dua sahabat berdiskusi mengenai keputusan untuk
-        membantu teman yang mengalami kesulitan.
-      </p>
-
-      <h4>3. Gelar wicara atau talk show</h4>
-      <p>
-        Gelar wicara adalah bentuk penyajian berupa perbincangan yang
-        dipandu oleh seorang pembawa acara atau moderator bersama
-        narasumber. Dalam pembelajaran drama, bentuk ini dapat digunakan
-        untuk membahas isi, pesan, karakter tokoh, atau persoalan sosial
-        dalam sebuah drama.
-      </p>
-      <p>
-        Contoh: seorang moderator mengundang pemain drama untuk
-        mendiskusikan persoalan perundungan yang diangkat dalam
-        pertunjukan.
-      </p>
-
-      <div class="callout">
-        Monolog, dialog, dan gelar wicara merupakan bentuk penyajian
-        yang dapat digunakan dalam kegiatan pembelajaran. Gelar wicara
-        bukan bentuk drama dalam pengertian genre sastra, melainkan
-        bentuk perbincangan untuk menyajikan atau membahas suatu karya.
-      </div>
-
-      <h3>B. Unsur-unsur pendukung pementasan</h3>
-      <ul>
-        <li>
-          <strong>Pemain atau aktor:</strong> orang yang memerankan tokoh
-          dalam drama.
-        </li>
-        <li>
-          <strong>Sutradara:</strong> orang yang mengarahkan pemain dan
-          mengatur keseluruhan jalannya pertunjukan.
-        </li>
-        <li>
-          <strong>Naskah:</strong> pedoman cerita, dialog, dan petunjuk
-          pementasan.
-        </li>
-        <li>
-          <strong>Panggung:</strong> tempat berlangsungnya pertunjukan.
-        </li>
-        <li>
-          <strong>Properti:</strong> benda yang digunakan pemain untuk
-          mendukung cerita, misalnya meja, kursi, buku, atau telepon.
-        </li>
-        <li>
-          <strong>Kostum dan tata rias:</strong> membantu menunjukkan
-          karakter, usia, pekerjaan, dan keadaan tokoh.
-        </li>
-        <li>
-          <strong>Tata cahaya:</strong> membantu membangun suasana dan
-          mengarahkan perhatian penonton.
-        </li>
-        <li>
-          <strong>Tata suara dan musik:</strong> mendukung suasana serta
-          memperkuat efek dramatik.
-        </li>
-      </ul>
-
-      <h3>C. Teknik dasar bermain drama</h3>
-
-      <h4>1. Lafal atau artikulasi</h4>
-      <p>
-        Lafal adalah kejelasan pengucapan bunyi bahasa. Pemain harus
-        mengucapkan kata dengan jelas agar dialog dapat dipahami penonton.
-        Hindari berbicara terlalu cepat atau bergumam.
-      </p>
-
-      <h4>2. Intonasi</h4>
-      <p>
-        Intonasi adalah naik turunnya nada suara ketika berbicara.
-        Intonasi membantu menunjukkan maksud dan emosi, seperti bertanya,
-        marah, sedih, takut, atau gembira.
-      </p>
-
-      <h4>3. Volume suara</h4>
-      <p>
-        Volume adalah tingkat keras atau lemahnya suara. Suara harus
-        disesuaikan dengan tempat pertunjukan dan situasi cerita.
-        Berbicara pelan bukan berarti tidak terdengar.
-      </p>
-
-      <h4>4. Ekspresi wajah</h4>
-      <p>
-        Ekspresi adalah perubahan wajah yang menunjukkan perasaan tokoh.
-        Misalnya tersenyum ketika bahagia, mengerutkan dahi ketika bingung,
-        atau menunduk ketika merasa bersalah.
-      </p>
-
-      <h4>5. Gerak dan gestur</h4>
-      <p>
-        Gerak adalah tindakan tubuh yang mendukung dialog dan karakter.
-        Gerakan harus sesuai dengan situasi. Pemain tidak perlu bergerak
-        berlebihan jika tidak memiliki tujuan dalam cerita.
-      </p>
-
-      <h4>6. Penghayatan</h4>
-      <p>
-        Penghayatan adalah kemampuan pemain memahami dan menjiwai
-        perasaan serta keadaan tokoh. Pemain perlu memahami alasan
-        tokoh bertindak agar penampilan terasa meyakinkan.
-      </p>
-
-      <h4>7. Kerja sama</h4>
-      <p>
-        Pementasan merupakan kerja bersama. Pemain harus memperhatikan
-        dialog lawan main, memberi respons pada waktu yang tepat,
-        menghargai giliran bicara, dan mengikuti arahan sutradara.
-      </p>
-
-      <div class="example">
-        <div class="example-title">Contoh penerapan teknik bermain</div>
-        <p><strong>Dialog:</strong> "Aku sudah menunggumu sejak tadi. Mengapa kamu tidak datang?"</p>
+        <h3>2. Tokoh dan penokohan</h3>
         <p>
-          Jika tokoh merasa kecewa, pemain dapat mengucapkannya dengan
-          intonasi menurun, volume sedang, tatapan kecewa, dan gerakan
-          tubuh yang menunjukkan kegelisahan.
+          Tokoh adalah orang atau pelaku yang mengalami peristiwa dalam drama.
+          Penokohan adalah cara pengarang menggambarkan watak atau karakter
+          tokoh tersebut.
         </p>
+        <p>Beberapa jenis tokoh berdasarkan perannya:</p>
+        <ul>
+          <li><strong>Protagonis:</strong> tokoh yang menjadi pusat perhatian dan biasanya membawa nilai atau tujuan yang diperjuangkan.</li>
+          <li><strong>Antagonis:</strong> tokoh atau kekuatan yang menentang tujuan protagonis sehingga menimbulkan konflik.</li>
+          <li><strong>Tritagonis:</strong> tokoh yang berperan sebagai penengah, pendukung, atau penghubung antara pihak-pihak yang berkonflik.</li>
+        </ul>
         <p>
-          Jika tokoh mengucapkannya dengan senyum dan nada bercanda,
-          makna dialog akan terasa berbeda.
+          Tokoh juga dapat dibedakan berdasarkan wataknya, misalnya jujur,
+          pemarah, sabar, sombong, peduli, licik, atau bertanggung jawab.
         </p>
-      </div>
 
-      <h3>D. Persiapan sebelum pementasan</h3>
-      <ol>
-        <li>Membaca dan memahami naskah secara keseluruhan.</li>
-        <li>Membagi peran sesuai kebutuhan cerita.</li>
-        <li>Melakukan latihan dialog dan penghayatan tokoh.</li>
-        <li>Menentukan gerak, posisi, dan perpindahan pemain di panggung.</li>
-        <li>Menyiapkan kostum, properti, dan perlengkapan pendukung.</li>
-        <li>Melakukan latihan bersama dari awal sampai akhir.</li>
-        <li>Melakukan evaluasi dan memperbaiki bagian yang masih kurang.</li>
-      </ol>
-    </section>
+        <h4>Bagaimana mengetahui watak tokoh?</h4>
+        <p>
+          Watak tokoh dapat diketahui melalui ucapan, tindakan, pikiran yang
+          diungkapkan, reaksi tokoh lain, serta petunjuk dalam naskah.
+        </p>
+        <div class="example">
+          <div class="example-title">Contoh analisis watak</div>
+          <p><strong>Dialog:</strong> "Aku tidak mau mengambil uang itu. Bukan hakku."</p>
+          <p><strong>Analisis:</strong> Tokoh tersebut memiliki watak jujur karena menolak mengambil sesuatu yang bukan miliknya.</p>
+        </div>
 
-    <section class="lesson-section" id="menulis">
-      <div class="section-label">Materi 8</div>
-      <h2>Menulis Naskah Drama</h2>
-
-      <p>
-        Menulis naskah drama berarti menyusun cerita ke dalam bentuk
-        dialog dan tindakan yang dapat dimainkan oleh para tokoh.
-        Naskah yang baik tidak hanya memiliki cerita menarik, tetapi
-        juga memiliki konflik yang jelas, dialog yang alami, serta
-        petunjuk pementasan yang mudah dipahami.
-      </p>
-
-      <h3>Langkah-langkah menulis naskah drama</h3>
-
-      <ol class="step-list">
-        <li>
-          <strong>Menentukan tema.</strong>
-          Pilih persoalan yang ingin diangkat. Tema dapat berasal dari
-          pengalaman pribadi, lingkungan sekolah, keluarga, atau
-          masyarakat.
-        </li>
-        <li>
-          <strong>Menentukan pesan atau amanat.</strong>
-          Tentukan pelajaran apa yang ingin disampaikan kepada penonton.
-          Pesan ini akan membantu menjaga arah cerita.
-        </li>
-        <li>
-          <strong>Menciptakan tokoh dan wataknya.</strong>
-          Tentukan siapa saja tokoh yang terlibat, bagaimana sifat mereka,
-          serta apa yang mereka inginkan.
-        </li>
-        <li>
-          <strong>Menentukan latar.</strong>
-          Pilih tempat, waktu, dan suasana yang sesuai dengan cerita.
-        </li>
-        <li>
-          <strong>Membangun konflik.</strong>
-          Tentukan persoalan yang membuat tokoh harus menghadapi
-          pertentangan atau mengambil keputusan.
-        </li>
-        <li>
-          <strong>Menyusun alur.</strong>
-          Rancang pengenalan, munculnya masalah, perkembangan konflik,
-          klimaks, dan penyelesaian.
-        </li>
-        <li>
-          <strong>Menulis dialog.</strong>
-          Buat percakapan yang alami, sesuai karakter tokoh, dan
-          membantu mengembangkan cerita.
-        </li>
-        <li>
-          <strong>Menambahkan petunjuk laku.</strong>
-          Berikan keterangan gerak, ekspresi, suasana, atau tindakan
-          yang diperlukan untuk membantu pementasan.
-        </li>
-        <li>
-          <strong>Merevisi naskah.</strong>
-          Periksa kembali kejelasan konflik, kewajaran dialog,
-          konsistensi watak, ejaan, tanda baca, dan kemungkinan
-          naskah untuk dipentaskan.
-        </li>
-      </ol>
-
-      <h3>Contoh rancangan cerita sebelum menulis</h3>
-      <div class="table-wrap">
-        <table>
-          <tr><th>Komponen</th><th>Rancangan</th></tr>
-          <tr><td>Tema</td><td>Kejujuran dan tanggung jawab.</td></tr>
-          <tr><td>Judul</td><td>Uang Kas yang Hilang.</td></tr>
-          <tr><td>Tokoh</td><td>Rafi, Nisa, dan Dito.</td></tr>
-          <tr><td>Latar</td><td>Ruang kelas, siang hari.</td></tr>
-          <tr><td>Konflik</td><td>Uang kas kelas hilang dan seorang siswa dituduh mengambilnya.</td></tr>
-          <tr><td>Klimaks</td><td>Terungkap bahwa uang tersebut digunakan tanpa izin oleh orang yang bertugas menyimpannya.</td></tr>
-          <tr><td>Penyelesaian</td><td>Tokoh mengakui kesalahan dan bertanggung jawab mengembalikan uang.</td></tr>
-          <tr><td>Amanat</td><td>Jangan menuduh tanpa bukti dan beranilah mengakui kesalahan.</td></tr>
-        </table>
-      </div>
-
-      <h3>Contoh pengembangan menjadi dialog</h3>
-      <div class="drama-script">
-        <div class="example-title">Uang Kas yang Hilang — Potongan Adegan</div>
-        <p><em>(Nisa berdiri di depan meja guru sambil memegang buku kas.)</em></p>
-        <p><strong>Nisa:</strong> "Teman-teman, uang kas yang kemarin kita kumpulkan ternyata tidak ada di dalam kotak."</p>
-        <p><strong>Rafi:</strong> "Jangan-jangan ada yang mengambilnya."</p>
-        <p><strong>Dito:</strong> "Jangan menuduh siapa pun sebelum kita tahu apa yang sebenarnya terjadi."</p>
-        <p><em>(Rafi terdiam. Ia tampak tidak nyaman.)</em></p>
-        <p><strong>Rafi:</strong> "Aku harus mengatakan sesuatu. Kemarin aku meminjam uang itu tanpa izin. Aku berniat menggantinya, tetapi aku takut mengaku."</p>
-        <p><strong>Nisa:</strong> "Mengapa kamu tidak langsung bicara? Kita bisa mencari jalan keluar bersama."</p>
-        <p><strong>Dito:</strong> "Yang penting sekarang kamu mau bertanggung jawab dan tidak mengulanginya."</p>
-      </div>
-
-      <p>
-        Contoh tersebut menunjukkan bahwa konflik dapat dibangun melalui
-        perbedaan sikap dan keputusan tokoh. Dialog juga memperlihatkan
-        watak masing-masing tokoh tanpa harus menjelaskannya secara
-        langsung melalui narasi panjang.
-      </p>
-
-      <h3>Tips agar naskah drama lebih menarik</h3>
-      <ul>
-        <li>Angkat persoalan yang dekat dengan kehidupan penonton.</li>
-        <li>Buat setiap tokoh memiliki tujuan dan karakter yang jelas.</li>
-        <li>Bangun konflik yang masuk akal dan berkembang secara bertahap.</li>
-        <li>Hindari dialog yang terlalu panjang dan tidak diperlukan.</li>
-        <li>Gunakan petunjuk laku secukupnya agar pemain memahami situasi.</li>
-        <li>Berikan penyelesaian yang sesuai dengan persoalan cerita.</li>
-        <li>Pastikan pesan cerita terasa melalui tindakan tokoh, bukan hanya nasihat.</li>
-      </ul>
-    </section>
-
-    <section class="lesson-section" id="aktivitas">
-      <div class="section-label">Aktivitas Pembelajaran</div>
-      <h2>Belajar melalui Pengamatan dan Praktik</h2>
-
-      <h3>Aktivitas 1 — Mengamati realitas sosial</h3>
-      <p>
-        Amatilah lingkungan sekolah atau masyarakat di sekitarmu.
-        Temukan satu persoalan yang menurutmu layak diangkat menjadi
-        sebuah drama.
-      </p>
-      <p>Contoh persoalan yang dapat diamati:</p>
-      <ul>
-        <li>Kurangnya kepedulian terhadap kebersihan.</li>
-        <li>Perundungan di lingkungan pergaulan.</li>
-        <li>Kurangnya kedisiplinan.</li>
-        <li>Ketimpangan kesempatan dalam memperoleh pendidikan.</li>
-        <li>Kurangnya komunikasi antara anggota keluarga.</li>
-      </ul>
-      <p>
-        Tuliskan persoalan tersebut, penyebabnya, pihak yang terlibat,
-        dan kemungkinan penyelesaiannya.
-      </p>
-
-      <h3>Aktivitas 2 — Menganalisis naskah</h3>
-      <p>
-        Bacalah potongan naskah drama yang tersedia dalam materi ini.
-        Identifikasikan tema, tokoh, watak, konflik, latar, dan amanatnya.
-        Sertakan bukti berupa dialog atau petunjuk laku.
-      </p>
-
-      <h3>Aktivitas 3 — Menulis naskah kelompok</h3>
-      <p>
-        Bentuklah kelompok. Susunlah sebuah naskah drama pendek yang
-        mengangkat persoalan sosial di lingkungan sekitar. Naskah
-        sebaiknya memiliki beberapa tokoh, konflik yang jelas, dialog
-        yang wajar, dan penyelesaian yang masuk akal.
-      </p>
-
-      <h3>Aktivitas 4 — Pementasan</h3>
-      <p>
-        Pentaskan naskah yang telah dibuat. Setiap anggota kelompok
-        berpartisipasi sesuai perannya, baik sebagai pemain, sutradara,
-        penata properti, maupun bagian pendukung lainnya.
-      </p>
-
-      <div class="callout orange">
-        <strong>Tujuan kegiatan:</strong> Siswa tidak hanya memahami
-        drama sebagai teori, tetapi juga belajar bekerja sama, berani
-        mengemukakan pendapat, memahami persoalan sosial, dan
-        menyampaikan gagasan melalui karya.
-      </div>
-    </section>
-
-    <section class="lesson-section" id="evaluasi">
-      <div class="section-label">Evaluasi Pemahaman</div>
-      <h2>Uji Pemahaman</h2>
-      <p>
-        Jawablah pertanyaan berikut berdasarkan pemahamanmu terhadap
-        materi drama.
-      </p>
-
-      <div class="question">
-        <strong>1. Jelaskan pengertian drama dan mengapa drama disebut
-        sebagai karya sastra yang dapat dipentaskan.</strong>
-      </div>
-
-      <div class="question">
-        <strong>2. Apa perbedaan antara tokoh dan penokohan dalam drama?
-        Berikan contohnya.</strong>
-      </div>
-
-      <div class="question">
-        <strong>3. Jelaskan perbedaan teks utama dan teks samping dalam
-        naskah drama. Mengapa teks samping tidak diucapkan oleh pemain?</strong>
-      </div>
-
-      <div class="question">
-        <strong>4. Apa fungsi konflik dalam sebuah drama? Jelaskan
-        hubungan konflik dengan perkembangan alur.</strong>
-      </div>
-
-      <div class="question">
-        <strong>5. Mengapa drama sering mengangkat persoalan sosial?
-        Sebutkan dua contoh persoalan sosial yang dapat dijadikan tema.</strong>
-      </div>
-
-      <div class="question">
-        <strong>6. Jelaskan perbedaan monolog, dialog, dan gelar wicara
-        sebagai bentuk penyajian.</strong>
-      </div>
-
-      <div class="question">
-        <strong>7. Mengapa seorang pemain drama perlu memperhatikan
-        lafal, intonasi, ekspresi, gerak, dan penghayatan?</strong>
-      </div>
-
-      <div class="question">
-        <strong>8. Sebutkan langkah-langkah utama dalam menyusun
-        naskah drama.</strong>
-      </div>
-
-      <div class="question">
-        <strong>9. Bacalah dialog dalam contoh "Uang Kas yang Hilang".
-        Jelaskan watak Rafi dan bukti dialog yang mendukung penilaianmu.</strong>
-      </div>
-
-      <div class="question">
-        <strong>10. Jika kamu diminta membuat drama tentang kehidupan
-        sekolah, persoalan apa yang akan kamu angkat? Jelaskan alasan
-        dan pesan yang ingin disampaikan.</strong>
-      </div>
-    </section>
-
-    <section class="lesson-section" id="proyek">
-      <div class="section-label">Proyek Pembelajaran</div>
-      <h2>Menciptakan dan Mementaskan Drama</h2>
-
-      <p>
-        Buatlah sebuah drama pendek secara berkelompok dengan tema
-        <strong>"Realitas Sosial di Sekitar Kita"</strong>.
-      </p>
-
-      <h3>Ketentuan proyek</h3>
-      <ol>
-        <li>Pilih satu persoalan sosial yang nyata dan relevan.</li>
-        <li>Tentukan judul, tema, tokoh, watak, dan latar.</li>
-        <li>Susun konflik dan alur cerita secara runtut.</li>
-        <li>Tulis dialog dan petunjuk laku dalam naskah.</li>
-        <li>Pastikan setiap tokoh memiliki peran yang jelas.</li>
-        <li>Pentaskan drama dengan memperhatikan teknik bermain.</li>
-        <li>Sampaikan pesan atau refleksi setelah pertunjukan.</li>
-      </ol>
-
-      <h3>Aspek penilaian proyek</h3>
-      <div class="table-wrap">
-        <table>
-          <tr>
-            <th>Aspek</th>
-            <th>Hal yang Dinilai</th>
-          </tr>
-          <tr>
-            <td>Isi naskah</td>
-            <td>Kesesuaian tema, kejelasan konflik, alur, dan amanat.</td>
-          </tr>
-          <tr>
-            <td>Kreativitas</td>
-            <td>Keaslian gagasan dan cara mengembangkan cerita.</td>
-          </tr>
-          <tr>
-            <td>Dialog</td>
-            <td>Kewajaran percakapan dan kesesuaian bahasa dengan tokoh.</td>
-          </tr>
-          <tr>
-            <td>Penghayatan</td>
-            <td>Kemampuan memainkan karakter dan menyampaikan emosi.</td>
-          </tr>
-          <tr>
-            <td>Teknik pementasan</td>
-            <td>Lafal, intonasi, volume, ekspresi, dan gerak.</td>
-          </tr>
-          <tr>
-            <td>Kerja sama</td>
-            <td>Partisipasi, tanggung jawab, dan kekompakan kelompok.</td>
-          </tr>
-          <tr>
-            <td>Pesan sosial</td>
-            <td>Kejelasan persoalan dan nilai yang disampaikan kepada penonton.</td>
-          </tr>
-        </table>
-      </div>
-    </section>
-
-    <section class="lesson-section" id="rangkuman">
-      <div class="section-label">Rangkuman</div>
-      <h2>Hal Penting yang Perlu Diingat</h2>
-
-      <ul>
-        <li>Drama adalah karya sastra yang menggambarkan kehidupan melalui dialog dan tindakan tokoh.</li>
-        <li>Unsur drama meliputi tema, tokoh dan penokohan, alur, latar, dialog, serta amanat.</li>
-        <li>Naskah drama memiliki teks utama berupa dialog dan teks samping berupa petunjuk pementasan.</li>
-        <li>Struktur umum drama dapat terdiri atas prolog, babak atau adegan, dan epilog.</li>
-        <li>Bahasa drama banyak menggunakan kalimat langsung dan bahasa percakapan yang sesuai dengan karakter tokoh.</li>
-        <li>Drama dapat mengangkat realitas sosial untuk membangun kesadaran, empati, dan kepedulian.</li>
-        <li>Analisis drama harus didukung alasan dan bukti dari dialog maupun tindakan tokoh.</li>
-        <li>Pementasan membutuhkan lafal, intonasi, volume, ekspresi, gerak, penghayatan, dan kerja sama.</li>
-        <li>Menulis drama dimulai dari menentukan tema, tokoh, konflik, alur, dialog, petunjuk laku, hingga revisi.</li>
-      </ul>
-    </section>
-
-    <section class="lesson-section" id="refleksi">
-      <div class="section-label">Refleksi Pembelajaran</div>
-      <h2>Renungkan Kembali</h2>
-
-      <p>Setelah mempelajari materi drama, pikirkan beberapa pertanyaan berikut.</p>
-
-      <div class="reflection">
+        <h3>3. Alur atau plot</h3>
+        <p>
+          Alur adalah rangkaian peristiwa yang membentuk jalannya cerita.
+          Alur menunjukkan bagaimana sebuah persoalan muncul, berkembang,
+          mencapai puncak, kemudian memperoleh penyelesaian.
+        </p>
+        <p>Secara umum, alur drama dapat dijelaskan melalui tahapan berikut:</p>
         <ol>
-          <li>Apa hal baru yang kamu pahami tentang drama?</li>
-          <li>Unsur drama apa yang menurutmu paling penting? Mengapa?</li>
-          <li>Persoalan sosial apa di sekitarmu yang layak diangkat menjadi drama?</li>
-          <li>Apakah kamu sudah mampu menyampaikan dialog dengan ekspresi dan intonasi yang tepat?</li>
-          <li>Nilai kehidupan apa yang ingin kamu sampaikan melalui drama yang kamu buat?</li>
+          <li><strong>Pengenalan:</strong> memperkenalkan tokoh, situasi, dan latar.</li>
+          <li><strong>Munculnya konflik:</strong> persoalan mulai terjadi.</li>
+          <li><strong>Perkembangan konflik:</strong> masalah semakin rumit.</li>
+          <li><strong>Klimaks:</strong> konflik mencapai ketegangan tertinggi.</li>
+          <li><strong>Penyelesaian:</strong> konflik mulai menemukan jalan keluar atau berakhir.</li>
         </ol>
         <p>
-          Tuliskan jawabanmu secara jujur. Refleksi bukan sekadar
-          mengulang materi, melainkan kesempatan untuk memahami
-          perkembangan kemampuan dan sikapmu.
+          Berdasarkan urutan waktunya, alur dapat berupa alur maju, alur mundur,
+          atau alur campuran.
         </p>
+
+        <h3>4. Latar</h3>
+        <p>
+          Latar adalah keterangan mengenai tempat, waktu, dan suasana
+          berlangsungnya peristiwa dalam drama.
+        </p>
+        <ul>
+          <li><strong>Latar tempat:</strong> di mana peristiwa terjadi, misalnya sekolah, rumah, pasar, atau kantor desa.</li>
+          <li><strong>Latar waktu:</strong> kapan peristiwa berlangsung, misalnya pagi, malam, atau masa tertentu.</li>
+          <li><strong>Latar suasana:</strong> keadaan emosional yang terasa, misalnya tegang, sedih, gembira, atau mencekam.</li>
+        </ul>
+
+        <h3>5. Dialog</h3>
+        <p>
+          Dialog adalah percakapan antartokoh dalam drama. Dialog menjadi
+          sarana utama untuk menyampaikan informasi, memperlihatkan watak,
+          membangun hubungan antartokoh, dan mengembangkan konflik.
+        </p>
+        <p>
+          Dialog yang baik harus terasa wajar, sesuai dengan karakter tokoh,
+          situasi, dan tujuan percakapan. Setiap tokoh sebaiknya memiliki
+          cara berbicara yang tidak selalu sama.
+        </p>
+
+        <h3>6. Amanat</h3>
+        <p>
+          Amanat adalah pesan atau pelajaran yang ingin disampaikan melalui
+          cerita. Amanat dapat disampaikan secara langsung melalui dialog,
+          tetapi sering kali tersirat melalui tindakan dan akibat yang dialami
+          tokoh.
+        </p>
+        <div class="example">
+          <div class="example-title">Contoh amanat</div>
+          <p>
+            Drama menceritakan seorang siswa yang menyontek. Ia memperoleh
+            nilai tinggi, tetapi akhirnya kehilangan kepercayaan guru dan
+            teman-temannya.
+          </p>
+          <p><strong>Amanat:</strong> Kejujuran lebih penting daripada memperoleh hasil yang baik dengan cara curang.</p>
+        </div>
+      </section>
+
+      <section class="lesson-section" id="naskah">
+        <div class="section-label">Materi 3</div>
+        <h2>Mengenal Isi dan Struktur Naskah Drama</h2>
+
+        <p>
+          Naskah drama adalah teks tertulis yang menjadi pedoman bagi pemain
+          dan seluruh tim pementasan. Naskah berisi dialog, petunjuk tindakan,
+          serta susunan peristiwa yang akan ditampilkan.
+        </p>
+
+        <h3>A. Bagian-bagian dalam naskah drama</h3>
+
+        <h4>1. Teks utama: dialog</h4>
+        <p>
+          Teks utama adalah bagian naskah yang berisi percakapan antartokoh.
+          Bagian inilah yang umumnya diucapkan oleh pemain saat pementasan.
+        </p>
+
+        <h4>2. Teks samping: petunjuk laku atau keterangan panggung</h4>
+        <p>
+          Teks samping adalah keterangan tambahan yang memberikan petunjuk
+          kepada pemain atau tim pementasan. Isinya dapat berupa gerakan,
+          ekspresi, nada bicara, suasana, maupun keadaan panggung.
+        </p>
+        <p>
+          Teks samping biasanya ditulis di dalam tanda kurung dan tidak
+          diucapkan sebagai dialog oleh pemain.
+        </p>
+
+        <div class="example">
+          <div class="example-title">Contoh teks samping</div>
+          <p><strong>Rina:</strong> "Aku sudah mencoba menjelaskan semuanya."</p>
+          <p><em>(Rina menunduk, suaranya terdengar pelan.)</em></p>
+          <p><strong>Andi:</strong> "Tapi mengapa kamu tidak mengatakan yang sebenarnya sejak awal?"</p>
+          <p><em>(Andi berjalan mendekati Rina dengan wajah kecewa.)</em></p>
+          <div class="callout orange">
+            Keterangan dalam tanda kurung merupakan petunjuk bagi pemain.
+            Keterangan tersebut membantu menentukan gerakan, ekspresi, dan
+            cara mengucapkan dialog.
+          </div>
+        </div>
+
+        <h3>B. Struktur umum drama</h3>
+        <p>
+          Naskah drama dapat memiliki pembagian bagian yang berbeda-beda.
+          Salah satu susunan yang umum dikenal adalah prolog, babak atau
+          adegan, dan epilog.
+        </p>
+
+        <h4>1. Prolog</h4>
+        <p>
+          Prolog merupakan bagian pembuka yang memberikan gambaran awal
+          mengenai cerita, situasi, latar, atau persoalan yang akan diangkat.
+          Prolog dapat disampaikan oleh narator atau melalui bentuk pembuka
+          tertentu.
+        </p>
+
+        <h4>2. Babak dan adegan</h4>
+        <p>
+          Babak adalah bagian besar dalam drama yang menandai perkembangan
+          peristiwa. Di dalam satu babak dapat terdapat beberapa adegan.
+          Adegan biasanya ditandai oleh perubahan situasi, tempat, waktu,
+          atau kehadiran dan keluarnya tokoh.
+        </p>
+
+        <h4>3. Epilog</h4>
+        <p>
+          Epilog merupakan bagian penutup yang memberikan kesimpulan,
+          penegasan pesan, atau gambaran akhir dari cerita.
+        </p>
+
+        <div class="callout">
+          <strong>Catatan penting:</strong> Tidak semua naskah drama harus
+          memiliki prolog dan epilog. Ada naskah yang langsung dimulai dengan
+          dialog dan berakhir pada adegan terakhir. Pembagian babak dan adegan
+          juga dapat disesuaikan dengan kebutuhan cerita.
+        </div>
+
+        <h3>C. Contoh potongan naskah drama</h3>
+        <div class="drama-script">
+          <div class="example-title">Judul: Suara dari Bangku Belakang</div>
+          <p><strong>Tokoh:</strong> Raka, Sinta, dan Bima.</p>
+          <p><strong>Latar:</strong> Ruang kelas, siang hari.</p>
+
+          <p><strong>PROLOG</strong></p>
+          <p><em>(Suasana kelas mulai ramai setelah jam pelajaran selesai. Beberapa siswa bersiap pulang. Di sudut kelas, Raka masih duduk sambil memperhatikan sebuah pengumuman.)</em></p>
+
+          <p><strong>ADEGAN 1</strong></p>
+          <p><span class="character">Raka:</span> "Kalian sudah membaca pengumuman itu?"</p>
+          <p><span class="character">Sinta:</span> "Yang tentang bantuan pendidikan? Sudah. Memangnya kenapa?"</p>
+          <p><span class="character">Raka:</span> "Aku ingin mendaftar, tetapi aku tidak tahu harus mulai dari mana."</p>
+          <p><span class="character">Bima:</span> "Kalau memang membutuhkan, kenapa tidak dicoba? Jangan menyerah sebelum bertanya."</p>
+          <p><em>(Raka terdiam. Ia melipat kertas pengumuman, kemudian menatap kedua temannya.)</em></p>
+          <p><span class="character">Raka:</span> "Aku takut dianggap tidak mampu."</p>
+          <p><span class="character">Sinta:</span> "Meminta kesempatan bukanlah sesuatu yang memalukan. Setiap orang berhak mendapatkan peluang untuk belajar."</p>
+
+          <p><strong>EPILOG</strong></p>
+          <p><em>(Ketiganya berjalan menuju ruang guru. Raka menggenggam pengumuman itu dengan lebih yakin.)</em></p>
+          <p><strong>Pesan cerita:</strong> Jangan membiarkan rasa malu menghalangi seseorang untuk memperjuangkan kesempatan.</p>
+        </div>
+        <p>
+          Potongan naskah tersebut memperlihatkan dialog sebagai teks utama
+          dan keterangan dalam tanda kurung sebagai teks samping. Cerita
+          mengangkat persoalan kesempatan memperoleh pendidikan.
+        </p>
+      </section>
+
+      <section class="lesson-section" id="bahasa">
+        <div class="section-label">Materi 4</div>
+        <h2>Ciri Kebahasaan dalam Naskah Drama</h2>
+
+        <p>
+          Bahasa dalam drama memiliki ciri khas karena digunakan untuk
+          membangun percakapan dan menghidupkan tokoh. Bahasa harus mampu
+          membuat penonton memahami situasi sekaligus merasakan emosi
+          yang dialami tokoh.
+        </p>
+
+        <h3>1. Menggunakan kalimat langsung</h3>
+        <p>
+          Kalimat langsung adalah kalimat yang menyampaikan ucapan seseorang
+          sebagaimana diucapkan. Dalam naskah drama, kalimat langsung
+          digunakan untuk menampilkan dialog.
+        </p>
+        <div class="example">
+          <p><strong>Contoh:</strong></p>
+          <p>Rani: "Kapan kita mulai membersihkan lingkungan?"</p>
+          <p>Doni: "Besok pagi. Aku akan mengajak teman-teman yang lain."</p>
+        </div>
+
+        <h3>2. Menggunakan bahasa percakapan</h3>
+        <p>
+          Bahasa percakapan adalah bahasa yang digunakan tokoh ketika
+          berkomunikasi. Pilihan kata dan gaya berbicara harus disesuaikan
+          dengan usia, latar belakang, hubungan, serta karakter tokoh.
+        </p>
+        <p>
+          Seorang kepala desa mungkin berbicara dengan bahasa yang lebih
+          formal ketika menyampaikan pengumuman, sedangkan dua sahabat
+          dapat menggunakan bahasa yang lebih santai.
+        </p>
+
+        <h3>3. Menggunakan kata ganti orang</h3>
+        <p>
+          Dialog sering menggunakan kata ganti seperti aku, saya, kamu,
+          Anda, dia, kami, dan mereka. Pemilihan kata ganti dapat menunjukkan
+          kedekatan, rasa hormat, atau hubungan antartokoh.
+        </p>
+
+        <h3>4. Menggunakan kata seru dan ungkapan emosi</h3>
+        <p>
+          Kata seru dapat digunakan untuk menunjukkan keterkejutan,
+          kekaguman, kekecewaan, atau kemarahan. Contohnya: wah, aduh,
+          astaga, dan ah.
+        </p>
+
+        <h3>5. Menggunakan tanda baca untuk membantu intonasi</h3>
+        <ul>
+          <li><strong>Tanda tanya (?):</strong> menunjukkan pertanyaan.</li>
+          <li><strong>Tanda seru (!):</strong> menunjukkan seruan, perintah, atau emosi kuat.</li>
+          <li><strong>Tanda titik (.):</strong> menandai akhir pernyataan.</li>
+          <li><strong>Tanda elipsis (...):</strong> dapat menunjukkan ucapan yang terputus, keraguan, atau jeda tertentu.</li>
+          <li><strong>Tanda koma (,):</strong> membantu mengatur jeda dalam kalimat.</li>
+        </ul>
+
+        <div class="example">
+          <div class="example-title">Perhatikan perbedaan pengucapan</div>
+          <p><strong>"Kamu datang."</strong> → Pernyataan biasa.</p>
+          <p><strong>"Kamu datang?"</strong> → Pertanyaan atau rasa heran.</p>
+          <p><strong>"Kamu datang!"</strong> → Penegasan atau emosi kuat.</p>
+          <p><strong>"Kamu... datang?"</strong> → Keraguan atau keterkejutan.</p>
+        </div>
+
+        <h3>6. Menggunakan kalimat perintah, ajakan, dan larangan</h3>
+        <p>
+          Drama sering menampilkan tokoh yang memerintah, mengajak,
+          meminta, atau melarang tokoh lain.
+        </p>
+        <ul>
+          <li>Perintah: "Tolong tutup pintu itu!"</li>
+          <li>Ajakan: "Mari kita selesaikan masalah ini bersama."</li>
+          <li>Larangan: "Jangan membuang sampah di sungai!"</li>
+          <li>Permintaan: "Bisakah kamu mendengarkan penjelasanku?"</li>
+        </ul>
+
+        <div class="callout orange">
+          <strong>Hal yang perlu diperhatikan:</strong> Dialog drama tidak
+          harus selalu menggunakan bahasa baku. Bahasa harus sesuai dengan
+          karakter dan situasi, tetapi tetap memperhatikan kesantunan serta
+          tujuan komunikasi.
+        </div>
+      </section>
+
+      <section class="lesson-section" id="sosial">
+        <div class="section-label">Materi 5</div>
+        <h2>Drama dan Realitas Sosial</h2>
+
+        <p>
+          Realitas sosial adalah keadaan, persoalan, hubungan, dan peristiwa
+          yang terjadi dalam kehidupan masyarakat. Drama sering mengambil
+          bahan cerita dari realitas sosial tersebut agar penonton dapat
+          melihat kehidupan dari sudut pandang yang berbeda.
+        </p>
+
+        <p>
+          Persoalan sosial dapat muncul di lingkungan keluarga, sekolah,
+          masyarakat, maupun kehidupan berbangsa. Melalui drama, persoalan
+          yang mungkin selama ini dianggap biasa dapat diperlihatkan
+          secara lebih mendalam.
+        </p>
+
+        <h3>Contoh persoalan sosial yang dapat diangkat dalam drama</h3>
+
+        <h4>1. Kemiskinan dan kesenjangan sosial</h4>
+        <p>
+          Drama dapat menggambarkan keluarga yang kesulitan memenuhi
+          kebutuhan hidup, anak yang harus membantu orang tua, atau
+          perbedaan kesempatan antara kelompok masyarakat.
+        </p>
+
+        <h4>2. Ketidakadilan</h4>
+        <p>
+          Cerita dapat memperlihatkan seseorang yang diperlakukan tidak
+          adil karena status ekonomi, kedudukan, atau latar belakangnya.
+        </p>
+
+        <h4>3. Pergaulan dan perundungan</h4>
+        <p>
+          Drama dapat mengangkat tindakan mengejek, mengucilkan,
+          menyebarkan kebencian, atau menyalahgunakan media sosial.
+          Persoalan tersebut dapat mengajak penonton memahami dampak
+          tindakan terhadap korban.
+        </p>
+
+        <h4>4. Kerusakan lingkungan</h4>
+        <p>
+          Pencemaran sungai, penebangan liar, sampah, dan kurangnya
+          kepedulian terhadap lingkungan dapat menjadi sumber konflik
+          dalam cerita.
+        </p>
+
+        <h4>5. Konflik dalam keluarga</h4>
+        <p>
+          Perbedaan pendapat antara orang tua dan anak, kurangnya komunikasi,
+          serta tanggung jawab dalam keluarga dapat menjadi persoalan
+          yang dekat dengan kehidupan penonton.
+        </p>
+
+        <h3>Mengapa drama mengangkat realitas sosial?</h3>
+        <ol>
+          <li><strong>Membangun kesadaran:</strong> membuat penonton menyadari bahwa suatu persoalan benar-benar terjadi di sekitarnya.</li>
+          <li><strong>Menumbuhkan empati:</strong> mengajak penonton memahami perasaan dan keadaan orang lain.</li>
+          <li><strong>Menyampaikan kritik:</strong> menunjukkan kebiasaan atau keadaan yang perlu diperbaiki.</li>
+          <li><strong>Memberikan pembelajaran:</strong> memperlihatkan akibat dari tindakan dan pilihan manusia.</li>
+          <li><strong>Mendorong perubahan:</strong> mengajak masyarakat untuk lebih peduli dan bertindak secara positif.</li>
+        </ol>
+
+        <div class="callout orange">
+          <strong>Drama bukan sekadar meniru kenyataan.</strong> Penulis
+          memilih dan menyusun peristiwa agar penonton dapat memahami
+          persoalan, melihat akibatnya, dan merenungkan pesan yang
+          disampaikan.
+        </div>
+
+        <h3>Menganalisis persoalan sosial dalam drama</h3>
+        <p>
+          Ketika membaca atau menonton drama, jangan hanya memperhatikan
+          siapa tokoh yang baik dan siapa yang jahat. Cobalah memahami
+          persoalan yang melatarbelakangi tindakan tokoh.
+        </p>
+        <ol>
+          <li>Persoalan sosial apa yang diangkat?</li>
+          <li>Siapa saja yang mengalami atau terlibat dalam persoalan tersebut?</li>
+          <li>Apa penyebab terjadinya konflik?</li>
+          <li>Bagaimana sikap setiap tokoh menghadapi masalah?</li>
+          <li>Apa akibat dari tindakan tokoh?</li>
+          <li>Nilai atau pesan apa yang dapat dipelajari?</li>
+        </ol>
+      </section>
+
+      <section class="lesson-section" id="analisis">
+        <div class="section-label">Materi 6</div>
+        <h2>Menganalisis Drama secara Kritis</h2>
+
+        <p>
+          Menganalisis drama berarti memahami isi cerita, mengidentifikasi
+          unsur pembangunnya, menilai cara penulis menyampaikan persoalan,
+          dan menemukan pesan yang terkandung di dalamnya.
+        </p>
+
+        <p>
+          Analisis yang baik tidak cukup hanya mengatakan bahwa sebuah drama
+          menarik, menyedihkan, atau bagus. Penilaian harus disertai alasan
+          dan bukti dari dialog maupun tindakan tokoh.
+        </p>
+
+        <h3>Langkah-langkah menganalisis drama</h3>
+        <ol>
+          <li><strong>Memahami keseluruhan cerita.</strong> Baca naskah atau saksikan pertunjukan dari awal sampai akhir.</li>
+          <li><strong>Menentukan tema.</strong> Temukan persoalan utama yang menjadi dasar cerita.</li>
+          <li><strong>Mengidentifikasi tokoh.</strong> Kenali peran, watak, tujuan, dan hubungan antartokoh.</li>
+          <li><strong>Menelusuri alur.</strong> Perhatikan awal konflik, perkembangan, puncak, dan penyelesaiannya.</li>
+          <li><strong>Menemukan latar.</strong> Catat tempat, waktu, dan suasana cerita.</li>
+          <li><strong>Menafsirkan dialog dan tindakan.</strong> Pahami maksud ucapan serta alasan tokoh melakukan sesuatu.</li>
+          <li><strong>Merumuskan amanat.</strong> Temukan pelajaran yang dapat diambil dari cerita.</li>
+          <li><strong>Memberikan penilaian.</strong> Sampaikan kelebihan, kekurangan, dan alasan yang didukung bukti.</li>
+        </ol>
+
+        <h3>Contoh analisis berdasarkan kutipan</h3>
+        <div class="example">
+          <div class="example-title">Kutipan dialog</div>
+          <p><strong>Warga 1:</strong> "Sungai ini dahulu jernih. Anak-anak bahkan bisa bermain di sana."</p>
+          <p><strong>Warga 2:</strong> "Sekarang sampah menumpuk. Kita semua membiarkannya terlalu lama."</p>
+          <p><strong>Warga 1:</strong> "Kalau kita hanya saling menyalahkan, siapa yang akan mulai membersihkannya?"</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Aspek</th>
+              <th>Hasil Analisis</th>
+            </tr>
+            <tr>
+              <td>Tema</td>
+              <td>Kerusakan lingkungan dan tanggung jawab masyarakat.</td>
+            </tr>
+            <tr>
+              <td>Konflik</td>
+              <td>Sungai tercemar karena sampah dan kurangnya kepedulian warga.</td>
+            </tr>
+            <tr>
+              <td>Watak tokoh</td>
+              <td>Warga 1 menunjukkan kepedulian dan mengajak orang lain bertindak.</td>
+            </tr>
+            <tr>
+              <td>Amanat</td>
+              <td>Menjaga lingkungan merupakan tanggung jawab bersama.</td>
+            </tr>
+            <tr>
+              <td>Bukti</td>
+              <td>"Kalau kita hanya saling menyalahkan, siapa yang akan mulai membersihkannya?"</td>
+            </tr>
+          </table>
+        </div>
+
+        <h3>Bagaimana memberikan penilaian yang logis?</h3>
+        <p>
+          Penilaian yang logis adalah penilaian yang memiliki alasan jelas
+          dan didukung bukti. Gunakan pola berikut:
+        </p>
+        <div class="callout">
+          <strong>Pendapat → Alasan → Bukti → Kesimpulan</strong>
+          <p>
+            Contoh: "Drama tersebut menarik karena mengangkat persoalan
+            pencemaran sungai yang dekat dengan kehidupan masyarakat.
+            Hal ini terlihat dari dialog warga yang mengeluhkan perubahan
+            kondisi sungai. Dengan demikian, cerita tersebut berhasil
+            mengajak penonton memikirkan tanggung jawab menjaga lingkungan."
+          </p>
+        </div>
+        <p>
+          Dengan pola tersebut, pendapat tidak hanya menjadi pernyataan
+          pribadi, tetapi dapat dipertanggungjawabkan melalui bukti.
+        </p>
+      </section>
+
+      <section class="lesson-section" id="pementasan">
+        <div class="section-label">Materi 7</div>
+        <h2>Menyajikan dan Mementaskan Drama</h2>
+
+        <p>
+          Pementasan drama adalah kegiatan menampilkan cerita di hadapan
+          penonton dengan melibatkan pemain dan unsur pendukung pertunjukan.
+          Naskah yang semula berupa tulisan diubah menjadi pengalaman yang
+          dapat dilihat dan didengar.
+        </p>
+
+        <h3>A. Bentuk penyajian drama</h3>
+
+        <h4>1. Monolog</h4>
+        <p>
+          Monolog adalah penyajian yang dilakukan oleh satu orang pemain.
+          Pemain menyampaikan pikiran, perasaan, pengalaman, atau cerita
+          melalui tuturan dan ekspresi.
+        </p>
+        <p>
+          Contoh: seorang siswa berdiri di panggung dan menceritakan
+          pengalamannya menghadapi perundungan.
+        </p>
+
+        <h4>2. Dialog</h4>
+        <p>
+          Dialog adalah percakapan antara dua orang atau lebih. Dalam
+          pementasan, dialog digunakan untuk menunjukkan hubungan,
+          perbedaan pendapat, dan perkembangan konflik antartokoh.
+        </p>
+        <p>
+          Contoh: dua sahabat berdiskusi mengenai keputusan untuk
+          membantu teman yang mengalami kesulitan.
+        </p>
+
+        <h4>3. Gelar wicara atau talk show</h4>
+        <p>
+          Gelar wicara adalah bentuk penyajian berupa perbincangan yang
+          dipandu oleh seorang pembawa acara atau moderator bersama
+          narasumber. Dalam pembelajaran drama, bentuk ini dapat digunakan
+          untuk membahas isi, pesan, karakter tokoh, atau persoalan sosial
+          dalam sebuah drama.
+        </p>
+        <p>
+          Contoh: seorang moderator mengundang pemain drama untuk
+          mendiskusikan persoalan perundungan yang diangkat dalam
+          pertunjukan.
+        </p>
+
+        <div class="callout">
+          Monolog, dialog, dan gelar wicara merupakan bentuk penyajian
+          yang dapat digunakan dalam kegiatan pembelajaran. Gelar wicara
+          bukan bentuk drama dalam pengertian genre sastra, melainkan
+          bentuk perbincangan untuk menyajikan atau membahas suatu karya.
+        </div>
+
+        <h3>B. Unsur-unsur pendukung pementasan</h3>
+        <ul>
+          <li><strong>Pemain atau aktor:</strong> orang yang memerankan tokoh dalam drama.</li>
+          <li><strong>Sutradara:</strong> orang yang mengarahkan pemain dan mengatur keseluruhan jalannya pertunjukan.</li>
+          <li><strong>Naskah:</strong> pedoman cerita, dialog, dan petunjuk pementasan.</li>
+          <li><strong>Panggung:</strong> tempat berlangsungnya pertunjukan.</li>
+          <li><strong>Properti:</strong> benda yang digunakan pemain untuk mendukung cerita, misalnya meja, kursi, buku, atau telepon.</li>
+          <li><strong>Kostum dan tata rias:</strong> membantu menunjukkan karakter, usia, pekerjaan, dan keadaan tokoh.</li>
+          <li><strong>Tata cahaya:</strong> membantu membangun suasana dan mengarahkan perhatian penonton.</li>
+          <li><strong>Tata suara dan musik:</strong> mendukung suasana serta memperkuat efek dramatik.</li>
+        </ul>
+
+        <h3>C. Teknik dasar bermain drama</h3>
+
+        <h4>1. Lafal atau artikulasi</h4>
+        <p>
+          Lafal adalah kejelasan pengucapan bunyi bahasa. Pemain harus
+          mengucapkan kata dengan jelas agar dialog dapat dipahami penonton.
+          Hindari berbicara terlalu cepat atau bergumam.
+        </p>
+
+        <h4>2. Intonasi</h4>
+        <p>
+          Intonasi adalah naik turunnya nada suara ketika berbicara.
+          Intonasi membantu menunjukkan maksud dan emosi, seperti bertanya,
+          marah, sedih, takut, atau gembira.
+        </p>
+
+        <h4>3. Volume suara</h4>
+        <p>
+          Volume adalah tingkat keras atau lemahnya suara. Suara harus
+          disesuaikan dengan tempat pertunjukan dan situasi cerita.
+          Berbicara pelan bukan berarti tidak terdengar.
+        </p>
+
+        <h4>4. Ekspresi wajah</h4>
+        <p>
+          Ekspresi adalah perubahan wajah yang menunjukkan perasaan tokoh.
+          Misalnya tersenyum ketika bahagia, mengerutkan dahi ketika bingung,
+          atau menunduk ketika merasa bersalah.
+        </p>
+
+        <h4>5. Gerak dan gestur</h4>
+        <p>
+          Gerak adalah tindakan tubuh yang mendukung dialog dan karakter.
+          Gerakan harus sesuai dengan situasi. Pemain tidak perlu bergerak
+          berlebihan jika tidak memiliki tujuan dalam cerita.
+        </p>
+
+        <h4>6. Penghayatan</h4>
+        <p>
+          Penghayatan adalah kemampuan pemain memahami dan menjiwai
+          perasaan serta keadaan tokoh. Pemain perlu memahami alasan
+          tokoh bertindak agar penampilan terasa meyakinkan.
+        </p>
+
+        <h4>7. Kerja sama</h4>
+        <p>
+          Pementasan merupakan kerja bersama. Pemain harus memperhatikan
+          dialog lawan main, memberi respons pada waktu yang tepat,
+          menghargai giliran bicara, dan mengikuti arahan sutradara.
+        </p>
+
+        <div class="example">
+          <div class="example-title">Contoh penerapan teknik bermain</div>
+          <p><strong>Dialog:</strong> "Aku sudah menunggumu sejak tadi. Mengapa kamu tidak datang?"</p>
+          <p>
+            Jika tokoh merasa kecewa, pemain dapat mengucapkannya dengan
+            intonasi menurun, volume sedang, tatapan kecewa, dan gerakan
+            tubuh yang menunjukkan kegelisahan.
+          </p>
+          <p>
+            Jika tokoh mengucapkannya dengan senyum dan nada bercanda,
+            makna dialog akan terasa berbeda.
+          </p>
+        </div>
+
+        <h3>D. Persiapan sebelum pementasan</h3>
+        <ol>
+          <li>Membaca dan memahami naskah secara keseluruhan.</li>
+          <li>Membagi peran sesuai kebutuhan cerita.</li>
+          <li>Melakukan latihan dialog dan penghayatan tokoh.</li>
+          <li>Menentukan gerak, posisi, dan perpindahan pemain di panggung.</li>
+          <li>Menyiapkan kostum, properti, dan perlengkapan pendukung.</li>
+          <li>Melakukan latihan bersama dari awal sampai akhir.</li>
+          <li>Melakukan evaluasi dan memperbaiki bagian yang masih kurang.</li>
+        </ol>
+      </section>
+
+      <section class="lesson-section" id="menulis">
+        <div class="section-label">Materi 8</div>
+        <h2>Menulis Naskah Drama</h2>
+
+        <p>
+          Menulis naskah drama berarti menyusun cerita ke dalam bentuk
+          dialog dan tindakan yang dapat dimainkan oleh para tokoh.
+          Naskah yang baik tidak hanya memiliki cerita menarik, tetapi
+          juga memiliki konflik yang jelas, dialog yang alami, serta
+          petunjuk pementasan yang mudah dipahami.
+        </p>
+
+        <h3>Langkah-langkah menulis naskah drama</h3>
+
+        <ol class="step-list">
+          <li>
+            <strong>Menentukan tema.</strong>
+            Pilih persoalan yang ingin diangkat. Tema dapat berasal dari
+            pengalaman pribadi, lingkungan sekolah, keluarga, atau
+            masyarakat.
+          </li>
+          <li>
+            <strong>Menentukan pesan atau amanat.</strong>
+            Tentukan pelajaran apa yang ingin disampaikan kepada penonton.
+            Pesan ini akan membantu menjaga arah cerita.
+          </li>
+          <li>
+            <strong>Menciptakan tokoh dan wataknya.</strong>
+            Tentukan siapa saja tokoh yang terlibat, bagaimana sifat mereka,
+            serta apa yang mereka inginkan.
+          </li>
+          <li>
+            <strong>Menentukan latar.</strong>
+            Pilih tempat, waktu, dan suasana yang sesuai dengan cerita.
+          </li>
+          <li>
+            <strong>Membangun konflik.</strong>
+            Tentukan persoalan yang membuat tokoh harus menghadapi
+            pertentangan atau mengambil keputusan.
+          </li>
+          <li>
+            <strong>Menyusun alur.</strong>
+            Rancang pengenalan, munculnya masalah, perkembangan konflik,
+            klimaks, dan penyelesaian.
+          </li>
+          <li>
+            <strong>Menulis dialog.</strong>
+            Buat percakapan yang alami, sesuai karakter tokoh, dan
+            membantu mengembangkan cerita.
+          </li>
+          <li>
+            <strong>Menambahkan petunjuk laku.</strong>
+            Berikan keterangan gerak, ekspresi, suasana, atau tindakan
+            yang diperlukan untuk membantu pementasan.
+          </li>
+          <li>
+            <strong>Merevisi naskah.</strong>
+            Periksa kembali kejelasan konflik, kewajaran dialog,
+            konsistensi watak, ejaan, tanda baca, dan kemungkinan
+            naskah untuk dipentaskan.
+          </li>
+        </ol>
+
+        <h3>Contoh rancangan cerita sebelum menulis</h3>
+        <div class="table-wrap">
+          <table>
+            <tr><th>Komponen</th><th>Rancangan</th></tr>
+            <tr><td>Tema</td><td>Kejujuran dan tanggung jawab.</td></tr>
+            <tr><td>Judul</td><td>Uang Kas yang Hilang.</td></tr>
+            <tr><td>Tokoh</td><td>Rafi, Nisa, dan Dito.</td></tr>
+            <tr><td>Latar</td><td>Ruang kelas, siang hari.</td></tr>
+            <tr><td>Konflik</td><td>Uang kas kelas hilang dan seorang siswa dituduh mengambilnya.</td></tr>
+            <tr><td>Klimaks</td><td>Terungkap bahwa uang tersebut digunakan tanpa izin oleh orang yang bertugas menyimpannya.</td></tr>
+            <tr><td>Penyelesaian</td><td>Tokoh mengakui kesalahan dan bertanggung jawab mengembalikan uang.</td></tr>
+            <tr><td>Amanat</td><td>Jangan menuduh tanpa bukti dan beranilah mengakui kesalahan.</td></tr>
+          </table>
+        </div>
+
+        <h3>Contoh pengembangan menjadi dialog</h3>
+        <div class="drama-script">
+          <div class="example-title">Uang Kas yang Hilang — Potongan Adegan</div>
+          <p><em>(Nisa berdiri di depan meja guru sambil memegang buku kas.)</em></p>
+          <p><strong>Nisa:</strong> "Teman-teman, uang kas yang kemarin kita kumpulkan ternyata tidak ada di dalam kotak."</p>
+          <p><strong>Rafi:</strong> "Jangan-jangan ada yang mengambilnya."</p>
+          <p><strong>Dito:</strong> "Jangan menuduh siapa pun sebelum kita tahu apa yang sebenarnya terjadi."</p>
+          <p><em>(Rafi terdiam. Ia tampak tidak nyaman.)</em></p>
+          <p><strong>Rafi:</strong> "Aku harus mengatakan sesuatu. Kemarin aku meminjam uang itu tanpa izin. Aku berniat menggantinya, tetapi aku takut mengaku."</p>
+          <p><strong>Nisa:</strong> "Mengapa kamu tidak langsung bicara? Kita bisa mencari jalan keluar bersama."</p>
+          <p><strong>Dito:</strong> "Yang penting sekarang kamu mau bertanggung jawab dan tidak mengulanginya."</p>
+        </div>
+
+        <p>
+          Contoh tersebut menunjukkan bahwa konflik dapat dibangun melalui
+          perbedaan sikap dan keputusan tokoh. Dialog juga memperlihatkan
+          watak masing-masing tokoh tanpa harus menjelaskannya secara
+          langsung melalui narasi panjang.
+        </p>
+
+        <h3>Tips agar naskah drama lebih menarik</h3>
+        <ul>
+          <li>Angkat persoalan yang dekat dengan kehidupan penonton.</li>
+          <li>Buat setiap tokoh memiliki tujuan dan karakter yang jelas.</li>
+          <li>Bangun konflik yang masuk akal dan berkembang secara bertahap.</li>
+          <li>Hindari dialog yang terlalu panjang dan tidak diperlukan.</li>
+          <li>Gunakan petunjuk laku secukupnya agar pemain memahami situasi.</li>
+          <li>Berikan penyelesaian yang sesuai dengan persoalan cerita.</li>
+          <li>Pastikan pesan cerita terasa melalui tindakan tokoh, bukan hanya nasihat.</li>
+        </ul>
+      </section>
+
+      <!-- AKTIVITAS PEMBELAJARAN: DIPERTAHANKAN SESUAI NASKAH ASLI -->
+      <section class="lesson-section" id="aktivitas">
+        <div class="section-label">Aktivitas Pembelajaran</div>
+        <h2>Belajar melalui Pengamatan dan Praktik</h2>
+
+        <h3>Aktivitas 1 — Mengamati realitas sosial</h3>
+        <p>
+          Amatilah lingkungan sekolah atau masyarakat di sekitarmu.
+          Temukan satu persoalan yang menurutmu layak diangkat menjadi
+          sebuah drama.
+        </p>
+        <p>Contoh persoalan yang dapat diamati:</p>
+        <ul>
+          <li>Kurangnya kepedulian terhadap kebersihan.</li>
+          <li>Perundungan di lingkungan pergaulan.</li>
+          <li>Kurangnya kedisiplinan.</li>
+          <li>Ketimpangan kesempatan dalam memperoleh pendidikan.</li>
+          <li>Kurangnya komunikasi antara anggota keluarga.</li>
+        </ul>
+        <p>
+          Tuliskan persoalan tersebut, penyebabnya, pihak yang terlibat,
+          dan kemungkinan penyelesaiannya.
+        </p>
+
+        <h3>Aktivitas 2 — Menganalisis naskah</h3>
+        <p>
+          Bacalah potongan naskah drama yang tersedia dalam materi ini.
+          Identifikasikan tema, tokoh, watak, konflik, latar, dan amanatnya.
+          Sertakan bukti berupa dialog atau petunjuk laku.
+        </p>
+
+        <h3>Aktivitas 3 — Menulis naskah kelompok</h3>
+        <p>
+          Bentuklah kelompok. Susunlah sebuah naskah drama pendek yang
+          mengangkat persoalan sosial di lingkungan sekitar. Naskah
+          sebaiknya memiliki beberapa tokoh, konflik yang jelas, dialog
+          yang wajar, dan penyelesaian yang masuk akal.
+        </p>
+
+        <h3>Aktivitas 4 — Pementasan</h3>
+        <p>
+          Pentaskan naskah yang telah dibuat. Setiap anggota kelompok
+          berpartisipasi sesuai perannya, baik sebagai pemain, sutradara,
+          penata properti, maupun bagian pendukung lainnya.
+        </p>
+
+        <div class="callout orange">
+          <strong>Tujuan kegiatan:</strong> Siswa tidak hanya memahami
+          drama sebagai teori, tetapi juga belajar bekerja sama, berani
+          mengemukakan pendapat, memahami persoalan sosial, dan
+          menyampaikan gagasan melalui karya.
+        </div>
+      </section>
+
+      <section class="lesson-section" id="evaluasi">
+        <div class="section-label">Evaluasi Pemahaman</div>
+        <h2>Uji Pemahaman</h2>
+        <p>
+          Jawablah pertanyaan berikut berdasarkan pemahamanmu terhadap
+          materi drama.
+        </p>
+
+        <div class="question">
+          <strong>1. Jelaskan pengertian drama dan mengapa drama disebut
+          sebagai karya sastra yang dapat dipentaskan.</strong>
+        </div>
+
+        <div class="question">
+          <strong>2. Apa perbedaan antara tokoh dan penokohan dalam drama?
+          Berikan contohnya.</strong>
+        </div>
+
+        <div class="question">
+          <strong>3. Jelaskan perbedaan teks utama dan teks samping dalam
+          naskah drama. Mengapa teks samping tidak diucapkan oleh pemain?</strong>
+        </div>
+
+        <div class="question">
+          <strong>4. Apa fungsi konflik dalam sebuah drama? Jelaskan
+          hubungan konflik dengan perkembangan alur.</strong>
+        </div>
+
+        <div class="question">
+          <strong>5. Mengapa drama sering mengangkat persoalan sosial?
+          Sebutkan dua contoh persoalan sosial yang dapat dijadikan tema.</strong>
+        </div>
+
+        <div class="question">
+          <strong>6. Jelaskan perbedaan monolog, dialog, dan gelar wicara
+          sebagai bentuk penyajian.</strong>
+        </div>
+
+        <div class="question">
+          <strong>7. Mengapa seorang pemain drama perlu memperhatikan
+          lafal, intonasi, ekspresi, gerak, dan penghayatan?</strong>
+        </div>
+
+        <div class="question">
+          <strong>8. Sebutkan langkah-langkah utama dalam menyusun
+          naskah drama.</strong>
+        </div>
+
+        <div class="question">
+          <strong>9. Bacalah dialog dalam contoh "Uang Kas yang Hilang".
+          Jelaskan watak Rafi dan bukti dialog yang mendukung penilaianmu.</strong>
+        </div>
+
+        <div class="question">
+          <strong>10. Jika kamu diminta membuat drama tentang kehidupan
+          sekolah, persoalan apa yang akan kamu angkat? Jelaskan alasan
+          dan pesan yang ingin disampaikan.</strong>
+        </div>
+      </section>
+
+      <section class="lesson-section" id="proyek">
+        <div class="section-label">Proyek Pembelajaran</div>
+        <h2>Menciptakan dan Mementaskan Drama</h2>
+
+        <p>
+          Buatlah sebuah drama pendek secara berkelompok dengan tema
+          <strong>"Realitas Sosial di Sekitar Kita"</strong>.
+        </p>
+
+        <h3>Ketentuan proyek</h3>
+        <ol>
+          <li>Pilih satu persoalan sosial yang nyata dan relevan.</li>
+          <li>Tentukan judul, tema, tokoh, watak, dan latar.</li>
+          <li>Susun konflik dan alur cerita secara runtut.</li>
+          <li>Tulis dialog dan petunjuk laku dalam naskah.</li>
+          <li>Pastikan setiap tokoh memiliki peran yang jelas.</li>
+          <li>Pentaskan drama dengan memperhatikan teknik bermain.</li>
+          <li>Sampaikan pesan atau refleksi setelah pertunjukan.</li>
+        </ol>
+
+        <h3>Aspek penilaian proyek</h3>
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>Aspek</th>
+              <th>Hal yang Dinilai</th>
+            </tr>
+            <tr>
+              <td>Isi naskah</td>
+              <td>Kesesuaian tema, kejelasan konflik, alur, dan amanat.</td>
+            </tr>
+            <tr>
+              <td>Kreativitas</td>
+              <td>Keaslian gagasan dan cara mengembangkan cerita.</td>
+            </tr>
+            <tr>
+              <td>Dialog</td>
+              <td>Kewajaran percakapan dan kesesuaian bahasa dengan tokoh.</td>
+            </tr>
+            <tr>
+              <td>Penghayatan</td>
+              <td>Kemampuan memainkan karakter dan menyampaikan emosi.</td>
+            </tr>
+            <tr>
+              <td>Teknik pementasan</td>
+              <td>Lafal, intonasi, volume, ekspresi, dan gerak.</td>
+            </tr>
+            <tr>
+              <td>Kerja sama</td>
+              <td>Partisipasi, tanggung jawab, dan kekompakan kelompok.</td>
+            </tr>
+            <tr>
+              <td>Pesan sosial</td>
+              <td>Kejelasan persoalan dan nilai yang disampaikan kepada penonton.</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="lesson-section" id="rangkuman">
+        <div class="section-label">Rangkuman</div>
+        <h2>Hal Penting yang Perlu Diingat</h2>
+
+        <ul>
+          <li>Drama adalah karya sastra yang menggambarkan kehidupan melalui dialog dan tindakan tokoh.</li>
+          <li>Unsur drama meliputi tema, tokoh dan penokohan, alur, latar, dialog, serta amanat.</li>
+          <li>Naskah drama memiliki teks utama berupa dialog dan teks samping berupa petunjuk pementasan.</li>
+          <li>Struktur umum drama dapat terdiri atas prolog, babak atau adegan, dan epilog.</li>
+          <li>Bahasa drama banyak menggunakan kalimat langsung dan bahasa percakapan yang sesuai dengan karakter tokoh.</li>
+          <li>Drama dapat mengangkat realitas sosial untuk membangun kesadaran, empati, dan kepedulian.</li>
+          <li>Analisis drama harus didukung alasan dan bukti dari dialog maupun tindakan tokoh.</li>
+          <li>Pementasan membutuhkan lafal, intonasi, volume, ekspresi, gerak, penghayatan, dan kerja sama.</li>
+          <li>Menulis drama dimulai dari menentukan tema, tokoh, konflik, alur, dialog, petunjuk laku, hingga revisi.</li>
+        </ul>
+      </section>
+
+      <section class="lesson-section" id="refleksi">
+        <div class="section-label">Refleksi Pembelajaran</div>
+        <h2>Renungkan Kembali</h2>
+
+        <p>Setelah mempelajari materi drama, pikirkan beberapa pertanyaan berikut.</p>
+
+        <div class="reflection">
+          <ol>
+            <li>Apa hal baru yang kamu pahami tentang drama?</li>
+            <li>Unsur drama apa yang menurutmu paling penting? Mengapa?</li>
+            <li>Persoalan sosial apa di sekitarmu yang layak diangkat menjadi drama?</li>
+            <li>Apakah kamu sudah mampu menyampaikan dialog dengan ekspresi dan intonasi yang tepat?</li>
+            <li>Nilai kehidupan apa yang ingin kamu sampaikan melalui drama yang kamu buat?</li>
+          </ol>
+          <p>
+            Tuliskan jawabanmu secara jujur. Refleksi bukan sekadar
+            mengulang materi, melainkan kesempatan untuk memahami
+            perkembangan kemampuan dan sikapmu.
+          </p>
+        </div>
+      </section>
+
+      <div class="quote">
+        "Panggung boleh berakhir, tetapi pesan kehidupan yang disampaikan
+        melalui sebuah cerita dapat terus hidup dalam pikiran dan hati."
+        <small>— MANDALA AKSARA</small>
       </div>
-    </section>
 
-    <div class="quote">
-      "Panggung boleh berakhir, tetapi pesan kehidupan yang disampaikan
-      melalui sebuah cerita dapat terus hidup dalam pikiran dan hati."
-      <small>— MANDALA AKSARA</small>
-    </div>
+      <a class="back-link" href="kelas-xi.html">← Kembali ke Materi Kelas XI</a>
 
-    <a class="back-link" href="kelas-xi.html">← Kembali ke Materi Kelas XI</a>
+    </main>
+  </div>
 
-  </main>
 </div>
 
-<footer>
-  <strong>MANDALA AKSARA</strong>
-  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
-  <p>Ruang Literasi dan Pembelajaran Bahasa Indonesia</p>
-  <p>Dikelola Mandiri</p>
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+      <div class="footer-brand-copy">
+        <b>MANDALA AKSARA</b>
+        <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+        <span class="managed-label">Dikelola Mandiri</span>
+      </div>
+    </div>
+    <nav class="footer-links" aria-label="Navigasi footer">
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+    </nav>
+  </div>
+  <div class="copyright">
+    © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+  </div>
 </footer>
+
+<!-- JavaScript Navigasi Bersama -->
+<script src="script.js"></script>
 
 </body>
 </html>
