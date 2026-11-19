@@ -451,6 +451,42 @@
         text-align: center;
       }
     }
+    
+/* PENYERAGAMAN DAFTAR MATERI MANDALA AKSARA */
+
+/* Tampilan komputer: vertikal */
+.surat-sidebar nav,
+.bab2-sidebar nav {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 3px;
+  width: 100%;
+}
+
+.surat-sidebar nav a,
+.bab2-sidebar nav a {
+  display: block !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tampilan tablet: dua kolom */
+@media (max-width: 900px) {
+  .surat-sidebar nav,
+  .bab2-sidebar nav {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3px 8px;
+  }
+}
+
+/* Tampilan HP: satu kolom */
+@media (max-width: 650px) {
+  .surat-sidebar nav,
+  .bab2-sidebar nav {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 
