@@ -1,0 +1,892 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Daftar Pustaka dan Kutipan – Gaya Chicago | Mandala Aksara</title>
+
+  <meta name="description" content="Panduan memahami gaya Chicago untuk penulisan kutipan dan daftar pustaka, mencakup sistem Notes and Bibliography serta Author-Date.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .chicago-page {
+      --chicago-navy: #142b4a;
+      --chicago-orange: #e87924;
+      --chicago-gold: #d9a441;
+      --chicago-cream: #fffaf2;
+      color: #293648;
+      line-height: 1.8;
+    }
+
+    .chicago-page * {
+      box-sizing: border-box;
+    }
+
+    .chicago-hero {
+      background: linear-gradient(135deg, #142b4a, #203e63);
+      color: #fff;
+      padding: 55px 24px;
+      text-align: center;
+      border-radius: 0 0 24px 24px;
+    }
+
+    .chicago-hero .eyebrow {
+      color: #f5bd70;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .chicago-hero h1 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      margin: 12px 0;
+    }
+
+    .chicago-hero p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #e8edf4;
+    }
+
+    .chicago-container {
+      width: min(1080px, calc(100% - 36px));
+      margin: 35px auto 65px;
+    }
+
+    .chicago-breadcrumb {
+      font-size: 0.9rem;
+      color: #697586;
+      margin-bottom: 25px;
+    }
+
+    .chicago-breadcrumb a {
+      color: #bd641d;
+      text-decoration: none;
+    }
+
+    .chicago-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .chicago-intro {
+      background: var(--chicago-cream);
+      border-left: 5px solid var(--chicago-orange);
+      padding: 22px 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .chicago-section {
+      margin: 38px 0;
+      scroll-margin-top: 30px;
+    }
+
+    .chicago-section h2 {
+      color: var(--chicago-navy);
+      font-size: 1.45rem;
+      border-bottom: 2px solid #e9edf2;
+      padding-bottom: 10px;
+      margin-bottom: 18px;
+    }
+
+    .chicago-section h3 {
+      color: #244568;
+      font-size: 1.12rem;
+      margin: 24px 0 10px;
+    }
+
+    .chicago-section p {
+      margin: 12px 0;
+    }
+
+    .chicago-section ul,
+    .chicago-section ol {
+      padding-left: 25px;
+    }
+
+    .chicago-section li {
+      margin-bottom: 8px;
+    }
+
+    .chicago-example {
+      background: #f5f7fa;
+      border: 1px solid #e1e7ee;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin: 16px 0;
+      overflow-wrap: anywhere;
+    }
+
+    .chicago-example strong {
+      color: var(--chicago-navy);
+    }
+
+    .chicago-note {
+      background: #fff6e9;
+      border-left: 4px solid var(--chicago-gold);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    .chicago-table-wrap {
+      overflow-x: auto;
+      margin: 18px 0;
+    }
+
+    .chicago-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 580px;
+      font-size: 0.95rem;
+    }
+
+    .chicago-table th,
+    .chicago-table td {
+      border: 1px solid #dfe5ec;
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .chicago-table th {
+      background: var(--chicago-navy);
+      color: #fff;
+    }
+
+    .chicago-table tr:nth-child(even) {
+      background: #f7f9fb;
+    }
+
+    .chicago-quote {
+      background: linear-gradient(135deg, #fff8ed, #fff);
+      border: 1px solid #f0dfc8;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      margin-top: 45px;
+      color: #34465d;
+      font-style: italic;
+    }
+
+    .chicago-quote span {
+      display: block;
+      color: #bd641d;
+      font-style: normal;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+    .chicago-navigation {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 35px;
+    }
+
+    .chicago-navigation a {
+      display: inline-block;
+      padding: 11px 18px;
+      background: var(--chicago-navy);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .chicago-navigation a:hover {
+      background: var(--chicago-orange);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 650px) {
+      .chicago-hero {
+        padding: 40px 18px;
+      }
+
+      .chicago-container {
+        width: min(100% - 28px, 1080px);
+        margin-top: 25px;
+      }
+
+      .chicago-intro,
+      .chicago-example {
+        padding: 16px;
+      }
+
+      .chicago-section h2 {
+        font-size: 1.25rem;
+      }
+
+      .chicago-navigation {
+        flex-direction: column;
+      }
+
+      .chicago-navigation a {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    <div class="top-inner">
+      <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+      <div class="top-actions">
+        <form class="search" role="search" onsubmit="return searchSite(event)">
+          <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+          <button type="submit" aria-label="Cari">⌕</button>
+        </form>
+        <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+      <span class="brand-copy">
+        <strong>MANDALA AKSARA</strong>
+        <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nav-trigger" aria-haspopup="true">
+          Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
+        </button>
+        <div class="dropdown">
+          <a href="kelas-x.html">Kelas X</a>
+          <a href="kelas-xi.html">Kelas XI</a>
+          <a href="kelas-xii.html">Kelas XII</a>
+        </div>
+      </div>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html" class="active" aria-current="page">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
+
+  <main class="chicago-page">
+
+    <section class="chicago-hero">
+      <div class="eyebrow">Referensi Kebahasaan</div>
+      <h1>Daftar Pustaka dan Kutipan – Gaya Chicago</h1>
+      <p>
+        Memahami cara mengutip sumber dan menyusun daftar pustaka
+        menggunakan pedoman Chicago Manual of Style.
+      </p>
+    </section>
+
+    <div class="chicago-container">
+
+      <div class="chicago-breadcrumb">
+        <a href="perpustakaan.html">Perpustakaan Digital</a>
+        &nbsp;›&nbsp;
+        <a href="referensi-kebahasaan.html">Referensi Kebahasaan</a>
+        &nbsp;›&nbsp;
+        <a href="daftar-pustaka-dan-kutipan.html">Daftar Pustaka dan Kutipan</a>
+        &nbsp;›&nbsp;
+        Gaya Chicago
+      </div>
+
+      <div class="chicago-intro">
+        <p>
+          Dalam penulisan ilmiah, setiap gagasan, data, atau informasi yang
+          berasal dari sumber lain perlu diberikan keterangan sumber.
+          Salah satu pedoman yang dapat digunakan adalah <em>Chicago Manual
+          of Style</em>, yang dikenal memiliki dua sistem utama dalam
+          penulisan kutipan dan daftar pustaka.
+        </p>
+        <p>
+          Kedua sistem tersebut memiliki cara penulisan yang berbeda.
+          Oleh karena itu, penulis perlu memahami sistem yang digunakan
+          sebelum menyusun karya ilmiah.
+        </p>
+      </div>
+
+      <section class="chicago-section">
+        <h2>A. Mengenal Gaya Chicago</h2>
+
+        <p>
+          Gaya Chicago adalah pedoman penulisan yang mengatur tata cara
+          penggunaan kutipan, catatan kaki, catatan akhir, dan daftar
+          pustaka. Pedoman ini diterbitkan melalui
+          <em>Chicago Manual of Style</em>.
+        </p>
+
+        <p>
+          Gaya Chicago banyak digunakan dalam bidang sejarah, sastra,
+          humaniora, seni, dan sejumlah bidang ilmu sosial. Pedoman ini
+          memberikan ruang bagi penulis untuk menjelaskan sumber secara
+          terperinci melalui catatan kaki atau catatan akhir.
+        </p>
+
+        <p>
+          Hal penting yang perlu dipahami adalah bahwa Chicago memiliki
+          dua sistem utama, yaitu <em>Notes and Bibliography</em> dan
+          <em>Author-Date</em>.
+        </p>
+      </section>
+
+      <section class="chicago-section">
+        <h2>B. Dua Sistem dalam Gaya Chicago</h2>
+
+        <h3>1. Notes and Bibliography</h3>
+
+        <p>
+          Sistem <em>Notes and Bibliography</em> menggunakan nomor
+          penanda dalam teks yang mengarahkan pembaca pada catatan kaki
+          (<em>footnote</em>) atau catatan akhir (<em>endnote</em>).
+          Catatan tersebut memuat informasi sumber yang digunakan.
+        </p>
+
+        <p>
+          Sistem ini biasanya dilengkapi daftar pustaka di bagian akhir
+          tulisan. Penggunaannya banyak ditemukan dalam karya sejarah,
+          sastra, filsafat, dan bidang humaniora lainnya.
+        </p>
+
+        <div class="chicago-example">
+          <strong>Contoh kutipan dalam teks:</strong>
+          <p>
+            Bahasa memiliki peran penting dalam membentuk hubungan sosial
+            dan menyampaikan gagasan.¹
+          </p>
+
+          <strong>Contoh catatan kaki:</strong>
+          <p>
+            ¹ Nama Penulis, <em>Judul Buku</em> (Kota: Penerbit, Tahun), 25.
+          </p>
+          <caption>Contoh tersebut merupakan pola ilustratif, bukan sumber publikasi nyata.</caption>
+        </div>
+
+        <h3>2. Author-Date</h3>
+
+        <p>
+          Sistem <em>Author-Date</em> menggunakan nama belakang penulis
+          dan tahun terbit di dalam teks. Nomor halaman ditambahkan jika
+          penulis merujuk pada bagian tertentu dari sumber.
+        </p>
+
+        <p>
+          Sistem ini sering digunakan dalam bidang ilmu sosial dan
+          ilmu alam karena pembaca dapat langsung mengetahui nama
+          penulis serta tahun penerbitan sumber.
+        </p>
+
+        <div class="chicago-example">
+          <strong>Contoh kutipan dalam teks:</strong>
+          <p>
+            Bahasa berperan dalam membangun hubungan sosial
+            (Rahman 2022, 25).
+          </p>
+
+          <strong>Contoh daftar referensi:</strong>
+          <p>
+            Rahman, Ahmad. 2022. <em>Bahasa dan Kehidupan Sosial</em>.
+            Bandung: Pustaka Ilmu.
+          </p>
+          <caption>Nama dan data sumber pada contoh hanya digunakan untuk menjelaskan pola penulisan.</caption>
+        </div>
+      </section>
+
+      <section class="chicago-section">
+        <h2>C. Perbedaan Kedua Sistem</h2>
+
+        <div class="chicago-table-wrap">
+          <table class="chicago-table">
+            <thead>
+              <tr>
+                <th>Aspek</th>
+                <th>Notes and Bibliography</th>
+                <th>Author-Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bentuk kutipan</td>
+                <td>Nomor penanda yang merujuk pada catatan kaki atau catatan akhir.</td>
+                <td>Nama belakang penulis dan tahun di dalam teks.</td>
+              </tr>
+              <tr>
+                <td>Informasi halaman</td>
+                <td>Dicantumkan dalam catatan sumber jika relevan.</td>
+                <td>Dapat dicantumkan langsung dalam kutipan di dalam teks.</td>
+              </tr>
+              <tr>
+                <td>Daftar sumber</td>
+                <td>Umumnya menggunakan daftar pustaka (<em>Bibliography</em>).</td>
+                <td>Menggunakan daftar referensi (<em>Reference List</em>).</td>
+              </tr>
+              <tr>
+                <td>Bidang yang sering menggunakan</td>
+                <td>Sejarah, sastra, seni, dan humaniora.</td>
+                <td>Ilmu sosial dan sejumlah bidang ilmu alam.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="chicago-note">
+          <strong>Perlu diingat:</strong>
+          Kedua sistem tersebut sama-sama merupakan bagian dari gaya
+          Chicago. Penulis tidak boleh mencampurkan keduanya secara
+          sembarangan dalam satu karya ilmiah. Ikuti sistem yang
+          ditentukan oleh penerbit, lembaga, atau pembimbing.
+        </div>
+      </section>
+
+      <section class="chicago-section">
+        <h2>D. Sistem Notes and Bibliography</h2>
+
+        <h3>1. Catatan Kaki (Footnote)</h3>
+
+        <p>
+          Catatan kaki adalah keterangan sumber atau penjelasan tambahan
+          yang ditempatkan di bagian bawah halaman. Dalam sistem Chicago,
+          nomor kecil pada akhir kalimat digunakan sebagai penanda
+          catatan kaki.
+        </p>
+
+        <p>
+          Nomor catatan mengikuti urutan kemunculannya dalam tulisan.
+          Setiap catatan memberikan informasi yang membantu pembaca
+          menemukan sumber yang dirujuk.
+        </p>
+
+        <div class="chicago-example">
+          <strong>Contoh pola catatan kaki buku:</strong>
+          <p>
+            1. Nama Depan Nama Belakang,
+            <em>Judul Buku</em> (Kota: Penerbit, Tahun), nomor halaman.
+          </p>
+        </div>
+
+        <h3>2. Catatan Akhir (Endnote)</h3>
+
+        <p>
+          Catatan akhir memiliki fungsi yang sama dengan catatan kaki,
+          tetapi seluruh catatan dikumpulkan pada bagian akhir bab atau
+          akhir dokumen, bukan di bawah setiap halaman.
+        </p>
+
+        <h3>3. Contoh Catatan Kaki Berdasarkan Jenis Sumber</h3>
+
+        <div class="chicago-example">
+          <strong>Buku:</strong>
+          <p>
+            1. Ahmad Rahman, <em>Bahasa dan Kehidupan Sosial</em>
+            (Bandung: Pustaka Ilmu, 2022), 25.
+          </p>
+
+          <strong>Artikel jurnal:</strong>
+          <p>
+            2. Siti Aminah, “Bahasa dalam Interaksi Sosial,”
+            <em>Jurnal Kajian Bahasa</em> 8, no. 2 (2023): 45,
+            https://doi.org/10.xxxx/xxxxx.
+          </p>
+
+          <strong>Halaman situs web:</strong>
+          <p>
+            3. Nama Lembaga, “Judul Halaman,”
+            nama situs, tanggal publikasi atau pembaruan,
+            URL.
+          </p>
+
+          <caption>
+            Seluruh nama, judul, dan informasi penerbitan di atas
+            merupakan ilustrasi format. Jangan menggunakannya sebagai
+            data bibliografi sumber nyata.
+          </caption>
+        </div>
+
+        <h3>4. Catatan Kaki untuk Sumber yang Sama</h3>
+
+        <p>
+          Jika sumber yang sama dikutip kembali, catatan berikutnya
+          dapat menggunakan bentuk yang lebih singkat. Penulis tidak
+          perlu mengulang seluruh informasi bibliografi.
+        </p>
+
+        <div class="chicago-example">
+          <strong>Contoh catatan pertama:</strong>
+          <p>
+            1. Ahmad Rahman, <em>Bahasa dan Kehidupan Sosial</em>
+            (Bandung: Pustaka Ilmu, 2022), 25.
+          </p>
+
+          <strong>Contoh kutipan berikutnya:</strong>
+          <p>
+            2. Rahman, <em>Bahasa dan Kehidupan Sosial</em>, 30.
+          </p>
+        </div>
+
+        <div class="chicago-note">
+          Bentuk catatan singkat harus tetap cukup jelas untuk
+          menunjukkan sumber yang dirujuk. Penggunaan <em>Ibid.</em>
+          tidak perlu dijadikan kebiasaan; ikuti ketentuan edisi
+          pedoman atau aturan lembaga yang digunakan.
+        </div>
+      </section>
+
+      <section class="chicago-section">
+        <h2>E. Menyusun Bibliography</h2>
+
+        <p>
+          <em>Bibliography</em> atau daftar pustaka memuat sumber-sumber
+          yang digunakan dalam penyusunan tulisan. Dalam sistem
+          <em>Notes and Bibliography</em>, susunan informasi pada
+          daftar pustaka berbeda dari susunan informasi dalam catatan
+          kaki.
+        </p>
+
+        <p>
+          Beberapa aturan umum yang perlu diperhatikan adalah:
+        </p>
+
+        <ul>
+          <li>Daftar pustaka ditempatkan pada bagian akhir tulisan.</li>
+          <li>Nama penulis umumnya dibalik pada entri pertama, yaitu nama belakang diikuti nama depan.</li>
+          <li>Entri disusun menurut abjad berdasarkan nama belakang penulis pertama.</li>
+          <li>Judul buku dan nama jurnal ditulis miring.</li>
+          <li>Gunakan inden menggantung (<em>hanging indent</em>) agar setiap entri mudah dibaca.</li>
+          <li>Pastikan informasi sumber lengkap dan sesuai dengan sumber aslinya.</li>
+        </ul>
+
+        <h3>Contoh daftar pustaka buku</h3>
+
+        <div class="chicago-example">
+          Rahman, Ahmad. <em>Bahasa dan Kehidupan Sosial</em>.
+          Bandung: Pustaka Ilmu, 2022.
+        </div>
+
+        <h3>Contoh daftar pustaka artikel jurnal</h3>
+
+        <div class="chicago-example">
+          Aminah, Siti. “Bahasa dalam Interaksi Sosial.”
+          <em>Jurnal Kajian Bahasa</em> 8, no. 2 (2023): 40–55.
+          https://doi.org/10.xxxx/xxxxx.
+        </div>
+      </section>
+
+      <section class="chicago-section">
+        <h2>F. Sistem Author-Date</h2>
+
+        <p>
+          Dalam sistem <em>Author-Date</em>, sumber ditunjukkan melalui
+          nama belakang penulis dan tahun terbit di dalam teks. Jika
+          mengutip bagian tertentu, nomor halaman dapat ditambahkan.
+        </p>
+
+        <h3>1. Kutipan dengan Satu Penulis</h3>
+
+        <div class="chicago-example">
+          <p>
+            Bahasa merupakan bagian penting dalam kehidupan masyarakat
+            (Rahman 2022).
+          </p>
+          <p>
+            Jika merujuk halaman tertentu:
+            (Rahman 2022, 25).
+          </p>
+        </div>
+
+        <h3>2. Kutipan dengan Dua Penulis</h3>
+
+        <div class="chicago-example">
+          <p>
+            (Rahman dan Aminah 2023, 18)
+          </p>
+          <caption>
+            Dalam penulisan berbahasa Indonesia, kata penghubung
+            disesuaikan dengan bahasa karya tulis. Perhatikan juga
+            pedoman lembaga atau penerbit.
+          </caption>
+        </div>
+
+        <h3>3. Kutipan dengan Tiga Penulis atau Lebih</h3>
+
+        <p>
+          Untuk sumber dengan tiga penulis atau lebih, sistem
+          Author-Date pada umumnya menggunakan nama penulis pertama
+          diikuti <em>et al.</em> dalam kutipan di dalam teks.
+        </p>
+
+        <div class="chicago-example">
+          (Rahman et al. 2023, 42)
+        </div>
+
+        <h3>4. Daftar Referensi</h3>
+
+        <p>
+          Sumber yang dikutip dalam teks dicantumkan dalam daftar
+          referensi pada akhir tulisan. Susunannya umumnya berdasarkan
+          abjad nama belakang penulis.
+        </p>
+
+        <div class="chicago-example">
+          Rahman, Ahmad. 2022. <em>Bahasa dan Kehidupan Sosial</em>.
+          Bandung: Pustaka Ilmu.
+        </div>
+      </section>
+
+      <section class="chicago-section">
+        <h2>G. Contoh Penulisan Berdasarkan Jenis Sumber</h2>
+
+        <h3>1. Buku</h3>
+
+        <div class="chicago-example">
+          <strong>Notes and Bibliography:</strong>
+          <p>
+            Catatan kaki:<br>
+            1. Ahmad Rahman, <em>Bahasa dan Kehidupan Sosial</em>
+            (Bandung: Pustaka Ilmu, 2022), 25.
+          </p>
+          <p>
+            Bibliography:<br>
+            Rahman, Ahmad. <em>Bahasa dan Kehidupan Sosial</em>.
+            Bandung: Pustaka Ilmu, 2022.
+          </p>
+
+          <strong>Author-Date:</strong>
+          <p>
+            Kutipan dalam teks: (Rahman 2022, 25)
+          </p>
+          <p>
+            Daftar referensi:<br>
+            Rahman, Ahmad. 2022. <em>Bahasa dan Kehidupan Sosial</em>.
+            Bandung: Pustaka Ilmu.
+          </p>
+        </div>
+
+        <h3>2. Artikel Jurnal</h3>
+
+        <div class="chicago-example">
+          <strong>Notes and Bibliography:</strong>
+          <p>
+            Catatan kaki:<br>
+            1. Siti Aminah, “Bahasa dalam Interaksi Sosial,”
+            <em>Jurnal Kajian Bahasa</em> 8, no. 2 (2023): 45,
+            https://doi.org/10.xxxx/xxxxx.
+          </p>
+          <p>
+            Bibliography:<br>
+            Aminah, Siti. “Bahasa dalam Interaksi Sosial.”
+            <em>Jurnal Kajian Bahasa</em> 8, no. 2 (2023): 40–55.
+            https://doi.org/10.xxxx/xxxxx.
+          </p>
+
+          <strong>Author-Date:</strong>
+          <p>
+            Kutipan dalam teks: (Aminah 2023, 45)
+          </p>
+          <p>
+            Daftar referensi:<br>
+            Aminah, Siti. 2023. “Bahasa dalam Interaksi Sosial.”
+            <em>Jurnal Kajian Bahasa</em> 8 (2): 40–55.
+            https://doi.org/10.xxxx/xxxxx.
+          </p>
+        </div>
+
+        <h3>3. Halaman Situs Web</h3>
+
+        <div class="chicago-example">
+          <strong>Notes and Bibliography:</strong>
+          <p>
+            Catatan kaki:<br>
+            1. Nama Penulis atau Lembaga, “Judul Halaman,”
+            Nama Situs, tanggal publikasi atau pembaruan, URL.
+          </p>
+          <p>
+            Bibliography:<br>
+            Nama Belakang, Nama Depan. “Judul Halaman.”
+            Nama Situs. Tanggal publikasi atau pembaruan. URL.
+          </p>
+
+          <strong>Author-Date:</strong>
+          <p>
+            Kutipan dalam teks: (Nama Lembaga 2024)
+          </p>
+          <p>
+            Daftar referensi:<br>
+            Nama Lembaga. 2024. “Judul Halaman.”
+            Nama Situs. URL.
+          </p>
+          <caption>
+            Sesuaikan format dengan ketersediaan nama penulis,
+            tanggal, dan informasi pada halaman web yang sebenarnya.
+          </caption>
+        </div>
+      </section>
+
+      <section class="chicago-section">
+        <h2>H. Kutipan Langsung dan Parafrasa</h2>
+
+        <h3>1. Kutipan Langsung</h3>
+
+        <p>
+          Kutipan langsung mengambil pernyataan dari sumber tanpa
+          mengubah susunan kata aslinya. Penulis harus menunjukkan
+          bagian sumber yang dikutip secara tepat.
+        </p>
+
+        <p>
+          Dalam sistem Notes and Bibliography, informasi sumber
+          disampaikan melalui catatan kaki atau catatan akhir.
+          Dalam sistem Author-Date, informasi sumber ditulis dalam
+          tanda kurung di dalam teks.
+        </p>
+
+        <h3>2. Parafrasa</h3>
+
+        <p>
+          Parafrasa adalah penyampaian kembali gagasan dari sumber
+          menggunakan susunan kalimat sendiri tanpa mengubah makna
+          aslinya. Meskipun kalimat telah ditulis ulang, sumber
+          gagasan tetap harus dicantumkan.
+        </p>
+
+        <div class="chicago-note">
+          Kutipan langsung dan parafrasa sama-sama memerlukan
+          pencantuman sumber. Perbedaannya terletak pada cara
+          penyampaian gagasan, bukan pada kewajiban memberikan
+          pengakuan kepada penulis aslinya.
+        </div>
+      </section>
+
+      <section class="chicago-section">
+        <h2>I. Kesalahan yang Perlu Dihindari</h2>
+
+        <ul>
+          <li>Mencampurkan sistem Notes and Bibliography dengan Author-Date dalam satu tulisan tanpa alasan yang jelas.</li>
+          <li>Menuliskan catatan kaki tanpa informasi sumber yang memadai.</li>
+          <li>Tidak mencantumkan sumber yang telah dikutip.</li>
+          <li>Mengubah judul, nama penulis, atau tahun terbit dari sumber asli.</li>
+          <li>Menyusun daftar pustaka tanpa memperhatikan urutan dan format.</li>
+          <li>Mencantumkan tautan yang tidak mengarah pada sumber yang dirujuk.</li>
+          <li>Menggunakan contoh format sebagai sumber nyata tanpa memeriksa keberadaan publikasinya.</li>
+        </ul>
+      </section>
+
+      <section class="chicago-section">
+        <h2>J. Memilih Sistem Chicago yang Tepat</h2>
+
+        <p>
+          Pemilihan sistem perlu disesuaikan dengan bidang kajian
+          dan ketentuan lembaga atau penerbit. Sebagai gambaran:
+        </p>
+
+        <ul>
+          <li>Gunakan Notes and Bibliography apabila tulisan memerlukan catatan kaki untuk memberikan keterangan sumber atau penjelasan tambahan.</li>
+          <li>Gunakan Author-Date apabila tulisan lebih sesuai dengan sistem kutipan nama penulis dan tahun di dalam teks.</li>
+        </ul>
+
+        <p>
+          Sebelum menyelesaikan karya ilmiah, periksa kembali pedoman
+          penulisan yang berlaku. Beberapa perguruan tinggi atau
+          penerbit dapat memiliki ketentuan teknis tambahan.
+        </p>
+      </section>
+
+      <section class="chicago-section">
+        <h2>K. Rujukan Utama</h2>
+
+        <p>
+          Untuk memahami aturan secara lebih mendalam, penulis dapat
+          merujuk pada pedoman resmi berikut:
+        </p>
+
+        <div class="chicago-example">
+          <strong>The Chicago Manual of Style</strong>
+          <p>
+            University of Chicago Press. Pedoman resmi yang menjelaskan
+            aturan penulisan, pengutipan, catatan, dan daftar pustaka
+            dalam gaya Chicago.
+          </p>
+          <p>
+            Situs resmi:
+            <a href="https://www.chicagomanualofstyle.org/"
+              target="_blank" rel="noopener noreferrer">
+              chicagomanualofstyle.org
+            </a>
+          </p>
+        </div>
+
+        <div class="chicago-note">
+          <strong>Catatan penggunaan:</strong>
+          Contoh nama penulis, judul buku, jurnal, penerbit, dan DOI
+          dalam materi ini sebagian besar merupakan ilustrasi format.
+          Untuk karya ilmiah, gunakan data bibliografi yang benar-benar
+          berasal dari sumber yang dibaca.
+        </div>
+      </section>
+
+      <div class="chicago-quote">
+        “Ketelitian dalam mencantumkan sumber adalah bagian dari
+        tanggung jawab intelektual seorang penulis.”
+        <span>— Mandala Aksara</span>
+      </div>
+
+      <div class="chicago-navigation">
+        <a href="daftar-pustaka-dan-kutipan.html">
+          ← Kembali ke Daftar Pustaka dan Kutipan
+        </a>
+        <a href="daftar-pustaka-ieee.html">
+          Selanjutnya: Gaya IEEE →
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+        <div class="footer-brand-copy">
+          <b>MANDALA AKSARA</b>
+          <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+          <span class="managed-label">Dikelola Mandiri</span>
+        </div>
+      </div>
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="perpustakaan.html">Perpustakaan Digital</a>
+        <a href="kelas-virtual.html">Kelas Virtual</a>
+      </nav>
+    </div>
+    <div class="copyright">
+      © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
