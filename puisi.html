@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -11,152 +11,38 @@
     gtag('config', 'G-7HFZ0YC7P9');
   </script>
 
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Materi Bahasa Indonesia kelas X tentang puisi: pengertian, diksi, majas, pengimajian, tema, suasana, rima, tipografi, pembacaan puisi, musikalisasi, dan resensi antologi."/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Materi Bahasa Indonesia kelas X tentang puisi: pengertian, ciri-ciri, unsur pembangun, diksi, majas, citraan, tema, suasana, rima, tipografi, pembacaan, musikalisasi, dan resensi antologi puisi.">
   <title>Berkarya dan Berekspresi Melalui Puisi | Mandala Aksara</title>
-  <link href="style.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
 
   <style>
-    :root{
-      --navy:#142B4A;
-      --navy-dark:#0D203A;
-      --orange:#F28C28;
-      --gold:#C69A45;
-      --text:#34445B;
-      --muted:#68778B;
-      --soft:#F3F5F8;
-      --border:#DCE3EC;
-    }
-
-    *{
-      box-sizing:border-box;
-      scroll-behavior:smooth;
-    }
-
-    body{
-      margin:0;
+    .puisi-page {
+      --puisi-navy:#142B4A;
+      --puisi-orange:#F28C28;
+      --puisi-gold:#C69A45;
+      --puisi-text:#34445B;
+      --puisi-muted:#68778B;
+      --puisi-soft:#F3F5F8;
+      --puisi-border:#DCE3EC;
       background:#F7F8FA;
-      color:var(--text);
+      color:var(--puisi-text);
       font-family:Arial,Helvetica,sans-serif;
       line-height:1.75;
     }
 
-    a{color:inherit}
+    .puisi-page * { box-sizing:border-box; }
+    .puisi-page a { color:inherit; }
 
-    .site-header{
-      background:var(--navy-dark);
-      color:white;
-      padding:15px 5%;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-      position:sticky;
-      top:0;
-      z-index:1000;
-      box-shadow:0 3px 12px rgba(0,0,0,.15);
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      text-decoration:none;
-      min-width:0;
-    }
-
-    .brand img{
-      width:46px;
-      height:46px;
-      object-fit:contain;
-    }
-
-    .brand-name{
-      font-size:19px;
-      font-weight:800;
-      letter-spacing:1px;
-      color:white;
-    }
-
-    .brand-subtitle{
-      display:block;
-      font-size:10px;
-      color:#D9E1EC;
-      letter-spacing:.5px;
-    }
-
-    #menuToggle{
-      display:none;
-      border:1px solid rgba(255,255,255,.35);
-      background:transparent;
-      color:white;
-      padding:8px 12px;
-      border-radius:7px;
-      font-size:22px;
-      cursor:pointer;
-    }
-
-    #mainNav{
-      display:flex;
-      align-items:center;
-      gap:20px;
-    }
-
-    #mainNav>a,.nav-trigger{
-      color:white;
-      text-decoration:none;
-      font-size:13px;
-      font-weight:600;
-    }
-
-    .nav-trigger{
-      border:none;
-      background:transparent;
-      cursor:pointer;
-      padding:8px 0;
-    }
-
-    .nav-dropdown{position:relative}
-
-    .dropdown{
-      display:none;
-      position:absolute;
-      top:100%;
-      left:0;
-      min-width:155px;
-      background:white;
-      box-shadow:0 8px 22px rgba(0,0,0,.15);
-      border-radius:8px;
-      overflow:hidden;
-    }
-
-    .nav-dropdown:hover .dropdown,
-    .nav-dropdown.expanded .dropdown{
-      display:block;
-    }
-
-    .dropdown a{
-      display:block;
-      padding:10px 15px;
-      color:var(--navy);
-      text-decoration:none;
-      font-size:13px;
-    }
-
-    .dropdown a:hover{
-      background:var(--soft);
-      color:var(--orange);
-    }
-
-    .hero{
-      background:linear-gradient(120deg,var(--navy-dark),var(--navy));
+    .puisi-page .hero {
+      background:linear-gradient(120deg,#0D203A,#142B4A);
       color:white;
       padding:55px 7%;
       text-align:center;
     }
 
-    .hero .eyebrow{
+    .puisi-page .hero .eyebrow {
       color:#F6B65F;
       text-transform:uppercase;
       font-size:12px;
@@ -164,19 +50,19 @@
       font-weight:bold;
     }
 
-    .hero h1{
+    .puisi-page .hero h1 {
       font-size:clamp(27px,4vw,42px);
       line-height:1.2;
       margin:12px 0;
     }
 
-    .hero p{
+    .puisi-page .hero p {
       max-width:760px;
       margin:0 auto;
       color:#E0E7F0;
     }
 
-    .page-layout{
+    .puisi-page .page-layout {
       max-width:1350px;
       margin:35px auto 60px;
       padding:0 22px;
@@ -186,9 +72,9 @@
       align-items:start;
     }
 
-    .sidebar{
+    .puisi-page .sidebar {
       background:white;
-      border:1px solid var(--border);
+      border:1px solid var(--puisi-border);
       border-radius:13px;
       padding:20px 15px;
       position:sticky;
@@ -197,13 +83,13 @@
       overflow-y:auto;
     }
 
-    .sidebar h2{
-      color:var(--navy);
+    .puisi-page .sidebar h2 {
+      color:var(--puisi-navy);
       font-size:18px;
       margin:0 0 15px;
     }
 
-    .sidebar a{
+    .puisi-page .sidebar a {
       display:block;
       text-decoration:none;
       color:#485970;
@@ -215,26 +101,26 @@
       line-height:1.4;
     }
 
-    .sidebar a:hover,
-    .sidebar a.active{
+    .puisi-page .sidebar a:hover,
+    .puisi-page .sidebar a.active {
       background:#FFF1E2;
       color:#B85D0B;
-      border-left:3px solid var(--orange);
+      border-left:3px solid var(--puisi-orange);
     }
 
-    .content{min-width:0}
+    .puisi-page .content { min-width:0; }
 
-    .content section{
+    .puisi-page .content section {
       background:white;
-      border:1px solid var(--border);
+      border:1px solid var(--puisi-border);
       border-radius:12px;
       padding:27px;
       margin-bottom:22px;
       scroll-margin-top:105px;
     }
 
-    .content h2{
-      color:var(--navy);
+    .puisi-page .content h2 {
+      color:var(--puisi-navy);
       font-size:25px;
       line-height:1.35;
       margin:0 0 18px;
@@ -242,81 +128,80 @@
       border-bottom:2px solid #E3E8EF;
     }
 
-    .content h3{
-      color:var(--navy);
+    .puisi-page .content h3 {
+      color:var(--puisi-navy);
       font-size:18px;
       margin:23px 0 10px;
     }
 
-    .content p{margin:10px 0 15px}
-    .content li{margin-bottom:7px}
+    .puisi-page .content p { margin:10px 0 15px; }
+    .puisi-page .content li { margin-bottom:7px; }
 
-    .note{
+    .puisi-page .note {
       background:#FFF5E9;
-      border-left:4px solid var(--orange);
+      border-left:4px solid var(--puisi-orange);
       border-radius:7px;
       padding:15px 18px;
       margin:18px 0;
     }
 
-    .info-card{
+    .puisi-page .info-card {
       background:#F8FAFC;
-      border:1px solid var(--border);
+      border:1px solid var(--puisi-border);
       border-radius:9px;
       padding:20px;
       margin:15px 0;
     }
 
-    .info-card strong{color:var(--navy)}
+    .puisi-page .info-card strong { color:var(--puisi-navy); }
 
-    .two-columns{
+    .puisi-page .two-columns {
       display:grid;
       grid-template-columns:repeat(2,minmax(0,1fr));
       gap:15px;
     }
 
-    .feature{
-      background:var(--soft);
+    .puisi-page .feature {
+      background:var(--puisi-soft);
       border-radius:9px;
       padding:17px;
-      border-top:3px solid var(--orange);
+      border-top:3px solid var(--puisi-orange);
     }
 
-    .feature h3{margin-top:0}
+    .puisi-page .feature h3 { margin-top:0; }
 
-    .step{
+    .puisi-page .step {
       display:flex;
       gap:15px;
       margin:17px 0;
       align-items:flex-start;
     }
 
-    .step-number{
+    .puisi-page .step-number {
       flex:0 0 34px;
       height:34px;
       display:grid;
       place-items:center;
-      background:var(--navy);
+      background:var(--puisi-navy);
       color:white;
       border-radius:50%;
       font-weight:bold;
     }
 
-    .example{
+    .puisi-page .example {
       background:#F9FAFC;
-      border:1px solid var(--border);
+      border:1px solid var(--puisi-border);
       padding:20px;
       border-radius:9px;
       margin:16px 0;
     }
 
-    .example h3{margin-top:0}
+    .puisi-page .example h3 { margin-top:0; }
+    .puisi-page .example ol { padding-left:25px; }
 
-    .example ol{padding-left:25px}
-
-    .poem-box{
+    .puisi-page .poem-box {
       background:#F8F6F0;
-      border-left:4px solid var(--gold);
+      border-left:4px solid var(--puisi-gold);
       border-radius:8px;
       padding:20px 24px;
       margin:18px 0;
@@ -324,42 +209,42 @@
       color:#39465A;
     }
 
-    .poem-box p{
+    .puisi-page .poem-box p {
       white-space:pre-line;
       line-height:2;
       margin:0;
     }
 
-    .poem-caption{
+    .puisi-page .poem-caption {
       font-family:Arial,Helvetica,sans-serif;
       font-size:12px;
-      color:var(--muted);
+      color:var(--puisi-muted);
       margin-top:12px;
     }
 
-    .comparison{
+    .puisi-page .comparison {
       width:100%;
       border-collapse:collapse;
       margin:18px 0;
       font-size:14px;
     }
 
-    .comparison th,
-    .comparison td{
-      border:1px solid var(--border);
+    .puisi-page .comparison th,
+    .puisi-page .comparison td {
+      border:1px solid var(--puisi-border);
       padding:12px;
       text-align:left;
       vertical-align:top;
     }
 
-    .comparison th{
-      background:var(--navy);
+    .puisi-page .comparison th {
+      background:var(--puisi-navy);
       color:white;
     }
 
-    .comparison tr:nth-child(even){background:#F8FAFC}
+    .puisi-page .comparison tr:nth-child(even) { background:#F8FAFC; }
 
-    .enrichment{
+    .puisi-page .enrichment {
       border:1px dashed #D5A04B;
       background:#FFFAF1;
       border-radius:9px;
@@ -367,7 +252,7 @@
       margin:16px 0;
     }
 
-    .enrichment-label{
+    .puisi-page .enrichment-label {
       display:inline-block;
       font-size:11px;
       text-transform:uppercase;
@@ -377,51 +262,41 @@
       margin-bottom:5px;
     }
 
-    .reflection{
-      background:var(--navy);
+    .puisi-page .reflection {
+      background:var(--puisi-navy);
       color:white;
       padding:25px;
       border-radius:12px;
       margin-top:25px;
     }
 
-    .reflection h3{
+    .puisi-page .reflection h3 {
       color:#F6B65F;
       margin-top:0;
     }
 
-    .final-quote{
+    .puisi-page .final-quote {
       text-align:center;
       padding:38px 20px;
-      color:var(--navy);
+      color:var(--puisi-navy);
       font-family:Georgia,serif;
       font-size:19px;
       font-style:italic;
     }
 
-    .final-quote span{
+    .puisi-page .final-quote span {
       display:block;
       margin-top:12px;
-      color:var(--gold);
+      color:var(--puisi-gold);
       font-family:Arial,sans-serif;
       font-size:14px;
       font-weight:bold;
       font-style:normal;
     }
 
-    .site-footer{
-      background:var(--navy-dark);
-      color:#DCE4EF;
-      text-align:center;
-      padding:25px 15px;
-      font-size:13px;
-    }
-
-    .site-footer strong{color:white}
-
-    .video-link{
+    .puisi-page .video-link {
       display:inline-block;
-      background:var(--orange);
+      background:var(--puisi-orange);
       color:white;
       text-decoration:none;
       font-weight:bold;
@@ -430,89 +305,87 @@
       margin-top:8px;
     }
 
-    .video-link:hover{background:#D87516}
+    .puisi-page .video-link:hover { background:#D87516; }
 
-    @media(max-width:900px){
-      .site-header{flex-wrap:wrap}
-      #menuToggle{display:block}
-      #mainNav{
-        display:none;
-        flex-direction:column;
-        align-items:stretch;
-        width:100%;
-        gap:4px;
-        padding:10px 0;
-      }
-      #mainNav.open{display:flex}
-      #mainNav>a,.nav-trigger{
-        display:block;
-        padding:10px 5px;
-        text-align:left;
-      }
-      .dropdown{
-        position:static;
-        box-shadow:none;
-        background:rgba(255,255,255,.08);
-        margin-left:12px;
-      }
-      .dropdown a{color:white}
-      .page-layout{
+    @media(max-width:900px) {
+      .puisi-page .page-layout {
         grid-template-columns:1fr;
         margin-top:20px;
       }
-      .sidebar{
+
+      .puisi-page .sidebar {
         position:static;
         max-height:none;
       }
-      .sidebar-list{
+
+      .puisi-page .sidebar-list {
         display:grid;
         grid-template-columns:repeat(2,minmax(0,1fr));
         gap:3px;
       }
     }
 
-    @media(max-width:560px){
-      .hero{padding:38px 20px}
-      .page-layout{padding:0 12px}
-      .content section{padding:19px}
-      .content h2{font-size:21px}
-      .two-columns,.sidebar-list{grid-template-columns:1fr}
-      .brand-name{font-size:16px}
-      .comparison{font-size:12px}
-      .comparison th,.comparison td{padding:8px}
+    @media(max-width:560px) {
+      .puisi-page .hero { padding:38px 20px; }
+      .puisi-page .page-layout { padding:0 12px; }
+      .puisi-page .content section { padding:19px; }
+      .puisi-page .content h2 { font-size:21px; }
+      .puisi-page .two-columns,
+      .puisi-page .sidebar-list { grid-template-columns:1fr; }
+      .puisi-page .comparison { font-size:12px; }
+      .puisi-page .comparison th,
+      .puisi-page .comparison td { padding:8px; }
     }
   </style>
 </head>
 
 <body>
 
+<div class="topbar">
+  <div class="top-inner">
+    <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+    <div class="top-actions">
+      <form class="search" role="search" onsubmit="return searchSite(event)">
+        <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+        <button type="submit" aria-label="Cari">⌕</button>
+      </form>
+      <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
+    </div>
+  </div>
+</div>
+
 <header class="site-header">
-  <a class="brand" href="index.html">
-    <img alt="Logo Mandala Aksara" src="logo-mandala-aksara.png"/>
-    <span>
-      <span class="brand-name">MANDALA AKSARA</span>
-      <span class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+  <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span class="brand-copy">
+      <strong>MANDALA AKSARA</strong>
+      <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
     </span>
   </a>
 
-  <button aria-expanded="false" aria-label="Buka menu" id="menuToggle">☰</button>
+  <button class="menu-toggle" id="menuToggle" type="button"
+    aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
 
-  <nav id="mainNav">
+  <nav id="mainNav" aria-label="Navigasi utama">
     <a href="index.html">Beranda</a>
     <div class="nav-dropdown">
-      <button class="nav-trigger" type="button">Materi Pembelajaran ⌄</button>
+      <button type="button" class="nav-trigger" aria-haspopup="true">
+        Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
+      </button>
       <div class="dropdown">
-        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-x.html" class="active" aria-current="page">Kelas X</a>
         <a href="kelas-xi.html">Kelas XI</a>
         <a href="kelas-xii.html">Kelas XII</a>
       </div>
     </div>
     <a href="galeri.html">Galeri</a>
     <a href="perpustakaan.html">Perpustakaan Digital</a>
-    <a href="https://mandalaaksara.github.io/kelas-virtual.html">Kelas Virtual</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
     <a href="tentang.html">Tentang</a>
   </nav>
 </header>
+
+<div class="puisi-page">
 
 <section class="hero">
   <div class="eyebrow">Bahasa Indonesia · Fase E · Kelas X · Bab VI</div>
@@ -574,13 +447,17 @@
   <h2>2. Apa Itu Puisi?</h2>
   <p>
     Puisi adalah karya sastra yang digunakan untuk mengungkapkan pikiran,
-    gagasan, dan perasaan melalui kata-kata yang indah, padat, dan sering
-    menggunakan bahasa kiasan.
+    gagasan, pengalaman, dan perasaan melalui susunan kata yang dipilih
+    secara cermat. Kata-kata dalam puisi biasanya padat, memiliki nilai
+    keindahan, dan dapat mengandung makna yang lebih dalam daripada arti
+    sebenarnya.
   </p>
   <p>
-    Dalam puisi, penyair memilih kata dengan cermat. Kata-kata tersebut
-    disusun agar mampu menyampaikan makna, membangun suasana, dan
-    menimbulkan kesan tertentu bagi pembaca.
+    Berbeda dengan tulisan biasa yang cenderung menyampaikan informasi
+    secara langsung, puisi sering menggunakan bahasa kiasan, permainan
+    bunyi, pengulangan, dan susunan kata yang khas. Karena itu, satu
+    puisi dapat memberikan kesan atau penafsiran yang berbeda kepada
+    setiap pembacanya.
   </p>
 
   <div class="note">
@@ -590,11 +467,33 @@
     kepada pembaca.
   </div>
 
+  <h3>Ciri-ciri puisi</h3>
+  <p>Beberapa ciri yang umumnya ditemukan dalam puisi adalah sebagai berikut.</p>
+  <div class="info-card">
+    <ol>
+      <li><strong>Menggunakan pilihan kata yang cermat.</strong> Kata dipilih agar mampu menyampaikan makna dan membangun suasana.</li>
+      <li><strong>Memiliki bentuk yang khas.</strong> Puisi umumnya tersusun atas larik dan bait, meskipun bentuk puisi modern sangat beragam.</li>
+      <li><strong>Mengandung makna yang padat.</strong> Kata yang sedikit dapat menyampaikan gagasan atau perasaan yang luas.</li>
+      <li><strong>Dapat menggunakan bahasa kiasan.</strong> Majas dan simbol sering digunakan untuk memperkaya makna.</li>
+      <li><strong>Memperhatikan bunyi dan irama.</strong> Pengulangan bunyi, rima, dan ritme dapat membangun keindahan ketika puisi dibaca.</li>
+      <li><strong>Mengungkapkan pengalaman atau perasaan.</strong> Puisi dapat berbicara tentang diri sendiri, orang lain, alam, masyarakat, maupun kehidupan.</li>
+    </ol>
+  </div>
+
+  <h3>Fungsi puisi</h3>
+  <p>Puisi memiliki beberapa fungsi dalam kehidupan, antara lain:</p>
+  <ul>
+    <li><strong>Ekspresi diri:</strong> menjadi sarana mengungkapkan perasaan, pikiran, dan pengalaman.</li>
+    <li><strong>Hiburan dan keindahan:</strong> memberikan pengalaman menikmati bahasa dan bunyi yang indah.</li>
+    <li><strong>Penyampaian pesan:</strong> menyampaikan nasihat, kritik, harapan, atau pandangan hidup.</li>
+    <li><strong>Refleksi kehidupan:</strong> mengajak pembaca merenungkan pengalaman manusia dan keadaan di sekitarnya.</li>
+  </ul>
+
   <h3>Bagaimana puisi menyampaikan perasaan?</h3>
   <p>
     Dalam kehidupan sehari-hari, seseorang mungkin mengatakan,
-    "Aku sangat merindukanmu." Kalimat tersebut menyampaikan perasaan secara
-    langsung.
+    "Aku sangat merindukanmu." Kalimat tersebut menyampaikan perasaan
+    secara langsung.
   </p>
   <p>
     Dalam puisi, perasaan yang sama dapat diungkapkan melalui gambaran
@@ -641,23 +540,28 @@
     <tbody>
       <tr>
         <td>Struktur</td>
-        <td>Diksi, rima, dan tata letak.</td>
-        <td>Alur, latar, dan tokoh.</td>
+        <td>Diksi, rima, larik, bait, dan tipografi.</td>
+        <td>Alur, latar, tokoh, dan peristiwa.</td>
       </tr>
       <tr>
         <td>Bentuk</td>
-        <td>Terdiri atas larik dan bait.</td>
+        <td>Umumnya terdiri atas larik dan bait.</td>
         <td>Umumnya berbentuk paragraf dan dialog.</td>
       </tr>
       <tr>
         <td>Bahasa</td>
-        <td>Banyak menggunakan bahasa kiasan dan majas.</td>
-        <td>Lebih banyak menggunakan bahasa langsung dan naratif.</td>
+        <td>Banyak menggunakan bahasa kiasan dan pemadatan kata.</td>
+        <td>Lebih banyak menggunakan bahasa penceritaan.</td>
       </tr>
       <tr>
         <td>Makna</td>
         <td>Sering disampaikan secara tersirat dan simbolis.</td>
-        <td>Umumnya disampaikan secara lebih langsung dan jelas.</td>
+        <td>Umumnya disampaikan melalui rangkaian peristiwa.</td>
+      </tr>
+      <tr>
+        <td>Tujuan</td>
+        <td>Membangun kesan, menyampaikan perasaan, dan mengajak pembaca merenung.</td>
+        <td>Menceritakan peristiwa atau pengalaman secara runtut.</td>
       </tr>
     </tbody>
   </table>
@@ -695,13 +599,15 @@
   <h2>4. Diksi dan Unsur-Unsurnya</h2>
   <p>
     <strong>Diksi</strong> adalah pilihan kata yang digunakan penyair
-    untuk menimbulkan efek dan makna tertentu dalam puisi.
+    untuk menyampaikan gagasan dan perasaan. Dalam puisi, kata tidak
+    dipilih hanya karena terdengar indah. Kata juga harus sesuai dengan
+    maksud, suasana, dan pengalaman yang ingin disampaikan.
   </p>
   <p>
-    Penyair tidak memilih kata secara sembarangan. Setiap kata dapat
-    memengaruhi keindahan, suasana, gambaran, dan makna puisi.
-    Kata yang tepat dapat membuat pembaca lebih mudah membayangkan
-    pengalaman yang disampaikan penyair.
+    Perhatikan perbedaan kalimat "Hujan turun pada sore hari" dan
+    "Rintik hujan mengetuk jendela senja". Keduanya menggambarkan
+    keadaan yang hampir sama, tetapi pilihan katanya memberikan
+    pengalaman membaca yang berbeda.
   </p>
 
   <div class="note">
@@ -823,8 +729,9 @@
     merasakan, atau mengalami sesuatu yang digambarkan dalam puisi.
   </p>
   <p>
-    Pengimajian sering disebut juga citraan. Dalam pembelajaran puisi,
-    terdapat enam jenis citraan yang dapat dikenali.
+    Pengimajian sering disebut juga citraan. Penyair menggunakan
+    citraan agar pembaca tidak hanya memahami isi puisi, tetapi
+    juga dapat membayangkan pengalaman yang disampaikan.
   </p>
 
   <div class="info-card">
@@ -1023,7 +930,8 @@
   <h3>A. Tema puisi</h3>
   <p>
     Tema adalah gagasan pokok atau ide utama yang ingin disampaikan
-    penyair melalui puisinya.
+    penyair melalui puisinya. Tema menjadi dasar pembicaraan dalam
+    sebuah puisi.
   </p>
   <p>
     Tema dalam puisi sering kali tidak disampaikan secara langsung.
@@ -1039,17 +947,17 @@
       <li><strong>Patriotisme:</strong> mengungkapkan cinta terhadap bangsa dan tanah air.</li>
       <li><strong>Kritik sosial:</strong> menyoroti persoalan atau ketidakadilan dalam masyarakat.</li>
       <li><strong>Percintaan:</strong> mengungkapkan perasaan kasih sayang dan hubungan antarmanusia.</li>
+      <li><strong>Alam:</strong> menggambarkan keindahan, kerusakan, atau hubungan manusia dengan lingkungan.</li>
+      <li><strong>Perjuangan:</strong> mengungkapkan usaha, pengorbanan, dan semangat menghadapi kesulitan.</li>
     </ul>
   </div>
 
   <h3>B. Suasana puisi</h3>
   <p>
-    Suasana adalah perasaan yang muncul dalam diri pembaca setelah
-    membaca atau memahami sebuah puisi.
-  </p>
-  <p>
-    Suasana dapat dipengaruhi oleh pilihan kata, gambaran, tema,
-    dan cara penyair menyampaikan gagasannya.
+    Suasana adalah perasaan atau kesan yang muncul dalam diri pembaca
+    setelah membaca atau memahami sebuah puisi. Suasana dapat
+    dipengaruhi oleh pilihan kata, gambaran, tema, dan cara penyair
+    menyampaikan gagasannya.
   </p>
 
   <div class="info-card">
@@ -1061,6 +969,7 @@
       <li><strong>Sepi:</strong> menimbulkan perasaan kesendirian.</li>
       <li><strong>Pasrah:</strong> menggambarkan sikap menerima keadaan.</li>
       <li><strong>Khidmat:</strong> menimbulkan perasaan tenang, hormat, dan penuh penghayatan.</li>
+      <li><strong>Tegang:</strong> menimbulkan perasaan cemas atau khawatir.</li>
     </ul>
   </div>
 
@@ -1110,6 +1019,18 @@
     </div>
   </div>
 
+  <div class="step">
+    <div class="step-number">5</div>
+    <div>
+      <h3>Temukan bukti dalam puisi</h3>
+      <p>
+        Gunakan kata, larik, atau gambaran tertentu sebagai
+        alasan untuk mendukung pendapatmu. Jangan menentukan
+        tema dan suasana hanya berdasarkan dugaan.
+      </p>
+    </div>
+  </div>
+
   <h3>D. Contoh analisis puisi</h3>
   <div class="example">
     <h3>"Tuhan, Kita Begitu Dekat" — Abdul Hadi W. M.</h3>
@@ -1155,7 +1076,9 @@
   <h3>A. Diksi</h3>
   <p>
     Diksi adalah pilihan kata yang digunakan penyair untuk
-    menyampaikan gagasan dan perasaan.
+    menyampaikan gagasan dan perasaan. Diksi yang tepat membuat
+    puisi terasa lebih hidup, sesuai dengan suasana, dan mudah
+    meninggalkan kesan bagi pembaca.
   </p>
   <div class="two-columns">
     <div class="feature">
@@ -1166,10 +1089,10 @@
       </p>
     </div>
     <div class="feature">
-      <h3>Kekurangan</h3>
+      <h3>Hal yang perlu diperhatikan</h3>
       <p>
-        Terlalu banyak aturan dalam memilih kata dapat
-        membatasi kebebasan penyair dalam berekspresi.
+        Kata yang terlalu rumit atau dipaksakan dapat membuat
+        pembaca kesulitan memahami maksud puisi.
       </p>
     </div>
   </div>
@@ -1178,7 +1101,8 @@
   <p>
     Rima adalah pengulangan atau persamaan bunyi dalam puisi.
     Rima dapat muncul pada akhir larik maupun bagian lain
-    dalam puisi.
+    dalam puisi. Rima membantu membangun irama ketika puisi
+    dibaca atau dilisankan.
   </p>
   <div class="two-columns">
     <div class="feature">
@@ -1189,7 +1113,7 @@
       </p>
     </div>
     <div class="feature">
-      <h3>Kekurangan</h3>
+      <h3>Hal yang perlu diperhatikan</h3>
       <p>
         Jika penyair terlalu mengejar persamaan bunyi,
         pilihan kata dapat menjadi kurang tepat sehingga
@@ -1213,10 +1137,11 @@
       </p>
     </div>
     <div class="feature">
-      <h3>Kekurangan</h3>
+      <h3>Hal yang perlu diperhatikan</h3>
       <p>
         Bentuk yang terlalu eksperimental dapat mengalihkan
-        perhatian pembaca dari makna puisi.
+        perhatian pembaca dari makna puisi jika tidak memiliki
+        hubungan yang jelas dengan isi.
       </p>
     </div>
   </div>
@@ -1262,7 +1187,9 @@
   <p>
     Membacakan puisi bukan sekadar melafalkan kata-kata yang tertulis.
     Pembaca perlu memahami isi puisi dan menyampaikan perasaan
-    yang terkandung di dalamnya.
+    yang terkandung di dalamnya. Dengan demikian, pendengar tidak
+    hanya mendengar kata-kata, tetapi juga dapat menangkap suasana
+    dan pesan yang ingin disampaikan.
   </p>
   <p>
     Pembacaan puisi yang baik memperhatikan enam aspek utama:
@@ -1279,6 +1206,7 @@
     <p>
       Contohnya, puisi yang bernuansa sedih dapat dibacakan
       dengan ekspresi yang lebih tenang dan penuh penghayatan.
+      Ekspresi harus sesuai dengan isi puisi, bukan dibuat-buat.
     </p>
   </div>
 
@@ -1290,7 +1218,8 @@
     </p>
     <p>
       Gerakan sebaiknya sesuai dengan makna puisi dan tidak
-      dilakukan secara berlebihan.
+      dilakukan secara berlebihan. Sikap tubuh yang baik juga
+      membantu pembaca tampil lebih percaya diri.
     </p>
   </div>
 
@@ -1324,6 +1253,7 @@
     <p>
       Jeda dan tempo membantu mengatur alur pembacaan agar
       pendengar dapat memahami isi puisi dengan baik.
+      Pembaca tidak perlu terburu-buru menyelesaikan setiap larik.
     </p>
   </div>
 
@@ -1343,7 +1273,8 @@
     <p>
       Pembacaan tekstual dilakukan dengan membawa teks puisi.
       Pembaca sesekali melihat teks untuk memastikan
-      tidak ada bagian yang terlewat.
+      tidak ada bagian yang terlewat. Meskipun membaca teks,
+      pembaca tetap harus memahami isi dan menjaga penghayatan.
     </p>
   </div>
 
@@ -1473,6 +1404,13 @@ Dengan harapan // yang terus menyala. ///
     dengan bantuan iringan musik sehingga suasana dan maknanya
     dapat lebih terasa.
   </p>
+  <p>
+    Musikalisasi tidak berarti sekadar membaca puisi sambil
+    memutar lagu. Musik perlu dipilih atau dibuat berdasarkan
+    isi puisi. Iringan yang tepat dapat memperkuat suasana,
+    sedangkan musik yang tidak sesuai justru dapat mengganggu
+    penghayatan.
+  </p>
 
   <div class="note">
     <strong>Hal penting:</strong>
@@ -1511,7 +1449,9 @@ Dengan harapan // yang terus menyala. ///
       <h3>Tentukan alat musik</h3>
       <p>
         Pilih alat musik yang sesuai dengan kebutuhan.
-        Contohnya gitar, biola, atau piano.
+        Contohnya gitar, biola, atau piano. Jika alat musik
+        terbatas, kelompok dapat menggunakan alat musik
+        sederhana atau bunyi dari benda di sekitar.
       </p>
     </div>
   </div>
@@ -1558,6 +1498,7 @@ Dengan harapan // yang terus menyala. ///
     <li>Iringan musik tidak boleh menutupi suara pembaca.</li>
     <li>Penghayatan terhadap isi puisi tetap menjadi hal utama.</li>
     <li>Perpaduan suara dan musik perlu dilatih sebelum penampilan.</li>
+    <li>Setiap anggota kelompok perlu mengetahui tugas dan bagian masing-masing.</li>
   </ul>
 
   <div class="enrichment">
@@ -1599,7 +1540,8 @@ Dengan harapan // yang terus menyala. ///
     <h3>1. Judul resensi</h3>
     <p>
       Judul yang menggambarkan isi atau sudut pandang
-      ulasan terhadap buku yang dibahas.
+      ulasan terhadap buku yang dibahas. Judul sebaiknya
+      menarik, tetapi tetap sesuai dengan isi resensi.
     </p>
   </div>
 
@@ -1624,7 +1566,8 @@ Dengan harapan // yang terus menyala. ///
     <h3>4. Sinopsis</h3>
     <p>
       Ringkasan isi buku yang membantu pembaca mengetahui
-      gambaran umum karya yang diulas.
+      gambaran umum karya yang diulas. Sinopsis tidak perlu
+      menceritakan semua isi puisi satu per satu.
     </p>
   </div>
 
@@ -1641,7 +1584,8 @@ Dengan harapan // yang terus menyala. ///
     <h3>6. Evaluasi</h3>
     <p>
       Penilaian terhadap buku dengan menyampaikan kelebihan,
-      kekurangan, kritik, dan saran secara jelas.
+      kekurangan, kritik, dan saran secara jelas. Penilaian
+      perlu disertai alasan dan contoh yang mendukung.
     </p>
   </div>
 
@@ -1869,13 +1813,14 @@ Dengan harapan // yang terus menyala. ///
   <h2>15. Kesimpulan</h2>
   <p>
     Puisi merupakan karya sastra yang mengungkapkan pikiran,
-    gagasan, dan perasaan melalui kata-kata yang indah, padat,
-    dan sering menggunakan bahasa kiasan.
+    gagasan, dan perasaan melalui kata-kata yang dipilih secara
+    cermat, padat, dan sering menggunakan bahasa kiasan.
   </p>
   <p>
     Untuk memahami puisi, pembaca perlu memperhatikan diksi,
     majas, pengimajian, kata konkret, kata konotatif,
-    tema, suasana, rima, dan tipografi.
+    tema, suasana, rima, dan tipografi. Unsur-unsur tersebut
+    saling berkaitan dalam membentuk makna dan keindahan puisi.
   </p>
   <p>
     Puisi juga dapat dinikmati melalui pembacaan yang memperhatikan
@@ -1903,7 +1848,7 @@ Dengan harapan // yang terus menyala. ///
       didik dapat menyimak video pembelajaran dan materi
       audiovisual lainnya.
     </p>
-    <a class="video-link" href="https://mandalaaksara.github.io/kelas-virtual.html">
+    <a class="video-link" href="kelas-virtual.html">
       Kunjungi Kelas Virtual →
     </a>
   </div>
@@ -1918,46 +1863,57 @@ Dengan harapan // yang terus menyala. ///
   <span>— Mandala Aksara</span>
 </div>
 
+</div>
+
 <footer class="site-footer">
-  <p>© 2026 <strong>Mandala Aksara</strong> · Dikelola Mandiri</p>
-  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+      <div class="footer-brand-copy">
+        <b>MANDALA AKSARA</b>
+        <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+        <span class="managed-label">Dikelola Mandiri</span>
+      </div>
+    </div>
+    <nav class="footer-links" aria-label="Navigasi footer">
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+    </nav>
+  </div>
+  <div class="copyright">
+    © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+  </div>
 </footer>
 
+<script src="script.js"></script>
+
 <script>
-  const menuToggle=document.getElementById('menuToggle');
-  const mainNav=document.getElementById('mainNav');
+  // Penanda materi aktif pada daftar isi
+  const puisiSections = document.querySelectorAll('.puisi-page .content section');
+  const puisiLinks = document.querySelectorAll('.puisi-page .sidebar a');
 
-  menuToggle.addEventListener('click',()=>{
-    const open=mainNav.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded',String(open));
-  });
-
-  document.querySelectorAll('.nav-trigger').forEach(button=>{
-    button.addEventListener('click',()=>{
-      button.parentElement.classList.toggle('expanded');
+  if ('IntersectionObserver' in window) {
+    const puisiObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          puisiLinks.forEach(link => {
+            link.classList.toggle(
+              'active',
+              link.getAttribute('href') === '#' + entry.target.id
+            );
+          });
+        }
+      });
+    }, {
+      rootMargin:'-25% 0px -65% 0px'
     });
-  });
 
-  const sections=[...document.querySelectorAll('.content section')];
-  const links=[...document.querySelectorAll('.sidebar a')];
-
-  const observer=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        links.forEach(link=>{
-          link.classList.toggle(
-            'active',
-            link.getAttribute('href')==='#'+entry.target.id
-          );
-        });
-      }
-    });
-  },{
-    rootMargin:'-25% 0px -65% 0px'
-  });
-
-  sections.forEach(section=>observer.observe(section));
+    puisiSections.forEach(section => puisiObserver.observe(section));
+  }
 </script>
 
 </body>
 </html>
+```
