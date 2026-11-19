@@ -2,6 +2,9 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
   <script>
@@ -11,508 +14,355 @@
     gtag('config', 'G-7HFZ0YC7P9');
   </script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Materi Bahasa Indonesia Kelas XII Bab 1 tentang mengomunikasikan informasi penting melalui surat resmi, surat kuasa, pos-el, dan poster.">
-
   <title>Bab 1: Surat Resmi | Mandala Aksara</title>
+  <meta name="description" content="Materi Bahasa Indonesia Kelas XII tentang surat resmi, struktur, tata letak, kaidah kebahasaan, EYD V, kata baku, dan kalimat efektif.">
 
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* =====================================
-       BAB 1 - SURAT RESMI
-       MASTER TEMPLATE MANDALA AKSARA
-    ===================================== */
-
     .surat-page {
-      background: #f3f5f8;
-      min-height: 70vh;
-      padding-bottom: 50px;
+      --surat-navy: #17345c;
+      --surat-orange: #e58a25;
+      --surat-gold: #d6a64f;
+      --surat-ink: #293548;
+      --surat-muted: #657286;
+      --surat-line: #e4e9f0;
+      color: var(--surat-ink);
+      line-height: 1.8;
     }
 
-    .surat-hero {
-      background: linear-gradient(120deg, #142b4a, #0d203a);
+    .surat-page * {
+      box-sizing: border-box;
+    }
+
+    .surat-page .page-hero {
+      background: linear-gradient(135deg, #142d50, #244b78);
       color: #fff;
-      padding: 48px 20px;
-      text-align: center;
+      padding: 58px 24px;
       position: relative;
       overflow: hidden;
     }
 
-    .surat-hero::before,
-    .surat-hero::after {
+    .surat-page .page-hero::after {
       content: "";
       position: absolute;
-      border: 1px solid rgba(255,255,255,.09);
-      border-radius: 50%;
-      pointer-events: none;
-    }
-
-    .surat-hero::before {
       width: 260px;
       height: 260px;
-      top: -130px;
-      right: -55px;
+      right: -75px;
+      top: -95px;
+      border: 2px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      box-shadow: 0 0 0 24px rgba(255,255,255,.035),
+                  0 0 0 50px rgba(255,255,255,.025);
     }
 
-    .surat-hero::after {
-      width: 190px;
-      height: 190px;
-      bottom: -110px;
-      left: -45px;
-      border-color: rgba(242,140,40,.2);
-    }
-
-    .surat-hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .surat-label {
-      display: inline-block;
-      color: #f5bd67;
-      border: 1px solid rgba(245,189,103,.5);
-      border-radius: 30px;
-      padding: 7px 16px;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1.4px;
-      margin-bottom: 15px;
-    }
-
-    .surat-hero h1 {
-      color: #fff;
-      font-size: clamp(28px, 5vw, 42px);
-      line-height: 1.25;
-      margin: 0 0 13px;
-    }
-
-    .surat-hero h1 span {
-      color: #f28c28;
-    }
-
-    .surat-hero p {
-      color: #e0e7f0;
-      font-size: 15px;
-      line-height: 1.8;
-      max-width: 720px;
-      margin: auto;
-    }
-
-    /* LAYOUT */
-
-    .surat-layout {
+    .surat-page .hero-inner {
       max-width: 1180px;
       margin: auto;
-      padding: 38px 20px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .surat-page .hero-kicker {
+      color: #ffd18e;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    .surat-page .page-hero h1 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.25;
+      margin: 12px 0;
+    }
+
+    .surat-page .page-hero p {
+      max-width: 760px;
+      color: #e6edf6;
+      margin: 0;
+    }
+
+    .surat-page .content-layout {
+      max-width: 1180px;
+      margin: 38px auto 70px;
+      padding: 0 22px;
       display: grid;
-      grid-template-columns: 245px minmax(0, 1fr);
-      gap: 25px;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 32px;
       align-items: start;
     }
 
-    /* DAFTAR ISI */
-
-    .surat-sidebar {
+    .surat-page .surat-sidebar {
       position: sticky;
-      top: 20px;
+      top: 24px;
       background: #fff;
-      border: 1px solid #e5eaf0;
-      border-radius: 13px;
-      padding: 20px 17px;
-      box-shadow: 0 4px 16px rgba(20,43,74,.05);
+      border: 1px solid var(--surat-line);
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(23,52,92,.06);
     }
 
-    .surat-sidebar h3 {
-      color: #142b4a;
-      font-size: 15px;
-      margin: 0 0 13px;
+    .surat-page .surat-sidebar h2 {
+      color: var(--surat-navy);
+      font-size: 1rem;
+      margin: 0 0 14px;
       padding-bottom: 12px;
-      border-bottom: 2px solid #f28c28;
+      border-bottom: 2px solid #f0b45f;
     }
 
-    .surat-sidebar a {
+    .surat-page .surat-sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .surat-page .surat-sidebar a {
       display: block;
-      color: #526176;
+      padding: 8px 10px;
+      color: #40516a;
       text-decoration: none;
-      font-size: 12px;
-      line-height: 1.5;
-      padding: 9px 10px;
+      font-size: .9rem;
+      line-height: 1.45;
       border-radius: 7px;
-      margin-bottom: 3px;
       transition: .2s ease;
     }
 
-    .surat-sidebar a:hover {
-      color: #142b4a;
-      background: #fff4e6;
+    .surat-page .surat-sidebar a:hover {
+      background: #f1f5fa;
+      color: var(--surat-navy);
     }
 
-    .surat-sidebar .sidebar-back {
-      margin-top: 13px;
-      padding-top: 13px;
-      border-top: 1px solid #e8edf2;
-      color: #bd7624;
-      font-weight: 700;
-    }
-
-    /* KONTEN */
-
-    .surat-content {
+    .surat-page .surat-content {
       min-width: 0;
     }
 
-    .surat-card {
+    .surat-page .content-card {
       background: #fff;
-      border: 1px solid #e8edf2;
+      border: 1px solid var(--surat-line);
       border-radius: 14px;
-      padding: 30px;
-      margin-bottom: 22px;
-      box-shadow: 0 4px 17px rgba(20,43,74,.04);
-      scroll-margin-top: 20px;
+      padding: clamp(20px, 3vw, 34px);
+      margin-bottom: 24px;
+      box-shadow: 0 7px 22px rgba(23,52,92,.045);
     }
 
-    .surat-card h2 {
-      color: #142b4a;
-      font-size: 23px;
-      line-height: 1.4;
-      margin: 0 0 17px;
+    .surat-page .content-card h2 {
+      color: var(--surat-navy);
+      font-size: 1.5rem;
+      line-height: 1.35;
+      margin: 0 0 18px;
       padding-bottom: 12px;
-      border-bottom: 2px solid #f1a34c;
+      border-bottom: 2px solid #f0b45f;
     }
 
-    .surat-card h3 {
-      color: #183b61;
-      font-size: 17px;
-      line-height: 1.5;
-      margin: 25px 0 10px;
+    .surat-page .content-card h3 {
+      color: #244b78;
+      font-size: 1.12rem;
+      margin: 26px 0 10px;
     }
 
-    .surat-card h4 {
-      color: #344a63;
-      font-size: 15px;
-      margin: 18px 0 8px;
+    .surat-page .content-card h4 {
+      color: #344b68;
+      font-size: 1rem;
+      margin: 20px 0 8px;
     }
 
-    .surat-card p {
-      color: #4b5b70;
-      font-size: 14px;
-      line-height: 1.9;
-      margin: 0 0 13px;
+    .surat-page p {
+      margin: 0 0 15px;
     }
 
-    .surat-card ul,
-    .surat-card ol {
-      color: #4b5b70;
-      font-size: 14px;
-      line-height: 1.9;
-      padding-left: 22px;
-      margin: 8px 0 16px;
+    .surat-page ul,
+    .surat-page ol {
+      padding-left: 24px;
+      margin: 10px 0 18px;
     }
 
-    .surat-card li {
-      margin-bottom: 5px;
+    .surat-page li {
+      margin-bottom: 7px;
     }
 
-    .surat-card strong {
-      color: #263e5a;
+    .surat-page .info-box {
+      background: #f2f6fb;
+      border-left: 4px solid var(--surat-navy);
+      padding: 17px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
     }
 
-    .surat-lead {
-      color: #526176;
-      font-size: 15px;
-      line-height: 1.9;
-    }
-
-    /* LABEL BAGIAN */
-
-    .surat-subtitle {
-      display: inline-block;
-      color: #bd7624;
-      background: #fff4e6;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      border-radius: 20px;
-      padding: 6px 12px;
-      margin-bottom: 12px;
-    }
-
-    /* TABEL */
-
-    .surat-table-wrap {
-      width: 100%;
-      overflow-x: auto;
-      margin: 15px 0 20px;
-      border: 1px solid #e5eaf0;
-      border-radius: 9px;
-    }
-
-    .surat-table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 480px;
-      font-size: 13px;
-    }
-
-    .surat-table th {
-      background: #142b4a;
-      color: #fff;
-      text-align: left;
-      padding: 12px 14px;
-      font-weight: 600;
-    }
-
-    .surat-table td {
-      color: #4b5b70;
-      padding: 11px 14px;
-      border-bottom: 1px solid #e8edf2;
-      line-height: 1.7;
-      vertical-align: top;
-    }
-
-    .surat-table tr:last-child td {
-      border-bottom: none;
-    }
-
-    .surat-table tr:nth-child(even) td {
-      background: #f8fafc;
-    }
-
-    /* KOTAK PENJELASAN */
-
-    .surat-note {
+    .surat-page .note-box {
       background: #fff8ed;
-      border-left: 4px solid #f28c28;
+      border-left: 4px solid var(--surat-orange);
+      padding: 17px 20px;
       border-radius: 8px;
-      padding: 16px 18px;
-      margin: 17px 0;
+      margin: 20px 0;
     }
 
-    .surat-note p {
-      margin: 0;
-      color: #66543d;
-      font-size: 13px;
-      line-height: 1.85;
+    .surat-page .example-box {
+      background: #fafbfd;
+      border: 1px solid var(--surat-line);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 18px 0;
     }
 
-    .surat-info {
-      background: #eef4fa;
-      border-left: 4px solid #345d83;
-      border-radius: 8px;
-      padding: 16px 18px;
-      margin: 17px 0;
+    .surat-page .example-title {
+      color: var(--surat-navy);
+      font-weight: 700;
+      margin-bottom: 10px;
     }
 
-    .surat-info p {
-      margin: 0;
-      color: #40566d;
-      font-size: 13px;
-      line-height: 1.85;
-    }
-
-    /* CONTOH SURAT */
-
-    .surat-example {
+    .surat-page .letter-example {
       background: #fff;
-      border: 1px solid #dce3eb;
-      border-radius: 9px;
-      padding: 25px;
-      margin: 17px 0;
-      color: #26384c;
-      font-size: 13px;
-      line-height: 1.8;
+      border: 1px dashed #b9c5d4;
+      padding: 22px;
+      margin-top: 12px;
       overflow-wrap: anywhere;
     }
 
-    .surat-example p {
-      color: #26384c;
-      font-size: 13px;
-      line-height: 1.8;
+    .surat-page .letter-example p {
       margin-bottom: 8px;
     }
 
-    .surat-example .kop {
+    .surat-page .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: .94rem;
+    }
+
+    .surat-page .data-table th,
+    .surat-page .data-table td {
+      border: 1px solid #dce3ec;
+      padding: 11px 13px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .surat-page .data-table th {
+      background: #edf2f8;
+      color: var(--surat-navy);
+    }
+
+    .surat-page .quote-box {
       text-align: center;
-      border-bottom: 3px double #26384c;
-      padding-bottom: 12px;
-      margin-bottom: 18px;
+      padding: 30px 22px;
+      background: linear-gradient(135deg, #f5f7fa, #fffaf2);
+      border-radius: 14px;
+      border: 1px solid #e8e3d9;
+      margin: 28px 0;
     }
 
-    .surat-example .kop strong {
-      display: block;
-      color: #142b4a;
-      font-size: 15px;
-      line-height: 1.5;
-    }
-
-    .surat-example .kop span {
-      display: block;
-      font-size: 11px;
-    }
-
-    .surat-example .surat-center {
-      text-align: center;
-      font-weight: 700;
-      margin: 15px 0;
-    }
-
-    .surat-example .surat-indent {
-      padding-left: 25px;
-    }
-
-    /* CONTOH BENAR SALAH */
-
-    .surat-correct {
-      color: #236344;
-      background: #eef8f1;
-      padding: 10px 13px;
-      border-radius: 7px;
-      font-size: 13px;
-      line-height: 1.7;
-      margin: 7px 0;
-    }
-
-    .surat-wrong {
-      color: #9b4545;
-      background: #fff1f1;
-      padding: 10px 13px;
-      border-radius: 7px;
-      font-size: 13px;
-      line-height: 1.7;
-      margin: 7px 0;
-    }
-
-    /* KUTIPAN */
-
-    .surat-quote {
-      background: #142b4a;
-      color: #fff;
-      text-align: center;
-      border-radius: 13px;
-      padding: 28px 22px;
-      margin-bottom: 20px;
-    }
-
-    .surat-quote p {
-      color: #fff;
-      font-size: 15px;
-      line-height: 1.9;
+    .surat-page .quote-box blockquote {
+      color: var(--surat-navy);
+      font-size: 1.12rem;
       font-style: italic;
-      margin: 0;
+      margin: 0 0 10px;
     }
 
-    .surat-quote strong {
-      display: block;
-      color: #f5bd67;
-      font-size: 12px;
-      margin-top: 10px;
+    .surat-page .quote-box cite {
+      color: #9a641e;
+      font-style: normal;
+      font-weight: 700;
     }
 
-    /* NAVIGASI BAWAH */
-
-    .surat-bottom-nav {
+    .surat-page .chapter-navigation {
       display: flex;
       justify-content: space-between;
       gap: 12px;
-      margin-top: 20px;
+      margin: 30px 0;
     }
 
-    .surat-bottom-nav a {
+    .surat-page .chapter-navigation a {
       display: inline-block;
-      color: #142b4a;
-      background: #fff;
-      border: 1px solid #dce3eb;
-      border-radius: 8px;
-      padding: 11px 15px;
+      background: var(--surat-navy);
+      color: #fff;
       text-decoration: none;
-      font-size: 12px;
-      font-weight: 700;
+      padding: 11px 18px;
+      border-radius: 8px;
+      font-weight: 600;
     }
 
-    .surat-bottom-nav a:hover {
-      background: #fff4e6;
-      border-color: #f28c28;
+    .surat-page .chapter-navigation a:hover {
+      background: #e58a25;
+      color: #172b46;
     }
 
-    /* RESPONSIVE */
+    .surat-page .reference-section {
+      margin-top: 32px;
+      padding: 24px;
+      background: #f7f8fa;
+      border-left: 4px solid #e58a25;
+      border-radius: 10px;
+    }
+
+    .surat-page .reference-section h2 {
+      margin-top: 0;
+      color: #17345c;
+    }
+
+    .surat-page .reference-list {
+      padding-left: 22px;
+      margin-bottom: 0;
+    }
+
+    .surat-page .reference-list li {
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+
+    .surat-page .reference-list a {
+      color: #174b83;
+      font-weight: 600;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .surat-page .reference-list a:hover {
+      color: #d97706;
+      text-decoration: underline;
+    }
 
     @media (max-width: 850px) {
-      .surat-layout {
+      .surat-page .content-layout {
         grid-template-columns: 1fr;
-        gap: 18px;
-        padding-top: 25px;
       }
 
-      .surat-sidebar {
+      .surat-page .surat-sidebar {
         position: static;
       }
 
-      .surat-sidebar nav {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 3px 8px;
-      }
-
-      .surat-sidebar .sidebar-back {
-        grid-column: 1 / -1;
+      .surat-page .surat-sidebar nav {
+        display: flex;
+        flex-direction: column;
       }
     }
 
-    @media (max-width: 650px) {
-      .surat-hero {
-        padding: 42px 18px;
+    @media (max-width: 600px) {
+      .surat-page .page-hero {
+        padding: 42px 20px;
       }
 
-      .surat-hero p {
-        font-size: 13px;
+      .surat-page .content-layout {
+        padding: 0 14px;
+        margin-top: 22px;
       }
 
-      .surat-layout {
-        padding: 20px 13px 0;
-      }
-
-      .surat-card {
-        padding: 21px 18px;
-        margin-bottom: 15px;
-      }
-
-      .surat-card h2 {
-        font-size: 20px;
-      }
-
-      .surat-card h3 {
-        font-size: 16px;
-      }
-
-      .surat-card p,
-      .surat-card ul,
-      .surat-card ol {
-        font-size: 13px;
-      }
-
-      .surat-sidebar {
-        padding: 16px 13px;
-      }
-
-      .surat-sidebar nav {
-        grid-template-columns: 1fr;
-      }
-
-      .surat-example {
-        padding: 17px 13px;
-      }
-
-      .surat-bottom-nav {
+      .surat-page .chapter-navigation {
         flex-direction: column;
       }
 
-      .surat-bottom-nav a {
+      .surat-page .chapter-navigation a {
         text-align: center;
+      }
+
+      .surat-page .data-table {
+        font-size: .86rem;
+      }
+
+      .surat-page .data-table th,
+      .surat-page .data-table td {
+        padding: 8px;
       }
     }
   </style>
@@ -520,31 +370,22 @@
 
 <body>
 
-  <!-- TOPBAR -->
-
   <div class="topbar">
     <div class="top-inner">
       <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
-
       <div class="top-actions">
         <form class="search" role="search" onsubmit="return searchSite(event)">
           <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
           <button type="submit" aria-label="Cari">⌕</button>
         </form>
-
-        <a class="top-virtual" href="kelas-virtual.html">
-          ▣ <span>Kelas Virtual</span>
-        </a>
+        <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
       </div>
     </div>
   </div>
 
-  <!-- HEADER -->
-
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
       <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-
       <span class="brand-copy">
         <strong>MANDALA AKSARA</strong>
         <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
@@ -556,19 +397,16 @@
 
     <nav id="mainNav" aria-label="Navigasi utama">
       <a href="index.html">Beranda</a>
-
       <div class="nav-dropdown">
         <button type="button" class="nav-trigger" aria-haspopup="true">
           Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
         </button>
-
         <div class="dropdown">
           <a href="kelas-x.html">Kelas X</a>
           <a href="kelas-xi.html">Kelas XI</a>
-          <a href="kelas-xii.html" class="active" aria-current="page">Kelas XII</a>
+          <a href="kelas-xii.html" class="active">Kelas XII</a>
         </div>
       </div>
-
       <a href="galeri.html">Galeri</a>
       <a href="perpustakaan.html">Perpustakaan Digital</a>
       <a href="kelas-virtual.html">Kelas Virtual</a>
@@ -576,1411 +414,1210 @@
     </nav>
   </header>
 
-  <!-- KONTEN -->
-
   <main class="surat-page">
 
-    <section class="surat-hero">
-      <div class="surat-hero-content">
-        <span class="surat-label">BAHASA INDONESIA KELAS XII · BAB 1</span>
-
-        <h1>Mengomunikasikan Informasi Penting tentang <span>Pendidikan dan/atau Pekerjaan</span></h1>
-
+    <section class="page-hero">
+      <div class="hero-inner">
+        <span class="hero-kicker">Bahasa Indonesia · Kelas XII</span>
+        <h1>BAB 1: Mengomunikasikan Informasi Penting tentang Pendidikan dan/atau Pekerjaan</h1>
         <p>
-          Memahami surat resmi dan berbagai media komunikasi untuk
-          menyampaikan informasi secara jelas, tepat, santun, dan
-          bertanggung jawab.
+          Memahami surat resmi sebagai sarana komunikasi tertulis yang
+          digunakan untuk menyampaikan informasi, permohonan, pemberitahuan,
+          dan kepentingan kelembagaan secara jelas serta santun.
         </p>
       </div>
     </section>
 
-    <div class="surat-layout">
-
-      <!-- DAFTAR ISI -->
+    <div class="content-layout">
 
       <aside class="surat-sidebar">
-        <h3>Daftar Isi Materi</h3>
-
-        <nav>
+        <h2>Daftar Isi Materi</h2>
+        <nav aria-label="Daftar isi Bab 1">
           <a href="#pengantar">Pengantar Bab</a>
-          <a href="#jenis-isi">1.1 Jenis dan Isi Surat Resmi</a>
-          <a href="#makna-surat">1.2 Makna Tersurat dan Tersirat</a>
-          <a href="#struktur">1.3 Struktur Surat Resmi</a>
-          <a href="#bahasa">1.4 Penggunaan Bahasa</a>
-          <a href="#kaidah">1.5 Kaidah Penulisan EYD V</a>
-          <a href="#kata-baku">1.6 Kata Baku dan Kalimat Efektif</a>
-          <a href="#media-komunikasi">1.7 Surat Kuasa, Pos-el, dan Poster</a>
+          <a href="#bagian-11">1.1 Jenis dan Isi Surat Resmi</a>
+          <a href="#bagian-12">1.2 Makna Tersurat dan Tersirat</a>
+          <a href="#bagian-13">1.3 Struktur Surat Resmi</a>
+          <a href="#bagian-14">1.4 Penggunaan Bahasa</a>
+          <a href="#bagian-15">1.5 Kaidah Penulisan EYD V</a>
+          <a href="#bagian-16">1.6 Kata Baku dan Kalimat Efektif</a>
+          <a href="#bagian-17">1.7 Surat Kuasa, Pos-el, dan Poster</a>
           <a href="#rangkuman">Rangkuman</a>
+          <a href="#rujukan">Rujukan Utama</a>
         </nav>
-
-        <a class="sidebar-back" href="kelas-xii.html">← Kembali ke Kelas XII</a>
       </aside>
 
-      <!-- ISI MATERI -->
+      <div class="surat-content">
 
-      <article class="surat-content">
+        <section class="content-card" id="pengantar">
+          <h2>Pengantar Bab</h2>
 
-        <!-- PENGANTAR -->
-
-        <section class="surat-card" id="pengantar">
-          <span class="surat-subtitle">Pengantar Pembelajaran</span>
-
-          <h2>Mengapa Informasi Penting Harus Disampaikan dengan Tepat?</h2>
-
-          <p class="surat-lead">
-            Dalam lingkungan pendidikan maupun pekerjaan, kita sering
-            menerima dan mengirimkan informasi melalui surat, pos-el,
-            pengumuman, atau poster. Informasi tersebut dapat berkaitan
-            dengan undangan kegiatan, permohonan bantuan, keputusan,
-            penugasan, dan berbagai kepentingan lainnya.
+          <p>
+            Dalam kehidupan sehari-hari, kita sering berhadapan dengan
+            berbagai situasi yang membutuhkan komunikasi tertulis. Ketika
+            seseorang mendaftar pekerjaan, mengajukan izin, menyampaikan
+            permohonan kepada lembaga, atau mengundang pihak lain untuk
+            menghadiri suatu kegiatan, informasi perlu disampaikan melalui
+            tulisan yang jelas, teratur, dan santun.
           </p>
 
           <p>
-            Informasi yang disampaikan secara tidak jelas dapat
-            menimbulkan kesalahpahaman. Misalnya, seseorang menerima
-            surat undangan rapat, tetapi tidak memahami waktu dan tempat
-            pelaksanaannya. Akibatnya, ia mungkin datang terlambat atau
-            bahkan tidak hadir.
+            Salah satu bentuk komunikasi tertulis tersebut adalah surat
+            resmi. Surat resmi digunakan dalam hubungan perseorangan,
+            organisasi, maupun lembaga ketika isi komunikasi berkaitan
+            dengan kepentingan yang bersifat formal. Dalam lingkungan
+            pemerintahan atau kelembagaan, surat yang digunakan untuk
+            kepentingan kedinasan dikenal sebagai surat dinas.
           </p>
 
-          <p>
-            Oleh karena itu, kemampuan memahami dan menyusun informasi
-            tertulis menjadi keterampilan penting. Kita perlu mengetahui
-            tujuan pesan, memahami isi, mengenali struktur, serta
-            menggunakan bahasa yang sesuai dengan situasi komunikasi.
-          </p>
-
-          <div class="surat-note">
-            <p>
-              <strong>Tujuan pembelajaran:</strong> Setelah mempelajari
-              bab ini, peserta didik diharapkan mampu memahami informasi
-              dalam surat resmi, membedakan makna tersurat dan tersirat,
-              menilai isi surat secara kritis, serta menggunakan media
-              komunikasi secara tepat dalam konteks pendidikan dan
-              pekerjaan.
-            </p>
+          <div class="info-box">
+            <strong>Tujuan pembelajaran:</strong>
+            Setelah mempelajari bab ini, peserta didik diharapkan mampu
+            mengenali tujuan dan isi surat resmi, memahami struktur serta
+            variasi tata letaknya, menggunakan bahasa yang sesuai, dan
+            menyusun komunikasi tertulis secara efektif.
           </div>
         </section>
 
-        <!-- 1.1 -->
-
-        <section class="surat-card" id="jenis-isi">
-          <span class="surat-subtitle">Slide 1.1</span>
-
-          <h2>Jenis dan Isi Surat Resmi</h2>
+        <section class="content-card" id="bagian-11">
+          <h2>1.1 Jenis dan Isi Surat Resmi</h2>
 
           <h3>A. Pengertian Surat Resmi</h3>
 
           <p>
             Surat resmi adalah surat yang digunakan untuk menyampaikan
-            informasi atau kepentingan tertentu dalam hubungan
-            kelembagaan, organisasi, kedinasan, maupun kegiatan formal.
-            Surat ini dibuat dengan memperhatikan tujuan, identitas
-            pengirim, penerima, susunan, dan kaidah bahasa.
+            informasi atau kepentingan secara formal. Surat ini dapat
+            dibuat oleh perseorangan, organisasi, perusahaan, maupun
+            lembaga dengan memperhatikan tujuan, penerima, isi, dan
+            kaidah penulisan yang sesuai.
           </p>
 
           <p>
-            Surat resmi berbeda dari surat pribadi. Surat pribadi
-            biasanya digunakan untuk berkomunikasi dengan keluarga
-            atau teman menggunakan bahasa yang lebih bebas. Sebaliknya,
-            surat resmi memiliki tujuan yang jelas dan menggunakan
-            bahasa formal serta susunan yang lebih teratur.
+            Surat dinas merupakan surat resmi yang dibuat atau digunakan
+            oleh instansi untuk kepentingan kedinasan. Oleh karena itu,
+            istilah surat resmi dan surat dinas memiliki hubungan yang
+            erat, tetapi tidak selalu dapat digunakan sebagai istilah
+            yang sepenuhnya sama.
           </p>
 
-          <h3>B. Jenis-Jenis Surat Resmi</h3>
+          <div class="note-box">
+            <strong>Perlu diingat:</strong>
+            Tidak semua surat resmi merupakan surat dinas. Surat lamaran
+            pekerjaan, surat permohonan dari perseorangan, dan surat
+            undangan organisasi dapat bersifat resmi, sedangkan surat
+            dinas berkaitan dengan pelaksanaan tugas atau kepentingan
+            suatu instansi.
+          </div>
+
+          <h3>B. Tujuan Surat Resmi</h3>
+
+          <p>Surat resmi dapat digunakan untuk berbagai tujuan, antara lain:</p>
+
+          <ul>
+            <li>menyampaikan pemberitahuan atau informasi;</li>
+            <li>mengajukan permohonan atau permintaan;</li>
+            <li>memberikan undangan kepada pihak tertentu;</li>
+            <li>menyampaikan keputusan atau penugasan;</li>
+            <li>menjalin komunikasi antarlembaga atau organisasi; dan</li>
+            <li>menyampaikan keterangan yang berkaitan dengan pendidikan maupun pekerjaan.</li>
+          </ul>
+
+          <h3>C. Jenis Surat Resmi Berdasarkan Tujuannya</h3>
+
+          <div class="example-box">
+            <h4>1. Surat Permohonan</h4>
+            <p>
+              Surat yang berisi permintaan kepada pihak lain agar
+              memberikan izin, bantuan, fasilitas, atau pertimbangan.
+            </p>
+            <p><strong>Contoh:</strong> permohonan izin menggunakan aula sekolah.</p>
+          </div>
+
+          <div class="example-box">
+            <h4>2. Surat Pemberitahuan</h4>
+            <p>
+              Surat yang digunakan untuk menyampaikan informasi mengenai
+              suatu kegiatan, perubahan, atau keputusan.
+            </p>
+            <p><strong>Contoh:</strong> pemberitahuan jadwal pelaksanaan ujian.</p>
+          </div>
+
+          <div class="example-box">
+            <h4>3. Surat Undangan</h4>
+            <p>
+              Surat yang berisi ajakan atau permintaan kehadiran seseorang
+              atau kelompok dalam suatu kegiatan.
+            </p>
+            <p><strong>Contoh:</strong> undangan rapat orang tua peserta didik.</p>
+          </div>
+
+          <div class="example-box">
+            <h4>4. Surat Tugas</h4>
+            <p>
+              Surat yang berisi penugasan dari pihak atau pejabat yang
+              berwenang kepada seseorang untuk melaksanakan pekerjaan
+              tertentu.
+            </p>
+            <p><strong>Contoh:</strong> surat tugas guru untuk mengikuti
+              kegiatan pelatihan.</p>
+          </div>
+
+          <div class="example-box">
+            <h4>5. Surat Lamaran Pekerjaan</h4>
+            <p>
+              Surat yang dibuat oleh seseorang untuk mengajukan diri
+              sebagai calon tenaga kerja pada perusahaan atau lembaga
+              tertentu.
+            </p>
+            <p><strong>Contoh:</strong> surat lamaran pekerjaan yang
+              dikirimkan kepada bagian sumber daya manusia sebuah perusahaan.</p>
+          </div>
+
+          <h3>D. Unsur Informasi dalam Surat</h3>
 
           <p>
-            Surat resmi dapat dibedakan berdasarkan tujuan dan isi
-            pesannya. Beberapa jenis surat yang sering digunakan dalam
-            lingkungan pendidikan dan pekerjaan antara lain:
+            Agar isi surat mudah dipahami, pembaca perlu menemukan
+            informasi penting secara jelas. Beberapa pertanyaan berikut
+            dapat digunakan untuk mengenali informasi dalam surat:
           </p>
 
-          <div class="surat-table-wrap">
-            <table class="surat-table">
+          <ul>
+            <li><strong>Apa:</strong> hal atau kegiatan apa yang dibicarakan?</li>
+            <li><strong>Di mana:</strong> di mana kegiatan atau peristiwa berlangsung?</li>
+            <li><strong>Kapan:</strong> kapan kegiatan atau peristiwa dilaksanakan?</li>
+            <li><strong>Siapa:</strong> siapa pihak yang mengirim, menerima, atau terlibat?</li>
+            <li><strong>Mengapa:</strong> apa alasan atau tujuan surat disampaikan?</li>
+            <li><strong>Bagaimana:</strong> bagaimana ketentuan atau tindak lanjut yang diminta?</li>
+          </ul>
+
+          <p>
+            Pertanyaan tersebut membantu pembaca menemukan informasi
+            utama dalam surat. Tidak semua surat memuat jawaban atas
+            seluruh pertanyaan tersebut. Informasi yang perlu diperhatikan
+            bergantung pada tujuan dan isi surat.
+          </p>
+        </section>
+        
+        <section class="content-card" id="bagian-12">
+          <h2>1.2 Memahami Makna Tersurat dan Tersirat dalam Surat</h2>
+
+          <h3>A. Makna Tersurat</h3>
+
+          <p>
+            Makna tersurat adalah informasi yang disampaikan secara
+            langsung melalui kata, frasa, atau kalimat dalam surat.
+            Pembaca dapat menemukan informasi tersebut dengan membaca
+            isi surat secara cermat tanpa harus menafsirkan maksud
+            yang tersembunyi.
+          </p>
+
+          <div class="example-box">
+            <div class="example-title">Contoh makna tersurat</div>
+            <p>
+              "Kegiatan sosialisasi perguruan tinggi akan dilaksanakan
+              pada hari Senin, 12 Januari 2026, pukul 09.00 WIB di aula sekolah."
+            </p>
+            <p><strong>Informasi yang dapat ditemukan:</strong></p>
+            <ul>
+              <li>Kegiatan: sosialisasi perguruan tinggi.</li>
+              <li>Hari dan tanggal: Senin, 12 Januari 2026.</li>
+              <li>Waktu: pukul 09.00 WIB.</li>
+              <li>Tempat: aula sekolah.</li>
+            </ul>
+          </div>
+
+          <h3>B. Makna Tersirat</h3>
+
+          <p>
+            Makna tersirat adalah maksud atau pesan yang tidak dinyatakan
+            secara langsung, tetapi dapat dipahami melalui konteks,
+            pilihan kata, dan hubungan antarkalimat. Untuk menemukannya,
+            pembaca perlu menghubungkan informasi yang terdapat dalam
+            surat dengan situasi yang melatarbelakanginya.
+          </p>
+
+          <div class="example-box">
+            <div class="example-title">Contoh makna tersirat</div>
+            <p>
+              "Peserta dimohon hadir 15 menit sebelum kegiatan dimulai
+              dan membawa dokumen yang telah ditentukan."
+            </p>
+            <p><strong>Makna tersirat:</strong></p>
+            <ul>
+              <li>Peserta diharapkan datang tepat waktu.</li>
+              <li>Panitia membutuhkan waktu untuk memeriksa kesiapan peserta.</li>
+              <li>Dokumen diperlukan sebagai bagian dari kelengkapan kegiatan.</li>
+            </ul>
+          </div>
+
+          <h3>C. Cara Menemukan Makna dalam Surat</h3>
+
+          <ol>
+            <li>Baca surat secara menyeluruh, bukan hanya bagian pembuka.</li>
+            <li>Kenali tujuan pengirim dalam menyampaikan surat.</li>
+            <li>Perhatikan informasi tentang waktu, tempat, pihak yang terlibat, dan tindakan yang diminta.</li>
+            <li>Amati pilihan kata yang menunjukkan permohonan, perintah, imbauan, atau pemberitahuan.</li>
+            <li>Hubungkan isi surat dengan konteks atau situasi yang melatarbelakanginya.</li>
+            <li>Bedakan informasi yang tertulis secara langsung dengan kesimpulan yang diperoleh melalui penalaran.</li>
+          </ol>
+
+          <div class="note-box">
+            <strong>Hal penting:</strong>
+            Penafsiran makna tersirat harus didukung oleh petunjuk
+            dalam surat. Jangan membuat kesimpulan yang tidak memiliki
+            dasar dari isi atau konteks surat.
+          </div>
+        </section>
+
+        <section class="content-card" id="bagian-13">
+          <h2>1.3 Struktur dan Tata Letak Surat Resmi</h2>
+
+          <h3>A. Bagian-Bagian Surat Resmi</h3>
+
+          <p>
+            Surat resmi disusun secara teratur agar informasi dapat
+            diterima dan dipahami dengan mudah. Secara umum, unsur
+            surat dapat dikelompokkan menjadi bagian kepala, isi, dan
+            kaki surat. Susunan serta penempatan unsur tersebut dapat
+            berbeda sesuai dengan jenis surat dan pedoman tata naskah
+            yang digunakan oleh lembaga atau instansi.
+          </p>
+
+          <h4>1. Kepala Surat</h4>
+
+          <p>
+            Kepala surat memuat identitas pihak atau lembaga yang
+            mengeluarkan surat. Dalam surat berkop, bagian ini biasanya
+            mencantumkan nama lembaga, alamat, dan informasi kontak.
+            Pada surat dinas, bagian kepala juga dapat diikuti oleh
+            tanggal, nomor surat, lampiran, hal, dan alamat tujuan
+            sesuai dengan pedoman instansi.
+          </p>
+
+          <h4>2. Isi Surat</h4>
+
+          <p>Isi surat umumnya terdiri atas:</p>
+
+          <ul>
+            <li><strong>Pembuka:</strong> pengantar yang menjelaskan latar belakang atau tujuan surat.</li>
+            <li><strong>Isi pokok:</strong> informasi utama, permohonan, pemberitahuan, atau penjelasan yang disampaikan.</li>
+            <li><strong>Penutup:</strong> kalimat akhir yang berisi harapan, ucapan terima kasih, atau tindak lanjut.</li>
+          </ul>
+
+          <h4>3. Kaki Surat</h4>
+
+          <p>
+            Bagian kaki surat dapat memuat salam penutup, jabatan
+            penanda tangan, tanda tangan, nama lengkap, nomor induk
+            pegawai jika diperlukan, tembusan, serta keterangan lain
+            sesuai kebutuhan dan ketentuan instansi.
+          </p>
+
+          <div class="note-box">
+            <strong>Catatan:</strong>
+            Tidak semua surat memiliki unsur yang sama. Misalnya,
+            surat pribadi yang bersifat resmi dapat memiliki susunan
+            lebih sederhana daripada surat dinas yang menggunakan
+            tata naskah suatu instansi.
+          </div>
+
+          <h3>B. Contoh Susunan Surat Resmi</h3>
+
+          <div class="example-box">
+            <div class="example-title">Contoh surat pemberitahuan kegiatan</div>
+
+            <div class="letter-example">
+              <p style="text-align:center; font-weight:bold;">
+                SMA CAHAYA BANGSA
+              </p>
+              <p style="text-align:center;">
+                Jalan Pendidikan Nomor 10, Kabupaten Contoh
+              </p>
+              <hr>
+
+              <p style="text-align:right;">Kabupaten Contoh, 5 Januari 2026</p>
+
+              <p>Nomor: 005/012/SMA-CB/I/2026</p>
+              <p>Lampiran: -</p>
+              <p>Hal: Pemberitahuan Kegiatan Sosialisasi Perguruan Tinggi</p>
+
+              <br>
+
+              <p>Yth. Guru dan Tenaga Kependidikan</p>
+              <p>SMA Cahaya Bangsa</p>
+              <p>di tempat</p>
+
+              <br>
+
+              <p>Dengan hormat,</p>
+
+              <p>
+                Dalam rangka memberikan informasi mengenai pilihan
+                pendidikan setelah lulus sekolah, SMA Cahaya Bangsa
+                akan menyelenggarakan kegiatan sosialisasi perguruan
+                tinggi bagi peserta didik kelas XII.
+              </p>
+
+              <p>Kegiatan tersebut akan dilaksanakan pada:</p>
+
+              <p>Hari, tanggal: Senin, 12 Januari 2026</p>
+              <p>Waktu: Pukul 09.00 WIB sampai selesai</p>
+              <p>Tempat: Aula SMA Cahaya Bangsa</p>
+
+              <p>
+                Sehubungan dengan kegiatan tersebut, kami mengharapkan
+                dukungan dan kerja sama Bapak/Ibu guru untuk membantu
+                kelancaran kegiatan.
+              </p>
+
+              <p>Demikian pemberitahuan ini kami sampaikan. Atas perhatian dan kerja sama yang diberikan, kami mengucapkan terima kasih.</p>
+
+              <br>
+
+              <p>Hormat kami,</p>
+              <p>Kepala SMA Cahaya Bangsa</p>
+
+              <br><br>
+
+              <p><strong>Nama Kepala Sekolah</strong></p>
+              <p>NIP. 197001012000011001</p>
+            </div>
+          </div>
+
+          <p>
+            Contoh tersebut merupakan ilustrasi pembelajaran.
+            Nama lembaga, alamat, nomor surat, tanggal, dan identitas
+            penanda tangan dapat disesuaikan dengan kebutuhan.
+            Penulisan tanggal dan unsur surat lainnya juga perlu
+            mengikuti pedoman tata naskah yang berlaku pada lembaga
+            penerbit surat.
+          </p>
+
+          <h3>C. Variasi Tata Letak Surat</h3>
+
+          <p>
+            Dalam praktik penulisan surat, terdapat beberapa bentuk
+            tata letak yang dikenal. Perbedaan bentuk terutama terlihat
+            pada posisi tanggal, alamat tujuan, salam pembuka, paragraf,
+            dan bagian penutup. Tidak ada satu bentuk yang harus
+            digunakan oleh seluruh lembaga. Penggunaannya mengikuti
+            kebiasaan atau pedoman penulisan surat yang berlaku.
+          </p>
+
+          <ol>
+            <li>
+              <strong>Bentuk lurus penuh (full block style).</strong>
+              Seluruh bagian surat, termasuk tanggal, alamat tujuan,
+              salam, paragraf, dan penutup, dimulai dari batas kiri.
+            </li>
+            <li>
+              <strong>Bentuk lurus (block style).</strong>
+              Sebagian besar bagian surat dimulai dari batas kiri.
+              Tanggal dan beberapa unsur penutup dapat ditempatkan
+              di sisi kanan sesuai tata letak yang digunakan.
+            </li>
+            <li>
+              <strong>Bentuk setengah lurus A (semi-block A).</strong>
+              Bentuk ini menggunakan paragraf yang menjorok pada
+              awal baris. Penempatan alamat tujuan mengikuti pola
+              tata letak semi-block A.
+            </li>
+            <li>
+              <strong>Bentuk setengah lurus B (semi-block B).</strong>
+              Bentuk ini juga menggunakan paragraf menjorok, tetapi
+              memiliki perbedaan penempatan alamat tujuan dibandingkan
+              bentuk setengah lurus A.
+            </li>
+            <li>
+              <strong>Bentuk lekuk (indented style).</strong>
+              Baris-baris tertentu pada alamat tujuan dan bagian
+              surat lainnya dibuat bertingkat atau semakin menjorok
+              ke dalam.
+            </li>
+            <li>
+              <strong>Bentuk paragraf menggantung (hanging paragraph).</strong>
+              Baris pertama paragraf dimulai dari batas kiri,
+              sedangkan baris berikutnya dibuat menjorok ke dalam.
+            </li>
+          </ol>
+
+          <div class="info-box">
+            <strong>Catatan pembelajaran:</strong>
+            Istilah dan penerapan bentuk surat dapat berbeda dalam
+            berbagai buku atau pedoman. Enam bentuk di atas digunakan
+            untuk mengenalkan variasi tata letak, bukan sebagai
+            ketentuan wajib bagi semua surat resmi.
+          </div>
+
+          <h3>D. Alamat Tujuan dan Salam Pembuka</h3>
+
+          <p>
+            Alamat tujuan harus ditulis dengan jelas agar surat
+            diterima oleh pihak yang tepat. Penulisan sapaan
+            penghormatan perlu memperhatikan siapa penerimanya.
+          </p>
+
+          <div class="example-box">
+            <div class="example-title">Contoh penulisan alamat tujuan</div>
+
+            <p><strong>Jika ditujukan kepada jabatan:</strong></p>
+            <p>Yth. Kepala SMA Cahaya Bangsa</p>
+            <p>di tempat</p>
+
+            <br>
+
+            <p><strong>Jika ditujukan kepada kelompok profesi:</strong></p>
+            <p>Yth. Guru dan Tenaga Kependidikan</p>
+            <p>SMA Cahaya Bangsa</p>
+            <p>di tempat</p>
+          </div>
+
+          <p>
+            Sapaan seperti Bapak, Ibu, Saudara, atau Saudari dapat
+            digunakan ketika ditujukan kepada orang tertentu,
+            terutama jika diikuti nama orang tersebut. Jika penerima
+            sudah disebut berdasarkan jabatan atau kelompok profesi,
+            sapaan tambahan tidak selalu diperlukan.
+          </p>
+
+          <p>
+            Salam pembuka yang umum digunakan dalam surat resmi
+            antara lain "Dengan hormat,". Salam pembuka ditulis
+            secara konsisten dan disesuaikan dengan tujuan serta
+            hubungan antara pengirim dan penerima surat.
+          </p>
+        </section>
+
+        <section class="content-card" id="bagian-14">
+          <h2>1.4 Penggunaan Bahasa dalam Surat Resmi</h2>
+
+          <p>
+            Bahasa dalam surat resmi perlu disusun secara jelas,
+            santun, lugas, dan sesuai dengan tujuan komunikasi.
+            Pemilihan kata yang tepat membantu menghindari
+            kesalahpahaman antara pengirim dan penerima.
+          </p>
+
+          <h3>A. Ciri-Ciri Bahasa Surat Resmi</h3>
+
+          <ol>
+            <li>
+              <strong>Baku:</strong> menggunakan kata dan bentuk
+              bahasa yang sesuai dengan kaidah bahasa Indonesia.
+            </li>
+            <li>
+              <strong>Jelas:</strong> informasi disampaikan dengan
+              susunan kalimat yang mudah dipahami.
+            </li>
+            <li>
+              <strong>Lugas:</strong> langsung menyampaikan maksud
+              tanpa kata-kata yang berlebihan.
+            </li>
+            <li>
+              <strong>Santun:</strong> memperhatikan kesopanan
+              dalam menyampaikan permohonan, pemberitahuan, atau
+              tanggapan.
+            </li>
+            <li>
+              <strong>Konsisten:</strong> menggunakan istilah,
+              penulisan, dan format secara teratur.
+            </li>
+          </ol>
+
+          <h3>B. Menghindari Kalimat yang Berlebihan</h3>
+
+          <p>
+            Kalimat surat resmi sebaiknya tidak bertele-tele.
+            Penggunaan kata yang berulang atau memiliki makna
+            sama dapat membuat pesan menjadi kurang efektif.
+          </p>
+
+          <div class="example-box">
+            <div class="example-title">Contoh perbaikan kalimat</div>
+
+            <p><strong>Kurang efektif:</strong></p>
+            <p>
+              "Bersama surat ini kami bermaksud untuk memberitahukan
+              kepada Bapak/Ibu sekalian bahwa kegiatan tersebut
+              akan dilaksanakan pada hari Senin."
+            </p>
+
+            <p><strong>Lebih efektif:</strong></p>
+            <p>
+              "Melalui surat ini, kami memberitahukan bahwa kegiatan
+              tersebut akan dilaksanakan pada hari Senin."
+            </p>
+          </div>
+
+          <h3>C. Memilih Ungkapan yang Tepat</h3>
+
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Ungkapan yang Kurang Tepat</th>
+                <th>Alternatif yang Lebih Tepat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dimohon untuk dapat hadir.</td>
+                <td>Dimohon hadir.</td>
+              </tr>
+              <tr>
+                <td>Agar supaya kegiatan berjalan lancar.</td>
+                <td>Agar kegiatan berjalan lancar.</td>
+              </tr>
+              <tr>
+                <td>Atas kehadirannya kami ucapkan terima kasih sebelumnya.</td>
+                <td>Atas perhatian dan kehadiran Bapak/Ibu, kami mengucapkan terima kasih.</td>
+              </tr>
+              <tr>
+                <td>Demikian agar menjadi maklum adanya.</td>
+                <td>Demikian pemberitahuan ini kami sampaikan.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="note-box">
+            <strong>Ingat:</strong>
+            Bahasa resmi bukan berarti harus menggunakan kalimat
+            yang panjang atau rumit. Bahasa yang baik justru
+            menyampaikan maksud secara tepat, santun, dan mudah
+            dipahami oleh penerima.
+          </div>
+        </section>
+
+        <section class="content-card" id="bagian-15">
+          <h2>1.5 Kaidah Penulisan Berdasarkan EYD Edisi V</h2>
+
+          <p>
+            Ejaan Bahasa Indonesia yang Disempurnakan Edisi V
+            (EYD V) menjadi salah satu acuan dalam penulisan
+            bahasa Indonesia. Pedoman ini mengatur penggunaan
+            huruf, penulisan kata, penggunaan tanda baca, dan
+            penulisan unsur serapan.
+          </p>
+
+          <h3>A. Penggunaan Huruf Kapital</h3>
+
+          <p>
+            Huruf kapital digunakan sesuai dengan ketentuan,
+            antara lain pada awal kalimat, nama orang, nama
+            lembaga, nama tempat, nama hari, nama bulan, serta
+            unsur tertentu dalam nama jabatan yang diikuti
+            nama orang atau digunakan sebagai pengganti nama
+            orang tertentu.
+          </p>
+
+          <div class="example-box">
+            <div class="example-title">Contoh</div>
+            <ul>
+              <li>Surat tersebut dikirim kepada Kepala Sekolah.</li>
+              <li>Kegiatan dilaksanakan pada hari Senin.</li>
+              <li>Peserta akan mengunjungi Universitas Indonesia.</li>
+              <li>Kepala SMA Cahaya Bangsa membuka kegiatan tersebut.</li>
+            </ul>
+          </div>
+
+          <h3>B. Penulisan Huruf Miring</h3>
+
+          <p>
+            Huruf miring digunakan, antara lain, untuk menuliskan
+            judul buku, nama majalah atau surat kabar yang disebut
+            dalam tulisan, serta kata atau ungkapan dalam bahasa
+            asing atau bahasa daerah yang belum diserap ke dalam
+            bahasa Indonesia.
+          </p>
+
+          <div class="example-box">
+            <div class="example-title">Contoh</div>
+            <ul>
+              <li>Peserta diminta membaca buku <em>Bahasa Indonesia</em>.</li>
+              <li>Istilah <em>job application</em> berarti lamaran pekerjaan.</li>
+            </ul>
+          </div>
+
+          <h3>C. Penggunaan Huruf Tebal</h3>
+
+          <p>
+            Huruf tebal digunakan untuk menegaskan bagian tulisan
+            yang dianggap penting. Dalam dokumen resmi, huruf
+            tebal juga dapat digunakan berdasarkan tata letak
+            atau pedoman format dokumen yang berlaku.
+          </p>
+
+          <p>
+            Penggunaan huruf tebal perlu dilakukan secara
+            konsisten dan tidak berlebihan agar bagian yang
+            ditekankan tetap mudah dikenali.
+          </p>
+
+          <h3>D. Penulisan Singkatan dan Akronim</h3>
+
+          <p>
+            Singkatan dan akronim ditulis mengikuti kaidah
+            yang berlaku. Singkatan nama gelar, jabatan, atau
+            sapaan memiliki ketentuan penulisan tersendiri.
+            Akronim nama diri yang berupa gabungan huruf awal
+            umumnya ditulis dengan huruf kapital.
+          </p>
+
+          <div class="example-box">
+            <div class="example-title">Contoh</div>
+            <ul>
+              <li>Yth. (yang terhormat)</li>
+              <li>NIP (Nomor Induk Pegawai)</li>
+              <li>SD, SMP, SMA</li>
+              <li>Dr. (doktor)</li>
+            </ul>
+          </div>
+
+          <h3>E. Penggunaan Tanda Baca</h3>
+
+          <p>
+            Tanda baca membantu pembaca memahami hubungan
+            antarkata, bagian kalimat, dan maksud penulis.
+            Penggunaannya harus sesuai dengan fungsi masing-masing.
+          </p>
+
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Tanda Baca</th>
+                <th>Fungsi Umum</th>
+                <th>Contoh</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Titik (.)</td>
+                <td>Mengakhiri kalimat pernyataan.</td>
+                <td>Rapat dimulai pukul 08.00.</td>
+              </tr>
+              <tr>
+                <td>Koma (,)</td>
+                <td>Memisahkan unsur dalam perincian atau bagian kalimat tertentu.</td>
+                <td>Surat tersebut berisi waktu, tempat, dan tujuan kegiatan.</td>
+              </tr>
+              <tr>
+                <td>Titik dua (:)</td>
+                <td>Digunakan sebelum perincian yang didahului pernyataan lengkap.</td>
+                <td>Kegiatan dilaksanakan pada:</td>
+              </tr>
+              <tr>
+                <td>Titik koma (;)</td>
+                <td>Memisahkan bagian perincian yang sudah mengandung koma atau kalimat setara tertentu.</td>
+                <td>Panitia menyiapkan tempat; peserta membawa perlengkapan masing-masing.</td>
+              </tr>
+              <tr>
+                <td>Tanda hubung (-)</td>
+                <td>Menghubungkan unsur kata ulang atau unsur tertentu sesuai kaidah.</td>
+                <td>masing-masing, surat-menyurat.</td>
+              </tr>
+              <tr>
+                <td>Tanda pisah (—)</td>
+                <td>Mengapit keterangan tambahan atau menyatakan rentang tertentu sesuai konteks.</td>
+                <td>Senin—Rabu.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="note-box">
+            <strong>Perhatian:</strong>
+            Tanda hubung (-) dan tanda pisah (—) memiliki
+            fungsi yang berbeda. Keduanya tidak digunakan
+            secara bergantian hanya karena bentuknya mirip.
+          </div>
+        </section>
+        
+        <section class="content-card" id="bagian-16">
+          <h2>1.6 Kata Baku dan Kalimat Efektif</h2>
+
+          <h3>A. Kata Baku</h3>
+
+          <p>
+            Kata baku adalah kata yang penulisannya mengikuti
+            kaidah bahasa Indonesia dan digunakan dalam situasi
+            formal, termasuk dalam surat resmi. Penggunaan kata
+            baku membantu menjaga ketepatan dan keseragaman
+            bahasa dalam komunikasi tertulis.
+          </p>
+
+          <p>
+            Dalam menulis surat resmi, hindari penggunaan kata
+            tidak baku, kata percakapan, atau bentuk penulisan
+            yang tidak sesuai dengan kaidah.
+          </p>
+
+          <div class="example-box">
+            <div class="example-title">Contoh kata baku dan tidak baku</div>
+
+            <table class="data-table">
               <thead>
                 <tr>
-                  <th>Jenis Surat</th>
-                  <th>Fungsi dan Tujuan</th>
+                  <th>Kata Tidak Baku</th>
+                  <th>Kata Baku</th>
                   <th>Contoh Penggunaan</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>Surat dinas</strong></td>
-                  <td>Menyampaikan informasi atau urusan kedinasan.</td>
-                  <td>Informasi kegiatan sekolah atau instansi.</td>
-                </tr>
-                <tr>
-                  <td><strong>Surat undangan</strong></td>
-                  <td>Mengundang seseorang atau pihak tertentu untuk menghadiri kegiatan.</td>
-                  <td>Undangan rapat, seminar, atau pertemuan orang tua.</td>
-                </tr>
-                <tr>
-                  <td><strong>Surat edaran</strong></td>
-                  <td>Menyampaikan pemberitahuan atau petunjuk kepada banyak pihak.</td>
-                  <td>Edaran jadwal kegiatan atau kebijakan lembaga.</td>
-                </tr>
-                <tr>
-                  <td><strong>Surat perintah</strong></td>
-                  <td>Memberikan instruksi untuk melaksanakan tugas tertentu.</td>
-                  <td>Penugasan pegawai atau guru mengikuti kegiatan.</td>
-                </tr>
-                <tr>
-                  <td><strong>Surat kuasa</strong></td>
-                  <td>Memberikan kewenangan kepada pihak lain untuk melakukan tindakan tertentu.</td>
-                  <td>Perwakilan pengambilan dokumen.</td>
-                </tr>
-                <tr>
-                  <td><strong>Surat permohonan</strong></td>
-                  <td>Mengajukan permintaan atau permohonan secara resmi.</td>
-                  <td>Permohonan izin, bantuan, atau penggunaan fasilitas.</td>
-                </tr>
-                <tr>
-                  <td><strong>Surat keputusan</strong></td>
-                  <td>Menyampaikan penetapan atau keputusan resmi dari pihak yang berwenang.</td>
-                  <td>Keputusan pembentukan panitia kegiatan.</td>
-                </tr>
-                <tr>
-                  <td><strong>Surat penawaran</strong></td>
-                  <td>Menawarkan barang, jasa, atau kerja sama.</td>
-                  <td>Penawaran buku, perlengkapan, atau layanan.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3>C. Memahami Pokok Isi Surat dengan ADIK SIMBA</h3>
-
-          <p>
-            Untuk memahami isi surat secara menyeluruh, kita dapat
-            menggunakan pertanyaan ADIK SIMBA. Akronim ini membantu
-            pembaca menemukan informasi penting yang terdapat dalam
-            surat.
-          </p>
-
-          <div class="surat-table-wrap">
-            <table class="surat-table">
-              <thead>
-                <tr>
-                  <th>Unsur</th>
-                  <th>Pertanyaan</th>
-                  <th>Informasi yang Dicari</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Apa</strong></td>
-                  <td>Apa yang dibicarakan?</td>
-                  <td>Pokok kegiatan, masalah, atau keperluan surat.</td>
-                </tr>
-                <tr>
-                  <td><strong>Di mana</strong></td>
-                  <td>Di mana kegiatan berlangsung?</td>
-                  <td>Tempat atau lokasi kegiatan.</td>
-                </tr>
-                <tr>
-                  <td><strong>Kapan</strong></td>
-                  <td>Kapan kegiatan dilaksanakan?</td>
-                  <td>Hari, tanggal, dan waktu.</td>
-                </tr>
-                <tr>
-                  <td><strong>Siapa</strong></td>
-                  <td>Siapa yang terlibat?</td>
-                  <td>Pengirim, penerima, peserta, atau pihak terkait.</td>
-                </tr>
-                <tr>
-                  <td><strong>Mengapa</strong></td>
-                  <td>Mengapa kegiatan atau tindakan dilakukan?</td>
-                  <td>Alasan, latar belakang, atau tujuan.</td>
-                </tr>
-                <tr>
-                  <td><strong>Bagaimana</strong></td>
-                  <td>Bagaimana kegiatan atau tindakan dilaksanakan?</td>
-                  <td>Tata cara, ketentuan, atau langkah yang harus dilakukan.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="surat-note">
-            <p>
-              <strong>Contoh:</strong> Jika sebuah surat menyatakan
-              bahwa sekolah akan mengadakan seminar karier pada hari
-              Jumat pukul 08.00 di aula sekolah, pembaca dapat langsung
-              menemukan informasi tentang apa kegiatannya, kapan
-              dilaksanakan, dan di mana tempatnya. Informasi lainnya
-              dapat ditemukan melalui bagian surat yang berbeda.
-            </p>
-          </div>
-
-          <h3>D. Pesan dan Tujuan Surat</h3>
-
-          <p>
-            Setiap surat memiliki pesan yang ingin disampaikan oleh
-            pengirim. Secara umum, pesan surat dapat berupa:
-          </p>
-
-          <ul>
-            <li><strong>Informasi:</strong> menyampaikan berita atau pemberitahuan kepada penerima.</li>
-            <li><strong>Ajakan:</strong> mengajak penerima untuk menghadiri atau melakukan sesuatu.</li>
-            <li><strong>Perintah:</strong> memberikan instruksi atau tugas yang harus dilaksanakan oleh pihak yang dituju.</li>
-            <li><strong>Permohonan:</strong> meminta bantuan, izin, atau persetujuan dari pihak lain.</li>
-            <li><strong>Penetapan:</strong> menyampaikan keputusan atau ketentuan yang telah ditentukan oleh pihak berwenang.</li>
-          </ul>
-
-          <p>
-            Untuk memahami pesan surat, pembaca tidak cukup hanya
-            melihat judul atau jenis surat. Isi keseluruhan perlu
-            dibaca agar maksud pengirim tidak disalahartikan.
-          </p>
-
-          <h3>E. Memberikan Tanggapan terhadap Isi Surat</h3>
-
-          <p>
-            Setelah memahami isi surat, pembaca dapat memberikan
-            tanggapan. Tanggapan merupakan respons terhadap informasi,
-            gagasan, atau keputusan yang disampaikan dalam surat.
-            Tanggapan yang baik harus disertai alasan yang masuk akal.
-          </p>
-
-          <ul>
-            <li><strong>Kritik:</strong> menunjukkan kekurangan atau hal yang perlu diperbaiki.</li>
-            <li><strong>Pujian:</strong> memberikan penghargaan terhadap hal positif.</li>
-            <li><strong>Saran:</strong> menawarkan gagasan atau solusi untuk perbaikan.</li>
-          </ul>
-
-          <div class="surat-info">
-            <p>
-              <strong>Contoh tanggapan:</strong> Sebuah surat undangan
-              kegiatan sekolah tidak mencantumkan waktu pelaksanaan.
-              Tanggapan yang tepat adalah, "Surat undangan tersebut
-              sudah memuat tujuan kegiatan, tetapi sebaiknya dilengkapi
-              dengan waktu pelaksanaan agar penerima tidak mengalami
-              kebingungan." Tanggapan ini termasuk kritik yang disertai
-              saran dan alasan.
-            </p>
-          </div>
-        </section>
-
-        <!-- 1.2 -->
-
-        <section class="surat-card" id="makna-surat">
-          <span class="surat-subtitle">Slide 1.2</span>
-
-          <h2>Makna Tersurat, Tersirat, dan Refleksi Gagasan</h2>
-
-          <h3>A. Makna Tersurat</h3>
-
-          <p>
-            Makna tersurat adalah informasi atau pesan yang disampaikan
-            secara langsung melalui kata-kata dalam teks. Pembaca dapat
-            menemukan makna ini tanpa harus membuat penafsiran yang
-            rumit karena informasinya tertulis dengan jelas.
-          </p>
-
-          <p>
-            Contohnya, dalam surat undangan tertulis:
-            "Rapat persiapan kegiatan dilaksanakan pada Senin,
-            12 Januari 2026, pukul 09.00 WIB di ruang rapat."
-          </p>
-
-          <p>
-            Dari kalimat tersebut, informasi tentang hari, tanggal,
-            waktu, dan tempat rapat merupakan makna tersurat.
-          </p>
-
-          <h3>B. Makna Tersirat</h3>
-
-          <p>
-            Makna tersirat adalah pesan yang tidak disampaikan secara
-            langsung, tetapi dapat dipahami melalui petunjuk atau
-            informasi yang terdapat dalam teks. Untuk menemukannya,
-            pembaca perlu menghubungkan beberapa informasi dan
-            menggunakan penalaran.
-          </p>
-
-          <p>
-            Misalnya, dalam surat tertulis:
-            "Seluruh anggota panitia diminta hadir 30 menit sebelum
-            kegiatan dimulai untuk melakukan persiapan akhir."
-          </p>
-
-          <p>
-            Makna tersuratnya adalah panitia harus hadir 30 menit
-            sebelum acara. Makna tersiratnya adalah panitia perlu
-            memastikan seluruh perlengkapan dan kebutuhan kegiatan
-            telah siap sebelum peserta datang.
-          </p>
-
-          <div class="surat-table-wrap">
-            <table class="surat-table">
-              <thead>
-                <tr>
-                  <th>Aspek</th>
-                  <th>Makna Tersurat</th>
-                  <th>Makna Tersirat</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Pengertian</td>
-                  <td>Informasi tertulis secara langsung.</td>
-                  <td>Informasi yang harus disimpulkan.</td>
-                </tr>
-                <tr>
-                  <td>Cara memahami</td>
-                  <td>Membaca informasi yang dinyatakan.</td>
-                  <td>Menghubungkan petunjuk dan melakukan penalaran.</td>
-                </tr>
-                <tr>
-                  <td>Contoh</td>
-                  <td>Rapat dimulai pukul 09.00.</td>
-                  <td>Peserta sebaiknya datang lebih awal agar tidak terlambat.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3>C. Membandingkan Dua Surat secara Kritis</h3>
-
-          <p>
-            Membandingkan dua surat berarti membaca keduanya secara
-            teliti untuk menemukan persamaan dan perbedaan. Perbandingan
-            dapat dilakukan berdasarkan tujuan, isi, pihak yang terlibat,
-            serta tindakan yang diharapkan dari penerima.
-          </p>
-
-          <p>
-            Misalnya, terdapat dua surat yang berkaitan dengan kegiatan
-            sekolah:
-          </p>
-
-          <h4>1. Surat Permohonan Bantuan Dana</h4>
-
-          <p>
-            Surat ini dibuat untuk mengajukan permintaan bantuan dana
-            kepada pihak tertentu. Isinya menjelaskan kegiatan yang
-            akan dilaksanakan, alasan membutuhkan bantuan, jumlah dana
-            yang diperlukan, serta harapan agar permohonan dapat
-            dipertimbangkan.
-          </p>
-
-          <h4>2. Surat Keputusan Pembentukan Panitia</h4>
-
-          <p>
-            Surat ini dibuat oleh pihak yang memiliki kewenangan untuk
-            menetapkan susunan panitia. Isinya mencantumkan dasar
-            pertimbangan, nama-nama petugas, jabatan atau tugas masing-masing,
-            serta ketentuan pelaksanaan keputusan.
-          </p>
-
-          <div class="surat-table-wrap">
-            <table class="surat-table">
-              <thead>
-                <tr>
-                  <th>Aspek</th>
-                  <th>Surat Permohonan</th>
-                  <th>Surat Keputusan</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Tujuan</td>
-                  <td>Meminta bantuan atau persetujuan.</td>
-                  <td>Menetapkan suatu keputusan.</td>
-                </tr>
-                <tr>
-                  <td>Sifat pesan</td>
-                  <td>Berupa permintaan.</td>
-                  <td>Berupa penetapan resmi.</td>
-                </tr>
-                <tr>
-                  <td>Isi utama</td>
-                  <td>Alasan, kebutuhan, dan harapan pemohon.</td>
-                  <td>Dasar keputusan dan pihak yang ditetapkan.</td>
-                </tr>
-                <tr>
-                  <td>Tindakan penerima</td>
-                  <td>Mempertimbangkan permohonan.</td>
-                  <td>Melaksanakan atau menindaklanjuti keputusan sesuai kewenangan.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3>D. Langkah Membaca Intensif</h3>
-
-          <p>
-            Membaca intensif adalah kegiatan membaca secara cermat
-            untuk memperoleh pemahaman yang mendalam. Ketika
-            membandingkan dua surat, lakukan langkah berikut:
-          </p>
-
-          <ol>
-            <li>Baca kedua surat secara keseluruhan untuk mengetahui gambaran umum.</li>
-            <li>Garisbawahi informasi penting, seperti tujuan, tanggal, pihak yang terlibat, dan isi pesan.</li>
-            <li>Catat persamaan dan perbedaan kedua surat.</li>
-            <li>Periksa apakah informasi yang disampaikan sudah jelas dan sesuai dengan tujuan surat.</li>
-            <li>Buat kesimpulan berdasarkan informasi yang ditemukan.</li>
-          </ol>
-
-          <h3>E. Merefleksikan Gagasan dalam Surat</h3>
-
-          <p>
-            Refleksi gagasan adalah kegiatan memikirkan kembali isi
-            surat, menilai gagasan yang disampaikan, lalu menghubungkannya
-            dengan pengetahuan atau pengalaman yang dimiliki.
-          </p>
-
-          <p>
-            Refleksi tidak sekadar menyatakan setuju atau tidak setuju.
-            Pembaca perlu mempertimbangkan apakah gagasan tersebut
-            masuk akal, apa kelebihannya, apa kekurangannya, dan
-            bagaimana penerapannya dalam kehidupan.
-          </p>
-
-          <ol>
-            <li><strong>Pahami isi surat.</strong> Temukan tujuan dan gagasan utama yang disampaikan.</li>
-            <li><strong>Analisis gagasan.</strong> Perhatikan kelebihan, kelemahan, dan asumsi yang mendasarinya.</li>
-            <li><strong>Hubungkan dengan pengalaman.</strong> Bandingkan isi surat dengan keadaan atau pengalaman yang pernah ditemukan.</li>
-            <li><strong>Susun kesimpulan.</strong> Berikan penilaian yang didukung alasan dan bukti.</li>
-          </ol>
-
-          <div class="surat-note">
-            <p>
-              <strong>Hal yang perlu diingat:</strong> Penafsiran makna
-              tersirat harus memiliki dasar berupa petunjuk dalam surat.
-              Jangan membuat kesimpulan hanya berdasarkan dugaan pribadi
-              yang tidak didukung isi teks.
-            </p>
-          </div>
-        </section>
-
-        <!-- 1.3 -->
-
-        <section class="surat-card" id="struktur">
-          <span class="surat-subtitle">Slide 1.3</span>
-
-          <h2>Struktur Surat Resmi</h2>
-
-          <p>
-            Surat resmi disusun dengan bagian-bagian yang memiliki
-            fungsi masing-masing. Susunan tersebut membantu penerima
-            mengenali identitas pengirim, mengetahui tujuan surat,
-            memahami isi pesan, dan menentukan tindakan yang diperlukan.
-          </p>
-
-          <h3>A. Bagian-Bagian Surat Resmi</h3>
-
-          <div class="surat-table-wrap">
-            <table class="surat-table">
-              <thead>
-                <tr>
-                  <th>Bagian</th>
-                  <th>Unsur</th>
-                  <th>Fungsi</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowspan="6"><strong>Kepala surat</strong></td>
-                  <td>Kop surat</td>
-                  <td>Menunjukkan identitas lembaga atau instansi pengirim.</td>
-                </tr>
-                <tr>
-                  <td>Nomor surat</td>
-                  <td>Memudahkan pencatatan dan pengarsipan surat.</td>
-                </tr>
-                <tr>
-                  <td>Lampiran</td>
-                  <td>Menunjukkan jumlah atau keberadaan dokumen tambahan.</td>
-                </tr>
-                <tr>
-                  <td>Hal atau perihal</td>
-                  <td>Menjelaskan pokok kepentingan surat secara singkat.</td>
-                </tr>
-                <tr>
-                  <td>Tanggal surat</td>
-                  <td>Menunjukkan waktu surat dibuat atau diterbitkan.</td>
-                </tr>
-                <tr>
-                  <td>Alamat tujuan</td>
-                  <td>Menjelaskan pihak yang dituju oleh surat.</td>
-                </tr>
-                <tr>
-                  <td rowspan="3"><strong>Tubuh surat</strong></td>
-                  <td>Pembuka</td>
-                  <td>Mengawali komunikasi dan memperkenalkan maksud surat.</td>
-                </tr>
-                <tr>
-                  <td>Isi</td>
-                  <td>Menyampaikan informasi, permintaan, keputusan, atau pesan utama.</td>
-                </tr>
-                <tr>
-                  <td>Penutup</td>
-                  <td>Menyampaikan harapan, ucapan terima kasih, atau tindak lanjut.</td>
-                </tr>
-                <tr>
-                  <td rowspan="4"><strong>Kaki surat</strong></td>
-                  <td>Jabatan pengirim</td>
-                  <td>Menunjukkan kedudukan orang yang bertanggung jawab.</td>
-                </tr>
-                <tr>
-                  <td>Tanda tangan</td>
-                  <td>Menunjukkan pengesahan atau pertanggungjawaban pengirim.</td>
-                </tr>
-                <tr>
-                  <td>Nama dan identitas</td>
-                  <td>Menjelaskan identitas penanda tangan.</td>
-                </tr>
-                <tr>
-                  <td>Stempel dan tembusan</td>
-                  <td>Digunakan sesuai ketentuan lembaga dan kebutuhan distribusi surat.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3>B. Contoh Surat Resmi</h3>
-
-          <p>
-            Perhatikan contoh surat undangan rapat berikut. Contoh ini
-            menggambarkan penggunaan bagian-bagian surat resmi dalam
-            lingkungan pendidikan.
-          </p>
-
-          <div class="surat-example">
-            <div class="kop">
-              <strong>YAYASAN PENDIDIKAN CAHAYA BANGSA</strong>
-              <strong>SMA CAHAYA BANGSA</strong>
-              <span>Jalan Pendidikan Nomor 10, Kabupaten Contoh</span>
-              <span>Telepon (0265) 000000 | Pos-el: sekolah@example.id</span>
-            </div>
-
-            <p style="text-align:right;">Kabupaten Contoh, 5 Januari 2026</p>
-
-            <p>
-              Nomor: 005/UND/SMACB/I/2026<br>
-              Lampiran: -<br>
-              Hal: Undangan Rapat Persiapan Kegiatan Literasi
-            </p>
-
-            <p>
-              Yth. Bapak/Ibu Guru dan Tenaga Kependidikan<br>
-              SMA Cahaya Bangsa<br>
-              di tempat
-            </p>
-
-            <p>Dengan hormat,</p>
-
-            <p>
-              Dalam rangka mempersiapkan kegiatan Bulan Literasi
-              Sekolah, kami mengundang Bapak/Ibu untuk menghadiri
-              rapat yang akan dilaksanakan pada:
-            </p>
-
-            <p class="surat-indent">
-              Hari, tanggal: Senin, 12 Januari 2026<br>
-              Waktu: 09.00 WIB sampai selesai<br>
-              Tempat: Ruang rapat sekolah<br>
-              Agenda: Persiapan dan pembagian tugas kegiatan literasi
-            </p>
-
-            <p>
-              Mengingat pentingnya kegiatan tersebut, kami berharap
-              Bapak/Ibu dapat hadir tepat waktu agar persiapan dapat
-              berjalan dengan baik.
-            </p>
-
-            <p>
-              Demikian undangan ini kami sampaikan. Atas perhatian
-              dan kehadiran Bapak/Ibu, kami mengucapkan terima kasih.
-            </p>
-
-            <p>Hormat kami,</p>
-
-            <p style="margin-top:45px;">
-              Kepala Sekolah<br><br><br>
-              <strong>Nama Kepala Sekolah</strong><br>
-              NIP. 000000000000000000
-            </p>
-          </div>
-
-          <div class="surat-info">
-            <p>
-              <strong>Catatan:</strong> Nama lembaga, alamat, nomor
-              surat, dan identitas dalam contoh tersebut bersifat
-              ilustratif. Dalam surat yang sebenarnya, seluruh
-              identitas harus disesuaikan dengan lembaga penerbit.
-            </p>
-          </div>
-
-          <h3>C. Bentuk Tata Letak Surat</h3>
-
-          <p>
-            Selain memiliki struktur, surat resmi juga dapat disusun
-            dengan bentuk tata letak yang berbeda. Perbedaan ini
-            terutama terlihat pada posisi tanggal, alamat tujuan,
-            paragraf, dan bagian penutup.
-          </p>
-
-          <ul>
-            <li><strong>Lurus penuh (full block style):</strong> seluruh bagian surat dimulai dari batas kiri, termasuk tanggal dan penutup.</li>
-            <li><strong>Lurus (block style):</strong> sebagian besar bagian surat rata kiri, sedangkan tanggal dan beberapa bagian penutup dapat ditempatkan di sisi kanan.</li>
-            <li><strong>Setengah lurus (semi-block style):</strong> bentuk lurus dengan paragraf isi yang menjorok pada awal baris.</li>
-            <li><strong>Lekuk (indented style):</strong> baris-baris tertentu pada alamat tujuan atau bagian lainnya dibuat menjorok.</li>
-            <li><strong>Menggantung (hanging paragraph style):</strong> baris pertama paragraf dimulai dari kiri, sedangkan baris berikutnya menjorok ke dalam.</li>
-          </ul>
-
-          <p>
-            Dalam praktiknya, bentuk surat dapat mengikuti pedoman
-            administrasi masing-masing instansi. Hal yang paling
-            penting adalah konsistensi tata letak, keterbacaan,
-            dan kelengkapan informasi.
-          </p>
-        </section>
-
-        <!-- 1.4 -->
-
-        <section class="surat-card" id="bahasa">
-          <span class="surat-subtitle">Slide 1.4</span>
-
-          <h2>Penggunaan Bahasa dalam Surat Resmi</h2>
-
-          <p>
-            Bahasa dalam surat resmi harus mampu menyampaikan maksud
-            secara tepat sekaligus menjaga kesantunan hubungan antara
-            pengirim dan penerima. Oleh karena itu, pemilihan kata dan
-            penyusunan kalimat perlu diperhatikan.
-          </p>
-
-          <h3>A. Menggunakan Bahasa Formal</h3>
-
-          <p>
-            Bahasa formal adalah bahasa yang sesuai dengan situasi
-            resmi. Penggunaannya menghindari ungkapan percakapan
-            sehari-hari, bahasa gaul, atau kata-kata yang terlalu
-            santai.
-          </p>
-
-          <div class="surat-wrong">
-            Tidak tepat: "Kami mau ngasih tahu kalau rapatnya diundur."
-          </div>
-
-          <div class="surat-correct">
-            Lebih tepat: "Kami informasikan bahwa rapat tersebut ditunda."
-          </div>
-
-          <h3>B. Menggunakan Bahasa yang Jelas dan Akurat</h3>
-
-          <p>
-            Kalimat dalam surat harus mudah dipahami dan tidak
-            menimbulkan makna ganda. Informasi tentang waktu, tempat,
-            pihak yang dituju, dan tindakan yang diminta harus
-            dinyatakan secara spesifik.
-          </p>
-
-          <div class="surat-wrong">
-            Kurang jelas: "Kegiatan dilaksanakan minggu depan di tempat biasa."
-          </div>
-
-          <div class="surat-correct">
-            Lebih jelas: "Kegiatan dilaksanakan pada Senin, 12 Januari 2026, pukul 08.00 WIB di aula sekolah."
-          </div>
-
-          <h3>C. Menggunakan Kata Baku dan Sopan</h3>
-
-          <p>
-            Kata baku adalah kata yang penulisannya mengikuti kaidah
-            bahasa Indonesia. Dalam surat resmi, kata baku membantu
-            menjaga ketepatan dan keseragaman bahasa.
-          </p>
-
-          <p>
-            Selain baku, pilihan kata juga perlu memperhatikan
-            kesantunan. Permohonan, undangan, atau pemberitahuan
-            sebaiknya disampaikan dengan ungkapan yang menghargai
-            penerima surat.
-          </p>
-
-          <div class="surat-note">
-            <p>
-              <strong>Prinsip utama:</strong> Bahasa surat resmi
-              sebaiknya formal, jelas, akurat, baku, dan santun.
-              Hindari kalimat yang terlalu panjang, berbelit-belit,
-              atau mengandung informasi yang tidak diperlukan.
-            </p>
-          </div>
-        </section>
-
-        <!-- 1.5 -->
-
-        <section class="surat-card" id="kaidah">
-          <span class="surat-subtitle">Slide 1.5</span>
-
-          <h2>Kaidah Penulisan Berdasarkan EYD Edisi V</h2>
-
-          <p>
-            Ejaan adalah aturan penulisan bahasa yang mencakup
-            penggunaan huruf, penulisan kata, dan penggunaan tanda
-            baca. Dalam surat resmi, ejaan perlu diperhatikan agar
-            dokumen terlihat tertib dan informasi tidak menimbulkan
-            kesalahpahaman.
-          </p>
-
-          <h3>A. Huruf Kapital</h3>
-
-          <p>
-            Huruf kapital digunakan pada bagian tertentu sesuai
-            kaidah Ejaan Bahasa Indonesia yang Disempurnakan (EYD)
-            Edisi V.
-          </p>
-
-          <ul>
-            <li>Huruf pertama pada awal kalimat.</li>
-            <li>Nama orang dan nama panggilan tertentu.</li>
-            <li>Nama agama, kitab suci, dan Tuhan.</li>
-            <li>Nama bangsa, suku, dan bahasa.</li>
-            <li>Nama hari, bulan, dan hari besar.</li>
-            <li>Nama geografi atau tempat tertentu.</li>
-            <li>Nama lembaga, organisasi, dan instansi resmi.</li>
-            <li>Huruf pertama setiap kata dalam judul, kecuali kata tugas tertentu yang tidak berada di awal judul.</li>
-            <li>Kata sapaan atau pengacuan kepada orang tertentu, seperti Bapak, Ibu, dan Anda.</li>
-          </ul>
-
-          <p><strong>Contoh:</strong></p>
-          <div class="surat-correct">
-            Rapat dilaksanakan pada Senin, 12 Januari 2026.
-          </div>
-          <div class="surat-correct">
-            Surat ditujukan kepada Kepala Dinas Pendidikan Kabupaten Contoh.
-          </div>
-          <div class="surat-correct">
-            Kami mengucapkan terima kasih atas perhatian Bapak.
-          </div>
-
-          <h3>B. Huruf Miring</h3>
-
-          <p>
-            Huruf miring digunakan dalam beberapa keadaan, antara lain:
-          </p>
-
-          <ul>
-            <li>Menuliskan judul buku, film, album, atau media yang disebutkan dalam kalimat.</li>
-            <li>Memberikan penegasan atau pengkhususan pada huruf, bagian kata, kata, atau kelompok kata.</li>
-            <li>Menuliskan kata atau ungkapan dalam bahasa asing atau bahasa daerah yang belum diserap ke dalam bahasa Indonesia.</li>
-          </ul>
-
-          <p><strong>Contoh:</strong></p>
-          <div class="surat-correct">
-            Istilah <em>full block style</em> digunakan untuk menyebut salah satu bentuk tata letak surat.
-          </div>
-          <div class="surat-correct">
-            Kata <em>efektif</em> menjadi salah satu ciri kalimat yang baik.
-          </div>
-
-          <h3>C. Huruf Tebal</h3>
-
-          <p>
-            Huruf tebal digunakan untuk menegaskan bagian tulisan
-            yang dianggap penting. Dalam dokumen, huruf tebal juga
-            lazim digunakan pada judul atau subjudul agar susunan
-            informasi lebih mudah dikenali.
-          </p>
-
-          <p>
-            Huruf tebal dapat digunakan untuk menegaskan bagian teks
-            yang sebelumnya telah ditulis miring. Penggunaannya
-            harus tetap wajar agar dokumen tidak terlihat berlebihan.
-          </p>
-
-          <h3>D. Singkatan dan Akronim</h3>
-
-          <p>
-            Singkatan adalah bentuk pendek dari satu atau beberapa
-            kata. Akronim merupakan singkatan yang dibentuk dari
-            gabungan huruf atau suku kata dan dilafalkan sebagai kata.
-          </p>
-
-          <div class="surat-table-wrap">
-            <table class="surat-table">
-              <thead>
-                <tr>
-                  <th>Bentuk</th>
-                  <th>Penjelasan</th>
-                  <th>Contoh</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Singkatan gelar</td>
-                  <td>Singkatan nama gelar diikuti tanda titik pada unsur singkatannya.</td>
-                  <td>S.H., M.Pd., Dr.</td>
-                </tr>
-                <tr>
-                  <td>Singkatan umum</td>
-                  <td>Beberapa singkatan menggunakan tanda titik sesuai kaidah.</td>
-                  <td>hlm., dll., yth.</td>
-                </tr>
-                <tr>
-                  <td>Akronim nama diri</td>
-                  <td>Akronim nama diri yang berupa gabungan huruf awal ditulis dengan huruf kapital.</td>
-                  <td>Bulog, LAN.</td>
-                </tr>
-                <tr>
-                  <td>Akronim bukan nama diri</td>
-                  <td>Ditulis dengan huruf kecil.</td>
-                  <td>pemilu, iptek.</td>
-                </tr>
-                <tr>
-                  <td>Lambang satuan</td>
-                  <td>Lambang satuan ukuran tidak diikuti tanda titik.</td>
-                  <td>kg, cm, km.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <p>
-            Perlu dibedakan antara singkatan dan lambang satuan.
-            Singkatan gelar seperti S.H. menggunakan tanda titik,
-            sedangkan lambang satuan seperti kg dan cm tidak
-            menggunakan tanda titik.
-          </p>
-
-          <h3>E. Tanda Baca</h3>
-
-          <p>
-            Tanda baca membantu pembaca memahami hubungan antarkata
-            dan antarkalimat. Beberapa tanda baca yang sering
-            digunakan dalam surat resmi antara lain:
-          </p>
-
-          <ul>
-            <li><strong>Titik (.):</strong> digunakan untuk mengakhiri kalimat pernyataan dan sesuai ketentuan pada singkatan tertentu.</li>
-            <li><strong>Koma (,):</strong> digunakan untuk memisahkan unsur perincian, bagian kalimat, atau unsur sapaan.</li>
-            <li><strong>Titik dua (:):</strong> digunakan antara lain untuk mengawali perincian setelah pernyataan lengkap.</li>
-            <li><strong>Tanda hubung (-):</strong> digunakan pada bentuk tertentu, misalnya kata ulang dan penulisan tanggal tertentu.</li>
-            <li><strong>Tanda pisah (—):</strong> digunakan untuk mengapit keterangan tambahan atau menyatakan rentang tertentu sesuai kaidah.</li>
-          </ul>
-
-          <h3>F. Penulisan Tanggal dan Alamat Surat</h3>
-
-          <p>
-            Penulisan tanggal dan alamat tujuan perlu diperhatikan
-            karena keduanya merupakan bagian penting dalam surat.
-            Penulisan tanggal surat tidak perlu diakhiri tanda titik.
-            Alamat tujuan yang ditulis sebagai bagian tersendiri juga
-            tidak perlu diakhiri tanda titik.
-          </p>
-
-          <div class="surat-correct">
-            Kabupaten Contoh, 5 Januari 2026
-          </div>
-          <div class="surat-correct">
-            Yth. Kepala Dinas Pendidikan Kabupaten Contoh
-          </div>
-
-          <div class="surat-wrong">
-            Yth. Kepala Dinas Pendidikan Kabupaten Contoh.
-          </div>
-
-          <p>
-            Sapaan Yth. merupakan bentuk singkat dari Yang terhormat.
-            Jika digunakan, penulisannya diikuti tanda titik sesuai
-            kaidah singkatan.
-          </p>
-
-          <div class="surat-note">
-            <p>
-              <strong>Catatan penting:</strong> Penulisan surat resmi
-              perlu mengikuti EYD Edisi V dan pedoman tata naskah
-              dinas atau administrasi yang berlaku di lembaga masing-masing.
-              Ketentuan teknis tertentu dapat berbeda sesuai jenis
-              surat dan aturan instansi.
-            </p>
-          </div>
-        </section>
-
-        <!-- 1.6 -->
-
-        <section class="surat-card" id="kata-baku">
-          <span class="surat-subtitle">Slide 1.6</span>
-
-          <h2>Kata Baku dan Kalimat Efektif</h2>
-
-          <h3>A. Pengertian Kata Baku</h3>
-
-          <p>
-            Kata baku adalah kata yang penulisan dan penggunaannya
-            mengikuti kaidah bahasa Indonesia. Kata baku digunakan
-            dalam situasi resmi, termasuk surat dinas, laporan,
-            pengumuman, dan dokumen pekerjaan.
-          </p>
-
-          <p>
-            Untuk memastikan kebakuan suatu kata, kita dapat
-            memeriksanya melalui Kamus Besar Bahasa Indonesia (KBBI).
-            Pemeriksaan ini penting karena kata yang sering digunakan
-            dalam percakapan belum tentu merupakan bentuk baku.
-          </p>
-
-          <div class="surat-table-wrap">
-            <table class="surat-table">
-              <thead>
-                <tr>
-                  <th>Bentuk Tidak Baku atau Nonformal</th>
-                  <th>Bentuk yang Tepat dalam Surat Resmi</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>nggak / ngak</td>
-                  <td>tidak</td>
-                </tr>
-                <tr>
-                  <td>gue</td>
-                  <td>saya</td>
-                </tr>
-                <tr>
-                  <td>makasih</td>
-                  <td>terima kasih</td>
-                </tr>
-                <tr>
-                  <td>ngasih tahu</td>
-                  <td>memberitahukan / menyampaikan informasi</td>
-                </tr>
-                <tr>
                   <td>ijin</td>
-                  <td>izin</td>
+                  <td><strong>izin</strong></td>
+                  <td>Peserta didik mengajukan izin tidak mengikuti kegiatan.</td>
                 </tr>
                 <tr>
                   <td>aktifitas</td>
-                  <td>aktivitas</td>
+                  <td><strong>aktivitas</strong></td>
+                  <td>Aktivitas pembelajaran dilaksanakan di aula.</td>
                 </tr>
                 <tr>
                   <td>resiko</td>
-                  <td>risiko</td>
+                  <td><strong>risiko</strong></td>
+                  <td>Setiap pekerjaan memiliki risiko.</td>
                 </tr>
                 <tr>
                   <td>analisa</td>
-                  <td>analisis</td>
+                  <td><strong>analisis</strong></td>
+                  <td>Panitia melakukan analisis terhadap hasil kegiatan.</td>
+                </tr>
+                <tr>
+                  <td>praktek</td>
+                  <td><strong>praktik</strong></td>
+                  <td>Peserta mengikuti praktik kerja lapangan.</td>
+                </tr>
+                <tr>
+                  <td>sekedar</td>
+                  <td><strong>sekadar</strong></td>
+                  <td>Surat tersebut bukan sekadar pemberitahuan.</td>
+                </tr>
+                <tr>
+                  <td>nasehat</td>
+                  <td><strong>nasihat</strong></td>
+                  <td>Kepala sekolah memberikan nasihat kepada peserta didik.</td>
+                </tr>
+                <tr>
+                  <td>karir</td>
+                  <td><strong>karier</strong></td>
+                  <td>Peserta didik mulai merencanakan kariernya.</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <h3>B. Pengertian Kalimat Efektif</h3>
+          <p>
+            Perlu diperhatikan bahwa kata baku tidak hanya
+            berkaitan dengan bentuk dasar. Kata turunannya
+            juga harus ditulis sesuai dengan kaidah pembentukan
+            kata. Misalnya, kata <em>analisis</em> membentuk
+            kata kerja <em>menganalisis</em>, bukan
+            <em>mengalisa</em>.
+          </p>
+
+          <h3>B. Kalimat Efektif</h3>
 
           <p>
-            Kalimat efektif adalah kalimat yang mampu menyampaikan
-            gagasan secara tepat, jelas, dan mudah dipahami. Kalimat
-            efektif tidak harus selalu pendek, tetapi susunannya
-            harus teratur dan tidak mengandung unsur yang tidak
-            diperlukan.
+            Kalimat efektif adalah kalimat yang mampu
+            menyampaikan gagasan secara tepat, jelas, dan
+            mudah dipahami. Dalam surat resmi, kalimat efektif
+            sangat penting karena isi surat harus dapat
+            diterima tanpa menimbulkan penafsiran yang keliru.
           </p>
 
           <p>
-            Menurut Sasangka (2019), ciri kalimat efektif dapat
-            dijelaskan melalui lima prinsip berikut:
+            Dalam materi ini, kalimat efektif ditinjau melalui
+            lima prinsip berikut sebagai panduan pembelajaran.
           </p>
 
-          <h3>C. Lima Ciri Kalimat Efektif</h3>
+          <ol>
+            <li>
+              <strong>Kesepadanan struktur.</strong>
+              Kalimat memiliki unsur-unsur yang jelas dan
+              hubungan antarbagiannya tersusun dengan tepat.
+            </li>
+            <li>
+              <strong>Keparalelan bentuk.</strong>
+              Unsur-unsur yang memiliki fungsi sama disusun
+              dengan bentuk gramatikal yang sejajar.
+            </li>
+            <li>
+              <strong>Kehematan kata.</strong>
+              Kalimat tidak menggunakan kata yang berlebihan
+              atau mengulang informasi yang sama tanpa alasan.
+            </li>
+            <li>
+              <strong>Kecermatan makna.</strong>
+              Pilihan kata dan susunan kalimat tidak
+              menimbulkan makna ganda atau salah pengertian.
+            </li>
+            <li>
+              <strong>Kelogisan.</strong>
+              Isi kalimat dapat diterima oleh akal dan
+              hubungan maknanya masuk akal.
+            </li>
+          </ol>
 
-          <h4>1. Lugas</h4>
+          <div class="example-box">
+            <div class="example-title">Contoh kalimat tidak efektif dan perbaikannya</div>
 
-          <p>
-            Kalimat disampaikan secara langsung pada inti informasi
-            tanpa berputar-putar atau menggunakan ungkapan yang
-            tidak diperlukan.
-          </p>
-
-          <div class="surat-wrong">
-            Kurang lugas: "Bersama dengan surat ini, kami bermaksud untuk menyampaikan informasi mengenai kegiatan yang akan dilaksanakan."
-          </div>
-
-          <div class="surat-correct">
-            Lebih lugas: "Melalui surat ini, kami menyampaikan informasi tentang kegiatan yang akan dilaksanakan."
-          </div>
-
-          <h4>2. Tepat</h4>
-
-          <p>
-            Kata dan informasi yang digunakan harus sesuai dengan
-            maksud yang ingin disampaikan.
-          </p>
-
-          <div class="surat-wrong">
-            Kurang tepat: "Peserta diminta membawa sesuatu untuk kegiatan."
-          </div>
-
-          <div class="surat-correct">
-            Lebih tepat: "Peserta diminta membawa alat tulis dan buku catatan."
-          </div>
-
-          <h4>3. Jelas</h4>
-
-          <p>
-            Kalimat harus mudah dipahami dan tidak menimbulkan
-            penafsiran yang berbeda.
-          </p>
-
-          <div class="surat-wrong">
-            Kurang jelas: "Rapat dilaksanakan setelah kegiatan selesai."
-          </div>
-
-          <div class="surat-correct">
-            Lebih jelas: "Rapat dilaksanakan pada pukul 13.00 WIB setelah kegiatan pembelajaran selesai."
-          </div>
-
-          <h4>4. Hemat</h4>
-
-          <p>
-            Kalimat tidak menggunakan kata yang berlebihan atau
-            mengulang makna yang sama.
-          </p>
-
-          <div class="surat-wrong">
-            Tidak hemat: "Para peserta-peserta dimohon untuk hadir."
-          </div>
-
-          <div class="surat-correct">
-            Hemat: "Para peserta dimohon hadir."
-          </div>
-
-          <h4>5. Sejajar</h4>
-
-          <p>
-            Unsur-unsur yang memiliki kedudukan sama dalam kalimat
-            harus menggunakan bentuk yang sejenis atau konsisten.
-          </p>
-
-          <div class="surat-wrong">
-            Tidak sejajar: "Kegiatan ini bertujuan meningkatkan kemampuan membaca, penulisan, dan agar peserta mampu berbicara."
-          </div>
-
-          <div class="surat-correct">
-            Sejajar: "Kegiatan ini bertujuan meningkatkan kemampuan membaca, menulis, dan berbicara."
-          </div>
-
-          <div class="surat-note">
+            <p><strong>1. Pemborosan kata</strong></p>
             <p>
-              <strong>Kesimpulan:</strong> Surat resmi yang baik
-              menggunakan kata baku dan kalimat efektif. Dengan
-              demikian, pesan dapat diterima secara tepat tanpa
-              menimbulkan kebingungan bagi pembacanya.
+              Tidak efektif: "Para peserta-peserta diharapkan
+              untuk segera masuk ke dalam ruangan."
             </p>
+            <p>
+              Efektif: "Para peserta diharapkan segera masuk
+              ke ruangan."
+            </p>
+
+            <hr>
+
+            <p><strong>2. Ketidakjelasan subjek</strong></p>
+            <p>
+              Tidak efektif: "Kepada seluruh peserta diminta
+              mengumpulkan formulir."
+            </p>
+            <p>
+              Efektif: "Seluruh peserta diminta mengumpulkan formulir."
+            </p>
+
+            <hr>
+
+            <p><strong>3. Ketidakparalelan bentuk</strong></p>
+            <p>
+              Tidak efektif: "Kegiatan ini bertujuan meningkatkan
+              kedisiplinan, pembentukan karakter, dan agar peserta
+              lebih bertanggung jawab."
+            </p>
+            <p>
+              Efektif: "Kegiatan ini bertujuan meningkatkan
+              kedisiplinan, membentuk karakter, dan menumbuhkan
+              tanggung jawab peserta."
+            </p>
+
+            <hr>
+
+            <p><strong>4. Ketidakcermatan makna</strong></p>
+            <p>
+              Tidak efektif: "Surat tersebut diberikan kepada
+              kepala sekolah baru."
+            </p>
+            <p>
+              Kalimat tersebut dapat menimbulkan dua penafsiran:
+              kepala sekolah yang baru diangkat atau surat yang
+              diberikan kepada kepala sekolah yang baru.
+            </p>
+            <p>
+              Lebih jelas: "Surat tersebut diberikan kepada
+              kepala sekolah yang baru diangkat."
+            </p>
+          </div>
+
+          <div class="note-box">
+            <strong>Tips menulis:</strong>
+            Setelah menyusun surat, bacalah kembali setiap
+            kalimat. Periksa apakah subjek dan predikatnya
+            jelas, apakah ada kata yang berulang, dan apakah
+            maksudnya dapat dipahami oleh penerima.
           </div>
         </section>
 
-        <!-- 1.7 -->
-
-        <section class="surat-card" id="media-komunikasi">
-          <span class="surat-subtitle">Slide 1.7</span>
-
-          <h2>Surat Kuasa, Pos-el, dan Poster</h2>
+        <section class="content-card" id="bagian-17">
+          <h2>1.7 Surat Kuasa, Pos-el, dan Poster</h2>
 
           <h3>A. Surat Kuasa</h3>
 
           <p>
-            Surat kuasa adalah surat yang berisi pemberian wewenang
-            dari seseorang atau pihak tertentu kepada orang lain
-            untuk melakukan tindakan yang telah ditentukan atas
-            nama pemberi kuasa.
+            Surat kuasa adalah surat yang memberikan kewenangan
+            kepada seseorang untuk melakukan tindakan tertentu
+            atas nama pemberi kuasa. Surat ini digunakan ketika
+            seseorang tidak dapat melaksanakan sendiri suatu
+            urusan dan mempercayakan pelaksanaannya kepada pihak
+            lain.
           </p>
 
           <p>
-            Surat kuasa biasanya digunakan ketika seseorang tidak
-            dapat melakukan suatu urusan sendiri sehingga memberikan
-            kewenangan kepada pihak lain. Contohnya adalah memberikan
-            kuasa untuk mengambil dokumen, mengurus administrasi,
-            atau melakukan tindakan tertentu yang diperbolehkan.
+            Surat kuasa perlu menjelaskan identitas pemberi
+            kuasa dan penerima kuasa, tindakan yang dikuasakan,
+            serta batas kewenangan yang diberikan. Ketentuan
+            mengenai dokumen pendukung, saksi, meterai, atau
+            pengesahan dapat berbeda bergantung pada tujuan
+            surat dan persyaratan lembaga penerima.
           </p>
 
-          <h4>Unsur-Unsur Surat Kuasa</h4>
-
-          <ul>
-            <li><strong>Identitas pemberi kuasa:</strong> nama dan keterangan pihak yang memberikan wewenang.</li>
-            <li><strong>Identitas penerima kuasa:</strong> nama dan keterangan pihak yang menerima wewenang.</li>
-            <li><strong>Isi atau tugas kuasa:</strong> tindakan yang boleh dilakukan oleh penerima kuasa.</li>
-            <li><strong>Batas kewenangan:</strong> ruang lingkup tindakan yang diperbolehkan.</li>
-            <li><strong>Masa berlaku:</strong> jangka waktu atau ketentuan berlakunya kuasa jika diperlukan.</li>
-            <li><strong>Tanda tangan:</strong> pengesahan dari pemberi kuasa dan pihak terkait sesuai kebutuhan.</li>
-          </ul>
-
-          <h4>Contoh Sederhana Surat Kuasa</h4>
-
-          <div class="surat-example">
-            <p class="surat-center">SURAT KUASA</p>
-
-            <p>
-              Saya yang bertanda tangan di bawah ini:
-            </p>
-
-            <p>
-              Nama: Andi Pratama<br>
-              Alamat: Jalan Melati Nomor 10, Kabupaten Contoh
-            </p>
-
-            <p>
-              Selanjutnya disebut sebagai Pemberi Kuasa.
-            </p>
-
-            <p>
-              Dengan ini memberikan kuasa kepada:
-            </p>
-
-            <p>
-              Nama: Budi Santoso<br>
-              Alamat: Jalan Mawar Nomor 15, Kabupaten Contoh
-            </p>
-
-            <p>
-              Selanjutnya disebut sebagai Penerima Kuasa.
-            </p>
-
-            <p>
-              Untuk mengambil dokumen administrasi milik Pemberi
-              Kuasa di kantor yang bersangkutan.
-            </p>
-
-            <p>
-              Surat kuasa ini berlaku untuk keperluan tersebut
-              dan dibuat dengan sebenar-benarnya.
-            </p>
-
-            <p>
-              Kabupaten Contoh, 5 Januari 2026
-            </p>
-
-            <p>
-              Pemberi Kuasa
-              <br><br><br>
-              <strong>Andi Pratama</strong>
-            </p>
+          <div class="example-box">
+            <div class="example-title">Unsur yang umumnya terdapat dalam surat kuasa</div>
+            <ol>
+              <li>Judul surat, misalnya "Surat Kuasa".</li>
+              <li>Identitas pemberi kuasa.</li>
+              <li>Identitas penerima kuasa.</li>
+              <li>Uraian tindakan atau keperluan yang dikuasakan.</li>
+              <li>Batas kewenangan yang diberikan.</li>
+              <li>Tempat dan tanggal pembuatan surat.</li>
+              <li>Tanda tangan pihak yang berkaitan sesuai kebutuhan.</li>
+            </ol>
           </div>
 
           <p>
-            Contoh tersebut merupakan bentuk sederhana. Dalam
-            penggunaan sebenarnya, persyaratan surat kuasa dapat
-            berbeda sesuai kepentingan, jenis dokumen, dan ketentuan
-            lembaga yang menerima surat.
+            Contohnya, seseorang memberikan kuasa kepada anggota
+            keluarga untuk mengambil dokumen tertentu di suatu
+            lembaga. Kuasa tersebut hanya berlaku sesuai dengan
+            tindakan dan batas kewenangan yang dinyatakan dalam
+            surat serta ketentuan lembaga yang bersangkutan.
           </p>
 
           <h3>B. Pos-el (Surat Elektronik)</h3>
 
           <p>
-            Pos-el atau surat elektronik adalah sarana komunikasi
-            tertulis yang dikirimkan melalui jaringan internet.
-            Dalam lingkungan pendidikan dan pekerjaan, pos-el sering
-            digunakan untuk mengirim surat, dokumen, undangan,
-            laporan, atau informasi lainnya.
+            Pos-el atau surat elektronik adalah sarana
+            komunikasi tertulis yang dikirim dan diterima
+            melalui jaringan internet. Pos-el banyak digunakan
+            dalam lingkungan pendidikan, pekerjaan, organisasi,
+            dan komunikasi kelembagaan.
           </p>
 
           <p>
-            Walaupun dikirim secara digital, pos-el untuk kepentingan
-            resmi tetap harus menggunakan bahasa yang sopan, jelas,
-            dan sesuai dengan tujuan komunikasi.
+            Pos-el bukan jenis surat resmi dalam pengertian
+            bentuk surat tercetak, melainkan media komunikasi
+            digital. Meskipun demikian, pos-el dapat digunakan
+            untuk menyampaikan pesan formal apabila isi dan
+            tujuannya berkaitan dengan kepentingan resmi.
           </p>
 
-          <h4>Bagian Penting dalam Pos-el Resmi</h4>
+          <h4>Bagian-Bagian Pos-el Formal</h4>
 
           <ul>
-            <li><strong>Alamat penerima:</strong> alamat pos-el pihak yang dituju.</li>
-            <li><strong>Subjek:</strong> pokok isi pesan yang ditulis secara singkat dan jelas.</li>
-            <li><strong>Sapaan:</strong> pembuka yang sopan kepada penerima.</li>
-            <li><strong>Isi pesan:</strong> informasi atau maksud yang ingin disampaikan.</li>
-            <li><strong>Penutup:</strong> ucapan terima kasih atau harapan tindak lanjut.</li>
-            <li><strong>Identitas pengirim:</strong> nama dan keterangan pengirim.</li>
-            <li><strong>Lampiran:</strong> dokumen tambahan jika diperlukan.</li>
+            <li><strong>Penerima:</strong> alamat pos-el pihak yang dituju.</li>
+            <li><strong>Subjek:</strong> pokok atau tujuan pesan.</li>
+            <li><strong>Salam pembuka:</strong> sapaan yang sesuai dengan penerima.</li>
+            <li><strong>Isi pesan:</strong> informasi atau keperluan yang disampaikan.</li>
+            <li><strong>Salam penutup:</strong> ungkapan penutup yang santun.</li>
+            <li><strong>Identitas pengirim:</strong> nama dan keterangan yang diperlukan.</li>
+            <li><strong>Lampiran:</strong> dokumen pendukung jika diperlukan.</li>
           </ul>
 
-          <h4>Contoh Pos-el Resmi</h4>
+          <div class="example-box">
+            <div class="example-title">Contoh pos-el formal</div>
 
-          <div class="surat-example">
-            <p><strong>Kepada:</strong> penerima@example.id</p>
-            <p><strong>Subjek:</strong> Pengiriman Laporan Kegiatan Literasi</p>
+            <div class="letter-example">
+              <p><strong>Kepada:</strong> kepala.sekolah@contoh.sch.id</p>
+              <p><strong>Subjek:</strong> Permohonan Informasi Jadwal Seleksi Beasiswa</p>
 
-            <hr>
+              <br>
 
-            <p>Yth. Bapak/Ibu Penerima,</p>
+              <p>Yth. Kepala SMA Cahaya Bangsa,</p>
 
-            <p>
-              Dengan hormat,
-            </p>
+              <p>
+                Dengan hormat,
+              </p>
 
-            <p>
-              Melalui pos-el ini, saya mengirimkan laporan kegiatan
-              literasi sebagaimana yang telah diminta. Dokumen
-              laporan tersebut saya lampirkan untuk dapat diperiksa
-              lebih lanjut.
-            </p>
+              <p>
+                Saya ingin memperoleh informasi mengenai jadwal
+                seleksi beasiswa bagi peserta didik kelas XII.
+                Informasi tersebut saya perlukan sebagai bahan
+                persiapan untuk mengikuti proses pendaftaran.
+              </p>
 
-            <p>
-              Atas perhatian Bapak/Ibu, saya mengucapkan terima kasih.
-            </p>
+              <p>
+                Apabila berkenan, saya mohon informasi mengenai
+                persyaratan dan jadwal pelaksanaan seleksi tersebut.
+              </p>
 
-            <p>
-              Hormat saya,<br>
-              Nama Pengirim
-            </p>
-          </div>
+              <p>Atas perhatian dan bantuan yang diberikan, saya mengucapkan terima kasih.</p>
 
-          <h4>Langkah Membalas Pos-el</h4>
+              <br>
 
-          <ol>
-            <li>Buka aplikasi atau layanan pos-el.</li>
-            <li>Pilih pesan yang ingin dibalas.</li>
-            <li>Klik tombol "Balas" atau "Reply".</li>
-            <li>Tulis tanggapan sesuai isi pesan sebelumnya.</li>
-            <li>Periksa kembali alamat penerima, subjek, dan isi pesan.</li>
-            <li>Jika diperlukan, tambahkan lampiran dokumen.</li>
-            <li>Klik tombol "Kirim" setelah memastikan seluruh informasi benar.</li>
-          </ol>
-
-          <div class="surat-info">
-            <p>
-              <strong>Etika menggunakan pos-el:</strong> Gunakan
-              alamat pengirim yang pantas, tulis subjek yang jelas,
-              hindari huruf kapital seluruhnya, periksa lampiran,
-              dan jangan mengirimkan informasi rahasia kepada pihak
-              yang tidak berwenang.
-            </p>
+              <p>Hormat saya,</p>
+              <p>Nama Pengirim</p>
+              <p>Peserta Didik Kelas XII</p>
+            </div>
           </div>
 
           <h3>C. Poster sebagai Media Informasi</h3>
 
           <p>
             Poster adalah media publikasi yang memadukan unsur
-            tulisan dan visual untuk menyampaikan pesan kepada
-            masyarakat. Poster biasanya dibuat dengan kalimat
-            singkat, tampilan menarik, dan informasi yang mudah
-            dipahami.
+            tulisan dan visual untuk menyampaikan informasi,
+            ajakan, imbauan, atau promosi kepada masyarakat.
+            Poster dapat dipasang di tempat umum maupun
+            disebarkan melalui media digital.
           </p>
 
           <p>
-            Dalam lingkungan pendidikan dan pekerjaan, poster
-            dapat digunakan untuk mengumumkan kegiatan, menawarkan
-            produk, atau mengajak masyarakat melakukan tindakan
-            yang bermanfaat.
+            Poster bukan jenis surat resmi, tetapi dapat
+            digunakan sebagai media pendukung komunikasi
+            kelembagaan. Misalnya, sekolah dapat membuat
+            poster untuk mengumumkan kegiatan, menyampaikan
+            informasi pendaftaran, atau mengajak peserta didik
+            menjaga kebersihan lingkungan.
           </p>
 
-          <h4>Jenis-Jenis Poster</h4>
-
-          <div class="surat-table-wrap">
-            <table class="surat-table">
-              <thead>
-                <tr>
-                  <th>Jenis Poster</th>
-                  <th>Tujuan</th>
-                  <th>Contoh</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Poster kegiatan</strong></td>
-                  <td>Mengumumkan atau mengajak masyarakat mengikuti suatu acara.</td>
-                  <td>Poster seminar, lomba, pameran, dan pentas seni.</td>
-                </tr>
-                <tr>
-                  <td><strong>Poster niaga</strong></td>
-                  <td>Menawarkan barang atau jasa kepada calon konsumen.</td>
-                  <td>Poster promosi buku, makanan, atau layanan.</td>
-                </tr>
-                <tr>
-                  <td><strong>Poster layanan masyarakat</strong></td>
-                  <td>Mengedukasi atau mengajak masyarakat melakukan tindakan positif.</td>
-                  <td>Poster hemat energi, menjaga kebersihan, dan keselamatan berkendara.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h4>Unsur Poster yang Baik</h4>
-
-          <ul>
-            <li><strong>Judul atau slogan:</strong> menarik perhatian dan menggambarkan pesan utama.</li>
-            <li><strong>Informasi utama:</strong> menjelaskan hal yang ingin disampaikan.</li>
-            <li><strong>Gambar atau ilustrasi:</strong> mendukung pesan dan memperjelas informasi.</li>
-            <li><strong>Tipografi:</strong> jenis dan ukuran huruf harus mudah dibaca.</li>
-            <li><strong>Warna dan tata letak:</strong> disusun secara menarik tanpa mengganggu keterbacaan.</li>
-            <li><strong>Identitas atau kontak:</strong> dicantumkan jika dibutuhkan oleh tujuan poster.</li>
-          </ul>
-
-          <div class="surat-note">
-            <p>
-              <strong>Perlu diingat:</strong> Poster bukan sekadar
-              gambar yang menarik. Poster yang baik harus memiliki
-              pesan yang jelas, informasi yang benar, dan sasaran
-              pembaca yang tepat.
-            </p>
-          </div>
-        </section>
-
-        <!-- RANGKUMAN -->
-
-        <section class="surat-card" id="rangkuman">
-          <span class="surat-subtitle">Penutup Materi</span>
-
-          <h2>Rangkuman Bab 1</h2>
-
-          <p>
-            Setelah mempelajari seluruh materi, beberapa hal penting
-            yang perlu dipahami adalah:
-          </p>
+          <h4>Ciri-Ciri Poster yang Baik</h4>
 
           <ol>
-            <li>Surat resmi digunakan untuk menyampaikan informasi atau kepentingan formal dalam lingkungan lembaga, organisasi, pendidikan, dan pekerjaan.</li>
-            <li>Jenis surat resmi antara lain surat dinas, undangan, edaran, perintah, kuasa, permohonan, keputusan, dan penawaran.</li>
-            <li>Pokok informasi surat dapat ditemukan dengan bantuan pertanyaan ADIK SIMBA: apa, di mana, kapan, siapa, mengapa, dan bagaimana.</li>
-            <li>Makna tersurat tertulis secara langsung, sedangkan makna tersirat perlu disimpulkan berdasarkan petunjuk dalam teks.</li>
-            <li>Surat resmi memiliki bagian kepala surat, tubuh surat, dan kaki surat yang masing-masing memiliki fungsi.</li>
-            <li>Bahasa surat resmi harus formal, jelas, akurat, baku, dan santun.</li>
-            <li>Penulisan surat perlu memperhatikan kaidah EYD Edisi V, termasuk penggunaan huruf kapital, huruf miring, huruf tebal, singkatan, dan tanda baca.</li>
-            <li>Kata baku dan kalimat efektif membantu menyampaikan informasi secara tepat, lugas, jelas, hemat, dan sejajar.</li>
-            <li>Surat kuasa, pos-el, dan poster merupakan media komunikasi yang dapat digunakan sesuai kebutuhan.</li>
+            <li>Memiliki tujuan dan pesan yang jelas.</li>
+            <li>Menggunakan kalimat singkat, padat, dan mudah dipahami.</li>
+            <li>Memiliki judul atau slogan yang menarik perhatian.</li>
+            <li>Menggunakan gambar atau ilustrasi yang sesuai dengan pesan.</li>
+            <li>Memperhatikan keterbacaan huruf dan perpaduan warna.</li>
+            <li>Mencantumkan informasi penting seperti waktu, tempat, atau penyelenggara jika diperlukan.</li>
           </ol>
 
-          <div class="surat-note">
-            <p>
-              <strong>Inti pembelajaran:</strong> Kemampuan
-              mengomunikasikan informasi tidak hanya ditentukan oleh
-              kemampuan menulis, tetapi juga oleh kemampuan memahami
-              pesan, menilai informasi, memilih media, dan
-              menyampaikan gagasan secara bertanggung jawab.
-            </p>
+          <div class="info-box">
+            <strong>Hubungan ketiganya:</strong>
+            Surat kuasa merupakan dokumen pemberian kewenangan,
+            pos-el merupakan media komunikasi digital, sedangkan
+            poster merupakan media publikasi informasi. Ketiganya
+            memiliki fungsi berbeda, tetapi sama-sama membutuhkan
+            bahasa yang jelas dan sesuai dengan tujuan komunikasi.
           </div>
         </section>
 
-        <!-- KUTIPAN -->
+        <section class="content-card" id="rangkuman">
+          <h2>Rangkuman Bab 1</h2>
 
-        <div class="surat-quote">
+          <ol>
+            <li>
+              Surat resmi merupakan sarana komunikasi tertulis
+              yang digunakan untuk menyampaikan kepentingan
+              secara formal. Surat dinas merupakan surat resmi
+              yang berkaitan dengan kepentingan kedinasan suatu
+              instansi.
+            </li>
+            <li>
+              Surat resmi memiliki berbagai tujuan, seperti
+              menyampaikan pemberitahuan, permohonan, undangan,
+              penugasan, dan lamaran pekerjaan.
+            </li>
+            <li>
+              Informasi dalam surat dapat berupa makna tersurat
+              yang disampaikan secara langsung maupun makna
+              tersirat yang dipahami melalui konteks.
+            </li>
+            <li>
+              Struktur surat secara umum meliputi bagian kepala,
+              isi, dan kaki surat. Susunan terperinci dapat
+              berbeda sesuai dengan jenis surat dan pedoman
+              tata naskah yang digunakan.
+            </li>
+            <li>
+              Tata letak surat memiliki beberapa variasi, antara
+              lain bentuk lurus penuh, lurus, setengah lurus A,
+              setengah lurus B, lekuk, dan paragraf menggantung.
+            </li>
+            <li>
+              Bahasa surat resmi harus baku, jelas, lugas,
+              santun, dan konsisten.
+            </li>
+            <li>
+              EYD Edisi V menjadi salah satu acuan dalam
+              penggunaan huruf, penulisan kata, tanda baca,
+              dan unsur serapan.
+            </li>
+            <li>
+              Penggunaan kata baku dan kalimat efektif membantu
+              menghasilkan surat yang mudah dipahami serta
+              mengurangi kemungkinan salah pengertian.
+            </li>
+            <li>
+              Surat kuasa digunakan untuk memberikan kewenangan
+              tertentu, pos-el menjadi media komunikasi digital,
+              sedangkan poster merupakan media publikasi
+              informasi.
+            </li>
+          </ol>
+        </section>
+
+        <section class="reference-section" id="rujukan">
+          <h2>Rujukan Utama Materi</h2>
+
           <p>
-            “Kata-kata yang disampaikan dengan jelas dan tepat
-            dapat membangun pemahaman, kepercayaan, dan kerja sama.”
+            Materi ini disusun dengan memperhatikan kaidah
+            bahasa Indonesia dan pedoman penulisan surat.
+            Untuk memperdalam pemahaman, pembaca dapat
+            mempelajari sumber-sumber berikut.
           </p>
-          <strong>— Mandala Aksara</strong>
+
+          <ol class="reference-list">
+            <li>
+              <strong>EYD Edisi V – Badan Bahasa.</strong><br>
+              <a
+                href="https://ejaan.kemendikdasmen.go.id/penggunaan-huruf/eyd/surat-keputusan/eyd/penggunaan-huruf/huruf-kapital/eyd/unsur-serapan/eyd/penggunaan-tanda-baca/tanda-kurung-siku/eyd/penulisan-kata/pemenggalan-kata/eyd/penulisan-kata/kata-dasar/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Buka laman EYD Edisi V
+              </a>
+              <p>
+                Menjadi acuan penggunaan huruf, penulisan kata,
+                tanda baca, dan unsur serapan dalam bahasa Indonesia.
+              </p>
+            </li>
+
+            <li>
+              <strong>Badan Bahasa. Bahan Penyuluhan Tata Naskah Dinas.</strong><br>
+              <a
+                href="https://badanbahasa.kemendikdasmen.go.id/resource/doc/files/Bahan_Penyuluhan_Tata_Naskah_Dinas_Bahasa_Indonesia_dalam_Surat_Dinas4.pdf"
+                target="_blank"
+                rel="noopener noreferrer">
+                Buka dokumen Bahan Penyuluhan Tata Naskah Dinas
+              </a>
+              <p>
+                Menjadi acuan untuk memahami format, susunan,
+                dan tata letak surat dinas.
+              </p>
+            </li>
+
+            <li>
+              <strong>
+                Kementerian Hak Asasi Manusia Republik Indonesia.
+                Peraturan Menteri Hak Asasi Manusia Nomor 4 Tahun 2025
+                tentang Pedoman Tata Naskah Dinas.
+              </strong><br>
+              <a
+                href="https://peraturan.bpk.go.id/Download/381588/Permenham-no-4-tahun-2025.pdf"
+                target="_blank"
+                rel="noopener noreferrer">
+                Buka dokumen Pedoman Tata Naskah Dinas
+              </a>
+              <p>
+                Menjadi contoh penerapan susunan dan tata penulisan
+                surat dinas dalam pedoman resmi suatu instansi.
+              </p>
+            </li>
+          </ol>
+
+          <div class="note-box">
+            <strong>Catatan penggunaan rujukan:</strong>
+            Pedoman tata naskah dinas dapat berbeda antarinstansi.
+            Oleh karena itu, contoh format dalam materi ini
+            digunakan untuk pembelajaran dan perlu disesuaikan
+            dengan ketentuan lembaga yang menerbitkan surat.
+          </div>
+        </section>
+
+        <div class="quote-box">
+          <blockquote>
+            "Ketepatan kata mencerminkan kejernihan pikiran,
+            sedangkan kesantunan bahasa menunjukkan kematangan
+            dalam berkomunikasi."
+          </blockquote>
+          <cite>— Mandala Aksara</cite>
         </div>
 
-        <!-- NAVIGASI BAWAH -->
-
-        <div class="surat-bottom-nav">
-          <a href="kelas-xii.html">← Kembali ke Daftar Materi Kelas XII</a>
-          <a href="bab-2-teks-prosedur-kompleks.html">Bab Berikutnya: Teks Prosedur Kompleks →</a>
+        <div class="chapter-navigation">
+          <a href="kelas-xii.html">← Kembali ke Kelas XII</a>
+          <a href="bab-2-teks-prosedur-kompleks.html">
+            Bab Berikutnya: Teks Prosedur Kompleks →
+          </a>
         </div>
 
-      </article>
+      </div>
     </div>
   </main>
 
-  <!-- FOOTER -->
-
   <footer class="site-footer">
     <div class="footer-main">
-
       <div class="footer-brand">
         <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
-
         <div class="footer-brand-copy">
           <b>MANDALA AKSARA</b>
           <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
@@ -1994,15 +1631,14 @@
         <a href="perpustakaan.html">Perpustakaan Digital</a>
         <a href="kelas-virtual.html">Kelas Virtual</a>
       </nav>
-
     </div>
 
     <div class="copyright">
-      © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+      © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna,
+      Membentangkan Cakrawala.
     </div>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
