@@ -407,6 +407,32 @@
         font-size: 18px;
       }
     }
+    
+/* MEMASTIKAN DAFTAR PEMBAHASAN TERSUSUN VERTIKAL */
+.analysis-sidebar nav {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 3px;
+  width: 100%;
+}
+
+.analysis-sidebar nav a {
+  display: block !important;
+  width: 100%;
+  white-space: normal;
+  text-align: left;
+  padding: 9px 11px;
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .analysis-sidebar nav {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
+  }
+}
   </style>
 </head>
 
