@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Karya dan Kreativitas Mandala Aksara: ruang apresiasi, analisis, dan interpretasi karya sastra.">
+  <meta name="theme-color" content="#0d203a">
+
+  <title>Karya dan Kreativitas | Mandala Aksara</title>
+
+  <link rel="stylesheet" href="style.css?v=3">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --navy-dark: #0D203A;
+      --orange: #F28C28;
+      --gold: #C69A45;
+      --soft: #F3F5F8;
+      --text: #263445;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .works-hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .works-hero::before,
+    .works-hero::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(198,154,69,.17);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .works-hero::before {
+      width: 280px;
+      height: 280px;
+      top: -160px;
+      right: -60px;
+    }
+
+    .works-hero::after {
+      width: 230px;
+      height: 230px;
+      bottom: -150px;
+      left: -60px;
+      border-color: rgba(242,140,40,.16);
+    }
+
+    .works-hero h1 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 15px;
+      font-family: Georgia, serif;
+      font-size: clamp(30px, 5vw, 44px);
+    }
+
+    .works-hero h1 span {
+      color: var(--orange);
+    }
+
+    .works-hero p {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: auto;
+      color: #e7edf5;
+      line-height: 1.8;
+    }
+
+    .works-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .breadcrumb {
+      margin-bottom: 25px;
+      color: #758397;
+      font-size: 14px;
+    }
+
+    .breadcrumb a {
+      color: #D97716;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .works-intro {
+      max-width: 850px;
+      margin: 0 auto 38px;
+      text-align: center;
+      color: #667487;
+      line-height: 1.85;
+    }
+
+    .section-heading {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .section-description {
+      max-width: 750px;
+      margin: 0 auto 30px;
+      color: #718096;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .work-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      min-width: 0;
+      background: #fff;
+      border: 1px solid #e4e9ef;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(20,43,74,.07);
+      text-decoration: none;
+      color: inherit;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .work-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 27px rgba(20,43,74,.13);
+    }
+
+    .work-card:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 4px;
+    }
+
+    .work-cover {
+      min-height: 175px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      padding: 20px;
+      background: linear-gradient(135deg, #e8edf4, #f8eee3);
+      color: var(--navy);
+      text-align: center;
+    }
+
+    .work-cover .symbol {
+      font-size: 43px;
+      line-height: 1;
+    }
+
+    .work-cover small {
+      color: #657386;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .work-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 22px;
+    }
+
+    .work-category {
+      margin-bottom: 9px;
+      color: #D97716;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .work-content h3 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: 21px;
+      line-height: 1.35;
+    }
+
+    .work-content p {
+      flex: 1;
+      margin: 0;
+      color: #667487;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .work-link {
+      display: inline-block;
+      margin-top: 19px;
+      color: #D97716;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .works-note {
+      margin-top: 38px;
+      padding: 20px 22px;
+      background: #fff7e9;
+      border-left: 4px solid var(--orange);
+      border-radius: 6px;
+      color: #73552d;
+      line-height: 1.8;
+    }
+
+    .works-quote {
+      max-width: 850px;
+      margin: 10px auto 50px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .works-quote blockquote {
+      margin: 0;
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    .works-quote cite {
+      display: block;
+      margin-top: 12px;
+      color: var(--gold);
+      font-style: normal;
+      font-weight: bold;
+    }
+
+    @media (max-width: 850px) {
+      .works-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .works-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .works-hero {
+        padding: 48px 18px;
+      }
+
+      .works-container {
+        padding: 32px 16px;
+      }
+
+      .work-cover {
+        min-height: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="top-inner">
+      <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+
+      <div class="top-actions">
+        <form class="search" role="search" onsubmit="return searchSite(event)">
+          <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+          <button type="submit" aria-label="Cari">⌕</button>
+        </form>
+
+        <a class="top-virtual" href="kelas-virtual.html">
+          ▣ <span>Kelas Virtual</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER DAN NAVIGASI -->
+  <header class="site-header">
+
+    <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+
+      <span class="brand-copy">
+        <strong>MANDALA AKSARA</strong>
+        <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Buka navigasi"
+      aria-expanded="false"
+      aria-controls="mainNav">☰</button>
+
+    <nav id="mainNav" aria-label="Navigasi utama">
+      <a href="index.html">Beranda</a>
+
+      <div class="nav-dropdown">
+        <button type="button" class="nav-trigger" aria-haspopup="true">
+          Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
+        </button>
+
+        <div class="dropdown">
+          <a href="kelas-x.html">Kelas X</a>
+          <a href="kelas-xi.html">Kelas XI</a>
+          <a href="kelas-xii.html">Kelas XII</a>
+        </div>
+      </div>
+
+      <a class="active" href="galeri.html" aria-current="page">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="works-hero">
+      <h1>Karya dan <span>Kreativitas</span></h1>
+
+      <p>
+        Ruang untuk membaca lebih dekat, memahami lebih dalam,
+        dan mengapresiasi berbagai karya sastra melalui sinopsis,
+        analisis, interpretasi, serta refleksi pembaca.
+      </p>
+    </section>
+
+    <!-- DAFTAR KARYA -->
+    <section class="works-container">
+
+      <div class="breadcrumb">
+        <a href="index.html">Beranda</a>
+        &nbsp;›&nbsp;
+        <a href="galeri.html">Galeri</a>
+        &nbsp;›&nbsp;
+        <strong>Karya dan Kreativitas</strong>
+      </div>
+
+      <p class="works-intro">
+        Karya sastra tidak hanya menyajikan cerita, tetapi juga
+        menghadirkan pengalaman, persoalan kehidupan, dan berbagai
+        pemikiran yang dapat direnungkan. Melalui ruang ini, setiap
+        karya dibahas untuk membantu pembaca memahami unsur cerita,
+        menemukan makna, dan membangun apresiasi sastra.
+      </p>
+
+      <h2 class="section-heading">Apresiasi dan Analisis Cerpen</h2>
+
+      <p class="section-description">
+        Pilih salah satu karya untuk menjelajahi sinopsis,
+        unsur intrinsik dan ekstrinsik, interpretasi, serta
+        pemaknaan cerita.
+      </p>
+
+      <div class="works-grid">
+
+        <!-- ANALISIS TERBANG -->
+        <a class="work-card" href="analisis-terbang.html">
+          <div class="work-cover">
+            <span class="symbol">🕊️</span>
+            <small>Analisis Cerpen</small>
+          </div>
+
+          <div class="work-content">
+            <span class="work-category">Ayu Utami</span>
+            <h3>Terbang</h3>
+
+            <p>
+              Menelusuri cerita, tokoh, konflik, dan makna
+              yang tersirat dalam cerpen Terbang.
+            </p>
+
+            <span class="work-link">Baca Analisis →</span>
+          </div>
+        </a>
+
+        <!-- ANALISIS SUAP -->
+        <a class="work-card" href="analisis-suap.html">
+          <div class="work-cover">
+            <span class="symbol">✉️</span>
+            <small>Analisis Cerpen</small>
+          </div>
+
+          <div class="work-content">
+            <span class="work-category">Putu Wijaya</span>
+            <h3>Suap</h3>
+
+            <p>
+              Mengkaji persoalan moral, godaan kekuasaan,
+              kejujuran, dan ironi kehidupan dalam cerita.
+            </p>
+
+            <span class="work-link">Baca Analisis →</span>
+          </div>
+        </a>
+
+        <!-- ANALISIS KARTU POS DARI SURGA -->
+        <a class="work-card" href="analisis-kartu-pos-dari-surga.html">
+          <div class="work-cover">
+            <span class="symbol">💌</span>
+            <small>Analisis Cerpen</small>
+          </div>
+
+          <div class="work-content">
+            <span class="work-category">Agus Noor</span>
+            <h3>Kartu Pos dari Surga</h3>
+
+            <p>
+              Memahami tema kehilangan, kasih sayang,
+              kenangan, dan batas antara kenyataan
+              dengan harapan.
+            </p>
+
+            <span class="work-link">Baca Analisis →</span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="works-note">
+        <strong>Tentang ruang ini:</strong>
+        Halaman ini merupakan bagian dari Galeri Mandala Aksara.
+        Isinya berfokus pada pembahasan dan apresiasi karya sastra,
+        bukan sebagai tempat penyimpanan teks lengkap cerpen.
+      </div>
+
+    </section>
+
+    <!-- KUTIPAN PENUTUP -->
+    <section class="works-quote">
+      <blockquote>
+        “Membaca cerita adalah perjalanan memasuki kehidupan
+        orang lain, sedangkan memaknainya adalah cara kita
+        memahami kehidupan sendiri.”
+      </blockquote>
+
+      <cite>— Mandala Aksara</cite>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+        <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+
+        <div class="footer-brand-copy">
+          <b>MANDALA AKSARA</b>
+          <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+          <span class="managed-label">Dikelola Mandiri</span>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="tentang.html">Tentang</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="perpustakaan.html">Perpustakaan Digital</a>
+        <a href="kelas-virtual.html">Kelas Virtual</a>
+      </nav>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
