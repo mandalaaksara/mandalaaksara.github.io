@@ -1,0 +1,681 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Analisis dan apresiasi cerpen Kartu Pos dari Surga karya Agus Noor di Mandala Aksara.">
+  <title>Analisis Kartu Pos dari Surga | Mandala Aksara</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --navy: #142B4A;
+      --navy-dark: #0D203A;
+      --orange: #F28C28;
+      --gold: #C69A45;
+      --soft: #F3F5F8;
+      --text: #263445;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.8;
+    }
+
+    .analysis-hero {
+      padding: 65px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+      border-bottom: 5px solid var(--orange);
+    }
+
+    .analysis-hero .eyebrow {
+      color: #F2C078;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .analysis-hero h1 {
+      font: normal clamp(32px, 5vw, 44px) Georgia, serif;
+      margin: 15px 0;
+    }
+
+    .analysis-hero p {
+      max-width: 720px;
+      margin: auto;
+      color: #E7EDF5;
+    }
+
+    .analysis-layout {
+      max-width: 1150px;
+      margin: auto;
+      padding: 45px 20px 70px;
+      display: grid;
+      grid-template-columns: 245px minmax(0, 1fr);
+      gap: 35px;
+      align-items: start;
+    }
+
+    .analysis-sidebar {
+      position: sticky;
+      top: 25px;
+      padding: 22px;
+      background: var(--soft);
+      border-radius: 12px;
+      border: 1px solid #E4E9EF;
+    }
+
+    .analysis-sidebar h3 {
+      margin: 0 0 14px;
+      color: var(--navy);
+      font-family: Georgia, serif;
+    }
+
+    .analysis-sidebar a {
+      display: block;
+      padding: 7px 0;
+      color: #526174;
+      font-size: 13px;
+      text-decoration: none;
+      border-bottom: 1px solid #E0E5EB;
+    }
+
+    .analysis-sidebar a:hover { color: #D97716; }
+
+    .analysis-main { min-width: 0; }
+
+    .analysis-section {
+      scroll-margin-top: 25px;
+      margin-bottom: 38px;
+    }
+
+    .analysis-section h2 {
+      color: var(--navy);
+      font: normal 27px Georgia, serif;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #F0B36D;
+      margin: 0 0 18px;
+    }
+
+    .analysis-section h3 {
+      color: var(--navy);
+      font-size: 17px;
+      margin: 22px 0 8px;
+    }
+
+    .analysis-section p {
+      margin: 0 0 14px;
+      text-align: justify;
+    }
+
+    .identity-card, .question-card {
+      padding: 22px;
+      border-radius: 10px;
+      background: var(--soft);
+      border: 1px solid #E5EAF0;
+      margin: 18px 0;
+    }
+
+    .identity-card p { margin: 5px 0; }
+
+    .highlight {
+      padding: 18px 22px;
+      background: #FFF7E9;
+      border-left: 4px solid var(--orange);
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+
+    .analysis-section ul, .analysis-section ol {
+      padding-left: 23px;
+    }
+
+    .analysis-section li { margin-bottom: 8px; }
+
+    .analysis-quote {
+      margin: 45px 0 10px;
+      padding: 25px;
+      text-align: center;
+      background: var(--soft);
+      border-radius: 10px;
+      color: var(--navy);
+      font: italic 19px/1.8 Georgia, serif;
+    }
+
+    .analysis-quote small {
+      display: block;
+      margin-top: 12px;
+      color: #D97716;
+      font: bold 12px Arial, sans-serif;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 11px 18px;
+      border-radius: 6px;
+      background: var(--navy);
+      color: white;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .back-link:hover { background: #D97716; }
+
+    @media(max-width: 800px) {
+      .analysis-layout {
+        grid-template-columns: 1fr;
+        padding: 30px 17px 55px;
+      }
+
+      .analysis-sidebar { position: static; }
+
+      .analysis-sidebar nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 15px;
+      }
+
+      .analysis-hero { padding: 48px 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="top-inner">
+    <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+    <div class="top-actions">
+      <form class="search" role="search" onsubmit="return searchSite(event)">
+        <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+        <button type="submit" aria-label="Cari">⌕</button>
+      </form>
+      <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span class="brand-copy">
+      <strong>MANDALA AKSARA</strong>
+      <small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small>
+    </span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" type="button"
+    aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
+
+  <nav id="mainNav" aria-label="Navigasi utama">
+    <a href="index.html">Beranda</a>
+    <div class="nav-dropdown">
+      <button type="button" class="nav-trigger" aria-haspopup="true">
+        Materi Pembelajaran <span class="dropdown-arrow">⌄</span>
+      </button>
+      <div class="dropdown">
+        <a href="kelas-x.html">Kelas X</a>
+        <a href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+      </div>
+    </div>
+    <a class="active" href="galeri.html">Galeri</a>
+    <a href="perpustakaan.html">Perpustakaan Digital</a>
+    <a href="kelas-virtual.html">Kelas Virtual</a>
+    <a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+
+<main>
+  <section class="analysis-hero">
+    <div class="eyebrow">Galeri · Karya dan Kreativitas</div>
+    <h1>Analisis Cerpen “Kartu Pos dari Surga”</h1>
+    <p>
+      Menelusuri kasih sayang, kehilangan, kenangan, dan
+      kejujuran melalui cerita pendek karya Agus Noor.
+    </p>
+  </section>
+
+  <div class="analysis-layout">
+
+    <aside class="analysis-sidebar">
+      <h3>Daftar Pembahasan</h3>
+      <nav>
+        <a href="#identitas">Identitas Karya</a>
+        <a href="#pengantar">Pengantar</a>
+        <a href="#sinopsis">Sinopsis</a>
+        <a href="#tema">Tema dan Amanat</a>
+        <a href="#tokoh">Tokoh dan Penokohan</a>
+        <a href="#alur">Alur Cerita</a>
+        <a href="#latar">Latar</a>
+        <a href="#sudut-pandang">Sudut Pandang</a>
+        <a href="#konflik">Konflik</a>
+        <a href="#simbol">Simbol dan Makna</a>
+        <a href="#bahasa">Gaya Bahasa</a>
+        <a href="#nilai">Nilai Kehidupan</a>
+        <a href="#apresiasi">Apresiasi Sastra</a>
+        <a href="#diskusi">Pertanyaan Diskusi</a>
+        <a href="#penutup">Penutup</a>
+      </nav>
+    </aside>
+
+    <article class="analysis-main">
+
+      <section class="analysis-section" id="identitas">
+        <h2>Identitas Karya</h2>
+        <div class="identity-card">
+          <p><strong>Judul:</strong> Kartu Pos dari Surga</p>
+          <p><strong>Penulis:</strong> Agus Noor</p>
+          <p><strong>Jenis karya:</strong> Cerita pendek</p>
+          <p><strong>Genre:</strong> Drama keluarga dan realisme magis</p>
+          <p><strong>Publikasi:</strong> Termuat dalam antologi <em>20 Cerpen Indonesia Terbaik 2009</em>.</p>
+        </div>
+      </section>
+
+      <section class="analysis-section" id="pengantar">
+        <h2>Pengantar</h2>
+        <p>
+          “Kartu Pos dari Surga” mengangkat pengalaman kehilangan
+          melalui sudut pandang kehidupan sebuah keluarga.
+          Cerita berpusat pada Bening, seorang anak yang menantikan
+          kabar dari ibunya, dan Marwan, ayah yang harus menghadapi
+          kenyataan pahit sekaligus berusaha melindungi perasaan
+          anaknya.
+        </p>
+        <p>
+          Kartu pos dalam cerita bukan sekadar benda yang
+          dikirimkan dari satu tempat ke tempat lain. Benda itu
+          menjadi penghubung antara kenangan, harapan, dan
+          kerinduan. Melalui benda sederhana tersebut, Agus Noor
+          memperlihatkan betapa kuatnya kebutuhan manusia untuk
+          tetap merasa dekat dengan orang yang telah pergi.
+        </p>
+      </section>
+
+      <section class="analysis-section" id="sinopsis">
+        <h2>Sinopsis</h2>
+        <p>
+          Bening terbiasa menerima kartu pos dari ibunya, Ren,
+          yang sering bepergian. Kartu-kartu pos tersebut membuat
+          Bening merasa bahwa ibunya selalu hadir meskipun sedang
+          berada jauh dari rumah.
+        </p>
+        <p>
+          Namun, ada kenyataan yang tidak diketahui Bening.
+          Ren telah meninggal dalam kecelakaan pesawat yang jatuh
+          ke laut, dan jenazahnya tidak pernah ditemukan.
+          Marwan, ayah Bening, kesulitan menjelaskan kematian
+          tersebut kepada anaknya.
+        </p>
+        <p>
+          Atas saran seorang teman, Marwan mencoba mengirimkan
+          kartu pos seolah-olah berasal dari Ren. Ia berharap
+          tindakan itu dapat menghibur Bening. Akan tetapi,
+          Bening mengenali bahwa tulisan pada kartu tersebut
+          bukan tulisan ibunya.
+        </p>
+        <p>
+          Pada bagian akhir, Bening mengalami peristiwa ganjil
+          yang membuat Marwan terkejut. Anak itu mengatakan
+          bahwa ibunya datang sendiri mengantarkan kartu pos.
+          Bening kemudian menunjukkan sepotong kain yang
+          diterimanya, menyerupai kain kafan dengan tepian
+          kecokelatan seperti bekas terbakar.
+        </p>
+      </section>
+
+      <section class="analysis-section" id="tema">
+        <h2>Tema dan Amanat</h2>
+        <h3>Tema utama</h3>
+        <p>
+          Tema utama cerita adalah kasih sayang keluarga dan
+          pengalaman menghadapi kehilangan. Cerita memperlihatkan
+          bagaimana kematian seseorang memengaruhi kehidupan
+          orang-orang yang ditinggalkan, terutama anak yang
+          belum sepenuhnya memahami arti kehilangan.
+        </p>
+
+        <h3>Tema pendukung</h3>
+        <ul>
+          <li>Kerinduan terhadap orang yang telah meninggal.</li>
+          <li>Kejujuran dan perlindungan terhadap perasaan anak.</li>
+          <li>Kenangan sebagai penghubung dengan masa lalu.</li>
+          <li>Harapan dan keyakinan terhadap sesuatu yang berada di luar pengalaman sehari-hari.</li>
+        </ul>
+
+        <h3>Amanat</h3>
+        <p>
+          Cerita mengajak pembaca memahami bahwa kasih sayang
+          tidak selalu berarti menyembunyikan kenyataan.
+          Kejujuran perlu disampaikan dengan cara yang sesuai
+          dengan usia dan kesiapan seseorang. Selain itu,
+          kehilangan merupakan pengalaman yang membutuhkan
+          waktu, perhatian, dan pendampingan.
+        </p>
+      </section>
+
+      <section class="analysis-section" id="tokoh">
+        <h2>Tokoh dan Penokohan</h2>
+
+        <h3>Bening</h3>
+        <p>
+          Bening adalah anak yang dekat dengan ibunya dan
+          menantikan kartu pos yang dikirimkan dari berbagai
+          tempat. Ia digambarkan sebagai anak yang polos,
+          penuh rasa ingin tahu, dan memiliki ikatan emosional
+          yang kuat dengan Ren. Kepekaannya terlihat ketika
+          ia mampu mengenali tulisan ibunya pada kartu pos.
+        </p>
+
+        <h3>Marwan</h3>
+        <p>
+          Marwan adalah ayah Bening yang berusaha menghadapi
+          kehilangan istrinya sekaligus menjaga perasaan anaknya.
+          Ia mengalami kebingungan ketika harus menjelaskan
+          kematian Ren. Keputusannya membuat kartu pos palsu
+          menunjukkan niat melindungi Bening, tetapi juga
+          memperlihatkan bahwa ia belum siap menghadapi
+          percakapan yang sulit.
+        </p>
+
+        <h3>Ren</h3>
+        <p>
+          Ren adalah ibu Bening yang telah meninggal dalam
+          kecelakaan pesawat. Meskipun tidak hadir secara
+          langsung dalam sebagian besar cerita, sosoknya
+          tetap kuat melalui kartu pos, kenangan, dan kerinduan
+          anak serta suaminya.
+        </p>
+
+        <h3>Ita</h3>
+        <p>
+          Ita merupakan teman sekantor Marwan. Ia memberikan
+          saran agar Marwan menulis kartu pos seolah-olah
+          berasal dari Ren. Kehadirannya memperlihatkan
+          bagaimana orang di sekitar seseorang yang sedang
+          berduka berusaha memberikan jalan keluar, meskipun
+          belum tentu menjadi solusi yang tepat.
+        </p>
+
+        <h3>Bik Sari</h3>
+        <p>
+          Bik Sari adalah sosok yang berada di lingkungan
+          rumah dan membantu menjaga Bening. Ia muncul pada
+          bagian akhir ketika terjadi peristiwa ganjil di
+          kamar anak tersebut.
+        </p>
+      </section>
+
+      <section class="analysis-section" id="alur">
+        <h2>Alur Cerita</h2>
+        <p>
+          Cerita disampaikan dengan alur maju yang diselingi
+          ingatan terhadap masa lalu. Peristiwa berkembang
+          dari kebiasaan Bening menerima kartu pos, kenyataan
+          tentang kematian Ren, hingga kejadian misterius
+          pada bagian akhir.
+        </p>
+        <ol>
+          <li><strong>Pengenalan:</strong> Pembaca diperkenalkan pada kebiasaan Bening menantikan kartu pos dari ibunya.</li>
+          <li><strong>Pemunculan konflik:</strong> Terungkap bahwa Ren telah meninggal dalam kecelakaan pesawat.</li>
+          <li><strong>Perkembangan konflik:</strong> Marwan kebingungan menjelaskan kenyataan kepada Bening dan mencoba mengirim kartu pos palsu.</li>
+          <li><strong>Puncak konflik:</strong> Bening menyadari bahwa kartu pos tersebut bukan tulisan ibunya.</li>
+          <li><strong>Penyelesaian:</strong> Bening mengalami pertemuan yang dianggapnya sebagai kedatangan sang ibu, disertai benda yang menyerupai kain kafan.</li>
+        </ol>
+      </section>
+
+      <section class="analysis-section" id="latar">
+        <h2>Latar Cerita</h2>
+        <h3>Latar tempat</h3>
+        <ul>
+          <li>Rumah keluarga Marwan, tempat Bening menantikan kartu pos dan menjalani kehidupan sehari-hari.</li>
+          <li>Kantor, tempat Marwan berbincang dengan Ita mengenai cara menjelaskan keadaan kepada anaknya.</li>
+          <li>Berbagai tempat yang tergambar pada kartu pos, yang memperlihatkan perjalanan Ren.</li>
+        </ul>
+
+        <h3>Latar waktu</h3>
+        <p>
+          Peristiwa berlangsung dalam kehidupan sehari-hari
+          setelah kematian Ren. Penantian Bening terhadap
+          kartu pos menunjukkan bahwa kenangan dan kebiasaan
+          masa lalu masih berlangsung dalam kehidupan keluarga.
+        </p>
+
+        <h3>Latar suasana</h3>
+        <p>
+          Cerita menghadirkan suasana rindu, sedih, cemas,
+          dan penuh harapan. Pada bagian akhir, suasana berubah
+          menjadi misterius melalui cahaya keperakan dan
+          kehadiran sosok yang diyakini Bening sebagai ibunya.
+        </p>
+      </section>
+
+      <section class="analysis-section" id="sudut-pandang">
+        <h2>Sudut Pandang</h2>
+        <p>
+          Cerpen menggunakan sudut pandang orang ketiga.
+          Pencerita menyebut tokoh dengan nama atau kata ganti
+          seperti “ia” dan “dia”. Pembaca dapat mengikuti
+          pengalaman Bening dan pergulatan batin Marwan,
+          terutama ketika Marwan memikirkan cara menjelaskan
+          kematian Ren kepada anaknya.
+        </p>
+      </section>
+
+      <section class="analysis-section" id="konflik">
+        <h2>Konflik</h2>
+        <h3>Konflik batin Marwan</h3>
+        <p>
+          Marwan menghadapi pertentangan antara keinginan
+          untuk melindungi Bening dari kesedihan dan kewajiban
+          untuk menyampaikan kenyataan. Ia takut anaknya
+          terluka jika mengetahui bahwa ibunya telah meninggal.
+          Karena itu, ia memilih cara yang dianggap lebih
+          mudah, yaitu membuat kartu pos seolah-olah berasal
+          dari Ren.
+        </p>
+
+        <h3>Konflik Bening</h3>
+        <p>
+          Bening mengalami kebingungan dan kerinduan karena
+          ibunya tidak kunjung hadir secara langsung.
+          Ia masih berharap menerima kabar dari Ren dan
+          mempertahankan hubungan emosional melalui kartu pos.
+        </p>
+
+        <h3>Konflik antara kenyataan dan harapan</h3>
+        <p>
+          Cerita memperlihatkan pertentangan antara kenyataan
+          kematian Ren dan harapan Bening untuk tetap
+          berhubungan dengan ibunya. Pertentangan ini menjadi
+          dasar emosional yang menggerakkan keseluruhan cerita.
+        </p>
+      </section>
+
+      <section class="analysis-section" id="simbol">
+        <h2>Simbol dan Makna</h2>
+
+        <h3>Kartu pos</h3>
+        <p>
+          Kartu pos melambangkan hubungan, kenangan, dan
+          kerinduan. Bagi Bening, kartu pos menjadi tanda
+          bahwa ibunya masih mengingat dan menyayanginya
+          meskipun berada jauh.
+        </p>
+
+        <h3>Tulisan tangan</h3>
+        <p>
+          Tulisan tangan menjadi penanda keaslian hubungan.
+          Bening dapat mengenali bahwa kartu pos yang dibuat
+          Marwan bukan berasal dari ibunya. Hal ini menunjukkan
+          bahwa kedekatan emosional membuat seseorang mampu
+          mengenali detail yang mungkin tidak diperhatikan
+          orang lain.
+        </p>
+
+        <h3>Kecelakaan pesawat dan laut</h3>
+        <p>
+          Kecelakaan pesawat yang menewaskan Ren menjadi
+          kenyataan yang sulit dijelaskan Marwan. Laut
+          sekaligus menjadi gambaran kehilangan yang
+          menyisakan ketidakpastian karena jenazah Ren
+          tidak pernah ditemukan.
+        </p>
+
+        <h3>Kain menyerupai kain kafan</h3>
+        <p>
+          Kain yang diberikan kepada Bening pada bagian akhir
+          dapat dibaca sebagai penghubung antara dunia
+          kehidupan dan kematian. Benda itu memperkuat
+          suasana misterius sekaligus membuka ruang tafsir
+          tentang pengalaman spiritual dan kerinduan.
+        </p>
+
+        <div class="highlight">
+          <strong>Makna penting:</strong>
+          Kartu pos menjadi simbol utama yang menghubungkan
+          kenangan masa lalu, harapan seorang anak, dan
+          kenyataan kehilangan yang harus dihadapi keluarga.
+        </div>
+      </section>
+
+      <section class="analysis-section" id="bahasa">
+        <h2>Gaya Bahasa</h2>
+        <p>
+          Agus Noor menggunakan bahasa yang naratif dan
+          deskriptif. Penggambaran kartu pos, suasana rumah,
+          dan reaksi tokoh membantu pembaca membayangkan
+          pengalaman keluarga tersebut.
+        </p>
+        <ul>
+          <li><strong>Deskripsi visual:</strong> gambar pada kartu pos digambarkan secara rinci sehingga pembaca dapat membayangkan tempat-tempat yang dikirimkan Ren.</li>
+          <li><strong>Penggambaran suasana:</strong> cahaya keperakan, hawa dingin, dan bau ganjil membangun suasana misterius pada bagian akhir.</li>
+          <li><strong>Dialog:</strong> percakapan memperlihatkan kepolosan Bening dan kebingungan Marwan.</li>
+          <li><strong>Simbolisme:</strong> kartu pos dan kain pada bagian akhir mengandung makna yang lebih luas daripada fungsi bendanya.</li>
+        </ul>
+      </section>
+
+      <section class="analysis-section" id="nilai">
+        <h2>Nilai Kehidupan</h2>
+        <ul>
+          <li><strong>Nilai kasih sayang:</strong> hubungan orang tua dan anak tetap kuat meskipun dipisahkan oleh kehilangan.</li>
+          <li><strong>Nilai kejujuran:</strong> kenyataan yang sulit tetap perlu disampaikan dengan penuh pertimbangan.</li>
+          <li><strong>Nilai empati:</strong> orang yang sedang berduka membutuhkan perhatian dan pendampingan.</li>
+          <li><strong>Nilai keluarga:</strong> kenangan dan kebiasaan bersama menjadi bagian penting dalam hubungan keluarga.</li>
+          <li><strong>Nilai spiritual:</strong> bagian akhir membuka ruang perenungan mengenai hubungan manusia dengan kematian dan hal-hal yang tidak sepenuhnya dapat dijelaskan.</li>
+        </ul>
+      </section>
+
+      <section class="analysis-section" id="apresiasi">
+        <h2>Apresiasi Sastra</h2>
+        <p>
+          Kekuatan cerpen “Kartu Pos dari Surga” terletak
+          pada penggunaan benda sederhana sebagai pusat
+          emosi cerita. Kartu pos yang biasanya menjadi
+          tanda seseorang sedang bepergian berubah menjadi
+          penghubung antara seorang anak dan ibu yang telah
+          meninggal.
+        </p>
+        <p>
+          Konflik Marwan juga menarik karena ia tidak
+          digambarkan sebagai ayah yang tidak menyayangi
+          anaknya. Sebaliknya, ia berusaha melindungi Bening.
+          Namun, niat baik tersebut membuatnya mengambil
+          keputusan yang tidak sepenuhnya tepat. Cerita
+          memperlihatkan bahwa melindungi seseorang dari
+          kesedihan tidak selalu dapat dilakukan dengan
+          menyembunyikan kenyataan.
+        </p>
+        <p>
+          Bagian akhir menghadirkan unsur misteri yang
+          membuat pembaca dapat menafsirkan peristiwa
+          dari berbagai sudut. Apakah pengalaman Bening
+          merupakan peristiwa spiritual, pengalaman
+          imajinatif, atau bentuk kerinduan yang sangat
+          mendalam? Pertanyaan itu menjadi ruang bagi
+          pembaca untuk membangun penafsiran sendiri.
+        </p>
+      </section>
+
+      <section class="analysis-section" id="diskusi">
+        <h2>Pertanyaan Diskusi</h2>
+        <div class="question-card">
+          <ol>
+            <li>Mengapa Marwan kesulitan menjelaskan kematian Ren kepada Bening?</li>
+            <li>Apa makna kartu pos bagi Bening dalam cerita tersebut?</li>
+            <li>Mengapa Bening dapat mengetahui bahwa kartu pos buatan Marwan bukan tulisan ibunya?</li>
+            <li>Apakah keputusan Marwan untuk berpura-pura mengirim kartu pos dari Ren dapat dibenarkan? Jelaskan alasanmu.</li>
+            <li>Bagaimana pengarang membangun suasana misterius pada bagian akhir cerita?</li>
+            <li>Menurutmu, bagaimana sebaiknya orang tua menjelaskan kehilangan kepada anak?</li>
+            <li>Bagaimana kamu menafsirkan peristiwa kedatangan Ren pada bagian akhir cerita?</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="analysis-section" id="penutup">
+        <h2>Penutup</h2>
+        <p>
+          “Kartu Pos dari Surga” mengajak pembaca memahami
+          bahwa kehilangan bukan hanya peristiwa yang
+          dialami seseorang, melainkan pengalaman yang
+          memengaruhi seluruh keluarga. Kenangan dapat
+          membuat seseorang tetap merasa dekat dengan
+          orang yang telah pergi.
+        </p>
+        <p>
+          Cerita ini juga mengingatkan bahwa kasih sayang
+          membutuhkan keberanian untuk mendampingi orang
+          lain menghadapi kenyataan. Kejujuran, empati,
+          dan perhatian menjadi bagian penting dalam
+          proses menerima kehilangan.
+        </p>
+      </section>
+
+      <div class="analysis-quote">
+        “Kenangan tidak selalu mengembalikan seseorang,
+        tetapi dapat menjaga kasih sayang tetap hidup.”
+        <small>— Mandala Aksara</small>
+      </div>
+
+      <a class="back-link" href="galeri.html">← Kembali ke Galeri</a>
+
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+      <div class="footer-brand-copy">
+        <b>MANDALA AKSARA</b>
+        <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+        <span class="managed-label">Dikelola Mandiri</span>
+      </div>
+    </div>
+    <nav class="footer-links" aria-label="Navigasi footer">
+      <a href="tentang.html">Tentang</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+    </nav>
+  </div>
+  <div class="copyright">
+    © 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
