@@ -2,60 +2,157 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bacaan cerpen Terbang karya Ayu Utami di Perpustakaan Digital Mandala Aksara.">
-  <title>Terbang | Mandala Aksara</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Baca cerpen Terbang karya Ayu Utami di Perpustakaan Digital Mandala Aksara.">
+  <meta name="theme-color" content="#102b4e">
+  <title>Terbang — Ayu Utami | Mandala Aksara</title>
   <style>
-    :root { --navy:#142b4a; --navy-deep:#0d1e35; --orange:#f28c28; --gold:#d6a84f; --paper:#fffdf8; --ink:#302f2b; --muted:#77736b; --line:#e9e2d6; }
-    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
-    body { margin:0; background:#f3f1ec; color:var(--ink); font-family:Georgia,"Times New Roman",serif; line-height:1.9; }
-    .topbar { background:var(--navy-deep); color:#f7f3eb; padding:9px 5vw; font:12px/1.5 Arial,sans-serif; letter-spacing:.04em; }
-    .topbar-inner { max-width:1120px; margin:auto; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
-    .topbar a { color:#fff; text-decoration:none; }
-    header { background:var(--navy); color:white; padding:30px 20px 34px; border-bottom:4px solid var(--orange); text-align:center; }
-    .brand { color:var(--orange); font:700 13px/1.4 Arial,sans-serif; letter-spacing:.2em; margin-bottom:18px; }
-    h1 { margin:0 auto 8px; max-width:900px; font:700 clamp(30px,5vw,48px)/1.18 Georgia,serif; }
-    .author { color:#f3d9b4; font:16px/1.5 Arial,sans-serif; }
-    .subtitle { margin-top:15px; color:#dbe2eb; font:12px/1.5 Arial,sans-serif; letter-spacing:.08em; }
-    .toolbar { position:sticky; top:0; z-index:5; background:rgba(255,253,248,.97); border-bottom:1px solid var(--line); padding:10px 16px; display:flex; align-items:center; justify-content:center; gap:8px; flex-wrap:wrap; backdrop-filter:blur(8px); }
-    .toolbar button { border:1px solid #d8d1c5; background:white; color:var(--navy); padding:7px 12px; border-radius:6px; cursor:pointer; font:13px Arial,sans-serif; }
-    .toolbar button:hover { background:#f7ead9; border-color:var(--orange); }
-    .read-status { color:var(--muted); font:12px Arial,sans-serif; margin:0 8px; }
-    main { max-width:900px; margin:34px auto 60px; padding:0 18px; }
-    .notice { background:#fff8ed; border-left:4px solid var(--orange); padding:14px 18px; margin-bottom:24px; font:13px/1.7 Arial,sans-serif; color:#62513e; }
-    .book-page { background:var(--paper); border:1px solid var(--line); border-radius:8px; box-shadow:0 5px 22px rgba(24,35,49,.045); padding:clamp(24px,5vw,58px); margin:0 0 22px; }
-    .book-page p { margin:0 0 1.05em; font-size:19px; text-indent:1.8em; text-align:justify; overflow-wrap:anywhere; }
-    .book-page p:first-child { text-indent:0; }
-    .ending { text-align:center; color:var(--muted); font:italic 14px Arial,sans-serif; margin:28px 0 0; }
-    footer { background:var(--navy-deep); color:#e9edf2; text-align:center; padding:28px 18px; font:12px/1.8 Arial,sans-serif; }
-    footer strong { color:var(--orange); letter-spacing:.12em; }
-    .quote { max-width:720px; margin:0 auto 12px; color:#f3d9b4; font:italic 14px/1.7 Georgia,serif; }
-    @media(max-width:600px) { .book-page {padding:24px 20px;border-radius:5px;} .book-page p {font-size:17px;line-height:1.85;} main {margin-top:18px;padding:0 10px;} .toolbar {gap:6px;} }
-    @media print { body {background:white;} .topbar,.toolbar,footer {display:none;} header {background:white;color:black;border-bottom:1px solid #999;} .brand,.author,.subtitle {color:black;} main {max-width:none;margin:0;padding:0;} .book-page {box-shadow:none;border:0;} }
+    :root{color-scheme:light;--navy:#102b4e;--navy2:#1b426c;--orange:#e87924;--gold:#d9aa55;--ink:#293747;--muted:#68788b;--paper:#fff;--bg:#f2f5f9;--line:#e4eaf1;--reading-size:18px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.8}
+    a{color:inherit}
+    .site-header{background:linear-gradient(115deg,var(--navy),var(--navy2));color:#fff;border-bottom:4px solid var(--orange)}
+    .header-inner{max-width:1080px;margin:auto;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand{font:700 1.08rem/1.3 Arial,sans-serif;letter-spacing:.14em}
+    .brand small{display:block;margin-top:5px;color:#dce6f0;font:400 .78rem/1.5 Arial,sans-serif;letter-spacing:.015em}
+    .header-link{display:inline-block;padding:9px 15px;border:1px solid #ffffff66;border-radius:999px;color:#fff;text-decoration:none;font:600 .88rem Arial,sans-serif;transition:background .2s}
+    .header-link:hover{background:#ffffff18}
+    main{max-width:960px;margin:34px auto;padding:0 18px}
+    .paper{overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 38px #17324d12}
+    .story-head{text-align:center;padding:42px 24px 30px;background:linear-gradient(180deg,#fff,#fafbfd);border-bottom:1px solid var(--line)}
+    .kicker{color:var(--orange);font:700 .72rem Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase}
+    h1{margin:12px 0 7px;color:var(--navy);font:700 clamp(2.1rem,5vw,3rem)/1.15 Georgia,serif}
+    .author{color:var(--muted);font:600 1rem Arial,sans-serif}
+    .dedication{margin-top:17px;color:#788596;font-size:1rem;font-style:italic}
+    .toolbar{position:sticky;top:0;z-index:5;display:flex;justify-content:center;align-items:center;gap:9px;padding:12px 14px;background:#ffffffed;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+    .toolbar button{min-width:42px;padding:8px 11px;border:1px solid #d5deea;border-radius:8px;background:#fff;color:var(--navy);font-weight:700;cursor:pointer}
+    .toolbar button:hover{border-color:var(--orange);background:#fff8f2}
+    .toolbar-label{color:var(--muted);font: .78rem Arial,sans-serif}
+    .story-body{max-width:760px;margin:auto;padding:38px clamp(22px,6vw,72px) 54px;font-size:var(--reading-size);line-height:1.95;text-align:left;overflow-wrap:anywhere}
+    .story-body p{margin:0 0 1.12em;text-indent:1.55em}
+    .story-body p:first-child{text-indent:0}
+    .story-body p:nth-child(2),.story-body p:nth-child(3),.story-body p:nth-child(20),.story-body p:nth-child(21){text-indent:1.55em}
+    .source-note{margin:0 28px 30px;padding:16px 19px;border-left:3px solid var(--gold);background:#fbf8f1;color:#596777;font: .84rem/1.7 Arial,sans-serif}
+    .site-footer{text-align:center;padding:26px 18px 36px;color:#68778a;font: .83rem/1.8 Arial,sans-serif}
+    .quote{margin-bottom:5px;color:var(--navy);font:italic 1rem/1.6 Georgia,serif}
+    .back-top{position:fixed;right:18px;bottom:18px;width:42px;height:42px;border:0;border-radius:50%;background:var(--navy);color:#fff;font-size:1.15rem;box-shadow:0 4px 14px #102b4e33;cursor:pointer}
+    @media(max-width:600px){.header-inner{padding:17px 15px}.brand{font-size:.98rem}.brand small{font-size:.72rem}main{margin:15px auto;padding:0 9px}.paper{border-radius:12px}.story-head{padding:31px 16px 23px}.story-body{padding:27px 20px 38px;font-size:17px;line-height:1.88}.source-note{margin:0 16px 20px;padding:13px 15px}.toolbar{gap:6px}.toolbar-label{font-size:.72rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{body{background:#fff}.site-header,.toolbar,.site-footer,.back-top{display:none}main{max-width:none;margin:0;padding:0}.paper{border:0;border-radius:0;box-shadow:none}.story-head{padding:15mm 10mm}.story-body{max-width:none;padding:8mm 18mm;font-size:12pt;line-height:1.7}.source-note{margin:0 18mm 10mm}}
   </style>
 </head>
 <body>
-  <div class="topbar"><div class="topbar-inner"><span>Ruang Literasi dan Pembelajaran Bahasa Indonesia</span><a href="perpustakaan.html">← Kembali ke Perpustakaan Digital</a></div></div>
-  <header><div class="brand">MANDALA AKSARA</div><h1>Terbang</h1><div class="author">Ayu Utami</div><div class="subtitle">KOLEKSI CERPEN · PERPUSTAKAAN DIGITAL</div></header>
-  <div class="toolbar" aria-label="Pengaturan membaca"><button type="button" id="smaller" aria-label="Perkecil huruf">A−</button><button type="button" id="reset" aria-label="Ukuran huruf normal">A</button><button type="button" id="larger" aria-label="Perbesar huruf">A+</button><span class="read-status">Bacaan cerpen · 8 paragraf</span></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">MANDALA AKSARA<small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small></div>
+      <a class="header-link" href="perpustakaan.html">← Perpustakaan Digital</a>
+    </div>
+  </header>
   <main>
-    <div class="notice"><strong>Informasi karya:</strong> Terbang — Ayu Utami. Publikasi awal: Kompas, 20 April 2008. Naskah ditata ulang menjadi format baca digital agar nyaman dibaca melalui perangkat komputer maupun ponsel.</div>
-    <article class="book-page" id="bacaan">      <p>AKU yang ngotot agar kami terbang terpisah. Kubatalkan satu tiket yang telah dipesan suamiku. Tiket murah pula, sehingga aku harus membayar besar untuk perubahan jadwal. Tapi, biar saja. Aku merasa lebih aman begini. Terbang terpisah darinya. Kamu terlalu dramatis, Ari, katanya. Tidak. Aku ini sangat realistis, Jati, bantahku. Sejak dua anak kami sudah bisa tidak ikut dalam perjalanan, sejak kami telah bisa meninggalkan mereka di rumah, aku memutuskan untuk tak akan terbang bersama suami dalam satu pesawat lagi. Atau terbang pada waktu bersamaan. Salah satu di antara kami harus terbang lebih dulu. Setelah pesawatnya dipastikan mendarat dengan selamat (diketahui dengan cara mengirim SMS), barulah yang lain boleh berangkat. Ini keputusanku yang harus dilaksanakan. Jika suamiku menelikung tidak menurut— seperti kemarin ia mengurus tiket kami—ia akan tahu rasa. Aku membatalkan tiketku dan memesan sendiri. Statistik mengatakan, moda transportasi pembunuh paling besar adalah lalu lintas darat. Begitu katanya. Kecelakaan maut motor lebih banyak daripada kecelakaan pesawat. Itu statistik. Statistik juga bilang, kalau kepalamu ditaruh di kompor dan</p>
-      <p>kakimu dibekukan di freezer, suhu tubuh di perutmu normal, bantahku. Bagaimana kita mau mengabaikan fakta: Adam Air terbang tanpa alat navigasi. Adam Air jeblug di laut. Mandala jatuh waktu lepas landas. Garuda meledak ketika mendarat. Semua terjadi dalam satu tahun! Lagian, meski persentase lebih kecil pun, kalau kita kena lotre buruk, meledak ya meledak, nyemplung ke laut ya nyemplung ke laut. Itu namanya sial, kalau bukan takdir. Karena itulah, daripada dua-dua dari kita kena takdir, lebih baik salah satu saja. Paling tidak, dengan begitu anak kita tidak jadi yatim piatu. Tak ada lagi cerita terbang bersama atau bersamaan. Titik. Aku mengunci gesper sabuk pengaman. Mesin pesawat propeler sudah menyala. Derunya seperti makhluk hidup terkena bronkitis, penyakit yang sudah lama tidak disebut-sebut di negeri ini. Kini orang lebih mengenal infeksi saluran pernapasan atas alias ISPA. Kira-kira begitu aku merasa derau mesin baling-baling ini. Setiap saat bisa batuk darah. Lalu kolaps. Aku memandang ke bandara yang kecil, yang lebih pantas disebut rumah besar ketimbang pelabuhan. Suamiku tampak di sana, berdiri kacak pinggang, menunggu saat melambai hingga pesawat lenyap di udara, di atas gunung-gunung yang berkeliling. Aku menelan ludah. Terbang adalah menyetorkan nyawa kepada perusahaan angkutan umum. Kita bisa mengambilnya kembali. Bisa juga tidak. Dan tak ada rente. Kalau untung, hanya ada tiba dengan selamat. Aku sesungguhnya sangat takut. Penyiksaan akan berlangsung tujuh jam, termasuk transit dan ganti pesawat. Tapi selalu ada cara untuk survive. Kusetorkan diriku yang cemas, yang bertanggung jawab, yang berkeringat dingin membayangkan anakanakku kehilangan ibu yang menghangatkan mereka dalam</p>
-      <p>sayap-sayapku, yang menitikkan air mata atas jerih payah suami bagi kami. Kusetorkan diriku yang itu bersama jiwaku ke kotak hitam di kokpit. Jati, kalau ada apa-apa denganku, aku yang kamu miliki ada di kotak hitam itu, ya. Yang duduk di kursi sekarang adalah aku yang lain. Aku yang kuat untuk menghadapi kengerian, yaitu aku yang tak bertanggung jawab. Aku yang tak memiliki suami ataupun anakanak. Aku yang lajang petualang. Dan lihatlah. Seorang lelaki tergesa-tergesa melewati pramugari yang cemberut karena ia membuat penerbangan telat jadwal. Ia meletakkan bagasi ke dalam kabin di atas kepalaku. Ia mengangguk kepadaku sebelum duduk di kursi sebelahku. Terhidu bau tubuhnya. Bau hangat manusia. Aku membalas ringan dia, lalu mengalihkan pandangan ke jendela. Pesawat mulai bergerak. Jati melambai di bawah sana. Aku membalas. Selamat tinggal! Kira-kira dia adalah seorang peneliti. Seorang peneliti lapangan. Seorang peneliti yang biasa di alam bebas. Di hutan. Bukan di lab. Di goa. Di padang rumput berpasir. Ia mengenakan kacamata. Perawakannya keras. Otot kedang tangannya tegas. Urat- urat pada lengannya mencuat. Itulah yang dapat terlihat jika aku tak mau jelas-jelas menoleh kepadanya. Pada ransel yang diletakkan di bawah kursi depan, tersangkut botol minum aluminium SIGG. Dengan stiker ”kurangi plastik”. Ia mengenakan sepatu gunung Eiger. Ataukah dia orang film. Film dokumenter lingkungan. Ah, aku tak bisa melihat lipatan perutnya, meskipun ia mengenakan T-shirt kelabu yang dimasukkan di balik kemeja korduroi hitam yang terbuka. Ia pasti memiliki six-pac yang lumayan. Dari kulit jemarinya, kira-kira ia empat puluhan. Sebetulnya, sudah lama aku tak ingin ngobrol dengan orang seperjalanan. Sia-sia. Lebih baik baca buku daripada menghabiskan</p>
-      <p>waktu dengan makhluk yang tak memberi kita pengetahuan dan tak akan kita ingat lagi. Setidaknya, buku menambah isi kepala. Manusia sering-sering cuma menghabiskan urat kepala. Kukeluarkan buku. Kuletakkan di pangkuan, sebab aku sulit membaca ketika lepas landas dan lampu tanda kenakan sabuk belum mati. Java Man. Garniss Curtis, Carl Swisher &amp; Roger Lewin. Aku ingin memejamkan mata dan berdoa, tapi kulihat lelaki di sebelahku bergerak. Gerakan mencontek judul buku, kutahu dengan sudut mataku. Ah, tebakanku takkan jauh. Ia orang lapangan, bergerak di sekitar soal lingkungan. Aku menyadari pesawat ini tak punya lampu tanda kenakan sabuk pengaman. Sialan. Kuno amat. Setelah burung bronkitis ini terbang mendatar, aku menarik napas lega yang pertama, dan mulai membaca lagi. Kutangkap lagi dengan sudut mataku, ia bereaksi terhadap bacaanku. Ah! Kupergoki saja dia. Sambil bisa kuperhatikan sekalian, seperti apa mukanya. Ia memiliki wajah lelaki baik. Lelaki baik adalah lelaki yang tidak tengil atau sesumbar, tidak sok tahu atau menggurui. Meski tidak berarti lelaki baik-baik. Lelaki baik-baik, yaitu yang setia kepada keluarga, bisa saja sangat menyebalkan dan suka membual demi menegakkan citra kepala keluarga. Lelaki baik adalah lelaki yang menyenangkan untuk diajak ngobrol bersama, meski belum tentu baik untuk hidup bersama. Nah! Ia tertangkap basah sedang mencontek! Aku tersenyum padanya. Toh tadi juga kami sudah saling mengangguk. ”Sudah pernah baca?” tanyaku. ”Boleh lihat?” Dan tentu saja kami jadi bercakap-cakap. Ia memang lelaki baik. Kebanyakan lelaki punya beban untuk tampak lebih tahu dari perempuan. Tapi dia tidak. Dia banyak bertanya tentang duniaku.</p>
-      <p>(Kebanyakan lelaki lebih suka menjawab tentang diri sendiri. Jika kita tidak bertanya, mereka akan membikin pertanyaannya sendiri dan menjawab sendiri.) Dari cara bertanyanya, ia mirip wartawan dari koran atau majalah yang baik pula. Jadi, apa kerjanya? ”Macam-macam sudah saya coba,” katanya. ”Saya pernah kerja di pertambangan. Saya pernah kerja di kapal.” ”Di kapal?” ”Di kapal, jadi juru masak, jadi fotografer….” ”Jadi juru masak?” ”Iya. Jadi juru masak di kapal. Jadi fotografer di kapal….” Tak bisa tidak aku menyimak dia dari rambut ke sepatu, mencari jejak-jejak pekerjaan itu. Ia memiliki gestur yang rendah hati. Barangkali ia lebih pekerja badan ketimbang peneliti. ”Jadi penjahit juga pernah. Beternak ayam juga pernah. Mencoba kebun kelapa sawit kecil-kecilan pernah juga….” Kini aku mencari-cari tanda jika ia berbohong. Atau sedikitnya bercanda. Tapi wajahnya tulus seperti hewan. ”Jadi, kenapa ayam-ayam negeri itu bisa bertelur tanpa dijantani? Ayam kampung tidak begitu, kan?” tanyaku, juga tulus, tapi juga mengetes. Ia kelihatan senang dengan kata itu. Dijantani. ”Sesungguhnya, buat saya itu juga misterius.” Ia tidak memberi aku jawaban yang memuaskan. Tapi ia menceritakan rincian pengalaman yang membuat aku percaya bahwa ia tidak berbohong. Ia tidak mengaku-ngaku peternak ayam, berkebun kelapa sawit, juru masak, fotografer. Jadi, apa yang dikerjakannya di kepulauan Indonesia timur ini? Memotret perburuan ikan paus? Tebakanku tidak terlalu meleset. ”Memotret. Tapi bukan ikan paus. Biar orang lain saja yang</p>
-      <p>mengerjakan itu. Saya… tidaklah saya motret binatang dibunuh.” Oh, berhati haluskan dia. ”Jadi motret apa?” ”Saya,” ia berdehem, ”saya mencari sebanyak-banyaknya orang pendek. Orang katai. Saya potret mereka. Pernah dengar tentang Manusia Liang Bua?” ”Untuk siapa? Untuk proyek sendiri?” ”Untuk satu majalah luar negeri.” Lalu ia bercerita betapa sarjana asing senang mencari jejak manusia purba di Indonesia. Persis yang saya baca di buku ini, sahutku. Dan kami tenggelam sejenak dalam halaman-halaman dan referensi yang sempat diingat. Tangan kami tanpa sengaja bersentuhan ketika menelusuri spekulasi yang terdedah, lembar demi lembar. Dan pada lembar-lembar berikutnya aku tak tahu apakah persentuhan itu tetap tak sengaja. Ia bercerita tentang dua spesies manusia pada sebuah zaman. Yang lebih purba dan yang lebih baru. Di sebuah titik, yang lebih purba punah. Dialah manusia neanderthal, dengan ciri-ciri bertulang kepala lebih ceper dan tulang alis lebih menonjol. Tapi, sebelum mereka punah, dua spesies itu ada bercampur pula. Maka, keturunan manusia yang lebih purba masih kadangkadang ditemukan di kehidupan sekarang. Ciri-cirinya, bertulang kepala lebih ceper dan tulang alis lebih menonjol. ”Seperti saya, barangkali.” Ia nyengir lucu. Aku memerhatikan dia. Ah, itukah yang membuat wajahnya tampak tulus seperti hewan? Penerbangan berganti di Surabaya. Mendung menggantung. ”Sekarang semua fotografer pakai digital, ya?” ”Kalau dari segi kualitas, film tetap lebih sensitif. Tapi, dari segi kepraktisan, digital memang tak terkalahkan.” ”Saya tidak suka teknologi. Teknologi membuat yang tua tidak</p>
-      <p>dihargai. Semua barang elektronik cepat jadi tua dan tak berguna. Tidak adil.” Kenapa kukeluhkan ini? Adakah diriku yang cemas dan menyadari bahwa aku tak terlalu muda lagi untuk bergenit-genit dengan lelaki? ”Kenapa,” kataku agak grogi, mencari tema baru, ”kenapa kamera digital semakin tahun semakin biru pucat gambarnya?” Tapi ini bukan tema baru. Ini tema yang sama. Tentang kecemasan menjadi tua. ”Itu jeleknya kamera digital. Setiap kamera digital memang hanya untuk memotret sejumlah kali tertentu. Setelah sekian kali, kemampuannya turun sama sekali. Biasanya, sekitar seratus ribu kali. Sebetulnya, itu tertulis di buku keterangan. Tapi tidak ada yang mau baca.” ”Jadi, setiap kamera digital lahir dengan kapasitas sekitar seratus ribu kali memotret?” ”Iya. Tertulis. Cuma orang enggak mau baca.” ”Ada yang bilang, setiap lelaki juga begitu. Lahir dengan sejumlah tertentu kapasitas orgasme.” Ia diam sebentar. Lalu tawanya meledak. ”Kalau jumlah itu sudah terlewati, berarti jatahnya habis,” kataku lagi. Ia tertawa lagi. Tapi, sesungguhnya aku tidak melucu. Aku sendiri tak tahu apa motifku. Apakah aku ingin tahu adakah teori itu benar. Ataukah, aku sesungguhnya sudah merasa intim dengan lelaki berbau manusia ini. Aku tak tahu apa yang kukatakan. Kutemukan ia menatapku lebih lama. Dan lebih dalam. Kubalas ia sebentar. Setelah itu aku merasa wajahku hangat. Kubuang pandangan ke jendela. Aku lebih muda dari dia. Tapi tetap aku tak muda lagi. Dan aku beranak dua. Meskipun diriku yang bertanggung jawab telah kutitipkan bersama nyawaku di kotak hitam.</p>
-      <p>Aku ingin bertanya padanya. Jatahmu sudah diboroskan belum? Pesawat melonjak. Bagai ada lubang besar di jalanannya. Lampu tanda kenakan sabuk pengaman menyala. Aku merasa berayun ke kiri ke kanan. Seperti dalam bus malam yang mencicit di jalan licin berbatu. Aku mencoba tidak mencengkeram dahan kursi. Tapi keringat dinginku merembes sedikit di dahi. Tiba-tiba ia menangkupkan tangannya pada tanganku di tangkai kursi. Seperti seorang suami. Kalau ada apa-apa, kita mengalaminya bersama-sama. Aku memejamkan mata. Aku tak tahu, apakah dalam sisa perjalanan aku bersandar di bahunya. Tapi, pesawat mendarat juga di Soekarno-Hatta. Ia membantuku mengemasi bagasi. Aku telah di tanah lagi. Aku harus pergi ke kokpit mengambil kembali nyawa dan diriku dari kotak hitam. Nyawa dan diriku yang lebih peka dan penakut ketimbang yang duduk tadi. Ingin rasanya aku meminta lelaki berwajah baik itu menemaniku terus sampai sepotong jiwaku bergabung kembali. Sepotong yang dibawa Jati….(*)</p><div class="ending">— Akhir Cerita —</div></article>
+    <article class="paper" aria-labelledby="story-title">
+      <header class="story-head">
+        <div class="kicker">Perpustakaan Digital · Cerpen</div>
+        <h1 id="story-title">Terbang</h1>
+        <div class="author">Ayu Utami</div>
+        <div class="dedication">Untuk Bona dan Weni</div>
+      </header>
+      <nav class="toolbar" aria-label="Pengaturan ukuran teks">
+        <button type="button" id="decrease" aria-label="Perkecil teks">A−</button>
+        <span class="toolbar-label" aria-live="polite" id="size-label">Ukuran teks</span>
+        <button type="button" id="reset" aria-label="Ukuran teks normal">A</button>
+        <button type="button" id="increase" aria-label="Perbesar teks">A+</button>
+      </nav>
+      <section class="story-body" id="story" aria-label="Isi cerpen">
+      <p>AKU yang ngotot agar kami terbang terpisah. Kubatalkan satu tiket yang telah dipesan suamiku. Tiket murah pula, sehingga aku harus membayar besar untuk perubahan jadwal. Tapi, biar saja. Aku merasa lebih aman begini. Terbang terpisah darinya.</p>
+      <p>Kamu terlalu dramatis, Ari, katanya.</p>
+      <p>Tidak. Aku ini sangat realistis, Jati, bantahku.</p>
+      <p>Sejak dua anak kami sudah bisa tidak ikut dalam perjalanan, sejak kami telah bisa meninggalkan mereka di rumah, aku memutuskan untuk tak akan terbang bersama suami dalam satu pesawat lagi. Atau terbang pada waktu bersamaan. Salah satu di antara kami harus terbang lebih dulu. Setelah pesawatnya dipastikan mendarat dengan selamat (diketahui dengan cara mengirim SMS), barulah yang lain boleh berangkat. Ini keputusanku yang harus dilaksanakan. Jika suamiku menelikung tidak menurut—seperti kemarin ia mengurus tiket kami—ia akan tahu rasa. Aku membatalkan tiketku dan memesan sendiri.</p>
+      <p>Statistik mengatakan, moda transportasi pembunuh paling besar adalah lalu lintas darat. Begitu katanya. Kecelakaan maut motor lebih banyak daripada kecelakaan pesawat. Itu statistik.</p>
+      <p>Statistik juga bilang, kalau kepalamu ditaruh di kompor dan kakimu dibekukan di freezer, suhu tubuh di perutmu normal, bantahku. Bagaimana kita mau mengabaikan fakta: Adam Air terbang tanpa alat navigasi. Adam Air jeblug di laut. Mandala jatuh waktu lepas landas. Garuda meledak ketika mendarat. Semua terjadi dalam satu tahun!</p>
+      <p>Lagian, meski persentase lebih kecil pun, kalau kita kena lotre buruk, meledak ya meledak, nyemplung ke laut ya nyemplung ke laut. Itu namanya sial, kalau bukan takdir. Karena itulah, daripada dua-dua dari kita kena takdir, lebih baik salah satu saja. Paling tidak, dengan begitu anak kita tidak jadi yatim piatu.</p>
+      <p>Tak ada lagi cerita terbang bersama atau bersamaan.</p>
+      <p>Titik.</p>
+      <p>Aku mengunci gesper sabuk pengaman. Mesin pesawat propeler sudah menyala. Derunya seperti makhluk hidup terkena bronkitis, penyakit yang sudah lama tidak disebut-sebut di negeri ini. Kini orang lebih mengenal infeksi saluran pernapasan atas alias ISPA. Kira-kira begitu aku merasa derau mesin baling-baling ini. Setiap saat bisa batuk darah. Lalu kolaps. Aku memandang ke bandara yang kecil, yang lebih pantas disebut rumah besar ketimbang pelabuhan. Suamiku tampak di sana, berdiri kacak pinggang, menunggu saat melambai hingga pesawat lenyap di udara, di atas gunung-gunung yang berkeliling.</p>
+      <p>Aku menelan ludah. Terbang adalah menyetorkan nyawa kepada perusahaan angkutan umum. Kita bisa mengambilnya kembali. Bisa juga tidak. Dan tak ada rente. Kalau untung, hanya ada tiba dengan selamat.</p>
+      <p>Aku sesungguhnya sangat takut. Penyiksaan akan berlangsung tujuh jam, termasuk transit dan ganti pesawat. Tapi selalu ada cara untuk survive. Kusetorkan diriku yang cemas, yang bertanggung jawab, yang berkeringat dingin membayangkan anak-anakku kehilangan ibu yang menghangatkan mereka dalam sayap-sayapku, yang menitikkan air mata atas jerih payah suami bagi kami. Kusetorkan diriku yang itu bersama jiwaku ke kotak hitam di kokpit. Jati, kalau ada apa-apa denganku, aku yang kamu miliki ada di kotak hitam itu, ya.</p>
+      <p>Yang duduk di kursi sekarang adalah aku yang lain. Aku yang kuat untuk menghadapi kengerian, yaitu aku yang tak bertanggung jawab. Aku yang tak memiliki suami ataupun anak-anak. Aku yang lajang petualang.</p>
+      <p>Dan lihatlah. Seorang lelaki tergesa-tergesa melewati pramugari yang cemberut karena ia membuat penerbangan telat jadwal. Ia meletakkan bagasi ke dalam kabin di atas kepalaku. Ia mengangguk kepadaku sebelum duduk di kursi sebelahku. Terhidu bau tubuhnya. Bau hangat manusia. Aku membalas ringan dia, lalu mengalihkan pandangan ke jendela. Pesawat mulai bergerak. Jati melambai di bawah sana. Aku membalas. Selamat tinggal!</p>
+      <p>Kira-kira dia adalah seorang peneliti. Seorang peneliti lapangan. Seorang peneliti yang biasa di alam bebas. Di hutan. Bukan di lab. Di goa. Di padang rumput berpasir. Ia mengenakan kacamata. Perawakannya keras. Otot kedang tangannya tegas. Urat-urat pada lengannya mencuat. Itulah yang dapat terlihat jika aku tak mau jelas-jelas menoleh kepadanya. Pada ransel yang diletakkan di bawah kursi depan, tersangkut botol minum aluminium SIGG. Dengan stiker ”kurangi plastik”. Ia mengenakan sepatu gunung Eiger.</p>
+      <p>Ataukah dia orang film. Film dokumenter lingkungan. Ah, aku tak bisa melihat lipatan perutnya, meskipun ia mengenakan T-shirt kelabu yang dimasukkan di balik kemeja korduroi hitam yang terbuka. Ia pasti memiliki six-pac yang lumayan. Dari kulit jemarinya, kira-kira ia empat puluhan.</p>
+      <p>Sebetulnya, sudah lama aku tak ingin ngobrol dengan orang seperjalanan. Sia-sia. Lebih baik baca buku daripada menghabiskan waktu dengan makhluk yang tak memberi kita pengetahuan dan tak akan kita ingat lagi. Setidaknya, buku menambah isi kepala. Manusia sering-sering cuma menghabiskan urat kepala.</p>
+      <p>Kukeluarkan buku. Kuletakkan di pangkuan, sebab aku sulit membaca ketika lepas landas dan lampu tanda kenakan sabuk belum mati. Java Man. Garniss Curtis, Carl Swisher &amp; Roger Lewin. Aku ingin memejamkan mata dan berdoa, tapi kulihat lelaki di sebelahku bergerak. Gerakan mencontek judul buku, kutahu dengan sudut mataku. Ah, tebakanku takkan jauh. Ia orang lapangan, bergerak di sekitar soal lingkungan.</p>
+      <p>Aku menyadari pesawat ini tak punya lampu tanda kenakan sabuk pengaman. Sialan. Kuno amat. Setelah burung bronkitis ini terbang mendatar, aku menarik napas lega yang pertama, dan mulai membaca lagi. Kutangkap lagi dengan sudut mataku, ia bereaksi terhadap bacaanku. Ah! Kupergoki saja dia. Sambil bisa kuperhatikan sekalian, seperti apa mukanya.</p>
+      <p>Ia memiliki wajah lelaki baik. Lelaki baik adalah lelaki yang tidak tengil atau sesumbar, tidak sok tahu atau menggurui. Meski tidak berarti lelaki baik-baik. Lelaki baik-baik, yaitu yang setia kepada keluarga, bisa saja sangat menyebalkan dan suka membual demi menegakkan citra kepala keluarga. Lelaki baik adalah lelaki yang menyenangkan untuk diajak ngobrol bersama, meski belum tentu baik untuk hidup bersama.</p>
+      <p>Nah! Ia tertangkap basah sedang mencontek!</p>
+      <p>Aku tersenyum padanya. Toh tadi juga kami sudah saling mengangguk.</p>
+      <p>”Sudah pernah baca?” tanyaku.</p>
+      <p>”Boleh lihat?”</p>
+      <p>Dan tentu saja kami jadi bercakap-cakap. Ia memang lelaki baik. Kebanyakan lelaki punya beban untuk tampak lebih tahu dari perempuan. Tapi dia tidak. Dia banyak bertanya tentang duniaku.</p>
+      <p>(Kebanyakan lelaki lebih suka menjawab tentang diri sendiri. Jika kita tidak bertanya, mereka akan membikin pertanyaannya sendiri dan menjawab sendiri.) Dari cara bertanyanya, ia mirip wartawan dari koran atau majalah yang baik pula. Jadi, apa kerjanya?</p>
+      <p>”Macam-macam sudah saya coba,” katanya. ”Saya pernah kerja di pertambangan. Saya pernah kerja di kapal.”</p>
+      <p>”Di kapal?”</p>
+      <p>”Di kapal, jadi juru masak, jadi fotografer….”</p>
+      <p>”Jadi juru masak?”</p>
+      <p>”Iya. Jadi juru masak di kapal. Jadi fotografer di kapal….”</p>
+      <p>Tak bisa tidak aku menyimak dia dari rambut ke sepatu, mencari jejak-jejak pekerjaan itu. Ia memiliki gestur yang rendah hati. Barangkali ia lebih pekerja badan ketimbang peneliti.</p>
+      <p>”Jadi penjahit juga pernah. Beternak ayam juga pernah. Mencoba kebun kelapa sawit kecil-kecilan pernah juga….”</p>
+      <p>Kini aku mencari-cari tanda jika ia berbohong. Atau sedikitnya bercanda. Tapi wajahnya tulus seperti hewan.</p>
+      <p>”Jadi, kenapa ayam-ayam negeri itu bisa bertelur tanpa dijantani? Ayam kampung tidak begitu, kan?” tanyaku, juga tulus, tapi juga mengetes.</p>
+      <p>Ia kelihatan senang dengan kata itu. Dijantani. ”Sesungguhnya, buat saya itu juga misterius.”</p>
+      <p>Ia tidak memberi aku jawaban yang memuaskan. Tapi ia menceritakan rincian pengalaman yang membuat aku percaya bahwa ia tidak berbohong. Ia tidak mengaku-ngaku peternak ayam, berkebun kelapa sawit, juru masak, fotografer. Jadi, apa yang dikerjakannya di kepulauan Indonesia timur ini? Memotret perburuan ikan paus?</p>
+      <p>Tebakanku tidak terlalu meleset.</p>
+      <p>”Memotret. Tapi bukan ikan paus. Biar orang lain saja yang mengerjakan itu. Saya… tidaklah saya motret binatang dibunuh.”</p>
+      <p>Oh, berhati haluskan dia. ”Jadi motret apa?”</p>
+      <p>”Saya,” ia berdehem, ”saya mencari sebanyak-banyaknya orang pendek. Orang katai. Saya potret mereka. Pernah dengar tentang Manusia Liang Bua?”</p>
+      <p>”Untuk siapa? Untuk proyek sendiri?”</p>
+      <p>”Untuk satu majalah luar negeri.”</p>
+      <p>Lalu ia bercerita betapa sarjana asing senang mencari jejak manusia purba di Indonesia. Persis yang saya baca di buku ini, sahutku. Dan kami tenggelam sejenak dalam halaman-halaman dan referensi yang sempat diingat. Tangan kami tanpa sengaja bersentuhan ketika menelusuri spekulasi yang terdedah, lembar demi lembar. Dan pada lembar-lembar berikutnya aku tak tahu apakah persentuhan itu tetap tak sengaja.</p>
+      <p>Ia bercerita tentang dua spesies manusia pada sebuah zaman. Yang lebih purba dan yang lebih baru. Di sebuah titik, yang lebih purba punah. Dialah manusia neanderthal, dengan ciri-ciri bertulang kepala lebih ceper dan tulang alis lebih menonjol. Tapi, sebelum mereka punah, dua spesies itu ada bercampur pula. Maka, keturunan manusia yang lebih purba masih kadang-kadang ditemukan di kehidupan sekarang. Ciri-cirinya, bertulang kepala lebih ceper dan tulang alis lebih menonjol. ”Seperti saya, barangkali.” Ia nyengir lucu.</p>
+      <p>Aku memerhatikan dia. Ah, itukah yang membuat wajahnya tampak tulus seperti hewan?</p>
+      <p>Penerbangan berganti di Surabaya. Mendung menggantung.</p>
+      <p>”Sekarang semua fotografer pakai digital, ya?”</p>
+      <p>”Kalau dari segi kualitas, film tetap lebih sensitif. Tapi, dari segi kepraktisan, digital memang tak terkalahkan.”</p>
+      <p>”Saya tidak suka teknologi. Teknologi membuat yang tua tidak dihargai. Semua barang elektronik cepat jadi tua dan tak berguna. Tidak adil.”</p>
+      <p>Kenapa kukeluhkan ini? Adakah diriku yang cemas dan menyadari bahwa aku tak terlalu muda lagi untuk bergenit-genit dengan lelaki?</p>
+      <p>”Kenapa,” kataku agak grogi, mencari tema baru, ”kenapa kamera digital semakin tahun semakin biru pucat gambarnya?”</p>
+      <p>Tapi ini bukan tema baru. Ini tema yang sama. Tentang kecemasan menjadi tua.</p>
+      <p>”Itu jeleknya kamera digital. Setiap kamera digital memang hanya untuk memotret sejumlah kali tertentu. Setelah sekian kali, kemampuannya turun sama sekali. Biasanya, sekitar seratus ribu kali. Sebetulnya, itu tertulis di buku keterangan. Tapi tidak ada yang mau baca.”</p>
+      <p>”Jadi, setiap kamera digital lahir dengan kapasitas sekitar seratus ribu kali memotret?”</p>
+      <p>”Iya. Tertulis. Cuma orang enggak mau baca.”</p>
+      <p>”Ada yang bilang, setiap lelaki juga begitu. Lahir dengan sejumlah tertentu kapasitas orgasme.”</p>
+      <p>Ia diam sebentar. Lalu tawanya meledak.</p>
+      <p>”Kalau jumlah itu sudah terlewati, berarti jatahnya habis,” kataku lagi.</p>
+      <p>Ia tertawa lagi. Tapi, sesungguhnya aku tidak melucu. Aku sendiri tak tahu apa motifku. Apakah aku ingin tahu adakah teori itu benar. Ataukah, aku sesungguhnya sudah merasa intim dengan lelaki berbau manusia ini. Aku tak tahu apa yang kukatakan.</p>
+      <p>Kutemukan ia menatapku lebih lama. Dan lebih dalam. Kubalas ia sebentar. Setelah itu aku merasa wajahku hangat. Kubuang pandangan ke jendela. Aku lebih muda dari dia. Tapi tetap aku tak muda lagi. Dan aku beranak dua. Meskipun diriku yang bertanggung jawab telah kutitipkan bersama nyawaku di kotak hitam.</p>
+      <p>Aku ingin bertanya padanya. Jatahmu sudah diboroskan belum?</p>
+      <p>Pesawat melonjak. Bagai ada lubang besar di jalanannya. Lampu tanda kenakan sabuk pengaman menyala. Aku merasa berayun ke kiri ke kanan. Seperti dalam bus malam yang mencicit di jalan licin berbatu. Aku mencoba tidak mencengkeram dahan kursi. Tapi keringat dinginku merembes sedikit di dahi.</p>
+      <p>Tiba-tiba ia menangkupkan tangannya pada tanganku di tangkai kursi. Seperti seorang suami. Kalau ada apa-apa, kita mengalaminya bersama-sama.</p>
+      <p>Aku memejamkan mata. Aku tak tahu, apakah dalam sisa perjalanan aku bersandar di bahunya.</p>
+      <p>Tapi, pesawat mendarat juga di Soekarno-Hatta. Ia membantuku mengemasi bagasi.</p>
+      <p>Aku telah di tanah lagi. Aku harus pergi ke kokpit mengambil kembali nyawa dan diriku dari kotak hitam. Nyawa dan diriku yang lebih peka dan penakut ketimbang yang duduk tadi. Ingin rasanya aku meminta lelaki berwajah baik itu menemaniku terus sampai sepotong jiwaku bergabung kembali. Sepotong yang dibawa Jati….(*)</p>
+      </section>
+      <aside class="source-note"><strong>Keterangan sumber:</strong> “Terbang” karya Ayu Utami, pertama kali dimuat di <em>Kompas</em>, 20 April 2008. Persembahan penulis: “Untuk Bona dan Weni”. Tata letak disesuaikan untuk pembacaan digital; pemenggalan baris akibat tata letak cetak dirapikan tanpa bermaksud mengubah isi cerita.</aside>
+    </article>
   </main>
-  <footer><div class="quote">“Setiap perjalanan menyimpan kemungkinan, dan keberanian sering lahir dari cara kita menghadapi ketidakpastian.”</div><strong>MANDALA AKSARA</strong><br>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.<br><span>Dikelola Mandiri</span></footer>
+  <footer class="site-footer">
+    <div class="quote">“Membaca adalah perjalanan yang memperluas cara kita memandang dunia.”</div>
+    <div>— Mandala Aksara</div>
+    <div>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</div>
+    <div>Dikelola Mandiri</div>
+  </footer>
+  <button class="back-top" type="button" aria-label="Kembali ke atas" title="Kembali ke atas" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
   <script>
-    const paragraphs = document.querySelectorAll('#bacaan p'); let size = 19;
-    function applySize() { paragraphs.forEach(p => p.style.fontSize = ` ${size}px`.trim()); }
-    document.getElementById('smaller').addEventListener('click', () => { size=Math.max(15,size-1); applySize(); });
-    document.getElementById('larger').addEventListener('click', () => { size=Math.min(26,size+1); applySize(); });
-    document.getElementById('reset').addEventListener('click', () => { size=19; applySize(); });
+    (()=>{
+      const story=document.getElementById('story');
+      const label=document.getElementById('size-label');
+      let size=18;
+      const apply=()=>{story.style.fontSize=size+'px';label.textContent='Ukuran teks: '+size+' px';};
+      document.getElementById('decrease').addEventListener('click',()=>{size=Math.max(14,size-1);apply();});
+      document.getElementById('increase').addEventListener('click',()=>{size=Math.min(26,size+1);apply();});
+      document.getElementById('reset').addEventListener('click',()=>{size=18;apply();});
+      apply();
+    })();
   </script>
 </body>
 </html>
