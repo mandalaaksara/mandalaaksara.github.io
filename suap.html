@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -8,107 +9,211 @@
   <title>Suap — Putu Wijaya | Mandala Aksara</title>
   <style>
     :root{color-scheme:light;--navy:#102b4e;--navy2:#1b426c;--orange:#e87924;--gold:#d9aa55;--ink:#293747;--muted:#68788b;--paper:#fff;--bg:#f2f5f9;--line:#e4eaf1}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.8}a{color:inherit}
-    .site-header{background:linear-gradient(115deg,var(--navy),var(--navy2));color:#fff;border-bottom:4px solid var(--orange)}.header-inner{max-width:1080px;margin:auto;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font:700 1.08rem/1.3 Arial,sans-serif;letter-spacing:.14em}.brand small{display:block;margin-top:5px;color:#dce6f0;font:400 .78rem/1.5 Arial,sans-serif;letter-spacing:.015em}.header-link{display:inline-block;padding:9px 15px;border:1px solid #ffffff66;border-radius:999px;color:#fff;text-decoration:none;font:600 .88rem Arial,sans-serif}.header-link:hover{background:#ffffff18}
-    main{max-width:960px;margin:34px auto;padding:0 18px}.paper{overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 38px #17324d12}.story-head{text-align:center;padding:42px 24px 30px;background:linear-gradient(180deg,#fff,#fafbfd);border-bottom:1px solid var(--line)}.kicker{color:var(--orange);font:700 .72rem Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase}h1{margin:12px 0 7px;color:var(--navy);font:700 clamp(2.1rem,5vw,3rem)/1.15 Georgia,serif}.author{color:var(--muted);font:600 1rem Arial,sans-serif}
-    .toolbar{position:sticky;top:0;z-index:5;display:flex;justify-content:center;align-items:center;gap:9px;padding:12px 14px;background:#ffffffed;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}.toolbar button{min-width:42px;padding:8px 11px;border:1px solid #d5deea;border-radius:8px;background:#fff;color:var(--navy);font-weight:700;cursor:pointer}.toolbar button:hover{border-color:var(--orange);background:#fff8f2}.toolbar-label{color:var(--muted);font:.78rem Arial,sans-serif}
-    .story-body{max-width:760px;margin:auto;padding:38px clamp(22px,6vw,72px) 54px;font-size:18px;line-height:1.95;text-align:left;overflow-wrap:anywhere}.story-body p{margin:0 0 1.12em;text-indent:1.55em}.story-body p:first-child{text-indent:0}.source-note{margin:0 28px 30px;padding:16px 19px;border-left:3px solid var(--gold);background:#fbf8f1;color:#596777;font:.84rem/1.7 Arial,sans-serif}.site-footer{text-align:center;padding:26px 18px 36px;color:#68778a;font:.83rem/1.8 Arial,sans-serif}.quote{margin-bottom:5px;color:var(--navy);font:italic 1rem/1.6 Georgia,serif}.back-top{position:fixed;right:18px;bottom:18px;width:42px;height:42px;border:0;border-radius:50%;background:var(--navy);color:#fff;font-size:1.15rem;box-shadow:0 4px 14px #102b4e33;cursor:pointer}
-    @media(max-width:600px){.header-inner{padding:17px 15px}.brand{font-size:.98rem}.brand small{font-size:.72rem}main{margin:15px auto;padding:0 9px}.paper{border-radius:12px}.story-head{padding:31px 16px 23px}.story-body{padding:27px 20px 38px;font-size:17px;line-height:1.88}.source-note{margin:0 16px 20px;padding:13px 15px}.toolbar{gap:6px}.toolbar-label{font-size:.72rem}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{body{background:#fff}.site-header,.toolbar,.site-footer,.back-top{display:none}main{max-width:none;margin:0;padding:0}.paper{border:0;border-radius:0;box-shadow:none}.story-head{padding:15mm 10mm}.story-body{max-width:none;padding:8mm 18mm;font-size:12pt;line-height:1.7}.source-note{margin:0 18mm 10mm}}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.8}
+    a{color:inherit}
+    .site-header{background:linear-gradient(115deg,var(--navy),var(--navy2));color:#fff;border-bottom:4px solid var(--orange)}
+    .header-inner{max-width:1080px;margin:auto;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand{font:700 1.08rem/1.3 Arial,sans-serif;letter-spacing:.14em}
+    .brand small{display:block;margin-top:5px;color:#dce6f0;font:400 .78rem/1.5 Arial,sans-serif;letter-spacing:.015em}
+    .header-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+    .header-link{display:inline-block;padding:9px 15px;border:1px solid #ffffff66;border-radius:999px;color:#fff;text-decoration:none;font:600 .88rem Arial,sans-serif}
+    .header-link:hover{background:#ffffff18}
+    .header-link.primary{background:var(--orange);border-color:var(--orange);color:#fff}
+    .header-link.primary:hover{background:#cf6418;border-color:#cf6418}
+    main{max-width:960px;margin:34px auto;padding:0 18px}
+    .paper{overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 38px #17324d12}
+    .story-head{text-align:center;padding:42px 24px 30px;background:linear-gradient(180deg,#fff,#fafbfd);border-bottom:1px solid var(--line)}
+    .kicker{color:var(--orange);font:700 .72rem Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase}
+    h1{margin:12px 0 7px;color:var(--navy);font:700 clamp(2.1rem,5vw,3rem)/1.15 Georgia,serif}
+    .author{color:var(--muted);font:600 1rem Arial,sans-serif}
+    .toolbar{position:sticky;top:0;z-index:5;display:flex;justify-content:center;align-items:center;gap:9px;padding:12px 14px;background:#ffffffed;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+    .toolbar button{min-width:42px;padding:8px 11px;border:1px solid #d5deea;border-radius:8px;background:#fff;color:var(--navy);font-weight:700;cursor:pointer}
+    .toolbar button:hover{border-color:var(--orange);background:#fff8f2}
+    .toolbar-label{color:var(--muted);font:.78rem Arial,sans-serif}
+    .story-body{max-width:760px;margin:auto;padding:38px clamp(22px,6vw,72px) 54px;font-size:18px;line-height:1.95;text-align:left;overflow-wrap:anywhere}
+    .story-body p{margin:0 0 1.12em;text-indent:1.55em}
+    .story-body p:first-child{text-indent:0}
+    .source-note{margin:0 28px 30px;padding:16px 19px;border-left:3px solid var(--gold);background:#fbf8f1;color:#596777;font:.84rem/1.7 Arial,sans-serif}
+    .site-footer{text-align:center;padding:26px 18px 36px;color:#68778a;font:.83rem/1.8 Arial,sans-serif}
+    .quote{margin-bottom:5px;color:var(--navy);font:italic 1rem/1.6 Georgia,serif}
+    .back-top{position:fixed;right:18px;bottom:18px;width:42px;height:42px;border:0;border-radius:50%;background:var(--navy);color:#fff;font-size:1.15rem;box-shadow:0 4px 14px #102b4e33;cursor:pointer}
+    @media(max-width:600px){
+      .header-inner{padding:17px 15px}
+      .brand{font-size:.98rem}
+      .brand small{font-size:.72rem}
+      main{margin:15px auto;padding:0 9px}
+      .paper{border-radius:12px}
+      .story-head{padding:31px 16px 23px}
+      .story-body{padding:27px 20px 38px;font-size:17px;line-height:1.88}
+      .source-note{margin:0 16px 20px;padding:13px 15px}
+      .toolbar{gap:6px}
+      .toolbar-label{font-size:.72rem}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{
+      body{background:#fff}
+      .site-header,.toolbar,.site-footer,.back-top{display:none}
+      main{max-width:none;margin:0;padding:0}
+      .paper{border:0;border-radius:0;box-shadow:none}
+      .story-head{padding:15mm 10mm}
+      .story-body{max-width:none;padding:8mm 18mm;font-size:12pt;line-height:1.7}
+      .source-note{margin:0 18mm 10mm}
+    }
   </style>
 </head>
 <body>
-  <header class="site-header"><div class="header-inner"><div class="brand">MANDALA AKSARA<small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small></div><a class="header-link" href="perpustakaan.html">← Perpustakaan Digital</a></div></header>
-  <main><article class="paper" aria-labelledby="story-title"><header class="story-head"><div class="kicker">Perpustakaan Digital · Cerpen</div><h1 id="story-title">Suap</h1><div class="author">Putu Wijaya</div></header>
-  <nav class="toolbar" aria-label="Pengaturan ukuran teks"><button type="button" id="decrease" aria-label="Perkecil teks">A−</button><span class="toolbar-label" aria-live="polite" id="size-label">Ukuran teks</span><button type="button" id="reset" aria-label="Ukuran teks normal">A</button><button type="button" id="increase" aria-label="Perbesar teks">A+</button></nav>
-  <section class="story-body" id="story" aria-label="Isi cerpen">
-      <p>Seorang tamu datang ke rumah saya. Tanpa mengenalkan diri, dia menyatakan keinginannya untuk menyuap. Dia minta agar di dalam lomba lukis internasional, peserta yang mewakili daerahnya, dimenangkan. ”Seniman yang mewakili kawasan kami itu sangat berbakat,” katanya memuji, ”keluarganya turun-temurun adalah pelukis kebanggaan wilayah kami. Kakeknya dulu pelukis kerajaan yang melukis semua anggota keluarga raja. Sekarang dia bekerja sebagai opas di kantor gubernuran, tetapi pekerjaan utamanya melukis. Kalau dia menang, seluruh dunia akan menolehkan matanya ke tempat kami yang sedang mengalami musibah kelaparan dan kemiskinan, karena pusat lebih sibuk mengurus soal-soal politik daripada soal-soal kesejahteraan. Dua juta orang yang terancam kebutaan, TBC, mati muda, akan terselamatkan. Saya harap Anda sebagai manusia yang masih memiliki rasa belas kasihan kepada sesama, memahami amanat ini. Ini adalah perjuangan hak asasi yang suci.”</p>
-      <p>Saya langsung pasang kuda-kuda.</p>
-      <p>”Maaf, tidak bisa. Tidak mungkin sama sekali. Juri tidak akan menjatuhkan pilihan berdasarkan kemanusiaan, tetapi berdasarkan apakah sebuah karya seni itu bagus atau tidak.”</p>
-      <p>”Tapi, bukankah karya yang bagus itu adalah karya yang membela kemanusiaan dan bermanfaat bagi manusia?”</p>
-      <p>”Betul. Tapi, meskipun membela kemanusiaan, kalau tidak dipersembahkan dengan bagus atau ada yang lebih bagus, di dalam sebuah kompetisi yang adil, yang kurang bagus tetap tidak akan bisa menang.”</p>
-      <p>Orang yang mau menyuap itu tersenyum.</p>
-      <p>”Bapak mengatakan itu, sebab kami tidak menjanjikan apa-apa?”</p>
-      <p>”Sama sekali tidak!” ”Ya!”</p>
-      <p>Lalu dia mengulurkan sebuah cek kosong yang sudah ditandatangani. Saya langsung merasa tertantang dan terhina. Tetapi entah kenapa saya diam saja. Kilatan cek itu membuat darah saya beku.</p>
-      <p>”Kalau wakil kami menang, Bapak boleh menuliskan angka berapa pun di atas cek kontan ini dan langsung menguangkannya kapan saja di bank yang terpercaya ini.”</p>
-      <p>Saya bergetar. Itu sebuah tawaran yang membuat syok. ”Kalau ragu-ragu silakan menelepon ke bank bersangkutan, tanyakan apakah ada dana di belakang rekening ini, kalau Anda masih waswas. Kami mengerti kalau Anda tidak percaya kepada kami. Zaman sekarang memang banyak penipuan bank.”</p>
-      <p>Saya memang tidak percaya. Tapi saya tidak ingin memper-lihatkannya.</p>
-      <p>”Anda tidak percaya kepada kami?” ”Bukan begitu.”</p>
-      <p>”Jadi bagaimana? Apa Anda lebih suka kami datang dengan uang tunai? Boleh. Begitu? Berapa yang Anda mau?”</p>
-      <p>Saya tak menjawab.</p>
-      <p>”Satu miliar? Dua miliar? Lima miliar?”</p>
-      <p>Saya terkejut. Bangsat. Dia seperti sudah menebak pikiran saya.</p>
-      <p>”Kita transparan saja.”</p>
-      <p>Saya gelagapan. Apalagi kemudian dia mengeluarkan sebuah amplop. Nampak besar dan padat.</p>
-      <p>”Kami tidak siap dengan uang tunai sebanyak itu. Tapi kebetulan kami membawa sejumlah uang kecil yang akan kami pakai sebagai uang muka pembelian mobil. Silakan ambil ini sebagai tanda jadi, untuk menunjukkan bahwa kami serius memperjuangkan kemanusiaan.”</p>
-      <p>Dia mengulurkan uang itu. Kalau pada waktu itu ada wartawan yang menjepret, saya sudah pasti akan diseret oleh KPK, lalu diberi seragam koruptor. Saya tak berani bergerak, walaupun perasaan ingin tahu saya menggebu-gebu, berapa kira-kira uang di dalam amplop itu.</p>
-      <p>”Silakan.”</p>
-      <p>Tiba-tiba saya batuk. Itu reaksi yang paling gampang kalau sedang kebingungan. Tetapi batuk saya yang tak sengaja itu sudah berarti lain pada tamu itu. Dia merasa itu sebagai semacam penolakan. Dia merogoh lagi tasnya, lalu mengeluarkan sebuah amplop yang lain.</p>
-      <p>”Maaf, bukan saya tidak menghargai Anda, tapi kami memang tidak biasa membawa uang tunai. Kalau ini kurang, sore ini juga kami akan datang lagi. Asal saya mendapat satu tanda tangan saja sebagai bukti untuk saya laporkan. Atau Anda lebih suka menelepon, saya hubungkan sekarang.”</p>
-      <p>Cepat sekali dia mengeluarkan HP dan menekan nomor-nomor sebelum saya sempat mencegah.</p>
-      <p>”Hallo, hallo ”</p>
-      <p>Saya memberi isyarat untuk menolak. Tapi orang itu terlalu sibuk, mungkin sengaja tidak mau memberi saya kesempatan. Waktu itu anak saya yang baru berusia 4 tahun berlari dari dalam. Dia memeluk saya. Saya cepat menangkapnya. Tapi, sebelum tertangkap, anak itu mengubah tujuannya. Dia mengelak dan kemudian mengambil kedua amplop yang menggeletak di atas meja.</p>
-      <p>”Ade, jangan...!”</p>
-      <p>Tapi amplop itu sudah dilarikan keluar. ”Adeee, jangan!”</p>
-      <p>Saya bangkit lalu mengejar anak saya yang ngibrit ke halaman membawa umpan sogokan itu. Merasa dikejar, anak saya berlari menyelamatkan diri.</p>
-      <p>”Ade, jangan...!”</p>
-      <p>Anak saya terus kabur melewati rumah tetangga. Para tetangga ketawa melihat saya kejar-kejaran dengan anak. Mereka mungkin menyangka itu permainan biasa.</p>
-      <p>”Ade jangan, itu punya Oom!”</p>
-      <p>Terlambat. Anak saya melemparkan kedua amplop itu ke dalam kolam. Kedua-duanya. Ketika saya tangkap, dia diam saja. Matanya melotot menentang mata saya. Seakan-akan dia marah, karena bapaknya sudah mengkhianati hati nurani. Padahal saya sama sekali tidak bermaksud menerima suapan itu. Saya hanya memerlukan waktu dalam menolak. Saya kan belum berpengalaman disuap. Apalagi menolak suap. Itu memerlukan keberanian mental. Baik menerima maupun menolaknya.</p>
-      <p>Kedua amplop itu langsung tenggelam. Sudah jelas sekali bagaimana beratnya. Perasaan saya rontok. Dengan menghilangkan akal sehat saya lepaskan anak saya, lalu terjun ke kolam. Dengan kalap saya gapai-gapai. Tapi kedua amplop itu tak terjamah.</p>
-      <p>Para tetangga muncul dan bertanya-tanya. Heran melihat saya yang biasa jijik pada kolam yang sering dipakai tempat buang hajat besar itu, sekarang justru menjadi tempat saya berenang. Bukan hanya berenang, saya juga menyelam untuk menggapai-gapai. Tidak peduli ada bangkai ayam dan kotoran manusia, amplop itu harus ditemukan.</p>
-      <p>Dengan berapi-api saya terus mencari. Kalau kedua amplop itu lenyap, berarti saya sudah makan suap. Hampir setengah jam saya menggapai-gapai menyelusuri setiap lekuk dasar kolam. Tak seorang pun yang menolong. Semua hanya memperhatikan kelakuan saya. Saya juga tidak bisa menjelaskan: bahaya. Hare gene, siapa yang tidak perlu uang?</p>
-      <p>Ketika istri saya muncul dan berteriak memanggil baru saya berhenti.</p>
-      <p>”Bang! Tamunya mau pulang!”</p>
-      <p>Cemas, gemas, dan kecewa saya keluar dari kolam. Badan saya penuh lumpur. Di kepala saya ada tahi. Orang-orang melihat kepada saya dengan jijiiiiiiiik bercampur geli. Istri saya bengong. Tapi saya tidak peduli. Anak saya hanya ketawa melihat bapaknya begitu konyol.</p>
-      <p>”Eling Dik, eling,” kata seorang tetangga tua menyangka saya kemasukan setan.</p>
-      <p>”Abang kenapa sih?” tanya istri saya galak dan penuh malu. Saya tidak berani menjawab terus-terang. Kalau saya katakan anak saya melemparkan dua amplop uang, semuanya akan terjun seperti saya tadi untuk mencari. Ya kalau dikembalikan. Kalau tidak? Mereka yang akan kaya dan saya yang masuk penjara.</p>
-      <p>Untuk menghindarkan kemalangan yang lain, saya hanya menggeleng.</p>
-      <p>Diinjak pikiran kacau saya pulang. Tapi tamu itu sudah kabur. Tak ada bekasnya sama sekali. Seakan-akan ia memang tidak pernah datang. Sampai sekarang pun ia tidak pernah muncul lagi.</p>
-      <p>Saya termenung. Apa pun yang saya lakukan sekarang, saya sudah basah. Tak menolak dengan tegas, berarti saya sudah menerima. Ketidakmampuan saya untuk tidak segera menolak karena kurang pengalaman, tak akan dipercaya. Siapa yang akan peduli. Masyarakat sedang senang-senangnya melihat pemakan suap digebuk. Kalau bisa mereka mau langsung ditembak mati tanpa diadili lagi.</p>
-      <p>Dan, kenapa saya terlalu lama bego. Melongo adalah pertanda bahwa saya diam-diam punya keinginan menerima. Aduh, malu-nya. Tapi coba, siapa yang tidak ingin ketimpa rezeki nomplok. Orang kecil memang selalu tidak beruntung. Sedekah ikhlas pun sering difitnah sebagai suap. Seakan-akan orang kecil memang paling tidak mampu melawan nasibnya. Sementara pada orang gedean sudah jelas sogokan masih diposisikan semacam tanda kasih.</p>
-      <p>”Sudah, jangan kayak orang bego, cepetan mandi dulu, bau!” bentak istri saya.</p>
-      <p>Saya terpaksa cepat-cepat masuk ke kamar mandi. Setelah telanjang dan mengguyur badan, baru saya sadari betapa kotor dan busuknya saya. Berkali-kali saya keramas dan membarut tubuh dengan sabun, tapi bau kotoran itu seperti sudah masuk ke dalam daging.</p>
-      <p>”Cepat mandinya, bungkusannya sudah ketemu!” teriak istri saya sambil menggedor pintu.</p>
-      <p>Darah saya tersirap. Hanya dengan menyelempangkan handuk menutupi aurat, saya keluar.</p>
-      <p>”Mana?”</p>
-      <p>Seorang anak tetangga, teman main anak saya mengacungkan kedua amplop itu. Badannya kuyup penuh kotoran. Rupanya dia nekat terjun meneruskan misi saya yang gagal karena dia tidak rela Ade saya strap.</p>
-      <p>”Terima kasih!” kata saya menyambut kedua amplop itu, sambil kemudian memberikan uang untuk persen.</p>
-      <p>”Lima puluh ribu?” teriak istri saya memprotes.</p>
-      <p>Lalu ia mengganti uang itu dan menggantikannya dengan tiga lembar uang ribuan.</p>
-      <p>”Masa ngasih anak lima puluh ribu, yang bener aja!” ”Tapi ”</p>
-      <p>”Ah sudah! Tidak mendidik!”</p>
-      <p>Saya tidak berdebat lagi, karena anak itu sudah cukup senang dengan tiga ribu. Lalu ia melonjak dan berlari keluar seperti kapal terbang, langsung ke warung. Pasti membeli makanan chiki-chiki sampah yang membuat usus bolong.</p>
-      <p>Kedua amplop uang itu saya bawa ke kamar mandi. Dengan hati-hati saya bersihkan tanah dan kotorannya. Untung amplopnya kuat terbuat dari semacam kertas plastik, jadi tahan air. Uang tidak akan turun harganya hanya karena belepotan kotoran.</p>
-      <p>”Apa itu?” sodok istri saya ingin tahu.</p>
-      <p>Saya cepat-cepat menghindar sambil menyembunyikan amplop itu dalam handuk. Kalau dia tahu itu uang, ide-ide busuknya akan muncul. Kalau itu dibiarkan berkembang, akhirnya saya akan masuk penjara. Saya tidak percaya bahwa hanya wanita yang lemah pada uang. Laki-laki sama saja. Tetapi saya kenal betul dengan ibu si Ade. Dia sudah terlalu capek hidup di kampung kumuh. Sudah lama dia menginginkan masa depan yang lebih baik terutama setelah Ade lahir, yang belum mampu bahkan mungkin tak akan bisa saya berikan. Baginya pasti tidak ada masalah suaminya masuk penjara, asal masa depan anaknya cerah.</p>
-      <p>Saya naik ke atap rumah untuk menjemur amplop itu supaya benar-benar kering. Saya tunggu di sana dengan menahan panas matahari, takut kalau ada tangan jahil mengambilnya. Keputusan sudah diambil, saya tidak akan menerimanya. Saya akan mengembalikan, kalau orang itu datang lagi. Dia pasti sengaja pergi untuk menjebloskan saya terpaksa menerima. Tidak, saya tidak pernah mimpi akan menjadi pelaku suap.</p>
-      <p>Tapi sepuluh hari berlalu. Orang itu tidak muncul-muncul juga. Lomba pun memasuki saat penentuan. Melalui perdebatan yang sangat sengit, akhirnya dicapai kata sepakat. Dengan sangat mengejutkan pemenangnya adalah calon yang dimintakan dukungan oleh penyuap daerah itu.</p>
-      <p>Terus-terang saya termasuk yang ikut memberikan suara pada kemenangan tersebut. Bukan karena suap. Jagoan daerah itu memang berhak mendapatkannya. Bahkan juara kedua, apalagi ketiga, masih jauh di bawahnya. Kemenangan itu dinilai wajar oleh semua orang. Diterima baik oleh masyarakat. Sama sekali tidak ada suara-suara kontra.</p>
-      <p>Satu bulan berlalu. Lomba itu sudah menjadi lampau. Saya pun memperoleh jarak yang cukup untuk menyiapkan perasaan menghadapi kedua amplop itu. Meski sudah saya sembunyikan dengan begitu rapi, tapi kalau lagi sepi, kadang-kadang amplop itu saya bawa ke tempat sunyi di depan rumah dan menimang-timangnya. Rasanya aneh, kunci untuk mengubah masa depan ada di tangan, tapi saya cukup hanya memandanginya. Kemiskinan terasa tidak begitu menggasak lagi, di dekat senjata yang bisa membalikkan semuanya setiap saat. Mau tak mau saya terpaksa mengakui, betapa dahsyatnya arti uang. Suka tidak suka ternyata harus diakui memang uang mampu menenteramkan. Namun saya sudah bersikap menolak.</p>
-      <p>Sayang sekali roda kehidupan yang membenam saya di bawah terus, akhirnya mulai menang. Memasuki bulan kedua, ketika pemilik amplop itu tidak muncul-muncul juga, pikiran saya bergeser. Suap adalah dorongan yang membuat kita terpaksa melakukan sesuatu yang bertentangan dengan hati nurani dan merugikan orang banyak. Saya tidak melakukan itu. Orang juga tidak memprotes keputusan yang diambil juri. Apa perlu saya cek, adakah semua juri juga sudah disodori amplop seperti saya? Saya kira itu berlebihan. Keputusan kami yang diterima baik adalah bukti bahwa kemenangan itu tepat. Orang tidak berhak menuduh saya atau kami disuap hanya karena kebetulan kemenangannya sama dengan yang dikehendaki penyuap itu. Maksud saya orang yang mencoba menyuap itu.</p>
-      <p>Pada bulan ketiga, saya capek menunggu. Lelah juga dipermainkan oleh ketegangan. Kenapa saya mesti menolak nasib baik yang sudah di tangan. Istri saya sudah tidak mau lagi tidur dengan saya. Anak saya kontet karena gizinya kurang. Utang di warung sudah tak terbayar sehingga lewat saja sudah rasa dihimpit oleh hina dan malu.</p>
-      <p>Akhirnya, setelah berdoa berkali-kali dan meminta ampun kepada Tuhan, saya memutuskan nekat. Apa boleh buat biarlah saya masuk penjara kalau saya memang terbukti nanti makan suap. Tapi, sedikitnya saya sudah bisa membahagiakan keluarga dengan memperbaiki rumah dan membeli motor seperti tetangga saya. Kenapa orang lain boleh bahagia dan saya hanya kelelap kemiskinan karena membela kesucian. Jauh lebih baik makan suap meskipun dihukum daripada dihukum karena kena suap tanpa sempat tanpa selembat pun menikmati manis suapnya.</p>
-      <p>”Baiklah, hari ini kita memasuki sesuatu yang baru,” kata saya pada anak-istri malam itu sambil menunjukkan kedua amplop uang itu. ”Aku sudah mengambil keputusan bahwa ini adalah hak kita, karena sudah 3 bulan 10 hari pemiliknya tidak kembali. Bukan salah kita. Masa hanya tetangga yang berhak betulin rumah dan beli motor, kita sendiri makan tahi sampai mati. Ini!”</p>
-      <p>Saya terimakan kedua amplop itu ke tangan istri saya. Istri saya diam saja. Anak saya nampak menahan diri. Dia tidak berani menyambar lagi seperti dulu.</p>
-      <p>”Ayo, dibuka saja!”</p>
-      <p>Istri saya tiba-tiba menunduk dan menangis. ”Lho kok malah nangis.”</p>
-      <p>”Abang jangan salah sangka begitu.” ”Salah sangka bagaimana?”</p>
-      <p>”Jangan menyangka yang tidak-tidak.” ”Yang tidak-tidak apa?”</p>
-      <p>”Aku tidak capek karena kita miskin, tapi karena aku sakit. Aku juga sudah mulai tua sekarang, Bang. Aku diam karena tidak mau memberati perasaan Abang. Bukan apa-apa. Aku tidak mau Abang memaksa diri menerima suap hanya untuk menyenangkan hatiku. Jangan. Aku masih kuat menderita kok. Masih banyak orang lain yang lebih jelek nasibnya dari kita.”</p>
-      <p>Dia berdiri dan meletakkan kedua amplop itu di depan saya. ”Jangan memaksakan sesuatu yang tidak baik, nanti tidak akan pernah baik.”</p>
-      <p>Dia menggayut tangan Ade, lalu membawanya ke dapur. Anak saya menurut tapi dia melirik kepada saya lalu menatap ke kedua amplop itu. Kemudian diam-diam menunjuk dengan telunjuknya.</p>
-      <p>Saya menghela napas dalam. Disikapi oleh istri seperti itu, kenekatan saya justru bertambah. Memang anak dan istri saya tidak usah ikut bertanggung jawab. Biar saya sendiri nanti yang masuk neraka, asal mereka tidak. Dari jendela saya lihat perbaikan rumah tetangga menjadi dua lantai sudah hampir rampung. Suara motornya kedengaran nyaring melengking menusuk malam, membuat saya panas.</p>
-      <p>Tiba-tiba terpikir sesuatu. Kenapa anak saya tadi menunjuk ke amplop. Apa maksudnya? Apa itu sebuah peringatan? Saya menatap amplop yang menjadi bersih karena sering saya belai itu. Tiba-tiba saya terperanjat. Di satu sisinya ternyata ada belahan. Dari situ nampak terbayang isinya.</p>
-      <p>Tangan saya gemetar. Saya sambar amplop itu dan intip isinya. Kemudian dengan bernafsu, barang yang sempat saya berhalakan itu saya kupas. Darah saya seperti muncrat keluar semua ketika menemukan di dalamnya bukan uang tetapi hanya tumpukan kertas-kertas putih.</p>
-      <p>Dengan kalap saya terkam bungkusan kedua dan preteli. Sama saja. Isinya juga hanya kertas. Di situ mata saya mulai gelap. Ini pasti perbuatan tetangga jahanam itu. Dia temukan amplop itu, lalu gantikan isinya, baru dia suruh anaknya supaya menyerahkan kepada saya. Bangsat. Kalau tidak begitu, bagaimana mungkin dia bisa meningkatduakan rumahnya dan membeli motor? Saya S2, dia SMP saja tidak tamat.</p>
-      <p>Dengan gelap jelalatan karena geram saya keluar rumah. Jelas sekali sekarang. Mungkin ketika anak saya lari-lari berkejar-kejaran dengan Ade, kedua amplop itu sudah direbut oleh tetangga. Setelah tahu isinya, mereka langsung ganti. Dan ketika saya mencebur ke dalam kolam mereka punya kesempatan untuk memeriksa isinya dan menggantinya. Itu kejahatan. Manusia sekarang sudah rusak moralnya karena uang. Tidak ada lagi perasaan persaudaraan, menjarah, merampok uang orang lain sudah jadi semacam kiat dan keberanian.</p>
-      <p>Dengan kalap saya sambar batu-batu. Tak peduli apa kata orang, lalu saya lempari rumah tetangga bajingan itu. Kaca-kaca pintu yang baru dipasang saya hancurkan. Motornya juga saya hajar.</p>
-      <p>”Bangsat! Aku yang disuap! Aku yang dijebloskan ke bui dan neraka, kamu yang enak-enak menikmati! Bajingan!”</p>
-      <p>Hampir saja rumah barunya saya bakar, kalau saja para tetangga tidak keburu menyerbu dan kemudian menghajar saya habis-habisan. Mata saya bengkak, tak mampu melihat apa-apa. Hanya telinga saya masih bisa menangkap isak tangis istri dan jerit histeris anak saya. (*)</p>
-  </section><aside class="source-note"><strong>Keterangan sumber:</strong> “Suap” karya Putu Wijaya, pertama kali dimuat di <em>Jawa Pos</em>, 21 September 2008. Tata letak disesuaikan untuk pembacaan digital; pemenggalan baris akibat tata letak cetak dirapikan tanpa bermaksud mengubah isi cerita.</aside></article></main>
-  <footer class="site-footer"><div class="quote">“Kejujuran diuji bukan hanya ketika kita menolak, tetapi juga ketika kesempatan datang.”</div><div>— Mandala Aksara</div><div>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</div><div>Dikelola Mandiri</div></footer>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">MANDALA AKSARA
+        <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+      </div>
+      <nav class="header-actions" aria-label="Navigasi halaman">
+        <a class="header-link primary" href="cerpen.html">← Daftar Cerpen</a>
+        <a class="header-link" href="perpustakaan.html">Perpustakaan Digital</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="paper" aria-labelledby="story-title">
+      <header class="story-head">
+        <div class="kicker">Perpustakaan Digital · Cerpen</div>
+        <h1 id="story-title">Suap</h1>
+        <div class="author">Putu Wijaya</div>
+      </header>
+
+      <nav class="toolbar" aria-label="Pengaturan ukuran teks">
+        <button type="button" id="decrease" aria-label="Perkecil teks">A−</button>
+        <span class="toolbar-label" aria-live="polite" id="size-label">Ukuran teks</span>
+        <button type="button" id="reset" aria-label="Ukuran teks normal">A</button>
+        <button type="button" id="increase" aria-label="Perbesar teks">A+</button>
+      </nav>
+
+      <section class="story-body" id="story" aria-label="Isi cerpen">
+        <p>Seorang tamu datang ke rumah saya. Tanpa mengenalkan diri, dia menyatakan keinginannya untuk menyuap. Dia minta agar di dalam lomba lukis internasional, peserta yang mewakili daerahnya, dimenangkan. ”Seniman yang mewakili kawasan kami itu sangat berbakat,” katanya memuji, ”keluarganya turun-temurun adalah pelukis kebanggaan wilayah kami. Kakeknya dulu pelukis kerajaan yang melukis semua anggota keluarga raja. Sekarang dia bekerja sebagai opas di kantor gubernuran, tetapi pekerjaan utamanya melukis. Kalau dia menang, seluruh dunia akan menolehkan matanya ke tempat kami yang sedang mengalami musibah kelaparan dan kemiskinan, karena pusat lebih sibuk mengurus soal-soal politik daripada soal-soal kesejahteraan. Dua juta orang yang terancam kebutaan, TBC, mati muda, akan terselamatkan. Saya harap Anda sebagai manusia yang masih memiliki rasa belas kasihan kepada sesama, memahami amanat ini. Ini adalah perjuangan hak asasi yang suci.”</p>
+        <p>Saya langsung pasang kuda-kuda.</p>
+        <p>”Maaf, tidak bisa. Tidak mungkin sama sekali. Juri tidak akan menjatuhkan pilihan berdasarkan kemanusiaan, tetapi berdasarkan apakah sebuah karya seni itu bagus atau tidak.”</p>
+        <p>”Tapi, bukankah karya yang bagus itu adalah karya yang membela kemanusiaan dan bermanfaat bagi manusia?”</p>
+        <p>”Betul. Tapi, meskipun membela kemanusiaan, kalau tidak dipersembahkan dengan bagus atau ada yang lebih bagus, di dalam sebuah kompetisi yang adil, yang kurang bagus tetap tidak akan bisa menang.”</p>
+        <p>Orang yang mau menyuap itu tersenyum.</p>
+        <p>”Bapak mengatakan itu, sebab kami tidak menjanjikan apa-apa?”</p>
+        <p>”Sama sekali tidak!” ”Ya!”</p>
+        <p>Lalu dia mengulurkan sebuah cek kosong yang sudah ditandatangani. Saya langsung merasa tertantang dan terhina. Tetapi entah kenapa saya diam saja. Kilatan cek itu membuat darah saya beku.</p>
+        <p>”Kalau wakil kami menang, Bapak boleh menuliskan angka berapa pun di atas cek kontan ini dan langsung menguangkannya kapan saja di bank yang terpercaya ini.”</p>
+        <p>Saya bergetar. Itu sebuah tawaran yang membuat syok. ”Kalau ragu-ragu silakan menelepon ke bank bersangkutan, tanyakan apakah ada dana di belakang rekening ini, kalau Anda masih waswas. Kami mengerti kalau Anda tidak percaya kepada kami. Zaman sekarang memang banyak penipuan bank.”</p>
+        <p>Saya memang tidak percaya. Tapi saya tidak ingin memper-lihatkannya.</p>
+        <p>”Anda tidak percaya kepada kami?” ”Bukan begitu.”</p>
+        <p>”Jadi bagaimana? Apa Anda lebih suka kami datang dengan uang tunai? Boleh. Begitu? Berapa yang Anda mau?”</p>
+        <p>Saya tak menjawab.</p>
+        <p>”Satu miliar? Dua miliar? Lima miliar?”</p>
+        <p>Saya terkejut. Bangsat. Dia seperti sudah menebak pikiran saya.</p>
+        <p>”Kita transparan saja.”</p>
+        <p>Saya gelagapan. Apalagi kemudian dia mengeluarkan sebuah amplop. Nampak besar dan padat.</p>
+        <p>”Kami tidak siap dengan uang tunai sebanyak itu. Tapi kebetulan kami membawa sejumlah uang kecil yang akan kami pakai sebagai uang muka pembelian mobil. Silakan ambil ini sebagai tanda jadi, untuk menunjukkan bahwa kami serius memperjuangkan kemanusiaan.”</p>
+        <p>Dia mengulurkan uang itu. Kalau pada waktu itu ada wartawan yang menjepret, saya sudah pasti akan diseret oleh KPK, lalu diberi seragam koruptor. Saya tak berani bergerak, walaupun perasaan ingin tahu saya menggebu-gebu, berapa kira-kira uang di dalam amplop itu.</p>
+        <p>”Silakan.”</p>
+        <p>Tiba-tiba saya batuk. Itu reaksi yang paling gampang kalau sedang kebingungan. Tetapi batuk saya yang tak sengaja itu sudah berarti lain pada tamu itu. Dia merasa itu sebagai semacam penolakan. Dia merogoh lagi tasnya, lalu mengeluarkan sebuah amplop yang lain.</p>
+        <p>”Maaf, bukan saya tidak menghargai Anda, tapi kami memang tidak biasa membawa uang tunai. Kalau ini kurang, sore ini juga kami akan datang lagi. Asal saya mendapat satu tanda tangan saja sebagai bukti untuk saya laporkan. Atau Anda lebih suka menelepon, saya hubungkan sekarang.”</p>
+        <p>Cepat sekali dia mengeluarkan HP dan menekan nomor-nomor sebelum saya sempat mencegah.</p>
+        <p>”Hallo, hallo ”</p>
+        <p>Saya memberi isyarat untuk menolak. Tapi orang itu terlalu sibuk, mungkin sengaja tidak mau memberi saya kesempatan. Waktu itu anak saya yang baru berusia 4 tahun berlari dari dalam. Dia memeluk saya. Saya cepat menangkapnya. Tapi, sebelum tertangkap, anak itu mengubah tujuannya. Dia mengelak dan kemudian mengambil kedua amplop yang menggeletak di atas meja.</p>
+        <p>”Ade, jangan...!”</p>
+        <p>Tapi amplop itu sudah dilarikan keluar. ”Adeee, jangan!”</p>
+        <p>Saya bangkit lalu mengejar anak saya yang ngibrit ke halaman membawa umpan sogokan itu. Merasa dikejar, anak saya berlari menyelamatkan diri.</p>
+        <p>”Ade, jangan...!”</p>
+        <p>Anak saya terus kabur melewati rumah tetangga. Para tetangga ketawa melihat saya kejar-kejaran dengan anak. Mereka mungkin menyangka itu permainan biasa.</p>
+        <p>”Ade jangan, itu punya Oom!”</p>
+        <p>Terlambat. Anak saya melemparkan kedua amplop itu ke dalam kolam. Kedua-duanya. Ketika saya tangkap, dia diam saja. Matanya melotot menentang mata saya. Seakan-akan dia marah, karena bapaknya sudah mengkhianati hati nurani. Padahal saya sama sekali tidak bermaksud menerima suapan itu. Saya hanya memerlukan waktu dalam menolak. Saya kan belum berpengalaman disuap. Apalagi menolak suap. Itu memerlukan keberanian mental. Baik menerima maupun menolaknya.</p>
+        <p>Kedua amplop itu langsung tenggelam. Sudah jelas sekali bagaimana beratnya. Perasaan saya rontok. Dengan menghilangkan akal sehat saya lepaskan anak saya, lalu terjun ke kolam. Dengan kalap saya gapai-gapai. Tapi kedua amplop itu tak terjamah.</p>
+        <p>Para tetangga muncul dan bertanya-tanya. Heran melihat saya yang biasa jijik pada kolam yang sering dipakai tempat buang hajat besar itu, sekarang justru menjadi tempat saya berenang. Bukan hanya berenang, saya juga menyelam untuk menggapai-gapai. Tidak peduli ada bangkai ayam dan kotoran manusia, amplop itu harus ditemukan.</p>
+        <p>Dengan berapi-api saya terus mencari. Kalau kedua amplop itu lenyap, berarti saya sudah makan suap. Hampir setengah jam saya menggapai-gapai menyelusuri setiap lekuk dasar kolam. Tak seorang pun yang menolong. Semua hanya memperhatikan kelakuan saya. Saya juga tidak bisa menjelaskan: bahaya. Hare gene, siapa yang tidak perlu uang?</p>
+        <p>Ketika istri saya muncul dan berteriak memanggil baru saya berhenti.</p>
+        <p>”Bang! Tamunya mau pulang!”</p>
+        <p>Cemas, gemas, dan kecewa saya keluar dari kolam. Badan saya penuh lumpur. Di kepala saya ada tahi. Orang-orang melihat kepada saya dengan jijiiiiiiiik bercampur geli. Istri saya bengong. Tapi saya tidak peduli. Anak saya hanya ketawa melihat bapaknya begitu konyol.</p>
+        <p>”Eling Dik, eling,” kata seorang tetangga tua menyangka saya kemasukan setan.</p>
+        <p>”Abang kenapa sih?” tanya istri saya galak dan penuh malu. Saya tidak berani menjawab terus-terang. Kalau saya katakan anak saya melemparkan dua amplop uang, semuanya akan terjun seperti saya tadi untuk mencari. Ya kalau dikembalikan. Kalau tidak? Mereka yang akan kaya dan saya yang masuk penjara.</p>
+        <p>Untuk menghindarkan kemalangan yang lain, saya hanya menggeleng.</p>
+        <p>Diinjak pikiran kacau saya pulang. Tapi tamu itu sudah kabur. Tak ada bekasnya sama sekali. Seakan-akan ia memang tidak pernah datang. Sampai sekarang pun ia tidak pernah muncul lagi.</p>
+        <p>Saya termenung. Apa pun yang saya lakukan sekarang, saya sudah basah. Tak menolak dengan tegas, berarti saya sudah menerima. Ketidakmampuan saya untuk tidak segera menolak karena kurang pengalaman, tak akan dipercaya. Siapa yang akan peduli. Masyarakat sedang senang-senangnya melihat pemakan suap digebuk. Kalau bisa mereka mau langsung ditembak mati tanpa diadili lagi.</p>
+        <p>Dan, kenapa saya terlalu lama bego. Melongo adalah pertanda bahwa saya diam-diam punya keinginan menerima. Aduh, malu-nya. Tapi coba, siapa yang tidak ingin ketimpa rezeki nomplok. Orang kecil memang selalu tidak beruntung. Sedekah ikhlas pun sering difitnah sebagai suap. Seakan-akan orang kecil memang paling tidak mampu melawan nasibnya. Sementara pada orang gedean sudah jelas sogokan masih diposisikan semacam tanda kasih.</p>
+        <p>”Sudah, jangan kayak orang bego, cepetan mandi dulu, bau!” bentak istri saya.</p>
+        <p>Saya terpaksa cepat-cepat masuk ke kamar mandi. Setelah telanjang dan mengguyur badan, baru saya sadari betapa kotor dan busuknya saya. Berkali-kali saya keramas dan membarut tubuh dengan sabun, tapi bau kotoran itu seperti sudah masuk ke dalam daging.</p>
+        <p>”Cepat mandinya, bungkusannya sudah ketemu!” teriak istri saya sambil menggedor pintu.</p>
+        <p>Darah saya tersirap. Hanya dengan menyelempangkan handuk menutupi aurat, saya keluar.</p>
+        <p>”Mana?”</p>
+        <p>Seorang anak tetangga, teman main anak saya mengacungkan kedua amplop itu. Badannya kuyup penuh kotoran. Rupanya dia nekat terjun meneruskan misi saya yang gagal karena dia tidak rela Ade saya strap.</p>
+        <p>”Terima kasih!” kata saya menyambut kedua amplop itu, sambil kemudian memberikan uang untuk persen.</p>
+        <p>”Lima puluh ribu?” teriak istri saya memprotes.</p>
+        <p>Lalu ia mengganti uang itu dan menggantikannya dengan tiga lembar uang ribuan.</p>
+        <p>”Masa ngasih anak lima puluh ribu, yang bener aja!” ”Tapi ”</p>
+        <p>”Ah sudah! Tidak mendidik!”</p>
+        <p>Saya tidak berdebat lagi, karena anak itu sudah cukup senang dengan tiga ribu. Lalu ia melonjak dan berlari keluar seperti kapal terbang, langsung ke warung. Pasti membeli makanan chiki-chiki sampah yang membuat usus bolong.</p>
+        <p>Kedua amplop uang itu saya bawa ke kamar mandi. Dengan hati-hati saya bersihkan tanah dan kotorannya. Untung amplopnya kuat terbuat dari semacam kertas plastik, jadi tahan air. Uang tidak akan turun harganya hanya karena belepotan kotoran.</p>
+        <p>”Apa itu?” sodok istri saya ingin tahu.</p>
+        <p>Saya cepat-cepat menghindar sambil menyembunyikan amplop itu dalam handuk. Kalau dia tahu itu uang, ide-ide busuknya akan muncul. Kalau itu dibiarkan berkembang, akhirnya saya akan masuk penjara. Saya tidak percaya bahwa hanya wanita yang lemah pada uang. Laki-laki sama saja. Tetapi saya kenal betul dengan ibu si Ade. Dia sudah terlalu capek hidup di kampung kumuh. Sudah lama dia menginginkan masa depan yang lebih baik terutama setelah Ade lahir, yang belum mampu bahkan mungkin tak akan bisa saya berikan. Baginya pasti tidak ada masalah suaminya masuk penjara, asal masa depan anaknya cerah.</p>
+        <p>Saya naik ke atap rumah untuk menjemur amplop itu supaya benar-benar kering. Saya tunggu di sana dengan menahan panas matahari, takut kalau ada tangan jahil mengambilnya. Keputusan sudah diambil, saya tidak akan menerimanya. Saya akan mengembalikan, kalau orang itu datang lagi. Dia pasti sengaja pergi untuk menjebloskan saya terpaksa menerima. Tidak, saya tidak pernah mimpi akan menjadi pelaku suap.</p>
+        <p>Tapi sepuluh hari berlalu. Orang itu tidak muncul-muncul juga. Lomba pun memasuki saat penentuan. Melalui perdebatan yang sangat sengit, akhirnya dicapai kata sepakat. Dengan sangat mengejutkan pemenangnya adalah calon yang dimintakan dukungan oleh penyuap daerah itu.</p>
+        <p>Terus-terang saya termasuk yang ikut memberikan suara pada kemenangan tersebut. Bukan karena suap. Jagoan daerah itu memang berhak mendapatkannya. Bahkan juara kedua, apalagi ketiga, masih jauh di bawahnya. Kemenangan itu dinilai wajar oleh semua orang. Diterima baik oleh masyarakat. Sama sekali tidak ada suara-suara kontra.</p>
+        <p>Satu bulan berlalu. Lomba itu sudah menjadi lampau. Saya pun memperoleh jarak yang cukup untuk menyiapkan perasaan menghadapi kedua amplop itu. Meski sudah saya sembunyikan dengan begitu rapi, tapi kalau lagi sepi, kadang-kadang amplop itu saya bawa ke tempat sunyi di depan rumah dan menimang-timangnya. Rasanya aneh, kunci untuk mengubah masa depan ada di tangan, tapi saya cukup hanya memandanginya. Kemiskinan terasa tidak begitu menggasak lagi, di dekat senjata yang bisa membalikkan semuanya setiap saat. Mau tak mau saya terpaksa mengakui, betapa dahsyatnya arti uang. Suka tidak suka ternyata harus diakui memang uang mampu menenteramkan. Namun saya sudah bersikap menolak.</p>
+        <p>Sayang sekali roda kehidupan yang membenam saya di bawah terus, akhirnya mulai menang. Memasuki bulan kedua, ketika pemilik amplop itu tidak muncul-muncul juga, pikiran saya bergeser. Suap adalah dorongan yang membuat kita terpaksa melakukan sesuatu yang bertentangan dengan hati nurani dan merugikan orang banyak. Saya tidak melakukan itu. Orang juga tidak memprotes keputusan yang diambil juri. Apa perlu saya cek, adakah semua juri juga sudah disodori amplop seperti saya? Saya kira itu berlebihan. Keputusan kami yang diterima baik adalah bukti bahwa kemenangan itu tepat. Orang tidak berhak menuduh saya atau kami disuap hanya karena kebetulan kemenangannya sama dengan yang dikehendaki penyuap itu. Maksud saya orang yang mencoba menyuap itu.</p>
+        <p>Pada bulan ketiga, saya capek menunggu. Lelah juga dipermainkan oleh ketegangan. Kenapa saya mesti menolak nasib baik yang sudah di tangan. Istri saya sudah tidak mau lagi tidur dengan saya. Anak saya kontet karena gizinya kurang. Utang di warung sudah tak terbayar sehingga lewat saja sudah rasa dihimpit oleh hina dan malu.</p>
+        <p>Akhirnya, setelah berdoa berkali-kali dan meminta ampun kepada Tuhan, saya memutuskan nekat. Apa boleh buat biarlah saya masuk penjara kalau saya memang terbukti nanti makan suap. Tapi, sedikitnya saya sudah bisa membahagiakan keluarga dengan memperbaiki rumah dan membeli motor seperti tetangga saya. Kenapa orang lain boleh bahagia dan saya hanya kelelap kemiskinan karena membela kesucian. Jauh lebih baik makan suap meskipun dihukum daripada dihukum karena kena suap tanpa sempat tanpa selembat pun menikmati manis suapnya.</p>
+        <p>”Baiklah, hari ini kita memasuki sesuatu yang baru,” kata saya pada anak-istri malam itu sambil menunjukkan kedua amplop uang itu. ”Aku sudah mengambil keputusan bahwa ini adalah hak kita, karena sudah 3 bulan 10 hari pemiliknya tidak kembali. Bukan salah kita. Masa hanya tetangga yang berhak betulin rumah dan beli motor, kita sendiri makan tahi sampai mati. Ini!”</p>
+        <p>Saya terimakan kedua amplop itu ke tangan istri saya. Istri saya diam saja. Anak saya nampak menahan diri. Dia tidak berani menyambar lagi seperti dulu.</p>
+        <p>”Ayo, dibuka saja!”</p>
+        <p>Istri saya tiba-tiba menunduk dan menangis. ”Lho kok malah nangis.”</p>
+        <p>”Abang jangan salah sangka begitu.” ”Salah sangka bagaimana?”</p>
+        <p>”Jangan menyangka yang tidak-tidak.” ”Yang tidak-tidak apa?”</p>
+        <p>”Aku tidak capek karena kita miskin, tapi karena aku sakit. Aku juga sudah mulai tua sekarang, Bang. Aku diam karena tidak mau memberati perasaan Abang. Bukan apa-apa. Aku tidak mau Abang memaksa diri menerima suap hanya untuk menyenangkan hatiku. Jangan. Aku masih kuat menderita kok. Masih banyak orang lain yang lebih jelek nasibnya dari kita.”</p>
+        <p>Dia berdiri dan meletakkan kedua amplop itu di depan saya. ”Jangan memaksakan sesuatu yang tidak baik, nanti tidak akan pernah baik.”</p>
+        <p>Dia menggayut tangan Ade, lalu membawanya ke dapur. Anak saya menurut tapi dia melirik kepada saya lalu menatap ke kedua amplop itu. Kemudian diam-diam menunjuk dengan telunjuknya.</p>
+        <p>Saya menghela napas dalam. Disikapi oleh istri seperti itu, kenekatan saya justru bertambah. Memang anak dan istri saya tidak usah ikut bertanggung jawab. Biar saya sendiri nanti yang masuk neraka, asal mereka tidak. Dari jendela saya lihat perbaikan rumah tetangga menjadi dua lantai sudah hampir rampung. Suara motornya kedengaran nyaring melengking menusuk malam, membuat saya panas.</p>
+        <p>Tiba-tiba terpikir sesuatu. Kenapa anak saya tadi menunjuk ke amplop. Apa maksudnya? Apa itu sebuah peringatan? Saya menatap amplop yang menjadi bersih karena sering saya belai itu. Tiba-tiba saya terperanjat. Di satu sisinya ternyata ada belahan. Dari situ nampak terbayang isinya.</p>
+        <p>Tangan saya gemetar. Saya sambar amplop itu dan intip isinya. Kemudian dengan bernafsu, barang yang sempat saya berhalakan itu saya kupas. Darah saya seperti muncrat keluar semua ketika menemukan di dalamnya bukan uang tetapi hanya tumpukan kertas-kertas putih.</p>
+        <p>Dengan kalap saya terkam bungkusan kedua dan preteli. Sama saja. Isinya juga hanya kertas. Di situ mata saya mulai gelap. Ini pasti perbuatan tetangga jahanam itu. Dia temukan amplop itu, lalu gantikan isinya, baru dia suruh anaknya supaya menyerahkan kepada saya. Bangsat. Kalau tidak begitu, bagaimana mungkin dia bisa meningkatduakan rumahnya dan membeli motor? Saya S2, dia SMP saja tidak tamat.</p>
+        <p>Dengan gelap jelalatan karena geram saya keluar rumah. Jelas sekali sekarang. Mungkin ketika anak saya lari-lari berkejar-kejaran dengan Ade, kedua amplop itu sudah direbut oleh tetangga. Setelah tahu isinya, mereka langsung ganti. Dan ketika saya mencebur ke dalam kolam mereka punya kesempatan untuk memeriksa isinya dan menggantinya. Itu kejahatan. Manusia sekarang sudah rusak moralnya karena uang. Tidak ada lagi perasaan persaudaraan, menjarah, merampok uang orang lain sudah jadi semacam kiat dan keberanian.</p>
+        <p>Dengan kalap saya sambar batu-batu. Tak peduli apa kata orang, lalu saya lempari rumah tetangga bajingan itu. Kaca-kaca pintu yang baru dipasang saya hancurkan. Motornya juga saya hajar.</p>
+        <p>”Bangsat! Aku yang disuap! Aku yang dijebloskan ke bui dan neraka, kamu yang enak-enak menikmati! Bajingan!”</p>
+        <p>Hampir saja rumah barunya saya bakar, kalau saja para tetangga tidak keburu menyerbu dan kemudian menghajar saya habis-habisan. Mata saya bengkak, tak mampu melihat apa-apa. Hanya telinga saya masih bisa menangkap isak tangis istri dan jerit histeris anak saya. (*)</p>
+      </section>
+
+      <aside class="source-note">
+        <strong>Keterangan sumber:</strong> “Suap” karya Putu Wijaya, pertama kali dimuat di <em>Jawa Pos</em>, 21 September 2008. Tata letak disesuaikan untuk pembacaan digital; pemenggalan baris akibat tata letak cetak dirapikan tanpa bermaksud mengubah isi cerita.
+      </aside>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="quote">“Kejujuran diuji bukan hanya ketika kita menolak, tetapi juga ketika kesempatan datang.”</div>
+    <div>— Mandala Aksara</div>
+    <div>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</div>
+    <div>Dikelola Mandiri</div>
+  </footer>
+
   <button class="back-top" type="button" aria-label="Kembali ke atas" title="Kembali ke atas" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-  <script>(()=>{const story=document.getElementById('story'),label=document.getElementById('size-label');let size=18;const apply=()=>{story.style.fontSize=size+'px';label.textContent='Ukuran teks: '+size+' px';};document.getElementById('decrease').addEventListener('click',()=>{size=Math.max(14,size-1);apply();});document.getElementById('increase').addEventListener('click',()=>{size=Math.min(26,size+1);apply();});document.getElementById('reset').addEventListener('click',()=>{size=18;apply();});apply();})();</script>
-</body></html>
+
+  <script>
+    (()=>{
+      const story=document.getElementById('story');
+      const label=document.getElementById('size-label');
+      let size=18;
+      const apply=()=>{
+        story.style.fontSize=size+'px';
+        label.textContent='Ukuran teks: '+size+' px';
+      };
+      document.getElementById('decrease').addEventListener('click',()=>{
+        size=Math.max(14,size-1);apply();
+      });
+      document.getElementById('increase').addEventListener('click',()=>{
+        size=Math.min(26,size+1);apply();
+      });
+      document.getElementById('reset').addEventListener('click',()=>{
+        size=18;apply();
+      });
+      apply();
+    })();
+  </script>
+</body>
+</html>
