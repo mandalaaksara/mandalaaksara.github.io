@@ -17,12 +17,7 @@
     :root{--navy:#142b4a;--orange:#e88b2a;--ink:#263445;--muted:#687789;--paper:#fff;--bg:#f3f5f8}
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);font-family:Georgia,"Times New Roman",serif;color:var(--ink);line-height:1.8}
-    header{background:var(--navy);color:white;padding:30px 20px}
     .head,.wrap{max-width:1080px;margin:auto}
-    .brand{font-family:Arial,sans-serif;font-weight:800;letter-spacing:2px;font-size:25px}
-    .tag{font:13px Arial,sans-serif;color:#e8edf4;margin-top:5px}
-    nav{background:#203d60;padding:10px 20px;font:14px Arial,sans-serif}
-    nav a{color:white;text-decoration:none;margin-right:18px}
     .wrap{padding:28px 20px}
     .crumb{font:13px Arial,sans-serif;color:var(--muted);margin-bottom:20px}
     .crumb a{color:var(--navy);text-decoration:none}
@@ -36,14 +31,25 @@
     .chapter strong{display:block;color:var(--navy);font-size:18px}
     .chapter span{font:13px Arial,sans-serif;color:var(--muted)}
     .note{background:#fff7ed;border-left:4px solid var(--orange);padding:15px 18px;border-radius:7px;font-size:14px}
-    footer{background:var(--navy);color:#dce5ef;text-align:center;padding:25px 18px;font:13px Arial,sans-serif;margin-top:40px}
-    footer em{display:block;color:#ffc477;font-family:Georgia,serif;font-size:16px;margin-bottom:8px}
     @media(max-width:600px){.hero{padding:25px 20px}.panel{padding:20px}.brand{font-size:21px}}
   </style>
 <link rel="stylesheet" href="style.css?v=3">
 <link rel="stylesheet" href="site-shell.css?v=1">
 </head>
 <body>
+  <div class="topbar">
+    <div class="top-inner">
+      <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+      <div class="top-actions">
+        <form class="search" role="search" onsubmit="return searchSite(event)">
+          <input id="searchInput" type="search" placeholder="Cari materi..." aria-label="Cari materi">
+          <button type="submit" aria-label="Cari">⌕</button>
+        </form>
+        <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
+      </div>
+    </div>
+  </div>
+
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
     <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
@@ -58,11 +64,6 @@
     <a href="galeri.html">Galeri</a><a href="perpustakaan.html" class="active" aria-current="page">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a><a href="tentang.html">Tentang</a>
   </nav>
 </header>
-<nav>
-  <a href="index.html">Beranda</a>
-  <a href="perpustakaan.html">Perpustakaan Digital</a>
-  <a href="karya-sastra.html">Karya Sastra</a>
-</nav>
 
 <main class="wrap">
   <div class="crumb">
