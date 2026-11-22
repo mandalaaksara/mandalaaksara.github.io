@@ -327,18 +327,25 @@
       .content-card, .majas-item { padding: 20px 17px; }
     }
   </style>
+<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="site-shell.css?v=1">
 </head>
 
 <body>
 
 <header class="site-header">
-  <div class="header-inner">
-    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara" class="logo">
-    <div>
-      <p class="brand-name">MANDALA AKSARA</p>
-      <p class="brand-subtitle">Ruang Literasi dan Pembelajaran Bahasa Indonesia</p>
+  <a class="brand" href="index.html" aria-label="Mandala Aksara - Beranda">
+    <img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara">
+    <span class="brand-copy"><strong>MANDALA AKSARA</strong><small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka navigasi" aria-expanded="false" aria-controls="mainNav">☰</button>
+  <nav id="mainNav" aria-label="Navigasi utama">
+    <a href="index.html">Beranda</a>
+    <div class="nav-dropdown"><button type="button" class="nav-trigger" aria-haspopup="true">Materi Pembelajaran <span class="dropdown-arrow">⌄</span></button>
+      <div class="dropdown"><a href="kelas-x.html">Kelas X</a><a href="kelas-xi.html">Kelas XI</a><a href="kelas-xii.html">Kelas XII</a></div>
     </div>
-  </div>
+    <a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a><a href="tentang.html">Tentang</a>
+  </nav>
 </header>
 
 <nav class="main-nav">
@@ -1067,11 +1074,14 @@
 
 </main>
 
-<footer>
-  <p><strong>MANDALA AKSARA</strong></p>
-  <p>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</p>
-  <p>Dikelola Mandiri</p>
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand"><img src="logo-mandala-aksara.png" alt="Logo Mandala Aksara"><div class="footer-brand-copy"><b>MANDALA AKSARA</b><small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small><span class="managed-label">Dikelola Mandiri</span></div></div>
+    <nav class="footer-links" aria-label="Navigasi footer"><a href="tentang.html">Tentang</a><a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a></nav>
+  </div>
+  <div class="copyright">© 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+/* Identitas global Mandala Aksara — diselaraskan dengan index.html */
+.site-header{width:100%;max-width:none;margin:0;min-height:112px;padding:13px 3.5%;display:flex;align-items:center;justify-content:space-between;gap:24px;background:#0d203a!important;color:#fff!important;border-bottom:1px solid #c69a4555;box-shadow:0 4px 16px #0d203a20;position:relative;z-index:50}
+.site-header .brand{display:flex;align-items:center;gap:13px;flex:0 1 410px;min-width:250px;color:#fff!important;text-decoration:none}
+.site-header .brand img{width:88px;height:76px;flex:0 0 88px;object-fit:contain}
+.site-header .brand-copy{display:block}.site-header .brand strong{display:block;color:#fff;font: bold 23px Georgia,serif;letter-spacing:1px}.site-header .brand small{display:block;max-width:280px;margin-top:5px;font:italic 10px/1.4 Arial,sans-serif;color:#e0e7f0}
+#mainNav{display:flex;align-items:center;justify-content:flex-end;gap:4px;min-width:0}
+#mainNav>a,#mainNav .nav-trigger{min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:0 13px;line-height:1.2;border:0;border-radius:7px;background:transparent;color:#fff;font:700 13px Arial,sans-serif;white-space:nowrap;cursor:pointer;text-decoration:none}
+#mainNav>a:hover,#mainNav .nav-trigger:hover,#mainNav>a.active{background:#f28c28;color:#fff}
+#mainNav .nav-dropdown{position:relative;min-height:68px;padding:9px 8px;display:flex;align-items:center}
+#mainNav .dropdown{display:none;position:absolute;z-index:100;top:100%;left:0;min-width:180px;background:#fff;color:#142b4a;border-radius:0 0 8px 8px;box-shadow:0 8px 22px #142b4a35;padding:7px}
+#mainNav .dropdown a{display:block;padding:11px 13px;color:#142b4a;font:14px Arial,sans-serif;border-radius:4px;text-decoration:none}
+#mainNav .dropdown a:hover{background:#f3f5f8;color:#f28c28}
+#mainNav .nav-dropdown:hover .dropdown,#mainNav .nav-dropdown:focus-within .dropdown{display:block}
+.site-header .menu-toggle{display:none;background:#f28c28;color:#fff;border:0;border-radius:5px;padding:10px 13px;font-size:19px;cursor:pointer}
+.site-footer{background:#0d203a!important;color:#fff!important;border-top:5px solid #f28c28!important;margin-top:40px}
+.site-footer .footer-main{width:calc(100% - 48px);max-width:1380px;margin:auto;padding:28px 3%;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.site-footer .footer-brand{display:flex;align-items:center;gap:12px}.site-footer .footer-brand img{width:70px;height:62px;flex:0 0 70px;object-fit:contain}
+.site-footer .footer-brand b{display:block;font:bold 16px Georgia,serif;letter-spacing:1px;color:#fff}.site-footer .footer-brand small{display:block;margin-top:5px;font:11px Arial,sans-serif;color:#d7dfeb}.site-footer .managed-label{display:inline-block;margin-top:6px;color:#e8bd70;font:10px Arial,sans-serif;letter-spacing:.4px}
+.site-footer .footer-links{display:flex;flex-wrap:wrap;gap:20px;font:12px Arial,sans-serif}.site-footer .footer-links a{color:#fff;text-decoration:none}.site-footer .footer-links a:hover{color:#ffb45d}
+.site-footer .copyright{text-align:center;border-top:1px solid #ffffff2b;padding:15px 10px;font:11px/1.6 Arial,sans-serif;color:#dce4ee}
+.page-quote{max-width:900px;margin:32px auto;padding:22px 28px;background:#f3f5f8;border-left:4px solid #f28c28;border-radius:0 9px 9px 0;text-align:center;color:#34445a;font:italic 17px/1.8 Georgia,serif}.page-quote cite{display:block;margin-top:8px;color:#142b4a;font:bold 12px Arial,sans-serif;font-style:normal}
+@media(max-width:1150px){.site-header{flex-wrap:wrap;gap:10px 18px}.site-header .brand{flex:1 1 auto}.site-header .menu-toggle{display:inline-flex;align-items:center;justify-content:center;width:44px;height:42px;margin-left:auto}#mainNav{display:none;width:100%;flex-direction:column;align-items:stretch}#mainNav.open{display:flex}#mainNav>a,#mainNav .nav-trigger{width:100%;justify-content:flex-start;text-align:left}#mainNav .nav-dropdown{display:block;min-height:0;padding:0}#mainNav .dropdown{position:static;box-shadow:none;border-radius:6px;padding-left:20px}#mainNav .nav-dropdown:hover .dropdown{display:none}#mainNav .nav-dropdown.expanded .dropdown{display:block}.site-footer .footer-main{align-items:flex-start;flex-direction:column;padding:25px 18px}}
+@media(max-width:650px){.site-header{padding:10px 15px;min-height:80px}.site-header .brand{min-width:0;gap:9px}.site-header .brand img{width:70px;height:62px;flex-basis:70px}.site-header .brand strong{font-size:17px}.site-header .brand small{font-size:9px}.site-footer .footer-main{width:calc(100% - 30px)}.site-footer .footer-links{gap:14px}.page-quote{margin:24px 15px;padding:18px}}
