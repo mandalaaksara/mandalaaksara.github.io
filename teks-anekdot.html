@@ -120,16 +120,14 @@
       margin: 0 0 15px;
     }
 
-    .sidebar a {
+    .sidebar-list a {
       display: block;
-      text-decoration: none;
-      color: #485970;
-      font-size: 13px;
-      font-weight: 600;
-      padding: 9px 11px;
+      color: #465467;
+      padding: 8px 10px;
       margin: 3px 0;
-      border-radius: 7px;
-      line-height: 1.4;
+      border-radius: 6px;
+      font-size: 13px;
+      line-height: 1.5;
       transition: .2s ease;
     }
 
@@ -380,15 +378,10 @@
         max-height: none;
       }
 
-      .sidebar-list a {
-      display: block;
-      color: #465467;
-      padding: 8px 10px;
-      margin: 3px 0;
-      border-radius: 6px;
-      font-size: 13px;
-      line-height: 1.5;
-      transition: .2s ease;
+      .sidebar-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3px;
       }
     }
 
