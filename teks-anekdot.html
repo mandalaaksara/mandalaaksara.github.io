@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="id">
@@ -120,50 +121,52 @@
       margin: 0 0 15px;
     }
 
-    .sidebar-list {
+    .sidebar a {
       display: block;
-      color: #142B4A;
-      padding: 8px 10px;
-      margin: 3px 0;
-      border-radius: 6px;
+      text-decoration: none;
+      color: #485970;
       font-size: 13px;
-      line-height: 1.5;
+      font-weight: 600;
+      padding: 9px 11px;
+      margin: 3px 0;
+      border-radius: 7px;
+      line-height: 1.4;
       transition: .2s ease;
     }
 
-     .sidebar-list a:hover,
-     .sidebar-list a.active {
-      background: #EEF3F8;
-      color: var(--lho-navy);
-      border-left: 3px solid var(--lho-orange);
-}
-    
-    ..materi-content {
+    .sidebar a:hover,
+    .sidebar a.active {
+      background: #FFF1E2;
+      color: #B85D0B;
+      border-left: 3px solid var(--anekdot-orange);
+    }
+
+    .content {
       min-width: 0;
     }
 
-    ..materi-section {
+    .content section {
       background: white;
-      border-radius: 14px;
-      padding: 30px;
-      margin-bottom: 24px;
-      box-shadow: 0 4px 16px rgba(20,43,74,.06);
-      scroll-margin-top: 20px;
+      border: 1px solid var(--anekdot-border);
+      border-radius: 12px;
+      padding: 27px;
+      margin-bottom: 22px;
+      scroll-margin-top: 105px;
     }
 
-    ..materi-section h2 {
+    .content h2 {
       color: var(--anekdot-navy);
-     margin-top: 0;
-      border-left: 4px solid var(--lho-orange);
-      padding-left: 13px;
-      font-size: 22px;
-      line-height: 1.45;
+      font-size: 25px;
+      line-height: 1.35;
+      margin: 0 0 18px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #E3E8EF;
     }
 
-    .materi-section h3 {
+    .content h3 {
       color: var(--anekdot-navy);
-      margin-top: 25px;
       font-size: 18px;
+      margin: 23px 0 10px;
     }
 
     .content p {
@@ -449,7 +452,7 @@
 <div class="page-layout">
 <aside class="sidebar">
 <h2>Daftar Materi</h2>
-<nav class="sidebar-list" aria-label="Daftar bagian materi">
+<div class="sidebar-list">
 <a href="#tujuan-pembelajaran">Tujuan Pembelajaran</a>
 <a href="#definisi">Definisi Teks Anekdot</a>
 <a href="#ciri">Ciri Teks Anekdot</a>
@@ -462,7 +465,7 @@
 <a href="#refleksi">Refleksi dan Evaluasi</a>
 <a href="#kesimpulan">Kesimpulan</a>
 <a href="#kelas-virtual">Penjelajahan ke Kelas Virtual</a>
-</nav>
+</div>
 </aside>
 <main class="content">
 <section id="tujuan-pembelajaran">
@@ -675,7 +678,7 @@
 </div>
 <div class="copyright">© 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</div>
 </footer>
-<script defer src="script.js"></script>
+<script defer="True" src="script.js"></script>
 <script>
     // Penanda otomatis pada daftar materi saat bagian dibaca
     const sections = document.querySelectorAll('.content section');
