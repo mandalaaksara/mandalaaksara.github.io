@@ -39,19 +39,21 @@ document.querySelectorAll('.nav-trigger').forEach(btn => {
   });
 });
 
-// Fungsi pencarian
+// Fungsi pencarian materi Mandala Aksara
 function searchSite(e) {
-  e.preventDefault();
+  if (e) e.preventDefault();
 
-  const input = document.getElementById('searchInput');
+  const form = e && e.currentTarget ? e.currentTarget : null;
+  const input = form ? form.querySelector('#searchInput') : document.getElementById('searchInput');
   const q = input ? input.value.trim() : '';
 
-  if (!q) return false;
+  if (!q) {
+    if (input) input.focus();
+    return false;
+  }
 
-  alert(
-    'Pencarian materi "' + q +
-    '" akan diaktifkan setelah katalog materi Mandala Aksara disiapkan.'
-  );
-
+  const target = new URL('pencarian.html', window.location.href);
+  target.searchParams.set('q', q);
+  window.location.href = target.href;
   return false;
 }
