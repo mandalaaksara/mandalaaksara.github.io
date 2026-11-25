@@ -398,6 +398,87 @@
       margin: 10px 0 25px;
     }
     .lho-page .back-link:hover { color: var(--lho-orange); }
+
+    
+    /* Perapian tabel materi: konsisten, terbaca, dan responsif */
+    .lho-page .table-wrap {
+      width: 100%;
+      margin: 18px 0 22px;
+      overflow-x: auto;
+      border: 1px solid var(--lho-border);
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 3px 12px rgba(20,43,74,.045);
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .lho-page .table-wrap table {
+      width: 100%;
+      min-width: 620px;
+      border: 0;
+      border-collapse: separate;
+      border-spacing: 0;
+      table-layout: auto;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .lho-page .table-wrap th,
+    .lho-page .table-wrap td {
+      padding: 13px 15px;
+      border: 0;
+      border-right: 1px solid var(--lho-border);
+      border-bottom: 1px solid var(--lho-border);
+      text-align: left;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+    }
+
+    .lho-page .table-wrap th {
+      background: var(--lho-navy);
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+
+    .lho-page .table-wrap th:last-child,
+    .lho-page .table-wrap td:last-child {
+      border-right: 0;
+    }
+
+    .lho-page .table-wrap tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .lho-page .table-wrap tbody tr:nth-child(even) td {
+      background: #F6F8FB;
+    }
+
+    .lho-page .table-wrap tbody tr:hover td {
+      background: #FFF7ED;
+    }
+
+    .lho-page .table-wrap td:first-child {
+      color: var(--lho-navy);
+      font-weight: 700;
+    }
+
+    @media (max-width: 650px) {
+      .lho-page .table-wrap {
+        margin: 15px -2px 20px;
+        border-radius: 8px;
+      }
+
+      .lho-page .table-wrap table {
+        min-width: 570px;
+        font-size: 13px;
+      }
+
+      .lho-page .table-wrap th,
+      .lho-page .table-wrap td {
+        padding: 11px 12px;
+      }
+    }
   </style>
   <link rel="stylesheet" href="site-shell.css?v=1">
   <link rel="canonical" href="https://mandalaaksara.github.io/mengembangkan-teks-prosedur.html">
