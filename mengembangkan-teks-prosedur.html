@@ -2,6 +2,14 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7HFZ0YC7P9');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,16 +28,17 @@
   <style>
     .lho-page {
       --lho-navy: #142B4A;
-      --lho-blue: #25496F;
-      --lho-orange: #E88932;
-      --lho-gold: #E8B65C;
-      --lho-text: #354256;
-      --lho-muted: #68778A;
-      --lho-border: #E1E7EE;
-      --lho-soft: #F4F7FA;
+      --lho-navy-light: #25496F;
+      --lho-orange: #F28C28;
+      --lho-gold: #C69A45;
+      --lho-soft: #F3F5F8;
+      --lho-text: #34445B;
+      --lho-muted: #68778B;
+      --lho-border: #E1E7EF;
+      background: var(--lho-soft);
       color: var(--lho-text);
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.8;
-      font-size: 15px;
     }
 
     .lho-page * {
@@ -40,188 +49,63 @@
       text-decoration: none;
     }
 
-    .lho-page .topbar {
-      background: var(--lho-navy);
-      color: #fff;
-      font-size: 12px;
-    }
-
-    .lho-page .topbar-inner {
-      max-width: 1180px;
-      margin: auto;
-      padding: 8px 22px;
-      display: flex;
-      justify-content: space-between;
-      gap: 15px;
-    }
-
-    .lho-page .site-header {
-      background: #fff;
-      border-bottom: 1px solid var(--lho-border);
-    }
-
-    .lho-page .header-inner {
-      max-width: 1180px;
-      min-height: 88px;
-      margin: auto;
-      padding: 12px 22px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-    }
-
-    .lho-page .brand {
-      display: flex;
-      align-items: center;
-      gap: 13px;
-      color: var(--lho-navy);
-      min-width: 0;
-    }
-
-    .lho-page .brand img {
-      width: 62px;
-      height: 62px;
-      object-fit: contain;
-    }
-
-    .lho-page .brand-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.4;
-    }
-
-    .lho-page .brand-text strong {
-      font-size: 19px;
-      letter-spacing: 1.3px;
-      font-weight: 800;
-    }
-
-    .lho-page .brand-text span {
-      color: var(--lho-muted);
-      font-size: 11px;
-    }
-
-    .lho-page .main-nav {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-    }
-
-    .lho-page .main-nav a {
-      color: var(--lho-navy);
-      font-size: 13px;
-      font-weight: 700;
-      padding: 9px 0;
-      border-bottom: 2px solid transparent;
-    }
-
-    .lho-page .main-nav a:hover,
-    .lho-page .main-nav a.active {
-      color: var(--lho-orange);
-      border-color: var(--lho-orange);
-    }
-
-    .lho-page .menu-toggle {
-      display: none;
-      background: none;
-      border: 0;
-      padding: 8px;
-      cursor: pointer;
-    }
-
-    .lho-page .menu-toggle span {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: var(--lho-navy);
-      margin: 5px 0;
-    }
-
     .lho-page .materi-hero {
-      background: linear-gradient(125deg, #142B4A, #25496F);
-      color: #fff;
-      padding: 54px 22px 58px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .lho-page .materi-hero::after {
-      content: "MA";
-      position: absolute;
-      right: 5%;
-      bottom: -85px;
-      font-family: Georgia, serif;
-      font-size: 230px;
-      font-weight: bold;
-      color: rgba(255,255,255,.045);
-      pointer-events: none;
-    }
-
-    .lho-page .materi-hero > * {
-      max-width: 1136px;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      z-index: 1;
+      background: linear-gradient(120deg, var(--lho-navy), var(--lho-navy-light));
+      color: white;
+      padding: 54px 8%;
+      text-align: center;
+      border-bottom: 5px solid var(--lho-orange);
     }
 
     .lho-page .hero-label {
       color: #F5C77D;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 1.8px;
-      margin-bottom: 12px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
     }
 
     .lho-page .materi-hero h1 {
-      color: #fff;
-      font-family: Georgia, serif;
-      font-size: clamp(28px, 4vw, 43px);
+      font-size: clamp(28px, 5vw, 42px);
+      margin: 12px 0;
       line-height: 1.25;
-      margin-top: 0;
-      margin-bottom: 15px;
     }
 
     .lho-page .materi-hero p {
-      max-width: 790px;
-      color: #E4ECF5;
-      font-size: 15px;
-      margin-bottom: 17px;
+      max-width: 760px;
+      margin: auto;
+      color: #E5EAF0;
     }
 
     .lho-page .hero-meta {
-      color: #F5C77D;
-      font-size: 12px;
-      font-weight: 600;
+      margin-top: 17px;
+      color: #D7E1EC;
+      font-size: 13px;
     }
 
     .lho-page .page-layout {
-      max-width: 1180px;
-      margin: 38px auto 65px;
-      padding: 0 22px;
+      max-width: 1250px;
+      margin: 35px auto;
+      padding: 0 20px;
       display: grid;
-      grid-template-columns: 260px minmax(0, 1fr);
-      gap: 30px;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 25px;
       align-items: start;
     }
 
     .lho-page .materi-sidebar {
+      background: white;
+      border-radius: 14px;
+      padding: 22px 18px;
+      box-shadow: 0 4px 16px rgba(20,43,74,.06);
       position: sticky;
-      top: 20px;
-      background: #fff;
-      border: 1px solid var(--lho-border);
-      border-radius: 12px;
-      padding: 21px 17px;
-      box-shadow: 0 5px 20px rgba(20,43,74,.045);
-      max-height: calc(100vh - 40px);
+      top: 18px;
+      max-height: calc(100vh - 36px);
       overflow-y: auto;
     }
 
     .lho-page .materi-sidebar h2 {
       color: var(--lho-navy);
-      font-size: 12px;
-      letter-spacing: 1.2px;
+      font-size: 15px;
       margin: 0 0 14px;
       padding-bottom: 12px;
       border-bottom: 2px solid var(--lho-orange);
@@ -242,7 +126,6 @@
     .lho-page .sidebar-list a.active {
       background: #EEF3F8;
       color: var(--lho-navy);
-      font-weight: 700;
       border-left: 3px solid var(--lho-orange);
     }
 
@@ -251,78 +134,70 @@
     }
 
     .lho-page .materi-section {
-      background: #fff;
-      border: 1px solid var(--lho-border);
-      border-radius: 13px;
+      background: white;
+      border-radius: 14px;
       padding: 30px;
       margin-bottom: 24px;
-      box-shadow: 0 5px 22px rgba(20,43,74,.035);
-      scroll-margin-top: 25px;
+      box-shadow: 0 4px 16px rgba(20,43,74,.06);
+      scroll-margin-top: 20px;
     }
 
     .lho-page .materi-section h2 {
       color: var(--lho-navy);
-      font-family: Georgia, serif;
-      font-size: 24px;
-      line-height: 1.4;
-      margin: 0 0 19px;
-      padding-bottom: 13px;
-      border-bottom: 1px solid var(--lho-border);
+      margin-top: 0;
+      border-left: 4px solid var(--lho-orange);
+      padding-left: 13px;
+      font-size: 22px;
+      line-height: 1.45;
     }
 
     .lho-page .materi-section h3 {
-      color: var(--lho-blue);
-      font-size: 17px;
-      margin: 23px 0 9px;
+      color: var(--lho-navy);
+      margin-top: 25px;
+      font-size: 18px;
+    }
+
+    .lho-page .materi-section h4 {
+      color: var(--lho-navy-light);
+      margin-bottom: 6px;
     }
 
     .lho-page .materi-section p {
-      margin: 0 0 15px;
-      text-align: justify;
+      margin: 12px 0;
     }
 
     .lho-page .materi-section ul,
     .lho-page .materi-section ol {
       padding-left: 24px;
-      margin: 10px 0 18px;
     }
 
     .lho-page .materi-section li {
-      margin-bottom: 8px;
+      margin-bottom: 7px;
     }
 
     .lho-page .note {
-      background: #F1F6FA;
-      border-left: 4px solid var(--lho-blue);
-      border-radius: 7px;
-      padding: 17px 19px;
-      margin: 20px 0;
+      background: #EEF3F8;
+      border-left: 4px solid var(--lho-gold);
+      padding: 18px 20px;
+      border-radius: 8px;
+      margin: 18px 0;
     }
 
     .lho-page .note.orange {
-      background: #FFF8EF;
+      background: #FFF5E9;
       border-left-color: var(--lho-orange);
     }
 
-    .lho-page .definition {
-      background: #EEF3F8;
-      border: 1px solid #DCE6F0;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 18px 0;
+    .lho-page .note strong {
       color: var(--lho-navy);
     }
 
-    .lho-page .info-card {
+    .lho-page .definition {
       background: #F8FAFC;
       border: 1px solid var(--lho-border);
-      border-radius: 10px;
-      padding: 19px;
-      margin: 15px 0;
-    }
-
-    .lho-page .info-card h3 {
-      margin-top: 0;
+      padding: 18px;
+      border-radius: 9px;
+      margin: 14px 0;
     }
 
     .lho-page .two-columns {
@@ -332,9 +207,55 @@
       margin: 18px 0;
     }
 
+    .lho-page .info-card {
+      background: #F8FAFC;
+      border: 1px solid var(--lho-border);
+      border-radius: 10px;
+      padding: 18px;
+      margin: 12px 0;
+    }
+
+    .lho-page .info-card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .lho-page .feature {
+      background: #F3F5F8;
+      border-radius: 9px;
+      padding: 18px;
+      border-top: 3px solid var(--lho-orange);
+    }
+
+    .lho-page .feature h3 {
+      margin-top: 0;
+    }
+
+    .lho-page .step {
+      display: flex;
+      gap: 15px;
+      margin: 17px 0;
+      align-items: flex-start;
+    }
+
+    .lho-page .step-number {
+      flex: 0 0 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      background: var(--lho-navy);
+      color: white;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+
+    .lho-page .step h3 {
+      margin: 0 0 5px;
+    }
+
     .lho-page .example {
-      background: #FFF9F1;
-      border: 1px solid #F3DFC3;
+      background: #FFFAF3;
+      border: 1px solid #F2DFC3;
       border-radius: 10px;
       padding: 20px;
       margin: 18px 0;
@@ -344,64 +265,67 @@
       margin-top: 0;
     }
 
-    .lho-page .table-wrap {
-      overflow-x: auto;
-      margin: 18px 0;
+    .lho-page .enrichment {
+      border: 1px dashed #D5A04B;
+      background: #FFFAF1;
+      border-radius: 9px;
+      padding: 17px;
+      margin: 16px 0;
     }
 
-    .lho-page table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 520px;
-    }
-
-    .lho-page th,
-    .lho-page td {
-      border: 1px solid var(--lho-border);
-      padding: 11px 13px;
-      text-align: left;
-      vertical-align: top;
-    }
-
-    .lho-page th {
-      background: #EEF3F8;
-      color: var(--lho-navy);
-    }
-
-    .lho-page .quote-box {
-      background: linear-gradient(120deg, #142B4A, #25496F);
-      color: white;
-      border-radius: 14px;
-      padding: 28px;
-      text-align: center;
-      margin: 28px 0;
-    }
-
-    .lho-page .quote-box p {
-      font-size: 18px;
-      font-style: italic;
-      margin: 0 0 10px;
-      text-align: center;
-    }
-
-    .lho-page .quote-box span {
-      color: #F5C77D;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    .lho-page .back-link {
+    .lho-page .enrichment-label {
       display: inline-block;
-      color: var(--lho-navy);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
       font-weight: bold;
-      margin: 10px 0 25px;
+      color: #9B5A12;
+      margin-bottom: 5px;
     }
 
-    .lho-page .back-link:hover {
-      color: var(--lho-orange);
+    .lho-page .reflection {
+      background: var(--lho-navy);
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 20px;
     }
 
-    @media (max-width: 850px) {
+    .lho-page .reflection h3 {
+      color: #F6B65F;
+      margin-top: 0;
+    }
+
+    .lho-page .video-link {
+      display: inline-block;
+      background: var(--lho-orange);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 7px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .lho-page .video-link:hover {
+      background: #D97516;
+    }
+
+    .lho-page .final-quote {
+      text-align: center;
+      color: var(--lho-navy);
+      font-style: italic;
+      padding: 28px 18px;
+      margin: 10px 0;
+    }
+
+    .lho-page .final-quote strong {
+      display: block;
+      margin-top: 8px;
+      color: var(--lho-gold);
+      font-style: normal;
+    }
+
+    @media(max-width: 900px) {
       .lho-page .page-layout {
         grid-template-columns: 1fr;
       }
@@ -411,112 +335,118 @@
         max-height: none;
       }
 
-      .lho-page .two-columns {
+      .lho-page .sidebar-list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3px;
+      }
+    }
+
+    @media(max-width: 650px) {
+      .lho-page .materi-hero {
+        padding: 42px 20px;
+      }
+
+      .lho-page .materi-section {
+        padding: 23px 18px;
+      }
+
+      .lho-page .two-columns,
+      .lho-page .sidebar-list {
         grid-template-columns: 1fr;
       }
 
-      .lho-page .materi-section {
-        padding: 22px;
-      }
-
-      .lho-page .menu-toggle {
-        display: block;
-      }
-
-      .lho-page .header-inner {
-        flex-wrap: wrap;
-      }
-
-      .lho-page .main-nav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 4px;
-        padding: 10px 0;
-      }
-
-      .lho-page .main-nav.open {
-        display: flex;
-      }
-
-      .lho-page .main-nav a {
-        padding: 9px 10px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .lho-page .topbar-inner {
-        font-size: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-
-      .lho-page .brand img {
-        width: 48px;
-        height: 48px;
-      }
-
-      .lho-page .brand-text strong {
-        font-size: 16px;
-      }
-
-      .lho-page .brand-text span {
-        font-size: 9px;
-      }
-
-      .lho-page .materi-hero {
-        padding: 40px 18px;
-      }
-
       .lho-page .page-layout {
+        margin: 22px auto;
         padding: 0 14px;
-        margin-top: 24px;
+        gap: 18px;
       }
 
-      .lho-page .materi-section {
-        padding: 19px;
+      .lho-page .materi-sidebar {
+        padding: 18px 14px;
       }
 
       .lho-page .materi-section h2 {
-        font-size: 21px;
+        font-size: 20px;
       }
     }
+  
+    /* Komponen khusus Bab VI */
+    .lho-page .quote-box {
+      background: linear-gradient(120deg, var(--lho-navy), var(--lho-navy-light));
+      color: #fff;
+      border-radius: 14px;
+      padding: 28px;
+      text-align: center;
+      margin: 28px 0;
+    }
+    .lho-page .quote-box p {
+      font-size: 18px;
+      font-style: italic;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+    .lho-page .quote-box span {
+      color: #F5C77D;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .lho-page .back-link {
+      display: inline-block;
+      color: var(--lho-navy);
+      font-weight: bold;
+      margin: 10px 0 25px;
+    }
+    .lho-page .back-link:hover { color: var(--lho-orange); }
   </style>
+  <link rel="stylesheet" href="site-shell.css?v=1">
+  <link rel="canonical" href="https://mandalaaksara.github.io/mengembangkan-teks-prosedur.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mandala Aksara">
+  <meta property="og:title" content="Bab VI — Mengembangkan Teks Prosedur | Mandala Aksara">
+  <meta property="og:description" content="Materi Bahasa Indonesia Kelas XI Tingkat Lanjut tentang mengembangkan teks prosedur.">
+  <meta property="og:url" content="https://mandalaaksara.github.io/mengembangkan-teks-prosedur.html">
+  <meta property="og:image" content="https://mandalaaksara.github.io/logo-mandala-aksara.webp">
 </head>
 
 <body>
 <div class="lho-page">
 
+<!-- TOPBAR -->
   <div class="topbar">
-    <div class="topbar-inner">
-      <span>Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
-      <span>Dikelola Mandiri</span>
+    <div class="top-inner">
+      <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+      <div class="top-actions">
+        <form class="search" onsubmit="return searchSite(event)" role="search">
+          <input aria-label="Cari materi" id="searchInput" placeholder="Cari materi..." type="search">
+          <button aria-label="Cari" type="submit">⌕</button>
+        </form>
+        <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
+      </div>
     </div>
   </div>
-
+  <!-- HEADER DAN NAVIGASI UTAMA -->
   <header class="site-header">
-    <div class="header-inner">
-      <a aria-label="Mandala Aksara - Beranda" class="brand" href="index.html">
-        <img alt="Logo Mandala Aksara" src="logo-mandala-aksara.webp">
-        <div class="brand-text">
-          <strong>MANDALA AKSARA</strong>
-          <span>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</span>
+    <a aria-label="Mandala Aksara - Beranda" class="brand" href="index.html">
+      <img alt="Logo Mandala Aksara" decoding="async" loading="eager" src="logo-mandala-aksara.webp">
+      <span class="brand-copy"><strong>MANDALA AKSARA</strong><small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small></span>
+    </a>
+    <button aria-controls="mainNav" aria-expanded="false" aria-label="Buka navigasi" class="menu-toggle" id="menuToggle" type="button">☰</button>
+    <nav aria-label="Navigasi utama" id="mainNav">
+      <a href="index.html">Beranda</a>
+      <div class="nav-dropdown">
+        <button aria-haspopup="true" class="nav-trigger" type="button">Materi Pembelajaran <span class="dropdown-arrow">⌄</span></button>
+        <div class="dropdown">
+          <a href="kelas-x.html">Kelas X</a>
+          <a href="kelas-xi.html">Kelas XI</a>
+          <a href="kelas-xii.html">Kelas XII</a>
         </div>
-      </a>
-
-      <button aria-label="Buka menu" class="menu-toggle" id="menuToggle">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html">Beranda</a>
-        <a href="kelas-x.html">Kelas X</a>
-        <a class="active" href="kelas-xi.html">Kelas XI</a>
-        <a href="kelas-xii.html">Kelas XII</a>
-        <a href="kelas-virtual.html">Kelas Virtual</a>
-      </nav>
-    </div>
+      </div>
+      <a href="galeri.html">Galeri</a>
+      <a href="perpustakaan.html">Perpustakaan Digital</a>
+      <a href="kelas-virtual.html">Kelas Virtual</a>
+      <a href="tentang.html">Tentang</a>
+    </nav>
   </header>
 
   <section class="materi-hero">
@@ -1193,16 +1123,23 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
+    <div class="footer-main">
       <div class="footer-brand">
-        <strong>MANDALA AKSARA</strong>
-        <p>Ruang Literasi dan Pembelajaran Bahasa Indonesia.</p>
-        <span>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</span>
+        <img alt="Logo Mandala Aksara" decoding="async" loading="lazy" src="logo-mandala-aksara.webp">
+        <div class="footer-brand-copy">
+          <b>MANDALA AKSARA</b>
+          <small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small>
+          <span class="managed-label">Dikelola Mandiri</span>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <p>© <span id="currentYear"></span> Mandala Aksara. Dikelola Mandiri.</p>
-      </div>
+      <nav aria-label="Navigasi footer" class="footer-links">
+        <a href="tentang.html">Tentang</a>
+        <a href="galeri.html">Galeri</a>
+        <a href="perpustakaan.html">Perpustakaan Digital</a>
+        <a href="kelas-virtual.html">Kelas Virtual</a>
+      </nav>
     </div>
+    <div class="copyright">© <span id="currentYear"></span> Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</div>
   </footer>
 
 </div>
