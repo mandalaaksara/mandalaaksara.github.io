@@ -2,7 +2,7 @@
   "nama": "Katalog Materi Mandala Aksara",
   "versi": 1,
   "terakhir_diperbarui": "2026-11-26",
-  "catatan": "Enam materi Kelas X telah diverifikasi oleh pengelola dan dinyatakan siap digunakan. Materi kelas lain masih menunggu verifikasi.",
+  "catatan": "Seluruh 26 materi Kelas X, Kelas XI reguler, Kelas XI tingkat lanjut, dan Kelas XII telah diverifikasi oleh pengelola dan dinyatakan siap digunakan.",
   "materi": [
     {
       "id": "x-lho",
@@ -149,7 +149,7 @@
       ],
       "deskripsi": "Mengembangkan argumentasi kritis mengenai energi bersih.",
       "url": "bab-1-energi-bersih.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xi-bab-2-air",
@@ -170,7 +170,7 @@
       ],
       "deskripsi": "Mengembangkan kesadaran tentang pentingnya air bersih melalui teks persuasi.",
       "url": "bab-2-air-bersih.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xi-bab-3-berita",
@@ -192,7 +192,7 @@
       ],
       "deskripsi": "Memahami fakta dan informasi aktual melalui teks berita.",
       "url": "bab-3-teks-berita.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xi-bab-4-cerpen",
@@ -214,7 +214,7 @@
       ],
       "deskripsi": "Mengapresiasi cerita pendek dan nilai budi pekerti di dalamnya.",
       "url": "bab-4-cerita-pendek.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xi-bab-5-resensi",
@@ -236,7 +236,7 @@
       ],
       "deskripsi": "Memahami dan menyusun teks resensi untuk menyampaikan penilaian secara beralasan.",
       "url": "bab-5-teks-resensi.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xi-bab-6-puisi",
@@ -257,7 +257,7 @@
       ],
       "deskripsi": "Mengembangkan ekspresi dan kreativitas melalui puisi.",
       "url": "bab-6-puisi.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xi-bab-7-drama",
@@ -279,7 +279,7 @@
       ],
       "deskripsi": "Memahami realitas sosial melalui unsur dan pementasan drama.",
       "url": "bab-7-drama.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xi-bab-8-karya-ilmiah",
@@ -301,7 +301,7 @@
       ],
       "deskripsi": "Mengembangkan cara berpikir ilmiah dan menghasilkan karya ilmiah.",
       "url": "bab-8-karya-ilmiah.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xi-tingkat-lanjut-1",
@@ -476,7 +476,7 @@
       ],
       "deskripsi": "Memahami fungsi, struktur, unsur, dan kaidah kebahasaan surat resmi serta cara menyusunnya.",
       "url": "bab-1-surat-resmi.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xii-bab-2-prosedur",
@@ -496,7 +496,7 @@
       ],
       "deskripsi": "Mempelajari tujuan, struktur, tahapan, dan ciri kebahasaan teks prosedur kompleks.",
       "url": "bab-2-teks-prosedur-kompleks.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xii-bab-3-novel",
@@ -519,7 +519,7 @@
       ],
       "deskripsi": "Mengapresiasi novel melalui pemahaman unsur intrinsik, ekstrinsik, dan nilai kehidupan.",
       "url": "bab-3-novel.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xii-bab-4-eksplanasi",
@@ -539,7 +539,7 @@
       ],
       "deskripsi": "Memahami proses fenomena melalui hubungan sebab-akibat dan penjelasan yang logis.",
       "url": "bab-4-teks-eksplanasi-kompleks.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     },
     {
       "id": "xii-bab-5-esai",
@@ -561,7 +561,7 @@
       ],
       "deskripsi": "Mengenali karakteristik, struktur, dan cara menyusun esai dengan argumentasi dan fakta.",
       "url": "bab-5-esai.html",
-      "status": "perlu_verifikasi"
+      "status": "tersedia"
     }
   ]
 }
