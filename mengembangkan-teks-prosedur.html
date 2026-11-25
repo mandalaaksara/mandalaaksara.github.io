@@ -1,0 +1,1238 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bab VI — Mengembangkan Teks Prosedur | Bahasa Indonesia Kelas XI - Mandala Aksara</title>
+
+  <meta name="description" content="Materi Bahasa Indonesia Kelas XI Tingkat Lanjut tentang mengembangkan teks prosedur: pengertian, fungsi, jenis, struktur, kaidah kebahasaan, evaluasi, penulisan, dan penyajian infografik.">
+
+  <meta name="keywords" content="teks prosedur, Bahasa Indonesia kelas XI, materi teks prosedur, struktur teks prosedur, kaidah kebahasaan, Mandala Aksara">
+
+  <meta name="author" content="Mandala Aksara">
+  <meta name="theme-color" content="#142B4A">
+
+  <link rel="icon" href="logo-mandala-aksara.webp">
+  <link rel="stylesheet" href="style.css?v=3">
+
+  <style>
+    .lho-page {
+      --lho-navy: #142B4A;
+      --lho-blue: #25496F;
+      --lho-orange: #E88932;
+      --lho-gold: #E8B65C;
+      --lho-text: #354256;
+      --lho-muted: #68778A;
+      --lho-border: #E1E7EE;
+      --lho-soft: #F4F7FA;
+      color: var(--lho-text);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .lho-page * {
+      box-sizing: border-box;
+    }
+
+    .lho-page a {
+      text-decoration: none;
+    }
+
+    .lho-page .topbar {
+      background: var(--lho-navy);
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .lho-page .topbar-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 8px 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .lho-page .site-header {
+      background: #fff;
+      border-bottom: 1px solid var(--lho-border);
+    }
+
+    .lho-page .header-inner {
+      max-width: 1180px;
+      min-height: 88px;
+      margin: auto;
+      padding: 12px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .lho-page .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: var(--lho-navy);
+      min-width: 0;
+    }
+
+    .lho-page .brand img {
+      width: 62px;
+      height: 62px;
+      object-fit: contain;
+    }
+
+    .lho-page .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.4;
+    }
+
+    .lho-page .brand-text strong {
+      font-size: 19px;
+      letter-spacing: 1.3px;
+      font-weight: 800;
+    }
+
+    .lho-page .brand-text span {
+      color: var(--lho-muted);
+      font-size: 11px;
+    }
+
+    .lho-page .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .lho-page .main-nav a {
+      color: var(--lho-navy);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 9px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .lho-page .main-nav a:hover,
+    .lho-page .main-nav a.active {
+      color: var(--lho-orange);
+      border-color: var(--lho-orange);
+    }
+
+    .lho-page .menu-toggle {
+      display: none;
+      background: none;
+      border: 0;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .lho-page .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--lho-navy);
+      margin: 5px 0;
+    }
+
+    .lho-page .materi-hero {
+      background: linear-gradient(125deg, #142B4A, #25496F);
+      color: #fff;
+      padding: 54px 22px 58px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lho-page .materi-hero::after {
+      content: "MA";
+      position: absolute;
+      right: 5%;
+      bottom: -85px;
+      font-family: Georgia, serif;
+      font-size: 230px;
+      font-weight: bold;
+      color: rgba(255,255,255,.045);
+      pointer-events: none;
+    }
+
+    .lho-page .materi-hero > * {
+      max-width: 1136px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .lho-page .hero-label {
+      color: #F5C77D;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      margin-bottom: 12px;
+    }
+
+    .lho-page .materi-hero h1 {
+      color: #fff;
+      font-family: Georgia, serif;
+      font-size: clamp(28px, 4vw, 43px);
+      line-height: 1.25;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .lho-page .materi-hero p {
+      max-width: 790px;
+      color: #E4ECF5;
+      font-size: 15px;
+      margin-bottom: 17px;
+    }
+
+    .lho-page .hero-meta {
+      color: #F5C77D;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .lho-page .page-layout {
+      max-width: 1180px;
+      margin: 38px auto 65px;
+      padding: 0 22px;
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 30px;
+      align-items: start;
+    }
+
+    .lho-page .materi-sidebar {
+      position: sticky;
+      top: 20px;
+      background: #fff;
+      border: 1px solid var(--lho-border);
+      border-radius: 12px;
+      padding: 21px 17px;
+      box-shadow: 0 5px 20px rgba(20,43,74,.045);
+      max-height: calc(100vh - 40px);
+      overflow-y: auto;
+    }
+
+    .lho-page .materi-sidebar h2 {
+      color: var(--lho-navy);
+      font-size: 12px;
+      letter-spacing: 1.2px;
+      margin: 0 0 14px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--lho-orange);
+    }
+
+    .lho-page .sidebar-list a {
+      display: block;
+      color: #465467;
+      padding: 8px 10px;
+      margin: 3px 0;
+      border-radius: 6px;
+      font-size: 13px;
+      line-height: 1.5;
+      transition: .2s ease;
+    }
+
+    .lho-page .sidebar-list a:hover,
+    .lho-page .sidebar-list a.active {
+      background: #EEF3F8;
+      color: var(--lho-navy);
+      font-weight: 700;
+      border-left: 3px solid var(--lho-orange);
+    }
+
+    .lho-page .materi-content {
+      min-width: 0;
+    }
+
+    .lho-page .materi-section {
+      background: #fff;
+      border: 1px solid var(--lho-border);
+      border-radius: 13px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 5px 22px rgba(20,43,74,.035);
+      scroll-margin-top: 25px;
+    }
+
+    .lho-page .materi-section h2 {
+      color: var(--lho-navy);
+      font-family: Georgia, serif;
+      font-size: 24px;
+      line-height: 1.4;
+      margin: 0 0 19px;
+      padding-bottom: 13px;
+      border-bottom: 1px solid var(--lho-border);
+    }
+
+    .lho-page .materi-section h3 {
+      color: var(--lho-blue);
+      font-size: 17px;
+      margin: 23px 0 9px;
+    }
+
+    .lho-page .materi-section p {
+      margin: 0 0 15px;
+      text-align: justify;
+    }
+
+    .lho-page .materi-section ul,
+    .lho-page .materi-section ol {
+      padding-left: 24px;
+      margin: 10px 0 18px;
+    }
+
+    .lho-page .materi-section li {
+      margin-bottom: 8px;
+    }
+
+    .lho-page .note {
+      background: #F1F6FA;
+      border-left: 4px solid var(--lho-blue);
+      border-radius: 7px;
+      padding: 17px 19px;
+      margin: 20px 0;
+    }
+
+    .lho-page .note.orange {
+      background: #FFF8EF;
+      border-left-color: var(--lho-orange);
+    }
+
+    .lho-page .definition {
+      background: #EEF3F8;
+      border: 1px solid #DCE6F0;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 18px 0;
+      color: var(--lho-navy);
+    }
+
+    .lho-page .info-card {
+      background: #F8FAFC;
+      border: 1px solid var(--lho-border);
+      border-radius: 10px;
+      padding: 19px;
+      margin: 15px 0;
+    }
+
+    .lho-page .info-card h3 {
+      margin-top: 0;
+    }
+
+    .lho-page .two-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 18px 0;
+    }
+
+    .lho-page .example {
+      background: #FFF9F1;
+      border: 1px solid #F3DFC3;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 18px 0;
+    }
+
+    .lho-page .example h3 {
+      margin-top: 0;
+    }
+
+    .lho-page .table-wrap {
+      overflow-x: auto;
+      margin: 18px 0;
+    }
+
+    .lho-page table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 520px;
+    }
+
+    .lho-page th,
+    .lho-page td {
+      border: 1px solid var(--lho-border);
+      padding: 11px 13px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .lho-page th {
+      background: #EEF3F8;
+      color: var(--lho-navy);
+    }
+
+    .lho-page .quote-box {
+      background: linear-gradient(120deg, #142B4A, #25496F);
+      color: white;
+      border-radius: 14px;
+      padding: 28px;
+      text-align: center;
+      margin: 28px 0;
+    }
+
+    .lho-page .quote-box p {
+      font-size: 18px;
+      font-style: italic;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+
+    .lho-page .quote-box span {
+      color: #F5C77D;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .lho-page .back-link {
+      display: inline-block;
+      color: var(--lho-navy);
+      font-weight: bold;
+      margin: 10px 0 25px;
+    }
+
+    .lho-page .back-link:hover {
+      color: var(--lho-orange);
+    }
+
+    @media (max-width: 850px) {
+      .lho-page .page-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .lho-page .materi-sidebar {
+        position: static;
+        max-height: none;
+      }
+
+      .lho-page .two-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .lho-page .materi-section {
+        padding: 22px;
+      }
+
+      .lho-page .menu-toggle {
+        display: block;
+      }
+
+      .lho-page .header-inner {
+        flex-wrap: wrap;
+      }
+
+      .lho-page .main-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        padding: 10px 0;
+      }
+
+      .lho-page .main-nav.open {
+        display: flex;
+      }
+
+      .lho-page .main-nav a {
+        padding: 9px 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .lho-page .topbar-inner {
+        font-size: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .lho-page .brand img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .lho-page .brand-text strong {
+        font-size: 16px;
+      }
+
+      .lho-page .brand-text span {
+        font-size: 9px;
+      }
+
+      .lho-page .materi-hero {
+        padding: 40px 18px;
+      }
+
+      .lho-page .page-layout {
+        padding: 0 14px;
+        margin-top: 24px;
+      }
+
+      .lho-page .materi-section {
+        padding: 19px;
+      }
+
+      .lho-page .materi-section h2 {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="lho-page">
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span>Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+      <span>Dikelola Mandiri</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a aria-label="Mandala Aksara - Beranda" class="brand" href="index.html">
+        <img alt="Logo Mandala Aksara" src="logo-mandala-aksara.webp">
+        <div class="brand-text">
+          <strong>MANDALA AKSARA</strong>
+          <span>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</span>
+        </div>
+      </a>
+
+      <button aria-label="Buka menu" class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Beranda</a>
+        <a href="kelas-x.html">Kelas X</a>
+        <a class="active" href="kelas-xi.html">Kelas XI</a>
+        <a href="kelas-xii.html">Kelas XII</a>
+        <a href="kelas-virtual.html">Kelas Virtual</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="materi-hero">
+    <div class="hero-label">BAHASA INDONESIA • KELAS XI • TINGKAT LANJUT</div>
+    <h1>Bab VI — Mengembangkan Teks Prosedur</h1>
+    <p>
+      Mengembangkan petunjuk yang jelas, runtut, dan mudah diikuti melalui
+      pemahaman tujuan, struktur, kaidah kebahasaan, serta penyajian teks
+      prosedur dalam bentuk tulisan dan infografik.
+    </p>
+    <div class="hero-meta">
+      Materi Pembelajaran Bahasa Indonesia Kelas XI Tingkat Lanjut
+    </div>
+  </section>
+
+  <main class="page-layout">
+
+    <aside class="materi-sidebar">
+      <h2>DAFTAR MATERI</h2>
+      <div class="sidebar-list">
+        <a class="active" href="#pengantar">1. Pengantar</a>
+        <a href="#tujuan">2. Tujuan Pembelajaran</a>
+        <a href="#pengertian">3. Pengertian Teks Prosedur</a>
+        <a href="#fungsi">4. Fungsi dan Karakteristik</a>
+        <a href="#jenis">5. Jenis Teks Prosedur</a>
+        <a href="#struktur">6. Struktur Teks Prosedur</a>
+        <a href="#kebahasaan">7. Kaidah Kebahasaan</a>
+        <a href="#langkah">8. Menyusun Langkah Prosedur</a>
+        <a href="#infografik">9. Teks Prosedur dalam Infografik</a>
+        <a href="#contoh">10. Contoh dan Analisis</a>
+        <a href="#evaluasi">11. Mengevaluasi Teks Prosedur</a>
+        <a href="#aktivitas">12. Aktivitas Pembelajaran</a>
+        <a href="#refleksi">13. Refleksi dan Rangkuman</a>
+      </div>
+    </aside>
+
+    <section class="materi-content">
+
+      <section class="materi-section" id="pengantar">
+        <h2>1. Pengantar</h2>
+        <p>
+          Dalam kehidupan sehari-hari, kita sering melakukan kegiatan yang
+          memerlukan urutan langkah tertentu. Ketika mendaftar UTBK-SNBT,
+          membuat minuman tradisional, memperpanjang SIM, mengoperasikan
+          perangkat elektronik, atau mengirim dokumen melalui internet,
+          kita membutuhkan petunjuk agar setiap tahap dapat dilakukan
+          dengan benar.
+        </p>
+        <p>
+          Petunjuk yang baik tidak cukup hanya berisi kumpulan perintah.
+          Informasi harus disusun secara runtut, menggunakan bahasa yang
+          jelas, serta mempertimbangkan siapa pembacanya dan apa tujuan
+          kegiatan tersebut. Jika satu langkah penting terlewat atau
+          urutannya keliru, hasil yang diperoleh bisa berbeda dari yang
+          diharapkan.
+        </p>
+        <div class="note orange">
+          <strong>Pertanyaan pemantik:</strong>
+          Pernahkah kamu mengikuti petunjuk yang membingungkan? Bagian
+          mana yang membuatmu kesulitan: pilihan kata, urutan langkah,
+          gambar, atau informasi yang kurang lengkap?
+        </div>
+      </section>
+
+      <section class="materi-section" id="tujuan">
+        <h2>2. Tujuan Pembelajaran</h2>
+        <p>Setelah mempelajari bab ini, peserta didik diharapkan mampu:</p>
+        <ul>
+          <li>menjelaskan pengertian, fungsi, dan karakteristik teks prosedur;</li>
+          <li>membedakan teks prosedur yang bertujuan membuat sesuatu dan yang bertujuan melakukan suatu kegiatan;</li>
+          <li>mengidentifikasi struktur dan kaidah kebahasaan teks prosedur;</li>
+          <li>menilai kejelasan, ketepatan, kelengkapan, dan keruntutan langkah-langkah;</li>
+          <li>mengembangkan teks prosedur berdasarkan kebutuhan dan sasaran pembaca;</li>
+          <li>menyajikan petunjuk dalam bentuk tulisan maupun infografik secara efektif; serta</li>
+          <li>mempublikasikan karya dengan memperhatikan ketepatan informasi dan kualitas penyajian.</li>
+        </ul>
+      </section>
+
+      <section class="materi-section" id="pengertian">
+        <h2>3. Pengertian Teks Prosedur</h2>
+        <p>
+          Teks prosedur adalah teks yang berisi tujuan dan langkah-langkah
+          untuk melakukan, menggunakan, atau membuat sesuatu. Teks ini
+          membantu pembaca memahami tindakan yang harus dilakukan, urutan
+          pelaksanaannya, serta hal-hal yang perlu diperhatikan agar tujuan
+          tercapai.
+        </p>
+        <div class="definition">
+          <strong>Inti teks prosedur:</strong>
+          memberi petunjuk tentang apa yang harus dilakukan, bagaimana
+          melakukannya, dan dalam urutan seperti apa tindakan tersebut
+          dilaksanakan.
+        </div>
+        <p>
+          Teks prosedur dapat ditemukan dalam berbagai bentuk, misalnya
+          resep masakan, panduan penggunaan alat, petunjuk pendaftaran,
+          tata cara mengurus dokumen, panduan keselamatan, dan tutorial
+          digital.
+        </p>
+        <p>
+          Istilah yang berkaitan dengan teks prosedur antara lain
+          <em>manual</em>, petunjuk penggunaan, resep, strategi, kiat,
+          tips, dan tata cara. Bentuknya dapat berbeda, tetapi semuanya
+          memberikan panduan untuk mencapai tujuan tertentu.
+        </p>
+      </section>
+      
+      <section class="materi-section" id="fungsi">
+        <h2>4. Fungsi dan Karakteristik Teks Prosedur</h2>
+
+        <h3>A. Fungsi Teks Prosedur</h3>
+        <p>Teks prosedur memiliki beberapa fungsi penting dalam kehidupan sehari-hari, pendidikan, maupun dunia kerja.</p>
+        <ul>
+          <li><strong>Memberikan petunjuk:</strong> membantu pembaca mengetahui tahapan yang harus dilakukan untuk mencapai tujuan.</li>
+          <li><strong>Mencegah kesalahan:</strong> menjelaskan urutan dan hal penting yang perlu diperhatikan agar kegiatan tidak keliru.</li>
+          <li><strong>Meningkatkan keselamatan:</strong> memberikan peringatan terhadap tindakan yang berisiko.</li>
+          <li><strong>Meningkatkan efisiensi:</strong> membantu kegiatan dilakukan secara lebih teratur, tepat, dan hemat waktu.</li>
+          <li><strong>Mencapai hasil yang diharapkan:</strong> mengarahkan pembaca agar setiap tahapan dilakukan sesuai tujuan.</li>
+        </ul>
+
+        <h3>B. Karakteristik Teks Prosedur</h3>
+        <p>Untuk mengenali teks prosedur, perhatikan beberapa karakteristik berikut.</p>
+        <ol>
+          <li>Memiliki tujuan atau hasil akhir yang jelas.</li>
+          <li>Memuat langkah-langkah yang tersusun secara logis dan berurutan.</li>
+          <li>Menggunakan bahasa yang lugas, jelas, dan tidak menimbulkan banyak tafsir.</li>
+          <li>Sering menggunakan kalimat perintah, larangan, atau saran.</li>
+          <li>Menggunakan penanda urutan atau waktu.</li>
+          <li>Dapat dilengkapi alat, bahan, gambar, simbol, atau keterangan tambahan jika diperlukan.</li>
+        </ol>
+
+        <div class="note">
+          <strong>Perlu diingat:</strong> Tidak semua teks prosedur harus mencantumkan alat dan bahan. Bagian tersebut terutama diperlukan jika prosedur bertujuan membuat atau merakit sesuatu.
+        </div>
+      </section>
+
+      <section class="materi-section" id="jenis">
+        <h2>5. Jenis Teks Prosedur</h2>
+        <p>Berdasarkan tujuan kegiatannya, teks prosedur dapat dibedakan menjadi dua jenis utama.</p>
+
+        <div class="two-columns">
+          <div class="info-card">
+            <h3>1. Prosedur Membuat Sesuatu</h3>
+            <p>Berisi petunjuk untuk menghasilkan benda, makanan, minuman, atau produk tertentu. Biasanya mencantumkan alat dan bahan sebelum langkah-langkah pengerjaan.</p>
+            <p><strong>Contoh:</strong> cara membuat wedang jahe, membuat kerajinan dari kertas, atau merakit rak sederhana.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>2. Prosedur Melakukan Sesuatu</h3>
+            <p>Berisi petunjuk untuk melaksanakan kegiatan atau menggunakan suatu layanan maupun perangkat. Langkah-langkahnya berfokus pada tindakan yang harus dilakukan.</p>
+            <p><strong>Contoh:</strong> cara mematikan komputer, mendaftar UTBK-SNBT, atau memperpanjang SIM.</p>
+          </div>
+        </div>
+
+        <h3>Perbedaan Kedua Jenis Prosedur</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Aspek</th>
+                <th>Membuat Sesuatu</th>
+                <th>Melakukan Sesuatu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tujuan</td>
+                <td>Menghasilkan produk atau benda.</td>
+                <td>Menyelesaikan kegiatan atau proses.</td>
+              </tr>
+              <tr>
+                <td>Informasi awal</td>
+                <td>Umumnya memuat alat dan bahan.</td>
+                <td>Umumnya memuat persiapan atau persyaratan.</td>
+              </tr>
+              <tr>
+                <td>Isi langkah</td>
+                <td>Proses mengolah, merakit, atau membentuk sesuatu.</td>
+                <td>Urutan tindakan yang perlu dilakukan.</td>
+              </tr>
+              <tr>
+                <td>Contoh</td>
+                <td>Membuat minuman empon-empon.</td>
+                <td>Mengurus perpanjangan SIM.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note orange">
+          <strong>Pengayaan:</strong> Dalam praktiknya, sebuah prosedur dapat menggabungkan kedua jenis tersebut. Misalnya, petunjuk merakit perangkat elektronik menghasilkan suatu produk sekaligus mengarahkan pembaca melakukan serangkaian tindakan.
+        </div>
+      </section>
+
+      <section class="materi-section" id="struktur">
+        <h2>6. Struktur Teks Prosedur</h2>
+        <p>Struktur teks prosedur membantu pembaca memahami tujuan kegiatan dan mengikuti tahapannya secara teratur. Secara umum, teks prosedur dapat disusun melalui tiga bagian berikut.</p>
+
+        <div class="info-card">
+          <h3>1. Pernyataan Umum atau Tujuan</h3>
+          <p>Bagian pembuka yang menjelaskan kegiatan atau hasil yang ingin dicapai. Tujuan sebaiknya disampaikan secara langsung agar pembaca mengetahui manfaat petunjuk tersebut.</p>
+          <p><strong>Contoh:</strong> "Berikut ini langkah-langkah membuat minuman empon-empon sederhana untuk dinikmati dalam keadaan hangat."</p>
+        </div>
+
+        <div class="info-card">
+          <h3>2. Langkah-Langkah</h3>
+          <p>Bagian inti yang berisi urutan tindakan untuk mencapai tujuan. Langkah harus disusun secara logis, tidak melompat-lompat, dan memuat informasi yang cukup untuk dilakukan pembaca.</p>
+          <p><strong>Contoh:</strong> "Cuci jahe dan kunyit hingga bersih. Iris tipis kedua bahan tersebut, kemudian rebus bersama air hingga mendidih."</p>
+        </div>
+
+        <div class="info-card">
+          <h3>3. Penegasan Ulang atau Penutup</h3>
+          <p>Bagian akhir yang dapat berisi simpulan, saran, pengingat, atau penegasan hasil yang diharapkan. Bagian ini bersifat pilihan, sehingga tidak selalu harus ada.</p>
+          <p><strong>Contoh:</strong> "Sajikan selagi hangat. Sesuaikan rasa manis dengan kebutuhan."</p>
+        </div>
+
+        <div class="note orange">
+          <strong>Catatan:</strong> Struktur teks prosedur dapat menyesuaikan jenis dan kebutuhan petunjuk. Teks singkat, seperti instruksi mematikan komputer, mungkin langsung berisi langkah-langkah tanpa penegasan ulang.
+        </div>
+      </section>
+
+      <section class="materi-section" id="kebahasaan">
+        <h2>7. Kaidah Kebahasaan Teks Prosedur</h2>
+        <p>Bahasa dalam teks prosedur harus membantu pembaca memahami tindakan secara tepat. Oleh karena itu, pemilihan kata dan penyusunan kalimat perlu diperhatikan.</p>
+
+        <h3>A. Menggunakan Kata Kerja Imperatif</h3>
+        <p>Kata kerja imperatif adalah kata kerja yang digunakan untuk menyampaikan perintah, ajakan, atau larangan. Bentuknya dapat berupa kata dasar maupun kata yang mendapat imbuhan.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Bentuk</th>
+                <th>Contoh Kata</th>
+                <th>Contoh Penggunaan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kata dasar</td>
+                <td>Lihat, aduk, tekan.</td>
+                <td>"Lihat petunjuk pada layar."</td>
+              </tr>
+              <tr>
+                <td>Akhiran -kan</td>
+                <td>Gunakan, masukkan, tuangkan.</td>
+                <td>"Masukkan bahan ke dalam wadah."</td>
+              </tr>
+              <tr>
+                <td>Akhiran -lah</td>
+                <td>Tutuplah, bacalah, pilihlah.</td>
+                <td>"Bacalah seluruh ketentuan terlebih dahulu."</td>
+              </tr>
+              <tr>
+                <td>Akhiran -i</td>
+                <td>Hindari, lengkapi, ikuti.</td>
+                <td>"Ikuti urutan langkah dengan benar."</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>B. Menggunakan Penanda Urutan</h3>
+        <p>Penanda urutan berfungsi menunjukkan tahapan kegiatan agar pembaca tidak keliru mengikuti prosedur.</p>
+        <p>Contohnya: pertama, mula-mula, setelah itu, kemudian, selanjutnya, berikutnya, sebelum, sesudah, dan terakhir.</p>
+
+        <h3>C. Menggunakan Keterangan Cara, Waktu, dan Tempat</h3>
+        <ul>
+          <li><strong>Keterangan cara:</strong> secara perlahan, hingga merata, dengan hati-hati.</li>
+          <li><strong>Keterangan waktu:</strong> selama lima menit, hingga mendidih, setelah selesai.</li>
+          <li><strong>Keterangan tempat:</strong> di dalam wadah, pada halaman utama, melalui loket pelayanan.</li>
+        </ul>
+
+        <h3>D. Menggunakan Kalimat Larangan atau Peringatan</h3>
+        <p>Larangan dan peringatan diperlukan jika terdapat tindakan yang dapat menyebabkan kesalahan atau membahayakan pengguna.</p>
+        <p><strong>Contoh:</strong> "Jangan menyentuh bagian kabel yang terkelupas."</p>
+
+        <h3>E. Menggunakan Kalimat yang Efektif</h3>
+        <p>Kalimat efektif menyampaikan satu instruksi dengan jelas, hemat kata, dan tidak membingungkan. Hindari kalimat yang terlalu panjang atau memuat beberapa tindakan yang seharusnya dilakukan secara terpisah.</p>
+
+        <div class="example">
+          <h3>Contoh Perbaikan Kalimat</h3>
+          <p><strong>Kurang jelas:</strong> "Setelah bahan disiapkan, kemudian bahan itu selanjutnya dimasukkan ke wadah dan diaduk."</p>
+          <p><strong>Lebih efektif:</strong> "Masukkan bahan yang telah disiapkan ke dalam wadah. Kemudian, aduk hingga tercampur rata."</p>
+        </div>
+
+        <h3>F. Menggunakan Istilah Teknis secara Tepat</h3>
+        <p>Dalam prosedur tertentu, terutama yang berkaitan dengan teknologi, kesehatan, administrasi, atau keterampilan, penulis dapat menggunakan istilah khusus. Istilah tersebut harus sesuai dengan bidangnya dan dijelaskan jika berpotensi tidak dipahami pembaca.</p>
+      </section>
+      
+      <section class="materi-section" id="langkah">
+        <h2>8. Menyusun Langkah-Langkah Teks Prosedur</h2>
+
+        <p>Menyusun teks prosedur tidak sekadar menuliskan tindakan satu demi satu. Penulis perlu memahami tujuan kegiatan, mengenali kebutuhan pembaca, memastikan ketepatan informasi, dan menguji apakah langkah-langkah yang ditulis benar-benar dapat dilaksanakan.</p>
+
+        <h3>A. Menentukan Tujuan dan Sasaran Pembaca</h3>
+        <p>Tentukan terlebih dahulu hasil yang ingin dicapai. Setelah itu, pikirkan siapa yang akan menggunakan petunjuk tersebut. Petunjuk untuk orang yang sudah berpengalaman dapat berbeda tingkat penjelasannya dengan petunjuk untuk pemula.</p>
+
+        <h3>B. Mengumpulkan Informasi</h3>
+        <p>Kumpulkan informasi yang diperlukan melalui pengamatan, wawancara, buku panduan, sumber resmi, atau pengalaman langsung. Pastikan informasi yang digunakan benar dan dapat dipertanggungjawabkan.</p>
+
+        <h3>C. Menentukan Persiapan</h3>
+        <p>Jika prosedur membutuhkan alat, bahan, atau persyaratan tertentu, cantumkan secara lengkap. Jangan sampai pembaca baru mengetahui kebutuhan penting ketika kegiatan sudah dimulai.</p>
+
+        <h3>D. Menyusun Urutan Langkah</h3>
+        <p>Susun tindakan dari tahap awal hingga akhir. Perhatikan hubungan antartindakan. Langkah yang menjadi syarat bagi tindakan berikutnya harus ditempatkan lebih dahulu.</p>
+
+        <h3>E. Memeriksa Kejelasan Instruksi</h3>
+        <p>Gunakan kalimat yang langsung menunjukkan tindakan. Hindari kata-kata yang terlalu umum, seperti "lakukan dengan benar", tanpa menjelaskan apa yang harus dilakukan.</p>
+
+        <h3>F. Menguji Prosedur</h3>
+        <p>Jika memungkinkan, praktikkan petunjuk yang telah disusun. Perhatikan apakah ada langkah yang terlewat, urutan yang keliru, atau informasi yang belum tersedia. Mintalah orang lain mencoba mengikuti petunjuk tersebut untuk mengetahui bagian yang masih membingungkan.</p>
+
+        <div class="note orange">
+          <strong>Prinsip utama:</strong> Teks prosedur yang baik harus dapat dipahami dan dilaksanakan oleh pembaca yang menjadi sasaran, bukan hanya dipahami oleh penulisnya.
+        </div>
+
+        <h3>Contoh Kerangka Perencanaan</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Unsur</th>
+                <th>Pertanyaan Panduan</th>
+                <th>Contoh Jawaban</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tujuan</td>
+                <td>Apa yang ingin dicapai?</td>
+                <td>Membuat minuman jahe hangat.</td>
+              </tr>
+              <tr>
+                <td>Pembaca</td>
+                <td>Siapa yang akan mengikuti petunjuk?</td>
+                <td>Pemula atau masyarakat umum.</td>
+              </tr>
+              <tr>
+                <td>Persiapan</td>
+                <td>Apa yang harus disediakan?</td>
+                <td>Jahe, air, gula, panci, dan saringan.</td>
+              </tr>
+              <tr>
+                <td>Langkah</td>
+                <td>Apa urutan tindakannya?</td>
+                <td>Mencuci, mengiris, merebus, menyaring, dan menyajikan.</td>
+              </tr>
+              <tr>
+                <td>Hasil</td>
+                <td>Bagaimana hasil yang diharapkan?</td>
+                <td>Minuman jahe hangat siap disajikan.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="materi-section" id="infografik">
+        <h2>9. Teks Prosedur dalam Bentuk Infografik</h2>
+
+        <p>Selain disajikan dalam bentuk paragraf, teks prosedur dapat dikembangkan menjadi infografik. Infografik merupakan penyajian informasi dengan memadukan teks, gambar, simbol, angka, dan unsur visual lainnya agar informasi lebih mudah dipahami.</p>
+
+        <p>Infografik prosedur banyak digunakan untuk menyampaikan resep, petunjuk penggunaan, alur pendaftaran, tata cara pelayanan, panduan keselamatan, dan informasi publik.</p>
+
+        <h3>A. Ciri-Ciri Infografik Prosedur yang Baik</h3>
+        <ul>
+          <li>Memiliki judul yang menunjukkan kegiatan atau tujuan.</li>
+          <li>Menampilkan langkah-langkah secara berurutan.</li>
+          <li>Menggunakan gambar atau simbol yang sesuai dengan instruksi.</li>
+          <li>Memuat kalimat singkat, jelas, dan mudah dibaca.</li>
+          <li>Menggunakan warna dan huruf yang nyaman dilihat.</li>
+          <li>Menampilkan informasi penting tanpa membuat tampilan terlalu padat.</li>
+          <li>Mencantumkan sumber apabila menggunakan data atau informasi dari pihak lain.</li>
+        </ul>
+
+        <h3>B. Hubungan Teks dan Gambar</h3>
+        <p>Gambar dalam infografik bukan sekadar hiasan. Gambar harus membantu menjelaskan tindakan yang dimaksud. Misalnya, gambar panci untuk tahap merebus, gambar telepon untuk petunjuk layanan digital, atau simbol peringatan untuk menunjukkan tindakan yang harus dihindari.</p>
+
+        <div class="example">
+          <h3>Contoh Rancangan Infografik</h3>
+          <p><strong>Judul:</strong> Lima Langkah Membuat Minuman Jahe Hangat</p>
+          <ol>
+            <li><strong>Siapkan bahan:</strong> jahe, air, dan gula secukupnya.</li>
+            <li><strong>Cuci jahe:</strong> bersihkan jahe dari kotoran yang menempel.</li>
+            <li><strong>Iris jahe:</strong> potong jahe menjadi beberapa bagian tipis.</li>
+            <li><strong>Rebus:</strong> masukkan jahe ke dalam air, lalu panaskan hingga mendidih.</li>
+            <li><strong>Sajikan:</strong> saring air rebusan dan tambahkan gula sesuai selera.</li>
+          </ol>
+          <p><em>Rancangan visual:</em> setiap langkah dapat disertai ilustrasi bahan, proses pencucian, pengirisan, perebusan, dan penyajian.</p>
+        </div>
+
+        <h3>C. Memeriksa Infografik Sebelum Dipublikasikan</h3>
+        <p>Sebelum mengunggah infografik ke internet atau membagikannya kepada orang lain, lakukan pemeriksaan berikut.</p>
+        <ul>
+          <li>Pastikan isi sesuai dengan tujuan dan karakteristik teks prosedur.</li>
+          <li>Periksa struktur dan urutan langkah.</li>
+          <li>Periksa ejaan, pilihan kata, dan kalimat perintah.</li>
+          <li>Pastikan gambar atau simbol sesuai dengan instruksi.</li>
+          <li>Periksa keterbacaan huruf, ukuran gambar, dan kombinasi warna.</li>
+          <li>Pastikan informasi tidak terpotong dan dapat dibuka pada perangkat yang berbeda.</li>
+          <li>Cantumkan sumber informasi serta perhatikan hak penggunaan gambar.</li>
+        </ul>
+
+        <div class="note">
+          <strong>Catatan literasi digital:</strong> Infografik yang menarik belum tentu benar. Ketepatan informasi harus menjadi prioritas sebelum memperhatikan keindahan tampilan.
+        </div>
+      </section>
+
+      <section class="materi-section" id="contoh">
+        <h2>10. Contoh Teks Prosedur dan Analisis</h2>
+
+        <h3>Contoh 1 — Membuat Minuman Empon-Empon Sederhana</h3>
+
+        <div class="example">
+          <h3>Tujuan</h3>
+          <p>Minuman empon-empon merupakan minuman tradisional yang dibuat dari bahan-bahan rimpang. Berikut ini cara membuat minuman empon-empon sederhana untuk dinikmati dalam keadaan hangat.</p>
+
+          <h3>Alat dan Bahan</h3>
+          <ul>
+            <li>2 ruas jahe;</li>
+            <li>1 ruas kunyit;</li>
+            <li>1 batang serai;</li>
+            <li>500 ml air;</li>
+            <li>gula secukupnya;</li>
+            <li>panci, pisau, talenan, dan saringan.</li>
+          </ul>
+
+          <h3>Langkah-Langkah</h3>
+          <ol>
+            <li>Siapkan seluruh alat dan bahan yang diperlukan.</li>
+            <li>Cuci jahe, kunyit, dan serai hingga bersih.</li>
+            <li>Iris jahe dan kunyit menjadi bagian-bagian tipis agar sari bahan lebih mudah keluar.</li>
+            <li>Memarkan serai untuk membantu mengeluarkan aromanya.</li>
+            <li>Masukkan seluruh bahan ke dalam panci berisi air.</li>
+            <li>Rebus dengan api sedang hingga air mendidih dan aroma rempah tercium.</li>
+            <li>Matikan api, kemudian saring air rebusan ke dalam gelas.</li>
+            <li>Tambahkan gula secukupnya dan aduk hingga larut.</li>
+          </ol>
+
+          <h3>Penutup</h3>
+          <p>Minuman empon-empon sederhana siap disajikan selagi hangat. Pastikan minuman tidak terlalu panas ketika dikonsumsi.</p>
+        </div>
+
+        <h3>Analisis Contoh 1</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Unsur</th>
+                <th>Temuan dalam Teks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tujuan</td>
+                <td>Membuat minuman empon-empon sederhana.</td>
+              </tr>
+              <tr>
+                <td>Persiapan</td>
+                <td>Alat dan bahan dicantumkan sebelum langkah-langkah.</td>
+              </tr>
+              <tr>
+                <td>Langkah</td>
+                <td>Disusun secara kronologis dari persiapan hingga penyajian.</td>
+              </tr>
+              <tr>
+                <td>Kata kerja imperatif</td>
+                <td>Siapkan, cuci, iris, masukkan, rebus, matikan, dan tambahkan.</td>
+              </tr>
+              <tr>
+                <td>Penanda urutan</td>
+                <td>Kemudian dan hingga.</td>
+              </tr>
+              <tr>
+                <td>Penutup</td>
+                <td>Menegaskan hasil akhir dan memberikan pengingat.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Contoh 2 — Prosedur Melakukan Pendaftaran Layanan Digital</h3>
+
+        <div class="example">
+          <h3>Tujuan</h3>
+          <p>Berikut ini gambaran umum langkah-langkah membuat akun pada sebuah layanan digital melalui situs resmi. Setiap layanan dapat memiliki persyaratan dan tampilan yang berbeda.</p>
+
+          <h3>Langkah-Langkah</h3>
+          <ol>
+            <li>Buka peramban pada komputer atau telepon pintar.</li>
+            <li>Kunjungi situs resmi layanan yang akan digunakan.</li>
+            <li>Pilih menu pendaftaran atau buat akun.</li>
+            <li>Isi formulir dengan data yang diminta secara benar.</li>
+            <li>Baca ketentuan penggunaan dan kebijakan privasi sebelum menyetujuinya.</li>
+            <li>Lakukan verifikasi melalui metode yang disediakan oleh layanan.</li>
+            <li>Ikuti petunjuk hingga proses pendaftaran selesai.</li>
+            <li>Simpan informasi akun dengan aman dan jangan membagikan kata sandi kepada orang lain.</li>
+          </ol>
+
+          <h3>Penutup</h3>
+          <p>Setelah pendaftaran selesai, gunakan akun sesuai ketentuan layanan. Pastikan selalu mengakses alamat situs resmi untuk menghindari penipuan digital.</p>
+        </div>
+
+        <h3>Analisis Contoh 2</h3>
+        <p>Contoh kedua termasuk prosedur melakukan sesuatu karena tujuannya menyelesaikan proses pendaftaran, bukan menghasilkan benda. Langkah-langkahnya disusun berdasarkan urutan tindakan pengguna. Peringatan keamanan juga disertakan karena kegiatan dilakukan melalui internet.</p>
+
+        <div class="note orange">
+          <strong>Perbandingan:</strong> Contoh pertama menekankan bahan, alat, dan proses menghasilkan minuman. Contoh kedua menekankan urutan tindakan, pengisian informasi, verifikasi, dan keamanan pengguna.
+        </div>
+      </section>
+
+      <section class="materi-section" id="evaluasi">
+        <h2>11. Mengevaluasi Teks Prosedur</h2>
+
+        <p>Mengevaluasi teks prosedur berarti menilai apakah petunjuk yang disajikan sudah benar, lengkap, runtut, dan mudah diikuti. Evaluasi tidak hanya memperhatikan tata bahasa, tetapi juga mempertimbangkan isi dan kemungkinan penerapannya.</p>
+
+        <h3>A. Aspek yang Perlu Dievaluasi</h3>
+        <ol>
+          <li><strong>Ketepatan tujuan:</strong> apakah tujuan dijelaskan dengan jelas?</li>
+          <li><strong>Kelengkapan informasi:</strong> apakah alat, bahan, persyaratan, atau informasi pendukung sudah tersedia?</li>
+          <li><strong>Keruntutan:</strong> apakah setiap langkah disusun dalam urutan yang logis?</li>
+          <li><strong>Kejelasan instruksi:</strong> apakah pembaca dapat memahami tindakan yang harus dilakukan?</li>
+          <li><strong>Ketepatan bahasa:</strong> apakah kata kerja, penanda urutan, dan kalimat perintah digunakan secara tepat?</li>
+          <li><strong>Keamanan:</strong> apakah prosedur memuat peringatan jika terdapat risiko?</li>
+          <li><strong>Kesesuaian media:</strong> apakah gambar, simbol, atau tata letak mendukung pemahaman?</li>
+        </ol>
+
+        <h3>B. Contoh Evaluasi</h3>
+        <div class="example">
+          <p><strong>Petunjuk awal:</strong></p>
+          <ol>
+            <li>Siapkan air.</li>
+            <li>Masukkan bahan.</li>
+            <li>Panaskan.</li>
+            <li>Sajikan.</li>
+          </ol>
+
+          <p><strong>Hasil evaluasi:</strong></p>
+          <ul>
+            <li>Tujuan kegiatan belum dijelaskan.</li>
+            <li>Jenis dan jumlah bahan belum disebutkan.</li>
+            <li>Langkah memasukkan bahan belum menjelaskan wadah yang digunakan.</li>
+            <li>Lama pemanasan dan tanda bahwa proses selesai belum dijelaskan.</li>
+            <li>Petunjuk penyajian masih terlalu umum.</li>
+          </ul>
+
+          <p><strong>Saran perbaikan:</strong> Lengkapi informasi bahan, alat, cara pemanasan, tanda keberhasilan, dan langkah penyajian agar petunjuk dapat dilaksanakan dengan lebih mudah.</p>
+        </div>
+
+        <h3>C. Daftar Periksa Evaluasi</h3>
+        <ul>
+          <li>Apakah tujuan sudah dinyatakan secara jelas?</li>
+          <li>Apakah informasi persiapan sudah lengkap?</li>
+          <li>Apakah langkah-langkah tidak melompat atau berulang?</li>
+          <li>Apakah setiap instruksi dapat dipahami tanpa menebak-nebak?</li>
+          <li>Apakah bahasa yang digunakan efektif dan sesuai kaidah?</li>
+          <li>Apakah terdapat peringatan untuk tindakan yang berisiko?</li>
+          <li>Apakah hasil akhir sesuai dengan tujuan?</li>
+        </ul>
+      </section>
+
+      <section class="materi-section" id="aktivitas">
+        <h2>12. Aktivitas Pembelajaran</h2>
+
+        <h3>Aktivitas 1 — Mengidentifikasi Teks Prosedur</h3>
+        <p>Bacalah sebuah petunjuk penggunaan, resep, atau panduan layanan yang tersedia di sekitarmu. Identifikasilah tujuan, struktur, langkah-langkah, dan kaidah kebahasaannya.</p>
+
+        <p><strong>Pertanyaan panduan:</strong></p>
+        <ol>
+          <li>Apa tujuan dari prosedur tersebut?</li>
+          <li>Siapa sasaran pembacanya?</li>
+          <li>Informasi persiapan apa yang disediakan?</li>
+          <li>Kata kerja imperatif apa saja yang digunakan?</li>
+          <li>Apakah urutan langkah sudah tepat? Jelaskan alasanmu.</li>
+        </ol>
+
+        <h3>Aktivitas 2 — Memperbaiki Prosedur yang Kurang Jelas</h3>
+        <p>Pilihlah sebuah petunjuk sederhana yang menurutmu masih membingungkan. Perbaikilah dengan melengkapi informasi yang kurang, memperjelas instruksi, dan mengurutkan kembali tahapannya.</p>
+
+        <h3>Aktivitas 3 — Mengembangkan Teks Prosedur</h3>
+        <p>Buatlah teks prosedur berdasarkan kegiatan yang dekat dengan kehidupanmu. Kamu dapat memilih salah satu tema berikut:</p>
+        <ul>
+          <li>cara membuat makanan atau minuman sederhana;</li>
+          <li>cara merawat tanaman di lingkungan rumah;</li>
+          <li>cara menggunakan aplikasi pembelajaran;</li>
+          <li>cara mengelola sampah secara terpilah;</li>
+          <li>cara melakukan kegiatan literasi di sekolah.</li>
+        </ul>
+
+        <p>Susunlah karya dengan memperhatikan tujuan, sasaran pembaca, persiapan, urutan langkah, dan kaidah kebahasaan.</p>
+
+        <h3>Aktivitas 4 — Mengubah Teks Menjadi Infografik</h3>
+        <p>Ubah teks prosedur yang telah kamu buat menjadi infografik. Gunakan gambar atau simbol yang sesuai, tampilkan langkah secara berurutan, dan pastikan tulisan dapat dibaca dengan jelas.</p>
+
+        <h3>Aktivitas 5 — Uji Coba dan Publikasi</h3>
+        <p>Tukarkan hasil pekerjaan dengan teman. Mintalah teman mengikuti petunjuk yang kamu buat. Catat bagian yang membingungkan, kemudian lakukan perbaikan sebelum karya dipublikasikan melalui media yang sesuai.</p>
+
+        <div class="note orange">
+          <strong>Produk akhir:</strong> Satu teks prosedur yang telah diperiksa dan diperbaiki, disertai infografik yang mendukung isi petunjuk. Karya harus menunjukkan ketepatan informasi, kejelasan bahasa, keruntutan, dan kreativitas penyajian.
+        </div>
+
+        <h3>Kriteria Penilaian Karya</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Aspek</th>
+                <th>Hal yang Dinilai</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Isi dan ketepatan</td>
+                <td>Kebenaran informasi dan kesesuaian dengan tujuan.</td>
+              </tr>
+              <tr>
+                <td>Struktur</td>
+                <td>Kelengkapan dan keruntutan bagian teks.</td>
+              </tr>
+              <tr>
+                <td>Kebahasaan</td>
+                <td>Ketepatan kalimat perintah, penanda urutan, ejaan, dan pilihan kata.</td>
+              </tr>
+              <tr>
+                <td>Penyajian visual</td>
+                <td>Kesesuaian gambar, keterbacaan, dan tata letak infografik.</td>
+              </tr>
+              <tr>
+                <td>Uji coba dan perbaikan</td>
+                <td>Kemampuan menggunakan masukan untuk menyempurnakan karya.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="materi-section" id="refleksi">
+        <h2>13. Refleksi dan Rangkuman</h2>
+
+        <h3>A. Rangkuman</h3>
+        <ul>
+          <li>Teks prosedur adalah teks yang memberikan petunjuk tentang cara melakukan, menggunakan, atau membuat sesuatu.</li>
+          <li>Secara umum, teks prosedur dapat dibedakan menjadi prosedur membuat sesuatu dan prosedur melakukan sesuatu.</li>
+          <li>Struktur teks prosedur meliputi tujuan, langkah-langkah, dan penegasan ulang yang bersifat pilihan.</li>
+          <li>Kaidah kebahasaannya antara lain penggunaan kata kerja imperatif, penanda urutan, keterangan, kalimat larangan, dan kalimat efektif.</li>
+          <li>Teks prosedur dapat disajikan dalam bentuk tulisan maupun infografik.</li>
+          <li>Teks prosedur yang baik harus akurat, lengkap, runtut, jelas, dan dapat diterapkan oleh pembaca.</li>
+        </ul>
+
+        <h3>B. Refleksi Pembelajaran</h3>
+        <p>Setelah mempelajari materi ini, renungkan dan jawablah pertanyaan berikut secara jujur.</p>
+        <ol>
+          <li>Pengetahuan baru apa yang kamu peroleh tentang teks prosedur?</li>
+          <li>Bagian mana yang paling mudah dan paling menantang untuk kamu pahami?</li>
+          <li>Mengapa urutan langkah sangat penting dalam sebuah prosedur?</li>
+          <li>Bagaimana cara memastikan bahwa petunjuk yang kamu tulis benar-benar dapat dilaksanakan orang lain?</li>
+          <li>Apa manfaat keterampilan menyusun teks prosedur dalam kehidupan sehari-hari?</li>
+        </ol>
+
+        <div class="note">
+          <strong>Pesan pembelajaran:</strong> Menulis prosedur berarti membantu orang lain melakukan sesuatu dengan benar. Karena itu, setiap petunjuk perlu disusun dengan ketelitian, tanggung jawab, dan kepedulian terhadap pembaca.
+        </div>
+
+        <div class="quote-box">
+          <p>"Petunjuk yang baik bukan sekadar menunjukkan jalan, melainkan membantu setiap langkah menemukan arah."</p>
+          <span>— Mandala Aksara</span>
+        </div>
+
+        <a class="back-link" href="kelas-xi.html">← Kembali ke Materi Kelas XI</a>
+      </section>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>MANDALA AKSARA</strong>
+        <p>Ruang Literasi dan Pembelajaran Bahasa Indonesia.</p>
+        <span>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</span>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> Mandala Aksara. Dikelola Mandiri.</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener("click", function () {
+      mainNav.classList.toggle("open");
+    });
+  }
+
+  const currentYear = document.getElementById("currentYear");
+  if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+  }
+
+  const sidebarLinks = document.querySelectorAll(".sidebar-list a");
+
+  sidebarLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      sidebarLinks.forEach(function (item) {
+        item.classList.remove("active");
+      });
+      link.classList.add("active");
+    });
+  });
+</script>
+
+</body>
+</html>
