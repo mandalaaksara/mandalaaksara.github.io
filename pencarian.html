@@ -89,7 +89,7 @@
 
   if (input) input.value = query;
   title.textContent = query ? 'Hasil untuk “' + query + '”' : 'Jelajahi seluruh materi';
-  const normalize = value => String(value || '').toLocaleLowerCase('id-ID').normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  const normalize = value => String(value || '').toLocaleLowerCase('id-ID').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 
   function showMessage(className, heading, message) {
     results.replaceChildren();
