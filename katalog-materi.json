@@ -2,7 +2,7 @@
   "nama": "Katalog Materi Mandala Aksara",
   "versi": 1,
   "terakhir_diperbarui": "2026-11-26",
-  "catatan": "Katalog awal. Status perlu_verifikasi harus diperiksa sebelum fitur pencarian menampilkan materi sebagai tersedia.",
+  "catatan": "Enam materi Kelas X telah diverifikasi oleh pengelola dan dinyatakan siap digunakan. Materi kelas lain masih menunggu verifikasi.",
   "materi": [
     {
       "id": "x-lho",
@@ -45,7 +45,7 @@
       ],
       "deskripsi": "Memahami humor, kritik sosial, struktur, dan pesan dalam teks anekdot.",
       "url": "teks-anekdot.html",
-      "status": "segera"
+      "status": "tersedia"
     },
     {
       "id": "x-hikayat",
@@ -66,7 +66,7 @@
       ],
       "deskripsi": "Mengapresiasi karya sastra lama, nilai kehidupan, dan karakter tokoh.",
       "url": "teks-hikayat.html",
-      "status": "segera"
+      "status": "tersedia"
     },
     {
       "id": "x-negosiasi",
@@ -106,7 +106,7 @@
       ],
       "deskripsi": "Mengidentifikasi perjalanan hidup, keteladanan, dan nilai inspiratif tokoh.",
       "url": "teks-biografi.html",
-      "status": "segera"
+      "status": "tersedia"
     },
     {
       "id": "x-puisi",
@@ -127,7 +127,7 @@
       ],
       "deskripsi": "Mengapresiasi unsur pembangun puisi dan mengekspresikan gagasan kreatif.",
       "url": "puisi.html",
-      "status": "segera"
+      "status": "tersedia"
     },
     {
       "id": "xi-bab-1-energi",
