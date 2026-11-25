@@ -1,0 +1,469 @@
+
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Materi Bahasa Indonesia Tingkat Lanjut Kelas XII Mandala Aksara: surat lamaran kerja, literasi film pendek, apresiasi drama Indonesia dan dunia, serta feature budaya berbasis digital." name="description"/>
+<title>Bahasa Indonesia Tingkat Lanjut Kelas XII | Mandala Aksara</title>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7HFZ0YC7P9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7HFZ0YC7P9');
+  </script>
+<link href="style.css?v=3" rel="stylesheet"/>
+<style>
+    /* =====================================
+       HALAMAN KELAS XII
+    ===================================== */
+
+    .kelas-xii-page {
+      background: #f3f5f8;
+      min-height: 70vh;
+      padding-bottom: 50px;
+    }
+
+    /* HERO */
+
+    .xii-hero {
+      background: linear-gradient(120deg, #142b4a, #0d203a);
+      color: #fff;
+      padding: 65px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .xii-hero::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 50%;
+      top: -140px;
+      right: -65px;
+    }
+
+    .xii-hero::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border: 1px solid rgba(242,140,40,.2);
+      border-radius: 50%;
+      bottom: -130px;
+      left: -60px;
+    }
+
+    .xii-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .xii-label {
+      display: inline-block;
+      color: #f5bd67;
+      border: 1px solid rgba(245,189,103,.5);
+      border-radius: 30px;
+      padding: 7px 17px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 18px;
+    }
+
+    .xii-hero h1 {
+      color: #fff;
+      font-size: clamp(30px, 5vw, 43px);
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+
+    .xii-hero h1 span {
+      color: #f28c28;
+    }
+
+    .xii-hero p {
+      color: #e0e7f0;
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 680px;
+      margin: auto;
+    }
+
+    /* KONTEN */
+
+    .xii-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 45px 20px 0;
+    }
+
+    .xii-intro {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px 32px;
+      box-shadow: 0 5px 22px rgba(20,43,74,.06);
+      border-top: 4px solid #f28c28;
+    }
+
+    .xii-intro h2 {
+      color: #142b4a;
+      font-size: 24px;
+      margin: 0 0 14px;
+    }
+
+    .xii-intro p {
+      color: #46566b;
+      font-size: 15px;
+      line-height: 1.9;
+      margin: 0 0 10px;
+    }
+
+    .xii-intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* JUDUL DAFTAR MATERI */
+
+    .xii-section-heading {
+      margin: 42px 0 22px;
+    }
+
+    .xii-section-heading h2 {
+      color: #142b4a;
+      font-size: 25px;
+      margin: 0 0 8px;
+    }
+
+    .xii-section-heading p {
+      color: #657386;
+      font-size: 14px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* KARTU MATERI */
+
+    .xii-material-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .xii-material-card {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border: 1px solid #e5eaf0;
+      border-radius: 14px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(20,43,74,.04);
+      transition: transform .25s ease, box-shadow .25s ease;
+      min-height: 215px;
+    }
+
+    .xii-material-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 9px 24px rgba(20,43,74,.10);
+    }
+
+    .xii-card-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .xii-card-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 45px;
+      height: 45px;
+      border-radius: 12px;
+      background: #142b4a;
+      color: #f5bd67;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .xii-card-category {
+      color: #c0802c;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+
+    .xii-material-card h3 {
+      color: #142b4a;
+      font-size: 19px;
+      line-height: 1.4;
+      margin: 0 0 10px;
+    }
+
+    .xii-material-card p {
+      color: #657386;
+      font-size: 14px;
+      line-height: 1.8;
+      margin: 0 0 20px;
+      flex-grow: 1;
+    }
+
+    .xii-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      align-self: flex-start;
+      color: #142b4a;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid #f28c28;
+      padding-bottom: 5px;
+      transition: color .2s ease;
+    }
+
+    .xii-card-link:hover {
+      color: #d97716;
+    }
+
+    /* CATATAN */
+
+    .xii-note {
+      margin-top: 30px;
+      background: #fff9ef;
+      border-left: 4px solid #f28c28;
+      border-radius: 10px;
+      padding: 20px 23px;
+    }
+
+    .xii-note p {
+      color: #66543d;
+      font-size: 13px;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    /* KUTIPAN PENUTUP */
+
+    .xii-quote {
+      margin-top: 30px;
+      padding: 25px 20px;
+      text-align: center;
+      color: #526176;
+      font-style: italic;
+      line-height: 1.8;
+    }
+
+    .xii-quote strong {
+      display: block;
+      color: #c0802c;
+      font-style: normal;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 650px) {
+      .xii-hero {
+        padding: 48px 18px;
+      }
+
+      .xii-hero p {
+        font-size: 14px;
+      }
+
+      .xii-container {
+        padding: 28px 15px 0;
+      }
+
+      .xii-intro {
+        padding: 24px 20px;
+      }
+
+      .xii-intro h2 {
+        font-size: 21px;
+      }
+
+      .xii-section-heading {
+        margin-top: 32px;
+      }
+
+      .xii-section-heading h2 {
+        font-size: 22px;
+      }
+
+      .xii-material-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .xii-material-card {
+        padding: 21px;
+        min-height: auto;
+      }
+
+      .xii-material-card h3 {
+        font-size: 18px;
+      }
+
+      .xii-note {
+        padding: 18px;
+      }
+    }
+  </style>
+<link href="site-shell.css?v=1" rel="stylesheet"/>
+<link href="https://mandalaaksara.github.io/kelas-xii-tingkat-lanjut.html" rel="canonical"/><meta content="website" property="og:type"/><meta content="Mandala Aksara" property="og:site_name"/><meta content="Bahasa Indonesia Tingkat Lanjut Kelas XII | Mandala Aksara" property="og:title"/><meta content="Materi Bahasa Indonesia Tingkat Lanjut Kelas XII Mandala Aksara: surat lamaran kerja, literasi film pendek, apresiasi drama Indonesia dan dunia, serta feature budaya berbasis digital." property="og:description"/><meta content="https://mandalaaksara.github.io/kelas-xii-tingkat-lanjut.html" property="og:url"/><meta content="https://mandalaaksara.github.io/logo-mandala-aksara.webp" property="og:image"/><meta content="summary" name="twitter:card"/><meta content="Bahasa Indonesia Tingkat Lanjut Kelas XII | Mandala Aksara" name="twitter:title"/><meta content="Materi Bahasa Indonesia Tingkat Lanjut Kelas XII Mandala Aksara: surat lamaran kerja, literasi film pendek, apresiasi drama Indonesia dan dunia, serta feature budaya berbasis digital." name="twitter:description"/></head>
+<body>
+<!-- TOPBAR -->
+<div class="topbar">
+<div class="top-inner">
+<span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+<div class="top-actions">
+<form class="search" onsubmit="return searchSite(event)" role="search">
+<input aria-label="Cari materi" id="searchInput" placeholder="Cari materi..." type="search"/>
+<button aria-label="Cari" type="submit">⌕</button>
+</form>
+<a class="top-virtual" href="kelas-virtual.html">
+          ▣ <span>Kelas Virtual</span>
+</a>
+</div>
+</div>
+</div>
+<!-- HEADER DAN NAVIGASI -->
+<header class="site-header">
+<a aria-label="Mandala Aksara - Beranda" class="brand" href="index.html">
+<img alt="Logo Mandala Aksara" decoding="async" loading="eager" src="logo-mandala-aksara.webp"/>
+<span class="brand-copy"><strong>MANDALA AKSARA</strong><small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small></span>
+</a>
+<button aria-controls="mainNav" aria-expanded="false" aria-label="Buka navigasi" class="menu-toggle" id="menuToggle" type="button">☰</button>
+<nav aria-label="Navigasi utama" id="mainNav">
+<a href="index.html">Beranda</a>
+<div class="nav-dropdown"><button aria-haspopup="true" class="nav-trigger" type="button">Materi Pembelajaran <span class="dropdown-arrow">⌄</span></button>
+<div class="dropdown"><a href="kelas-x.html">Kelas X</a><a href="kelas-xi.html">Kelas XI</a><a href="kelas-xii-tingkat-lanjut.html">Kelas XII</a></div>
+</div>
+<a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a><a href="tentang.html">Tentang</a>
+</nav>
+</header>
+<!-- KONTEN HALAMAN -->
+<main class="kelas-xii-page">
+<!-- HERO -->
+<section class="xii-hero">
+<div class="xii-hero-content">
+<span class="xii-label">MATERI TINGKAT LANJUT · FASE F</span>
+<h1>Bahasa Indonesia <span>Tingkat Lanjut Kelas XII</span></h1>
+<p>
+          Ruang untuk memperdalam kemampuan berbahasa, mengembangkan
+          pemikiran kritis, mengapresiasi karya sastra, dan memperluas
+          wawasan melalui kegiatan literasi.
+        </p>
+</div>
+</section>
+<div class="xii-container">
+<!-- PENGANTAR -->
+<section class="xii-intro">
+<h2>Ruang Pembelajaran Tingkat Lanjut Kelas XII</h2>
+<p>
+          Bahasa Indonesia bukan sekadar mata pelajaran tentang membaca,
+          menulis, berbicara, dan menyimak. Bahasa juga menjadi sarana
+          untuk memahami kehidupan, menyampaikan gagasan, membangun
+          pengetahuan, serta mengembangkan cara berpikir yang kritis
+          dan kreatif.
+        </p>
+<p>
+          Melalui halaman ini, peserta didik dapat mempelajari berbagai
+          jenis teks, memahami karakteristik karya sastra, serta
+          mengembangkan keterampilan berkomunikasi melalui materi,
+          contoh, dan aktivitas pembelajaran.
+        </p>
+</section>
+<!-- DAFTAR MATERI -->
+<section aria-labelledby="judul-materi">
+<div class="xii-section-heading">
+<h2 id="judul-materi">Daftar Materi Pembelajaran</h2>
+<p>
+            Pilih bab yang ingin dipelajari untuk membuka materi
+            Bahasa Indonesia Kelas XII.
+          </p>
+</div>
+<div class="xii-material-grid">
+<!-- BAB I -->
+<article class="xii-material-card">
+<div class="xii-card-top">
+<span class="xii-card-number">01</span>
+<span class="xii-card-category">Bab I</span>
+</div>
+<h3>Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup yang Mengesankan</h3>
+<p>Mengevaluasi, menyusun, mempresentasikan, dan memublikasikan surat lamaran kerja serta daftar riwayat hidup secara efektif dan profesional.</p>
+<a class="xii-card-link" href="menulis-surat-lamaran-kerja-dan-daftar-riwayat-hidup.html">Pelajari Materi <span>→</span></a>
+</article>
+<!-- BAB II -->
+<article class="xii-material-card">
+<div class="xii-card-top">
+<span class="xii-card-number">02</span>
+<span class="xii-card-category">Bab II</span>
+</div>
+<h3>Layar Kecil, Pikiran Besar: Literasi dari Film Pendek</h3>
+<p>Mengapresiasi film pendek, memahami pesan dan nilai kehidupan, menyusun sinopsis serta storyboard, memproduksi, dan mempromosikan film.</p>
+<a class="xii-card-link" href="layar-kecil-pikiran-besar-literasi-film-pendek.html">Pelajari Materi <span>→</span></a>
+</article>
+<!-- BAB III -->
+<article class="xii-material-card">
+<div class="xii-card-top">
+<span class="xii-card-number">03</span>
+<span class="xii-card-category">Bab III</span>
+</div>
+<h3>Menelusuri Realitas Sosial melalui Drama Indonesia dan Dunia</h3>
+<p>Menyimak dan mengapresiasi drama, menafsirkan unsur serta konflik, menulis naskah, menampilkan pertunjukan, dan memublikasikan karya.</p>
+<a class="xii-card-link" href="menelusuri-realitas-sosial-melalui-drama-indonesia-dan-dunia.html">Pelajari Materi <span>→</span></a>
+</article>
+<!-- BAB IV -->
+<article class="xii-material-card">
+<div class="xii-card-top">
+<span class="xii-card-number">04</span>
+<span class="xii-card-category">Bab IV</span>
+</div>
+<h3>Mengeksplorasi Khazanah Budaya Nusantara melalui Feature Berbasis Digital</h3>
+<p>Menyimak kritis feature, menelusuri budaya melalui observasi, menulis berdasarkan fakta, mempresentasikan, dan memublikasikan karya secara bertanggung jawab.</p>
+<a class="xii-card-link" href="mengeksplorasi-khazanah-budaya-nusantara-melalui-feature-berbasis-digital.html">Pelajari Materi <span>→</span></a>
+</article>
+</div></section>
+<!-- CATATAN -->
+<div class="xii-note">
+<p>
+<strong>Catatan:</strong> Materi pembelajaran disusun dan
+          dikembangkan secara bertahap. Setiap bab akan dilengkapi
+          dengan penjelasan, contoh, dan aktivitas pembelajaran
+          untuk membantu peserta didik memahami materi.
+        </p>
+</div>
+<!-- KUTIPAN PENUTUP -->
+<div class="xii-quote">
+        “Belajar bukan sekadar mengumpulkan pengetahuan,
+        melainkan membangun pemahaman untuk menghadapi kehidupan.”
+        <strong>— Mandala Aksara</strong>
+</div>
+</div>
+</main>
+<!-- FOOTER -->
+<footer class="site-footer">
+<div class="footer-main">
+<div class="footer-brand"><img alt="Logo Mandala Aksara" decoding="async" loading="eager" src="logo-mandala-aksara.webp"/><div class="footer-brand-copy"><b>MANDALA AKSARA</b><small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small><span class="managed-label">Dikelola Mandiri</span></div></div>
+<nav aria-label="Navigasi footer" class="footer-links"><a href="tentang.html">Tentang</a><a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a></nav>
+</div>
+<div class="copyright">© 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</div>
+</footer>
+<script defer="True" src="script.js"></script>
+</body>
+</html>
