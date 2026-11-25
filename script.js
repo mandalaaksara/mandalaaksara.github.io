@@ -1,3 +1,14 @@
+// Favicon Mandala Aksara untuk seluruh halaman yang memuat script.js
+(function setMandalaFavicon() {
+  if (!document.querySelector('link[rel~="icon"]')) {
+    const favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/webp';
+    favicon.href = '/logo-mandala-aksara.webp';
+    document.head.appendChild(favicon);
+  }
+})();
+
 
 const toggle = document.getElementById('menuToggle');
 const nav = document.getElementById('mainNav');
