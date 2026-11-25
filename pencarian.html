@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Cari materi pembelajaran Bahasa Indonesia Kelas X, XI, dan XII di Mandala Aksara berdasarkan judul, kelas, kategori, atau kata kunci.">
+<meta name="theme-color" content="#0d203a">
+<title>Hasil Pencarian Materi | Mandala Aksara</title>
+<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="site-shell.css?v=1">
+<style>
+.search-page{min-height:55vh;background:#f3f5f8;color:#34445b;font-family:Arial,Helvetica,sans-serif;line-height:1.7}
+.search-hero{padding:42px 20px;text-align:center;color:#fff;background:linear-gradient(120deg,#142b4a,#25496f);border-bottom:5px solid #f28c28}
+.search-hero .eyebrow{margin:0 0 8px;color:#f5c77d;font-size:12px;font-weight:bold;letter-spacing:2px}
+.search-hero h1{margin:0;font: bold clamp(27px,4vw,38px)/1.25 Georgia,serif}
+.search-hero p{max-width:680px;margin:12px auto 0;color:#e5eaf0}
+.search-wrap{max-width:1100px;margin:30px auto;padding:0 20px 20px}
+.search-summary{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+.search-summary h2{margin:0;color:#142b4a;font: bold 21px Georgia,serif}
+.search-count{display:inline-block;padding:5px 11px;border-radius:20px;background:#e8eef5;color:#142b4a;font-size:12px;font-weight:bold}
+.search-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.search-card{display:flex;flex-direction:column;min-width:0;padding:20px;background:#fff;border:1px solid #e1e7ef;border-radius:12px;box-shadow:0 4px 14px rgba(20,43,74,.05)}
+.search-card .meta{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+.search-tag{display:inline-block;padding:3px 8px;border-radius:5px;background:#eef3f8;color:#25496f;font-size:11px;font-weight:bold}
+.search-card h3{margin:0 0 8px;color:#142b4a;font-size:18px;line-height:1.4}
+.search-card p{margin:0 0 15px;color:#5e6c7e;font-size:14px}
+.search-card a{align-self:flex-start;margin-top:auto;padding:9px 14px;border-radius:6px;background:#f28c28;color:#fff;font-size:13px;font-weight:bold;text-decoration:none}
+.search-card a:hover{background:#d97516}
+.search-empty,.search-error{padding:28px;text-align:center;background:#fff;border:1px solid #e1e7ef;border-radius:12px;color:#5e6c7e}
+.search-empty strong,.search-error strong{display:block;margin-bottom:7px;color:#142b4a;font-size:17px}
+.search-hint{margin-top:18px;color:#68778b;font-size:13px}
+@media(max-width:650px){.search-wrap{margin:22px auto;padding:0 14px 18px}.search-grid{grid-template-columns:1fr}.search-card{padding:18px}.search-hero{padding:36px 17px}}
+</style>
+</head>
+<body class="search-page">
+<div class="topbar">
+  <div class="top-inner">
+    <span class="top-intro">✦ Ruang Literasi dan Pembelajaran Bahasa Indonesia</span>
+    <div class="top-actions">
+      <form class="search" onsubmit="return searchSite(event)" role="search">
+        <input aria-label="Cari materi" id="searchInput" placeholder="Cari materi..." type="search">
+        <button aria-label="Cari" type="submit">⌕</button>
+      </form>
+      <a class="top-virtual" href="kelas-virtual.html">▣ <span>Kelas Virtual</span></a>
+    </div>
+  </div>
+</div>
+<header class="site-header">
+  <a aria-label="Mandala Aksara - Beranda" class="brand" href="index.html">
+    <img alt="Logo Mandala Aksara" decoding="async" loading="eager" src="logo-mandala-aksara.webp">
+    <span class="brand-copy"><strong>MANDALA AKSARA</strong><small>Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</small></span>
+  </a>
+  <button aria-controls="mainNav" aria-expanded="false" aria-label="Buka navigasi" class="menu-toggle" id="menuToggle" type="button">☰</button>
+  <nav aria-label="Navigasi utama" id="mainNav">
+    <a href="index.html">Beranda</a>
+    <div class="nav-dropdown"><button aria-haspopup="true" class="nav-trigger" type="button">Materi Pembelajaran <span class="dropdown-arrow">⌄</span></button><div class="dropdown"><a href="kelas-x.html">Kelas X</a><a href="kelas-xi.html">Kelas XI</a><a href="kelas-xii.html">Kelas XII</a></div></div>
+    <a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a><a href="tentang.html">Tentang</a>
+  </nav>
+</header>
+<section class="search-hero">
+  <p class="eyebrow">KATALOG PEMBELAJARAN</p>
+  <h1>Pencarian Materi</h1>
+  <p>Temukan bahan pembelajaran Bahasa Indonesia berdasarkan judul, kelas, kategori, atau kata kunci.</p>
+</section>
+<main class="search-wrap">
+  <div class="search-summary">
+    <h2 id="resultTitle">Hasil pencarian</h2>
+    <span class="search-count" id="resultCount">Memuat katalog…</span>
+  </div>
+  <div id="searchResults" aria-live="polite"><div class="search-empty">Sedang memuat katalog materi Mandala Aksara…</div></div>
+  <p class="search-hint">Tips: coba kata kunci seperti “puisi”, “berita”, “observasi”, “kelas XI”, atau “energi bersih”.</p>
+</main>
+<div class="page-quote"><em>Setiap pencarian adalah langkah awal untuk menemukan pengetahuan dan makna.</em><cite>— Mandala Aksara</cite></div>
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand"><img alt="Logo Mandala Aksara" decoding="async" loading="eager" src="logo-mandala-aksara.webp"><div class="footer-brand-copy"><b>MANDALA AKSARA</b><small>Ruang Literasi dan Pembelajaran Bahasa Indonesia</small><span class="managed-label">Dikelola Mandiri</span></div></div>
+    <nav aria-label="Navigasi footer" class="footer-links"><a href="tentang.html">Tentang</a><a href="galeri.html">Galeri</a><a href="perpustakaan.html">Perpustakaan Digital</a><a href="kelas-virtual.html">Kelas Virtual</a></nav>
+  </div>
+  <div class="copyright">© 2026 Mandala Aksara. Menjelajah Kata, Mendalami Makna, Membentangkan Cakrawala.</div>
+</footer>
+<script>
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const query = (params.get('q') || '').trim();
+  const input = document.getElementById('searchInput');
+  const results = document.getElementById('searchResults');
+  const title = document.getElementById('resultTitle');
+  const count = document.getElementById('resultCount');
+
+  if (input) input.value = query;
+  title.textContent = query ? 'Hasil untuk “' + query + '”' : 'Jelajahi seluruh materi';
+  const normalize = value => String(value || '').toLocaleLowerCase('id-ID').normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+
+  function showMessage(className, heading, message) {
+    results.replaceChildren();
+    const box = document.createElement('div');
+    box.className = className;
+    const strong = document.createElement('strong');
+    strong.textContent = heading;
+    const p = document.createElement('p');
+    p.textContent = message;
+    box.append(strong, p);
+    results.appendChild(box);
+  }
+
+  fetch('katalog-materi.json')
+    .then(response => {
+      if (!response.ok) throw new Error('Katalog tidak dapat dimuat (HTTP ' + response.status + ').');
+      return response.json();
+    })
+    .then(data => {
+      if (!Array.isArray(data.materi)) throw new Error('Format katalog belum sesuai.');
+      const terms = normalize(query).split(' ').filter(Boolean);
+      const available = data.materi.filter(item => item.status === 'tersedia');
+      const matched = available.filter(item => {
+        const haystack = normalize([
+          item.judul, 'kelas ' + item.kelas, item.fase, item.tingkat,
+          item.kategori, item.kata_kunci, item.deskripsi
+        ].flat().join(' '));
+        return terms.length === 0 || terms.every(term => haystack.includes(term));
+      });
+
+      count.textContent = matched.length + ' materi ditemukan';
+      if (!query) {
+        showMessage('search-empty', 'Silakan masukkan kata kunci', 'Gunakan kolom pencarian di bagian atas untuk menemukan materi yang dibutuhkan.');
+        return;
+      }
+      if (!matched.length) {
+        showMessage('search-empty', 'Materi belum ditemukan', 'Coba kata kunci yang lebih umum, periksa ejaan, atau gunakan nama kelas dan jenis teks.');
+        return;
+      }
+
+      const grid = document.createElement('div');
+      grid.className = 'search-grid';
+      matched.forEach(item => {
+        const card = document.createElement('article');
+        card.className = 'search-card';
+        const meta = document.createElement('div');
+        meta.className = 'meta';
+        const classTag = document.createElement('span');
+        classTag.className = 'search-tag';
+        classTag.textContent = 'Kelas ' + item.kelas + (item.tingkat === 'lanjut' ? ' · Tingkat Lanjut' : '');
+        meta.appendChild(classTag);
+        (item.kategori || []).slice(0, 2).forEach(category => {
+          const tag = document.createElement('span');
+          tag.className = 'search-tag';
+          tag.textContent = category;
+          meta.appendChild(tag);
+        });
+        const h3 = document.createElement('h3');
+        h3.textContent = item.judul;
+        const p = document.createElement('p');
+        p.textContent = item.deskripsi || 'Materi pembelajaran Bahasa Indonesia.';
+        const link = document.createElement('a');
+        link.href = item.url;
+        link.textContent = 'Buka materi →';
+        card.append(meta, h3, p, link);
+        grid.appendChild(card);
+      });
+      results.replaceChildren(grid);
+    })
+    .catch(error => {
+      count.textContent = 'Katalog belum dapat dibaca';
+      showMessage('search-error', 'Pencarian belum dapat ditampilkan', error.message + ' Silakan coba beberapa saat lagi.');
+    });
+})();
+</script>
+<script defer src="script.js"></script>
+</body>
+</html>
