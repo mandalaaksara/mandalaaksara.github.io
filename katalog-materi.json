@@ -2,7 +2,7 @@
   "nama": "Katalog Materi Mandala Aksara",
   "versi": 1,
   "terakhir_diperbarui": "2026-11-26",
-  "catatan": "Seluruh 26 materi Kelas X, Kelas XI reguler, Kelas XI tingkat lanjut, dan Kelas XII telah diverifikasi oleh pengelola dan dinyatakan siap digunakan.",
+  "catatan": "Seluruh 30 materi Kelas X, Kelas XI reguler, Kelas XI tingkat lanjut, Kelas XII reguler, dan Kelas XII tingkat lanjut tercatat dalam katalog Mandala Aksara.",
   "materi": [
     {
       "id": "x-lho",
@@ -561,6 +561,92 @@
       ],
       "deskripsi": "Mengenali karakteristik, struktur, dan cara menyusun esai dengan argumentasi dan fakta.",
       "url": "bab-5-esai.html",
+      "status": "tersedia"
+    },
+    {
+      "id": "xii-tingkat-lanjut-1",
+      "judul": "Menulis Surat Lamaran Kerja dan Daftar Riwayat Hidup yang Mengesankan",
+      "kelas": "XII",
+      "fase": "F",
+      "tingkat": "lanjut",
+      "kategori": [
+        "surat",
+        "teks fungsional",
+        "karier"
+      ],
+      "kata_kunci": [
+        "surat lamaran kerja",
+        "daftar riwayat hidup",
+        "CV",
+        "dunia kerja"
+      ],
+      "deskripsi": "Memahami dan menyusun surat lamaran kerja serta daftar riwayat hidup secara efektif dan profesional.",
+      "url": "menulis-surat-lamaran-kerja-dan-daftar-riwayat-hidup.html",
+      "status": "tersedia"
+    },
+    {
+      "id": "xii-tingkat-lanjut-2",
+      "judul": "Layar Kecil, Pikiran Besar: Literasi dari Film Pendek",
+      "kelas": "XII",
+      "fase": "F",
+      "tingkat": "lanjut",
+      "kategori": [
+        "film",
+        "literasi media",
+        "apresiasi"
+      ],
+      "kata_kunci": [
+        "film pendek",
+        "ulasan film",
+        "sinopsis",
+        "storyboard"
+      ],
+      "deskripsi": "Mengapresiasi film pendek, menafsirkan pesan, dan mengembangkan karya audiovisual.",
+      "url": "layar-kecil-pikiran-besar-literasi-film-pendek.html",
+      "status": "tersedia"
+    },
+    {
+      "id": "xii-tingkat-lanjut-3",
+      "judul": "Menelusuri Realitas Sosial melalui Drama Indonesia dan Dunia",
+      "kelas": "XII",
+      "fase": "F",
+      "tingkat": "lanjut",
+      "kategori": [
+        "sastra",
+        "drama",
+        "teater"
+      ],
+      "kata_kunci": [
+        "drama",
+        "naskah",
+        "dialog",
+        "pementasan",
+        "realitas sosial"
+      ],
+      "deskripsi": "Menganalisis, menulis, mengadaptasi, dan menampilkan karya drama.",
+      "url": "menelusuri-realitas-sosial-melalui-drama-indonesia-dan-dunia.html",
+      "status": "tersedia"
+    },
+    {
+      "id": "xii-tingkat-lanjut-4",
+      "judul": "Mengeksplorasi Khazanah Budaya Nusantara melalui Feature Berbasis Digital",
+      "kelas": "XII",
+      "fase": "F",
+      "tingkat": "lanjut",
+      "kategori": [
+        "feature",
+        "budaya",
+        "jurnalistik digital"
+      ],
+      "kata_kunci": [
+        "feature",
+        "budaya Nusantara",
+        "observasi",
+        "wawancara",
+        "publikasi digital"
+      ],
+      "deskripsi": "Mengembangkan feature berbasis observasi dan wawancara untuk memperkenalkan budaya Nusantara melalui media digital.",
+      "url": "mengeksplorasi-khazanah-budaya-nusantara-melalui-feature-berbasis-digital.html",
       "status": "tersedia"
     }
   ]
