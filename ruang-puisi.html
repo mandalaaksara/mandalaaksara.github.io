@@ -414,6 +414,21 @@
 <span class="read-link">Baca puisi →</span>
 <button aria-label="Baca puisi 2" onclick="openPoem('dua')" type="button"></button>
 </article>
+<!-- PUISI 3 -->
+<article class="poetry-card">
+<div>
+<div class="poetry-number">Koleksi 03</div>
+<h3>Sajak Seonggok Jagung</h3>
+<div class="author">Oleh W.S. Rendra</div>
+<p class="preview">
+            Seonggok jagung di kamar<br/>
+            dan seorang pemudah<br/>
+            yang kurang sekolahan...
+          </p>
+</div>
+<span class="read-link">Baca puisi →</span>
+<button aria-label="Baca puisi Sajak Seonggok Jagung" onclick="openPoem('seonggok-jagung')" type="button"></button>
+</article>
 </div>
 <div class="poetry-note">
       “Kata-kata mungkin sederhana, tetapi makna yang dikandungnya
@@ -429,7 +444,7 @@
 <button aria-label="Tutup puisi" class="close-reader" onclick="closePoem()">×</button>
 <div class="reader-label">Ruang Puisi · Mandala Aksara</div>
 <h2 id="readerTitle"></h2>
-<div class="reader-author">Mandala Aksara</div>
+<div class="reader-author" id="readerAuthor"></div>
 <div class="reader-divider"></div>
 <div class="poem-text" id="poemText"></div>
 <div class="reader-footer">
@@ -471,6 +486,7 @@
   const poems = {
     kahwa: {
       title: 'Kahwa',
+      author: 'Mandala Aksara',
       text: `Hitam tumpat dirimu
 Sangkala yg bisa menikmati
 asap raksi begitu menggoda
@@ -484,6 +500,7 @@ Eloknya negeri fana ketika kau, dia dan aku bertaut.`
 
     dua: {
       title: '2',
+      author: 'Mandala Aksara',
       text: `Bayati...
 Kelak tatkala sira bulug
 Kelak dikau merenta
@@ -506,6 +523,84 @@ Ampun jika murkaku melukai sukmamu
 Ampun jika raga ini menggentarkan
 Kerasku adalah kasih yang salah berbusana
 Semua itu lantaran hamba menyayangi kalian`
+    },
+
+    'seonggok-jagung': {
+      title: 'Sajak Seonggok Jagung',
+      author: 'W.S. Rendra',
+      text: `Seonggok jagung di kamar
+dan seorang pemudah
+yang kurang sekolahan
+
+Memandang jagung itu,
+sang pemuda melihat ladang;
+Ia melihat petani;
+Ia melihat panen;
+dan suatu hari subuh,
+para wanita dengan gendongan
+pergi ke pasar...
+
+Dan ia juga melihat
+suatu pagi hari
+di dekat sumur
+gadis-gadis bercanda
+sambil menumbuk jagung
+menjadi maisena.
+Sedang di dalam dapur
+tungku-tungku menyala.
+Di dalam udara murni
+tercium bau kue jagung.
+
+Seonggok jagung di kamar
+dan seorang pemuda.
+Ia siap menggarap jagung.
+
+Ia melihat kemungkinan
+otak dan tangan
+siap bekerja
+
+Tetapi ini:
+Seonggok jagung di kamar
+dan seorang pemuda tamat SLA
+Tak ada uang, tak bisa menjadi mahasiswa.
+Hanya ada seonggok jagung di kamarnya.
+
+Ia memandang jagung itu
+dan ia melihat dirinya terlunta-lunta
+Ia melihat dirinya ditendang dari diskotik.
+Ia melihat sepasang sepatu kenes di balik
+etalase ia melihat saingannya naik sepeda motor.
+
+Ia melihat nomor-nomor lotre.
+ia melihat dirinya sendiri miskin dan gagal.
+Seonggok jagung di kamar
+tidak menyangkut pada akal,
+tidak akan menolongnya.
+
+Seonggok jagung di kamar
+tak akan menolong seorang pemuda
+yang pandangan hidupnya berasal dari buku,
+dan tidak dari kehidupan.
+Yang tidak terlatih dalam metode,
+dan hanya penuh hafalan kesimpulan.
+Yang hanya terlatih sebagai pemakai,
+tetapi kurang latihan bebas berkarnya.
+Pendidikan telah memisahkannya dari kehidupan.
+
+Aku bertanya:
+Apakah gunanya pendidikan
+bila hanya akan membuat seseorang menjadi
+asing di tengah kenyataan persoalannya?
+Apakah gunanya pendidikan
+bila hanya mendorong seseorang
+menjadi layang-layang di ibukota
+kikuk pulang ke daerahnya?
+Apakah gunanya seseorang
+belajar filsafat, sastra, teknologi, ilmu kedokteran
+atau apa saja
+bila pada akhirnya
+ketika ia pulang ke daerahnya lalu berkata
+Di sini aku merasa asing dan sepi!`
     }
   };
 
@@ -515,6 +610,7 @@ Semua itu lantaran hamba menyayangi kalian`
     if (!poem) return;
 
     document.getElementById('readerTitle').textContent = poem.title;
+    document.getElementById('readerAuthor').textContent = poem.author || 'Mandala Aksara';
     document.getElementById('poemText').textContent = poem.text;
 
     const overlay = document.getElementById('readerOverlay');
